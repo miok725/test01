@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">우수고객 인터넷 무보증 신용대출</h2>
+			<div class="stepArea">
+				<p class="stepTit">대출가능금액조회</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+
+			<div class="guideListTop">	<!-- 2018-09-07 :: 텍스트 수정 -->
+				<ul class="listDot">
+					<li><strong>서비스 이용시간 : 평일 00:30 ~ 24:00</strong>, <span class="pointColor">토요일 00:30 ~ 24:00, 일요일/공휴일 : 거래불가</span></li>
+					<li>우수고객무보증신용대출 신청을 위해 아래 내용들을 입력해 주십시오.</li>
+					<li>대출금액이 5천만원을 초과하는 경우, '16.3.2일부터 개정ㆍ시행된 인지세법에 따라 인지세를 납부하셔야 합니다.<br><span class="pointColor7">※ 인지세는 각 50%씩 고객님과 농협은행이 부담합니다.</span></li>
+					<li>고객님의 주소가 변경되어 하단의 주소를 변경입력하신 경우 반드시 인터넷뱅킹에 등록된 고객정보의 주소도 변경 확인하여 주시기 바랍니다.<br/><span class="pointColor7">※ 개인인터넷뱅킹 > MY뱅크 > 고객정보관리 > 고객정보변경</span></li>
+					<li>개인고객정보의 주소로 각종 안내장이 발송됩니다.</li>
+					<li>고객님께서는 기설정금액 <em>100,000,000</em> 원이 있습니다.</li>
+					<li>대출신청시 기약정금액을 합하여 신청하셔야 합니다.</li>
+				</ul>
+			</div>
+			<!-- guideListTop_end -->
+
+			<div class="areaBodyBtnFull">
+				<a href="javascript:;" class="btnInquiry">대출가능금액 조회</a>	
+			</div>
+
+			<div class="formWrap">
+				<ul>
+					<!-- 20181010 대출약정 변경사항 시작 -->
+					<li>
+						<strong class="formTit">대출약정계좌번호</strong>
+						<div class="acc_inquiry_wrap">
+							<div class="selectBtnForm selectAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="stList inputB01">
+										<a href="javascript:;" title="OOO 선택 새창열림" role="radiogroup">
+											<span class="selectValue">선택해주세요</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+									<div class="inputB02">
+										<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnInput01">직접입력</a><!-- 20181010 href, txt변경 -->
+									</div>
+								</div>
+								<a href="javascript:;" class="btnBodyLine mt5">입금가능여부 조회</a><!-- 20181010 href, txt변경 -->
+							</div>
+							<div class="selectBtnForm insertAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="inputList">
+										<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+									</div>
+									<div class="inputB02">
+										<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnInput01">계좌선택</a><!-- 20181010 href, txt변경 -->
+									</div>
+								</div>
+								<a href="javascript:;" class="btnBodyLine mt5">입금가능여부 조회</a><!-- 20181010 href, txt변경 -->
+							</div>
+							<!-- <p class="infoTxt">대출 원리금/이자는 대출입금계좌에서 자동이체됩니다.<br>자동이체계좌 변경은 개인인터넷뱅킹/자동이체 메뉴를 이용하시면됩니다.</p> -->
+						</div>
+					</li>
+					<!-- //20181010 대출약정 변경사항 종료 -->
+
+
+
+					<li class="alignCol">
+						<strong class="formTit">기약정금액</strong>
+						<p class="inpTxt ar"><strong class="pointColor"><em>500,000</em> <span class="wUnit">원</span></strong></p>
+					</li>
+					<li class="alignCol">
+						<strong class="formTit">대출가능금액</strong>
+						<p class="inpTxt ar"><strong class="pointColor"><em>100,000,000</em> <span class="wUnit">원</span></strong></p>
+					</li>
+					<li>
+						<strong class="formTit">계좌비밀번호</strong>
+						<div class="inputList">                    
+							<input type="password" title="계좌비밀번호 입력" placeholder="숫자 4자리를 입력해주세요" class="sKey" readonly="readonly">
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출신청단위</strong>
+						<ul class="infoTxt">
+							<li>십만원 이상으로만 직접대출이 가능합니다.</li>
+							<li>기약정금액을 합하여 대출 신청금액을 입력하시기 바랍니다.</li>
+						</ul>
+					</li>
+					<li>
+						<strong class="formTit">대출신청금액<span class="unit">(<em class="pointColor">사백오십만</em> 원)</span></strong>
+						<div class="inputList">
+							<input type="text" title="대출신청금액 입력" placeholder="대출신청금액을 입럭해 주세요.">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+						</div>                
+						<p class="infoTxtCaution">십만원단위 이상으로 입력하셔야 대출 신청이 가능합니다.</p>	<!-- 2018-09-07 :: 메세지 추가 -->
+						<div class="areaBtnPrice mt10">
+							<div class="inner">
+								<ul>
+									<li><a href="javascript:;" role="button">1000만</a></li>
+									<li><a href="javascript:;" role="button">100만</a></li>
+									<li><a href="javascript:;" role="button">10만</a></li>
+									<li><a href="javascript:;" class="btnAddon" role="button">정정</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출기간만료일</strong>	<!-- 2018-09-07 :: 날짜선택 인풋으로 변경 -->
+						<div class="cal">
+							<div class="inputList">
+								<input type="text" title="날짜선택 입력" placeholder="날짜선택을 입력해 주세요." readonly="readonly">
+								<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+							</div>
+						</div>
+						<p class="infoTxt">대출 약정만료일은 신청일로부터 1년 이내로 지정 가능합니다.</p>
+					</li>
+					<li class="alignCol">
+						<strong class="formTit">연락처(휴대폰)</strong>
+						<p class="inpTxt ar">010-1234-1234</p>
+					</li>
+					<li>
+						<strong class="formTit">우편발송지</strong>
+						<div class="formArray">
+							<div class="radioList">
+								<input type="radio" id="home" name="mail">
+								<label for="home">자택</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="work" name="mail">
+								<label for="work">직장</label>
+							</div>
+						</div>
+						<p class="infoTxt">각종 안내장을 받아볼 수 있는 장소 선택</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="guideList">	<!-- 2018-09-07 :: 하단컨텐츠 수정 -->
+				<ul class="listDot">
+                    <li>대출신청금액이 신용대출 약정계좌에 부여됩니다.</li>                                            
+                    <li>신용대출 약정계좌는 출금등록 계좌만 가능하고 대출 실행 후 언제든지 인출이 가능합니다.</li>     
+				</ul>
+			</div>		
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a> 
+				<!-- 활성화시 disabled 제거 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

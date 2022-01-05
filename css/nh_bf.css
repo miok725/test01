@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_bf : 펀드 */
+.dfs .titWrap.line .stepWrap{top:5px}
+.mlr-20{margin:0 -20px !important}
+/* [2020-11-24] 계좌관리 - 펀드 - 운용상품추가 */
+.addPrdt .subTit {display:block;font-size:15px;color:#111}
+.addPrdt .msgWrap.noData .tit {word-break:keep-all}
+.addPrdt .titLong {letter-spacing:-2px}
+.addPrdt .addPrdtNoti p {font-size:16px;color:#111;word-break:keep-all}
+.addPrdt .pointYellow {border-bottom:3px solid #ff0}
+.addPrdt .addPrdtQ {margin-bottom:25px}
+.addPrdt .productWrap {border-top: 1px solid #dedede;}
+.addPrdt .productList li .txt {color:#111}
+.addPrdt .productList li a.link {padding:15px 42px 15px 20px}
+.addPrdt .productList li div.link {padding:15px 20px}
+.addPrdt .formHolder .select {display:block;padding:0 15px 0 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:13px}

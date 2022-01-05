@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+	<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/nh_bt.css">
+
+	<script src="../../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../../js/swiper.min.js"></script>
+	<script src="../../../js/modernizr.custom.min.js"></script>
+	<script src="../../../js/nh_com_ui.js"></script>
+	<script src="../../../js/common_market_ui.js"></script>
+	</head>
+	
+	<body>
+		<!-- wrapper -->
+		<div class="wrapper">
+			<!-- header -->
+			<div class="header">
+				<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+				<h1>대출</h1>
+				<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+			</div>
+			<!-- //header -->
+
+		<!-- container -->
+		<div class="container dfs" data-role="elWrap">
+			<div class="content">
+			<h2 class="page_tit">대출기한 연기</h2>
+			<div class="srchResult">
+				<div class="resultDetail">
+					<div class="result">
+						<span class="resultTit">기본정보</span>
+					</div>
+					<span class="amntTotal">대출잔액 <em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+				</div>
+			</div>
+			<!-- resultDetail_둥 -->
+			<div class="wrapTblDefault">
+				<table cellpadding="0" cellspacing="0">
+					<caption>대출상세정보 - 대출잔액, 대출이율, 대출만기일을 확인 가능한 표</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">대출잔액</th>
+							<td class="ar"> <span class="pointColor"><%= io_ln_bac_n %>원</span></td>
+						</tr>
+						<tr>
+							<th scope="row">대출만기일</th>
+							<td><%= CommonUtil.formatDate(due_dt, "-") %></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine">기한연기신청</a>		
+				</div>
+			</div>
+
+			<div class="topConfirmArea confirmMsg type04">
+				<p>인터넷/스마트대출 기한연기 대상<br> 대출계좌가 없습니다.</p>
+				<p class="subTxt"><%=sCurrentDate %> 현재</p>
+			</div>
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">알아두세요</p></div>
+				<ul class="listDot">
+					<li><strong>서비스 이용시간 : 평일 09:00~18:00, <span class="pointColor">토요일 이용불가,</span> <span class="pointColor5">일요일/공휴일 이용불가</span></strong></li>
+					<li><span class="pointColor5">스마트금융센터 상담원을 통해 신청한 대출계좌만 대출만기일 1개월 전부터 연기신청이 가능합니다.</span></li>
+					<li>신용관리대상 정보 및 연체여신(신용카드 포함) 보유자는 기한연기가 제한되거나 대출금액이 축소될 수 있습니다.</li>
+					<li>심사결과에 따라 기한연기가 제한되거나 대출금액 축소 및 금리가 변경될 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

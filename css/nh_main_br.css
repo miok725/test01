@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_main_br :큰글(시니어) 서브메인 */
+/* 시니어뱅킹 메인 */
+.dfs .header h1 img{display:none}
+.dfs .brAccView .btnMoreWrap .btnAccAdm:after, .dfs .mainSetWrap button span:after,
+.dfs .gbSwipeWrap .brAccView .txtSet:after, .dfs .gbSwipeWrap .brAccView .txtTerms:after, .dfs .header .btnNoti:after{display:block;content:'';background-image:url('../images/contents/br/sp_br.png');background-size:auto 125px}
+.dfs .header.bd0{border-bottom:0}
+/* .dfs .header .btnNoti{position:absolute;top:0;right:52px;width:30px}
+.dfs .header .btnNoti:after{position:absolute;top:50%;left:50%;width:17px;height:15.5px;margin:-6px 0 0 -8.5px;background-position:0 0}
+.dfs .header .btnNoti.on:before{content:'';position:absolute;top:17px;right:3px;width:5px;height:5px;background:#f44743;border-radius:50%}
+.dfs .header .btnNav{width:38px;background-size:18px 14px} */
+.dfs .welcomeWrap{position:relative}
+.dfs .welcomeWrap p{font-size:22px;color:#111;line-height:1.4}
+.dfs .welcomeWrap p span{position:relative;font-size:22px}
+.dfs .welcomeWrap p span em{position:relative;color:#000;font-size:23px}
+.dfs .welcomeWrap p > br ~ br{display:none}
+.dfs .titAcc{margin-top:32px}
+.dfs .titAcc:after{display:block;clear:both;content:''}
+.dfs .titAcc .bgTxtLink{position:relative;float:left;padding-right:12px;font-size:17px;color:#666}
+.dfs .titAcc .bgTxtLink:after{content:'';position:absolute;width:5.5px;height:10px;top:50%;right:0;margin-top:-5px;background-position:-1px -20px}
+.dfs .balanceSet{float:right;margin-top:2px}
+.dfs .balanceSet span{display:inline-block;font-size:16px;color:#969ba3;font-weight:600}
+.dfs .balanceSet .switchType{display:inline-block;position:relative;top:-1px;margin:0 0 0 5px}
+.dfs .gbSwipeWrap{margin:5px -20px 0}
+.dfs .gbSwipeWrap + .gbSwipeWrap{margin-top:-3px}
+.dfs .gbSwipeWrap .swiper-container{padding:10px 20px 10px}
+.dfs .gbSwipeWrap .accountTransferView .accInfoArea{padding-right:15px}
+.dfs .gbSwipeWrap .brAccView > li{display:block;height:220px}
+.dfs .gbSwipeWrap .inner{display:block;position:relative;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, 0.1);border-radius:10px;background:#fff}
+.dfs .gbSwipeWrap .brAccView .inner{min-height:220px;padding:25px 15px 0;background:#fff;text-align:center}
+.dfs .gbSwipeWrap .brAccView.etcBank .inner{min-height:200px}
+.dfs .gbSwipeWrap .brAccView .inner.type01{background:#19A647}
+.dfs .gbSwipeWrap .brAccView .inner.type02{background:#19b9bf}
+.dfs .gbSwipeWrap .brAccView .inner.type03{background:#fff}
+.dfs .gbSwipeWrap .brAccView .inner.type04{display:table;width:100%;height:100%;padding:0}
+.dfs .gbSwipeWrap .brAccView .inner.type04 .inr{display:table-cell;vertical-align:middle}
+.dfs .gbSwipeWrap .brAccView .accTit{display:inline-block;overflow:hidden;text-overflow:ellipsis;color:#fff;max-width:calc(100% - 104px);font-size:18px !important;white-space:nowrap;line-height:1}
+.dfs .gbSwipeWrap .brAccView .accNum{text-align:left;color:#fff;font-size:16px !important;line-height:1}
+.dfs .gbSwipeWrap .brAccView .icoBnk{float:left;padding-right:8px;line-height:1}
+.dfs .gbSwipeWrap .brAccView .icoBnk img{width:40px;height:40px}
+.dfs .gbSwipeWrap .brAccView .accInfoArea .accCont{text-align:left}
+.dfs .gbSwipeWrap .brAccView .txtSet{position:relative;padding-top:53px;text-align:center;font-size:17px;color:#111}
+.dfs .gbSwipeWrap .brAccView .txtSet:after{position:absolute;top:0;left:50%;width:53px;height:40px;margin-left:-27px;background-position:0 -22px}
+.dfs .gbSwipeWrap .brAccView .txtTerms{position:relative;padding:70px 10px 0;text-align:center;font-size:17px;color:#111;word-break:keep-all}
+.dfs .gbSwipeWrap .brAccView .txtTerms span{display:inline-block}
+.dfs .gbSwipeWrap .brAccView .txtTerms:after{position:absolute;top:0;left:50%;width:60px;height:60px;margin-left:-27px;background-position:-162px 0}
+.dfs .gbSwipeWrap .brAccView .txtTerms ~ .btn{width:210px;margin-top:16px;border:1px solid #ccc;color:#111}
+.dfs .gbSwipeWrap .brAccView .txtSet .txtSub{display:block;margin-top:2px;font-size:14px;color:#666}
+.dfs .gbSwipeWrap .brAccView .btnSet{display:inline-block;margin-top:8px;padding:0 12px;background:#3d7bf3;border-radius:14px;color:#fff;font-size:12px;font-weight:600;line-height:28px}
+.dfs .gbSwipeWrap .brMainAcc.nhAcc{z-index:100;overflow:visible}
+.dfs .gbSwipeWrap .brMainAcc.nhAcc .swiper-pagination-fraction{background:rgba(255, 255, 255, 0.2);color:#fff}
+.dfs .brAccView .btnMoreWrap{position:absolute;top:28px;right:19px}
+.dfs .brAccView .btnMoreWrap .btnAccAdm{position:absolute;top:-2px;right:-8px;width:23.5px;height:19px}
+.dfs .brAccView .btnMoreWrap .btnAccAdm:after{position:absolute;top:0;left:50%;width:2.5px;height:19px;margin-left:-1px;background-position:-100px 0}
+.dfs .brAccView.etcBank .btnMoreWrap .btnAccAdm:after{background-position:-110px 0}
+.dfs .brAccView .btnMoreWrap .accInfoMore{width:160px;position:absolute;top:29px;right:0;z-index:1000;background-color:#fff;border-radius:10px;text-align:left;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, 0.1)}
+.dfs .brAccView .btnMoreWrap .accInfoMore.global{width:auto;white-space:nowrap}
+.dfs .brAccView .btnMoreWrap .accInfoMore{width:177px}
+.dfs .brAccView .btnMoreWrap .accInfoMore ul{margin:25px 20px}
+.dfs .brAccView .btnMoreWrap .accInfoMore li a{font-size:19px;line-height:33px;color:#111}
+.dfs .gbSwipeWrap .brMainAcc .swPaging{position:absolute;top:25px;right:40px;bottom:auto;left:auto;width:auto;height:21px;padding:0 8px;background:rgba(0, 0, 0, 0.05);color:#111;border-radius:10px;line-height:21px;font-size:14px}
+.dfs .gbSwipeWrap .brMainAcc .swPaging .pageNum{font-weight:600}
+.dfs .gbSwipeWrap .brMainAcc.nhAcc .swPaging{background:rgba(255, 255, 255, 0.2);color:#fff}
+.dfs .gbSwipeWrap .brMainAcc .totalNum:before{content:'/';padding:0 3px 0 0}
+.dfs .swiper-wrapper.accountTransferView.typeRoundBox > li + li{margin-top:0}
+/* 잔액 on/off 선택 */
+.dfs .balanceSet .formHolder.switchType label.switch{position:relative;margin-top:0}
+.dfs .balanceSet .formHolder.switchType label.switch:before,
+.dfs .balanceSet .formHolder.switchType label.switch:after{display:block;content:'';transition:-webkit-transform .15s ease-in-out,transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;box-sizing:border-box}
+.dfs .balanceSet .formHolder.switchType label.switch:before{content:'잔액';width:62px;height:24px;padding:0 10px;line-height:24px;border-radius:12px;background-color:#bfbfbf;color:#fff;font-size:12px}
+.dfs .balanceSet .formHolder.switchType label.switch:after{position:absolute;width:22px;height:22px;border-radius:50%;background-color:#fff}
+.dfs .balanceSet .formHolder.switchType input[type='checkbox']:checked+label.switch:before{content:'잔액'}
+.dfs .balanceSet .formHolder.switchType.active input[type='checkbox']+label.switch:before{background-color:#19A647;text-align:left}/* 19A647 08-24 color */
+.dfs .balanceSet .formHolder.switchType.active input[type='checkbox']+label.switch:after{top:1px;left:9px;border:0;-webkit-transform:translateX(30px);transform:translateX(30px)}
+.dfs .balanceSet .formHolder.switchType input[type='checkbox']+label.switch:before{background-color:#bfbfbf;text-align:right}
+.dfs .balanceSet .formHolder.switchType input[type='checkbox']+label.switch:after{top:1px;left:1px;border:0;-webkit-transform:translateX(0);transform:translateX(0)}
+/* 일반모드/큰글모드 선택 */
+.dfs .switchMode .formHolder.switchType label.switch{position:relative;width:100%;height:70px}
+.dfs .switchMode .formHolder.switchType label.switch:before,
+.dfs .switchMode .formHolder.switchType label.switch:after{content:'';display:flex;justify-content:center;-webkit-justify-content:center;align-items:center;padding-left:30px;transition:-webkit-transform .15s ease-in-out,transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;color:#111;font-size:19px;box-sizing:border-box}
+.dfs .switchMode .formHolder.switchType.active label.switch:after{content:'일반모드';position:absolute;top:0;left:0;width:50%;height:68px;border:1px solid #111;border-radius:10px;background:#fff url('../images/common/ico_switch_check.png') no-repeat calc(50% - 40px) center;background-size:21px auto;text-align:center}
+.dfs .switchMode .formHolder.switchType.active input[type='checkbox']+label.switch:before{content:'일반모드';padding:0 50% 0 0;color:#111;font-size:19px}
+.dfs .switchMode .formHolder.switchType.active input[type='checkbox']+label.switch:after{content:'큰글모드';-webkit-transform:translateX(100%);transform:translateX(100%)}
+.dfs .switchMode .formHolder.switchType input[type='checkbox']+label.switch:after{content:'일반모드';-webkit-transform:translateX(0);transform:translateX(0)}
+.dfs .switchMode .formHolder.switchType label.switch:before{content:'큰글모드';width:100%;height:70px;margin:0;padding:0 0 0 50%;border-radius:10px;vertical-align:top;background-color:#f1f1f1;color:#111;box-sizing:border-box;font-size:19px}
+.dfs .brAccView .accGbPrice{position:relative;height:34px;margin-top:34px;text-align:center}
+.dfs .brAccView .accGbPrice .txtM{display:inline-block;position:relative}
+.dfs .brAccView .accGbPrice .txtM, .dfs .brAccView .accGbPrice .txtM strong{font-size:24px;color:#fff;line-height:1}
+.dfs .brAccView .accGbPrice .txtM strong{position:relative;top:3px;font-size:32px}
+.dfs .brAccView .accGbPrice .txtM strong.tError{font-size:25px}
+.dfs .brMainAcc .accGbPrice .txtM span.ing{color:#ddd;position:relative;top:7px}
+.dfs .brMainAcc.nhAcc .accGbPrice .txtM span.ing{color:rgba(255, 255, 255, 0.6);position:relative;top:7px}
+.dfs .brAccView .accGbPrice .txtM.notBal{font-size:19px;color:#999}
+.dfs .brAccView .accGbPrice .txtM.err{top:6px}
+.dfs .brAccView .accGbPrice .txtM.err span{font-size:25px;color:rgba(255, 255, 255, 0.4)}
+.dfs .brAccView .accGbPrice .txtM.notBal span{font-size:25px;color:rgba(255, 255, 255, 0.4)}
+.dfs .brAccView .accGbPrice .txtM.isBal, .dfs .brAccView .accGbPrice .txtM.notBal, .dfs .brAccView .accGbPrice .txtM.errBal{display:none}
+.dfs .brAccView .accGbPrice .txtM.err .btnRef, .dfs .brAccView .accGbPrice .txtM.errBal .btnRef{top:4px}
+.dfs .brAccView .accGbPrice .txtM.isBal.on{display:inline-block}
+.dfs .brAccView .accGbPrice .txtM.notBal.on{display:block;top:6px}
+.dfs .brAccView .accGbPrice .txtM.errBal{display:none}
+.dfs .brAccView .accGbPrice .txtM.errBal.on{display:inline-block}
+.dfs .brAccView .btnRef{position:absolute;top:11px;right:-27px;width:21px;height:18px;background-image:url('../images/contents/br/sp_br.png');background-size:auto 125px;background-position:-46px 0}
+.dfs .gbSwipeWrap .inner .btnWrap{display:flex;margin:22px -15px 0;text-align:center}
+.dfs .gbSwipeWrap .inner .btnWrap .btn{flex:1;position:relative;height:63px;border:0;font-size:18px;line-height:1.2;word-break:keep-all;background:transparent;color:#fff}
+.dfs .gbSwipeWrap .inner .btnWrap .btn + .btn:before{content:'';position:absolute;top:50%;left:0;width:2px;height:19px;margin:-9px 0 0 -1px;border-left:2px solid rgba(255, 255, 255, 0.5)}
+.dfs .gbSwipeWrap .inner .brMainAcc .btnWrap.inr .btn{display:inline-block;height:34px;margin-top:15px;border:1px solid #ddd;border-radius:8px;font-size:15px;color:#666}
+.dfs .brAccView .accInfoArea .icoStar{display:inline-block;position:relative;top:2px;width:16px;height:16px;margin-left:7px;vertical-align:top;background-image:url('../images/contents/br/sp_br.png');background-size:auto 250px;background-position:-25px 0;background-size:auto 125px}
+.dfs .brAccView .accInfoArea .icoStar.on{background-image:url('../images/common/sp_com.png');background-size:auto 250px;background-position:-59px -35px}
+@media screen and (max-width:360px){
+    .dfs .brAccView .accGbPrice .txtM, .dfs .brAccView .accGbPrice .txtM strong{font-size:22px}
+    .dfs .brAccView .accGbPrice .txtM strong{font-size:27px;letter-spacing:-.5px}
+    .dfs .brAccView .btnRef{right:-23px}
+}
+/* 텍스트 없는 스위치 */
+.dfs .switchNoneTxt{margin-top:43px}
+.dfs .switchNoneTxt .tit{font-size:19px !important;color:#333}
+.dfs .switchNoneTxt .formHolder{margin-top:0}
+.dfs .switchNoneTxt .formHolder.switchType input[type='checkbox']+label.switch:before{content:'';height:30px;border-radius:30px;background-color:#bfbfbf}
+.dfs .switchNoneTxt .formHolder.switchType input[type='checkbox']+label.switch:after{content:'';top:3px;left:3px;width:24px;height:24px;-webkit-transform:translateX(0);transform:translateX(0);border:0}
+.dfs .switchNoneTxt .formHolder.switchType.active input[type='checkbox']+label.switch:before{content:'';width:50px;height:30px;border-radius:24px;background-color:#19A647}
+.dfs .switchNoneTxt .formHolder.switchType.active input[type='checkbox']+label.switch:after{content:'';top:3px;left:-7px;width:24px;height:24px;border:0;-webkit-transform:translateX(30px);transform:translateX(30px)}
+/* 다른은행 계좌정보 */
+.dfs .gbSwipeWrap .brAccView .inner.type03 .accTit{color:#111}
+.dfs .gbSwipeWrap .brAccView .inner.type03 .accNum{color:#888}
+.dfs .brAccView.etcBank .accGbPrice .txtM.notBal span{color:#ddd}
+.dfs .inner.type03 .accGbPrice .txtM, .dfs .inner.type03 .accGbPrice .txtM strong{color:#111}
+.dfs .brAccView.etcBank .accGbPrice .txtM.errBal{top:6px}
+.dfs .brAccView.etcBank .accGbPrice .txtM.errBal .tError{color:#111}
+.dfs .inner.type03 .btnWrap .btn{height:55px;color:#333}
+.dfs .inner.type03 .btnWrap .btn + .btn:before{border-left:2px solid rgba(0,0,0,.1)}
+.dfs .brAccView .inner.type03 .btnRef{background-position:-72px 0}
+.dfs .gbSwipeWrap .brMainAcc .swiper-pagination-current{font-weight:600}
+/* .dfs .gbSwipeWrap .brAccView.etcBank .txtSet{padding-top:59px} */
+.dfs .gbSwipeWrap .brAccView.etcBank .txtSet:after{background-position:-95px -22px}
+.dfs .gbSwipeWrap .brAccView.etcBank > li{height:200px}
+.dfs .gbSwipeWrap .brAccView.etcBank .inner .link{display:inline-block;margin-top:21px;color:#19a647;font-size:15px}
+.dfs .brAccView.etcBank .accGbPrice{margin-top:28px}
+.dfs .brAccView.etcBank .btnWrap{margin:11px -20px 0}
+.dfs .brAccView.etcBank .btnWrap .btn{height:57px}
+.dfs .mainSetWrap{margin-top:10px}
+.dfs .mainSetWrap button{display:block;width:100%;height:55px;background:#f9f9f9;border-radius:12px;font-size:16px;color:#333;text-align:center}
+.dfs .mainSetWrap button span{position:relative;padding-left:34px}
+.dfs .mainSetWrap button span:after{position:absolute;top:0;left:0;width:25px;height:23.5px;background-position:0 -85px}

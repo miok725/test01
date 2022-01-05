@@ -1,0 +1,928 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_ob :오픈뱅킹 */
+/* 폰트 */
+@font-face{
+	font-family:'NotoKR_bold';
+	font-style:normal;
+	src:	url('../fonts/NotoSans-Bold.eot');
+	src:	url('../fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+			local(※), 
+			url('../fonts/NotoSans-Bold.woff') format('woff');
+}
+/* 공통 */
+html, body, .wrapper{height:100%}
+.header, .openBankType.container{max-height:none;background-color:#f8f8fb}
+.dfs .header{background-color:#fff}
+.footer{display:none}
+.openBankType.container{min-height:100%;padding:50px 0 165px}
+/* 라운드 박스 */
+.openBankType .roundBox{background-color:#fff;border:1px solid #e5e5e9;border-radius:20px}
+/* 포인트 색상 */
+.pointColor{color:#19A647 !important}
+/* 타이틀 */
+.defTit{color:#111;font-size:16px}
+.defSubTit{margin:23px 0 7px}
+/* 스크롤링 아이콘 삭제 */
+.popWrap .popCont .iconScroll{display:none}
+/* placeholder */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{font-size:14px;color:#888888;text-align:left;font-weight:normal}
+input::-moz-placeholder,
+textarea::-moz-placeholder{font-size:14px;color:#888888;text-align:left;font-weight:normal}
+/* 오픈뱅킹 */
+.menuOpenbanking .topWrap{padding:30px 0 0 0}
+.menuOpenbanking .topWrap p{font-size:18px;color:#111;text-align:center;padding:90px 0 30px 0;background-color:#fff;background-image:url('../images/common/util/bg_menu_openbanking_01.png');background-size:140px auto;background-position:center top;background-repeat:no-repeat}
+.menuOpenbanking .topWrap p span{color:#19A647}
+.menuOpenbanking .menuObList{overflow-y:auto;padding:40px 0 0 0;margin:0 auto;text-align:center;background-color:#fff;border-top:1px solid #eaeaea}
+.menuOpenbanking .menuObList{overflow-y:auto;position:relative;display:block;padding:20px 0 0px 0}
+.menuOpenbanking .menuObList ul{display:block;width:100%}
+.menuOpenbanking .menuObList ul:after{content:'';display:block;clear:both}
+.menuOpenbanking .menuObList ul li{display:block;width:100%;text-align:center}
+.menuOpenbanking .menuObList ul li:last-child{padding-bottom:20px}
+.menuOpenbanking .menuObList ul li a{display:inline-block;padding:10px;color:#262628;font-size:20px;text-align:center}
+.menuOpenbanking .menuObList ul li a.active{color:#19A647;font-weight:bold}
+/* 버튼 */
+.openBankType [class*="btnPress"]{height:56px;line-height:56px;background-color:#19A647;font-size:17px;font-family:'NotoKR_bold' !important}
+.openBankType [class^="btn"].disabled{background-color:#cccdd0}
+.openBankType .btnPressDefault{background-color:#627281}
+.openBankType .areaBodyBtnFull{margin:0 24px}
+.openBankType .areaBodyBtnFull .btnBodyLine.registerBtn{height:40px;border:0;background-color:#19A647;border-radius:3px;color:#fff;font-size:15px;line-height:40px}
+.openBankType .areaBodyBtnFull .btnBodyLine.registerBtn:after{content:'';display:inline-block;width:6px;height:10.5px;margin-left:5px;background:url('../images/open/arrow_right2.png') no-repeat 0 50%;background-size:cover;padding-bottom:1px}
+.openBankType .areaBodyBtnFull .btnBodyLine.registerBtn + div.ar{margin-top:15px !important;margin-bottom:5px}
+.openBankType .areaBodyBtnFull .btnBodyLine.registerBtn + div.ar a{font-size:13px !important}
+.openBankType .areaBodyBtnFull .btnBodyLine.accAddBtn{margin:20px 0;border:0;background-color:transparent;font-size:18px;font-weight:bold}
+.openBankType .areaBodyBtnFull .btnBodyLine.accAddBtn:before{content:'';display:inline-block;width:13px;height:13px;margin-right:7px;background:url('../images/open/ico_accountAdd.png') no-repeat 0 0;background-size:cover}
+.openBankType .areaBodyBtnFull .btnBodyLine.accDelBtn{margin:20px 0;border:0;background-color:transparent;font-size:18px;font-weight:bold}
+.openBankType .areaBodyBtnFull .btnBodyLine.accDelBtn:before{content:'';display:inline-block;width:13px;height:13px;margin-right:7px;background:url('../images/open/ico_accountDel.png') no-repeat 0 0;background-size:cover}
+/* step */
+.openBankType .stepArea{margin:0;padding:21px 24px 22px;border-bottom:0}
+.openBankType .stepArea .stepTit{font-family:'NotoKR_bold';font-size:20px}
+.openBankType .stepArea .stepInfo .stepList li{padding-left:7px}
+.openBankType .stepArea .stepInfo .stepList li > span{width:24px;height:24px;background-color:#e5e5e9;color:#b7b7ba;border:0;font-size:15px}
+.openBankType .stepArea .stepInfo .stepList li.active > span{background-color:#19A647;border:0;color:#fff}
+.openBankType .stepArea .stepInfo .stepList li.off > span{background-color:#627281;border:0;color:#fff}
+.openBankType .roundBox .defTit:first-child{margin-top:0}
+.openBankType .accountHeader .defTit:first-child{margin-top:0}
+/* 약관리스트 */
+.openBankType .termWrap{padding:24px 24px 28px}
+.openBankType .termWrap .termAll{padding-bottom:18px;border-bottom:1px solid #f0f0f5}
+.openBankType .termWrap .termAll dt{font-size:16px;font-weight:bold}
+.openBankType .termWrap .termAll dd{margin-top:5px;padding-left:33px;color:#666;font-size:13px}
+.openBankType .termWrap .termList li{display:table;width:100%;margin-top:26px}
+.openBankType .termWrap .termList li label, .openBankType .termWrap .termList li a{display:table-cell;vertical-align:middle}
+.openBankType .termWrap .termList li label{width:30px}
+.openBankType .termWrap .termList li a{padding-right:20px;background:url('../images/open/arrow_right.png') no-repeat 100% 50%;background-size:5px 9px;font-size:14px}
+/* 폼요소 */
+.openBankType input{height:44px;border-color:#cccdd0;border-radius:0;line-height:22px;padding-left:14px}
+.openBankType input:focus{border:2px solid #19A647;caret-color:#19A647}
+.inputList input[type="text"], .inputList input[type="password"], .inputList input[type="tel"]{padding-right:45px}
+.openBankType .stList a.selectDisabled{color:#666}
+.openBankType input[type='tel']{font-size:15px}
+.openBankType .stList a{height:42px;padding-right:40px;padding-left:10px;border-color:#cccdd0;line-height:42px}
+.openBankType .selectValue{line-height:42px;font-size:14px}
+.openBankType .selectValue.add1{line-height:39px}
+.openBankType .selectBtn{width:40px;height:42px;background:url('../images/open/select_arrow.png') no-repeat 50% 50%;background-size:10px 7px}
+.openBankType .formWrap.roundBox{padding:22px 25px 27px}
+.openBankType .formWrap{position:relative;margin-top:0}
+.openBankType .formWrap + .formWrap{margin-top:12px}
+.openBankType .formWrap > ul > li{margin-top:0px;margin-top:24px}
+.openBankType .formWrap > ul > li:first-child{margin-top:0}
+.openBankType .formWrap > ul > li .userEmail{color:#19A647;font-weight:bold}
+.openBankType .formWrap > ul > li .emailChange{padding-right:12px;background:url('../images/open/ico_dealBtn.png') no-repeat 100% 50%;background-size:6px 10px;color:#627281;font-size:12px;letter-spacing:-1px}
+.openBankType .formWrap .formTit{margin-top:27px;font-size:16px}
+.openBankType .formWrap .inputList .unit{height:44px;margin:0;font-size:14px;line-height:24px}
+.openBankType .addForm{height:44px;border:1px solid #cccdd0}
+.openBankType .addForm.active{border:2px solid #19A647}
+.openBankType .addForm.active .stList a, .openBankType .addForm.active li .inputList input{height:40px}
+.openBankType .addForm.active .selectValue{line-height:40px}
+.openBankType .addForm.active .selectValue, .openBankType .addForm.active .selectBtn{height:40px}
+.openBankType .addForm .stList a, .openBankType .addForm li .inputList input{border:0;height:42px}
+.openBankType .addForm .stList a{padding-right:20px}
+.openBankType .addForm .selectBtn{width:20px;height:42px;background:url('../images/open/select_arrow.png') no-repeat 100% 50%;background-size:10px 7px}
+.openBankType .addForm input{padding-left:0}
+.openBankType .addForm.selectDivision_4_6 li:first-child{padding-right:0}
+.openBankType .addForm.selectDivision_4_6 li{padding-left:0}
+.openBankType .addForm.selectDivision_4_6 li .inputList input{text-indent:10px}
+.openBankType .openGuide{margin-top:10px;color:#777a7c;font-size:12px}
+.openBankType .btnReset{height:44px}
+/* 체크박스 */
+.openBankType input[type="checkbox"]{width:20px;height:20px;background-image:url('../images/open/check_sheet.png');background-size:80px 20px;vertical-align:middle;border:0} 
+.openBankType input[type="checkbox"] + label{padding-bottom:2px;vertical-align:middle;width:auto;max-width:auto}
+.openBankType input[type="checkbox"]:checked{background-position:-20px 0}
+.openBankType input[type="checkbox"][disabled="disabled"]{background-position:-40px 0} 
+.openBankType input[type="checkbox"]:checked[disabled="disabled"]{background-position:-60px 0}
+.openBankType input[type="checkbox"].bigSize{width:24px;height:24px;background-size:96px 24px} 
+.openBankType input[type="checkbox"].bigSize:checked{background-position:-24px 0}
+/* 테이블 */
+.openBankType .tblWrap.roundBox{padding:19px 24px 21px}
+.openBankType .tblWrap table{width:100%}
+.openBankType .tblWrap table th, .tblWrap table td{padding:4px 0 3px}
+.openBankType .tblWrap table th{color:#666;font-weight:normal;text-align:left;padding-right:10px;width:100px}
+.openBankType .tblWrap table td{text-align:right}
+.openBankType .tblWrap table + table{margin-top:26px}
+
+/* 완료메시지 */
+.openBankType .topConfirmArea{font-size:20px;line-height:1.2}
+.openBankType .topConfirmArea strong{font-family:'NotoKR_bold'}
+.openBankType .topConfirmArea.confirmMsg{padding:122px 0 65px}
+.openBankType .topConfirmArea.confirmMsg.type01{background-position:50% 65px}
+.openBankType .topConfirmArea.confirmMsg.type02{background-position:50% 65px}
+.openBankType .topConfirmArea.confirmMsg.pd{padding:80px 0 30px}
+.openBankType .topConfirmArea.confirmMsg.pd.type01{background-position:50% 30px}
+/* 계좌등록 */
+.openBankType .contOpen{position:absolute;top:19px;right:18px;display:inline-block;width:30px;height:30px;background:url('../images/open/arr_accDown.png') no-repeat center center;background-size:14px 8px;text-indent:-9999px;z-index:1}
+.openBankType .contOpen.subContOpen{top:-4px}
+.openBankType .contOpen.active{background-image:url('../images/open/arr_accUp.png')}
+.openBankType .accDel{position:absolute;top:19px;right:48px;display:inline-block;width:30px;height:30px;background:url('../images/open/btn_del.png') no-repeat center center;background-size:12px 14px;text-indent:-9999px;z-index:0}
+.openBankType .inputBtnWrap{display:table;width:100%}
+.openBankType .inputBtnWrap input, .openBankType .inputBtnWrap .inputBtn{display:table-cell;vertical-align:middle}
+.openBankType .inputBtnWrap .inputBtn{width:86px;background-color:#627281;border-radius:0 6px 6px 0;color:#fff;font-size:15px;text-align:center}
+
+/* 계좌등록 완료 */
+.openBankType .accountFinishBox.roundBox{padding:23px 23px 24px}
+.openBankType .accountFinishBox ul li{display:table;width:100%;padding:18px 0;border-top:1px solid #f0f0f5}
+.openBankType .accountFinishBox ul li:first-child{border-top:0;padding-top:0}
+.openBankType .accountFinishBox ul li:last-child{padding-bottom:0}
+.openBankType .accountFinishBox ul [class*="bankImgType"]:before, .openBankType .accountFinishBox ul li .bankInfo{display:table-cell;vertical-align:middle}
+.openBankType .accountFinishBox ul [class*="bankImgType"]:before{width:50px;background-position:left center}
+.openBankType .accountFinishBox ul li .bankInfo > div{overflow:hidden}
+.openBankType .accountFinishBox ul li .bankInfo > div span:first-child{float:left}
+.openBankType .accountFinishBox ul li .bankInfo > div span:last-child{float:right}
+.openBankType .accountFinishBox ul li .bankInfo .bankName{font-weight:bold}
+.openBankType .accountFinishBox ul li .bankInfo .bankNick{color:#19A647;font-size:13px;font-weight:bold;letter-spacing:-1px} 
+.openBankType .accountFinishBox ul li .bankInfo .bankAcc{letter-spacing:-0.5px}
+.openBankType .accountFinishBox ul li .bankInfo .bankDate{margin-top:2px;color:#666666;font-size:11px;letter-spacing:-0.5px} 
+.openBankType .accountFinishBox ul li .bankInfo .bankStatus{color:#666666;font-size:12px}
+/* SNS 공유 */
+.openBankType .snsWrap{padding:0}
+.openBankType .snsWrap ul li{margin:0 6px}
+.openBankType .snsWrap ul li a{position:relative;min-width:30px;min-height:30px;padding-top:0} 
+.openBankType .snsWrap ul li a .blind{width:100% !important;height:100% !important;left:0 !important} 
+.openBankType .snsWrap ul li.sns01 a{background:url('../images/open/accountShareList01.png') no-repeat 50% 50%;background-size:21.5px 21px}  /* SMS */
+.openBankType .snsWrap ul li.sns02 a{background:url('../images/open/accountShareList02.png') no-repeat 50% 50%;background-size:22px 20.5px}  /* 카카오톡*/
+.openBankType .snsWrap ul li.sns03 a{background:url('../images/open/accountShareList03.png') no-repeat 50% 50%;background-size:21px 16px}  /* 이메일 */
+/* 상단 계좌정보, 선택 영역 */
+.openBankType .accountHeader{margin:0;padding:30px 24px 28px;background-color:transparent}
+.openBankType .accountHeader.roundBox{background-color:#fff;padding:25px 24px}
+.openBankType .accountHeader .accTit{margin-bottom:0;color:#627281;font-size:14px;font-weight:normal}
+.openBankType .accountHeader .amnt{font-size:20px}
+.openBankType .accountHeader .amnt .wUnit{font-weight:bold !important}
+.openBankType .accountHeader .amnt strong{font-family:'NotoKR_bold';font-size:30px;letter-spacing:-0.5px}
+.openBankType .accountHeader [class*="bankImgType"]:before{width:24px;height:24px;background-size:cover}
+.openBankType .accountHeader .bankInfo{margin-top:6px}
+.openBankType .accountHeader .bankName{margin:0 3px 0 4px;font-weight:bold}
+.openBankType .accountHeader .bankName, .openBankType .accountHeader .bankAccNum{display:inline-block;margin-bottom:2px;vertical-align:middle}
+.openBankType .accountHeader .openAccInfo{position:relative}
+.openBankType .accountHeader .openAccInfo[class*="bankImgType"]:before{position:absolute;top:0px;right:0px;width:36px;height:36px}
+.openBankType .accountHeader .openAccInfo .accTit{color:#111}
+.openBankType .accountHeader .openAccInfo .accNum{color:#111;font-size:14px;font-weight:normal;letter-spacing:-0.5px}
+.openBankType .accountHeader .openAccInfo .accNum:after{background:url('../images/open/select_arrow.png') no-repeat 100% 50%;background-size:10px 7px}
+.openBankType .accountHeader .accPriceArea{display:table;width:100%}
+.openBankType .accountHeader .accPriceArea dt, .openBankType .accountHeader .accPriceArea dd{display:table-cell;vertical-align:middle;letter-spacing:-0.5px}
+.openBankType .accountHeader .accPriceArea dt{color:#627281;text-align:left;padding-top:2px}
+.openBankType .accountHeader .accPriceArea dd strong{font-size:20px;font-family:'NotoKR_bold'}
+.openBankType .accountHeader .accPriceArea dd .wUnit{font-size:18px;vertical-align:middle}
+.openBankType .accountHeader.accountDelHeader{padding:35px 24px 35px}
+.openBankType .accountHeader.accountDelHeader .accTit{font-size:16px;font-weight:bold}
+.openBankType .accountHeader.accountDelHeader [class*="bankImgType"]:before{top:-5px}
+/* 거래내역조회 */
+.openBankType .bankingListWrap.roundBox{position:relative;padding:24px 25px 7px}
+.openBankType .bankingListWrap .srchDate{position:absolute;top:22px;right:23px}
+.openBankType .bankingListWrap .srchDate span{font-size:12px;color:#666}
+.openBankType .bankingListWrap .optionBtn{display:inline-block;padding-right:22px;background:url('../images/open/arr_accDown.png') no-repeat right center;background-size:14px 8px;font-weight:bold}
+.openBankType .bankingListWrap .optionBtn.active{background-image:url('../images/open/arr_accUp.png')}
+.openBankType .bankingListWrap .tblWrap{padding:20px 0 22px;border:1px solid #cccdd0;border-width:1px 0 1px 0}
+.openBankType .bankingListWrap .snsWrap{padding:26px 0 23px}
+.openBankType .bankingList{margin-top:18px}
+.openBankType .bankingList li{padding:17px 0 19px;border-top:1px solid #dedede}
+.openBankType .bankingList li:first-child{border-top:0}
+.openBankType .bankingList .detailCont{display:table;width:100%;margin-bottom:5px}
+.openBankType .bankingList .detailCont .detailTit, .openBankType .bankingList .detailCont .detailAmnt{display:table-cell;vertical-align:top}
+.openBankType .bankingList .detailCont .detailTit{max-width:140px;padding-right:15px;font-weight:bold;line-height:1.3}
+.openBankType .bankingList .detailCont .detailAmnt{text-align:right}
+.openBankType .bankingList .detailCont .detailAmnt strong{font-family:'NotoKR_bold';font-size:15px;vertical-align:middle}
+.openBankType .bankingList .detailCont .detailAmnt .wUnit{vertical-align:middle}
+.openBankType .bankingList .stateWrap{display:table;width:100%}
+.openBankType .bankingList .stateWrap .date, .openBankType .bankingList .stateWrap .total{display:table-cell;color:#666;font-size:13px;vertical-align:middle} 
+.openBankType .bankingList .stateWrap .total{text-align:right}
+.openBankType .bankingListWrap.roundBox .btnFuncTip{margin-top:0}
+/* 거래내역 없을 경우 */
+.openBankType .listNone{background:url('../images/open/bg_listNone.png') no-repeat 50% 88px;background-size:48px 48px;text-align:center}
+.openBankType .listNone p{padding:150px 0;font-size:18px}
+/* 거래내역 추가옵션 버튼 */
+.openBankType .listAddMenu{display:none;position:fixed;bottom:67px;right:20px;width:44px;height:44px;z-index:1199}
+.openBankType .listAddMenu .dim{display:none;z-index:1101}
+.openBankType .listAddMenu ul{display:none;position:fixed;bottom:122px;right:20px;width:100%;z-index:1199}
+.openBankType .listAddMenu ul li{margin-top:12px;text-align:right}
+.openBankType .listAddMenu ul li:first-child{margin-top:0}
+.openBankType .listAddMenu ul li a{display:inline-block;color:#fff}
+.openBankType .listAddMenu ul li a:after{content:'';display:inline-block;width:44px;height:44px;margin-left:13px;background:no-repeat 0 0;background-size:cover;text-align:right;vertical-align:middle}
+.openBankType .listAddMenu ul li a.btn01:after{background-image:url('../images/open/btn_optionSet01.png')}
+.openBankType .listAddMenu ul li a.btn02:after{background-image:url('../images/open/btn_optionSet02.png')}
+.openBankType .listAddMenu ul li a.btn03:after{background-image:url('../images/open/btn_optionSet03.png')}
+.openBankType .listAddMenu .listAdd{position:fixed;bottom:50px;right:17px;display:inline-block;width:44px;height:44px;background-color:#19A647;border-radius:18px;z-index:1199;box-shadow:2px 3px 10px 0px rgba(0, 0, 0, 0.2)}
+.openBankType .listAddMenu .listAdd .plus{display:block;width:44px;height:44px;background:url('../images/open/btn_optionPlus.png') no-repeat center center;background-size:18px 18px;-webkit-transition-duration:0.3s;transition-duration:0.3s}
+.openBankType .listAddMenu .listAdd.on .plus{transform:rotateZ(45deg)}
+/* 금액설정 버튼 */
+.openBankType .areaBtnPrice.toggleCont{margin-top:25px}
+.openBankType .areaBtnPrice .inner li a{border-radius:3px;background-color:#e9ecf2;color:#627281;font-size:11px;font-weight:bold}
+.openBankType .areaBtnPrice .inner li a.btnAddonPoint{background-color:#19A647;color:#fff}
+.openBankType .areaBtnPrice .inner li a.btnAddon{border:0;background-color:#627281;color:#fff;line-height:30px}
+.openBankType .formWrap .areaBtnPrice .inner ul{table-layout:inherit}
+.openBankType .formWrap .areaBtnPrice .inner ul li a{min-width:40px}
+.openBankType .formWrap .areaBtnPrice .inner ul li:last-child{width:60px}
+.openBankType .formWrap .areaBtnPrice.type02 .inner ul{table-layout:fixed}
+/* 이체 */
+.openBankType .formWrap .unit{margin:-2px 0 9px;font-size:13px;text-align:right}
+.openBankType .formWrap .unit.toggleCont em{display:inline-block;padding-top:10px}
+/* 배너영역 */
+.openBankType .bannerArea{border-bottom:1px solid #dedede;text-align:center}
+.openBankType .bannerArea a{display:block;text-align:center}
+.openBankType .bannerArea a img{max-width:100%;vertical-align:middle}
+.openBankType .InfoBox {margin: 0 3%; margin-bottom:40px; border-radius: 3px; padding:10px 15px;background: #fff url('../images/open/ico_InfoBox.png') no-repeat left 15px top 22px; background-size:40px 48px}
+.openBankType .InfoBox p {padding-left:47px; letter-spacing: -1.3px; font-size:14px; line-height:1; margin:14px 0}
+/* 충전 */
+.openBankType .accDetailInfo{overflow:hidden;width:100%;margin-top:8px}
+.openBankType .accDetailInfo .accNickname{float:left;color:#666;font-size:13px}
+.openBankType .accDetailInfo dl{float:right;text-align:right}
+.openBankType .accDetailInfo dt{color:#666;font-size:13px}
+.openBankType .accDetailInfo dd{margin-top:2px}
+.openBankType .accDetailInfo dd strong{font-size:15px;font-family:'NotoKR_bold'}
+.openBankType .cautionTxt{min-height:20px;margin-top:12px;padding-left:24px;background:url('../images/open/ico_caution.png') no-repeat 0 0px;background-size:17px 17px;color:#e94b00;font-size:12px;line-height:1.35}
+.openBankType .totalCharge{position:fixed;left:0;bottom:56px;width:100%;padding:0 22px;display:block;z-index:2}
+.openBankType .totalCharge:before{content:'';display:block;width:100%;height:30px;background:-webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)}
+.openBankType .totalCharge:after{content:'';display:block;width:100%;height:12px;background-color:#fff}
+.openBankType .totalCharge p{height:32px;line-height:32px;color:#627281;font-size:15px;background-color:#e9ecf2;text-align:center;border-radius:3px}
+.openBankType .totalCharge strong{font-family:'NotoKR_bold'}
+.openBankType .totalCharge.type2:before, .openBankType .totalCharge.type2:after{content:none}
+.openBankType .totalCharge.type2{padding:16px 22px;border-top:1px solid #e5e5e9;background:#fff}
+.openBankType .totalCharge.type2 dt{display:inline-block;vertical-align:middle}
+.openBankType .totalCharge.type2 dd{display:inline-block;margin-left:8px}
+.openBankType .totalCharge.type2 dd strong{display:inline-block;font-size:20px;font-family:'NotoKR_bold';vertical-align:middle}
+.openBankType .totalCharge.type2 dd .wUnit{color:#19A647 !important;vertical-align:middle}
+
+/* 등록된 계좌목록 팝업 */
+.openBankType .openPopContList{padding:0 30px}
+.openBankType .openPopContList .accountTit{font-size:14px;color:#666666;line-height:1.714;;margin-top:30px}
+.openBankType .openPopContList .accountSlideList{padding-bottom:7px;margin-top:10px}
+.openBankType .openPopContList .accountSlideList li{position:relative;padding-left:50px;margin-top:20px}
+.openBankType .openPopContList .accountSwitch{position:absolute;top:15px;right:0}
+.openBankType .openPopContList .bankAccount span{font-size:14px;color:#111111;display:block}
+.openBankType .openPopContList .bankAccount span:first-child{padding-right:5px}
+.openBankType .openPopContList .subBankTit{font-size:13px;color:#627281;padding-top:1px}
+.openBankType .accountSlideList [class*="bankImgType"]:before{position:absolute;top:0;left:0;content:"";display:block;width:36px;height:60px}
+.openBankType .accountSwitch .switch{position:relative;display:inline-block;width:40px;height:24px;margin-top:4px}
+.openBankType .accountSwitch .switch input{display:inline-block;width:100%;height:100%;opacity:0;font-size:1px;line-height:1px}
+.openBankType .accountSwitch .switch .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#cccdd0;-webkit-transition:.4s;transition:.4s}
+.openBankType .accountSwitch .switch .slider:after{position:absolute;content:'';height:20px;width:20px;left:3px;top:2px;background-color:#fff;-webkit-transition:.4s;transition:.4s;border:0;color:transparent;font-size:1px;line-height:1px}
+.openBankType .accountSwitch .switch input:checked + .slider:after{top:2px;background-color:#fff;border:0;vertical-align:middle}
+.openBankType .accountSwitch .switch input:checked + .slider{background-color:#19A647}
+.openBankType .switch input:focus + .slider{height:24px;box-shadow:none;position:absolute;display:inline-block;vertical-align:middle}
+.openBankType .accountSwitch .switch input:checked + .slider:after{content:'';-webkit-transform:translateX(14px);transform:translateX(14px)}
+.openBankType .openPopContList .accountSlideListWrap{position:relative;overflow-y:auto;margin:0 -17px;padding:25px 24px 35px} 
+.openBankType .openPopContList .accountSlideListWrap .openInfoTxt{margin-bottom:25px;padding-left:14px;color:#666666;font-size:13px;text-indent:-16px} 
+.openBankType .openPopContList .accountSlideListWrap .checkAll{position:relative;padding:13px 9px 14px;margin:0 -11px;background-color:#e9ecf2;border-radius:3px}
+.openBankType .openPopContList .accountSlideListWrap .checkAll  label{margin-left:10px}
+.openBankType .openPopContList .accountSlideListWrap .checkAll .infoTxt.dib{position:absolute;right:10px;top:9px}
+.openBankType .openPopContList .accountSlideList.isChk{border-top:0} 
+.openBankType .openPopContList .accountSlideList.isChk li{display:table;width:100%;min-height:36px;border-bottom:1px solid #f0f0f5;padding:16px 0 17px;margin-top:0} 
+.openBankType .openPopContList .accountSlideList.isChk li:last-child{border-bottom:0}
+.openBankType .accountSlideList.isChk [class*="bankImgType"]:before{display:none}
+.openBankType .accountSlideList.isChk .chk{display:table-cell;vertical-align:middle;width:21px}
+.openBankType .accountSlideList.isChk label{position:relative;display:table-cell;padding-left:70px;vertical-align:middle}
+.openBankType .accountSlideList.isChk .bankAccount > a{display:table;width:100%;margin-top:10px}
+.openBankType .accountSlideList.isChk .bankAccount span{display:table-cell;color:#666;font-size:13px;vertical-align:middle}
+.openBankType .accountSlideList.isChk .bankAccount span:last-child{text-align:right}
+.openBankType .accountSlideList.isChk .amntInfo{margin-top:4px}
+.openBankType .accountSlideList.isChk .amntInfo [class*="acc"]{display:table;width:100%}
+.openBankType .accountSlideList.isChk .amntInfo [class*="acc"] span{display:table-cell;vertical-align:middle;font-size:13px;font-weight:bold;color:#666666}
+.openBankType .accountSlideList.isChk .amntInfo [class*="acc"] div{display:table-cell;vertical-align:middle;text-align:right;color:#666666}
+.openBankType .accountSlideList.isChk .amntInfo .accAmnt strong{font-size:15px;font-family:"NotoKR_bold";vertical-align:middle;color:#111}
+.openBankType .accountSlideList.isChk .amntInfo .accAmnt .wUnit{font-size:14px;vertical-align:middle;color:#111}
+.openBankType .accountSlideList.isChk .state{position:absolute;top:1px;right:0;height:18px;padding:0 3px;border:1px solid #19A647;background-color:#fff;border-radius:3px;font-size:12px;line-height:15px}
+.openBankType .accountSlideList.isChk .state.type01{color:#19A647}
+.openBankType .accountSlideList.isChk .state.type02{border-color:#888888;color:#888888}
+.openBankType .accountSlideList.isChk .state.pointColor2{border-color:#f44336}
+.openBankType .accountSlideList.isChk label:before{display:inline-block;width:36px;height:36px;background:no-repeat center center;background-size:36px 36px;font-size:1px;color:transparent;vertical-align:middle}
+.openBankType .accountSlideList.isChk label:before{position:absolute;top:50%;left:13px;content:"";margin-top:-18px}
+.openBankType .accountSlideList.isChk .bankSubject{margin-top:8px;line-height:1.2;font-weight:bold}
+.openBankType .accountSlideList.isChk .status{position:absolute;top:73px;left:8px;font-size:12px}
+.openBankType .accountSlideList.isChk .status.type01{color:#19A647;left:14px}
+.openBankType .accountSlideList.isChk .status.type02{color:#e94b00}
+.openBankType .accountSlideList.isChk .accLink{display:table-cell;width:30px;background:url('../images/open/arrow_right.png') no-repeat right center;background-size:8px 14px;vertical-align:middle}
+.openBankType .accountSlideList.isChk .bankImgType01 label:before{content:'KDB산업은행 로고';background-image:url(../images/open/ico_bank01.png)}  /* KDB산업 */
+.openBankType .accountSlideList.isChk .bankImgType02 label:before{content:'농협은행 로고';background-image:url(../images/open/ico_bank02.png)}  /* 농협 */ 
+.openBankType .accountSlideList.isChk .bankImgType03 label:before{content:'신한(구조흥)은행 로고';background-image:url(../images/open/ico_bank03.png)}  /* 신한(구조흥) */
+.openBankType .accountSlideList.isChk .bankImgType04 label:before{content:'우리은행 로고';background-image:url(../images/open/ico_bank04.png)}  /* 우리 */
+.openBankType .accountSlideList.isChk .bankImgType05 label:before{content:'SC은행 로고';background-image:url(../images/open/ico_bank05.png)}  /* SC은행 */
+.openBankType .accountSlideList.isChk .bankImgType06 label:before{content:'KEB하나은행 로고';background-image:url(../images/open/ico_bank06.png)}  /* KEB하나 */
+.openBankType .accountSlideList.isChk .bankImgType07 label:before{content:'기업은행 로고';background-image:url(../images/open/ico_bank07.png)}  /* 기업 */
+.openBankType .accountSlideList.isChk .bankImgType08 label:before{content:'국민은행 로고';background-image:url(../images/open/ico_bank08.png)}  /* 국민 */
+.openBankType .accountSlideList.isChk .bankImgType09 label:before{content:'구외환은행 로고';background-image:url(../images/open/ico_bank06.png)}  /* 구외환 */
+.openBankType .accountSlideList.isChk .bankImgType10 label:before{content:'한국씨티은행 로고';background-image:url(../images/open/ico_bank10.png)}  /* 한국씨티 */
+.openBankType .accountSlideList.isChk .bankImgType11 label:before{content:'한국수출입은행 로고';background-image:url(../images/open/ico_bank11.png)}  /* 한국수출입 */
+.openBankType .accountSlideList.isChk .bankImgType12 label:before{content:'수협은행 로고';background-image:url(../images/open/ico_bank12.png)}  /* 수협 */
+.openBankType .accountSlideList.isChk .bankImgType13 label:before{content:'대구은행 로고';background-image:url(../images/open/ico_bank13.png)}  /* 대구 */
+.openBankType .accountSlideList.isChk .bankImgType14 label:before{content:'부산은행 로고';background-image:url(../images/open/ico_bank14.png)}  /* 부산 */
+.openBankType .accountSlideList.isChk .bankImgType15 label:before{content:'광주/전북 로고';background-image:url(../images/open/ico_bank15.png)}  /* 광주/전북 */
+.openBankType .accountSlideList.isChk .bankImgType16 label:before{content:'경남은행 로고';background-image:url(../images/open/ico_bank16.png)}  /* 경남 */
+.openBankType .accountSlideList.isChk .bankImgType17 label:before{content:'케이뱅크 로고';background-image:url(../images/open/ico_bank17.png)}  /* 케이뱅크 */
+.openBankType .accountSlideList.isChk .bankImgType18 label:before{content:'카카오뱅크 로고';background-image:url(../images/open/ico_bank18.png)}  /* 카카오 */
+
+/* 조회 */
+.openBankType .headSelectTit{padding:28px 24px 25px}
+.openBankType .headSelectTit span{font-size:14px;color:#627281}
+.openBankType .headSelectTit p{font-size:20px;font-weight:bold;margin-top:3px;font-family:"NotoKR_bold"}
+.openBankType .accountSelectList li:first-child{margin-top:0}
+.openBankType .accountSelectList > li{border:1px solid #e5e5e9;background:#ffffff;border-radius:20px;margin-top:12px;position:relative}
+.openBankType .accountSelectList li > a{display:block;padding:30px 24px 30px 77px}
+.openBankType .accountSelectList li > a:after{content:"";display:block;width:14px;height:8px;background:url(../images/open/arr_accDown.png) no-repeat;background-size:100% 100%;position:absolute;right:24px;top:40px}
+.openBankType .accountSelectList li > a.active:after{background:url(../images/open/arr_accUp.png) no-repeat;background-size:100% 100%}
+.openBankType .accountSelectList .bankName{font-size:16px;font-weight:bold}
+.openBankType .accountSelectList .bankNum{background:#e9ecf2;display:inline-block;padding:0 6px;border-radius:4px;position:relative;top:0;left:7px}
+.openBankType .accountSelectList .bankName:before{height:84px;position:absolute;top:0;left:24px}
+.openBankType .bankNickWrap{padding-left:2px;position:relative;display:table;width:100%}
+.openBankType .bankNickWrap .bankNickTxt{display:table-cell}
+.openBankType .bankNickWrap .dealBtn{display:table-cell;vertical-align:middle;padding-right:6px;text-align:right;width:28%}
+.openBankType .bankNickWrap .dealBtn a{font-size:13px;color:#627281}
+.openBankType .bankNickWrap .dealBtn a:after{content:"";display:inline-block;width:6px;height:10px;background:url(../images/open/ico_dealBtn.png) no-repeat;background-size:100% 100%;margin-left:7px}
+.openBankType .bankNickWrap p{font-size:14px;color:#111111}
+.openBankType .bankNickWrap p:last-child{margin-top:8px;font-size:13px}
+.openBankType .bankNickWrap p span{display:block;padding-top:3px}
+.openBankType .bankSubNick{padding-top:15px;padding-bottom:25px;border-top:1px solid #f0f0f5;margin-left:24px}
+.openBankType .openBankBanner{position:fixed;bottom:46px;border-top:1px solid #dedede}
+.openBankType .openBankBanner a{display:block;text-align:center}
+.openBankType .openBankBanner a img{max-width:100%}
+/* 등록된 계좌 없음 */
+.openBankType .accPlus{padding:24px 25px 30px}
+.openBankType .accPlus h2{font-size:20px;font-family:'NotoKR_bold'}
+.openBankType .accPlus p{margin-top:7px;color:#666666;font-size:13px;line-height:1.462}
+.openBankType .accPlus .accPlusBtn{margin-top:40px;text-align:center}
+.openBankType .accPlus .accPlusBtn a{display:inline-block;padding-top:54px;background:url('../images/open/btn_addPlus.png') no-repeat 50% 0;background-size:40px 40px;font-size:18px}
+/* 계좌관리 */
+.openBankType .accountDelList{border-top:1px solid #f0f0f5;margin-top:20px;padding-top:20px}
+.openBankType .accountDelList li{position:relative}
+.openBankType .accountDelList li .PayNickname{position:absolute;top:0;right:0;width:200px;text-align:right}
+.openBankType .accountDelList li .PayNickname span{color:#19A647;font-weight:bold;padding-right:5px;display:block;font-size:13px;letter-spacing:-1px;display:inline-block;vertical-align:middle;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:150px}
+.openBankType .accountDelList li .PayNickname .nickPopBtn{font-size:11px;font-weight:bold;color:#627281;border:1px solid #e5e5e9;padding:3px 10px;border-radius:4px;display:inline-block;vertical-align:middle}
+.openBankType .accountDelList li .accountSwitch{position:absolute;top:-2px;right:0}
+.openBankType .btnFuncTip{display:inline-block;width:17px;height:17px;margin:-3px 0 0 2px;background:url('../images/common/ico_exclamation.png') no-repeat 0 0;background-size:cover;text-indent:-9999px;vertical-align:middle}
+.openBankType .popWrap.toolTipBase{position:fixed}
+.openBankType .popInputWrap{padding:0 20px 30px}
+.openBankType .accountSelectList.accountManagement li > a{display:block;padding:18px 24px 18px 77px}
+.openBankType .accountSelectList.accountManagement .bankAccountNum{font-size:14px;padding-top:3px;display:inline-block}
+.openBankType .accountSelectList.accountManagement li > a:after{background:url(../images/open/arrow_right.png) no-repeat;width:9px;height:14px;background-size:100% 100%;top:36px}
+.openBankType .accountSelectList.accountManagement .subBankName{color:#19A647;font-size:13px;font-weight:bold;display:block}
+.openBankType .accountSelectList.accountManagement .bankName span:first-child{font-size:14px}
+.openBankType .boxGray{padding:20px 16px;margin:-10px 20px 20px}
+.openBankType .roundBoxLine h2:first-child{border-top:0}
+.openBankType .roundBoxLine h2{border-top:1px solid #f0f0f5;padding-top:25px}
+.openBankType .roundBoxLine .snsWrap{border-top:1px solid #f0f0f5;padding-top:25px;margin-top:25px}
+.openBankType .fontBold{font-family:"NotoKR_bold"}
+/* 다건충전 */
+.openBankType .chargeTit > p {padding: 24px 24px 26px; font-size: 17px; color: #666}
+.openBankType .chargeTit > p .fontB {font-family: 'NotoKR_bold'; font-size: 20px; color: #111}
+.openBankType .chargeSubTit {padding:20px 24px 11px}
+.openBankType .chargeSubTit > .tit {font-size: 16px; font-weight: bold}
+.openBankType .chargeSubTit > .tit > span {font-size: 14px}
+.openBankType .chargeSubTit .infoTxt {margin: 3px 0 0 0}
+.openBankType .chargeSubTit .infoTxt:before {display:inline-block; width:17px; height:17px; background-image:url('../images/common/ico_exclamation.png'); background-size:17px 17px}
+.openBankType .checkSelecList {overflow: hidden; position: relative}
+.openBankType .checkSelecList {padding: 21px 25px 0; border-top: 1px solid #e5e5e9; background: #fff}
+.openBankType .bankingListWrap .checkSelecList:last-child  {border-bottom: 1px solid #e5e5e9}
+.openBankType .checkSelecList .checkCover {display: block;  padding: 0 24px 23px 47px}
+.openBankType .checkSelecList .checkCover > input {position: absolute; top: 40px; right: 24px}
+.openBankType .checkSelecList .checkCover .bankNameWrap {margin-bottom: 6px}
+.openBankType .checkSelecList .checkCover .bankName{font-weight:bold}
+.openBankType .checkSelecList .checkCover .bankNum{background:#e9ecf2;display:inline-block;padding:0 6px;border-radius:4px;position:relative;top:0;left:7px}
+.openBankType .checkSelecList .checkCover .bankName:before{height:84px;position:absolute;top:1px;left:24px}
+.openBankType .checkSelecList .checkCover .accInfo {margin-top: 10px}
+.openBankType .checkSelecList .checkCover .accInfo .amount {font-weight: bold}  
+.openBankType .checkSelecList .checkCover .accInfo .amount > em {font-size: 17px;  font-family: 'NotoKR_bold'; color: #111}
+.openBankType .checkSelecList .checkCover .accInfo .amount > .wUnit {font-weight: bold !important}
+.openBankType .checkSelecList .formWrap {margin-top: -5px}
+.openBankType .checkSelecList  .bankSubNick {margin-left: 0; padding-top: 0; border: 0}
+.openBankType .checkSelecList .confirmNone {position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; background: rgba(0,0,0,.7)}
+.openBankType .checkSelecList .confirmNone > p {padding-top: 26px; font-size: 15px; color: #fff}
+.openBankType .checkSelecList .confirmNone .resetBtn {display: inline-block; height: 30px; line-height: 28px; margin-top: 12px; padding: 0 15px 0 35px; vertical-align: middle; font-size: 13px; color: #fff; border: 1px solid #fff; border-radius: 10px; background: url('../images/contents/btn_re_time.png') no-repeat 15px 50%; background-size: 12px auto}
+.openBankType .checkSelecList .formWrap input {height:44px; line-height:44px;/*  margin-top:-1px; */ padding:10px 45px 10px 5px; font-size:16px; font-weight:bold; border-radius:0; border:0;border-bottom:1px solid #ababab}
+.openBankType .checkSelecList .formWrap input:focus{border-color:#046fd9;caret-color:#046fd9}
+.openBankType .roundBoxLine {position: relative}
+.openBankType .roundBoxLine .snsWrap.type2 {position: absolute; top: 15px; right: 14px; padding:0; margin: 0; border: 0}
+.openBankType .btnFullMoreCover {text-align: center}
+.openBankType .btnFullMoreCover > .block {margin: 20px 0}
+.openBankType .btnFullMoreCover > .block .arrow {display:inline-block; width:18px;height:10px;margin-left:3px; vertical-align: middle; background:url('../images/common/ico_arr_down.png') no-repeat 0 0;background-size:16px 10px}
+.openBankType .btnFullMoreCover > .block > .accAddBtn  {display: inline-block; width: auto; margin: 0; vertical-align: middle}
+.openBankType .btnFullMoreCover > .block > .accAddBtn:before {display: none}
+.openBankType .btnFullMoreCover > .block > .num {display: inline-block; height: 40px; line-height: 38px; font-size:18px; font-weight: bold; color: #111; vertical-align: middle}
+/* 본인확인 */
+.openBankType .headerTit p{font-size:16px;font-weight:bold;padding:32px 24px 35px}
+.openBankType .roundBoxWrap li{margin-top:11px;font-size:16px;font-weight:bold}
+.openBankType .roundBoxWrap li:first-child{margin-top:0}
+.openBankType .roundBoxWrap li a{display:block;padding:28px 24px;background:url(../images/open/arrow_right.png) no-repeat center right 24px;background-size:8px 14px}
+.openBankType .roundBoxWrap li a:before{content:"";display:inline-block;position:absolute}
+.openBankType .roundBoxWrap li.confirmBox01 a:before{background:url(../images/open/ico_confirm01.png) no-repeat;width:30px;height:28px;background-size:100% 100%}
+.openBankType .roundBoxWrap li.confirmBox02 a:before{background:url(../images/open/ico_confirm02.png) no-repeat;width:27px;height:28px;background-size:100% 100%}
+.openBankType .roundBoxWrap li p{padding-left:45px}
+.openBankType .infoTxt{display:inline-block;margin-left:5px;padding-left:23px}
+.openBankType .infoTxt:before{display:inline-block;width:17px;height:17px;background-image:url('../images/open/ico_exclamation.png');background-size:17px 17px}
+/* 메인 */
+.openBankType .openMainTit{position:relative;padding:31px 24px 27.5px;font-size:20px;color:#666}
+.openBankType .openMainTit strong{font-family:'NotoKR_bold';color:#19A647}
+.openBankType .openMainTit .userName{display:block;margin-bottom:15px;font-size:25px;font-weight:bold;color:#111}
+.openBankType .openMainTit a{display:inline-block;margin-top:23px;padding-right:30px;font-weight:bold;font-size:16px;color:#19A647;background:url('../images/open/btn_addAcc.png') no-repeat 100% 50%;background-size:22px 22px}
+.openBankType .openMainTit .btnType01{position:absolute;top:15px;right:15px;height:19px;line-height:19px;margin:0;padding:0 8px;font-size:12px;font-weight:normal;color:#fff;border-radius:10px;background-color:#a3aeb6;background-image:none}
+.openBankType .transAccList.roundBox{margin-top:15px;padding:16px 25px 17px;border-radius:20px 20px 0 0;border-width:1px 0}
+.openBankType .transAccList.roundBox h3{margin-bottom:12px;font-size:14px}
+.openBankType .transAccList.roundBox ul li{position:relative;margin-top:10px}
+.openBankType .transAccList.roundBox ul li:first-child{margin-top:0}
+.openBankType .transAccList.roundBox [class*="bankImgType"]:before{width:24px;height:24px;margin-right:9px;background-size:24px 24px}
+.openBankType .transAccList.roundBox a{position:absolute;top:50%;right:0px;margin-top:-12px;display:inline-block;border:1px solid #e5e5e9;border-radius:3px;color:#627281;background-color:#fff;font-size:11px;padding:0 10px;height:24px;line-height:22px}
+.openBankType .assetManageWrap.roundBox{margin-top:51px;padding:20px 25px 22px}
+.openBankType .assetManageWrap.roundBox a{display:block;padding-top:3px;background:url('../images/open/arrow_right.png') no-repeat 100% 50%;background-size:8px 14px;font-size:16px;font-weight:bold;color:#111}
+.openBankType .assetManageWrap.roundBox a:before{content:'';display:inline-block;width:28px;height:26px;margin-top:-2px;margin-right:14px;background:url('../images/open/ico_assetLink.png') no-repeat 0 0;background-size:28px 26px;vertical-align:middle}
+.openBankType .assetManageWrap.roundBox + .quickMenu{margin-top:15px;border-top:1px solid #dedede}
+.openBankType .quickMenu{padding:28px 15px;background-color:#fff;border-bottom:1px solid #dedede}
+.openBankType .quickMenu ul{overflow:hidden}
+.openBankType .quickMenu ul li{float:left;width:25%;width:calc(100% / 4);text-align:center}
+.openBankType .quickMenu ul li a{display:inline-block;width:100%;padding-top:43px;background:no-repeat 50% 0}
+.openBankType .quickMenu ul li:nth-child(1) a{background-image:url('../images/open/ico_quickMenu01.png');background-size:34px 28px}
+.openBankType .quickMenu ul li:nth-child(2) a{background-image:url('../images/open/ico_quickMenu02.png');background-size:33.5px 29px}
+.openBankType .quickMenu ul li:nth-child(3) a{background-image:url('../images/open/ico_quickMenu03.png');background-size:34.5px 29px}
+.openBankType .quickMenu ul li:nth-child(4) a{background-image:url('../images/open/ico_quickMenu04.png');background-size:27px 29px}
+.openBankType .openMainTit .areaBodyBtnFull{margin:0}
+.openBankType .openMainTit .areaBodyBtnFull .btnBodyLine{border:0;background-color:#19A647;color:#fff;font-size:17px;font-weight:bold;height:48px;line-height:46px}
+/* 메인 초기화면 */
+.openBankType .mainIntroTitle{position:relative} /* 2020.03.11 추가 */
+.openBankType .mainIntroTitle > h2{font-size:30px;font-family:"NotoKR_bold";text-align:center;margin-top:36px}
+.openBankType .mainIntroTitle > p{font-size:16px;color:#666666;text-align:center;margin-top:20px}
+.openBankType .userAccountBtn{padding:0 24px;text-align:center;margin-top:30px}
+.openBankType .userAccountBtn a{display:block}
+.openBankType .userAccountBtn a img{max-width:100%}
+.openBankType .mainIntroTitle .btnType01{position:absolute;top:-21px;right:15px;height:19px;line-height:19px;margin:0;padding:0 8px;font-size:12px;font-weight:normal;color:#fff;border-radius:10px;background-color:#a3aeb6;background-image:none}
+@media only screen and (max-width :320px){
+	.openBankType .termWrap .termAll dd{letter-spacing:-1px}
+	.openPopContList .bankAccount span:first-child{padding-right:5px}
+	.openBankType .bankingList .detailCont .detailTit{max-width:120px;letter-spacing:-1px}
+	.openBankType .bankingList .detailCont .detailAmnt{letter-spacing:-1px}
+	.openBankType .formWrap .areaBtnPrice .inner ul li a{min-width:auto;letter-spacing:-1px}
+	.openBankType .accountHeader .accPriceArea dt{font-size:13px;letter-spacing:-1px}
+	.openBankType .accountHeader .accPriceArea dd{letter-spacing:-1px}
+	.openBankType .accountHeader .accPriceArea dd strong{font-size:18px}
+	.openBankType .accountHeader .accPriceArea dd .wUnit{font-size:16px}
+	.openBankType .tblWrap table th{letter-spacing:-0.8px;width:90px}
+	.openBankType .accountSlideList.isChk .bankAccount span{letter-spacing:-1px}
+	.openBankType .accountSlideList.isChk label{padding-left:60px}
+	.openBankType .accountSlideList.isChk .accLink a{width:20px}
+	.openBankType .accountSlideList.isChk .amntInfo [class*="acc"] div{letter-spacing:-1px}
+	.openBankType .accountSlideList.isChk label:before{left:10px}
+	.openBankType .accountSlideList.isChk .status{left:5px}
+	.openBankType .accountSlideList.isChk .status.type01{left:11px}
+}
+@media only screen and (max-width : 330px){
+	.openBankType .formWrap .areaBtnPrice .inner ul li a {min-width:auto}
+}
+
+.btnLinkTxt{margin-top:-10px;margin-left:5px;padding-right:23px;font-weight:bold;font-size:12px;background:url('../images/open/bg_btn_link.png') no-repeat center right 2px;background-size:16px 16px;border:0}
+.btnInquiry.openArsfinish{background-color:#6a7688;color:#fff}
+/* 등록, 이체, 타행 이용가이드 */
+.visualGuide{position:relative;background:#f8f8fb;text-align:center;padding-bottom:30px}
+.visualGuide p{font-size:25px;line-height:33px;letter-spacing:-.60px;padding-top:30px;padding-bottom:28px}
+.visualGuide p span{display:block;font-size:14px;line-height:22px;color:#666;padding-top:15px}
+.visualGuide.type01:after{content:'';display:block;margin:0 auto;width:299px;height:160px;background:url('../images/open/bg_guide01.png') no-repeat 0 0;background-size:100%}
+.visualGuide.type02:after{content:'';display:block;margin:0 auto;width:299px;height:160px;background:url('../images/open/bg_guide01.png') no-repeat 0 0;background-size:100%}
+.visualGuide.type02 span{padding-top:0;padding-bottom:10px}
+.visualGuide.type03 p{padding-top:20px;padding-bottom:0}
+.visualGuide.type03 span{padding-top:20px}
+.visualGuide.type03 span:before{content:'';display:block;margin:0 auto 20px;width:177px;height:106px;background:url('../images/open/bg_guide03.png') no-repeat 0 0;background-size:100%}
+.visualGuide.type03 .tit{padding:0;color:#fff;border-radius:100px;background:#19A647;font-size:12px;display:inline-block;padding:0 16px;line-height:23px;margin-bottom:8px}
+.visualGuide.type03 .tit:before{display:none}
+.visualGuide.type03 .tit em{padding-right:8px;margin-right:2px;background:url('../images/open/bg_bul_ico01.png') no-repeat right center;background-size:6px 10px}
+.guideDescBoxs{border:1px solid #e5e5e9;background:#fff;border-radius:25px;padding-top:25px;text-align:center;letter-spacing:-.40px}
+.guideDescBoxs ul li{margin:0 23px;padding:30px 0 34px;border-top:1px solid #f0f0f5}
+.guideDescBoxs ul li dl{padding-bottom:27px}
+.guideDescBoxs ul li dl dt{font-size:12px;color:#19A647}
+.guideDescBoxs ul li dl dd{font-size:16px;font-weight:bold;padding-top:2px}
+.guideDescBoxs ul li .img img{max-width:312px;width:100%;height:auto}
+.guideDescBoxs ul li:first-child{padding-top:0;border-top:none}
+/* 오픈뱅킹 약관 */
+.termsBdWrap{margin-top:20px;padding:0 20px 20px 20px;border:1px solid #e5e5e9}
+.termsBdWrap.in{margin-top:10px;padding:10px;border:1px solid #e5e5e9}
+.termsBdWrap.in > .popTemrsTit:first-child{margin-top:0}
+.termsBdWrap .listBulWrap {color:#666}
+.termsBdWrap .listBulWrap p {font-weight:normal}
+.termsBdWrap .listBul.dash>li {padding-left:13px;font-size:14px;line-height:1.4;color:#666;font-weight:normal}
+.termsBdWrap__num {padding-left:15px}
+.termsBdWrap__num > li:first-child {margin-top:0}
+.termsBdWrap__num > li {margin-top:20px;list-style:decimal;color:#111;font-weight:bold}
+.termsBdWrap__num > li .txt {margin-top:5px;font-size:14px;line-height:1.4;color:#666;font-weight:normal}
+.termsBdWrap__num > li .txtNoti {margin-top:10px;margin-left:18px;text-indent:-18px}
+.termsBdWrap__num > li .tbl {margin-left:-15px}
+.termsBdWrap__num > li .tbl table th {padding:10px 15px}
+table.pointTr tr:nth-last-child(2) > th,
+table.pointTr tr:nth-last-child(2) > td{border-bottom:0}
+table.pointTr tr:last-child > th{border:1px solid #111;border-right:0}
+table.pointTr tr:last-child > td{border:1px solid #111;border-left:1px solid #dedede;border-right:1px solid #dedede}
+table.pointTr tr:last-child > td:last-child{border:1px solid #111;border-left:1px solid #dedede}
+.fsup{font-size:15px}  
+.fsup h2{font-size:16px}
+.fsup [class^="wrapTbl"] th, [class^="wrapTbl"] td{font-size:14px}
+/* 나의자산관리 */
+.openBankType .assetManage{padding:32px 25px;background:url('../images/open/bg_asset.png') no-repeat right 30px top 32px;background-size:55.5px 55.5px}
+.openBankType .assetManage p{font-size:16px;font-weight:bold}
+.openBankType .assetList > ul > li{margin-top:13px;padding:0 23px 0 27.5px;border:1px solid #e5e5e9;border-radius:20px;background-color:#fff}
+.openBankType .assetList > ul > li > a{display:block;padding:25px 0 27px 45px;background:url('../images/open/arr_accDown.png') no-repeat right center;background-size:14px 8px;font-size:16px;font-weight:bold}
+.openBankType .assetList > ul > li > a.active{background-image:url('../images/open/arr_accUp.png')}
+.openBankType .assetList > ul > li:nth-child(1){background:#fff url('../images/open/ico_assetList01.png') no-repeat 27px 25px;background-size:28.5px 27px}
+.openBankType .assetList > ul > li:nth-child(2){background:#fff url('../images/open/ico_assetList02.png') no-repeat 27px 27.5px;background-size:29px 26px}
+.openBankType .assetList > ul > li:nth-child(3){background:#fff url('../images/open/ico_assetList03.png') no-repeat 27px 25px;background-size:25px 21px}
+.openBankType .assetList > ul > li:nth-child(4){background:#fff url('../images/open/ico_assetList04.png') no-repeat 27px 26px;background-size:28.5px 26.5px}
+.openBankType .assetList > ul > li:first-child{margin-top:0}
+.openBankType .assetList > ul > li ul{margin-left:47px;padding:21px 0 22px;border-top:1px solid #f0f0f5}
+.openBankType .assetList > ul > li ul li{margin-top:18px}
+.openBankType .assetList > ul > li ul li:first-child{margin-top:0}
+.openBankType .assetList > ul > li ul li a{display:block;background:url('../images/open/arrow_assetList.png') no-repeat right center;background-size:6px 10px}
+.openBankType .assetList > ul > li ul li a img{width:54px}
+.openBankType .assetBannerWrap{padding:10px 24px 0;position:fixed;bottom:46px;left:0;width:100%;background-color:#f8f8fb}
+.openBankType .assetBannerWrap .swiper-slide a{display:block}
+.openBankType .assetBannerWrap img{max-width:100%}
+.openBankType .assetBannerWrap .bannerPrev{position:absolute;top:50%;left:0px;z-index:1;color:transparent;opacity:0}
+.openBankType .assetBannerWrap .bannerNext{position:absolute;top:50%;right:0px;z-index:1;color:transparent;opacity:0}
+.openBankType .assetBannerWrap .swiper-pagination .swiper-pagination-bullet{width:4px;height:4px;margin:0 2px}
+.openBankType .assetBannerWrap .swiper-pagination{position:absolute;top:-10px;left:10px;height:10px;width:auto}
+.openBankType .assetBannerWrap .swiper-pagination-bullet-active{background-color:#19A647}
+/* 출금계좌 변경 */
+.accountInfo02 .openBankType .accountHeader{margin:0 -17px;background-color:#f3faff !important}
+.refundPossible{position:relative;padding-right:12px;color:#19A647}
+.refundPossible:before,
+.refundPossible:after{content:' ';position:absolute;top:50%;right:-5px;border:6px solid transparent;-webkit-transform:translateY(-38%);transform:translateY(-38%)}
+.refundPossible:before{border-left-color:#19A647}
+.refundPossible:after{border-left-color:#fff;margin-right:2px}
+.refundImpossible{position:relative;color:#f44336}
+.toggleWrap.positionR{position:relative}
+
+/* 2020 고도화 시작 */
+.dfs em.shnh{color:#19b9bf}
+.dfs html, .dfs body, .dfs .wrapper{height:auto}
+.popWrap .popHeader .tit.logoSb{height:30px}
+.popWrap .popHeader .tit.logoSb:after{display:none !important}
+.dfs .formWrap.accTransfer ~ .tee{height:10px}
+.dfs .content > .jsTabs.type02.noDivision{margin:0 -20px}
+.dfs .content > .jsTabs.type02.noDivision .panels{padding: 0 20px}
+/* .popWrap .popInner h1.ac img{display:none !important} */
+.dfs .popInner .popCont{color:#666}
+.dfs .titListWrap{margin:20px 20px 0}
+.dfs .tblDeal p.noData{text-align:center}
+.dfs .tblDeal p.noData.type{margin:20px 0}
+.dfs .popCont >.formWrap{padding:0;margin-top:40px}
+.dfs .content > .jsTabs.type01 .panels .titWrap.bg{margin:0;padding:10px 20px}
+.dfs .content > .jsTabs.type01 .panels .titWrap.bg .stepWrap>ol>li.on ~ li em{background:#ddd;color:#888}
+.dfs .content > .jsTabs.type01 .panels .titWrap.bg .rCont{top:15px;right:20px}
+.dfs .content > .jsTabs.type01 .panels .optWrap.filter{margin:0;padding:0 20px}
+.dfs .content > .jsTabs.type01 .panels .titListWrap.line{position:relative;margin-top:20px;padding-top:20px}
+.dfs .content > .jsTabs.type01 .panels .titListWrap.line:before{content:'';position:absolute;top:0;left:-20px;right:-20px;border-top:1px solid #f1f1f1}
+.dfs .content > .jsTabs.type01 .panels .titListWrap .titWrap:first-child{margin:0}
+.dfs .content > .jsTabs.type01 .panels .titListWrap .titWrap{margin:30px 0 0;padding:0}
+.dfs .selectAll .listWrap .accInfoArea .formHolder .accCont{margin-right:55px}
+.dfs .listWrap.typeS .accInfoArea .icoBnk{width:24px;height:24px}
+.dfs .listWrap.typeS .accInfoArea .icoBnk img{width:24px;height:24px}
+.dfs .listWrap.typeS .accInfoArea .accName{font-size:13px}
+.dfs .listWrap.typeS .accInfoArea .accCont{max-width:calc(100% - 93px)}
+.dfs .accOpenTotalWrap .listWrap.typeS .accInfoArea .accCont{max-width:100%}
+.dfs .listWrap.typeS .accInfoArea .accInfo{margin-top:2px;font-size:11px;color:#888;line-height:1.2}
+.dfs .listWrap.typeS .accInfoArea .accType + .accNum{margin-left:10px}
+.dfs .listWrap.typeS .accInfoArea .date.time{margin-top:8px}
+.dfs .listWrap.typeS ul li{display:table;width:100%}
+.dfs .listWrap.typeS ul li .state{display:table-cell;width:39px;vertical-align:middle;font-size:11px;line-height:14px}
+.dfs .listWrap.typeS .accTransferList{display:table;width:100%;padding:5px 0 0 0}
+.dfs .listWrap.typeS .accTransferList .txtL{display:table-cell;font-size:12px;font-weight:400}
+.dfs .listWrap.typeS .accTransferList .txtR{display:table-cell;text-align:right;font-size:17px;color:#111;font-weight:600}
+.dfs .accInfoArea.accSet .accName{display:inline-block;margin-right:7px;font-weight:400}
+.dfs .accInfoArea.accSet .accTit .roundTxt{position:relative;top:-2px;margin-left:5px}
+.dfs .accInfoArea.accSet .date.time span{margin:0 3px}
+.dfs .accSetBtmWrap{margin:17px -20px 0;padding:0 20px;border-top:1px solid #f1f1f1}
+.dfs .accSetBtmWrap .btnWrap{margin-top:20px}
+.dfs .btn.icoStar span{position:relative;padding-left:20px}
+.dfs .btn.icoStar span:before{content:'';position:absolute;top:50%;left:0;width:16px;height:16px;margin-top:-8px;background-image:url('../images/common/sp_com.png');background-size:auto 250px;background-position:-78px -35px}
+.dfs .btn.icoStar.on span:before{background-position-x:-59px}
+.dfs .btnWrap:not(.hide) + .btnWrap.toggle{margin-top:20px !important}
+.dfs .formHolder .tip{margin-top:12px;font-size:11px;color:#888}
+.dfs .jsTabs .term_cont{padding:0 20px}
+
+.dfs .txtC{text-align:center;color:#111}
+.dfs .accTxtR{position:absolute;top:50%;right:0;margin-top:-10px;font-size:13px;color:#111}
+.dfs .jsTabs.type02 .panel .titWrap:first-child{padding:15px 0 0}
+.dfs .jsTabs.type02 .titWrap{padding:25px 0 0}
+.dfs .jsTabs.type02 .titWrap + .listWrap{margin:0}
+.dfs .btnWrap.inr + .btnWrap.page{margin-top:20px !important}
+.dfs .fieldGroup .inptWrap + .btn{width:auto;padding:0 6px}
+.dfs .fieldGroup .inptWrap + .btn:after{width:62px}
+.dfs .fieldGroup .inptWrap .select{border-bottom:0}
+.dfs .msgWrap.confirm .tip{font-size:15px;color:#555}
+.dfs .msgWrap.confirm .tip.b{color:#111}
+.dfs .listWrap .accCheckList li a{color:#666}
+.dfs .popCont > .accountTransferView.top{margin:0 -20px;padding:20px;border-bottom:1px solid #e1e1e1}
+.dfs .popCont > .accountTransferView.top > .tit{font-size:13px;color:#666}
+.dfs .popCont > .accountTransferView.top > .tit + .accInfoArea{margin-top:13px}
+.dfs .popCont > .accountTransferView.top .accNum{font-size:15px;color:#111}
+.dfs .popCont > .accountTransferView.bg{margin-top:10px;padding:15px;background:#f9f9f9;border-radius:8px}
+.dfs .popCont > .accountTransferView.bg .accNum{color:#111;font-size:13px}
+.dfs .balanceArea{margin-top:5px;text-align:right}
+.dfs .balanceArea .tit{display:block;font-size:12px;color:#666}
+.dfs .balanceArea .price{font-size:17px;color:#111;font-weight:600}
+.dfs .txtBal{margin-top:5px}
+.dfs .msgWrap .resultList.type01{font-size:24px}
+
+.dfs .accountTransferView .accInfoArea .icoBnk + .accCont .accTit .btnModify:after, .dfs .noticeWrap .listBul.ico>li.sms:before, .dfs .msgWrap.guide .icoChangeMoney, .dfs .menuWrap li a:after, .dfs .chargeWrap .ratingBar i.coin,
+.dfs .contWrap .figureWrap li:before, .dfs .contWrap .figureWrap li>.arr, .dfs .chargeWrap .btnAttr:after, .dfs .chargeWrap:before, .dfs .mainCircleWrap .logoNh:after, .dfs .mainCircleBox .logoNh.type02:after, .dfs .jsAcc.listWrap .headerWrap .icoBnk.icoKeyboard:after
+{display:block;content:'';background-image:url('../images/contents/ob/sp_ob.png');background-size:auto 250px}
+
+/*메세지*/
+.dfs .msgWrap.confirm.cType01{padding:40px 0 30px;line-height:24px}
+.dfs .slidePopConfirm .msgWrap.confirm.cType01{padding:0 0 20px}
+.dfs .msgWrap.confirm.tit{line-height:28px}
+.dfs .msgWrap.confirm.cType02{padding:40px 0 30px}
+.dfs .msgWrap .date.time{font-size:13px}
+.dfs .msgWrap.confirm.cType01 + hr.tee{margin-top:0}
+/*카카오톡*/
+.dfs .snsMsg{margin-top:0}
+.dfs .snsMsg span{display:block;line-height:66px;border-bottom:2px solid #eee;height:66px;font-size:19px}
+.dfs .swiper-container-horizontal>.swiper-pagination-bullets{bottom:-50px;margin:15px 0;overflow:auto;line-height:0}
+.dfs .textBox{position:relative;height:168px;overflow:hidden}
+.dfs .textBox.type{height:90px}
+.dfs .textBox:before{display:block;content:'';height:2px;background-color:#eee;position:absolute;left:0;right:0;top:54px;z-index:10}
+.dfs .textBox.type:before{top:43px}
+.dfs .textBox .textAreaWrap{display:block;position:relative;height:168px;overflow:hidden}
+.dfs .textBox.type .textAreaWrap{height:90px}
+.dfs .textBox .textAreaWrap:before{display:block;content:'';height:2px;background-color:#eee;position:absolute;left:0;right:0;top:110px}
+.dfs .textBox.type .textAreaWrap:before{top:88px}
+.dfs .textBox .textAreaWrap:after{display:block;content:'';height:2px;background-color:#eee;position:absolute;left:0;right:0;top:166px}
+.dfs .textBox .textArea{height:168px;padding:0;border:0;color:#111;font-size:16px;line-height:56px;min-height:168px}
+.dfs .textBox.type .textArea{height:90px;font-size:15px;line-height:45px;min-height:90px}
+.dfs .swiperWrap + .textAreaWrap{margin-top:20px}
+.dfs .snsWrap .textBox{margin-top:50px}
+
+/* 약관동의 */
+.dfs .formHolder.check.piece{margin-top:0;padding:20px 0;border-bottom:1px solid #f1f1f1}
+.dfs .guideTxt.s{padding:8px 0;font-size:13px}
+.dfs .searchFormWrap.typeTerms{border-bottom:0}
+.dfs .formHolder .searchFormWrap.typeTerms .inptWrap{border-bottom:0}
+.dfs .searchFormWrap.typeTerms .fieldGroup{border-bottom:2px solid #eee}
+.dfs .jsAcc.listWrap{margin:5px 0 0 0}
+.dfs .titWrap + .jsAcc.listWrap{margin-top:0}
+.dfs .jsAcc.listWrap .headerWrap{position:relative;overflow:hidden;border-bottom:1px solid #f1f1f1;padding:18px 0}
+.dfs .jsAcc.listWrap .headerWrap .header{position:absolute;width:30px;height:auto;top:0;left:auto;right:0;bottom:0;border:none}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk, .dfs .jsAcc.listWrap .headerWrap .icoBnk img{width:24px;height:24px}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk{margin-right:15px;position:relative}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk:after{width:24px;height:24px;position:absolute;top:0;left:0;background-color:#bebebe;border-radius:50%;background-position:-55px -55px;z-index:1}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk img{position:relative;z-index:2}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.icoKeyboard{background:#bebebe;border-radius:50%}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.icoKeyboard:after{top:50%;left:50%;margin:-4.5px 0 0 -7.5px;width:15px;height:9px;background-position:-97px 0;border-radius:0}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk[class*="bankImgType"]:after{background-position:0 0;background-size:24px 24px;background-color:transparent}
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType01:after{background-image:url(../images/common/bk_kdb.png)}  /* KDB산업 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType02:after{background-image:url(../images/common/bk_nh.png)}  /* 농협/NH투자증권 */ 
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType03:after{background-image:url(../images/common/bk_sh.png)}  /* 신한(구조흥)/제주/신한금융투자 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType04:after{background-image:url(../images/common/bk_wr.png)}  /* 우리 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType05:after{background-image:url(../images/common/bk_sc.png)}  /* SC은행 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType06:after{background-image:url(../images/common/bk_keb.png)}  /* KEB하나 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType07:after{background-image:url(../images/common/bk_ibk.png)}  /* 기업 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType08:after{background-image:url(../images/common/bk_kb.png)}  /* 국민/KB증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType09:after{background-image:url(../images/common/bk_keb.png)}  /* 구외환 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType10:after{background-image:url(../images/common/bk_ct.png)}  /* 한국씨티 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType11:after{background-image:url(../images/open/ico_bank11.png)}  /* 한국수출입 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType12:after{background-image:url(../images/common/bk_suhyup.png)}  /* 수협/수협중앙회 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType13:after{background-image:url(../images/common/bk_dgb.png)}  /* 대구 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType14:after{background-image:url(../images/common/bk_bnk.png)}  /* 부산 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType15:after{background-image:url(../images/common/bk_jb.png)}  /* 광주/전북 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType16:after{background-image:url(../images/common/bk_bnk.png)}  /* 경남 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType17:after{background-image:url(../images/common/bk_kbank.png)}  /* 케이뱅크 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType18:after{background-image:url(../images/common/bk_kakao.png)}  /* 카카오 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType19:after{background-image:url(../images/common/bk_nfcf.png)}  /* 산림조합 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType20:after{background-image:url(../images/common/bk_mg.png)}  /* 새마을 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType21:after{background-image:url(../images/common/bk_cu.png)}  /* 신협 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType22:after{background-image:url(../images/common/bk_epost.png)}  /* 우체국 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType23:after{background-image:url(../images/common/bk_sb.png)}  /* 저축은행 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType24:after{background-image:url(../images/common/fund_kyobo.png)}  /* 교보증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType25:after{background-image:url(../images/common/fund_daishin.png)}  /* 대신증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType26:after{background-image:url(../images/common/fund_miraeassetdaewoo.png)}  /* 미래에셋대우 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType27:after{background-image:url(../images/common/fund_db.png)}  /* DB금융투자 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType28:after{background-image:url(../images/common/fund_meritz.png)}  /* 메리츠증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType29:after{background-image:url(../images/common/fund_samsung.png)}  /* 삼성증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType30:after{background-image:url(../images/common/fund_sks.png)}  /* 에스케이증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType31:after{background-image:url(../images/common/fund_eugenefn.png)}  /* 유진투자증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType32:after{background-image:url(../images/common/fund_ebest.png)}  /* 이베스트투자증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType33:after{background-image:url(../images/common/fund_kiwoom.png)}  /* 키움증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType34:after{background-image:url(../images/common/fund_hi.png)}  /* 하이투자증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType35:after{background-image:url(../images/common/fund_hankook.png)}  /* 한국투자증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType36:after{background-image:url(../images/common/fund_hanhwa.png)}  /* 한화투자증권 */
+.dfs .jsAcc.listWrap .headerWrap .icoBnk.bankImgType37:after{background-image:url(../images/common/fund_hmcib.png)}  /* 현대차증권 */
+
+.dfs .jsAcc.listWrap .headerWrap .accCont{overflow:hidden;position:relative;min-height:24px;margin-right:30px}
+.dfs .jsAcc.listWrap .headerWrap .accCont .accTit{line-height:24px;margin-right:40px}
+.dfs .jsAcc.listWrap .headerWrap .accCont .count{position:absolute;top:0;right:0;width:40px;font-size:12px}
+.dfs .jsAcc.listWrap .headerWrap .accCont .count strong{color:#111}
+.dfs .jsAcc.listWrap .view{border-bottom:1px solid #f1f1f1;margin:0}
+.dfs .msgWrap.confirm .ico.nhLogo{width:38px;height:38px;background-color:#19A647}
+.dfs .msgWrap.confirm .ico.nhshLogo{width:38px;height:38px;background-color:#19b9bf}
+.dfs .msgWrap.confirm .ico.nhshLogo:before{width:28px;height:10.5px;background-position:-23px -55px;margin:-5px 0 0 -14px}
+.dfs .msgWrap .txt.t1{color:#111}
+
+.dfs .btn.quick{height:25px;line-height:25px;border:1px solid #ccc;min-width:auto;color:#555;font-weight:600;font-size:12px}
+.dfs .msgWrap.guide .tit{font-size:22px;line-height:1.5}
+.dfs .msgWrap.guide .tit .txt{display:block;font-size:14px;color:#111}
+.dfs .msgWrap.guide .tit .txt + strong{display:block;margin-top:5px}
+.dfs .msgWrap.guide .subtit{display:block;margin-top:27px;text-align:center;font-size:15px;color:#111} /* [2020-10-27 운영 추가] */
+.dfs .tipIco{position:relative;margin-top:10px}
+.dfs .listWrap .accOpenList{overflow:hidden}
+.dfs .listWrap .accOpenList ul{padding:6px 0}
+.dfs .listWrap .accOpenList ul li{display:table;width:100%;padding:0}
+.dfs .listWrap .accOpenList ul li .state{display:table-cell;width:39px;vertical-align:middle;font-size:11px;line-height:14px}
+.dfs .listWrap .accOpenList ul li .accInfoArea{border-top:1px solid #f1f1f1;padding:12px 0}
+.dfs .listWrap .accOpenList ul li:first-child .accInfoArea{border-top:none}
+.dfs .listWrap .accOpenList .accCont .formHolder{display:none}
+.dfs .listWrap .accOpenList li.active .accCont .formHolder{display:block;margin-top:25px}
+.dfs .listWrap .accOpenList li.active .accCont .formHolder .inptWrap{background-color:transparent}
+.dfs .listWrap .accOpenList li.active .accCont .formHolder input{padding-left:0;background-color:transparent}
+.dfs .listWrap.typeS ul{border-bottom:1px solid #f1f1f1}
+.dfs .listWrap.typeS .accOpenList ul{border-bottom:0}
+.dfs .listWrap.typeS .accOpenList ul li .state{border-bottom:1px solid #f1f1f1;padding:12px 0}
+.dfs .listWrap.typeS .accOpenList ul li .accInfoArea{padding:20px 0}
+.dfs .listWrap .accOpenList.type02 ul li .accInfoArea{padding:15px 0 17px}
+.dfs .listWrap .accOpenList.type02 ul li .accInfoArea .accTit{font-size:13px}
+.dfs .listWrap .accOpenList.type02 ul li .accInfoArea .accNum{display:block;font-size:11px;color:#888}
+.dfs .listWrap .accOpenList.type02 ul li .icoBnk{width:24px;height:24px;margin-top:24px}
+.dfs .listWrap .accOpenList.type02 ul li .icoBnk img{width:24px;height:24px}
+.dfs .listWrap .accOpenList.type02 .formHolder{margin-top:5px}
+.dfs .listWrap .accOpenList ul li:last-child .accInfoArea{border-bottom:none}
+.dfs .listWrap.typeS .accOpenList ul li:last-child .state{border-bottom:none}
+.dfs .listWrap:not(.typeS) .accOpenList .accTit + .accInfo{margin-top:10px}
+.dfs .listWrap:not(.typeS) .accOpenList{padding-left:15px}
+.dfs .listWrap .accOpenList .accTit>a{display:inline-block;position:relative;width:10px;height:16px;padding-right:18px;vertical-align:middle}
+.dfs .listWrap .accOpenList .accTit>a:after{position:absolute;width:10px;height:12px;background-position:-23px -70px;top:50%;right:0;margin-top:-8px}
+.dfs .listWrap .accOpenList .accInfoArea .accInfo{font-size:11px;color:#888}
+.dfs .listWrap .accOpenList .roundTxt.act{background:#e8f7ed;color:#19a647;font-size:13px}
+.dfs .listWrap .accOpenList .accInfoArea .accType, .dfs .listWrap .accOpenList .accInfoArea .accNum{font-size:14px;color:#666}
+.dfs .listWrap:not(.typeS) .accOpenList .accInfoArea .accType{padding:0 0 0 10px;}
+.dfs .listWrap .accOpenList .accInfoArea .priceWrap{font-size:16px;color:#111;margin-top:7px}
+.dfs .listWrap .accOpenList .accInfoArea .priceWrap .price{font-size:18px;display:inline-block;margin-left:10px}
+.dfs .listWrap .accOpenList .accInfoArea .priceWrap .price span{font-size:inherit}
+.dfs .listWrap .accInfoArea .email{font-size:14px;color:#111}
+.dfs .accountTransferView.typeRoundBox .accInfo .email{font-size:14px;color:#111;position:relative;min-height:35px;line-height:35px}
+.dfs .accountTransferView.typeRoundBox .accInfo .email .btn{position:absolute;top:0;right:0;min-width:60px}
+.dfs .selectAll + .listWrap{margin:0;padding:0}
+.popWrap .dfs .msgWrap.noData.full{margin-top:50px;height:calc(100% - 50px);position:relative}
+.popWrap .dfs .msgWrap.noData.full{margin-top:50px;height:calc(100% - 50px);position:relative}
+.dfs .popWrap.fullLayerPop .popCont{position:relative;overflow-y:auto}
+.popWrap .dfs .popCont .jsTabs.type01 .listWrap.typeS{margin:0 20px}
+/* .dfs .popWrap.fullLayerPop .fixedCont{position:absolute;left:0;right:0;bottom:40px;text-align:center}
+.dfs .popWrap.fullLayerPop .fixedCont .txtLink{margin-top:15px} */
+.dfs  .lineListWrap>ul>li{position:relative;border:1px solid #ddd;border-radius:8px;padding:23px 20px}
+.dfs  .lineListWrap>ul>li + li{margin-top:20px}
+.dfs  .lineListWrap>ul>li a.link{position:relative;display:block;font-size:15px;padding-left:32px}
+.dfs  .lineListWrap>ul>li a.link strong{color:#111;font-weight:bold}
+.dfs  .lineListWrap>ul>li a.link:after{position:absolute;top:50%;right:0;width:10px;height:5.5px;background-position:-94px -21px;margin-top:-2.75px;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
+.dfs  .lineListWrap>ul>li a.link .ico{position:absolute;left:0}
+.dfs  .lineListWrap>ul>li a.link .ico.certify01{width:21px;height:21.5px;background-position:-80px -60px}
+.dfs  .lineListWrap>ul>li a.link .ico.certify02{width:21px;height:23.5px;background-position:-102px -60px}
+.dfs  .lineListWrap>ul>li a.link .ico.certify03{width:20.5px;height:23.5px;background-position:-124px -60px}
+.dfs  .lineListWrap>ul>li a.link .ico.certify04{width:20.5px;height:23.5px;background-position:-172.5px -60px}
+.dfs  .lineListWrap>ul>li a.link ul{overflow:hidden;margin-top:10px}
+.dfs  .lineListWrap>ul>li a.link ul>li{font-size:13px;color:#111;line-height:22px}
+.dfs  .lineListWrap>ul>li a.link ul>li>span:first-child{display:inline-block;width:50px;color:#888}
+.dfs .msgWrap.guide .arsTelNumber{font-size:25px;color:#19a647;font-weight:bold;overflow:hidden;line-height:1}
+.dfs .msgWrap.guide .arsTelNumber>span{position:relative;top:10px;font-size:30px}
+.dfs .msgWrap.guide .arsTelNumber + .tip{margin-top:10px}
+.dfs .msgWrap.guide .certifyNumber{position:relative;width:100%;background-color:#e8f7ed;border-radius:10px;padding:25px 0 30px;text-align:center;font-size:12px;margin:20px 0;font-size:13px}
+.dfs .msgWrap.guide .certifyNumber strong{display:block;font-size:44px;color:#19a647}  
+.dfs .msgWrap.guide .certifyNumber .txt{position:absolute;right:0;bottom:20px;left:0;font-size:13px;color:#666}
+
+/* 충전 */
+.dfs .chargeGuide{padding-top:157px;background:url(../images/contents/ico_charge.png) no-repeat center 40px;background-size:180px auto;text-align:center}
+.dfs .chargeGuide .btnWrap.page .btn{border:1px solid #19a647;background:#fff !important;color:#19a647 !important;font-size:14px;font-weight:600}
+.dfs .chargeGuide .txt01{font-size:13px;color:#111}
+.dfs .chargeGuide .txt02{font-size:23px;color:#111}
+.dfs .chargeGuide .txt03{margin-top:3px;font-size:12px;color:#666}
+.dfs .chargeGuideStep{margin-top:30px}
+.dfs .chargeGuideStep .chargeGuideBox{margin:40px -20px 0;padding:40px 20px 0;border-top:1px solid #f1f1f1;text-align:center}
+.dfs .chargeGuideStep .chargeGuideBox .gNum{font-size:12px;color:#19a647}
+.dfs .chargeGuideStep .chargeGuideBox .gTit{margin-top:5px;font-size:17px;color:#111;line-height:1.2}
+.dfs .chargeGuideStep .chargeGuideBox .gNum em{display:inline-block;margin:0 2px 0 5px;width:17px;height:17px;background:#19a647;border-radius:50%;color:#fff;line-height:17px}
+.dfs .chargeGuideStep .chargeGuideBox .imgBox{margin-top:15px}
+.dfs .chargeGuideStep .chargeGuideBox .imgBox img{max-width:100%}
+.dfs .accTransferListWrap + .snsType{margin-top:30px}
+
+.dfs .accOpenTotalWrap{padding-bottom:50px}
+.dfs .accOpenTotalWrap .listWrap{margin-top:12px;border-top:1px solid #555}
+.dfs .accOpenTotalWrap .listWrap .accTransferList .txtL{font-size:13px}
+.dfs .accOpenTotalWrap .listWrap .accTransferList .price, .dfs .accOpenTotalWrap .listWrap .accTransferList .price span{font-size:18px}
+.dfs .accTotalWrap{display:table;position:fixed;left:0;right:0;bottom:55px;width:100%;padding:10px 20px;background:#fff}
+.dfs .accTotalWrap:before{content:'';position:absolute;top:0;right:-20px;left:-20px;border-top:1px solid #e1e1e1}
+.dfs .accTotalWrap .totalCount{display:table-cell;color:#555;font-size:13px}
+.dfs .accTotalWrap .totalPrice{display:table-cell;font-size:13px;color:#555;text-align:right}
+.dfs .accTotalWrap .totalPrice span{margin-left:6px;font-size:15px;color:#111}
+.dfs .accTotalWrap .totalPrice span strong{font-size:17px}
+.dfs .accountTransferView.bg{margin-top:25px;background:#f9f9f9}
+.dfs .titWrap .tit .txt{font-size:13px}
+
+/* tagList */
+.tagList{line-height:1}
+div.tagList{height:18px;margin-bottom:7px}
+span.tagList{display:inline-block}
+.tagList>span{display:inline-block;height:18px;line-height:16px;font-size:11px;color:#19a647;border:1px solid #19a647;border-radius:10px;padding:0 9px}
+.tagList>span.ng{color:#fa7b78;border-color:#fa7b78}
+.tagList>span.end{color:#111;border-color:#111}
+.tagList>span.able{color:#fff;background:#19a647;border-radius:3px}
+.dfs .accountTransferView.typeRoundBox.type > li{display:table;width:100%;height:107px}
+.dfs .accountTransferView.typeRoundBox.type > li .accInfoArea{display:table-cell;width:100%;vertical-align:middle}
+.dfs .accountTransferView .accInfoArea .icoBnk + .accCont .accTit {display:inline-block;position:relative;padding-right:17px}
+.dfs .accountTransferView .accInfoArea .icoBnk + .accCont .accTit .btnModify{display:inline-block;position:relative;width:22px;height:18px;vertical-align:middle;margin-left:3px}
+.dfs .accountTransferView .accInfoArea .icoBnk + .accCont .accTit .btnModify:after{width:12px;height:12px;position:absolute;top:1px;left:5px;background-position:-25px 0}
+.dfs .msgWrap.confirm .formHolder label.check{font-size:15px}
+.dfs .msgWrap.confirm .formHolder + .formHolder{margin-top:25px}
+.dfs .noticeWrap .listBul.ico>li{padding-left:31px}
+.dfs .noticeWrap .listBul.ico>li.sms:before{position:absolute;width:21px;height:22px;top:4px;left:0;background-position:0 0;border-radius:0}
+.dfs .titWrap .rCont.tagList{bottom:10px;top:auto;margin-bottom:0}
+.dfs .msgWrap.guide .icoChangeMoney{width:45px;height:45px;background-position:-175px 0;margin:30px auto 0}
+.dfs .msgWrap.guide .icoChangeMoney + .tit{margin-top:20px;font-size:15px}
+.dfs .msgWrap.guide .icoChangeMoney + .tit + hr.tee{margin-top:30px}
+.dfs .contWrap .figureWrap{overflow:hidden}
+.dfs .contWrap .listBul .figureWrap{margin-left:-11px}
+.dfs .contWrap .figureWrap.bg{background-color:#f8f8f8;border-radius:10px;margin-top:20px;margin-bottom:20px}
+.dfs .contWrap .figureWrap ol{overflow:hidden}
+.dfs .contWrap .figureWrap.ct ol{text-align:center}
+.dfs .contWrap .figureWrap.ct li{display:inline-block;width:32%;float:none}
+.dfs .contWrap .figureWrap.bg ol{padding:20px 0}
+.dfs .contWrap .figureWrap li{position:relative;float:left;width:33.33%;text-align:center;margin:0;padding:60px 0 0;margin:25px 0 0}
+.dfs .contWrap .figureWrap.bg li{width:50%;margin:0}
+.dfs .contWrap .figureWrap li:before, .dfs .contWrap .figureWrap li:after, .dfs .contWrap .figureWrap li>.arr{position:absolute}
+.dfs .contWrap .figureWrap li:before{z-index:1}
+.dfs .contWrap .figureWrap:not(.bg) li:after{display:block;content:'';width:50px;height:50px;border-radius:50%;background-color:#f8f8f8;top:0;left:50%;margin-left:-25px}
+.dfs .contWrap .figureWrap.bg li:before{left:50%}
+.dfs .contWrap .figureWrap li>.arr{width:8px;height:14px;top:50%;left:-4px;margin-top:-7px;background-position:-40px 0}
+.dfs .contWrap .figureWrap li:nth-child(1):before{width:33px;height:25px;top:12px;left:50%;margin-left:-15px;background-position:0 -25px}
+.dfs .contWrap .figureWrap li:nth-child(2):before{width:24.5px;height:19.5px;top:16px;left:50%;margin-left:-12px;background-position:-35px -25px}
+.dfs .contWrap .figureWrap li:nth-child(3):before{width:26.5px;height:26.5px;top:10.5px;left:50%;margin-left:-13px;background-position:-70px -25px}
+.dfs .contWrap .figureWrap li:nth-child(4):before{width:26.5px;height:26.5px;top:12px;left:50%;margin-left:-13px;background-position:-105px -25px}
+.dfs .contWrap .figureWrap li:nth-child(5):before{width:30.5px;height:26.5px;top:12px;left:50%;margin-left:-15px;background-position:-140px -25px}
+.dfs .contWrap .figureWrap.bg li:nth-child(1):before{width:60px;height:44px;top:6px;left:50%;margin-left:-30px;background-position:0 -60px}
+.dfs .contWrap .figureWrap.bg li:nth-child(2):before{width:90px;height:50px;top:6px;left:50%;margin-left:-45px;background-position:-65px -60px}
+
+/* 오픈뱅킹 가이드 */
+.dfs #NSOB0010P.popWrap.fullLayerPop .popCont, .dfs #SSOB0010P.popWrap.fullLayerPop .popCont{padding:0 20px}
+.dfs .swiper-container.obGuide{margin:0 -20px;
+	background-color: #f7f7fa;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f9), color-stop(50%, #fafafc), color-stop(100%, #fff));
+    background:-webkit-linear-gradient(top, #f5f5f9 0%,#fafafc 50%, #fff 100%);
+}
+.dfs .swiper-container.obGuide .guideBox{position:relative;max-width:450px;margin:0 auto}
+.dfs .swiper-container.obGuide .guideBox .txtWrap{padding-top:80px;text-align:center}
+.dfs .swiper-container.obGuide .guideBox .txtWrap strong{display:block;font-size:26px;color:#111;line-height:34px}
+.dfs .swiper-container.obGuide .guideBox .txtWrap p{margin-top:4px;font-size:15px;color:#666;line-height:22px}
+.dfs .swiper-container.obGuide .guideBox .txtWrap strong + p{margin-top:14px}
+.dfs .swiper-container.obGuide .guideBox .txtWrap p + strong{margin-top:6px}
+.dfs .swiper-container.obGuide .swiper-slide img{width:120%;margin:65px -10%}
+.dfs .swiper-container.obGuide .swiper-slide:last-child img{width:100%;margin:65px 0 0}
+@media screen and (max-width:374px){
+    .dfs .swiper-container.obGuide .swiper-slide img{width:100%;margin:40px 0 0}
+}
+.small.dfs .swiper-container.obGuide .swiper-slide img{width:100%;margin:30px 0 0}
+.dfs .swiper-container.obGuide.swiper-container-horizontal>.swiper-pagination-bullets{top:40px;margin:0;bottom:auto}
+.dfs .swiper-container.obGuide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{width:6px;height:6px;background:#d2d2d2}
+.dfs .swiper-container.obGuide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{width:12px;height:6px;border-radius:3px;background:#111}
+.dfs .termsWrap{position:relative;margin:0;padding:0;overflow:visible}
+.dfs .termsWrap.swiper-container{height:100%;margin:0 -20px}
+/* .dfs .termsWrap.swiper-container .swiper-slide.popCont{padding:0 20px 40px} */
+.dfs .termsWrap.swiper-container.swiper-container-horizontal .swiper-slide.popCont{opacity:0}
+.dfs .termsWrap.swiper-container.swiper-container-horizontal .swiper-slide.popCont.swiper-slide-active{opacity:1}
+.dfs .termsWrap .btnPrev, .dfs .termsWrap .btnNext{position:fixed;z-index:1;top:50%;margin:0;padding:0;overflow:visible}
+.dfs .termsWrap .btnPrev:after, .dfs .termsWrap .btnNext:after{display:block;content:'';background-image:url('../images/common/sp_com.png');background-size:auto 250px}
+.dfs .termsWrap .btnPrev, .dfs .termsWrap .btnNext{width:40px;height:40px;border-radius:50%;border:1px solid #6a7688;box-shadow:0 3px 20px 0 rgba(0, 0, 0, 0.1);background-color:#fff}
+.dfs .termsWrap .btnPrev.swiper-button-disabled, .dfs .termsWrap .btnNext.swiper-button-disabled{background-color:#ebebeb;border-color:#ebebeb;box-shadow:none}
+.dfs .termsWrap .btnPrev.swiper-button-disabled:after, .dfs .termsWrap .btnNext.swiper-button-disabled:after{background-position-x:-11px}
+.dfs .termsWrap .btnPrev{left:20px;}
+.dfs .termsWrap .btnNext{right:20px;} 
+.dfs .termsWrap .btnPrev:after, .dfs .termsWrap .btnNext:after{position:absolute;width:10px;height:19px;background-position:0 -55px;top:10px;margin:0 4px 0 -5px}
+.dfs .termsWrap .btnNext:after{left:54%}
+.dfs .termsWrap .btnPrev:after{left:46%;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+
+/* 대표계좌설정 on/off 선택 */
+.dfs .formHolder.switchType label.switch{position:relative;margin-top:0}
+.dfs .formHolder.switchType label.switch:before,
+.dfs .formHolder.switchType label.switch:after{display:block;content:'';transition:-webkit-transform .15s ease-in-out,transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;box-sizing:border-box}
+.dfs .formHolder.switchType label.switch:before{content:'설정';width:62px;height:24px;padding:0 10px;line-height:24px;border-radius:12px;background-color:#bfbfbf;color:#fff;font-size:12px}
+.dfs .formHolder.switchType label.switch:after{position:absolute;width:22px;height:22px;border-radius:50%;background-color:#fff}
+.dfs .formHolder.switchType.active input[type='checkbox']+label.switch:before{content:'해제'}
+.dfs .formHolder.switchType.active input[type='checkbox']+label.switch:before{background-color:#19A647;text-align:left}/* 19A647 08-24 color */
+.dfs .formHolder.switchType.active input[type='checkbox']+label.switch:after{top:1px;left:9px;border:0;-webkit-transform:translateX(30px);transform:translateX(30px)}
+.dfs .formHolder.switchType input[type='checkbox']+label.switch:before{background-color:#bfbfbf;text-align:right}
+.dfs .formHolder.switchType input[type='checkbox']+label.switch:after{top:1px;left:1px;border:0;-webkit-transform:translateX(0);transform:translateX(0)}
+.dfs .balanceSet{float:right;margin-top:2px}
+.dfs .switchType span{display:inline-block;font-size:16px;color:#969ba3;font-weight:600}
+.dfs .switchType{display:inline-block;position:relative;top:-1px;margin:0 0 0 5px}
+.dfs .formWrap.selectAll .jsToggleWrap + .total{margin-top:20px}
+.dfs .txt.arr{display:inline-block;margin-top:22px;padding-right:12px;color:#000;background:url(../images/common/arrow_arr_quick.png) no-repeat right center;background-size:6px auto}
+.dfs .popCont > .titTblWrap:first-child{border-top:0}
+.dfs .titWrap.total .rCont .txt{top:5px}
+
+/* 툴팁 */
+.dfs .popWrap.centerLayer .popCont .txt{font-size:13px;color:#777;text-align:left}

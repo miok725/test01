@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+<script>
+	$(document).ready(function() {
+	   fullLayerPop();
+	});
+</script>
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<div class="container">
+			<!-- 팝업시작 : full layer 팝업인 경우 fullLayerPop 클래스 및 함수 사용 -->
+			<div class="popWrap fullLayerPop">
+				<div class="popInner">
+					<h1>휴대폰 번호 인증</h1>
+					<div class="popCont">
+						<div class="formWrap mt0">
+							<ul>
+								<li>
+									<strong class="formTit">통신사</strong>
+									<div class="stList">
+										<a href="javascript:;" title="통신사 선택 새창열림">
+											<span class="selectValue">선택해주세요</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<strong class="formTit">휴대폰 번호</strong>
+									<div class="telWrap">
+										<div class="stList telSel">
+											<a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+												<span class="selectValue">선택</span>
+												<span class="selectBtn">버튼</span>
+											</a>
+											<select name="" title="전화번호(연락처) 앞자리 선택">
+												<option value=""></option>
+											</select>
+										</div>
+										<div class="inputDash">-</div>
+										<div class="inputB01"><input type="tel" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택"></div>
+										<div class="inputDash">-</div>
+										<div class="inputB01"><input type="tel" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택"></div>
+									</div>
+								</li>
+							</ul>
+							<p class="infoTxt"> 통신사 확인 후 본인 명의가 아닐 시에는 인증번호는 전송되지 않습니다.</p>
+							<div class="btn_wrapper">
+								<a href="javascript:;" class="btn_verifyNum">휴대폰 인증번호 전송</a>
+							</div>
+						</div>
+						<!-- formWrap_end -->
+						<div class="formWrap">
+							<ul>
+								<li>
+									<strong class="formTit">인증번호</strong>
+									<div class="inputList">                    
+										<input type="text" title="인증번호 입력" placeholder="인증번호를 입력해 주세요">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- formWrap_end -->
+						<div class="termsList mt20"> 
+							<ul> 
+								<li class="allCheck"> 
+									<div class="checkList">
+										<a href="javascript:;" title="">
+											<input type="checkbox" id="c1" name="">
+											<label for="c1">전체 유의사항 및 약관에 동의합니다.</label>
+										</a>
+									</div>
+								</li>
+								<!--
+								<li> 
+									<div class="checkList">
+										<input type="checkbox" id="c2" name="" checked="">
+										<label for="c2">고유식별정보 처리 동의</label>
+										<a href="javascript:;" class="chkToggle" title=""></a>
+									</div>
+									<div class="termsCont hide">
+										<p class="termsStxt2">내용이 들어갑니다.</p>
+									</div>
+								</li>
+								<li> 
+									<div class="checkList">
+										<input type="checkbox" id="c3" name="">
+										<label for="c3">개인정보 수집 이용 제공동의</label>
+										<a href="javascript:;" class="chkToggle" title=""></a>
+									</div> 
+									<div class="termsCont hide">
+										<p class="termsStxt2">내용이 들어갑니다.</p>
+									</div>
+								</li>  
+								<li>
+									<div class="checkList">
+										<input type="checkbox" id="c4" name="">
+										<label for="c4">서비스 이용약관 동의</label>
+										<a href="javascript:;" class="chkToggle" title=""></a>
+									</div>                     
+									<div class="termsCont hide">
+										<p class="termsStxt2">내용이 들어갑니다.</p>
+									</div>
+								</li> 
+								<li>
+									<div class="checkList">
+										<input type="checkbox" id="c5" name="">
+										<label for="c5">통신사 이용약관동의</label>
+										<a href="javascript:;" class="chkToggle" title=""></a>
+									</div>                     
+									<div class="termsCont hide">
+										<p class="termsStxt2">내용이 들어갑니다.</p>
+									</div>
+								</li> 
+								-->
+								<li>
+									<div class="checkList">
+										<input type="checkbox" id="c45" name="">
+										<label for="c45">고유식별정보 처리 동의</label>
+									</div>
+									<div class="termsCont">
+										아이프레임 영역
+									</div>
+								</li>
+								<li> 
+									<div class="checkList">
+										<input type="checkbox" id="c3" name="">
+										<label for="c3">개인정보 수집 이용 제공동의</label>
+									</div> 
+									<div class="termsCont">
+										아이프레임 영역
+									</div>
+								</li>  
+								<li>
+									<div class="checkList">
+										<input type="checkbox" id="c4" name="">
+										<label for="c4">서비스 이용약관 동의</label>
+									</div>                     
+									<div class="termsCont">
+										아이프레임 영역
+									</div>
+								</li> 
+								<li>
+									<div class="checkList">
+										<input type="checkbox" id="c5" name="">
+										<label for="c5">통신사 이용약관동의</label>
+									</div>                     
+									<div class="termsCont">
+										아이프레임 영역
+									</div>
+								</li> 
+							</ul> 
+						</div>
+						<!-- termsList_end -->
+					</div>
+					<!-- popCont_end -->
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" onclick="popClose(this);return false;">취소</a>
+							<a href="javascript:;" class="confirmBtn">확인</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!-- // 팝업 끝 -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

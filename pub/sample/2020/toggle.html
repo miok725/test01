@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Bank">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="#">
+<title>toggle</title>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/swiper.min.js"></script>
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/nh_com_ui.js"></script></head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+		<h1>공통</h1>
+		<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container dfs">
+        <div class="content">
+            <h2 class="tit lev1">toggle</h2>
+            <div class="accountInfo bankName mt20">
+                <div class="roundTxtWrap">
+                    <span class="roundTxt">한도제한계좌</span>
+                </div>
+                <p class="bankName"><span class="icoBnk"><img src="../../../images/common/bk_nh.png" alt="농협 로고"></span><span class="accountNumber">302-0000-0000-11</span> <em>: 300,000원</em></p>
+                <p class="txt s">1회 300,000원 / 1일 19,700,000원 <a href="javascript:;" data-toggle-target="toggle-test0" class="icoQuestion jsToggle" role="button" aria-expanded="false"><span class="blind">알려드립니다.</span></a></p>
+                <div data-toggle-view="toggle-test0" class="jsToggleWrap" aria-hidden="true">
+                    toggle 영역
+                    <button type="button" data-toggle-origin="toggle-test0" class="cls"><span class="blind">레이어 닫기</span></button>
+                </div>
+                <p class="txt b"><em class="ng">출금가능금액을 초과합니다.</em></p>
+            </div>
+            <hr class="tee">
+            <div class="btnWrap">
+                <a href="javascript:;" data-toggle-target="toggle-test1" class="btn jsToggle" role="button" aria-expanded="false">toggle</a>
+                <button type="button" data-toggle-target="toggle-test21" class="btn jsToggle" aria-expanded="false">알아두세요</button>
+            </div>
+
+            <div data-toggle-view="toggle-test1" class="jsToggleWrap" aria-hidden="true">
+                toggle 영역
+                <button type="button" data-toggle-origin="toggle-test1" class="cls"><span class="blind">레이어 닫기</span></button>
+            </div>
+            <div data-toggle-view="toggle-test21" class="jsToggleWrap" aria-hidden="true">
+                button toggle 영역
+                <a href="javascript:;" data-toggle-origin="toggle-test21" class="cls"><span class="blind">닫기</span></a>
+            </div>
+
+            <p class="tit lev1">toggle</p>
+            <div class="btnWrap">
+                <!-- 2020.08.07 퍼블수정 -->
+                <a href="javascript:;" data-toggle-target="toggle-test2" class="txtLink dArr jsToggle" role="button" aria-expanded="false">알아두세요</a>
+            </div>
+
+            <div data-toggle-view="toggle-test2" class="jsToggleWrap" aria-hidden="true">
+                <div class="noticeWrap ">
+                    <ul class="listBul dash">
+                        <li>경찰 : 117, 166(세부, 보라카이 바기오 등)</li>
+                        <li>앰뷸런스 : 911/112</li>
+                        <li>소방서 : 116/757</li>
+                        <li>교환 : 187</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="tee">
+            <div class="btnWrap">
+                <!-- 2020.08.07 퍼블수정 -->
+                <a href="javascript:;" data-toggle-target="toggle-test3" class="txtLink dArrB jsToggle on" role="button" aria-expanded="true">날짜설정</a>
+            </div>
+            <div data-toggle-view="toggle-test3" class="formWrap mt0 jsToggleWrap on" aria-hidden="false" tabindex="0">
+                <div class="formHolder mt0">
+                    <div class="fieldGroup">
+                        <!-- 2020.08.06 퍼블 수정 -->
+                        <div class="col inptWrap noDel dataPicker">
+                            <a href="javascript:;" role="button">
+                                <input type="text" title="날짜 설정 시작기간" class="inptText" placeholder="2020.02.03" readonly="readonly">
+                            </a>
+                        </div>
+                        <span class="divider dash">-</span>
+                        <div class="col inptWrap noDel dataPicker">
+                            <a href="javascript:;" role="button">
+                                <input type="text" title="날짜 설정 마감기간" class="inptText" placeholder="2020.03.03" readonly="readonly">
+                            </a>
+                        </div>
+                        <!-- //2020.08.06 퍼블 수정 -->
+                    </div>
+                </div>
+            </div>
+
+            <hr class="tee">
+            <div class="btnWrap">
+                <!-- 2020.08.07 퍼블수정 -->
+                <a href="javascript:;" data-toggle-target="toggle-test4" class="txtLink dArrB jsToggle on" role="button" aria-expanded="true">문구등록</a>
+            </div>
+            <div data-toggle-view="toggle-test4" class="formWrap mt0 jsToggleWrap on" aria-hidden="false" tabindex="0">
+                <div class="formHolder">
+                    <div class="fieldGroup">
+                        <span class="col inptWrap">
+                            <input type="text" class="inptText" title="타이틀" placeholder="자주쓰는 문구 (최대 10글자)">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </span>
+                        <button type="button" class="btnTxt">취소</button>
+                        <button type="button" class="btnTxt em">등록</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="tee">
+            <div class="btnWrap mt20">
+                <!-- 2020.08.07 퍼블수정 -->
+                <a href="javascript:;" data-toggle-target="toggle-test5" data-text="닫기" class="txtLink dArrG jsToggle" role="button" aria-expanded="false">열기</a>
+            </div>
+            <div data-toggle-view="toggle-test5" class="jsToggleWrap tgWrap" aria-hidden="true">
+                <div class="tbl tblDeal">
+                    <table>
+                        <caption>상세거래내역 - 거래시간, 거래내용, 거래금액, 대출잔액, 이율, 대상금액, 이자계산기간</caption>
+                        <colgroup>
+                        <col style="width:30%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>보내는 분</th>
+                                <td>
+                                    <p class="accountName">김국민<span>(부기명)</span></p>
+                                    <p class="accountNumber"><span class="bankName">국민</span> 400123456789</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이체 후 잔액</th>
+                                <td><p class="price"><span>99,000</span>원</td>
+                            </tr>
+                            <tr>
+                                <th>받는 계좌에 표기</th>
+                                <td>김농협</td>
+                            </tr>
+                            <tr>
+                                <th>내 계좌에 표기</th>
+                                <td>김국민</td>
+                            </tr>
+                            <tr>
+                                <th>경조금 메시지</th>
+                                <td>축 생신</td>
+                            </tr>
+                            <tr>
+                                <th>이체메모</th>
+                                <td>용돈보내드려요</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btnWrap inr">
+                        <button type="button" class="btn">자주 사용하는 이체 등록</button>
+                        <button type="button" class="btn">이체결과내역 저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

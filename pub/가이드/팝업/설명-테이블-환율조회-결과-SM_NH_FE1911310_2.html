@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 외환:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+<script>
+	//풀팝업 호출
+	$(document).ready(function() {
+	   fullLayerPop();
+	});
+</script>
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">외환</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->
+		
+		<!-- container -->
+		<div class="container" data-role="samWrap">
+			<h2 class="defTit">다통화 월복리 외화적립예금</h2>
+			<div class="stepArea">
+				<p class="stepTit">상품가입설계</p>
+				<div class="stepInfo">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="active"><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">계약기간</strong>
+						<div class="inputList">                    
+							<input type="text" title="계약기간 입력" placeholder="12 ~ 36">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+							<span class="unit">개월</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">해당통화 및 예치금액</strong>
+						<div class="stList">
+							<a href="javascript:;" title="OOO 선택 새창열림">
+								<span class="selectValue">통화선택</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="inputBoth03 div5_5">
+							<div class="inputB01">
+								<input type="text" title="미화 입력" placeholder="미화 50불 상당액 이상">
+							</div>
+							<span class="inputDash">•</span>
+							<div class="inputB02">
+								<input type="password" title="">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">출금계좌</strong>
+						<div class="selectBtnForm selectAccount">
+							<div class="stList">
+								<a href="javascript:;" title="OOO 선택 새창열림">
+									<span class="selectValue">계좌를 선택해주세요</span>
+									<span class="selectBtn">버튼</span>
+								</a>
+								<select name="" title="선택해주세요">
+									<option value=""></option>
+								</select>
+							</div>
+							<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnAddon">직접입력</a>
+						</div>
+						<div class="selectBtnForm insertAccount">
+							<div class="inputList">
+								<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+							</div>
+							<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnAddon">계좌선택</a>
+						</div>
+						<div class="infoTxtForm">
+							<div class="infoTxtPrice">
+								<p class="infoTxt">이체가능금액</p>
+								<em class="priceTxt">5,000,000원</em>
+							</div>
+							<a href="javascript:;" class="btnAddonPoint">조회</a>
+						</div>
+						<div class="areaBodyBtnFull">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" class="btnBodyLine">환율 조회</a>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">출금계좌 비밀번호</strong>
+						<div class="inputList">
+							<input type="tel" name="" title="출금계좌 비밀번호 입력" placeholder="비밀번호 4자리" class="sKey">
+						</div>
+						<div class="checkList mt10">
+							<input type="checkbox" id="sample0001" name="" checked>
+							<label for="sample0001">출금계좌비밀번호로 신규계좌비밀번호 설정</label>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">신규계좌 비밀번호</strong>
+						<div class="inputList">
+							<input type="tel" name="" title="신규계좌 비밀번호 입력" placeholder="비밀번호 4자리" class="sKey">
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">비밀번호 재확인</strong>
+						<div class="inputList">
+							<input type="tel" name="" title="비밀번호 재확인 입력" placeholder="비밀번호 4자리" class="sKey">
+						</div>
+					</li>
+					<li>
+						<div class="formArray">
+							<div class="radioList">
+								<input type="radio" id="rdo31" name="aa31" checked="checked">
+								<label for="rdo31">자동이체함</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="rdo32" name="aa31">
+								<label for="rdo32">자동이체안함</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">자동이체시작일</strong>
+						<div class="cal">
+							<div class="inputList">
+								<input type="text" value="" title="자동이체시작일 입력" placeholder="2017/10/9">
+								<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">자동이체금액</strong>
+						<div class="inputBoth01 div4_6">
+							<div class="inputList inputB01">
+								<input type="text" title="외화신청통화 입력" value="USD(미국달러)" id="" readonly="readonly">
+							</div>
+							<div class="inputB02">
+								<input type="text" title="외화신청금액 입력" id="" placeholder="외화기준">
+							</div>
+						</div>
+						<div class="areaBodyBtnFull">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" class="btnBodyLine">통화별 이체가능금액</a>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">자동이체 계좌번호</strong>
+						<div class="selectBtnForm selectAccount">
+							<div class="stList">
+								<a href="javascript:;" title="OOO 선택 새창열림">
+									<span class="selectValue">계좌를 선택해주세요</span>
+									<span class="selectBtn">버튼</span>
+								</a>
+								<select name="" title="선택해주세요">
+									<option value=""></option>
+								</select>
+							</div>
+							<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnAddon">직접입력</a>
+						</div>
+						<div class="selectBtnForm insertAccount">
+							<div class="inputList">
+								<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+							</div>
+							<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnAddon">계좌선택</a>
+						</div>
+						<div class="infoTxtForm">
+							<div class="infoTxtPrice">
+								<p class="infoTxt">이체가능금액</p>
+								<em class="priceTxt">USD 1,000,000</em>
+							</div>
+							<a href="javascript:;" class="btnAddonPoint">조회</a>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">SMS만기안내 동의 <a href="javascript:;" class="btnFuncTip" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+						<div class="formArray">
+							<div class="radioList">
+								<input type="radio" id="rdo41" name="aa41" checked="checked">
+								<label for="rdo41">동의함</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="rdo42" name="aa41">
+								<label for="rdo42">동의안함</label>
+							</div>
+						</div>
+						<div class="areaBodyBtnFull mt15">
+							<a href="javascript:;" class="btnBodyLine">고객정보변경</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">권유직원번호(선택사항)</strong>
+						<div class="inputBoth01 div7_3">
+							<div class="inputList inputB01">
+								<input type="text" title="권유직원 입력">
+							</div>
+							<div class="inputB02">
+								<a href="javascript:;" class="btnInput01" title="새창으로 열림">직원찾기</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+            <div class="areaBtnDefault">
+                <a href="javascript:;" class="btnPressDefault">취소</a>
+                <a href="javascript:;" class="btnPressPoint disabled">가입설계확인</a><!-- 버튼활성화 시 disabled 클래스 삭제 -->
+            </div>
+			<!-- popup -->
+			
+			<!-- 환율조회 결과 팝업 -->
+			<div class="popWrap fullLayerPop">
+				<div class="popInner">
+					<h1>환율조회</h1>
+					<div class="popCont">
+						<h2 class="defTit">조회결과</h3>
+						<div class="wrapTblDefault">
+							<div class="tblHeader">
+								<h3 class="defTit"><span class="blind">테이블 제목</span></h2>
+							</div>
+							<div class="boxHeaderBlue">
+								<strong class="txt">고객님은 <em class="pointColor">500.00 USD(미국달러)</em>를 <em class="pointColor">환율우대 50%</em> 로 송금하시고자 합니다.
+								최종 원화금액은 <em class="pointColor">555,806원</em> 입니다.</strong>
+							</div>
+							<table cellpadding="0" cellspacing="0">
+								<caption>테이블 제목 정보 입력</caption>
+								<colgroup>
+									<col style="width:40%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">송금하는 외국통화</th>
+										<td>
+											<span>USD(미국달러)</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">송금하는 외화금액</th>
+										<td class="ar"><strong class="pointColor"><em>500.00</em></strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="wrapTblDefault">
+							<div class="tblHeader">
+								<h3 class="defTit pointColor">정상환율 적용시</h2>
+							</div>
+							<table cellpadding="0" cellspacing="0">
+								<caption>정상환율 적용시</caption>
+								<colgroup>
+									<col style="width:40%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">일반(정상)환율</th>
+										<td class="ar">
+											<span><em>1,116.90</em></span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">송금하는 외화금액</th>
+										<td class="ar"><strong class="pointColor"><em>588,450</em> 원</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="wrapTblDefault">
+							<div class="tblHeader">
+								<h3 class="defTit pointColor5">우대환율 적용시</h2>
+							</div>
+							<table cellpadding="0" cellspacing="0">
+								<caption>우대환율 적용시</caption>
+								<colgroup>
+									<col style="width:40%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">우대환율(50%)</th>
+										<td class="ar">
+											<span><em>1,116.90</em></span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">우대환율<br>적용 시 금액</th>
+										<td class="ar"><strong class="pointColor"><em>588,450</em> 원</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="areaPopBtnFull">
+							<div class="inner">
+								<ul>
+									<li><a href="javascript:;" class="btnPressPoint">다시 계산하기</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+		
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">닫기</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!-- //환율조회 결과 팝업  -->
+			<!-- //popup -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+	<!-- popup -->
+	
+	<!-- //popup -->
+</body>
+</html>

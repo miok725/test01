@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Bank">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="#">
+<title>popup</title>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/swiper.min.js"></script>
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/nh_com_ui.js"></script>
+<style>
+/* popWrap */
+.dfs .popWrap{position:fixed;top:0;left:0;right:0;bottom:0;display:none;overflow:hidden;z-index:5000;opacity:1;transition:opacity .15s linear;}
+.dfs .popWrap.slide{left:auto;width:100%;height:100%}
+.dfs .popWrap.slide.fade{opacity:1;left:100%;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
+.dfs .popWrap.slide.show{left:0}
+.dfs .popWrap.slidePopOption{top:auto}
+.dfs .popWrap.slidePopOption.fade{opacity:1;bottom:0;-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
+.dfs .popWrap.slidePopOption.show{bottom:0}
+.dfs .popWrap>.popInner dfs{position:relative;width:auto;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;left:0 !important;right:0 !important;height:auto;}
+
+.popWrap.centerLayer .popInner dfs {left:15px; right:15px;overflow: hidden; border-radius:20px;width:auto;bottom:auto;}
+.popWrap.centerLayer .popInner dfs .popCont {padding:0 20px 20px}
+.popWrap.centerLayer .popInner dfs .popCont h1 {margin:0 -20px;}
+body > .popWrap.centerLayer .popInner dfs{max-width:345px;}
+
+.dfs .container .popWrap>.popInner dfs{min-height:100%;}
+.dfs .fullLayerPop .popInner dfs, .dfs .slidePopOption .popInner dfs{display:-webkit-box;-webkit-box-align:end;align-items:end}
+.dfs .fade .popInner dfs{transition:transform .3s ease-out,-webkit-transform .3s ease-out;transform:translate(0,200%);-webkit-transform:translate(0,200%)}
+.dfs .fullLayerPop .popInner dfs{transform:translate(0,0);}
+.dfs .slide.fade .popInner dfs{transition:transform .3s ease-out,-webkit-transform .3s ease-out;transform:translate(0,0);-webkit-transform:translate(0,0)}
+.dfs .show .popInner dfs{transform:translate(0,0);-webkit-transform:translate(0,0)}
+.dfs .popContainer{overflow:hidden;outline:0;border:none;position:relative;margin:15px;border-radius:20px;padding:0;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;height:100%;left:0 !important;right:0 !important;background-clip:padding-box;pointer-events:auto;box-shadow:0 12px 12px 0 rgba(34, 34, 34, .2)}
+.dfs .container .popContainer{width:100%}
+.dfs .popContainer .btnCls{display:block;position:absolute;width:25px;height:25px;top:25px;right:15px}
+.dfs .fullLayerPop .popContainer .btnCls{top:12px;right:15px}
+.dfs .popContainer .btnCls:after{position:absolute;width:15px;height:15px;top:50%;left:50%;margin:-7.5px 0 0 -7.5px;background-position:-430px 0}
+.dfs .popWrap.fullLayerPop .popContainer{margin:0;border-radius:0}
+.dfs .popWrap.slidePopOption .popContainer{margin:0;padding-top:0;border-radius:20px 20px 0 0}
+.dfs .popWrap .popHeader{position:relative;text-align:center;padding:0;background-color:#fff}
+.dfs .popWrap .popHeader.line{border-bottom:1px solid #f1f1f1}
+.dfs .popWrap .popHeader .tit{height:80px;line-height:80px;font-size:19px;color:#111;font-weight:normal}
+.dfs .popWrap.fullLayerPop .popHeader .tit{height:50px;line-height:50px;font-size:17px;}
+.dfs .popWrap .popHeader .tit.logoSb{padding:0 35px;position:relative;}
+.dfs .popWrap .popHeader .tit.logoSb:after{width:109px;height:15px;position:absolute;top:50%;left:50%;background-position:0 -90px;margin:-7.5px 0 0 -55px}
+.dfs .popWrap .popHeader .tit.logoSb img{max-width:109px;vertical-align:middle}
+.dfs .popWrap .popHeader .tit.logoSb>a{display:block;position:absolute;top:0;left:0;right:0;bottom:0}
+.dfs .popWrap .popCont{position:relative;padding:30px 20px 20px;background-color:#fff}
+.dfs .popWrap .popHeader ~ .popCont{padding:0 20px 40px}
+.dfs .popWrap .popHeader ~ .popCont > .formHolder{margin:0}
+.dfs .popWrap.fullLayerPop .popCont{position:relative;padding:0 20px 75px}
+.dfs .popWrap.fullLayerPop .popCont.wide{padding:0 0 50px}
+.dfs .popWrap .popContWrap{margin:0;padding:0;border:0;outline:0}
+.dfs .popWrap .popBtnWrap{overflow:hidden;text-align:center}
+.dfs .popWrap .popBtnWrap .popBtn{margin-top:0;background-color:transparent}
+.dfs .popWrap .popBtnWrap .popBtn .btn{vertical-align:top}
+.dfs .popWrap .popBtnWrap .popBtn.foot{padding:0}
+.dfs .popWrap .btnClose{display:block;right:-12px}
+.dfs ~ .lypopFade{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000;z-index:4990}
+.dfs ~ .lypopFade.fade{opacity:0}
+.dfs ~ .lypopFade.show{opacity:.7}
+.dfs .popCont ~ .dfs .formHolder {margin:0}
+/* //popWrap */
+</style>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+		<h1>공통</h1>
+		<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container dfs">
+        <div class="content">
+            <p class="tit lev1">popup</p>
+            <div class="btnWrap page">
+                <a href="#layer-test1" aria-haspopup="true" class="btn jsBtnLypop">center</a>
+                <a href="#layer-test11" aria-haspopup="true" class="btn jsBtnLypop">center close no!</a>
+            </div>
+            <div class="btnWrap page">
+                <a href="#layer-test2" aria-haspopup="true" class="btn jsBtnLypop">center title no!</a>
+                <a href="#layer-test3" aria-haspopup="true" class="btn jsBtnLypop">full</a>
+            </div>
+            <div class="btnWrap page">
+                <a href="#layer-test4" aria-haspopup="true" class="btn jsBtnLypop">slide1</a>
+            </div>
+            <div class="btnWrap page">
+                <a href="#layer-test5" aria-haspopup="true" class="btn jsBtnLypop">slide2</a>
+            </div>
+            <div class="btnWrap page">
+                <a href="#layer-test6" aria-haspopup="true" class="btn jsBtnLypop">청약계좌 납입횟수 선택</a>
+            </div>
+            <div class="popWrap centerLayer" id="layer-test1" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popHeader">
+                                <h2 class="tit">center pop</h2>
+                            </div>
+                            <div class="popCont">
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <a href="#layer-test3" aria-haspopup="true" class="btn jsBtnLypop">popup in popup</a>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">취소</button>
+                                    <button type="button" class="btn em">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popWrap noCls" id="layer-test11" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popHeader">
+                                <h2 class="tit logoSb"><span class="blind">NH 스마트뱅킹</span></h2>
+                            </div>
+                            <div class="popCont">
+                                <div class="msgWrap noData">
+                                    <strong class="tit">지연이체 서비스 이용 중입니다.</strong>
+                                    <span class="txt">즉시이체는 본인명의계좌, 지연이체 예외계좌, <br>지정금액 이하 이체만 가능합니다.</span>
+                                </div>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">취소</button>
+                                    <button type="button" class="btn em">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="popWrap" id="layer-test2" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popCont">
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <a href="#layer-test3" aria-haspopup="true" class="btn jsBtnLypop">popup in popup</a>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">취소</button>
+                                    <button type="button" class="btn em">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="popWrap fullLayerPop" id="layer-test3" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popHeader">
+                                <h2 class="tit">full pop</h2>
+                            </div>
+                            <div class="popCont">
+                                <a href="#layer-test3" aria-haspopup="true" class="btn jsBtnLypop">popup in popup</a>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">확인</button>
+                                    <button type="button" class="btn em">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popWrap slidePopOption" id="layer-test4" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popHeader">
+                                <h2 class="tit">slide pop</h2>
+                            </div>
+                            <div class="popCont">
+                                <p>lypop test</p>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">취소</button>
+                                    <button type="button" class="btn em">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popWrap slidePopOption" id="layer-test5" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popHeader">
+                                <h2 class="tit">slide pop</h2>
+                            </div>
+                            <div class="popCont">
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                                <p>lypop test</p>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">취소</button>
+                                    <button type="button" class="btn em">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popWrap noCls" id="layer-test6" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popContainer">
+                        <div class="popContWrap">
+                            <div class="popHeader">
+                                <h2 class="tit logoSb"><span class="blind">NH 스마트뱅킹</span></h2>
+                            </div>
+                            <div class="popCont">
+                                <div class="numberBtnList">
+                                    <ul>
+                                        <li class="on"><button type="button">1</button></li>
+                                        <li><button type="button">2</button></li>
+                                        <li><button type="button">3</button></li>
+                                        <li><button type="button">4</button></li>
+                                        <li><button type="button">5</button></li>
+                                        <li><button type="button">6</button></li>
+                                        <li><button type="button">7</button></li>
+                                        <li><button type="button">8</button></li>
+                                        <li><button type="button">9</button></li>
+                                        <li><button type="button">10</button></li>
+                                        <li><button type="button">11</button></li>
+                                        <li><button type="button">12</button></li>
+                                        <li><button type="button">13</button></li>
+                                        <li><button type="button">14</button></li>
+                                        <li><button type="button">15</button></li>
+                                        <li><button type="button">16</button></li>
+                                        <li><button type="button">17</button></li>
+                                        <li><button type="button">18</button></li>
+                                        <li><button type="button">19</button></li>
+                                        <li><button type="button">20</button></li>
+                                        <li><button type="button">21</button></li>
+                                        <li><button type="button">22</button></li>
+                                        <li><button type="button">23</button></li>
+                                        <li><button type="button">24</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="popBtnWrap">
+                                <div class="popBtn">
+                                    <button type="button" class="btn">취소</button>
+                                    <button type="button" class="btn em jsClose">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="javascript:;" class="btnCls jsClose"><span class="blind">팝업닫기</span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.numberBtnList button').click(function(){
+        $(this).parent('li').addClass('on').siblings('li').removeClass('on');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_be :외환 */
+/* 너도나도환전 */
+.exchangeUlHow{overflow:hidden}
+.exchangeUlHow li{float:left;position:relative;text-align:center;color:#666;font-size:12px}
+.exchangeUlHow li p{padding-top:7px}
+.exchangeUlHow li:before{content:'';display:block;margin:0 auto;width:50px;height:50px}
+.exchangeUlHow li:nth-child(1):before{background:url(../images/contents/bg_exchange01.png) no-repeat 0 0;background-size:100%}
+.exchangeUlHow li:nth-child(2):before{background:url(../images/contents/bg_exchange02.png) no-repeat 0 0;background-size:100%}
+.exchangeUlHow li:nth-child(3):before{background:url(../images/contents/bg_exchange03.png) no-repeat 0 0;background-size:100%}
+.exchangeUlHow li:nth-child(1){padding-right:33px}
+.exchangeUlHow li:nth-child(2){padding-right:32px}
+.exchangeUlHow li:nth-child(1):after{content:'';position:absolute;right:6px;top:20px;width:16px;height:8px;background:url(../images/contents/bg_arr01.png) no-repeat 0 0;background-size:100%}
+.exchangeUlHow li:nth-child(2):after{content:'';position:absolute;right:-3px;top:20px;width:26px;height:8px;background:url(../images/contents/bg_arr02.png) no-repeat 0 0;background-size:100%}
+.exchangeUlDeals{overflow:hidden;margin-top:-26px;display:block;width:100%}
+.exchangeUlDeals:after{content:'';display:block;clear:both}
+.exchangeUlDeals li{float:left;width:50%;margin-top:26px;font-size:12px;color:#111}
+.exchangeUlDeals li p{padding-left:40px}
+.exchangeUlDeals li span{display:block;font-size:11px}
+.exchangeUlDeals li:nth-child(1){background:url(../images/common/gb/ico_country16.png) no-repeat 0 center;background-size:30px 30px}
+.exchangeUlDeals li:nth-child(2){background:url(../images/common/gb/ico_country01.png) no-repeat 0 center;background-size:30px 30px}
+.exchangeUlDeals li:nth-child(3){background:url(../images/common/gb/ico_country02.png) no-repeat 0 center;background-size:30px 30px}
+.exchangeUlDeals li:nth-child(4){background:url(../images/common/gb/ico_country04.png) no-repeat 0 center;background-size:30px 30px}
+.active .bgGray01{background-color:#f8f8f8 !important;color:#111 !important}
+/* 외환 - 웨스턴유니온 */
+.westernImg.type02{margin:0 -17px;font-size:0}
+.wstonCsBox{position:relative;display:block;margin-top:20px;padding-top:1px;padding-bottom:16px;color:#333;font-size:14px;background:#f8f8f8}
+.wstonCsBox p{position:relative;display:table;padding-left:34px;padding-top:0px;margin-top:18px;margin-left:15px;line-height:20px;min-height:40px;background:url('../images/contents/bg_ico_ws.png');background-repeat:no-repeat;background-position:0 center;background-size:23px 26px}
+.wstonCsBox p strong{display:block;margin-top:5px;display:table-cell;vertical-align:middle}
+.wstonCsBox p strong:first-child{margin-top:0}
+.wstonCsBox .listDot{padding-top:10px;margin-left:15px}
+.accountWrap.type02{background:#f8f8f8}
+.accountWrap.type02 .productList .productHeader{background:#fff}
+.accountWrap.type02 .productList > li + li{margin-top:5px;border-top:1px solid #dedede}
+.accountWrap.type02 .detailList{background:#f8f8f8}
+.btnCsCall{display:inline-block;background:#fff;height:25px;line-height:23px;font-size:13px;color:#111;margin-top:3px;padding:0 12px 0 10px;border:1px solid #ccc;border-radius:2px}
+.btnCsCall span{display:inline-block;padding-left:19px;background:url('../images/contents/bg_ico_phone.png') no-repeat 0 center;background-size:13px 13px}
+.moneyDiv{padding-right:6px}
+.moneyDiv p{background:#f8f8f8;height:40px;line-height:40px;color:#111;font-size:13px;text-align:center;border:1px solid #dedede}
+.moneyDiv p img{width:21px;vertical-align:middle;margin-right:6px;position:relative;top:-3px}
+.krwExchange{background:#f8f8f8;margin-top:10px;padding:15px 8px;position:relative;overflow:hidden}
+.krwExchange .tit{float:left;font-size:13px;line-height:30px;color:#111}
+.krwExchange .tit img{width:30px;vertical-align:middle;margin-right:6px}
+.krwExchange .txt{float:right;font-size:14px;padding-top:2px;text-align:right}
+.krwExchange .txt span{display:block;font-size:11px}
+/* 외환 - 너도나도환전 */
+.signWrap.type02{background:none;border-top:1px solid #dedede}
+.exchangeUlHowWrap,
+.exchangeUlHowWrap .exchangeUlHow{margin:0 auto;text-align:center}
+.exchangeUlHowWrap .exchangeUlHow{display:inline-block;width:auto}
+/* 외환 송금금액 타입 추가 */
+.usdType01 .moneyDiv,
+.usdType01 .priceDiv{display:table-cell}
+.usdType01 .moneyDiv{width:25%}
+.usdType01 .priceDiv{width:75%}
+/* 송금국가 검색 팝업 */
+.addRemitCoun,
+.addRemitCoun ul{position:relative;display:block}
+.addRemitCoun{margin:20px -17px 0}
+.addRemitCoun ul{width:100%}
+.addRemitCoun ul:after{content:'';display:block;clear:both}
+.addRemitCoun ul li{border-bottom:1px solid #ddd;padding:0}
+.addRemitCoun ul li:first-child{border-top:1px solid #ddd}
+.addRemitCoun ul li a{position:relative;display:block;width:100%;padding:15px 42px 15px 17px}
+.addRemitCoun ul li.active a{background-color:#f3faff}
+.addRemitCoun ul li dl{display:table;width:100%}
+.addRemitCoun ul li dl dt,
+.addRemitCoun ul li dl dd{display:table-cell;vertical-align:top}
+.addRemitCoun ul li dl dt{width:20%}
+.addRemitCoun ul li dl dd{width:30%;padding-right:10px}
+.addRemitCoun ul li dl dd.nName{width:50%;padding-right:0}
+/* 외환 - 송금통화구분 */
+.foreignExchange [class*="langImgType"]:before{display:inline-block;width:36px;height:36px;background:no-repeat center center;background-size:36px 36px;font-size:1px;color:transparent;vertical-align:middle}
+.foreignExchange .accList .accNum[class*="langImgType"]:before{margin-right:10px}
+.foreignExchange .langImgType01:before{content:'USD미국달러 로고';background-image:url('../images/common/gb/ico_lang02.png')}
+.foreignExchange .langImgType02:before{content:'JPY일본 엔 로고';background-image:url('../images/common/gb/ico_country01.png')}
+.foreignExchange .langImgType03:before{content:'GBP영국 파운드 로고';background-image:url('../images/common/gb/ico_country03.png')}
+.foreignExchange .langImgType04:before{content:'CAD캐나다 달러 로고';background-image:url('../images/common/gb/ico_country06.png')}
+.foreignExchange .langImgType05:before{content:'CHF스위스 프랑 로고';background-image:url('../images/common/gb/ico_country05.png')}
+.foreignExchange .langImgType06:before{content:'HKD홍콩 달러 로고';background-image:url('../images/common/gb/ico_country07.png')}
+.foreignExchange .langImgType07:before{content:'SEK스웨텐 크로네 로고';background-image:url('../images/common/gb/ico_country08.png')}
+.foreignExchange .langImgType08:before{content:'AUD호주 달러 로고';background-image:url('../images/common/gb/ico_country09.png')}
+.foreignExchange .langImgType09:before{content:'DKK덴마크 크로네 로고';background-image:url('../images/common/gb/ico_country10.png')}
+.foreignExchange .langImgType10:before{content:'NOK노르웨이 크로네 로고';background-image:url('../images/common/gb/ico_country11.png')}
+.foreignExchange .langImgType11:before{content:'SGD싱가포르 달러 로고';background-image:url('../images/common/gb/ico_country17.png')}
+.foreignExchange .langImgType12:before{content:'NZD뉴질랜드 달러 로고';background-image:url('../images/common/gb/ico_country19.png')}
+.foreignExchange .langImgType13:before{content:'EUR유럽연합 유로 로고';background-image:url('../images/common/gb/ico_country02.png')}
+.foreignExchange .langImgType14:before{content:'SAR사우디 리얄 로고';background-image:url('../images/common/gb/ico_country12.png')}
+.foreignExchange .langImgType15:before{content:'KWD쿠웨이트 디나르 로고';background-image:url('../images/common/gb/ico_country13.png')}
+.foreignExchange .langImgType16:before{content:'MYR말레이지아 링키트 로고';background-image:url('../images/common/gb/ico_country18.png')}
+.foreignExchange .langImgType17:before{content:'THB태국 바트 로고';background-image:url('../images/common/gb/ico_country20.png')}
+.foreignExchange .langImgType18:before{content:'AED아랍에미리트공화국 디히람 로고';background-image:url('../images/common/gb/ico_country15.png')}
+.foreignExchange .langImgType19:before{content:'BHD바레인 디나르 로고';background-image:url('../images/common/gb/ico_country14.png')}
+.foreignExchange .langImgType20:before{content:'IDR인도네시아 루피아 로고';background-image:url('../images/common/gb/ico_country21.png')}
+.foreignExchange .langImgType21:before{content:'CNY중국 위안 로고';background-image:url('../images/common/gb/ico_lang03.png')}

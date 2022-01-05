@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>etc :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">tite</h2>
+	<h3 class="guide">■ h2 기본</h3>
+    <h2 class="defTit">defTit</h2>
+	<h3 class="guide">■ h3 기본</h3>
+    <h3 class="defSubTit">defSubTit</h3>
+	<h3 class="guide">■ 상품 title</h3>
+    <strong class="prodTit"><span class="badge">NH농협생명</span><span class="pointColor4">300000010000</span></strong>
+	<h3 class="guide">■ form title</h3>
+	<div class="formWrap">
+		<ul>
+			<li>
+				<strong class="formTit">formTit</strong>
+			</li>
+		</ul>
+	</div>
+	
+    <h3 class="guide">■ box 타이틀</h3>
+    <div class="boxHeaderBlue">
+        <strong class="txt">NH-Amundi Allser스마트인베스터5.0 분할 매수[주식혼합-재간접]Ce</strong>
+    </div>
+	
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">text</h2>
+    <h3 class="guide">■ form info text(한줄) : p.infoTxt</h3>
+    <p class="infoTxt"> 지급가능금액 인포텍스트 <span class="pointColor5">강조의 경우는 주황색</span>으로</p>
+    <h3 class="guide mt20">■ form info text(두줄 이상) : ul.infoTxt</h3>
+    <ul class="infoTxt">
+        <li>관리비 고지서에 기재된 계좌번호 입력</li>
+        <li>타행계좌로관리비를 납부하는 경우, 이체수수료(500원)별도 부가</li>
+    </ul>
+    <h3 class="guide mt20">■ info text(한줄) : p.infoTxt3</h3>
+    <p class="infoTxt3">1년 이내 인터넷/스마트 환전 이용실적이 있는 경우(신청일, 외화수령점 기준)</p>
+    <p class="infoTxt3 active">1년 이내 인터넷/스마트 환전 이용실적이 있는 경우(신청일, 외화수령점 기준)</p>
+    <!-- <h3 class="guide mt20">■ form info text(한줄) 버튼 있는 경우 : p.infoTxt.inBtn </h3> -->    
+    <h3 class="guide mt20">■ 기본 텍스트 문장</h3>
+    <h3 class="defTit">10% 추가우대 Tip</h3>
+    <p class="defTxt">1년 이내 인터넷/스마트 환전 이용실적이 있는 경우(신청일, 외화수령점 기준)</p>
+    <p class="defTxt">고지서 하단에 <span class="pointColor">국민건강보험공단</span> 문구가 있고 납부자 번호가 <span class="pointColor">13자리</span>일 경우는 통합사회보험료납부 메뉴를 이용하시기 바랍니다.</p>
+    <p class="defTxt02">1년 이내 인터넷/스마트 환전 이용실적이 있는 경우(신청일, 외화수령점 기준)</p>
+
+	<h3 class="guide mt20">■ 현재시간 표시 아이콘이 있는 텍스트</h3>
+    <div class="currentTime"><p>현재시간 : <span>2018.05.25 18:48:45</span></p></div>
+	<br />
+
+    <ul class="listDot">
+        <li>최근 1년 이내 <span class="pointColor">농협은행</span>에서 환전수령을 한 경우, 수령점 지정 시 <span class="pointColor">농협은행</span>을 선택하시고,</li>
+        <li>최근 1년 이내 <span class="pointColor">농축협</span>에서 환전수령을 한 경우, 수령점 지정 시 <span class="pointColor">농축협</span>을 선택하셔야 추가우대가 됩니다.</li>
+    </ul>
+	<br />
+
+	<div class="accInfoTit">
+		<dl>
+			<dt>개인종합자산관리계좌(ISA)</dt>
+			<dd>123-12345-1234-12</dd>
+		</dl>
+	</div>
+	
+	<br /><br />
+
+	<div class="accountHeader">
+		<h2 class="accTit">하나로증권통장</h2>
+		<span class="accNick2">계좌별칭</span>
+		<div class="accPriceArea">
+			<span class="tit">잔액</span>
+			<span class="txt"> 
+				<span class="price">610,420</span><span class="wUnit">원</span>
+			</span>
+		</div>
+	</div>
+	<!-- //view -->
+
+    <h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">토글 클릭 이벤트 스크립트 가이드</h2>
+    <div class="toggleWrap">
+        <a href="javascript:;" class="toggleBtn">버튼1</a>
+        <div class="toggleCont">1</div>
+    </div>
+    <div class="toggleWrap">
+        <a href="javascript:;" class="toggleBtn">버튼2</a>
+        <div class="toggleCont">2</div>
+    </div>
+    <div class="toggleWrap">
+        <a href="javascript:;" class="toggleBtn">버튼3</a>
+        <div class="toggleCont">3</div>
+    </div>
+    <div class="toggleWrap">
+        <a href="javascript:;" class="toggleBtn">버튼4</a>
+        <div class="toggleCont">4</div>
+    </div>
+    <div class="toggleWrap">
+        <a href="javascript:;" class="toggleBtn">버튼5</a>
+        <div class="toggleCont">5</div>
+    </div>
+
+</div>
+</body>
+</html>

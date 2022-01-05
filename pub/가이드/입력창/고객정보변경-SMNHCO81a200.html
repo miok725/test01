@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">NH e공무원대출</h2>
+			<div class="stepArea">
+				<p class="stepTit">개인고객정보확인</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="guideListTop">
+				<p>변경 내용이 있는 경우 반드시 [고객정보 변경] 후 거래하시기 바랍니다.</p>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine btnHig30 mod_info" role="button"><span class="btnIco01">고객정보 변경</span></a>		
+				</div>
+			</div>
+			<!-- guideList_end -->
+			<div class="el_info_wrap">
+				<div class="wrapTblDefault mt20">
+					<table cellpadding="0" cellspacing="0" summary="자택주소, 자택 전화번호, 직장주소, 직장 전화번호, 휴대전화, 이메일주소">
+						<caption>개인고객정보</caption>
+						<colgroup>
+							<col style="width:33%">
+							<col style="width:auto">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">자택주소</th>
+								<td>
+									01644<br>
+									서울특별시 강남구 덕릉로 111길 12 가동 101호
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">자택 전화번호</th>
+								<td>전화번호영역</td>
+							</tr>
+							<tr>
+								<th scope="row">직장주소</th>
+								<td>
+									03190<br>
+									서울특별시 종로구 청계천로 22 농협빌딩 5층 농협은행 개발팀
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">직장 전화번호</th>
+								<td>전화번호영역</td>
+							</tr>
+							<tr>
+								<th scope="row">휴대전화</th>
+								<td>전화번호영역</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일주소</th>
+								<td>이메일주소영역</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- wrapTblDefault_end -->
+				<div class="areaBtnDefault">
+					<a href="javascript:;" class="btnPressDefault">취소</a>
+					<a href="javascript:;" class="btnPressPoint">확인</a> 
+					<!-- 비활성화시 disabled 추가 -->
+				</div>
+				<!-- areaBtnDefault_end -->
+			</div>
+			<!-- info_wrap_end -->
+			<div class="el_info_mod">
+				<h3 class="defTit">고객정보 변경</h3>
+				<div class="formWrap pt0">
+					<ul>
+						<li>
+							<strong class="formTit">자택주소<span class="pointColor5">(필수)</span></strong>
+							<div class="inputBoth01 div7_3">
+								<div class="inputList inputB01">
+									<input type="text" title="우편번호 자동입력">
+								</div>
+								<div class="inputB02">
+									<a href="javascript:;" class="btnInput01" title="새창으로 열림">우편번호검색</a>
+								</div>
+							</div>
+							<div class="inputBoth03 div5_5">
+								<div class="inputB01">
+									<input type="text" title="구주소 번지 자동입력" id="input01">
+								</div>
+								<span class="inputDash">-</span>
+								<div class="inputB02">
+									<input type="text" title="구주소 호 자동입력" id="input01">
+								</div>
+							</div>
+							<div class="inputList">                    
+								<input type="text" title="주소 자동입력">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+							<div class="inputList">                    
+								<input type="text" title="상세주소 입력" placeholder="상세주소입력">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+						</li>
+						<li>
+							<strong class="formTit">직장주소</strong>
+							<div class="inputBoth01 div7_3">
+								<div class="inputList inputB01">
+									<input type="text" title="우편번호 자동입력">
+								</div>
+								<div class="inputB02">
+									<a href="javascript:;" class="btnInput01" title="새창으로 열림">우편번호검색</a>
+								</div>
+							</div>
+							<div class="inputBoth03 div5_5">
+								<div class="inputB01">
+									<input type="text" title="구주소 번지 자동입력" id="input01">
+								</div>
+								<span class="inputDash">-</span>
+								<div class="inputB02">
+									<input type="text" title="구주소 호 자동입력" id="input01">
+								</div>
+							</div>
+							<div class="inputList">                    
+								<input type="text" title="주소 자동입력">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+							<div class="inputList">                    
+								<input type="text" title="상세주소 입력" placeholder="상세주소입력">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+						</li>
+						<li>
+							<strong class="formTit">이메일<span class="pointColor5">(필수)</span></strong>
+							<div class="emailWrap">
+								<div class="email">
+									<div class="inputB01"><input type="text" id="" name="" title="이메일 계정 입력"></div>
+									<div class="inputDash">@</div>
+									<div class="inputB02"><input type="text" id="" name="" title="이메일 도메인 입력"></div>
+								</div>
+								<div class="stList">
+									<a href="javascript:;" title="이메일 도메인 선택 새창 열림">
+										<span class="selectValue">직접입력</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="이메일 도메인 선택 선택">
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+						</li>
+						<li>
+							<strong class="formTit">자택전화번호</strong>
+							<div class="telWrap">
+								<div class="stList telSel">
+									<a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="전화번호(연락처) 앞자리 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="inputDash">-</div>
+								<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택"></div>
+								<div class="inputDash">-</div>
+								<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택"></div>
+							</div>
+						</li>
+						<li>
+							<strong class="formTit">휴대전화<span class="pointColor5">(필수)</span></strong>
+							<div class="telWrap">
+								<div class="stList telSel">
+									<a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="전화번호(연락처) 앞자리 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="inputDash">-</div>
+								<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택"></div>
+								<div class="inputDash">-</div>
+								<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택"></div>
+							</div>
+							<div class="areaBodyBtnFull">
+								<a href="javascript:;" class="btnBodyLine">휴대폰번호변경</a>		
+							</div>
+						</li>
+						<li>
+							<strong class="formTit">직장전화번호</strong>
+							<div class="telWrap">
+								<div class="stList telSel">
+									<a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="전화번호(연락처) 앞자리 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<div class="inputDash">-</div>
+								<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택"></div>
+								<div class="inputDash">-</div>
+								<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택"></div>
+							</div>
+							(내선 <input type="tel" class="w60"> )
+						</li>
+					</ul>
+					<div class="no_design">보안매체 영역</div>
+				</div>
+				<!-- wrapTblDefault_end -->
+				<div class="areaBtnDefault mod">
+					<a href="javascript:;" class="btnPressDefault cancel_mod">변경취소</a>
+					<a href="javascript:;" class="btnPressPoint">확인</a> 
+					<!-- 비활성화시 disabled 추가 -->
+				</div>
+				<!-- areaBtnDefault_end -->
+			</div>
+			<!-- el_info_mod_end -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+			
+			<!-- 20180824 텍스트 추가 -->
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">알아두세요</p></div>
+				<ul class="listDot">
+					<li>대출에 필요한 고객님의 정보는 위와 같습니다. 대출을 원하시면[확인] 버튼을 누르세요.</li>
+					<li>확인을 모두 마치셨으면 회원정보가 다른 사람에게 알려지지 않도록 주의하시기 바랍니다.</li>
+					<li>고객님의 정보는 이용자의 동의 없이는 절대 공개되지 않습니다.</li>
+					<li>자택주소는 대출약정서의 주소로 입력되므로 주민등록 주소와 일치해야 합니다.</li>
+				</ul>
+			</div>
+			<!-- // 20180824 텍스트 추가 -->
+			<!-- guideList_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+</body>
+</html>

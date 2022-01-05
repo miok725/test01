@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">우수고객 인터넷 무보증 신용대출</h2>
+			<div class="stepArea">
+				<p class="stepTit">입력내용확인</p>	<!-- 2018-09-07 :: 텍스트 수정 -->
+				<div class="stepInfo" role="img" aria-label="총 5단계중 4단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="off"><span>3</span></li>
+						<li class="active"><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+
+			<div class="wrapTblDefault">
+				<table cellpadding="0" cellspacing="0">
+                    <caption>대출과목, 거래구분, 대출금액, 대출관리점, 대출약정 계좌번호, 실약정금액, 대출개시일, 대출만료일, 대출이자율, 지연배상금율,  이자율, 이자 및 지연배상금 계산방법, 대출실행방법, 대출상환방법, 이자지급 시기 및 방법등의 정보 테이블입니다.</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">대출과목</th>
+							<td>가계일반자금대출</td>
+						</tr>
+						<tr>
+							<th scope="row">거래구분</th>
+							<td>한도거래</td>
+						</tr>
+						<tr>
+							<th scope="row">대출금액</th>
+							<td class="ar"><strong class="pointColor"><em>1,000,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">대출관리점</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">대출약정계좌번호</th>
+							<td><span class="pointColor5">00-000-0000</span></td>
+						</tr>
+						<tr>
+							<th scope="row">실약정금액</th>
+							<td class="ar"><strong class="pointColor"><em>1,000,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">대출개시일</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">대출만료일</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">대출이자율</th>
+							<td class="al_r">
+								<strong>
+									<em>0.00</em> %<br/>
+									(3개월MOR기준금리+<br/>
+									<em>0.00</em> %)
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지연배상금율</th>
+							<td class="ar">최고 연 15.000 %</td>
+						</tr>
+						<tr>
+							<th scope="row">이자율</th>
+							<td>MOR기준금리연동(농협은행 여신거래기본약관 제3조제2항제2호 적용)</td>
+						</tr>
+						<tr>
+							<th scope="row">이자 및 지연배상금 계산방법</th>
+							<td>1년을 365일로 보고 1일 단위로 계산합니다.</td>
+						</tr>
+						<tr>
+							<th scope="row">대출실행방법</th>
+							<td>본인의 청구가 있는 대로 실행합니다.</td>
+						</tr>
+						<tr>
+							<th scope="row">대출상환방법</th>
+							<td>
+								<p>자유로이 상환하되, 대출기간 만료일에 전액 상환합니다.</p>
+								<p class="infoTxt">만료일 전에 상환시는 농협은행 영업시간내에 처리하시기 바랍니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이자지급 시기 및 방법</th>
+							<td>
+								이자납입일은 여신개시일자로 설정되며 고객님의 대출약정계좌에서 매월 자동으로 출금됩니다.<br>이자납입일이 휴무[금융휴무일 포함]일인 경우 다음 영업일에 인출됩니다.<br>이자납입일 변경은 영업점으로 문의바랍니다.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table cellpadding="0" cellspacing="0">
+                    <caption>우편발송지 정보 테이블입니다.</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">우편발송지</th>
+							<td>자택</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+			<div class="formWrap">
+				<ul>
+					<li class="alignCol">
+						<strong class="formTit w100">인지세합계액<br>(고객부담인지세)</strong>
+						<p class="inpTxt ar">
+							<strong class="pointColor"><em>1,000,000</em> <span class="wUnit">원</span></strong>
+							(<strong class="pointColor"><em>1,000,000</em> <span class="wUnit">원</span></strong>)
+						</p>
+					</li>
+					<li>
+						<strong class="formTit">인지세 출금계좌번호</strong>
+						<div class="acc_inquiry_wrap">
+							<div class="selectBtnForm selectAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="stList inputB01">
+										<a href="javascript:;" title="OOO 선택 새창열림" role="radiogroup">
+											<span class="selectValue">선택해주세요</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+									<div class="inputB02">
+										<a href="javascript:;" class="btnInput01">이체가능금액/한도</a>
+									</div>
+								</div>
+								<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnBodyLine mt5">직접입력</a>
+							</div>
+							<div class="selectBtnForm insertAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="inputList">
+										<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+									</div>
+									<div class="inputB02">
+										<a href="javascript:;" class="btnInput01">이체가능금액/한도</a>
+									</div>
+								</div>
+								<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnBodyLine mt5">계좌선택</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">출금계좌비밀번호</strong>
+						<div class="inputList">                    
+							<input type="password" title="계좌비밀번호 입력" class="sKey" readonly="readonly">
+						</div>
+						<p class="infoTxt">숫자4자리(예적금/신탁계좌의 비밀번호)</p>
+					</li>
+				</ul>
+			</div>
+			<div class="termsList mt20"> 
+				<ul> 
+					<li> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c1" name="" checked="">
+								<!-- 약관확인 후 checked 처리 -->
+								<label for="c1">우수고객 인터넷 무보증 신용대출 거래조건</label>
+							</a>
+						</div>
+					</li>
+				</ul> 
+			</div>
+			<!-- termsList_end -->
+			<div class="no_design">보안매체 영역</div>
+
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">알아두세요</p></div>
+				<ul class="listDot">
+					<li>대출이 실행된 이후에는 정정/취소가 불가능하오니 다시 한번 입력내용을 확인하시기 바랍니다.</li>
+					<li>부득이 대출이 잘못 실행되어 취소를 원하실 때에는 대출금을 완제(인터넷에서 완제 가능)하여샤 하며, 이 경우 하루치 이자를 부담하셔야 합니다.</li>
+				</ul>
+			</div>
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">대출신청</a>
+			</div>
+			<!-- areaBtnDefault_end -->
+			<!-- popup -->
+			<!-- 약관샘플 팝업 -->
+			<div class="popWrap fullLayerPop pdfWrap">
+				<div class="popInner">
+					<h1>PDF 샘플</h1>
+					<div class="popCont">
+						<!-- iframe 불러오는 영역 -->
+						<div class="iframeWrap">
+							<iframe src="../NH농심-농부의마음적금_상품설명서.html" frameborder="0" width="100%" height="100%"></iframe>
+						</div>
+						<!-- // iframe 불러오는 영역 end -->
+					</div>
+		
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!-- //약관샘플 팝업 -->
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

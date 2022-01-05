@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_main_ob :오픈뱅킹 서브메인 */
+/* 2020 고도화 시작 */
+.dfs .accountTransferView .accInfoArea .icoBnk + .accCont .accTit .btnModify:after, .dfs .noticeWrap .listBul.ico>li.sms:before, .dfs .msgWrap.guide .icoChangeMoney, .dfs .menuWrap li a:after, .dfs .chargeWrap .ratingBar i.coin,
+.dfs .contWrap .figureWrap li:before, .dfs .contWrap .figureWrap li>.arr, .dfs .chargeWrap .btnAttr:after, .dfs .chargeWrap:before, .dfs .mainCircleWrap .btnRegi:after, .dfs .mainCircleWrap .logoNh:after, .dfs .mainCircleBox .logoNh.type02:after
+{display:block;content:'';background-image:url('../images/contents/ob/sp_ob.png');background-size:auto 250px}
+.dfs .mainWrap{margin:0 -20px;padding:40px 20px 0;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f9), color-stop(50%, #fafafc), color-stop(100%, #fff));background: -webkit-linear-gradient(top, #f5f5f9 0%, #fafafc 50%, #fff 100%)}
+.dfs .mainGuideWrap{text-align:right}
+.dfs .mainGuideWrap button{display:inline-block;height:23px;padding:0 10px;border-radius:11px;background:#fff;font-size:13px;color:#888;line-height:23px}
+.dfs .mainCircleWrap{display:flex;justify-content:center;align-items:center;position:relative;width:264.5px;height:264.5px;margin:27px auto 0;border-radius:50%;background:#fff;box-shadow: 0px 30px 50px 30px rgba(0, 47, 116, 0.04)}
+.dfs .mainCircleWrap .tit{font-size:20px;color:#111;line-height:29px;padding:0 40px}
+.dfs .mainCircleWrap .tit span{display:block;margin-bottom:8px;font-size:21px}
+.dfs .mainCircleWrap .tit span strong{line-height:1.2}
+.dfs .mainCircleWrap .logoNh{position:absolute;top:13px;left:10px;width:56px;height:56px;background:#19a647;border-radius:50%}
+.dfs .mainCircleWrap .logoNh:after{position:absolute;top:50%;left:50%;width:35.5px;height:14px;margin-top:-7px;margin-left:-18px;background-position:0 -109px}
+.dfs .mainCircleWrap .btnRegi{position:absolute;right:-7px;bottom:-2px;width:84px;height:84px;padding-top:45px;background:#19a647;border-radius:50%;color:#fff;font-size:13px;font-weight:600}
+.dfs .mainCircleWrap .btnRegi:after{position:absolute;top:23px;left:50%;margin-left:-9px;width:17.5px;height:17.5px;background-position:-75px 0}
+.dfs .mainWrap.type02 .mainCircleWrap .logoNh{background:#19b9bf}
+.dfs .mainWrap.type02 .mainCircleWrap .logoNh:after{position:absolute;top:50%;left:50%;width:39px;height:14.5px;margin-top:-7.25px;margin-left:-19.5px;background-position:0 -127px}
+.dfs .mainWrap.type02 .mainCircleWrap .btnRegi{background:#19b9bf}
+.dfs .mainWrap.type02 em{color:#19b9bf}
+.dfs .chargeWrap{position:relative;margin:70px 15px 0;padding:20px 20px 18px;border:1px solid #e9e9ea;border-radius:15px;text-align:center}
+.dfs .chargeWrap .ratingBar >i.coin{position:absolute;top:-24px;left:0;width:21px;height:21px;background-position:-59px -112px;margin-left:-21px;-webkit-animation:coinBounce .6s 5;animation:coinBounce coinBounce .6s 5}
+@-webkit-keyframes coinBounce{0%,100%{top:-12px;transform:rotateY(0deg);transform-style:flat;animation-timing-function:ease-out;opacity:.2}50%{top:-50px;transform:rotateY(360deg);transform-style:flat;animation-timing-function:ease-in;opacity:1}} 
+@keyframes coinBounce{0%,100%{top:-12px;-webkit-transform:rotateY(0deg);-webkit-transform-style:flat;-webkit-animation-timing-function:ease-out;opacity:.2}50%{top:-50px;-webkit-transform:rotateY(360deg);-webkit-transform-style:flat;-webkit-animation-timing-function:ease-in;opacity:1}} 
+.dfs .chargeWrap .ratingBar{position:relative;padding-top:0}
+.dfs .chargeWrap .ratingBar:after{top:0;background-color:#f0f0f3}
+.dfs .chargeWrap .ratingBar .rate{background:url(../images/contents/ob/bg_progress01.png);box-shadow: 0px 8px 20px 0px rgba(44, 68, 104, 0.2)}
+.dfs .chargeWrap .btnAttr{display:inline-block;position:relative;margin-top:15px;padding-right:15px;font-size:17px;font-weight:600;color:#19a647}
+.dfs .chargeWrap .btnAttr:after{position:absolute;top:6px;right:0;width:8px;height:14px;background-position:-51px 0}
+.dfs .mainWrap.type02 .chargeWrap .btnAttr{color:#19b9bf}
+.dfs .mainWrap.type02 .chargeWrap .btnAttr:after{background-position:-63px 0}
+.dfs .mainWrap.type02 .chargeWrap .ratingBar .rate{background:url(../images/contents/ob/bg_progress02.png)}
+.dfs .menuWrap{margin:52px 15px 0}
+.dfs .menuWrap ul{display:flex}
+.dfs .menuWrap li{position:relative;width:25%;text-align:center}
+.dfs .menuWrap li a{display:inline-block;padding-top:34px;font-size:13px;color:#333}
+.dfs .menuWrap li a:after{position:absolute;top:0;left:50%}
+.dfs .menuWrap li a.ico01:after{width:22px;height:22px;margin-left:-11px;background-position:-88px -111px}
+.dfs .menuWrap li a.ico02:after{width:26px;height:22.5px;margin-left:-11px;background-position:-117px -111px}
+.dfs .menuWrap li a.ico03:after{top:2px;width:26.5px;height:22px;margin-left:-10px;background-position:-150px -111px}
+.dfs .menuWrap li a.ico04:after{top:2px;width:22.5px;height:22.5px;margin-left:-9px;background-position:-184px -111px}
+.dfs .linkWrap{margin:53px 70px -15px}
+@media screen and (max-height:667px){
+    .dfs .mainWrap{padding:20px 20px 0}
+}
+@media screen and (max-height:568px){
+    .dfs .mainCircleWrap{width:230px;height:230px}
+    .dfs .mainCircleWrap .tit{font-size:18px}
+    .dfs .chargeWrap{margin:30px 15px 0}
+    .dfs .menuWrap{margin:20px 15px 0}
+}

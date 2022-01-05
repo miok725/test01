@@ -1,0 +1,481 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Bank">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="#">
+<title>form</title>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+<!-- <link type="text/css" rel="stylesheet" href="../../../css/nh_br.css"> -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/swiper.min.js"></script>
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/common_ui.js"></script>
+<script src="../../../js/nh_com_ui.js"></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+		<h1>공통</h1>
+		<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container dfs">
+        <div class="content">
+            <p class="tit lev1">form</p>
+
+            <div class="contWrap pt0">
+                <div class="formWrap type">
+                    <div class="formHolder">
+                        <button type="button" class="selectBank">선택하세요</button>
+                    </div>
+                    <div class="formHolder">
+                        <button type="button" class="select">선택하세요</button>
+                    </div>
+                    <div class="formHolder bankName">
+                        <span class="icoBnk"><img src="../../../images/common/bk_nh.png" alt="농협 로고"></span>
+                        <button type="button" class="selectBank">농협</button>
+                    </div>
+                    <div class="formHolder">
+                        <div class="fieldGroup">
+                            <span class="col inptWrap">
+                                <input type="text" class="inptText" title="은행선택" placeholder="">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <button type="button" class="btn">찾기</button>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <div class="inptWrap">
+                            <input type="text" class="inptText" title="타이틀" placeholder="" readonly>
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <div class="inptWrap">
+                            <input type="text" class="inptText" title="타이틀" placeholder="" disabled>
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contWrap">
+                <p class="tit lev2">Checkbox</p>
+                <p class="tit lev3">기본형(checkbox + label) - Block Type</p>
+                <div class="formHolder check active">
+                    <input type="checkbox" checked id="chkDefaultBl01">
+                    <label class="check" for="chkDefaultBl01">옵션1</label>
+                </div>
+                <div class="formHolder check">
+                    <input type="checkbox" id="chkDefaultBl02">
+                    <label class="check" for="chkDefaultBl02">옵션2</label>
+                </div>
+                        
+                <div class="formHolder check">
+                    <input type="checkbox" disabled id="chkDefaultBl03">
+                    <label class="check" for="chkDefaultBl03">옵션3(비활성)</label>
+                </div>
+
+                <div class="formHolder check active">
+                    <input type="checkbox" checked disabled id="chkDefaultBl04">
+                    <label class="check" for="chkDefaultBl04">옵션3(비활성)</label>
+                </div>
+                <br>
+
+                <p class="tit lev3">기본형(checkbox + label) - Inline Type</p>
+                <span class="formHolder check active">
+                    <input type="checkbox" checked id="chkDefault11">
+                    <label class="check" for="chkDefault11">옵션1</label>
+                </span>
+                <span class="formHolder check">
+                    <input type="checkbox" id="chkDefault12">
+                    <label class="check" for="chkDefault12">옵션2</label>
+                </span>
+                <span class="formHolder check">
+                    <input type="checkbox" id="chkDefault13">
+                    <label class="check" for="chkDefault13">옵션3</label>
+                </span>
+            </div>
+            <hr class="tee">
+            <div class="contWrap">
+                <p class="tit lev2">Toggle Switches</p>
+                <div class="formHolder switchType">
+                    <input type="checkbox" class="inptSwitch" id="customSwitches">
+                    <label class="swch" for="customSwitches"><span class="blind">목록 drag 보기</span></label>
+                </div>
+                <div class="formHolder switchType active">
+                    <input type="checkbox" checked class="inptSwitch" id="customSwitches2">
+                    <label class="swch" for="customSwitches2"><span class="blind">목록 drag 보기</span></label>
+                </div>
+
+                <p class="tit lev2">Toggle Switches on/off</p>
+                <div class="formHolder switchOnOff">
+                    <input type="checkbox" class="inptSwitch" id="onoffSwitches">
+                    <label class="switch" for="onoffSwitches"><span class="blind">on/off</span></label>
+                </div>
+
+                <p class="tit lev2">Toggle Switches mode</p>
+                <div class="formHolder switchMode">
+                    <input type="checkbox" class="inptSwitch" id="modeSwitches">
+                    <label class="switch" for="modeSwitches"><span class="blind">mode</span></label>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="contWrap">
+                <p class="tit lev2">Radio</p>
+                <p class="tit lev3">기본형(radio + label) - Block Type</p>
+                <div class="formHolder radio active">
+                    <input type="radio" checked name="radioDefault" id="radioDefault01">
+                    <label class="radio" for="radioDefault01">선택1</label>
+                </div>
+                <div class="formHolder radio">
+                    <input type="radio" name="radioDefault" id="radioDefault02">
+                    <label class="radio" for="radioDefault02">선택2</label>
+                </div>
+                <div class="formHolder radio">
+                    <input type="radio" id="radioDefault03" disabled>
+                    <label class="radio" for="radioDefault03">선택3(비활성화)</label>
+                </div>
+
+                <br>
+                <p class="tit lev3">기본형(radio + label) - Inline Type</p>
+                <span class="formHolder radio active">
+                    <input type="radio" checked name="radioDefaultBl2" id="radioDefaultBl21">
+                    <label class="radio" for="radioDefaultBl21">선택1</label>
+                </span>
+                <span class="formHolder radio">
+                    <input type="radio" name="radioDefaultBl2" id="radioDefaultBl22">
+                    <label class="radio" for="radioDefaultBl22">선택2</label>
+                </span>
+                <span class="formHolder radio">
+                    <input type="radio" name="radioDefaultBl2" id="radioDefaultBl23">
+                    <label class="radio" for="radioDefaultBl23">선택3</label>
+                </span>
+                <br>
+                <br>
+                <p class="tit lev3">버튼형(radio + label) - Inline Type</p>
+                <div class="radioBtnWrap mt10">
+                    <span class="btnHolder radio active">
+                        <input type="radio" checked name="radioDefaultBl5" id="radioDefaultBl51" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl51">당일</label>
+                    </span>
+                    <span class="btnHolder radio">
+                        <input type="radio" name="radioDefaultBl5" id="radioDefaultBl52" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl52">1개월</label>
+                    </span>
+                    <span class="btnHolder radio">
+                        <input type="radio" name="radioDefaultBl5" id="radioDefaultBl53" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl53">3개월</label>
+                    </span>
+                    <span class="btnHolder radio">
+                        <input type="radio" name="radioDefaultBl5" id="radioDefaultBl54" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl54">6개월</label>
+                    </span>
+                    <span class="btnHolder radio">
+                        <input type="radio" name="radioDefaultBl5" id="radioDefaultBl55" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl55">1년</label>
+                    </span>
+                </div>
+                <p class="period">2020/05/16 - 2020/06/15</p>
+
+                <p class="tit lev3">리스트형(radio + label)</p>
+                <div class="radioListWrap mt10">
+                    <div class="formHolder radio active">
+                        <input type="radio" checked name="radioDefaultBl6" id="radioDefaultBl61" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl61">예금주 + 자주사용하는 계좌명</label>
+                    </div>
+                    <div class="formHolder radio">
+                        <input type="radio" name="radioDefaultBl6" id="radioDefaultBl62" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl62">예금주명</label>
+                    </div>
+                    <div class="formHolder radio">
+                        <input type="radio" name="radioDefaultBl6" id="radioDefaultBl63" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl63">자주사용하는 계좌명</label>
+                    </div>
+                    <div class="formHolder radio">
+                        <input type="radio" name="radioDefaultBl6" id="radioDefaultBl64" class="btn_radio">
+                        <label class="radio" for="radioDefaultBl64">그룹명</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="contWrap">
+                <p class="tit lev2">Input</p>
+                <div class="formWrap mt0">
+                    <div class="formHolder">
+                        <div class="fieldGroup">
+                            <span class="col inptWrap">
+                                <input type="text" class="inptText" title="타이틀">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <button type="button" class="btn">확인</button>
+                        </div>
+                        <p class="msgHelp">사용할 수 있는 ID입니다.</p>
+                    </div>
+                    <div class="formHolder">
+                        <div class="fieldGroup">
+                            <span class="col inptWrap">
+                                <input type="text" class="inptText" title="타이틀">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <button type="button" class="btnAdd"><span class="blind">찾기</span></button>
+                        </div>
+                        <p class="msgHelp">사용할 수 있는 ID입니다.</p>
+                    </div>
+                    <div class="formHolder">
+                        <div class="fieldGroup">
+                            <span class="col inptWrap">
+                                <input type="text" class="inptText" title="타이틀" placeholder="자주쓰는 문구 (최대 10글자)">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <button type="button" class="btnTxt">취소</button>
+                            <button type="button" class="btnTxt em">등록</button>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <div class="fieldGroup">
+                            <span class="col inptWrap">
+                                <input type="text" class="inptText" title="타이틀">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <span class="time"><em>06:59</em></span>
+                        </div>
+                    </div>
+
+
+                    <div class="formHolder">
+                        <div class="fieldGroup">
+                            <span class="tit">성별</span>
+                            <select class="select col" title="성별">
+                                <option value="">남자</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formHolder">
+                        <strong class="tit">e농협 아이디</strong>
+                        <div class="inptWrap">
+                            <input type="text" title="e농협 아이디" class="inptText" placeholder="영문/숫자 5~10자리를 입력해주세요.">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <strong class="tit">실제생일</strong>
+                        <!-- <div class="rCont check">
+                            <input type="checkbox" id="inputDefault022" title="실제생일">
+                            <label class="check type" for="inputDefault022">선택안함</label>
+                        </div> -->
+                        <div class="inptWrap">
+                            <input type="text" value="2020.10.13" title="타이틀" class="inptText" placeholder="">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </div>
+                        <span class="formHolder radio active">
+                            <input type="radio" checked name="radioDefaultBl" id="radioDefaultBl01">
+                            <label class="radio" for="radioDefaultBl01">양력</label>
+                        </span>
+                        <span class="formHolder radio">
+                            <input type="radio" name="radioDefaultBl" id="radioDefaultBl02">
+                            <label class="radio" for="radioDefaultBl02">음력</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="contWrap">
+                <p class="tit lev2">Select</p>
+
+                <div class="formWrap mt0">
+                    <div class="formHolder mt0">
+                        <strong class="tit">받는 분 이메일 주소</strong>
+                        <div class="fieldGroup">
+                            <span class="col inptWrap">
+                                <input type="text" title="이메일" class="inptText" placeholder="이메일주소 입력">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <span class="divider at">@</span>
+                        </div>
+                        <div class="formHolder">
+                            <select class="select" title="도메인">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <strong class="tit">자택번호</strong>
+                        <div class="fieldGroup">
+                            <select class="select col" title="자택번호 앞자리">
+                                <option value="">선택</option>
+                            </select>
+                            <span class="divider dash">-</span>
+                            <span class="col inptWrap noDel">
+                                <input type="text" value="1234" class="inptText" title="자택번호 중간자리">
+                            </span>
+                            <span class="divider dash">-</span>
+                            <span class="col inptWrap noDel">
+                                <input type="password" value="****" class="inptText" title="자택번호 마지막자리">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="formWrap selectAll">
+                <div class="total">
+                    <div class="formHolder check">
+                        <input type="checkbox" id="type_all01">
+                        <label class="check" for="type_all01">전체약관동의</label>
+                    </div>
+                    <div class="rCont">
+                        <button type="button" class="btnShowHide jsToggle" data-toggle-target="toggleLayer01" aria-expanded="false"><span class="blind">약관동의 열고닫기</span></button>
+                    </div>
+                </div>
+                <div class="cont jsToggleWrap" data-toggle-view="toggleLayer01" aria-hidden="true">
+                    <div class="formHolder check active">
+                        <input type="checkbox" id="type01" checked>
+                        <label class="check" for="type01"><em>(필수)</em> 농협 오픈뱅킹 이용약관</label>
+                        <a href="#" class="btnView"><span class="blind">약관보기</span></a>
+                    </div>
+                    <div class="formHolder check">
+                        <input type="checkbox" id="type02">
+                        <label class="check" for="type02"><em>(필수)</em> 개인(신용)정보 수집∙이용 동의</label>
+                        <a href="#" class="btnView"><span class="blind">약관보기</span></a>
+                    </div>
+                    <div class="formHolder check">
+                        <input type="checkbox" id="type03">
+                        <label class="check" for="type03"><em>(필수)</em> 금융거래정보제공동의</label>
+                        <a href="#" class="btnView"><span class="blind">약관보기</span></a>
+                    </div>
+                    <div class="formHolder check">
+                        <input type="checkbox" id="type04">
+                        <label class="check" for="type04"><em>(필수)</em> 금융거래조회 및 출금이체 약관동의</label>
+                        <a href="#" class="btnView"><span class="blind">약관보기</span></a>
+                    </div>
+                    <div class="formHolder check">
+                        <input type="checkbox" id="type04">
+                        <label class="check" for="type04"><em>(필수)</em> 계좌통합관리서비스 이용약관(어카운트인포)</label>
+                        <a href="#" class="btnView"><span class="blind">약관보기</span></a>
+                    </div>
+                    <hr class="tee">
+                </div>
+                <div class="formHolder check">
+                    <input type="checkbox" id="type_all02">
+                    <label class="check" for="type_all02"><em>(선택)</em> 개인(신용)정보수집∙이용동의서(오픈뱅킹용)</label>
+                    <a href="#" class="btnView"><span class="blind">약관보기</span></a>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="formWrap">
+                <p class="tit lev2">복합형</p>
+
+                <div class="formHolder">
+                    <div class="flexGroup">
+                        <span class="tit">내 계좌에 표기</span>
+                        <span class="col inptWrap del">
+                            <input type="text" value="김농협" class="inptText" title="내 계좌에 표기명" placeholder="입력하세요">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </span>
+                        <button type="button" class="btnPlus"><span class="blind">보유계좌목록</span></button>
+                    </div>
+                </div>
+                <div class="formHolder">
+                    <div class="flexGroup">
+                        <span class="tit">받는 계좌에 표기</span>
+                        <span class="col inptWrap del">
+                            <input type="text" value="김농협" class="inptText" title="받는 계좌에 표시명" placeholder="입력하세요">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </span>
+                        <button type="button" class="btnPlus"><span class="blind">보유계좌목록</span></button>
+                    </div>
+                </div>
+                <div class="formHolder">
+                    <div class="flexGroup">
+                        <span class="tit">이체메모</span>
+                        <span class="col inptWrap">
+                            <input type="text" class="inptText" title="이체메모" placeholder="입력하세요">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="formHolder">
+                    <div class="flexGroup">
+                        <span class="tit">경조사</span>
+                        <span class="col inptWrap">
+                            <input type="text" class="inptText" title="경조사" placeholder="입력하세요">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="formHolder">
+                    <div class="fieldGroup type">
+                        <span class="col inptWrap">
+                            <input type="text" class="inptText" title="타이틀" placeholder="자주쓰는 문구 (최대 10글자)">
+                            <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                        </span>
+                        <button type="button" class="btnTxt">취소</button>
+                        <button type="button" class="btnTxt em">등록</button>
+                    </div>
+                </div>
+                <div class="btnWrap page">
+                    <button type="button" class="btn">+ 이체추가</button>
+                </div>
+                <a href="javascript:;" class="txtLink arr txR mt20">수수료 면제 조회</a>
+                <a href="javascript:;" class="txtLink arr txR mt15">보이스피싱 유의안내</a>
+                <p class="txt mt20"><em>※ 착오송금 예방을 위해 이체정보를 확인하시기 바랍니다.</em></p>
+            </div>
+            <div class="popWrap" id="layer-test1" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popHeader">
+                        <h2 class="tit">경조사 샘플 레이어</h2>
+                    </div>
+                    <div class="popCont">
+                        <p>lypop test</p>
+                    </div>
+                    <div class="popBtnWrap">
+                        <div class="popBtn">
+                            <button type="button" class="btn">취소</button>
+                            <button type="button" class="btn em">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <p class="tit lev2">dataPicker</p>
+            <div class="formWrap mt0">
+                <div class="formHolder mt0">
+                    <div class="fieldGroup">
+                        <!-- 2020.08.06 퍼블 수정 -->
+                        <div class="col inptWrap noDel dataPicker">
+                            <a href="javascript:;" role="button">
+                                <input type="text" title="날짜 설정 시작기간" class="inptText" placeholder="2020.02.03" readonly="readonly">
+                            </a>
+                        </div>
+                        <span class="divider dash">-</span>
+                        <div class="col inptWrap noDel dataPicker">
+                            <a href="javascript:;" role="button">
+                                <input type="text" title="날짜 설정 마감기간" class="inptText" placeholder="2020.03.03" readonly="readonly">
+                            </a>
+                        </div>
+                        <!-- //2020.08.06 퍼블 수정 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

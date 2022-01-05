@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">
+			<h2 class="defTit">e-채움 공무원가계자금</h2>
+
+			<div class="stepArea">
+				<p class="stepTit">입력내용확인</p>
+				<div class="stepInfo" role="img" aria-label="총 6단계중 5단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="off"><span>3</span></li>
+						<li class="off"><span>4</span></li>
+						<li class="active"><span>5</span></li>
+						<li><span>6</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+
+			<!-- 공지 들어갑니다 180907 -->
+			<div class="wrapTblDefault">
+				<table cellpadding="0" cellspacing="0">
+					<caption>대출과목, 거래구분, 대출관리점, 대출개시일, 대출만료일, 상환구분, 거치기간, 지연배상금율, 자동이체일등의 정보 테이블입니다.</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">대출과목</th>
+							<td>공무원가계자금</td>
+						</tr>
+						<tr>
+							<th scope="row">거래구분</th>
+							<td>개별대출</td>
+						</tr>
+						<tr>
+							<th scope="row">대출신청금액</th>
+							<td class="ar"><strong class="pointColor"><em>300,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">대출관리점</th>
+							<td>대출관리점</td>
+						</tr>
+						<tr>
+							<th scope="row">대출개시일</th>
+							<td>2018-01-01</td>
+						</tr>
+						<tr>
+							<th scope="row">대출만료일<!-- 거치기간 --></th>
+							<td>대출만료일</td>
+						</tr>
+						<tr>
+							<th scope="row">상환구분</th>
+							<td>일시상환</td>
+						</tr>
+						<tr>
+							<th scope="row">대출기간만료일</th>
+							<td>2018-01-01</td>
+						</tr>
+						<tr>
+							<th scope="row">약정금액</th>
+							<td class="ar"><strong class="pointColor"><em>300,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">지연배상금율</th>
+							<td class="ar"><span class="pointColor">최고 연 15.000%</span></td>
+						</tr>
+						<tr>
+							<th scope="row">자동이체일</th>
+							<td>매월 1 일</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 인지세가 있을 때에 노출되는 테이블 -->
+				<table cellpadding="0" cellspacing="0">
+					<caption>인지세합계액(고객부담 인지세), 인지세 출금계좌번호, 출금계좌 비밀번호등의 정보 입력 테이블입니다.</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">인지세합계액</th>
+							<td class="ar"><strong class="pointColor"><em>300,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">고객부담 인지세</th>
+							<td class="ar"><strong class="pointColor"><em>300,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">인지세 출금계좌번호</th>
+							<td>
+								<div class="acc_inquiry_wrap">
+									<div class="selectBtnForm selectAccount">
+										<div class="stList">
+											<a href="javascript:;" title="계좌번호 선택 새창열림" role="radiogroup">
+												<span class="selectValue">계좌를 선택해주세요</span>
+												<span class="selectBtn">버튼</span>
+											</a>
+											<select name="" title="선택해주세요">
+												<option value=""></option>
+											</select>
+										</div>
+										<div class="areaBodyBtnFull mt5">
+											<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnInquiry" role="button">직접입력</a><!-- 20181010 href, txt변경 -->
+										</div>
+										<a href="javascript:;" class="btnBodyLine mt5">입금가능여부 조회</a><!-- 20181010 href, txt변경 -->
+									</div>
+									<div class="selectBtnForm insertAccount">
+										<div class="inputList">
+											<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+										</div>
+										<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnBodyLine mt5">계좌선택</a>
+										<a href="" class="btnInquiry mt5">입금가능여부 조회</a><!-- 20181010 추가 -->
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">출금가능잔액</th>
+							<td class="ar"><strong class="pointColor"><em>300,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+						<tr>
+							<th scope="row">출금계좌 비밀번호</th>
+							<td>
+								<div class="inputList">                    
+									<input type="password" title="출금계좌 비밀번호 입력" class="sKey" readonly="readonly">
+								</div>
+								<p class="infoTxt">숫자4자리</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이체가능금액</th>
+							<td class="ar"><strong class="pointColor"><em>300,000</em> <span class="wUnit">원</span></strong></td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //인지세가 있을 때에 노출되는 테이블 -->
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">대출금리</strong>
+						<div class="wrapTblDefault">
+							<table cellpadding="0" cellspacing="0">
+								<caption>MOR고정금리(보간)(A), 가산금리(b), 우대금리(c), 대출금리(a+b+c) 게시판</caption>
+								<colgroup>
+									<col style="width:60%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">MOR고정금리(보간)(A)</th>
+										<td class="ar">
+											<input type="checkbox">
+											<span class="pointColor"><em>1.96</em>%</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">가산금리(B)</th>
+										<td class="ar">
+											<input type="checkbox">
+											<span class="pointColor"><em>2.84</em>%</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">우대금리(C)</th>
+										<td class="ar">
+											<input type="checkbox">
+											<span class="pointColor"><em>0.00</em>%</span>
+										</td>
+									</tr>
+									<tr class="active">
+										<th>대출금리(A+B+C)</th>
+										<td class="ar">
+											<input type="checkbox">
+											<span class="pointColor"><em>4.80</em>%</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- wrapTblDefault_end -->
+					</li>
+					<li>
+						<strong class="formTit">우대금리 <a href="javascript:;" class="btnFuncTip" title="툴팁(도움말) 새창 열기"><span class="blind">우대금리</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>우대금리</h1>
+								<div class="popCont">
+									<p>내용이 없습니다.</p>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="wrapTblDefault">
+							<table cellpadding="0" cellspacing="0" summary="급여이체, 카드(3개월) 100만원 이상">
+								<caption>대출신청 정보입력 게시판</caption>
+								<colgroup>
+									<col style="width:60%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">하나로고객 탑클래스</th>
+										<td class="ar">
+											<input type="checkbox">
+											0.300%
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">하나로고객 골드</th>
+										<td class="ar">
+											<input type="checkbox">
+											<span class="pointColor"><em>0.200</em>%</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">본회급여이체(매월) 50만원 이상</th>
+										<td class="ar">
+											<input type="checkbox">
+											0.300%
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">수신평잔(3개월) 100만원 이상</th>
+										<td class="ar">
+											<input type="checkbox">
+											0.100%
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">최근 3개월 카드이용액 100만원 이상</th>
+										<td class="ar">
+											<input type="checkbox">
+											0.200%
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">공직자전용 인터넷뱅킹</th>
+										<td class="ar">
+											<input type="checkbox">
+											0.200%
+										</td>
+									</tr>
+									<tr class="active">
+										<th scope="row">우대금리합계</th>
+										<td class="ar">
+											<input type="checkbox">
+											<span class="pointColor"><em>4.800</em>%</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- wrapTblDefault_end -->
+					</li>
+				</ul>
+				<p class="infoTxt">최대적용 우대금리는 1.00%입니다.</p>
+			</div>
+			<!-- formWrap_end -->
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">이자율</strong>
+						<p class="infoTxt">대출금리는 매 6개월 주기로 재정산되며, 이때 기준금리(MOR)가 변동될 경우에는 본 대출 이자율도 그에 따라 변동되는 것으로 하되 변경된 이자율의 적용시기는 농협여신거래기본약관 제3조 제6항에 따라 변경 후 최초이자 납입일로부터 적용되는 것으로 합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">이자지급시기 및 방법</strong>
+						<p class="infoTxt">상환일부터 소급하여 매 1개월마다 정한 납입일에 지급합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">대출 실행방법</strong>
+						<p class="infoTxt">대출개시일에 전액 실행합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">대출 상환방법</strong>
+						<p class="infoTxt">대출기간 만료일에 전액 상환합니다.<br>상환일로부터 소급하여 매 1개월마다 정한 납입일에 상환합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">중도상환 해약금</strong>
+						<ul class="listDot">
+							<li><strong>중도상환금액x0.8%x(잔여기간/대출기간)</strong></li>
+							<li>대출개시일로부터 3년까지 상환기일이 도래하기전에 대출금을 상환할 경우 고객이 부담하는 금액</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- formWrap_end -->
+			<div class="guideList">
+				<ul class="listDot">
+					<li>우대금리는 대출만기 시까지 적용합니다.</li>
+					<li>금여이체는 전월급여이체 실적기준 입니다.</li>
+					<li>최근 3개월 카드이용액 100만원 이상은 신용카드의 경우 매월 카드 결제일에 결제된 금액, 체크카드의 경우 매월 1~31일까지 매출전표 전표된 사용실적 기준입니다.</li>
+					<li>최근 3개월 수신평잔 500만원 이상은 입출식예금, 적립식 거치식예금 기준 입니다.</li>
+				</ul>
+			</div>
+			<div class="wrapTblDefault mt20">
+				<table cellpadding="0" cellspacing="0">
+					<caption>연락처, 우편발송지 게시판입니다.</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">연락처</th>
+							<td>010-8888-****</td>
+						</tr>
+						<tr>
+							<th scope="row">우편발송지</th>
+							<td>자택</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+			<div class="termsList mt20"> 
+				<ul> 
+					<li> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c1" name="" checked="">
+								<!-- 약관확인 후 checked 처리 -->
+								<label for="c1">e-채움공무원가계자금 거래조건</label>
+							</a>
+						</div>
+					</li>
+				</ul> 
+			</div>
+			<!-- termsList_end -->
+			<div class="no_design">보안매체 영역</div>
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a>
+			</div>
+			<!-- areaBtnDefault_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

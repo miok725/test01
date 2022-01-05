@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">
+			<div class="stepArea">
+				<p class="stepTit">대출신청 및 약정서작성</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 4단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="off"><span>3</span></li>
+						<li class="active"><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="guideListTop">
+				<p class="defTxt">NH e공무원대출 심사결과입니다.</p>
+			</div>
+			<!-- guideListTop_end -->
+
+			<div class="formWrap">
+				<h3 class="defTit">심사결과</h3>
+				<ul>
+					<li class="alignCol">
+						<strong class="formTit">대출가능금액</strong>
+						<p class="inpTxt ar"><strong class="pointColor"><em>20,000,000</em>원</strong></p>
+					</li>
+					<li>
+						<strong class="formTit">대출금리</strong>
+						<div class="wrapTblDefault">
+							<table cellpadding="0" cellspacing="0" summary="mor고정금리(보간)(a), 가산금리(b), 우대금리(c), 대출금리(a+b+c)">
+								<caption>대출금리 게시판</caption>
+								<colgroup>
+									<col style="width:60%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">MOR고정금리(보간)(A)</th>
+										<td class="ar"><span class="pointColor"><em>1.96</em>%</span></td>
+									</tr>
+									<tr>
+										<th scope="row">가산금리(B)</th>
+										<td class="ar"><span class="pointColor"><em>2.84</em>%</span></td>
+									</tr>
+									<tr>
+										<th scope="row">우대금리(C)</th>
+										<td class="ar"><span class="pointColor"><em>0.00</em>%</span></td>
+									</tr>
+									<tr class="active">
+										<th>대출금리(A+B+C)</th>
+										<td class="ar"><span class="pointColor"><em>4.8</em>%</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- wrapTblDefault_end -->
+					</li>
+					<li>
+						<strong class="formTit">우대금리 <a href="javascript:;" class="btnFuncTip" title="툴팁(도움말) 새창 열기"><span class="blind">우대금리</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>우대금리</h1>
+								<div class="popCont">
+									<p>내용이 없습니다.</p>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="wrapTblDefault">
+							<table cellpadding="0" cellspacing="0" summary="급여이체, 카드(3개월) 100만원 이상">
+								<caption>대출신청 정보입력 게시판</caption>
+								<colgroup>
+									<col style="width:60%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">급여이체</th>
+										<td class="ar">
+											<span class="pointColor"><em>1.96</em>%</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">카드(3개월) 100만원 이상</th>
+										<td class="ar">
+											<span class="pointDisabled"><em>2.84</em>%</span><!--// 적용되지 않을 시 클래스명 pointDisabled 사용  -->
+										</td>
+									</tr>
+									<tr class="active">
+										<th scope="row">우대금리합계</th>
+										<td class="ar"><span class="pointColor"><em>4.80</em>%</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- wrapTblDefault_end -->
+					</li>
+					<li>
+						<!-- 20180824 문구추가 -->
+						<p class="infoTxt">대출신청금액으로 최종 실행됩니다.</p>
+						<!-- 20180824 문구추가 -->
+						<strong class="formTit">대출신청금액<span class="unit pointColor">()원</span></strong>
+						<div class="inputList">
+							<input type="text" title="대출신청금액 입력" placeholder="대출신청금액 입럭해 주세요.">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+						</div>                
+						<div class="areaBtnPrice mt10">
+							<div class="inner">
+								<ul>
+									<li><a href="javascript:;">1000만</a></li>
+									<li><a href="javascript:;">100만</a></li>
+									<li><a href="javascript:;">10만</a></li>
+									<li><a href="javascript:;" class="btnAddon">정정</a></li>
+								</ul>
+							</div>
+							<!-- 20180824 문구추가 -->
+							<p class="infoTxt">100만원 이상 십만원단위로 입력하시기 바랍니다.</p>
+							<!-- // 20180824 문구추가 -->
+						</div>
+					</li>
+					<li class="alignCol">
+						<strong class="formTit">대출개시일</strong>
+						<p class="inpTxt ar">2018-05-29</p>
+					</li>
+					<li class="alignCol">
+						<strong class="formTit">대출기간만료일</strong>
+						<p class="inpTxt ar">2018-05-29</p>
+					</li>
+				
+					<!-- 20181010 대출약정 변경사항 시작 -->
+					<li>
+						<strong class="formTit">대출금 수령/자동이체 계좌</strong>
+						<div class="acc_inquiry_wrap">
+							<div class="selectBtnForm selectAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="stList inputB01">
+										<a href="javascript:;" title="OOO 선택 새창열림" role="radiogroup">
+											<span class="selectValue">선택해주세요</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+									<div class="inputB02">
+										<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnInput01">직접입력</a><!-- 20181010 href, txt변경 -->
+									</div>
+								</div>
+								<a href="javascript:;" class="btnBodyLine mt5">입금가능여부 조회</a><!-- 20181010 href, txt변경 -->
+							</div>
+							<div class="selectBtnForm insertAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="inputList">
+										<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+									</div>
+									<div class="inputB02">
+										<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnInput01">계좌선택</a><!-- 20181010 href, txt변경 -->
+									</div>
+								</div>
+								<a href="javascript:;" class="btnBodyLine mt5">입금가능여부 조회</a><!-- 20181010 href, txt변경 -->
+							</div>
+							<p class="infoTxt">대출 원리금/이자는 대출입금계좌에서 자동이체됩니다.<br>자동이체계좌 변경은 개인인터넷뱅킹/자동이체 메뉴를 이용하시면됩니다.</p>
+						</div>
+					</li>
+					<!-- //20181010 대출약정 변경사항 종료 -->
+
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">대출 관리점</strong>
+						<div class="inputBoth01 div7_3">
+							<div class="inputList inputB01">
+								<input type="text" title="대출관리점 입력" id="">
+							</div>
+							<div class="inputB02">
+								<a href="javascript:;" class="btnInput01">영업점검색</a>
+							</div>
+						</div>					
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				
+				<ul>
+					<li>
+						<strong class="formTit">여신비용 자동 출금 동의</strong>
+						<div class="formArray array2">
+							<div class="radioList">
+								<input type="radio" id="agreeY" name="agree">
+								<label for="agreeY">예</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="agreeN" name="agree">
+								<label for="agreeN">아니요</label>
+							</div>
+						</div>
+						<ul class="infoTxt">
+							<li>다음의 비용에 대하여 "대출금 입금(약정) 계좌" 에서 무통장 출금처리하는 것에 동의합니다</li>
+							<li>수입인지세, 국민주택채권매입비, 보험료 또는 보증료, 기타비용</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li class="alignCol mt0">
+						<strong class="formTit">자동이체일</strong>
+						<p class="inpTxt ar">매월 01일</p>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<!-- 20181010 권유직원번호 변경 -->
+				<ul>
+					<li>
+						<!-- accordionMenu -->
+						<div class="accordionMenu type_de">
+							<ul class="dep1">
+								<li>
+									<a href="javascript:;" class="active">권유직원번호(선택사항)</a>
+									<ul class="dep2" style="display: block;">
+										<li>
+											<strong class="formTit"></strong>
+											<div class="inputBoth01 div7_3">
+												<div class="inputList inputB01">
+													<input type="text" title="직원찾기" id="" placeholder="직원번호 입력 또는 직원찾기 선택">
+												</div>
+												<div class="inputB02">
+													<a href="javascript:;" class="btnInput01">직원찾기</a>
+												</div>
+											</div>									
+										</li>										
+									</ul>
+								</li>
+							</ul>
+							<p class="infoTxt">상품가입에 도움을 준 직원번호(숫자 6자리)를 직접 입력하거나 “직원찾기”로 검색하실 수 있습니다.</p>
+						</div>
+						<!--// accordionMenu -->
+					</li>
+				</ul>
+				<!-- //20181010 권유직원번호 변경 -->
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">대출금리 변경 알림 신청</strong>
+						<div class="formArray">
+							<div class="checkList">
+								<input type="checkbox" id="apply11" name="apply1">
+								<label for="apply11">핸드폰</label>
+							</div>
+							<div class="radioList">
+								<input type="checkbox" id="apply12" name="apply1">
+								<label for="apply12">이메일</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출원금리 납입 알림 신청</strong>
+						<div class="formArray">
+							<div class="checkList">
+								<input type="checkbox" id="apply21" name="apply2">
+								<label for="apply21">핸드폰</label>
+							</div>
+							<div class="radioList">
+								<input type="checkbox" id="apply22" name="apply2">
+								<label for="apply22">이메일</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출 만기도래 알림 신청</strong>
+						<div class="formArray">
+							<div class="checkList">
+								<input type="checkbox" id="apply31" name="apply3">
+								<label for="apply31">핸드폰</label>
+							</div>
+							<div class="radioList">
+								<input type="checkbox" id="apply32" name="apply3">
+								<label for="apply32">이메일</label>
+							</div>
+						</div>
+					</li>
+					<li class="alignCol">
+						<strong class="formTit">연락처(휴대폰)</strong>
+						<p class="inpTxt ar">010-1234-1234</p>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">우편발송지</strong>
+						<div class="formArray">
+							<div class="radioList">
+								<input type="radio" id="home" name="mail">
+								<label for="home">자택</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="work" name="mail">
+								<label for="work">직장</label>
+							</div>
+						</div>
+						<!-- 20180824 문구 추가 -->
+						<p class="infoTxt">각종 안내장을 받아볼 수 있는 장소 선택</p>
+						<!-- // 20180824 문구 추가 -->
+					</li>
+					<li>
+						<strong class="formTit">주소</strong>
+						<p class="inpTxt">01644<br>서울특별시 노원구 농협로22길 55 101동 505호</p>
+					</li>
+				</ul>
+			</div>
+			<!-- formWrap_end -->
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">위드(WITH) 번호 <a href="#" class="btnFuncTip2" data-tip="1">위드(WITH) 번호 툴팁 창 열기</a></strong>
+						<div class="inputBoth01 div7_3">
+							<div class="inputList inputB01">
+								<input type="text" title="위드(WITH) 번호 입력">
+							</div>
+							<div class="inputB02">
+								<a href="javascript:;" class="btnInput01">확인</a>
+							</div>
+						</div>
+						<p class="infoTxt">위드(WITH)번호를 입력하시면 소개받은 포인트(채움포인트) 10,000p를 적립할 수 있습니다.</p>
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner" tabindex="0">
+								<h1>위드(WITH)포인트 란?</h1>
+								<div class="popCont">
+									<div class="confirmMsg type03">
+										<ul class="listDot tal">
+											<li>고객님이 가입한 대출상품을 다른 고객에게 소개하여 가입하게 한 경우 농협 채움포인트를 적립해 드리는 서비스입니다.
+												<div class="comBggraybox mgve10">
+													<ol class="listNum tal">
+														<li>적립대상 : 대출금액 500만원 이상이고, 농협 채움카드를 소지한 고객</li>
+														<li>적립기한 : 고객님의 대출 가입일 3개월 이내 다른 고객이 동일한 대출 상품을 가입한 경우</li>
+														<li>적립내용 : 농협 채움포인트 최고 20,000p 적립(소개한 포인트, 소개받은 포인트 각각 10,000p)</li>
+														<li>적립시기 : 익월 10일</li>
+													</ol>
+												</div>
+											</li>
+										
+											<li>NH채움카드를 소지한 경우에만 포인트가 적립됩니다.</li>
+											<li>위드(With)번호는 대출 계좌번호(13자리 숫자)입니다.</li>
+											<li>적립시기에 적립기준을 미충족하는 경우 소급하여 처리되지 않습니다.</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- formWrap_end -->
+			<!-- 20180824 문구추가 -->
+			<p class="defTxt">NH e군인대출을 신청하시려면 [대출신청] 버튼을 누르세요.</p>
+			<!-- // 20180824 문구추가 -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">대출신청</a>
+			</div>
+			<!-- areaBtnDefault_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

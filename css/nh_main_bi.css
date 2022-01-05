@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_main_bi :고객센터메인 */
+.ccVisual{height:182px;margin:0 -17px;padding-top:130px;font-size:14px;background:url(../images/main/img_cc_visual.png) no-repeat 50% 20px #f3faff;background-size:157px 90px;text-align:center}
+.ccQuick ul{overflow:hidden}
+.ccQuick ul li{float:left;width:33.33%;margin-top:20px;text-align:center}
+.ccQuick ul li a{display:block;padding-top:53px;line-height:1.3;font-size:12px;background-size:45px 45px;background-position:50% 0;background-repeat:no-repeat}
+.ccQuick ul li:nth-child(1) a{background-image:url(../images/main/ico_cc_quick01.png)}
+.ccQuick ul li:nth-child(2) a{background-image:url(../images/main/ico_cc_quick02.png)}
+.ccQuick ul li:nth-child(3) a{background-image:url(../images/main/ico_cc_quick03.png)}
+.ccQuick2 {margin:20px -17px 0;border-top:4px solid #f8f8f8;border-bottom:4px solid #f8f8f8}
+.ccQuick2 ul{overflow:hidden}
+.ccQuick2 ul li{float:left;width:50%;line-height:42px}
+.ccQuick2 ul li:nth-child(1),.ccQuick2 ul li:nth-child(2){border-bottom:1px solid #dedede}
+.ccQuick2 ul li:nth-child(1),.ccQuick2 ul li:nth-child(3){border-right:1px solid #dedede}
+.ccQuick2 ul li a{display:block;padding:0 0 0 37px;background-repeat:no-repeat;background-position:17px 14px;background-size:15px 15px}
+.ccQuick2 ul li:nth-child(1) a{background-image:url(../images/main/ico_cc_quick04.png)}
+.ccQuick2 ul li:nth-child(2) a{background-image:url(../images/main/ico_cc_quick05.png)}
+.ccQuick2 ul li:nth-child(3) a{background-image:url(../images/main/ico_cc_quick06.png)}
+.ccQuick2 ul li:nth-child(4) a{background-image:url(../images/main/ico_cc_quick07.png)}
+.accordionMenu.ccAccordian .dep1 > li{ border-bottom:4px solid #f8f8f8} 
+.accordionMenu.ccAccordian .dep1 > li > a.more{padding:11px 40px 11px 17px;font-size:14px;background:url("../images/common/ico_plus.png") 94% 50% no-repeat;background:url("../images/common/ico_plus.png") right 17px top 50% no-repeat;background-size:15px 15px;border-bottom:none}
+.accordionMenu.ccAccordian .dep1 > li > a.link{padding:11px 40px 11px 17px;font-size:14px;border-bottom:none}
+.accordionMenu.ccAccordian .dep1 > li > a.more.active{color:#111;background-image:url("../images/common/ico_minus.png");background-size:15px 1px}
+.accordionMenu.ccAccordian .dep2{padding:14px 0 0;border-top:1px solid #dedede}
+.accordionMenu.ccAccordian .dep2 > li{margin-bottom:15px}
+.accordionMenu.ccAccordian .dep2 > li a{padding:0 0 0 26px;font-weight:normal;color:#666;background:none;border-bottom:none}
+.accordionMenu.ccAccordian .dep2 > li > ul li{margin-top:12px}
+.accordionMenu.ccAccordian .dep1 > li > a.active{color:#111}

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">은퇴목표</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 2단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span>기본정보</li>
+						<li class="active"><span>2</span>정보입력</li>
+						<li><span>3</span>은퇴준비</li>
+						<li><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">은퇴목표</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 2단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="active"><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="all100_form3 mt20">
+				<div class="tab_content_wrap">
+					<h3 class="defSubTit">은퇴 후에 발생할 수 있는 기타 필요자금을 입력하세요.</h3>
+					<div class="btn_status">
+						<a href="javascript:;" class="btnType01">의료비 통계정보</a>
+					</div>
+					<div class="wrapTblDefault mt10">
+						<table cellpadding="0" cellspacing="0" class="tbl_all_co">
+							<caption>자금용도, 내용, 필요기간, 필요금액 입력</caption>
+							<colgroup>
+								<col style="width:33%">
+								<col style="width:auto">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">자금용도</th>
+									<td>
+										<div class="inputBoth01 div7_2">
+											<div class="stList inputB01">
+												<a href="javascript:slidePopOption2();" title="OOO 선택 새창열림">
+													<span class="selectValue">선택해주세요</span>
+													<span class="selectBtn">버튼</span>
+												</a>
+												<select name="" title="선택해주세요">
+													<option value=""></option>
+												</select>
+											</div>
+											<div class="inputB02">
+												<a href="javascript:;" class="btnInput01">삭제</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">내용</th>
+									<td><input type="text" title="내용 입력" placeholder="Ex) 의료비(연간 의료비 등)"></td>
+								</tr>
+								<tr>
+									<th scope="row">필요기간</th>
+									<td>
+										<p class="defTxt">
+											본인
+											<span class="inputList numWrap w60"><input type="tel" class="w60" title="나이 입력"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span>
+											세 이후 종신반영
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">필요금액<br>(현재가치)</th>
+									<td>
+										<p class="defTxt">
+											연
+											<span class="inputList numWrap w100"><input type="tel" class="w100p" title="금액 입력"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span>
+											만원
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="areaBodyBtnFull">
+							<a href="javascript:" class="btnBodyLine" title="항목 더보기">필요자금 항목추가</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- all100_form3_end -->
+			<div class="guideList helper mt20">
+				<p class="guideTit">자가진단 도우미</p>
+				<a href="javascript:;" class="btnAcc toggleBtn btn_helper">내용상세보기</a>
+				<div class="helper_con">
+					<p class="defTxt">은퇴 후 안정적인 삶과 삶의 질을 위해 의료비, 여행자금 등 기타 필요자금을 필요자금에 포함하여 미리 검토하는 것이 필요합니다.</p>
+				</div>
+			</div>
+			<!-- helper_end -->
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint" onclick="slidePopConfirm2();">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+			<div class="popWrap slidePopOption">
+				<div class="dim"></div> <!-- 팝업 dim 처리 -->
+				<div class="popInner" tabindex="0">
+					<h1>기타필요자금</h1>
+					<!-- 팝업컨텐츠 -->
+					<div class="popCont">
+						<ul class="selectList">
+							<li><a href="javascript:;" title="기타비용을 선택하고 해당 창을 닫습니다.">기타비용</a></li>
+							<li><a href="javascript:;" title="의료비를 선택하고 해당 창을 닫습니다.">의료비</a></li>
+						</ul>
+					</div>
+					<!-- 팝업컨텐츠 -->
+					<div class="popBtnWrap">
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="popWrap slidePopConfirm">
+				<div class="dim"></div>
+				<div class="popInner">
+					<div class="popCont">
+						<div class="confirmMsg type06">
+							<p>2단계 <strong>[은퇴목표]</strong>를 모두 입력하셨습니다.<br>3단계 <strong>[은퇴준비]</strong> 단계로 계속 진행하시겠습니까?</p>
+						</div>
+					</div>
+
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="" onclick="popClose(this);return false;">취소</a>
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<script>
+		//선택으로 하단 입력내용 슬라이드 다운
+		$("#check").change(function(){
+			var chk = $(this).prop("checked");
+			if (chk == false)
+			{
+				$(".tbl_all_co .hide").slideUp();
+			}
+			else{
+				$(".tbl_all_co .hide").slideDown();
+			}
+		});
+	</script>
+</body>
+</html>

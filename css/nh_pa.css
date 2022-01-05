@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_pa :퇴직연금 */
+.rpQuick:after{display:block;content:'';clear:both}
+.rpQuick{margin:-3px}
+.rpQuick li{float:left;width:50%;padding:3px}
+.rpQuick li a{height:57px;padding:10px 0 0 56px;border:1px solid #dedede;border-radius:2px;color:#666;font-size:12px;display:block;letter-spacing:-1px}
+.rpQuick01{background:url('../images/contents/img_rp01.png') no-repeat 12px center;background-size:40px 30px}
+.rpQuick02{background:url('../images/contents/img_rp02.png') no-repeat 9px center;background-size:40px 29px}
+.rpQuick03{background:url('../images/contents/img_rp03.png') no-repeat 12px center;background-size:35px 30px}
+.rpQuick04{background:url('../images/contents/img_rp04.png') no-repeat 15px center;background-size:30px 30px}
+.prodTit.badgeMg .badge{margin-right:2px}
+.rpresultTotal{margin:10px 0;background-color:#effbf3}
+.rpresultTotal .detailList .formArray{margin-top:5px}
+.rpresultTotal .detailList .inputList{margin-top:10px}
+.popCont .rpresultTotal .detailList .formArray{margin-top:0}
+.innerTbl .tblCell{padding:15px 0 0px 0}
+.innerTblBox{padding:15px 17px;background-color:#effbf3;margin:-1px -20px 0 -20px}
+.innerTblBox .h3tit{margin-bottom:0}
+.innerTblBox + .accountList > ul > li:last-child{border-bottom:0}
+.chkTit .detailList li > span{display:table-cell !important}
+.chkTit{padding-left:17px;margin-top:0;display:block}
+.chkTit input{vertical-align:middle}
+.chkTit label{width:calc(100% - 46px);max-width:100%;display:block}
+.chkTit label .innerBox, .chkTit label .detailList{padding-left:6px}
+.chkTit label .detailList{padding:0 0 12px 6px}
+.chkTit label .txtPercent{width:70px}
+.detailList li > .tit + .txtPercent{width:70px}
+.rpresultTotal.fullTotal{margin-bottom:0;border-top:1px solid #dedede}
+.rpresultTotal.fullTotal .tblCell{padding-left:17px;padding-right:17px}
+.listTit.titTy2{background-color:#fff;font-size:14px;font-weight:bold}
+.listTit.titTy3{padding-left:30px;border-bottom:1px solid #dedede;text-indent:-12px}
+.rateofreturnArea{min-width:50px;display:inline-block;text-align:right}
+.rateofreturnArea > span:last-child{padding-left:10px}
+.rateofreturnArea .tit{display:block}
+.selInnerBox{padding:30px}
+/* [2020-11-03] 퇴직연금 개선:보유상품교체매매, 부담금운용지시 조회/변경 */
+.rpSubstitution .subTit{font-size: 14px;color:#111}
+.rpSubstitution .formHolder.check.wideBg{margin:0 -20px;padding:10px 20px;background-color:#f8f8f8}
+.rpSubstitution .fieldGroup.colThree{display:block}
+.rpSubstitution .fieldGroup.colThree .formHolder{display:block;float:left;width:33.3%;margin:10px 0 0}
+.rpSubstitution .fieldGroup.colThree .formHolder input[type="radio"] + label,
+.rpSubstitution .fieldGroup.colThree span.formHolder + span.formHolder{margin-left:0 !important}
+.rpSubstitution .detailList .formHolder strong.tit{font-size:14px;color:#666;font-weight:normal}
+.rpSubstitution .detailList .formHolder .inptWrap{background-color:#effbf3 !important}
+.rpSubstitution .formHolder .inptWrap input{font-size:14px}
+.rpSubstitution .formHolder .inptWrap input::-moz-placeholder{font-size:14px !important}
+.rpSubstitution .formHolder .inptWrap input::-webkit-input-placeholder{font-size:14px !important}
+.rpSubstitution .selDetailList .formHolder{margin:0}
+.rpSubstitution .selDetailList label.radio:before{position:absolute;left:0;top:50%;margin-top:-11px}
+.rpSubstitution .selDetailList label.check:before{position:absolute;left:0;top:50%;margin-top:-11px}
+.rpSubstitution .selDetailList{margin:0 -20px}
+.rpSubstitution .selDetailList > ul > li{padding:0 20px 0 16px}
+.rpSubstitution .selDetailList .innerBox{padding:12px 0 0 6px}
+.rpSubstitution .selDetailList .detailList{padding:0 0 12px 6px}
+.rpSubstitution .rateofreturnArea .pointColor{color:#046fd9 !important}
+.rpSubstitution .formSchWrap{margin:0}
+.rpSubstitutionSc li{margin-top: 20px}
+.rpSubstitution .inptWrapTit {line-height:47px;color:#111;}
+.rpSubstitution .btn {min-width:auto}
+.rpSubstitution input[type="checkbox"] + label {margin-left:0}
+.rpSubstitution .formHolder .inptWrap.on {padding:0}
+.dfs .rpSubstitution .totalWrap {padding:12px 20px}
+.dfs .selDetailList .checkList input[type="checkbox"] + label{width:calc(100% - 40px);width:-webkit-calc(100% - 40px);}
+.rpSubstitution .tbl.tblDeal{margin-top:5px;padding:8px 0;border-top:1px solid #111;border-bottom:1px solid #f1f1f1}
+.rpSubstitution .tbl.tblDeal table{border-top:0}
+.rpSubstitution .tbl.tblDeal th{padding:10px 10px 10px 0;border:0;background:#fff;font-size:14px;vertical-align:top;color:#666;}
+.rpSubstitution .tbl.tblDeal td{padding:10px 0 10px 0;border:0;text-align:right;font-size:15px}
