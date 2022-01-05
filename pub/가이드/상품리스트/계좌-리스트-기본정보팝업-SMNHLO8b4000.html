@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="page_tit">대출기한연기</h2>
+
+			<div class="productWrap bdt">
+				<ul class="productList" role="list">
+					<!-- case1) 기한연기신청 버튼 노출 되는 경우 -->
+					<li role="listitem">
+						<div class="productHeader">
+							<div class="link">
+								<strong class="prodTit mb0"><span class="pointColor5">000-00000-000-00</span></strong>
+								<a href="javascript:fullLayerPop();"><span class="badgeDefault grey">기본정보</span></a>
+							</div>
+						</div>
+						<ul class="detailList">
+							<li>
+								<span class="tit">대출금액</span>
+								<span><em class="pointColor">180,000,000</em> <span class="wUnit">원</span></span>
+							</li>
+							<li>
+								<span class="tit">대출잔액</span>
+								<span><em class="pointColor">20,000,000</em> <span class="wUnit">원</span></span>
+							</li>
+							<li>
+								<span class="tit">대출만기일</span>
+								<span>2018/01/01</span>
+							</li>
+						</ul>
+						<div class="areaBodyBtnFull">
+							<a href="javascript:;" class="btnBodyLine" role="button">기한연기신청</a>
+						</div>
+					</li>
+					<!-- //case1) 기한연기신청 버튼 노출 되는 경우 -->
+
+					<!-- case2) 진행상태 노출 되는 경우 -->
+					<li role="listitem">
+						<div class="productHeader">
+							<div class="link">
+								<strong class="prodTit mb0"><span class="pointColor5">000-00000-000-00</span></strong>
+								<a href="javascript:fullLayerPop();"><span class="badgeDefault grey">기본정보</span></a>
+							</div>
+						</div>
+						<ul class="detailList">
+							<li>
+								<span class="tit">대출금액</span>
+								<span><em class="pointColor">180,000,000</em> <span class="wUnit">원</span></span>
+							</li>
+							<li>
+								<span class="tit">대출잔액</span>
+								<span><em class="pointColor">20,000,000</em> <span class="wUnit">원</span></span>
+							</li>
+							<li>
+								<span class="tit">대출만기일</span>
+								<span>2018/01/01</span>
+							</li>
+							<li>
+								<span class="tit">진행상태</span>
+								<span class="pointColor5">심사 중</span>
+							</li>
+						</ul>
+					</li>
+					<!-- //case2) 진행상태 노출 되는 경우 -->
+				</ul>		
+			</div>
+
+			<!-- 리스트가 없을 경우 -->
+			<div class="topConfirmArea confirmMsg type04">
+				<p>조회된 대출기한연기 내역이 없습니다.</p>
+			</div>
+			<!--// 리스트가 없을 경우 -->
+
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">알아두세요</p></div>
+				<ul class="listDot">
+					<li>서비스 이용안내 : 평일 09:00~18:00, <span class="pointColor6">토요일 이용불가, 일요일/공휴일 이용불가</span></li>
+					<li><span class="pointColor6">스마트금융센터 상담원을 통해 신청한 대출계좌만 인터넷/스마트 뱅킹을 통해 대출기한연기가 가능합니다.</span></li>
+					<li>대출만기일 1개월 전부터 연기신청이 가능합니다.</li>
+					<li>신용관리대상 정보 및 연체여신(신용카드 포함) 보유자는 기한연기가 제한되거나 대출금액이 축소될 수 있습니다.</li>
+					<li>심사결과에 따라 기한연기가 제한되거나 대출금액 축소 및 금리가 변경될 수 있습니다.</li>
+				</ul>
+			</div>
+
+			<!-- popup) 계좌기본정보조회 -->
+			<div class="popWrap fullLayerPop" role="dialog">
+				<div class="popInner">
+					<h1>계좌기본정보조회</h1>
+					<div class="popCont">
+
+						<div class="wrapTblDefault">
+							<table cellpadding="0" cellspacing="0">
+								<caption>계좌기본정보조회 내역</caption>
+								<colgroup>
+									<col style="width:40%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>대출계좌번호</th>
+										<td><strong class="pointColor5">000-0000-0000-00</strong></td>
+									</tr>
+									<tr>
+										<th>대출종류</th>
+										<td>수익권담보대출</td>
+									</tr>
+									<tr>
+										<th>대출고객명</th>
+										<td>김농협</td>
+									</tr>
+									<tr>
+										<th>계좌상태</th>
+										<td>거래계좌</td>
+									</tr>
+									<tr>
+										<th>대출일자</th>
+										<td>2017-00-00</td>
+									</tr>
+									<tr>
+										<th>최종상환일자</th>
+										<td>2017-00-00</td>
+									</tr>
+									<tr>
+										<th>대출금액(약정액)</th>
+										<td class="ar"><strong class="pointColor"><em>1,000,000</em> <span class="wUnit">원</span></strong></td>
+									</tr>
+									<tr>
+										<th>현재상환원금</th>
+										<td class="ar"><strong class="pointColor"><em>0</em> <span class="wUnit">원</span></strong></td>
+									</tr>
+									<tr>
+										<th>현재대출잔액</th>
+										<td class="ar"><strong class="pointColor"><em>1,000,000</em> <span class="wUnit">원</span></strong></td>
+									</tr>
+									<tr>
+										<th>상환조건</th>
+										<td>일시상환대출</td>
+									</tr>
+									<tr>
+										<th>최종이자계산일</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>다음이자(원금) 입금일</th>
+										<td>2017-00-00</td>
+									</tr>
+									<tr>
+										<th>최종거래일</th>
+										<td>2017-00-00</td>
+									</tr>
+									<tr>
+										<th>자동이체계좌</th>
+										<td><strong class="pointColor5">000-0000-0000-00</strong></td>
+									</tr>
+									<tr>
+										<th>자동이체일</th>
+										<td><em>00</em>일</td>
+									</tr>
+									<tr>
+										<th>자동이체주기</th>
+										<td>매월</td>
+									</tr>
+									<tr>
+										<th>총할부금 상환회차</th>
+										<td><em>0</em>회</td>
+									</tr>
+									<tr>
+										<th>현재할부금 상환회차</th>
+										<td><em>0</em>회</td>
+									</tr>
+									<tr>
+										<th>관리점</th>
+										<td>본점영업점</td>
+									</tr>
+									<tr>
+										<th>관리점전화번호</th>
+										<td>00-0000-0000</td>
+									</tr>
+									<tr>
+										<th>금리구분</th>
+										<td>신탁실적배당금리 연동</td>
+									</tr>
+									<tr>
+										<th>기준금리(A)</th>
+										<td class="ar"><strong class="pointColor"><em>5.060</em> <span class="wUnit">%</span></strong></td>
+									</tr>
+									<tr>
+										<th>가산금리(B)</th>
+										<td class="ar"><strong class="pointColor"><em>0.000</em> <span class="wUnit">%</span></strong></td>
+									</tr>
+									<tr>
+										<th>적용금리(A+B)</th>
+										<td class="ar"><strong class="pointColor"><em>5.060</em> <span class="wUnit">%</span></strong></td>
+									</tr>
+									<tr>
+										<th>채권보전</th>
+										<td>담보대출</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="areaBodyBtnFull">
+							<a href="javascript:;" class="btnBodyLine" role="button">거래내역</a>		
+						</div>
+					</div>
+
+					<div class="popBtnWrap">
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다." role="button"><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!--// popup) 계좌기본정보조회-->
+
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

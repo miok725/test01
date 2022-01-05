@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+
+<body>
+<div id="contentsF">
+
+	<h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">달력 콤퍼넌트</h2>
+	<!-- CALENDER -->
+    <div class="calenderArea">
+		<div class="yearItem">
+			<a href="javascript:;" class="yearLft">이전 년도</a>
+			<span>2018년</span>
+			<a href="javascript:;" class="yearRht">다음 년도</a>
+		</div>
+		<div class="monthItem">
+			<a href="javascript:;" class="monthLft">전 달</a>
+			<span><span class="">10</span><span>월</span></span>
+			<a href="javascript:;" class="monthRht">다음달</a>
+		</div>
+		
+		<div class="weekItem">
+			<span>월</span>
+			<span>화</span>
+			<span>수</span>
+			<span>목</span>
+			<span>금</span>
+			<span class="saturday">토</span>
+			<span class="holiday">일</span>
+		</div>
+		
+		<div class="dateItem">
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone">1</span>
+			<span class="date bgNone">2</span>
+			
+			<a href="javascript:;" class="date" title="3일을 선택하고 해당 창을 닫습니다.">3</a>
+			<a href="javascript:;" class="date" title="4일을 선택하고 해당 창을 닫습니다.">4</a>
+			<a href="javascript:;" class="date" title="5일을 선택하고 해당 창을 닫습니다.">5</a>
+			<a href="javascript:;" class="date" title="6일을 선택하고 해당 창을 닫습니다.">6</a>
+			<a href="javascript:;" class="date active" title="7일을 선택하고 해당 창을 닫습니다.">7</a>
+			<a href="javascript:;" class="date saturday" title="8일을 선택하고 해당 창을 닫습니다.">8</a>
+			<a href="javascript:;" class="date holiday" title="9일을 선택하고 해당 창을 닫습니다.">9</a>
+			
+			<a href="javascript:;" class="date" title="10일을 선택하고 해당 창을 닫습니다.">10</a>
+			<a href="javascript:;" class="date" title="11일을 선택하고 해당 창을 닫습니다.">11</a>
+			<a href="javascript:;" class="date" title="12일을 선택하고 해당 창을 닫습니다.">12</a>
+			<a href="javascript:;" class="date" title="13일을 선택하고 해당 창을 닫습니다.">13</a>
+			<a href="javascript:;" class="date" title="14일을 선택하고 해당 창을 닫습니다.">14</a>
+			<a href="javascript:;" class="date saturday " title="15일을 선택하고 해당 창을 닫습니다.">15</a>
+			<a href="javascript:;" class="date holiday" title="16일을 선택하고 해당 창을 닫습니다.">16</a>
+			
+			<a href="javascript:;" class="date" title="17일을 선택하고 해당 창을 닫습니다.">17</a>
+			<a href="javascript:;" class="date" title="18일을 선택하고 해당 창을 닫습니다.">18</a>
+			<a href="javascript:;" class="date" title="19일을 선택하고 해당 창을 닫습니다.">19</a>
+			<a href="javascript:;" class="date" title="20일을 선택하고 해당 창을 닫습니다.">20</a>
+			<a href="javascript:;" class="date" title="21일을 선택하고 해당 창을 닫습니다.">21</a>
+			<a href="javascript:;" class="date saturday" title="22일을 선택하고 해당 창을 닫습니다.">22</a>
+			<a href="javascript:;" class="date holiday" title="23일을 선택하고 해당 창을 닫습니다.">23</a>
+			
+			<a href="javascript:;" class="date" title="24일을 선택하고 해당 창을 닫습니다.">24</a>
+			<a href="javascript:;" class="date" title="25일을 선택하고 해당 창을 닫습니다.">25</a>
+			<a href="javascript:;" class="date" title="26일을 선택하고 해당 창을 닫습니다.">26</a>
+			<a href="javascript:;" class="date" title="27일을 선택하고 해당 창을 닫습니다.">27</a>
+			<span class="date bgNone">28</span>
+			<span class="date bgNone">29</span>
+			<span class="date bgNone">30</span>
+			
+			<span class="date bgNone">31</span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+			<span class="date bgNone"></span>
+		</div>
+	</div>
+    <!--// CALENDER -->
+    <hr>
+    <!-- 날짜선택 -->
+    <div class="yearSet">
+		<ol class="yearsetLft">
+			<li><a href="javascript:;" title="2017년 선택"><span>2017</span></a></li>
+			<li><a href="javascript:;" title="2018년 선택"><span>2018</span></a></li>
+			<li><a href="javascript:;" class="active" title="2019년 선택"><span>2019</span></a></li>
+			<li><a href="javascript:;" title="2020년 선택"><span>2020</span></a></li>
+			<li><a href="javascript:;" title="2021년 선택"><span>2021</span></a></li>
+			<li><a href="javascript:;" title="2022년 선택"><span>2022</span></a></li>
+			<li><a href="javascript:;" title="2023년 선택"><span>2023</span></a></li>
+		</ol>
+		
+		<ol class="yearsetRht">            
+			<li><a href="javascript:;" title="1월을 선택하고 해당 창을 닫습니다."><span>1</span></a></li>
+			<li><a href="javascript:;" title="2월을 선택하고 해당 창을 닫습니다."><span>2</span></a></li>
+			<li><a href="javascript:;" class="active" title="3월을 선택하고 해당 창을 닫습니다."><span>3</span></a></li>
+			<li><a href="javascript:;" title="4월을 선택하고 해당 창을 닫습니다."><span>4</span></a></li>
+			<li><a href="javascript:;" title="5월을 선택하고 해당 창을 닫습니다."><span>5</span></a></li>
+			<li><a href="javascript:;" title="6월을 선택하고 해당 창을 닫습니다."><span>6</span></a></li>
+			<li><a href="javascript:;" title="7월을 선택하고 해당 창을 닫습니다."><span>7</span></a></li>
+			<li><a href="javascript:;" title="8월을 선택하고 해당 창을 닫습니다."><span>8</span></a></li>
+			<li><a href="javascript:;" title="9월을 선택하고 해당 창을 닫습니다."><span>9</span></a></li>
+			<li><a href="javascript:;" title="10월을 선택하고 해당 창을 닫습니다."><span>10</span></a></li>
+			<li><a href="javascript:;" title="11월을 선택하고 해당 창을 닫습니다."><span>11</span></a></li>
+			<li><a href="javascript:;" title="12월을 선택하고 해당 창을 닫습니다."><span>12</span></a></li>
+		</ol>
+	</div>
+    <!--// 날짜선택 -->
+   
+	<h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">인포메이션 타이틀</h2>
+    <ul class="lineList">
+		<li>
+			<div class="radioList">
+                <input type="radio" id="r1" name="rr">
+                <label for="r1">전체계좌</label>
+            </div>
+		</li>
+		<li>
+			<div class="radioList">
+                <input type="radio" id="r2" name="rr">
+                <label for="r2">000-00000-000-00</label>
+            </div>
+		</li>
+		<li>
+			<div class="radioList">
+                <input type="radio" id="r3" name="rr">
+                <label for="r3">직접입력</label>
+            </div>
+            <div class="boxGray">
+            	<div class="inputList placeShow">
+		            <label for="">계좌번호</label>
+		            <input type="text" title="타이틀 값 입력" placeholder="내용을 입력하세요" />
+		        </div>
+            </div>
+		</li>
+	</ul>
+	
+    <!-- 시간선택 -->
+<!-- 	<div class="popWrap centerLayer">
+		<div class="dim"></div>
+		<div class="popInner">
+			
+			<h1>시간설정</h1>
+			<div class="popCont">
+				<ul class="selectList">
+					<li class="active"><a href="#none">오전 1시</a></li>
+					<li><a href="#none">오전 2시</a></li>
+					<li><a href="#none">오전 3시</a></li>
+					<li><a href="#none">오전 4시</a></li>
+					<li><a href="#none">오전 5시</a></li>
+					<li><a href="#none">오전 6시</a></li>
+					<li><a href="#none">오전 7시</a></li>
+					<li><a href="#none">오전 8시</a></li>
+					<li><a href="#none">오전 9시</a></li>
+					<li><a href="#none">오전 10시</a></li>
+					<li><a href="#none">오전 11시</a></li>
+					<li><a href="#none">오전 12시</a></li>
+					<li><a href="#none">오후 1시</a></li>
+					<li><a href="#none">오후 2시</a></li>
+					<li><a href="#none">오후 3시</a></li>
+					<li><a href="#none">오후 4시</a></li>
+					<li><a href="#none">오후 5시</a></li>
+					<li><a href="#none">오후 6시</a></li>
+					<li><a href="#none">오후 7시</a></li>
+					<li><a href="#none">오후 8시</a></li>
+					<li><a href="#none">오후 9시</a></li>
+					<li><a href="#none">오후 10시</a></li>
+					<li><a href="#none">오후 11시</a></li>
+					<li><a href="#none">오후 12시</a></li>
+				</ul>
+			</div>
+
+			<div class="popBtnWrap">
+				<a href="#none" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기" /></a>
+			</div>
+		</div>
+	</div> -->
+	
+    <!--// 시간선택 -->
+	<!-- //view -->
+
+</div>
+</body>
+</html>

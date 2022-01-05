@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+<script>
+	$(document).ready(function() {
+	   fullLayerPop();
+	});
+ </script>
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<div class="container" data-role="elWrap">
+			<!-- 팝업시작 : full layer 팝업인 경우 fullLayerPop 클래스 및 함수 사용 -->
+			<div class="popWrap fullLayerPop" style="display: block;">
+				<div class="popInner">
+					<h1>사업자고객정보</h1>
+					<div class="popCont">
+						<div class="accInfoTit">
+							<p class="defTxt">반드시 정당한 해당 개인사업자를 선택 후 진행해주시기 바랍니다.</p>
+						</div>
+						<div class="wrapTblDefault">
+							<table cellpadding="0" cellspacing="0" class="thCenter">
+								<caption>사업자고객정보</caption>
+								<colgroup>
+									<col style="width: 40%">
+									<col style="width: auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="colgroup" colspan="2" class="al">
+											<div class="radioList">
+												<input type="radio" id="bsnInfo1" name="bsnInfo">
+												<label for="bsnInfo1">NH**********</label>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>사업자 등록번호</th>
+										<td>000-00-00000</td>
+									</tr>
+								</tbody>
+							</table>
+							<table cellpadding="0" cellspacing="0" class="thCenter">
+								<caption>사업자고객정보</caption>
+								<colgroup>
+									<col style="width: 40%">
+									<col style="width: auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="colgroup" colspan="2" class="al">
+											<div class="radioList">
+												<input type="radio" id="bsnInfo2" name="bsnInfo">
+												<label for="bsnInfo2">NH**********</label>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>사업자 등록번호</th>
+										<td>000-00-00000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- popCont_end -->
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" onclick="popClose(this);return false;">취소</a>
+							<a href="javascript:;" class="confirmBtn">확인</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+					<!-- popBtnWrap_end -->
+				</div>
+			</div>
+			<!-- // 팝업 끝 -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

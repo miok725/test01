@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-title" content="NH Bank">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="robots" content="no-index,follow">
+	<meta name="title" content="">
+	<meta name="author" content="">
+	<meta name="content" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>:::NH통합스마트뱅킹:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+<script>
+	$(document).ready(function() {
+	   fullLayerPop();
+	});
+ </script>
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">예금</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->
+
+		<!-- container -->
+		<div class="container">
+
+			<!-- popWrap -->
+			<div class="popWrap fullLayerPop" aria-hidden="true">
+				<div class="popInner">
+					<h1>이용시간 안내</h1>
+					<div class="popCont">
+
+						<div class="confirmMsg type02 al">
+							고객님!<br>
+							평일 09:00 ~ 17:00 이내(토요일 및 공휴일 이용불가)에서만 예약가입이 가능합니다.<br>
+							이용에 불편을 드려 죄송합니다.
+						</div>
+					</div>
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" onclick="popClose(this);return false;">닫기</a>
+							<a href="javascript:;" class="confirmBtn">상품정보</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!--// popWrap -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu" style="display: block;">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>
+			<!-- quick button -->
+			<div class="areaBtmQuick" style="bottom: 94px;"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop" style="display: none; opacity: 0;"><a href="javascript:;">Top</a></span>
+			</div>
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

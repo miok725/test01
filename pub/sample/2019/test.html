@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>btn :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/nh_com_ui.js"></script>
+</head>
+
+<body>
+<div id="contentsF">
+<div class="container">
+    <div class="formWrap mt0">
+        <div class="formHolder">
+            <div class="fieldGroup">
+                <span class="col inptWrap">
+                    <input type="text" class="inptText" title="타이틀">
+                </span>
+                <button type="button" class="btn">확인</button>
+            </div>
+            <p class="msgHelp">사용할 수 있는 ID입니다.</p>
+        </div>
+        <div class="formHolder">
+            <div class="fieldGroup">
+                <span class="col inptWrap">
+                    <input type="text" class="inptText" title="타이틀" placeholder="자주쓰는 문구 (최대 10글자)">
+                </span>
+                <button type="button" class="btnTxt">취소</button>
+                <button type="button" class="btnTxt em">등록</button>
+            </div>
+        </div>
+        <div class="formHolder">
+            <div class="fieldGroup">
+                <span class="col inptWrap">
+                    <input type="text" class="inptText" title="타이틀">
+                </span>
+                <span class="time"><em>06:59</em></span>
+            </div>
+        </div>
+
+
+        <div class="formHolder">
+            <div class="fieldGroup">
+                <span class="tit">성별</span>
+                <select class="select col" title="성별">
+                    <option value="">남자</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="formHolder">
+            <strong class="tit">e농협 아이디</strong>
+            <div class="inptWrap">
+                <input type="text" title="e농협 아이디" class="inptText" placeholder="영문/숫자 5~10자리를 입력해주세요.">
+            </div>
+        </div>
+        <div class="formHolder">
+            <strong class="tit">실제생일</strong>
+            <div class="rCont check">
+                <input type="checkbox" id="inputDefault022" title="실제생일">
+                <label class="check type" for="inputDefault022">선택안함</label>
+            </div>
+            <div class="inptWrap">
+                <input type="text" value="2020.10.13" title="타이틀" class="inptText" placeholder="">
+            </div>
+            <span class="formHolder radio">
+                <input type="radio" checked name="radioDefaultBl" id="radioDefaultBl01">
+                <label class="radio" for="radioDefaultBl01">양력</label>
+            </span>
+            <span class="formHolder radio">
+                <input type="radio" name="radioDefaultBl" id="radioDefaultBl02">
+                <label class="radio" for="radioDefaultBl02">음력</label>
+            </span>
+        </div>
+    </div>
+
+	<!-- <div class="areaBtnDefault">
+		<a href="javascript:;" class="btnPressPoint disabled" role="button">확인</a>
+    </div> -->
+    <div class="areaBtnDefault">
+		<a href="javascript:;" class="btnPressDefault" role="button">취소</a>
+		<a href="javascript:;" class="btnPressPoint" role="button">확인</a>
+	</div>
+</div>
+    
+</div>
+</body>
+</html>

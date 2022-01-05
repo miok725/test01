@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">기본정보</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span>기본정보</li>
+						<li><span>2</span>정보입력</li>
+						<li><span>3</span>은퇴준비</li>
+						<li><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">기본정보</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<h2 class="statusTit"><span class="pointColor">김농협님</span>의<br>은퇴 시작나이와 기대수명을 입력하세요.</h2>
+			<div class="btn_status">
+				<a href="javascript:;" class="btnType01">기대수명 통계정보</a>
+			</div>
+
+			<div class="formWrap">
+				<ul class="all100_form">
+					<li>
+						<h3>본인</h3>
+						<div class="inner">
+							<div class="inputRow">
+								<div class="col2">
+									<label for="age1">은퇴시작나이</label>
+								</div>
+								<div class="col2">
+									만 <span class="inputList inpAge numWrap"><input type="tel" title="은퇴시작나이 입력" id="age1"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span> 세
+								</div>
+							</div>
+							<div class="inputRow">
+								<div class="col2">
+									<label for="age2">기대수명</label>
+								</div>
+								<div class="col2">
+									만 <span class="inputList inpAge numWrap"><input type="tel" title="은퇴시작나이 입력" id="age1"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span> 세
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h3>배우자</h3>
+						<div class="inner">
+							<div class="inputRow">
+								<div class="col2">
+									<label for="age3">은퇴시작나이</label>
+								</div>
+								<div class="col2">
+									만 <span class="inputList inpAge numWrap"><input type="tel" title="은퇴시작나이 입력" id="age1"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span> 세
+								</div>
+							</div>
+							<div class="inputRow">
+								<div class="col2">
+									<label for="age4">기대수명</label>
+								</div>
+								<div class="col2">
+									만 <span class="inputList inpAge numWrap"><input type="tel" title="은퇴시작나이 입력" id="age1"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span> 세
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- formWrap_end -->
+			<div class="guideList helper mt20">
+				<p class="guideTit">자가진단 도우미</p>
+				<a href="javascript:;" class="btnAcc toggleBtn btn_helper">내용상세보기</a>
+				<div class="helper_con">
+					<h3 class="defTit">[은퇴 시작나이]</h3>
+					<p class="defTxt">이미 은퇴를 하신 분은 현재의 나이를 입력해 주시기 바랍니다. 참고로 국민연금 등 공적연금의 불입은 은퇴시점까지 이루어진다고 가정합니다.</p>
+					<h3 class="defTit">[기대수명]</h3>
+					<p class="defTxt">의료기술의 발전으로 기대수명이 점차 증가하고 있습니다. <span class="pointColor">통계적으로 매 2년마다 0.5세씩 기대수명이 증가하고 있음을 감안</span>하여, 통계값으로 제시된 기대수명보다 약 <span class="pointColor">5세 정도</span> 높게 가정하여 입력하시는 것을 권유합니다.</p>
+					<h3 class="defTit">[최빈 사망연력]</h3>
+					<p class="defTxt">한 해 동안 가장 많은 사람이 사망하는 나이입니다. 2020년 무렵에는 90세에 도달할 것으로 전망됩니다. 최빈사망 연령이 90세에 도달하면 절반 가량 인구의 기대수명이 90세를 넘어서기 때문에 실질적인 100세 시대가 됩니다. 평균기대수명은 신생아와 교통사고 등의 사망자 통계를 포함하기 때문에, 질병과 사고가 없다면 일반적인 고객님들은 최빈사망 연령까지 생존하실 것으로 예상됩니다.</p>
+				</div>
+			</div>
+			<!-- helper_end -->
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

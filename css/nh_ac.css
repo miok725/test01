@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_ac :로그인 */
+
+/* 로그인 */
+.loginBot{position:fixed;left:0;right:0;bottom:50px;background-color:#f8f8f8}
+/* .keypad .loginBot{position:relative;left:auto;right:auto;bottom:auto;margin:90px -17px 0} */
+.loginBot > a{position:absolute;top:0;display:block;width:20px;height:45px;font-size:1px;color:transparent;overflow:hidden}
+.loginBot > a.loginNoticePrev{left:18px;background:url('../images/common/ico_loginPrev.png') no-repeat center left;background-size:7px 13px}
+.loginBot > a.loginNoticeNext{right:18px;background:url('../images/common/ico_loginNext.png') no-repeat center right;background-size:7px 13px}
+.loginBot .noticeWrap{margin:0 -17px;padding:12px 33px;margin-top:1px}
+.loginBot .noticeWrap > *{vertical-align:middle}
+.loginBot .noticeWrap .noticeTit{display:block;float:left;width:40px;height:20px;margin-right:3px;line-height:18px;border:1px solid #19A647;border-radius:10px;font-size:12px;color:#19A647;text-align:center;margin-left:-15px}
+.loginBot .noticeWrap p{display:block;overflow:hidden;max-width:68%;margin:-1px 5px 0px 0;color:#666;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;float:left;padding-left:2px}
+.loginBot .noticeWrap .noitceNew{display:block;width:16px;height:16px;background:url('../images/common/ico_new.png') no-repeat 0 0;background-size:16px 16px;float:left;margin-top:2px;font-size:1px;line-height:1px;color:transparent}
+.loginBot .noticeWrap li:after{content:"";display:block;clear:both}
+.loginBot .loginBanner{margin:0 -17px;background-color:#e3f3fe;text-align:center}
+.loginBot .loginBanner a{display:block}
+.loginBot .loginBanner img{display:block;width:320px;height:60px;margin:0 auto}
+.loginBot .loginNotice{width:75%;margin:0 33px}
+.loginBot .loginNoticeBtn{position:absolute;top:22px;right:40px;width:15px;height:16px;margin-top:-8px;background:#fff;border:1px solid #dedede;border-radius:1px;z-index:3}
+.loginBot .loginNoticeBtn a.loginNoticePause{display:block;background:url(../images/contents/btn_pause.png) no-repeat center;background-size:6px 7px;width:14px;height:14px;color:transparent;font-size:1px;line-height:1px}
+.loginBot .loginNoticeBtn a.loginNoticePlay{background:url(../images/contents/btn_play.png) no-repeat center;background-size:6px 7px;width:14px;height:14px;display:none;font-size:1px;line-height:1px;color:transparent}
+.loginBot .noticeWrap li a{display:block;overflow:hidden;max-width:100%;margin:-1px 5px 0px -15px;color:#666;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.loginBot .noticeWrap li a .noticeCon{width:auto;max-width:65%;display:block;float:left;color:#666;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.loginBot .noticeWrap li a .noticeTit{margin-left:0}
+.loginBot .noticeWrap li a .noitceNew{margin-left:5px}
+/* 아이디 로그인 */
+.idLogin .inputList + .inputList{margin-top:6px}
+.idLogin .areaBodyBtnFull{margin-top:10px}
+.idLogin .areaBodyBtnFull .inner li a{height:44px;background-color:#19A647;border:0;border-radius:0;font-size:14px;color:#fff;line-height:44px}
+/* 로그인방식 선택 */
+.loginDep1{margin:0 -17px;border-top:1px solid #dedede}
+.loginDep1 > li > a{font-size:16px;line-height:51px;display:block;padding:0 17px}
+.loginDep1 > li{border-bottom:1px solid #dedede}
+.loginDep2{border-top:1px solid #dedede;background:#f8f8f8;padding:12px 0;display:none}
+.loginDep2 > li{margin:12px 45px 0}
+.loginDep2 > li > a{font-size:13px;color:#333}
+.loginDep1 > li > a.more{background:url(../images/common/ico_menuPlus.png) no-repeat 100% 50%;background-size:12px 12px;margin-right:15px}
+.loginDep1 > li > a.more.active{background:url(../images/common/ico_menuMinus.png) no-repeat 100% 50%;background-size:12px 2px;color:#19A647;font-weight:bold}
+.loginDep1 > li > a.active{color:#19A647;font-weight:bold}
+.loginChk{position:absolute;right:0;top:-6px;width:78px}
+.loginChk label{width:78px !important;height:30px}
+.loginChk input:checked + label{width:78px !important}
+.loginDep1 > li:nth-child(1) > a:before{content:"";display:inline-block;width:19px;height:11px;background:url(../images/contents/login_icon01.png) no-repeat center;background-size:16px 11px;margin-right:15px}
+.loginDep1 > li:nth-child(2) > a:before{content:"";display:inline-block;width:19px;height:17px;background:url(../images/contents/login_icon02.png) no-repeat center;background-size:13px 17px;margin-right:15px}
+.loginDep1 > li:nth-child(3) > a:before{content:"";display:inline-block;width:19px;height:17px;background:url(../images/contents/login_icon03.png) no-repeat center;background-size:14px 17px;margin-right:15px}
+.loginDep1 > li:nth-child(4) > a:before{content:"";display:inline-block;width:19px;height:16px;background:url(../images/contents/login_icon04.png) no-repeat center;background-size:14px 16px;margin-right:15px}
+.loginDep1 > li:nth-child(5) > a:before{content:"";display:inline-block;width:19px;height:11px;background:url(../images/contents/login_icon05.png) no-repeat center;background-size:19px 11px;margin-right:15px}
+.loginDep1 > li:nth-child(6) > a:before{content:"";display:inline-block;width:19px;height:11px;background:url(../images/contents/login_icon06.png) no-repeat center;background-size:19px 11px;margin-right:15px}
+.loginDep1 > li:nth-child(7) > a:before{content:"";display:inline-block;width:19px;height:16px;background:url(../images/contents/login_icon07.png) no-repeat center;background-size:19px 16px;margin-right:15px;position:relative;top:1px}
+.loginDep1 > li:nth-child(7) > a.active:before{content:"";display:inline-block;width:19px;height:16px;background:url(../images/contents/login_icon07_on.png) no-repeat center;background-size:19px 16px;margin-right:15px;position:relative;top:1px}
+.loginDep2.listDot > li{background:none}
+.mainPopWrap.popWrap{background:-webkit-linear-gradient(135deg, rgb(25,166,71) 0%, rgb(17,206,79) 100%);background:linear-graident(135deg, rgb(25,166,71) 0%, rgb(17,206,79) 100%)}
+.mainPopWrap.popWrap.fullLayerPop .popInner{background-color:transparent}
+.mainPopWrap.popWrap.fullLayerPop .popInner .popCont{padding:0}
+.mainPopWrap.popWrap .popInner .popCont{background:none}
+html.w100p .mainWrap{max-height:100%;height:100%;padding-bottom:0px}
+html.w100p .mainPopWrap .popCont{max-height:100%;height:100% !important;padding-bottom:0px}
+.recommendWrap{min-height:100%;height:auto;margin:0 auto -90px;padding-bottom:90px;overflow:hidden}
+.tit_recommend{margin-top:20%;padding:50px 40px 0;background:url('../images/main/tit_recommend.png') no-repeat 40px 0;background-size:62px 29px;color:#fff;font-size:19px;text-shadow:0px 0px 8px #13509a;display:block}
+.recommendBanner{height:260px;margin-top:10% !important;padding:0 25px !important}
+.recommendBanner .swiper-slide > div{float:left;width:50%;padding:5px}
+.recommendBanner .swiper-slide > div a{height:105px;padding-top:50px;background-color:#fff;background-position:center 20px;background-repeat:no-repeat;background-size:24px 22px;border-radius:3px;font-size:13px;text-align:center;display:block}
+.recommendBanner .swiper-slide > div a.recommendItem01{background-image:url('../images/main/ico_recommend_01.png')}
+.recommendBanner .swiper-slide > div a.recommendItem02{background-image:url('../images/main/ico_recommend_02.png')}
+.recommendBanner .swiper-slide > div a.recommendItem03{padding-top:46px;background-image:url('../images/main/ico_recommend_03.png')}
+.recommendBanner .swiper-slide > div a.recommendItem04{padding-top:46px;background-image:url('../images/main/ico_recommend_04.png');background-size:22px}
+.recommendBanner .swiper-slide > div a.recommendItem04 > span{line-height:14px}
+.recommendBanner .swiper-slide > div a.recommendItem05{height:221px;padding-top:120px;background-image:url('../images/main/ico_recommend_05.png');background-position:center 45px;background-repeat:no-repeat;background-size:60px 60px}
+.recommendBanner .swiper-slide > div a.recommendItem05 > span{padding-top:5px;line-height:14px}
+.recommendBanner .swiper-slide > div a.row{height:67px;padding:16px 0 0 45px;background-position:15px center;text-align:left}
+.recommendBanner .swiper-slide > div a.recommendItem06{background-image:url('../images/main/ico_recommend_06.png')}
+.recommendBanner .swiper-slide > div a.recommendItem07{background-image:url('../images/main/ico_recommend_07.png')}
+.recommendBanner .swiper-slide > div a.recommendItem08{background-image:url('../images/main/ico_recommend_08.png')}
+.recommendBanner .swiper-slide > div a.recommendItem03 > span{line-height:14px}
+.recommendBanner .swiper-slide > div a > span{color:#666;font-size:12px;display:block;letter-spacing:-1px}
+.recommendBanner .swiper-pagination-bullet{background:#fff}
+.popappArea2{width:100%;padding:0 0 20px;height:76px;box-sizing:border-box}
+.popappArea2 .quickApp{padding:0 23px}
+.popappArea2 .quickApp li{text-align:center;width:33.3%;float:left}
+.popappArea2 .quickApp li a{display:block;padding-top:42px;background-repeat:no-repeat;background-size:35px auto;background-position:center top;color:#fff;font-size:11px;line-height:1}
+.popappArea2 .quickApp li a.ico_app01{background-image:url('../images/contents/img_allone.png')}
+.popappArea2 .quickApp li a.ico_app02{background-image:url('../images/contents/img_kok.png')}
+.popappArea2 .quickApp li a.ico_app03{background-image:url('../images/contents/img_card.png')}
+/* 로그인 */
+.loginWrap.bannerFix .areaBodyBtnFull + .areaBodyBtnFull.mt30{margin-top:10px !important}
+.loginWrap.bannerFix .areaBodyBtnFull.mt30 .btnBodyLine.btnLangSet{margin-top:0px}
+.loginWrap .loginWay{margin-bottom:50px}
+.loginMsg.type02{margin-bottom:30px;padding-top:30px}
+.loginMsg.type03{padding-top:90px;margin-bottom:31px}
+.loginMsg .iosGuide{display:block;font-size:12px;color:#666}
+.loginGuideWrap{padding:0 20px}
+.loginGuide{min-height:14px;margin:13px 0 30px;padding-left:18px;background:url('../images/common/ico_bell.png') no-repeat 0 2px;background-size:14px 14px;color:#6a7688;font-size:12px;text-align:left}
+.loginMsg.banksignLogo{padding:114px 0 0;background:url("../images/contents/logo_banksign.png") no-repeat 50% 40px;-webkit-background-size:60px 60px;background-size:60px 60px}
+.loginM{margin-top:25px;padding:7px 15px 9px;border:1px solid #cef0dc;border-radius:2px;background-color:#f7fcf9;text-align:center}
+.loginM li{display:inline-block;margin-left:4px;padding-left:10px;background:url('../images/common/login_bar.png') no-repeat 0 70%;background-size:1px 10px;line-height:1}
+.loginM li:first-child{margin-left:0;padding-left:0;background:none}
+.loginM li a{color:#333;font-size:12px}
+.loginWay{overflow:hidden;margin-top:20px}
+.loginWay.ac a:first-child{float:none}
+.loginWay a{position:relative;float:right;padding-right:20px;color:#333;font-size:14px;font-weight:bold}
+.loginWay a:first-child{float:left}
+.loginWay a:after{position:absolute;top:50%;right:0;content:'';width:16px;height:16px;margin-top:-8px;background:url('../images/common/btn_loginLink.png') no-repeat 0 0;background-size:cover}
+/* 공인인증서 */
+.loginWrap .certificateWrap li{border-radius:2px}
+.loginWrap .certificateWrap li .link{padding-right:0;margin-right:0}
+.loginWrap .certificateWrap li .link:after{display:none}
+.certificateWrap .useCer [class^="ceriImg"]{top:39px}
+.certificateWrap .active{background-color:#f7fcf9;border-color:#d0f2db}
+.useCerIcon{margin-bottom:2px;text-align:right}
+.useCerIcon span{display:inline-block;width:52px;height:20px;line-height:20px;background-color:#19A647;border-radius:10px;color:#fff;font-size:11px;text-align:center}
+.certificateWrap .loginCer > li .link{padding-right:15px}
+.certificateWrap .loginCer > li .link:after{width:19px;height:13px;background:url(../images/common/ico_useCer_off.png) no-repeat;background-size:cover}
+.certificateWrap .loginCer > li.active.useCer .link:after{background-image:url(../images/common/ico_useCer_on.png)}
+.certificateWrap .toggleBtn.active{background-color:transparent}
+/* OTP 입력*/
+.scOtpWrap .scOtpTit{font-size:16px}
+.scOtpWrap .scOtpIcon{margin-top:15px}
+.cmScWrap .scOtpIcon img{width:35px}
+.scOtpWrap .scOtpIcon .img02{width:21px}
+.scOtpWrap .scOtpIcon .img03{width:32px}
+.scOtpWrap .scOtpTxt{margin-top:15px}
+.scOtpWrap .scOtpTxt .scOtpPoint{display:inline-block;margin:0 auto;padding:0 10px;background:#f44743;border-radius:5px}
+.cmScWrap .scOtpInput{position:relative;margin-top:15px}
+.cmScWrap .scOtpInput a{display:block;width:100%;height:50px;background:#fff;color:#000;border:1px solid #dedede}
+.cmScWrap .scOtpInput a:after{content:'';display:inline-block;height:100%;vertical-align:middle}
+.cmScWrap .scOtpInput a span{display:inline-block;vertical-align:middle;margin:0 8px;width:15px;height:15px;background-color:#d6dee4;border-radius:50% 50%;text-indent:-9999px}
+.cmScWrap .scOtpInput a span.active{background-color:#19a647}
+.scOtpWrap + .scOtpBtn .btnBodyDefault{border-radius:0 0 2px 2px}
+/* 보안카드번호 입력(보안센터) */
+.scOtpWrap .scCardWrap{margin-top:12px}
+.scOtpWrap .scCardWrap li{background:none;padding:0}
+.scOtpWrap .scCardWrap li .scCardTit{display:inline-block;color:#fff;width:80px;text-align:center;margin-right:-35px}
+.scOtpWrap .scCardWrap li:first-child .scCardTit{margin-left:-35px;margin-right:0}
+.scOtpWrap .scCardWrap li .scCardTit strong{display:block;color:#fff;font-size:13px}
+.scOtpWrap .scCardWrap li .scCardNum span{text-align:center}
+.scOtpWrap .scCardWrap li .scCardNum input{text-align:center;width:80px;color:#111}
+/* 뱅크사인 */
+.guideListTop .listDot .listIcon{position:relative;display:block;padding-right:60px}
+.guideListTop .listDot .listIcon span{position:absolute;top:-4px;right:0}
+/* 로그아웃 팝업 배너 */
+.logoutBanner3 a.logoutBannerWrap{position:relative;width:100%;height:100%;display:table;overflow:hidden;table-layout:fixed;background-image:url('../images/contents/bl/logoutBannerBG.jpg');background-position:center center;background-size:100% auto;background-repeat:no-repeat}
+.logoutBannerWrap .logoutBanner{position:relative;width:100%;height:100%;display:table-cell;vertical-align:middle;padding:4% 0}
+.logoutBannerWrap .logoutBanner p{text-align:center;text-align:center;width:90%;margin:0 auto;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;display:block}
+.logoutBannerWrap .logoutBanner .title{font-size:16px;color:#019a33}
+.logoutBannerWrap .logoutBanner .subCon{font-size:13px;color:#4a5d6c}

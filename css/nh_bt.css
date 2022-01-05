@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_bt :이체 */
+.setupTxt{width:40px;height:16px;margin:0 6px;background:url(../images/common/btn_setupTxt.png) no-repeat;background-size: cover;vertical-align:middle}
+/* 자동이체 */
+.btnFuncTip.tipMid{background-position:left center;margin-bottom:0;height:16px}
+.btnBodyLine.addBtn{font-size:14px;color:#046fd9;border:1px solid #046fd9}
+.btnBodyLine.addBtn:after{content:"";display:inline-block;width:16px;height:16px;margin-left:5px;margin-bottom:-3px;background:url(../images/contents/ico_add_btn.png) no-repeat;background-size:16px 16px}
+.btnBodyLine.addBtn.disabled:after{opacity:1;background:url(../images/contents/ico_add_btn_off.png) no-repeat;background-size:16px 16px}
+.accountSearhWrap{margin-top:20px}
+.accountSearhWrap .accList ul > li{border-bottom:1px solid #dedede;border-top:none}
+.accountSearhWrap .accList ul > li:first-child{border-top:1px solid #dedede}
+.accountSearhWrap .accList ul > li .accSel{background:url(../images/common/ico_list_link.png) no-repeat right center;background-size:9px 16px}
+.accountSearhWrap .accName{font-size:15px}
+.accountSearhWrap .accNum{font-size:15px}
+
+/****************************
+        2019 고도화
+*****************************/   
+.plusType01 .inputHarf01 .inputList{display:inline-block;width:calc( 100% - 45px );float:left}
+.plusType01 .inputHarf01 .inputB02{width:40px;height:40px;float:right;margin-top:0;text-align:right}
+.plusType01 .inputHarf01 .inputB02 a{font-size:0;display:block;width:40px;height:40px;text-align:right;border:1px solid #dedede;background:#fff url('../images/common/ico_plus.png');background-repeat:no-repeat;background-size:30% 30%;background-position:center center}
+.productList.type01 > li{border-bottom:0 none;border-top:1px solid #dedede}
+.productList.type01 > li:last-child{border-bottom:1px solid #dedede}
+.productList.type01 .detailList li{display:block}
+.productList.type01 .detailList li .inputList{display:block;margin-top:10px}
+.productList.type01 .isBtnHaeder{margin-top:0;padding-bottom:0}
+.productList.type01 .detailList li .areaBodyBtnSelect{display:block;margin-top:10px}
+.productList.type01 .productHeader{border-bottom:0 none}
+/* 더치페이 메시지 선택 swiper */
+.dpMsgStepArea{text-align:center;position:absolute;left:0;bottom:0;width:100%;height:32px;z-index:10}
+.dpMsgStepArea ul li{display:block;width:100%;height:100%;text-indent:-9999px;vertical-align:middle}
+.dpMsgStepArea .controlBtnWrap{position:relative;top:-2px;vertical-align:middle;margin-right:5px}
+.dpMsgStepArea .stepList2{padding:0 0 5px}
+.dpMsgStepArea .swiper-pagination{display:inline-block;position:relative;margin-left:2px}
+.dpMsgStepArea.stepArea2 .stepList2 a{background-color:#c2cdd5;border-radius:1000px}
+.dpMsgStepArea.stepArea2 .stepList2 li.active a{background-color:#046fd9}
+.dbMegTab.tabLv1.flick{position:fixed;width:100%;height:44px;left:0;top:0;z-index:200;top:200px;background-color:#fff;opacity:0}
+/* 이체 출금계좌번호 표시 여부선택 팝업 표시 미표시 수정 */
+.accList.type02 li{border-bottom:1px solid #dedede;border-top:0 none;padding:18px 17px}
+.accList.type02 li span{font-size:14px}
+.accList.type02 li .accSel{border:1px solid #dedede;display:inline-block;padding:3px 20px;float:right;margin-top:-4px}
+.accList.type02 li.active{background-color:#fff}
+.accList.type02 li.active a{background-image:none;background-size:0 0}
+/* 이체처리결과 내역 마지막 테이블 하단 라인 수정 :bbType01 클래스 추가 */
+[class^="wrapTbl"] table.bbType01 tr:last-child th, 
+[class^="wrapTbl"] table.bbType01 tr:last-child td{border-bottom:2px solid #808080}
+/* 나눌사람 리스트 영역 */
+.dbMenWrap{position:relative;background:#f9f9f9;margin:0 -17px;padding:132px 17px 35px;z-index:9;height:100%;overflow-y:auto}
+.dbMenWrap .slcMen{position:relative;display:inline-block;color:#6b6b6b;padding-left:45px;line-height:34px}
+.dbMenWrap .slcMen:after{content:'';display:block;clear:both;position:absolute;left:0;top:0;width:34px;height:34px;border:1px solid #b9b9b9;border-radius:1000px;background-image:url('../images/contents/bt/ico_plus_ks01.png');background-size:14px 14px;background-position:center center;background-repeat:no-repeat}
+.dbMenWrap ul{display:block;margin-top:10px}
+.dbMenWrap ul li{padding:6px 0}
+.dbMenWrap ul li dl{display:table;width:100%;table-layout:fixed}
+.dbMenWrap ul li dl dt,
+.dbMenWrap ul li dl dd{display:table-cell;vertical-align:top;width:50%}
+.dbMenWrap ul li dl dt{overflow:hidden}
+.dbMenWrap ul li dl dt span{position:relative;display:block;width:100%;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
+.dbMenWrap ul li dl dt span em{position:relative;display:inline-block;width:34px;height:34px;border:1px solid #ddd;background-color:#fff;border-radius:1000px;text-align:center;line-height:34px;color:#046fd9;font-size:16px;margin-right:10px}
+.dbMenWrap ul li dl dt span em i{display:inline-block;position:absolute;width:14px;height:14px;right:-8px;bottom:0px;background:#000;color:#fff;line-height:14px;border-radius:1000px;font-size:10px;font-style:normal}
+.dbMenWrap ul li dl dd{text-align:right;font-size:18px;color:#111}
+.dbMenWrap ul li dl dd input[type="text"],
+.dbMenWrap ul li dl dd input[type="number"],
+.dbMenWrap ul li dl dd input[type="tel"]{border:0 none;background-color:transparent;text-align:right;font-size:18px;color:#111;word-break:break-all}
+.dbMenWrap ul li dl dd input[type="text"]:focus,
+.dbMenWrap ul li dl dd input[type="number"]:focus,
+.dbMenWrap ul li dl dd input[type="tel"]:focus{color:#ed8e2e}
+/* 나눌사람 리스트 */
+.dbPayList{position:relative;padding:125px 0 0 0;margin:0 -17px;z-index:9}
+.dbPayList ul{display:block;padding:0 17px}
+.dbPayList ul li input[type="radio"],
+.dbPayList ul li input[type="checkbox"]{width:0;height:0;display:none}
+.dbPayList ul li input[type="radio"] + label,
+.dbPayList ul li input[type="checkbox"] + label{position:relative;display:block;width:100%;max-width:100%;padding:10px 0 0 0}
+.dbPayList ul li input[type="radio"]:checked + label:after,
+.dbPayList ul li input[type="checkbox"]:checked + label:after{content:'';display:block;clear:both;position:absolute;width:18px;height:14px;right:5px;top:50%;margin-top:-7px;background-image:url('../images/contents/bt/ico_chk_ks03.png');background-size:18px auto;background-position:center center;background-repeat:no-repeat}
+.dbPayList ul li input[type="radio"] + label dl,
+.dbPayList ul li input[type="checkbox"] + label dl{display:table;width:100%}
+.dbPayList ul li input[type="radio"] + label dl dt,
+.dbPayList ul li input[type="radio"] + label dl dd,
+.dbPayList ul li input[type="checkbox"] + label dl dt,
+.dbPayList ul li input[type="checkbox"] + label dl dd{display:table-cell;vertical-align:top}
+.dbPayList ul li input[type="radio"] + label dl dt,
+.dbPayList ul li input[type="checkbox"] + label dl dt{width:60px}
+.dbPayList ul li input[type="radio"] + label dl dt,
+.dbPayList ul li input[type="checkbox"] + label dl dt{position:relative}
+.dbPayList ul li input[type="radio"] + label dl dt span,
+.dbPayList ul li input[type="checkbox"] + label dl dt span{position:relative;display:inline-block;width:44px;height:44px;border:1px solid #ddd;background-color:#fff;border-radius:1000px;text-align:center;line-height:40px;color:#19a647;font-size:16px;margin-right:10px;margin-top:2px}
+.dbPayList ul li input[type="radio"] + label dl dd,
+.dbPayList ul li input[type="checkbox"] + label dl dd{border-bottom:1px solid #eee;padding-bottom:10px}
+.dbPayList ul li input[type="radio"] + label dl dd p,
+.dbPayList ul li input[type="checkbox"] + label dl dd p{font-size:18px}
+.dbPayList ul li input[type="radio"] + label dl dd span,
+.dbPayList ul li input[type="checkbox"] + label dl dd span{font-size:12px;display:block;color:#737373}
+.dbPayList.type02{padding:0px 0}
+.dbPayList.type02 ul{padding:0}
+.dbPayList.type02 ul li input[type="radio"] + label{padding:10px 0;border-bottom:1px solid #eee;margin:0}
+.dbPayList.type02 ul li input[type="radio"]:checked + label{background:#f5fafe}
+.dbPayList.type02 ul li input[type="radio"]:checked + label:after{content:'';display:block;clear:both;position:absolute;width:18px;height:14px;right:17px;top:50%;margin-top:-7px;background-image:url('../images/contents/bt/ico_chk_ks03.png');background-size:18px auto;background-position:center center;background-repeat:no-repeat}
+.dbMegBlock .dbPayList.type02 ul li input[type="radio"]:checked + label:after{content:'';display:block;clear:both;position:absolute;width:18px;height:14px;right:17px;top:50%;margin-top:-7px;background-image:url('../images/contents/bt/ico_chk_ks03.png');background-size:18px auto;background-position:center center;background-repeat:no-repeat}
+.dbPayList.type02 ul li input[type="radio"] + label dl{padding:0 17px}
+.dbPayList.type02 ul li input[type="radio"] + label dl dd{padding:0;border-bottom:0 none}
+.dbPayList.type02 ul li input[type="radio"] + label dl dd p{font-size:16px}
+.dbPayList.type02 ul li input[type="radio"] + label dl dd span{font-size:16px;color:#e78c26}
+.dbPayList.type02 ul li input[type="radio"] + label dl dd span em{font-size:12px;color:#111}
+/* 나눌금액 영역 */
+.inputList.dutchType01{position:relative}
+.inputList.dutchType01 input{position:relative;height:56px;border-top:0 none;border-left:0 none;border-right:0 none;text-align:right;padding-right:55px;color:#111;border-radius:0}/* 2019-11-11 :border-radius 추가 */
+.inputList.dutchType01 input.over{color:#f44743}
+.inputList.dutchType01 input + label{position:absolute;width:25px;height:16px;left:0;top:50%;margin-top:-8px;font-size:0;text-indent:-1000px;background-image:url('../images/contents/bt/ico_won_ks01.png');background-size:25px auto;background-position:0 0;background-repeat:no-repeat}
+.inputList.dutchType01 input:focus + label{position:absolute;width:25px;height:16px;left:0;top:50%;margin-top:-8px;font-size:0;text-indent:-1000px;background-image:url('../images/contents/bt/ico_won_ks02.png');background-size:25px auto;background-position:0 0;background-repeat:no-repeat}
+.inputList.dutchType01 input:-ms-input-placeholder{font-size:18px;color:#ababab;text-align:right}
+.inputList.dutchType01 input::-webkit-input-placeholder{font-size:18px;color:#ababab;text-align:right}
+.inputList.dutchType01 input:-moz-placeholder{font-size:18px;color:#ababab;text-align:right}
+.inputList.dutchType01 input::-moz-placeholder{font-size:18px;color:#ababab;text-align:right}
+.inputList.dutchType01 .btnReset,
+.inputList.dutchType01 .unit{height:56px}
+.inputList.dutchType01 .unit{font-size:18px;line-height:35px}
+.inputList.dutchType01 .unit.over{color:#f44743}
+/* 잔액 영역 */
+.dbMsgWrap{position:fixed;left:0;width:100%;margin:0;border-top:1px solid #d5d6d8;z-index:10}
+.dbMsgWrap.type01{height:40px;bottom:99px}
+.dbMsgWrap.type02{height:44px;bottom:55px;background-color:#fff}
+.dbMsgWrap ul .blockPay{padding:10px 17px;background-color:#f5fafe}
+.dbMsgWrap ul .blockMsg{padding:10px 17px;background-color:#fff}
+.dbMsgWrap ul .blockPay dl{display:table;width:100%}
+.dbMsgWrap ul .blockPay dl dt,
+.dbMsgWrap ul .blockPay dl dd{display:table-cell;width:50%}
+.dbMsgWrap ul .blockPay dl dd{color:#ff0000;text-align:right}
+.dbMsgWrap ul .blockMsg .formWrap,
+.dbMsgWrap ul .blockMsg .formWrap .checkList{margin:0}
+/* 나눌사람 선택 팝업 */
+.dpTopWrap{position:fixed;width:100%;height:115px;background-color:#f8f8f8;border-bottom:1px solid #ddd;margin:0 0px;padding:20px 17px;;z-index:10}
+/* 나눌사람 swiper */
+.dpSwiperWrap.swiper-container{height:30px;margin:0 -17px;padding:0px 17px}
+.dpSwiperWrap .swiper-slide{position:relative;width:auto;height:30px;padding:0px 18px 0 0;background-color:#fff;border:1px solid #ddd;border-radius:1000px}
+.dpSwiperWrap .swiper-slide span{display:inline-block;height:30px;line-height:18px;vertical-align:top;padding:5px 9px}
+.dpSwiperWrap .swiper-slide a{display:inline-block;width:14px;height:14px;position:absolute;right:8px;top:7px;background-color:transparent;background-image:url('../images/contents/bt/btn_x_ks01.png');background-size:14px 14px;background-position:center center;background-repeat:no-repeat}
+/* 메시지선택 content */
+.dbMegWrap{padding-top:44px}
+.dbMegCard.tabCont .formWrap:after{content:'';display:block;clear:both}
+.dbMegCard.tabCont .formWrap .inputList input[type="text"]{border-top:0 none;border-left:0 none;border-right:0 none;border-radius:0}
+.dbMegCard.tabCont .formWrap span,
+.dbMegCard.tabCont .formWrap span em{font-size:12px;color:#a1a1a1}
+.dbMegCard.tabCont .formWrap span{display:block;text-align:right}
+.dbMegCard.tabCont .formWrap span em{text-align:center}
+.dbMegCardSwiper.swiper-container{margin:0 -17px}
+.dbMegCardSwiper .swiper-slide img{width:100%;height:auto}
+
+/* 2020 고도화 시작 */
+.cellout{margin:0 !important;padding:0 !important}
+.popInner .popCont{color:#666}
+.dfs .panels .formWrap + .formHolder{margin-top:0}
+.dfs .panel > .formWrap{margin-top:25px}
+.dfs .panel > .formWrap.type{margin:15px 0 0;padding:0;background-color:#fff}
+.dfs .panels .formWrap ~ .formHolder{margin:0}
+.dfs .tgWrap .btnWrap.inr{margin:10px 0}
+.dfs .inputTransferAmountWrap .amountOutput p.price > span{margin:0px 3px;display:inline-block}
+.dfs .jsToggleWrap > .tbl.tblDeal.type{padding:0}
+.dfs .jsToggleWrap.on > .tbl.tblDeal.type{margin:-10px 0 10px;padding:0;border-top:0;padding-bottom:10px}
+.dfs .jsToggleWrap.on > .accTransferList.type{padding:0;border-top:0}
+.dfs hr.tee.type{margin:20px 0}
+/*title*/
+.dfs .accTransferListWrap + .snsType{margin-top:40px}
+.dfs .titWrap.snsType{height:47px}
+.dfs .titWrap.snsType .tit{bottom:3px;position:absolute}
+.dfs .titWrap.snsType .snsLink{margin:10px 0}
+.dfs .titWrap .snsLink{margin-top:0}
+/*table*/
+.dfs .jsToggleWrap.on > .tbl.tblDeal.type td + th{padding:10px 0 10px 10px}
+.btnWrap.line{margin:0 0 18.5px;border-bottom:1px solid #f1f1f1;padding-bottom:18.5px}
+/*메세지*/
+.dfs .msgWrap.confirm.cType01{padding:40px 0 30px;line-height:24px}
+.dfs .msgWrap.confirm.tit{line-height:28px}
+.dfs .msgWrap.confirm.cType02{padding:40px 0 30px}
+.dfs .textBox{position:relative;height:168px;overflow:hidden}
+.dfs .textBox.type{height:90px}
+.dfs .textBox:before{display:block;content:'';height:2px;background-color:#eee;position:absolute;left:0;right:0;top:54px;z-index:10}
+.dfs .textBox.type:before{top:43px}
+.dfs .textBox .textAreaWrap{display:block;position:relative;height:168px;overflow:hidden}
+.dfs .textBox.type .textAreaWrap{height:90px}
+.dfs .textBox .textAreaWrap:before{display:block;content:'';height:2px;background-color:#eee;position:absolute;left:0;right:0;top:110px}
+.dfs .textBox.type .textAreaWrap:before{top:88px}
+.dfs .textBox .textAreaWrap:after{display:block;content:'';height:2px;background-color:#eee;position:absolute;left:0;right:0;top:166px}
+.dfs .textBox .textArea{height:168px;padding:0;border:0;color:#111;font-size:16px;line-height:56px;min-height:168px}
+.dfs .textBox.type .textArea{height:90px;font-size:15px;line-height:45px;min-height:90px}
+.dfs .swiperWrap + .textAreaWrap{margin-top:20px}
+.dfs .snsWrap .textBox{margin-top:50px}
+/*roundBox*/
+.dfs .roudBoxType{position:relative;padding:15px;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, 0.1);border-radius:10px;background:#fff}
+.dfs .roudBoxType.ng{border:1px solid #f44743}
+.dfs .roudBoxType .inner{padding:0px}
+.dfs .roudBoxType .priceDetail li{text-align:left;margin-top:5px}
+.dfs .roudBoxType .priceDetail li .tit{font-size:12px}
+.dfs .roudBoxType .priceDetail li span{float:right}
+.dfs .roudBoxType .priceDetail .priceArea{font-size:17px;color:#111}
+.dfs .roudBoxType .resultTit .tit{font-size:15px;font-weight:600;color:#111}
+.dfs .roudBoxType .accountTransferView .accInfoArea .bkIco{float:left}
+.dfs .roudBoxType .accountTransferView .accInfoArea .accNum{margin:0 0 0 34px}
+.dfs .titWrap.type{padding:30px 0}
+.dfs .titWrap .lage{font-size:20px;color:#111}
+.dfs .titWrap + .accTransferList{border-top:#111}
+.dfs .accTransferList + ul.txt{margin-top:20px}
+.dfs .accTransferList dl dd > span + span{margin-left:3px}
+.dfs .accTransferList .formHolder.type .txtLink.uArr{right:4px;color:#111}
+/*메세지*/
+.dfs .msgWrap.confirm.type{margin:0 10px}
+.dfs .msgWrap.confirm .tit>a strong{font-size:21px}
+/*table*/
+.dfs .tbl.tblDeal thead{border-bottom:1px solid #f1f1f1}
+.dfs .tbl.tblDeal thead th{color:#111}
+.dfs .tbl.tblDeal thead th + th{padding:10px 0px 10px 0}
+.dfs .tbl.tblDeal td{color:#666}
+.dfs .tbl.tblDeal td + td, .dfs .tbl.tblDeal th + td{color:#111}
+.dfs .jsTabs .panels .panel >{margin-left:0 !important}
+.dfs .popCont > .titWrap + .accTransferList{margin-top:3px}
+.dfs .formHolder .flexGroup .txtLink{line-height:44px;color:#b3b3b3;font-size:14px}
+.dfs .msgWrap + .accTransferList{margin-top:0px}
+.dfs .formHolder .byte{font-size:12px;margin-top:5px}
+.dfs .formHolder.check.type{margin-top:25px}
+.dfs .formHolder.check.type:first-child{margin-top:0}
+.dfs .formHolder.check.type + .formHolder{margin:0}
+.dfs .formHolder.check.type label{display:inline-block}
+.dfs .formHolder.formSchWrap{margin-top:15px}
+.dfs .formWrap.accTransfer ~ .tee{height:10px}
+.dfs.sticky .formHolder.formSchWrap{position:fixed;top:100px;left:0;right:0;z-index:1001;padding:15px 20px 0;background-color:#fff}
+/*라운드리스트*/
+.dfs .accountTransferlist{margin-top:20px} 
+.dfs .typeRoundBox li{position:relative;padding:15px;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, 0.1);border-radius:10px;background-color:#fff}
+.dfs .typeRoundBox li + li{margin-top:20px}
+.dfs .roudBoxType .accCont a.accTit{display:inline-block;padding-right:23px;position:relative;font-weight:bold;margin-right:40px;max-width:calc(100% - 90px)}
+.dfs .roudBoxType .accCont a.accTit:after{position:absolute;width:13px;height:7.5px;background-position:-27px -20.5px;top:0;right:0;margin-top:7px}
+.dfs .typeRoundBox li .accCont .accInfo + .accInfo{margin-top:5px}
+.dfs .typeRoundBox li .accCont >.accInfo span{display:inline-block;font-size:13px}
+.dfs .typeRoundBox li .accInfo.type{margin:0;font-size:12px}
+.dfs .typeRoundBox li .accCont >.accInfo .accName{font-weight:normal;margin-right:0}
+.dfs .typeRoundBox li .accCont >.accInfo .accName + .accNum{margin-left:4px}
+.dfs .typeRoundBox li .priceDetail{margin-top:10px}
+.dfs .typeRoundBox .btnCls{position:absolute;top:15px;right:15px;width:20px;height:20px;z-index:10}
+.dfs .typeRoundBox .btnCls:after{position:absolute;width:10px;height:10px;background-position:-18px 0;margin:-5px 0 0 -5px;left:50%;margin-left:-5px}
+.dfs .typeRoundBox .icoBnk{width:38px;height:38px}
+.dfs .typeRoundBox .icoBnk img{width:38px;height:38px}
+.dfs .btnWrap.inr{margin:20px 0 0 0}
+.dfs .btnWrap.inr.on{display:none}
+.dfs .textAreaWrap.type .textArea{min-height:80px;background-size:auto 43px;line-height:37px;display:block;color:#666}
+.dfs .textAreaWrap.type .textArea{margin-top:15px}
+/*txt*/
+.dfs ul.txt>li{margin-top:5px}
+.dfs ul.txt>li:first-child{margin-top:0}
+.dfs .fieldGroup.type .inptWrap input[type='text']{color:#111}
+.dfs .fieldGroup.type .inptWrap input[readonly]{border-bottom:0 !important}
+.dfs .titWrap .accountNumber{margin-top:5px;color:#666;font-size:12px}
+.dfs ul.txt.innr{margin:5px 0 0 19px}
+.dfs .pt30{padding-top:30px}
+.dfs .topG{border-top:1px solid #111 !important}
+.dfs .msgWrap.confirm .ico.point:before{width:11.5px;height:17.5px;position:absolute;top:50%;left:50%;margin-left:-5.75px;margin-top:-8.75px;background-position:-394.5px -41px}
+.dfs .jsTabs.type01 > .panels .jsTabs.type02 .titWrap{padding:30px 0 0}
+.dfs .jsTabs.type01 .panels > .jsTabs.type02 .panels .titWrap{padding:0 20px !important}
+.dfs .jsTabs.type01 > .panels .jsTabs.type02 .titWrap + .listWrap{margin:0}
+.dfs .jsTabs.scroll.type02 .tabs li>a{padding:0 16px}
+.dfs .btnWrap .txtLink.arr.right{padding-right:20px}
+.dfs .btnWrap .txtLink.arr.right:after{width:10px;height:6px;top:9px;margin-top:-3px;background-position:-82px -20.5px}
+.dfs .btnWrap .txtLink.arr.right.on:after{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.dfs .jsTabs.type01 > .panels .jsTabs.type02 .btnWrap.page{padding:0}
+.dfs .listWrap.typeRoundBox li .accInfoArea .rCont .btnDel{top:0}
+.dfs .listWrap.typeRoundBox li:last-child{padding-bottom:15px}
+/* 다계좌이체안내팝업 */
+.dfs .btGuideTxt{margin-top:60px;padding:0 10px;font-size:24px;color:#111;line-height:33px}
+.dfs .btGuideTxt em{font-weight:600}
+.dfs .stepIntroWrap{margin:10px -5px 0;padding:10px 15px 8px;background:#f8f8f8;border-radius:6px}
+.dfs .stepIntroWrap .stepList{position:relative}
+.dfs .stepIntroWrap .stepList li{position:relative}
+.dfs .stepIntroWrap .stepList li + li{margin-top:2px}
+.dfs .stepIntroWrap .stepList strong{font-size:11px;color:#333;font-style:italic}
+.dfs .stepIntroWrap .stepList strong em{margin-left:4px;font-style:italic}
+.dfs .stepIntroWrap .stepList span{margin-left:30px;font-size:11px;color:#111}
+.dfs .stepIntroWrap .stepList:before{content:'';position:absolute;top:8px;bottom:8px;left:63px;border-left:1px dotted #19A647}
+.dfs .stepIntroWrap .stepList li:after{content:'';position:absolute;top:8px;left:60px;width:7px;height:7px;background:#19A647;border-radius:50%}
+.dfs .btGuideImg{margin:0 -20px -40px;text-align:center}
+.dfs .btGuideImg img{width:100%}

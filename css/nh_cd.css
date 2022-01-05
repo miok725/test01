@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_cd :카드 */
+/* 2020 고도화 시작 */
+.dfs .smTopWrap .blueBox::before, .dfs .smTopWrap .blueBox::after, .dfs .smTopWrap .btmSmu h2::before, .dfs .bannerWrap.typeCard .banner span:after, .dfs .smTopWrap .btmSmu .bsStrong span:after
+{display:block;content:'';background-image:url('../images/contents/cd/sp_cd.png');background-repeat:no-repeat;background-size:auto 250px}
+.popWrap .popInner.dfs .popCont{padding:0 20px 40px !important}
+.dfs.popInner.popInnerGray{background:#f9f9f9}
+.dfs.popInner.popInnerGray .popCont{background:transparent}
+.dfs .jsTabs.type01 .panels .btnWrap.page{padding:0 20px}
+.dfs .msgWrap.bgSimple{padding:30px 0 0;margin:0 -20px 30px;min-height:222px;background-color:#19A647}
+.dfs .msgWrap.bgSimple:after{display:block;content:'';clear:both}
+.dfs .msgWrap.bgSimple *{position:relative;z-index:1}
+.dfs .msgWrap.bgSimple .txtLink.ul.b{color:#fff;margin-right:3px}
+.dfs .msgWrap.bgSimple .txtLink.ul:after{background-color:#fff;background-image:none}
+.dfs .msgWrap.bgSimple>.standardPrice{font-size:15px;color:#fff;text-align:left;padding:0 20px}
+.dfs .msgWrap.bgSimple>.tit{font-size:14px;color:#fff}
+.dfs .msgWrap.bgSimple>.price{display:inline-block;font-size:26px;color:#fff;line-height:1;margin:10px 0 20px}
+.dfs .msgWrap.bgSimple>.price span{display:inline-block;font-size:33px;line-height:1}
+.dfs .msgWrap.bgSimple .infoWrap{margin:35px 20px 0;border-top:1px solid rgba(255,255,255,.15);padding:11px 20px 13px;background-color:#19A647}
+.dfs .msgWrap.bgSimple .infoWrap ul{margin:0 -20px}
+.dfs .msgWrap.bgSimple .infoWrap ul li{position:relative;line-height:28px;text-align:left;color:#fff}
+.dfs .msgWrap.bgSimple .infoWrap ul li .price{float:right;font-size:15px;font-weight:normal}
+.dfs .msgWrap.bgSimple .infoWrap ul li .sTit{display:inline-block;position:relative;font-size:14px}
+.dfs .msgWrap.bgSimple .infoWrap ul li .sTit strong{font-weight:normal;text-align:left;min-width:50px;display:inline-block}
+.dfs .msgWrap.bgSimple .infoWrap ul li .sTit span.count{float:right}
+.dfs .msgWrap.bgSimple .infoWrap span.bankInfo, .dfs .msgWrap.bgSimple .infoWrap span.date{float:right}
+.dfs .msgWrap.bgSimple > .standardPrice{text-align:left;margin-left:55px;font-size:14px}
+.dfs .msgWrap.bgSimple > .standardPrice .roundTxt{background-color:#019130;color:#fff;height:24px;line-height:22px;padding:0 12px;font-size:14px;margin-right:7px}
+.dfs .msgWrap.bgSimple > .standardPrice span.divider{color:#019130}
+.dfs .msgWrap.bgSimple.type{margin-bottom:10px}
+.dfs .cardPayThum{border-top:1px solid #555;background-color:#f8f8f8;padding:20px;overflow:hidden}
+.dfs .panels .cardPayThum{margin:40px 20px}
+.dfs .cardPayThum .cardTit{font-size:15px;color:#111;line-height:21px}
+.dfs .cardPayThum .cardTit>span{display:inline-block;margin-right:10px;background-color:#19A647;height:20px;line-height:20px;padding:0 5px;color:#fff;border-radius:2px;font-size:11px}
+.dfs .cardPayThum .priceWrap{margin-top:25px;text-align:right}
+.dfs .cardPayThum .priceWrap .tit{font-size:12px;color:#666}
+.dfs .cardPayThum .priceWrap .price{font-size:19px;color:#111;display:inline-block;margin-left:18px}
+.dfs button.icoCirArrow{position:relative;padding-right:22px;color:#fff}
+.dfs button.icoCirArrow.ul span:after{left:0;right:0;bottom:0;height:1px;background-color:#fff}
+.dfs button.icoCirArrow:before{display:inline-block;content:'';position:absolute;top:2px;right:0;width:16px;height:16px;border:1px solid #fff;border-radius:50%}
+.dfs button.icoCirArrow:after{position:absolute;top:50%;right:0;width:8px;height:5px;background-position:-145px -20px;margin:-4px 5px 0 0}
+.dfs .listLinkWrap{overflow:hidden}
+.dfs .listLinkWrap>ul>li{position:relative}
+.dfs .listLinkWrap ul + .titWrap.line{margin-top:30px}
+.dfs .listLinkWrap>ul>li{position:relative;padding:15px 0}
+.dfs .listLinkWrap>ul>li>a{display:block;position:absolute;top:0;right:0;left:0;bottom:0;z-index:1}
+.dfs .listLinkWrap .holder{position:relative;overflow:hidden}
+.dfs .listLinkWrap .store{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:calc(100% - 130px);font-size:15px;color:#111}
+.dfs .listLinkWrap .price{position:absolute;top:0;right:0;display:block;width:130px;font-size:15px;color:#111;text-align:right}
+.dfs .listLinkWrap .price>span{white-space:nowrap}
+.dfs .listLinkWrap .etcInfo{font-size:13px;color:#888;margin-top:3px}
+.dfs .listLinkWrap .etcInfo span{display:inline-block}
+.dfs .listLinkWrap .etcInfo span + span{margin-left:7px}
+.dfs .btnWrap + .jsToggleWrap .noticeWrap{margin-top:30px}
+.dfs .msgWrap.noData.type{margin:60px 0}
+.dfs .totalWrap{position:relative;margin:0 auto;background-color:#ebf9f0;border-radius:10px;padding:20px;min-height:50px;text-align:right;color:#111}
+.dfs .totalWrap strong{display:inline-block;float:left;font-size:15px;line-height:26px;font-weight:normal}
+.dfs .totalWrap.type{border-radius:0;border-top:1px solid #f1f1f1;border-bottom:1px solid #f1f1f1;background-color:#f9f9f9;min-height:55px;padding:15px}
+.dfs .totalWrap span{font-size:19px}
+.dfs .popIner{margin:0 -20px}
+.dfs .radioListWrap .formHolder.radio label.radio{padding:15px}
+.dfs .radioListWrap .formHolder.radio label.radio strong, .selectList .inr strong{font-weight:normal;color:#111;line-height:25px;font-size:16px}
+.dfs .cardLinkList{margin:0 -20px;border-top:1px solid #f3f3f3}
+.dfs .cardLinkList li{display:table;width:100%;border-bottom:1px solid #f3f3f3}
+.dfs .cardLinkList li a{display:table-cell;position:relative;height:106px;padding:0 20px;font-size:20px;color:#111;vertical-align:middle}
+.dfs .cardLinkList li a em{padding-left:5px}
+.dfs .cardLinkList li a span{display:block;margin-top:4px;font-size:14px;color:#666}
+.dfs .cardLinkList li a:after{display:block;content:'';background-image:url('../images/common/sp_com.png');background-size:auto 250px;position:absolute;top:50%;right:20px;width:13.5px;height:7.5px;margin-top:-3.5px;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);background-position:-27px -20px}
+.dfs .receiptWrap{background-color:#f1f3f5;padding:30px 18px;margin:0 -20px -40px}
+.dfs .receiptWrap .inr{background-color:#fff;border:1px solid #e9e9e9;border-radius:5px;padding:0 18px}
+.dfs .receiptWrap .inr .titTblWrap{padding-bottom:30px;position:relative;border-top:1px dashed #e1e1e1}
+.dfs .receiptWrap .inr .titTblWrap:before,.dfs .receiptWrap .inr .titTblWrap:after{display:block;content:'';background-color:#f1f3f5;background-image:url('../images/contents/cd/bg_receipt_cir.png');background-size:50px auto;position:absolute;top:-9.5px;width:17px;height:19px}
+.dfs .receiptWrap .inr .titTblWrap:before{left:0;background-position:0 0}
+.dfs .receiptWrap .inr .titTblWrap:after{right:0;background-position:-34.5px 0}
+.dfs .paymentInfoWrap{padding:30px 0}
+.dfs .paymentInfoWrap .pmStore{display:block;font-size:15px;color:#111}
+.dfs .paymentInfoWrap .pmPrice{display:block;margin-top:10px;font-size:33px;color:#111}
+.dfs .paymentInfoWrap .pmNum{display:block;margin-top:10px;font-size:13px;color:#888}
+.dfs .price .ng{text-decoration:line-through}
+.dfs .rdBoxList li{margin-top:30px}
+.dfs .rdBoxList a{display:block;margin-top:5px}
+.dfs .rdBoxList li a + a {margin-top:10px}
+.dfs .rdBoxList .emTitle{color:#111;font-size:15px;line-height:25px}
+.dfs .rdBoxList .box{margin-top:5px;padding:15px 20px 12px;border:1px solid #ccc;border-radius:9px;background-color:#fff}
+.dfs .rdBoxList .box .cateTit{color:#111;font-size:15px}
+.dfs .rdBoxList .box .cateDate{margin-top:2px;color:#888;font-size:13px}
+.dfs .rdBoxList .box .rdAmount{color:#111;font-size:18px;line-height:30px;text-align:right}
+.dfs .rdBoxList .box .rdAmount strong{font-size:20px}
+.dfs.small .bannerWrap.typeCard .banner:after{right:12px}
+.dfs .titWrap + .tblDeal{margin-top:0 !important}
+/* 신규카드 발급 */
+.dfs .msgWrap.noCard{padding:30px 0 0}
+.dfs .msgWrap.noCard > p{font-size:17px;color:#555}
+.dfs .msgWrap.noCard .tit{display:block;position:relative;font-size:24px;font-weight:normal;padding-top:24px;margin-top:20px;line-height:33px}
+.dfs .msgWrap.noCard .tit:before{display:block;position:absolute;top:0;left:50%;content:'';width:25px;height:2px;background-color:#111;margin-left:-12.5px}
+.dfs .msgWrap.noCard .tit em{font-weight:bold;color:#111}
+.dfs .msgWrap.noCard .btn{width:188px;height:45px;line-height:42px;font-size:14px;margin-top:30px;border-color:#19A647;color:#19A647;border-radius:23px}
+.dfs .msgWrap.noCard .noCardImg{display:block;width:261.5px;height:340px;margin:0 auto;background:url('../images/contents/cd/bg_nocard.png') no-repeat;background-size:auto 340px;margin-top:53px}

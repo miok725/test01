@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="page_tit">e-채움 공무원가계자금</h2>
+			<div class="stepArea">
+				<p class="stepTit">대출신청 계좌선택</p>
+				<div class="stepInfo" role="img" aria-label="총 6단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+						<li><span>6</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+
+			<div class="guideListTop">
+				<ul class="listDot">
+                    <li>개별대출을 원하시는 경우 대출금이 입금될 계좌번호를 선택하시고, 한도대출(마이너스통장)을 원하시는 경우 마이너스를 이용하실 계좌를 선택하시면 됩니다.</li>
+                    <li>대출신청 전 대출가능액을 조회하셔야 하며, 대출가능여부를 조회하시면 고객님의 신용 정보조회기록이 신용정보회사에 통보되고, 동 기록은 타 금융기관에 제공될 수 있으며 신용등급이 하락할 수 있습니다.</li>
+					<li><span class="pointColor5">한도 대출 시 수신상품 가입조건(하나로증권통장, 알짜배기 등)에 따라 한도약정이 되지 않을 수 있습니다.</span></li>
+				</ul>
+			</div>
+			<!-- guideListTop_end -->
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">대출종류</strong>
+						<div class="stList">
+							<a href="javascript:;" title="대출종류 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<h3 class="defTit">대출관련 정보</h3>
+				<ul>
+					<li>
+						<strong class="formTit">거래구분 <a href="javascript:;" class="btnFuncTip2" data-tip="0" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>개별거래</h1>
+								<div class="popCont">
+									<p>개별거래 : 약정금액 범위 내에서 일괄하여 대출이 발생하고 상환한 금액을 재사용할 수 없는 방식</p>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="formArray">
+							<div class="radioList">
+								<input type="radio" id="indivisual11" name="indivisual">
+								<label for="indivisual11">개별대출</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="indivisual12" name="indivisual">
+								<label for="indivisual12">한도대출</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">계좌번호</strong>
+						<!-- Tooltip Base -->
+						<div class="acc_inquiry_wrap">
+							<div class="selectBtnForm selectAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="stList inputB01">
+										<a href="javascript:;" title="계좌번호 선택 새창열림" role="button">
+											<span class="selectValue">선택해주세요</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+									<div class="inputB02">
+										<a href="javascript:;" class="btnInput01">입금가능여부 조회</a>
+									</div>
+								</div>
+								<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnBodyLine mt5">직접입력</a>
+							</div>
+							<div class="selectBtnForm insertAccount">
+								<div class="inputBoth01 div6_4">
+									<div class="inputList">
+										<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+									</div>
+									<div class="inputB02">
+										<a href="javascript:;" class="btnInput01">입금가능여부 조회</a>
+									</div>
+								</div>
+								<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnBodyLine mt5">계좌선택</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div><!-- formWrap_end -->
+			<div class="guideList">
+				<ul class="listDot">
+					<li>계좌번호 선택 시 '직접 입력'의 경우 출금 등록된 농협은행 계좌만 입력이 가능합니다. (단, 농&middot;축협계좌는 입력 불가)</li>
+				</ul>
+			</div>
+
+
+			<!-- 20181019 추가 -->
+			<div class="areaBodyBtnFull">
+				<a href="javascript:;" class="btnBodyLine" role="button">대출가능금액조회</a>		
+			</div>
+			<!-- //20181019 추가 -->
+
+
+			<!-- 2018-09-20 :: 프로세스 버튼 위치 변경 -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint disabled">확인</a>  <!-- 활성화시 disabled 제거 -->
+			</div>			
+			<!-- 2018-09-20 :: 프로세스 버튼 위치 변경 -->
+
+			<!-- areaBtnDefault_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

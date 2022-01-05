@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>btn :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+
+	<h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Process Button</h2>
+	<!-- view -->
+	<h3 class="guide">■ 비활성화(.btnPressPoint.disabled)</h2>
+	<div class="areaBtnDefault" style="position:static">
+		<a href="javascript:;" class="btnPressPoint disabled">확인</a> <!-- 비활성화시 disabled 추가 -->
+	</div>
+	<h3 class="guide mt20">■ 활성화(.btnPressPoint)</h2>
+	<div class="areaBtnDefault" style="position:static">
+		<a href="javascript:;" class="btnPressPoint">확인</a>
+	</div>
+	<h3 class="guide mt20">■ 부정/긍정(.btnPressDefault / .btnPressPoint)</h2>
+	<div class="areaBtnDefault" style="position:static">
+		<a href="javascript:;" class="btnPressDefault">취소</a>
+		<a href="javascript:;" class="btnPressPoint">확인</a> <!-- 비활성화시 disabled 추가 -->
+	</div>
+	<h3 class="guide mt20">■ 공유(.btnShare / .btnPressPoint)</h2>
+	<div class="areaBtnDefault" style="position:static">
+		<a href="javascript:;" class="btnShare" onclick="popCenter();return false;"><span class="blind">공유하기</span></a>
+		<a href="javascript:;" class="btnPressPoint">확인</a>
+	</div>
+	<hr>
+	<h3 class="guide mt20">■ 공유버튼이 있는 경우</h2>
+	<div class="areaBtnDefault" style="position:static">
+		<a href="javascript:;" class="btnShare" onclick="popCenter();return false;"><span class="blind">공유하기</span></a>
+		<a href="javascript:;" class="btnPressDefault">이체결과조회</a>
+		<a href="javascript:;" class="btnPressPoint">확인</a>
+	</div>
+	<h3 class="guide mt20">■ 공유버튼이 경우에 따라 display:none일 경우 : shareNone 클래스 추가</h2>
+	<div class="areaBtnDefault shareNone" style="position:static"> <!-- 공유하기 버튼이 없을 경우 shareNone 클래스 추가 -->
+		<a href="javascript:;" class="btnShare" onclick="popCenter();return false;"><span class="blind">공유하기</span></a>
+		<a href="javascript:;" class="btnPressDefault">이체결과조회</a>
+		<a href="javascript:;" class="btnPressPoint">확인</a>
+	</div>
+	<h3 class="guide mt20">■ 에러(.btnPressError)</h2>
+	<div class="areaBtnDefault" style="position:static">
+		<a href="javascript:;" class="btnPressError">Validation Check Feedback MSG</a>
+	</div>
+
+
+	<!-- 공유 팝업  -->
+	<div class="popWrap centerLayer">
+		<div class="dim"></div>
+		<div class="popInner">
+			
+			<h1>공유하기</h1>
+			<div class="popCont">
+
+				<div class="snsWrap">
+					<ul>
+						<li class="sns01"><a href="javascript:;">SMS</a></li>
+						<li class="sns02"><a href="javascript:;">카카오톡</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="popBtnWrap">
+				<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기" /></a>
+			</div>
+		</div>
+	</div>
+	<!-- // 공유 팝업 -->
+	<!-- //view -->
+
+	<hr />
+
+	<!-- view -->
+	<h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">In Body Button</h2>
+	<!-- view -->
+	<h3 class="guide">■ 단독 (table 내 버튼의 경우)</h3>
+	<div class="areaBtnMulti">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;" class="btnAddon">최근입금 계좌</a>
+				<li><a href="javascript:;" class="btnAddon">자주쓰는 계좌</a>
+				<li><a href="javascript:;" class="btnAddon">내 계좌</a>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<h3 class="guide">■ 텍스트 + 버튼</h3>
+	<div class="isBtnHaeder">
+		<strong class="secTit">입금정보</strong>
+		<div class="areaBtnMulti">			
+			<div class="inner">
+				<ul>
+					<li><a href="javascript:;" class="btnAddon">최근입금 계좌</a>
+					<li><a href="javascript:;" class="btnAddon">자주쓰는 계좌</a>
+					<li><a href="javascript:;" class="btnAddon">내 계좌</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- <h3 class="guide">■ input + 버튼</h3>
+	<strong class="formTit">대학명</strong>
+	<div class="inputBoth01">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">대학명 찾기</a>
+		</div>
+	</div>
+	<strong class="formTit">대학명</strong>
+	<div class="inputBoth01">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput02">대학명 찾기</a>
+		</div>
+	</div>
+	<strong class="formTit">대학명</strong>
+	<div class="inputBoth01">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput03">대학명 찾기</a>
+		</div>
+	</div> -->
+	<hr>
+	<h3 class="guide">■ 금액선택</h3>
+	<div class="areaBtnPrice">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;">전액</a>
+				<li><a href="javascript:;" class="btnAddonPoint">100만</a>
+				<li><a href="javascript:;">10만</a>
+				<li><a href="javascript:;">5만</a>
+				<li><a href="javascript:;">1만</a>
+			</ul>
+		</div>
+	</div>
+	<div class="areaBtnPrice">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;">최근 입금 계좌</a></li>
+				<li><a href="javascript:;">자주 쓰는 계좌</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<h3 class="guide">■ 조회 버튼 (.areaBodyBtnFull > .btnInquiry)</h3>
+	<div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnInquiry">조회</a>	
+	</div>
+	
+	<hr>
+	
+	<h3 class="guide">■ 더보기 버튼</h3>
+	<p style="margin-top:20px">.listMoreBtn > a</p>
+	<div class="listMoreBtn">
+		<a href="javascript:;" title="항목 더보기">더보기</a>
+	</div>
+	<p style="margin-top:20px">.areaBodyBtnFull > .btnBodyLine</p>
+	<div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnBodyLine" title="항목 더보기">더보기(1/1,000)</a>
+	</div>
+
+	<hr>
+
+	<h3 class="guide">■ 상단 가져오기 버튼 (.areaBodyBtnFull > .btnBodyDefault)</h3>
+	<div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnBodyDefault">계좌송금미리메모가져오기</a>
+		<a href="javascript:;" class="btnBodyDefault">계좌송금미리메모가져오기</a>
+	</div>
+	
+	<hr>
+	
+	<h3 class="guide">■ 인바디 버튼 (.areaBodyBtnFull > .btnBodyLine)</h3>
+	<div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnBodyLine">.btnBodyLine</a>		
+	</div>
+	
+	<hr>
+	
+	<h3 class="guide">■ fullsize 인바디 버튼</h3>
+	<strong style="display:block;">* 인바디 버튼 2개 경우 (.areaBodyBtnFull > .inner > ul > li)</strong>
+	<div class="areaBodyBtnFull">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;">납입내역</a></li>
+				<li><a href="javascript:;">상세조회</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<strong style="display:block;margin-top:30px">* 인바디 버튼 3개 경우 1 (.areaBodyBtnFull > .btnBodyLine + .inner)</strong>
+	<div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnBodyLine">하나짜리 풀버튼</a>
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;">납입내역</a></li>
+				<li><a href="javascript:;">상세조회</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<strong style="display:block;margin-top:30px">* 인바디 버튼 3개 경우 2 (.areaBodyBtnFull > .inner + .btnBodyLine)</strong>
+	<div class="areaBodyBtnFull">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;">납입내역</a></li>
+				<li><a href="javascript:;" class="disabled">비활성인 경우</a></li>
+			</ul>
+		</div>
+		<a href="javascript:;" class="btnBodyLine">하나짜리 풀버튼</a>
+	</div>
+
+	<hr>
+
+	<h3 class="guide">■ fullsize 인바디 선택 버튼 (.areaBodyBtnSelect > a)</h3>
+	<div class="areaBodyBtnSelect">
+		<a href="javascript:;" class="active">일괄납부</a>
+		<a href="javascript:;">단건납부</a>
+	</div>
+
+	<h3 class="guide mt20">■ 팝업내 인바디 버튼</h3>
+	<strong style="display:block;">*  <strong class="pointColor">팝업내에서만</strong> 사용되는 부정/긍정 버튼입니다. (.areaPopBtnFull > .inner > ul > li)</strong>
+	<br />
+	<div class="areaPopBtnFull">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;" class="btnPressDefault">초기화</a></li>
+				<li><a href="javascript:;" class="btnPressPoint">검색</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<h3 class="guide mt20">■ 팝업내 프로세스 버튼</h3>
+	<div class="popBtnWrap">
+		<div class="popBtn">
+			<a href="javascript:;" class="btnPressDefault">확인</a>
+			<a href="javascript:;" class="confirmBtn">확인</a>
+		</div>
+		<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기"></a>
+	</div>
+	<h3 class="guide mt20">■ 팝업내 좋아요 프로세스 버튼</h3>
+	<div class="popBtnWrap">
+		<div class="popBtn">
+			<a href="javascript:;" class="btnHeart" title="좋아요 추가하기"><!-- 좋아요 선택 시 active 클래스 추가 -->
+				<span class="blind">이 글이 도움이 되었습니다.</span>
+				<em>0,000</em>
+			</a>
+			<a href="javascript:;" class="confirmBtn">확인</a>
+		</div>
+		<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기"></a>
+	</div>
+
+	<hr>
+	
+	<h3 class="guide">■ 작은버튼</h3>
+	<!-- <a href="javascript:;" class="btnBodyDefault">a.btnBodyDefault</a>
+	<a href="javascript:;" class="btnBodyDefault disabled">a.btnBodyDefault</a> -->
+	<a href="javascript:;" class="btnType01">.btnType01</a>
+	<a href="javascript:;" class="btnType02">.btnType02</a>
+	<!-- <a href="javascript:;" class="btnBodyDefault"><span class="icoChk"></span>a.btnBodyDefault > icoChk</a>
+	<a href="javascript:;" class="btnBodyDefault disabled"><span class="icoChk"></span>a.btnBodyDefault.disabled > .icoChk</a> -->
+	<!-- <a href="javascript:;" class="btnBodyPoint">btnBodyPoint</a> -->
+	<!-- <a href="javascript:;" class="btnBodyPoint"><span class="icoChk"></span>버튼</a> -->
+	<!-- <a href="javascript:;" class="btnBodyRadius">btnBodyRadius</a>
+	<a href="javascript:;" class="btnBodyDefaultSub">btnBodyDefaultSub</a>
+	<a href="javascript:;" class="btnBodyDefaultSub disabled">btnBodyDefaultSub disabled</a> -->
+	<hr>
+	<!-- <h3 class="guide">■ Function 버튼</h3>
+	<a href="javascript:;" class="btnFuncDown"><span class="blind"></span></a>
+	<a href="javascript:;" class="btnFuncChnage"><span class="blind"></span></a>
+	<a href="javascript:;" class="btnFuncToggle active"><span class="blind">썸네일리스트</span></a> 토글형태의 버튼. active를 빼면 text를 텍스트리스트 로 수정
+	<a href="javascript:;" class="btnFuncPlus"><span class="blind">크게</span></a>
+	<a href="javascript:;" class="btnFuncMinus"><span class="blind">작게</span></a>
+	<a href="javascript:;" class="btnFuncTip"><span class="blind">툴팁</span></a> -->
+	
+</div>
+</body>
+</html>

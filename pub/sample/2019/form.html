@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>form :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+
+	<!-- view -->
+    <h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">form타입 : input</h2>
+    <p class="mt15">
+    	<strong style="font-size:14px; color:blue">■  form 형태 기본기조 : formWrap>ul>li</strong><br />
+    </p>
+	<p>
+		<strong style="font-size:14px; color:blue">■  모든 input(텍스트, 금액 입력)에는 '입력내용삭제(reset)' 버튼 있음 .btnReset</strong>
+	</p>
+    
+    <div class="formWrap">
+        <ul>
+            <li>
+                <h3 class="guide">■  텍스트 경우</h3>
+                <strong class="formTit">제목</strong>
+                <p class="inpTxt">텍스트만 있는 경우</p>
+            </li>
+            <li>
+                <h3 class="guide">■  기본 인풋 </h3>
+                <strong class="formTit">제목</strong>
+                <div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="플레이스홀더" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+            </li>			
+            <li>
+                <h3 class="guide">■  Read Only </h3>
+                <strong class="formTit">제목</strong>
+                <div class="inputList">
+                    <input type="text" title="타이틀 값 입력" placeholder="내용을 입력하세요" value="내용을 입력했습니다" readonly="readonly" />
+                </div>
+            </li>
+            <li>
+                <h3 class="guide">■  Disabled</h3>
+                <strong class="formTit">제목</strong>
+                <div class="inputList">
+                    <input type="text" title="타이틀 값 입력" placeholder="제목" disabled="disabled" />
+                </div>
+            </li>
+			<li>
+                <h3 class="guide">■  Focus In - Placeholder 존재 Case </h3>
+                <strong class="formTit">제목</strong>
+                <div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="플레이스홀더" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+                <p class="infoTxt"> 지급가능금액 인포텍스트 <span class="pointColor5">강조의 경우는 주황색</span>으로</p>
+            </li>
+			<li>
+                <h3 class="guide">■  Focus In - Placeholder 미존재 Case </h3>
+                <strong class="formTit">제목</strong>
+                <div class="inputList">
+                    <input type="text" title="타이틀 입력" placeholder="" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+                <ul class="infoTxt">
+                    <li>관리비 고지서에 기재된 계좌번호 입력</li>
+                    <li>타행계좌로관리비를 납부하는 경우, 이체수수료(500원)별도 부가</li>
+                </ul>
+            </li>
+			<li>
+                <h3 class="guide">■  금액입력 인풋 Case </h3>
+                <strong class="formTit">입금액</strong>
+                <div class="inputList">                    
+                    <input type="tel" title="입금액 입력" placeholder="" />
+                    <span class="unit">원</span>
+					<a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>					
+                </div>
+            </li>            
+            <li>
+                <h3 class="guide">■  보안키패드 사용 인풋(sKey) : class="sKey" readonly="readonly" </h3>
+                <strong class="formTit">제목</strong>
+                <input type="text" title="타이틀 입력" placeholder="플레이스홀더" class="sKey" readonly="readonly" />
+            </li>
+            <!-- <li>
+                <h3 class="guide">■  날짜입력 인풋(직접입력 가능 경우) </h3>
+                <strong class="formTit">제목</strong>
+                <div class="cal">
+                    <div class="inputList">
+                        <input type="text" value="" title="날짜선택 입력" placeholder="날짜선택을 입력해 주세요." />
+                        <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+                    </div>
+                </div>
+            </li> -->
+            <li>
+                <h3 class="guide">■  날짜입력 인풋(직접입력 불가) </h3>
+                <strong class="formTit">제목</strong>
+                <div class="cal">
+                    <div class="inputList">
+                        <input type="text" title="날짜선택 입력" placeholder="날짜선택을 입력해 주세요." readonly="readonly" />
+                        <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3 class="guide">■  Error - 화면 Script, 유효성 Check Error </h3>
+                <strong class="formTit">제목</strong>
+                <div class="inputList inputError">
+                    <input type="text" title="타이틀 값 입력" placeholder="내용을 입력하세요" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                    <p class="errorText">위 항목은 에러사항입니다.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+	
+    <!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">form타입 : select</h2>
+    <div class="formWrap">
+        <ul>
+            <li>
+                <h3 class="guide">■  Default</h3>
+                <strong class="formTit">제목</strong>
+                <div class="stList">
+                    <a href="javascript:;" title="OOO 선택 새창열림">
+                        <span class="selectValue">선택해주세요</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </li>			
+            <li>
+                <h3 class="guide">■  Read Only</h3>
+                <strong class="formTit">제목</strong>
+                <div class="stList">
+                    <a href="javascript:;" class="selectReadOnly">
+                        <span class="selectValue">선택해주세요</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <h3 class="guide">■  Disabled</h3>
+                <strong class="formTit">제목</strong>
+                <div class="stList">
+                    <a href="javascript:;" class="selectDisabled">
+                        <span class="selectValue">제목</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <h3 class="guide">■  Select + input</h3>
+                <strong class="formTit">제목</strong>
+                <ul class="selectDivision_3_7" >
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" title="OOO 선택 새창열림">
+                                <span class="selectValue">선택해주세요</span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputList">
+                            <input type="text" title="타이틀 값 입력" placeholder="제목" disabled="disabled" />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong class="formTit">제목</strong>
+                <ul class="selectDivision_3_7" >
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" title="OOO 선택 새창열림">
+                                <span class="selectValue">선택해주세요</span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputList">
+                            <input type="text" title="타이틀 값 입력" placeholder="제목" />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3 class="guide">■  multi select</h3>
+                <strong class="formTit">제목</strong>
+                <ul class="selectDivision_5_5">
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" title="OOO 선택 새창열림">
+                                <span class="selectValue"></span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" class="selectDisabled">
+                                <span class="selectValue"></span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="selectDivision_5_5">
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" title="OOO 선택 새창열림">
+                                <span class="selectValue">제목</span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" title="OOO 선택 새창열림">
+                                <span class="selectValue">제목</span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- //view -->
+	
+
+    <!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">form타입 : textarea</h2>
+    <div class="formWrap">
+        <ul>
+            <li>
+                <h3 class="guide">■  Default</h3>
+                <div class="areaList">
+                    <textarea rows="3" title="내용을 입력해주세요." ></textarea>
+                </div>
+            </li>
+            <li>
+                <h3 class="guide">■  Focus In - Placeholder 존재 Case </h3>
+                <strong class="formTit">제목</strong>
+                <div class="areaList placeShow">
+                    <textarea rows="3" id="area01" placeholder="내용을 입력하세요" title="내용을 입력해주세요." ></textarea>
+                </div>
+            </li>
+            <!-- <li>
+                <h3 class="guide">■  Focus In - Placeholder 미존재 Case</h3>
+                <strong class="formTit">제목</strong>
+                <div class="areaList">
+                    <textarea rows="3" id="area02" placeholder="내용을 입력하세요" title="내용을 입력해주세요." ></textarea>
+                </div>
+            </li>
+                <h3 class="guide">■  Key In</h3>
+                <strong class="formTit">제목</strong>
+                <div class="areaList">
+                    <textarea rows="3" id="area03" placeholder="내용을 입력하세요" title="내용을 입력해주세요." >본 내용이 입력된 상태입니다. 본 내용이 입력된 상태입니다.본 내용이 입력된 상태입니다. 본 내용이 입력된 상태입니다.입력된 상태입니다.</textarea>
+                </div>
+            </li>
+            <li>
+            <li>
+                <h3 class="guide">■  Focus Out</h3>
+                <strong class="formTit">제목</strong>
+                <div class="areaList">
+                    <div>
+                        <textarea rows="3" id="area04" placeholder="내용을 입력하세요" title="내용을 입력해주세요." readonly="readonly" >본 내용이 입력된 상태입니다. 본 내용이 입력된 상태입니다.본 내용이 입력된 상태입니다. 본 내용이 입력된 상태입니다.입력된 상태입니다.</textarea>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <!-- //view -->
+
+	<!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">form타입 : input/select 혼합형</h2>
+	<div class="guideListTop">
+		<p class="guideTopTit">input 혼합형의 활용</p>
+        <ul class="listDot">
+			<li>div.inputBoth01 에 원하는 비율에 따라 클래스 추가 <br />* 비율클래스 : div2_8, div3_7, div4_6, div5_5, div6_4, div7_3, div8_2</li>
+			<li>좌측에 보여야 하는 요소에 inputB01 클래스를 넣고</li>
+			<li>우측에 보여야 하는 요소에 inputB02 클래스를 넣는다.</li>
+        </ul>
+
+		<p class="guideTopTit">inputBoth01, inputBoth02, inputBoth03 의 사용</p>
+        <ul class="listDot">
+            <li><strong>inputBoth01</strong> : 정렬되어야 하는 요소가 두개일 경우 사용(가장 많이 사용됨)</li>
+            <li><strong>inputBoth02</strong> : 정렬되어야 하는 요소가 50% 로 고정되어야 할 경우 사용</li>
+            <li><strong>inputBoth03</strong> : 정렬되어야 하는 요소 사이에 dash( - 혹은 / ) 나 dot( . ) 가 함께 사용되는 경우</li>
+        </ul>
+
+    </div>
+
+<br />
+	<h3 class="guide">■ input 옆에 버튼 있는 경우</h3>
+	<strong class="formTit">input text + 버튼 (비율 4:6)</strong>
+	<div class="inputBoth01 div4_6">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼명이 엄청나게 길 경우</a>
+		</div>
+	</div>
+
+	<strong class="formTit">input text + 버튼 (비율 5:5)</strong>
+	<div class="inputBoth01 div5_5">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼명이 조금 길 경우</a>
+		</div>
+	</div>
+
+	<strong class="formTit">input text + 버튼 (비율 6:4)</strong>
+	<div class="inputBoth01 div6_4">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼명이 길 경우</a>
+		</div>
+	</div>
+
+	<strong class="formTit">input text + 버튼 (비율 7:3)</strong>
+	<div class="inputBoth01 div7_3">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼명이오</a>
+		</div>
+	</div>
+
+	<strong class="formTit">input text + 버튼 (비율 8:2)</strong>
+	<div class="inputBoth01 div8_2">
+		<div class="inputList inputB01">
+			<input type="text" title="대학명 입력" id="" />
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼</a>
+		</div>
+	</div>
+
+	<strong class="formTit">select + 버튼 (비율 8:2)</strong>
+	<div class="inputBoth01 div8_2">
+		<div class="stList inputB01">
+			<a href="javascript:;" title="OOO 선택 새창열림">
+				<span class="selectValue">선택해주세요</span>
+				<span class="selectBtn">버튼</span>
+			</a>
+			<select name="" title="선택해주세요">
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼</a>
+		</div>
+	</div>
+
+	<strong class="formTit">select + 버튼 (비율 7:3)</strong>
+	<div class="inputBoth01 div7_3">
+		<div class="stList inputB01">
+			<a href="javascript:;" title="OOO 선택 새창열림">
+				<span class="selectValue">선택해주세요</span>
+				<span class="selectBtn">버튼</span>
+			</a>
+			<select name="" title="선택해주세요">
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">버튼</a>
+		</div>
+	</div>
+
+	<p class="mt10"><strong class="pointColor5">* select + select 혼합 / select + input text 혼합은 select 쪽 가이드 참조</strong></p>
+
+	<br /><br />
+	<h3 class="guide">■ radio 옆에 input text 혼합된 경우</h3>
+	<div class="formWrap">
+		<ul>
+			<li>
+				<div class="inputBoth02">
+					<div class="inputB01">
+						<input type="radio" id="rdo01" name="rdo1">
+						<label for="rdo01">전자수용가번호</label>
+					</div>
+					<div class="inputList inputB02">
+						<input type="text" title="대학명 입력" id="input01" placeholder="15자리">
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="inputBoth02">
+					<div class="inputB01">
+						<input type="radio" id="rdo02" name="rdo1">
+						<label for="rdo02">고객번호(서울시)</label>
+					</div>
+					<div class="inputList inputB02">
+						<input type="text" title="대학명 입력" id="input01" placeholder="9자리">
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="inputBoth02">
+					<div class="inputB01">
+						<input type="radio" id="rdo03" name="rdo1">
+						<label for="rdo03">전자납부번호</label>
+					</div>
+					<div class="inputList inputB02">
+						<input type="text" title="대학명 입력" id="input01" placeholder="19자리">
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<br /><br />
+	<h3 class="guide">■ input text + dash + input text</h3>
+	<strong class="formTit">고지정보 입력 (비율 3:7)</strong>
+	<div class="inputBoth03 div3_7">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDash">-</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+	</div>
+	<!-- <strong class="formTit">고지정보 입력 (비율 4:6)</strong>
+	<div class="inputBoth03 div4_6">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDash">-</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+	</div> -->
+	<strong class="formTit">고지정보 입력 (비율 5:5)</strong>
+	<div class="inputBoth03 div5_5">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDash">-</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+	</div>
+	<!-- <strong class="formTit">고지정보 입력 (비율 6:4)</strong>
+	<div class="inputBoth03 div6_4">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDash">-</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+	</div> -->
+
+	<!-- <strong class="formTit">고지정보 입력 (비율 7:3)</strong>
+	<div class="inputBoth03 div7_3">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDash">-</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+	</div> -->
+
+	<strong class="formTit">dash(-) 대신 dot(.)을 사용할 경우 (3:7)</strong>
+	<div class="inputBoth03 div3_7">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDot">.</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+    </div>
+
+    <strong class="formTit">dash(-) 대신 dot(.)을 사용할 경우 (7:3)</strong>
+	<div class="inputBoth03 div7_3">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDot">.</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+	</div>
+    <!-- //view -->
+
+    <!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">form타입 : checkbox</h2>	
+	<h3 class="guide">■ block 형태</h3>
+    <div class="formWrap">
+        <ul>
+            <li>                
+                <div class="imsi">- Default</div>
+                <div class="checkList">                    
+                    <input type="checkbox" id="chk11" name="cc" />
+                    <label for="chk11">항목1</label>
+                </div>
+                <div class="imsi mt20">- checked</div>
+                <div class="checkList">                    
+                    <input type="checkbox" id="chk12" name="cc" checked="checked" />
+                    <label for="chk12">항목이 길어지면 이렇게 보여질거에요~ 항목이 길어지면 이렇게 보여질거에요~ 항목이 길어지면 이렇게 보여질거에요~항목이 길어지면 이렇게 보여질거에요~</label>
+                </div>
+                <div class="imsi mt20">- Read Only</div>
+                <div class="checkList">                    
+                    <input type="checkbox" id="chk13" name="cc" readonly="readonly" onclick="return false" />
+                    <label for="chk13">항목3</label>
+                </div>
+                <div class="imsi mt20">- Disabled</div>
+                <div class="checkList">                    
+                    <input type="checkbox" id="chk14" name="dd" disabled="disabled"/>
+                    <label for="chk14">항목4</label>
+                </div>
+				<div class="imsi mt20">- checked Disabled</div>
+                <div class="checkList">                    
+                    <input type="checkbox" id="chk14" name="dd" disabled="disabled" checked="checked"/>
+                    <label for="chk14">항목4</label>
+                </div>
+            </li>
+		</ul>
+	</div>
+	<h3 class="guide mt20">■ 한줄에 2개씩 정렬</h3>
+    <div class="formWrap">
+        <ul>
+			<li>
+				<div class="formArray array2">
+					<div class="checkList">
+						<input type="checkbox" id="chk21" name="cc" />
+						<label for="chk21">항목1</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk22" name="cc" checked="checked" />
+						<label for="chk22">항목2</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk23" name="cc" readonly="readonly" onclick="return false" />
+						<label for="chk23">항목3</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk24" name="dd" disabled="disabled"/>
+						<label for="chk24">항목4</label>
+					</div>
+				</div>
+            </li>
+		</ul>
+	</div>
+	<h3 class="guide mt20">■ 한줄에 3개씩 정렬</h3>
+    <div class="formWrap">
+        <ul>
+			 <li>
+				<div class="formArray array3">
+					<div class="checkList">
+						<input type="checkbox" id="chk31" name="cc" />
+						<label for="chk31">항목1</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk32" name="cc" checked="checked" />
+						<label for="chk32">항목2</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk33" name="cc" readonly="readonly" onclick="return false" />
+						<label for="chk33">항목3</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk34" name="dd" disabled="disabled"/>
+						<label for="chk34">항목4</label>
+					</div>
+				</div>
+            </li>
+		</ul>
+	</div>
+	<h3 class="guide mt20">■ 한줄에 4개씩 정렬</h3>
+    <div class="formWrap">
+        <ul>
+			<li>
+				<div class="formArray array4">
+					<div class="checkList">
+						<input type="checkbox" id="chk41" name="cc" />
+						<label for="chk41">항목1</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk42" name="cc" checked="checked" />
+						<label for="chk42">항목2</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk43" name="cc" readonly="readonly" onclick="return false" />
+						<label for="chk43">항목3</label>
+					</div>
+					<div class="checkList">
+						<input type="checkbox" id="chk44" name="dd" disabled="disabled"/>
+						<label for="chk44">항목4</label>
+					</div>
+				</div>
+            </li>
+		</ul>
+	</div>
+	<!-- <h3 class="guide mt20">■ inline 형태로 처리해야할 경우</h3>
+	    <div class="formWrap">
+	        <ul>		
+			<li>
+				<div class="checkList checkLine">
+					<input type="checkbox" id="chk51" name="cc" />
+					<label for="chk51">만약에</label>
+				</div>
+				<div class="checkList checkLine">
+					<input type="checkbox" id="chk52" name="cc" checked="checked" />
+					<label for="chk52">내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면</label>
+				</div>
+				<div class="checkList checkLine">
+					<input type="checkbox" id="chk53" name="cc" readonly="readonly" onclick="return false" />
+					<label for="chk53">이렇게</label>
+				</div>
+				<div class="checkList checkLine">
+					<input type="checkbox" id="chk54" name="dd" disabled="disabled"/>
+					<label for="chk54">쓰면 됩니다!</label>
+				</div>
+	            </li>
+	        </ul>
+	    </div> -->
+    <!-- //view -->
+	
+    <!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">form타입 : radio</h2>	
+    <h3 class="guide">■ 블록형태</h3>
+	<div class="formWrap">
+        <ul>
+            <li>
+                <div class="imsi">- Default</div>
+                <div class="radioList">                    
+                    <input type="radio" id="r1" name="rr" />
+                    <label for="r1">항목1</label>
+                </div>
+                <div class="imsi mt20">- checked</div>
+                <div class="radioList">
+                    <input type="radio" id="r2" name="rr" checked="checked" />
+                    <label for="r2">항목이 길어지면 이렇게 보여질거에요~ 항목이 길어지면 이렇게 보여질거에요~ 항목이 길어지면 이렇게 보여질거에요~</label>
+                </div>
+                <div class="imsi mt20">- Read Only</div>
+                <div class="radioList">
+                    <input type="radio" id="r3" name="rr" readonly="readonly" onclick="return false" />
+                    <label for="r3">항목3</label>
+                </div>
+                <div class="imsi mt20">- Disabled</div>
+                <div class="radioList">
+                    <input type="radio" id="r4" name="rr" disabled="disabled" />
+                    <label for="r4">항목4</label>
+                </div>
+            </li>
+		</ul>
+	</div>
+	<h3 class="guide mt20">■ 한줄에 2개씩 정렬</h3>
+    <div class="formWrap">
+        <ul>
+			<li>
+				<div class="formArray">
+					<div class="radioList">
+						<input type="radio" id="rdo11" name="aa" />
+						<label for="rdo11">항목1</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo12" name="aa" checked="checked">
+						<label for="rdo12">항목2</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo13" name="aa" readonly="readonly" onclick="return false">
+						<label for="rdo13">항목3</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo14" name="aa" disabled="disabled">
+						<label for="rdo14">항목4</label>
+					</div>
+				</div>
+            </li>
+		</ul>
+	</div>
+	<h3 class="guide mt20">■ 한줄에 3개씩 정렬</h3>
+    <div class="formWrap">
+        <ul>
+			<li>
+				<div class="formArray array3">
+					<div class="radioList">
+						<input type="radio" id="rdo21" name="bb" />
+						<label for="rdo21">항목1</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo22" name="bb" checked="checked">
+						<label for="rdo22">항목2</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo23" name="bb" readonly="readonly" onclick="return false">
+						<label for="rdo23">항목3</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo24" name="bb" disabled="disabled">
+						<label for="rdo24">항목4</label>
+					</div>
+				</div>
+            </li>
+		</ul>
+	</div>
+	<h3 class="guide mt20">■ 한줄에 4개씩 정렬</h3>
+    <div class="formWrap">
+        <ul>
+			<li>
+				<div class="formArray array4">
+					<div class="radioList">
+						<input type="radio" id="rdo31" name="dd" />
+						<label for="rdo31">항목1</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo32" name="dd" checked="checked">
+						<label for="rdo32">항목2</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo33" name="dd" readonly="readonly" onclick="return false">
+						<label for="rdo33">항목3</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo34" name="dd" disabled="disabled">
+						<label for="rdo34">항목4</label>
+					</div>
+				</div>
+            </li>
+		</ul>
+	</div>
+	<!-- <h3 class="guide mt20">■ inline 형태로 처리해야할 경우</h3>
+	    <div class="formWrap">
+	        <ul>
+	            <li>
+	                <div class="radioList radioLine">
+	                    <input type="radio" id="r11" name="rr" />
+	                    <label for="r11">만약</label>
+	                </div>
+	                <div class="radioList radioLine">
+	                    <input type="radio" id="r22" name="rr" checked="checked" />
+	                    <label for="r22">내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면 내용이 길어지면</label>
+	                </div>
+	                <div class="radioList radioLine">
+	                    <input type="radio" id="r33" name="rr" readonly="readonly" onclick="return false" />
+	                    <label for="r33">이런식으로</label>
+	                </div>
+	                <div class="radioList radioLine">
+	                    <input type="radio" id="r44" name="rr" disabled="disabled" />
+	                    <label for="r44">사용하시오</label>
+	                </div>
+	            </li>
+	        </ul>	        
+	    </div> -->
+
+	<h3 class="guide mt20">■ 버튼형 통신사 선택</h3>
+	<ul class="mobileSelct">
+        <li>
+            <span class="boxChk">
+                <input type="radio" name="sample00" id="sample01" checked="checked" />
+                <label for="sample01">SKT</label>
+            </span>
+        </li>
+        <li>
+            <span class="boxChk active">
+                <input type="radio" name="sample00" id="sample02" />
+                <label for="sample02">SKT(알뜰폰)</label>
+            </span>
+        </li>
+        <li>
+            <span class="boxChk">
+                <input type="radio" name="sample00" id="sample03" />
+                <label for="sample03">KT(알뜰폰 포함)</label>
+            </span>
+        </li>
+        <li>
+            <span class="boxChk">
+                <input type="radio" name="sample00" id="sample04" />
+                <label for="sample04">LG U+(알뜰폰 포함)</label>
+            </span>
+        </li>
+    </ul>
+    <div class="imsi mt20">-버튼형 블록형태</div>
+    <ul class="boxChkList">
+        <li>
+            <span class="boxChk">
+                <input type="radio" name="sample01" id="sample05" checked="checked">
+                <label for="sample05">은행/보험용 공인인증서(무료)</label>
+            </span>
+        </li>
+        <li>
+            <span class="boxChk active">
+                <input type="radio" name="sample01" id="sample06">
+                <label for="sample06">범용 공인인증서(4,400원)</label>
+            </span>
+        </li>
+    </ul>
+    
+    <!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">toggle</h2>
+    <div class="formWrap">
+        <ul>
+            <li>
+                <span class="imsi">On</span>
+                <div class="toggleList">
+                    
+                    <label class="switch">
+                        <input type="checkbox" title="checkBox" checked="checked" />
+                        <span class="slider round boxText">설정</span>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <span class="imsi">Off</span>
+                <div class="toggleList">
+                    <label class="switch">
+                        <input type="checkbox" title="checkBox" />
+                        <span class="slider round boxText">설정</span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+	<hr />
+    <!-- //view -->
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_bz :앱존 */
+/* 2020 고도화 시작 */
+/* 앱존 */
+.appZoneList{margin:20px -17px 0}
+.appZoneList li{position:relative;margin:20px 0 0;padding:0 83px 20px 80px;border-bottom:1px solid #dedede}
+.appZoneList .appIcon{position:absolute;top:50%;left:17px;margin-top:-34px}
+.appZoneList .appIcon img{display:block;width:48px}
+.appZoneList .tit{font-size:14px;font-weight:bold}
+.appZoneList .txt{margin-top:5px;font-size:12px;color:#666}
+.appZoneList .btnInstall{position:absolute;top:50%;right:17px;margin-top:-25px}
+.appZoneInfo{overflow:hidden;background-color:#f9f9f9;margin:0 -17px;padding:32px 20px 20px;text-align:center}
+.appZoneInfo strong{display:inline-block;height:72px;background:url('../images/contents/bg_appzone01.png') no-repeat left top;background-size:auto 72px;background-position:left top;margin:0 auto;padding:3px 0 0 120px;text-align:left;line-height:21px}
+.appZoneInfo strong em{color:#19A647}
+.appZoneInfo ul{display:inline-block;margin:30px auto 0}
+.appZoneInfo ul li{position:relative;line-height:1;display:inline-block;margin:0 auto}
+.appZoneInfo ul li + li{padding-left:46px;margin-left:45px}
+.appZoneInfo ul li + li:before{display:block;content:'';width:1px;height:10px;position:absolute;top:3px;left:0;background-color:#e5e5e5}
+.appZoneInfo ul li a{display:block;position:relative;padding-left:28px;line-height:20px}
+.appZoneInfo ul li a:before{display:block;content:'';width:20px;height:20px;position:absolute;top:0;left:0}
+.appZoneInfo ul li a.kakaoIco:before{background:url('../images/contents/ico_appzone_kakao.png') no-repeat;background-size:cover}
+.appZoneInfo ul li a.smsIco:before{background:url('../images/contents/ico_appzone_sms.png') no-repeat;background-size:cover}

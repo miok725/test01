@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">은퇴준비</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span>기본정보</li>
+						<li class="off"><span>2</span>정보입력</li>
+						<li class="active"><span>3</span>은퇴준비</li>
+						<li><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">은퇴준비</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<p class="defTxt">은퇴 후 소득(부동산, 월세수입 등 임대소득 포함)이 예상된다면 입력하세요.</p>
+			<div class="formWrap">
+				<ul class="all100_form2">
+					<li>
+						<div class="inp_top">
+							본인나이 <span class="inputList numWrap"><input type="tel" title="본인나이 입력" class="mixTit3"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span> 세 부터 
+							<span class="inputList numWrap"><input type="tel" title="예측소득 년도 입력" class="mixTit3"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span> 년간
+						</div>
+						<div class="inputList inp_bot mt10">
+							월 <input type="tel" title="NH농협은행 노후자금 입력" placeholder="0" class="mixTit4">
+							<span>만원</span>
+							<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- formWrap_end -->
+			<p class="defTxt">은퇴준비를 위해 준비하고 있는 부동산 등 기타 자산이 있다면 입력해주세요.</p>
+
+			<div class="wrapTblDefault mt10">
+				<table cellpadding="0" cellspacing="0" class="thCenter">
+					<caption>기타자산유형 입력 게시판</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">기타자산유형</th>
+							<td>
+								<div class="inputList">
+									<input type="text" title="기타자산유형 입력" value="" id="" class="propertyType">
+									<a href="javascript:;" class="btnBodyDel">삭제</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">평가금액</th>
+							<td>
+								<div class="inputList">
+									<input type="text" class="inpAmount" title="평가금액 입력" value="" id=""> 만원
+									<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">대출금액</th>
+							<td>
+								<div class="inputList">
+									<input type="text" class="inpAmount" title="대출금액 입력" value="" id=""> 만원
+									<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="defTxt">※ 월평균소득(세전):<br>(세전) 전년도 월평균소득(비과세 소득 제외</p>
+			</div>		
+			<!-- wrapTblDefault_end -->
+
+			<div class="areaBodyBtnFull">
+				<a href="javascript:;" class="btnBodyLine btnAddItem" title="항목 더보기">+ 기타자산유형 추가</a>
+			</div>
+			<!-- formWrap_end -->
+			<div class="guideList helper mt20">
+				<p class="guideTit">자가진단 도우미</p>
+				<a href="javascript:;" class="btnAcc toggleBtn btn_helper">내용상세보기</a>
+				<div class="helper_con">
+					<p class="defTxt">거주부동산은 은퇴준비자산에서 제외하실 것을 권장합니다. 왜냐하면 거주주택은 처분을 하거나 주택연금을 가입하지 않는다면, 은퇴 후 생활비를 마련하는 것과는 직접적인 관련이 없기 때문입니다.<br><br> <span class="pointColor">[경제변수]</span><br>All100플랜 은퇴설계는 물가상승률 <span class="pointColor">1.35%</span> 기대 수익률 <span class="pointColor">1.35%</span>로 경제변수를 가정하여 계산됩니다</p>
+				</div>
+			</div>
+			<!-- helper_end -->
+
+			<div class="areaBtnDefault mt20">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint" onclick="slidePopConfirm2();return false;">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+				<!-- ### 클래스 사용 ### 
+					 Type01 : 긍정형 BG 이미지 생성됨 
+					 Type02 : 부정형 BG 이미지 생성됨 
+					 Type03 : BG 이미지 없음 
+				-->
+
+				<div class="confirmMsg type06">
+					<p>3단계 [은퇴준비]를 모두 입력하셨습니다.<br>4단계 [진단결과] 단계로 계속 진행하시겠습니까?</p>
+				</div>
+
+				<!-- <div class="confirmMsg type02">
+					<p>부정형 다이어로그 메시지입니다.</p>
+					<p>긍정/부정 이미지가 필요없을 때에는 type03 클래스를 사용합니다.</p>
+				</div> -->
+
+				<!-- <div class="confirmMsg type03">
+					<p>아이콘이 없는 메시지입니다.</p>
+					<p>긍정/부정 이미지가 필요없을 때에는 type03 클래스를 사용합니다.</p>
+				</div> -->
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

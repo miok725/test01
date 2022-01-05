@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">은퇴목표</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 2단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span>기본정보</li>
+						<li class="active"><span>2</span>정보입력</li>
+						<li><span>3</span>은퇴준비</li>
+						<li><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">은퇴목표</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 2단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="active"><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="all100_form3 mt20">
+				<div class="tab_content_wrap">
+					<h3 class="defSubTit">은퇴 후에 발생할 수 있는 자녀 필요자금을 입력하세요.</h3>
+					<div class="btn_status">
+						<a href="javascript:;" class="btnType01">필요자금 통계정보</a>
+					</div>
+					<div class="wrapTblDefault mt10">
+						<table cellpadding="0" cellspacing="0" class="tbl_all_co">
+							<caption>대학교육비용, 결혼비용 입력</caption>
+							<colgroup>
+								<col style="width:33%">
+								<col style="width:auto">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2">
+										지수아<em>(만 17세)</em>
+										<div class="chkbox">
+											<input type="checkbox" id="check">
+											<label for="check">선택</label>
+										</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="hide">
+								<tr>
+									<th scope="row">대학교육비용</th>
+									<td>
+										<p class="defTxt">
+											만
+											<input type="tel" class="w25p" title="나이 입력">
+											세 이후
+											<input type="tel" class="w25p" title="기간 입력">
+											년간
+										</p>
+										<p class="defTxt">
+											매년
+											<input type="tel" class="w60" title="금액 입력">
+											만원
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">결혼비용</th>
+									<td>
+										<p class="defTxt">
+											만
+											<input type="tel" class="w25p" title="나이 입력">
+											세
+											<input type="tel" class="w35p" title="금액 입력">
+											만원
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="areaBodyBtnFull">
+							<a href="javascript:slidePopConfirm2();" class="btnBodyLine" title="항목 더보기">가족정보 관리</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- all100_form3_end -->
+			<div class="guideList helper mt20">
+				<p class="guideTit">자가진단 도우미</p>
+				<a href="javascript:;" class="btnAcc toggleBtn btn_helper">내용상세보기</a>
+				<div class="helper_con">
+					<p class="defTxt">자녀필요자금은 <span class="pointColor5"><가족정보관리></span>버튼에서 자녀정보를 사전에 등록해야 입력이 가능합니다.<br>가족정보 입력(수정)이 필요한 경우 왼쪽 상단의 <span class="pointColor5"><가족정보관리></span>버튼을 클릭하세요!<br><br>은퇴 후에 발생하게 되는 자녀교육자금과 자녀결혼자금은 안정적인 은퇴생활에 위험이 될 수 있기 때문에 은퇴 후 필요자금에 포함하여 미리 검토하고 설계하는 것이 중요합니다.</p>
+				</div>
+			</div>
+			<!-- helper_end -->
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint" onclick="slidePopConfirm2();">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+			<div class="popWrap slidePopConfirm">
+				<div class="dim"></div>
+				<div class="popInner">
+					<div class="popCont">
+						<div class="confirmMsg type06">
+							<p>자녀 정보를 추가하거나 수정하시겠습니까?<br>1단계 [기본정보]의 가족정보 입력화면으로 이동합니다.</p>
+						</div>
+					</div>
+
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="" onclick="popClose(this);return false;">취소</a>
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<script>
+		//선택으로 하단 입력내용 슬라이드 다운
+		$("#check").change(function(){
+			var chk = $(this).prop("checked");
+			if (chk == false)
+			{
+				$(".tbl_all_co .hide").slideUp();
+			}
+			else{
+				$(".tbl_all_co .hide").slideDown();
+			}
+		});
+	</script>
+</body>
+</html>

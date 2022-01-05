@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">예적금/신탁담보대출</h2>
+			<div class="stepArea">
+				<p class="stepTit">대출신청 계좌선택</p>
+				<div class="stepInfo" role="img" aria-label="총 6단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+						<li><span>6</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="guideListTop">
+				<ul class="listDot">
+
+					<li>예적금/신탁 담보대출을 신청하시려면 해당 예·적금/신탁 계좌의 [대출가능금액조회/신청]를 선택해 주십시오.</li><!-- 20181112 txt변경 -->
+					<li>[대출가능금액조회/신청]버튼이 없을 경우에는 인터넷(스마트)뱅킹으로 예·적금/신탁 담보 대출이 불가한 상품이므로 영업점 방문시 에만 예·적금/신탁 담보 대출을 이용하실 수 있습니다.</li><!-- 20181112 txt변경 -->
+
+
+
+					<li>상품 별 특성 (만기일에 금리가 확정되는 예·적금등)에 따라 인터넷(스마트) 뱅킹 가입상품임에도 불구하고 예·적금/신탁 담보대출이 불가 할 수 있으니, 반드시 예·적금/신탁담보대출  상품 설명페이지의 유의사항을 확인 하시기 바랍니다.</li>
+					<li>단, 2006/09/22일 이후 영업점에서 가입한 예·적금/신탁 상품 중 영업점에서 인터넷(스마트)뱅킹 담보대출 계좌로 사전 등록 한 경우에는 인터넷(스마트 )뱅킹에서 예·적금/신탁담보 대출을 이용하실 수 있습니다.</li>
+				</ul>
+				<!-- 2018-09-06 :: 리스트 추가 -->
+				<ul class="listDot mt7">
+					<li><%=psnFncWrsNm%>을 신청하시려면 청약(종합)저축의 [대출가능액조회] 후 [대출신청]을 클릭하여 주십시오.</li>
+	                <li>단, 2006/09/22일 이후 영업점에서 가입한 청약(종합)저축은 영업점에서 인터넷(스마트)뱅킹 담보대출 계좌로 사전등록한 경우에만 인터넷(스마트)뱅킹에서 대출신청이 가능합니다.</li>    
+				</ul>
+				<!-- //2018-09-06 :: 리스트 추가 -->
+			</div>
+			<!-- guideListTop_end -->
+
+			<!-- 2018-09-06 :: 컨텐츠, class 수정/삭제 -->
+			<!-- 계좌가 있을경우 -->
+			<div class="lo_sel_acc">
+				<ul>
+					<li class="item">
+						<strong class="accTit">자유로회전예금(정기예탁금-이자지급식)</strong>
+						<p class="accNum pointColor5">100000-00000-000000</p>
+						<p class="balance">현재잔액 <span class="pointColor">10,000,000</span> 원</p>
+						<!-- <div class="btn_item"> 20181112 as-is 삭제
+							<ul>
+								<li><a href="javascript:;">대출 가능액 조회</a></li>
+								<li><a href="javascript:;">대출신청</a></li>
+							</ul>
+						</div> -->
+
+						<!-- 20181112 추가 -->
+						<div class="areaBodyBtnFull">
+							<a href="javascript:;" class="btnInquiry" role="button">대출가능금액조회/신청</a>	
+						</div>
+						<!-- //20181112 추가 -->
+					</li>
+					<li class="item">
+						<strong class="accTit">자유로회전예금(정기예탁금-이자지급식)</strong>
+						<p class="accNum pointColor5">100000-00000-000000</p>
+						<p class="balance">현재잔액 <span class="pointColor">10,000,000</span> 원</p>
+						<!-- <div class="btn_item"> 20181112 as-is 삭제
+							<ul>
+								<li><a href="javascript:;">대출 가능액 조회</a></li>
+								<li><a href="javascript:;">대출신청</a></li>
+							</ul>
+						</div> -->
+
+						<!-- 20181112 추가 -->
+						<div class="areaBodyBtnFull">
+							<p class="ac pointColor6">해당 계좌는 대출신청이 불가능합니다.</p>
+						</div>
+						<!-- //20181112 추가 -->
+					</li>
+				</ul>
+			</div>
+			<!-- //계좌가 있을경우 -->
+
+			<!-- 계좌가 없을경우 -->
+			<div class="topConfirmArea confirmMsg type04">
+				<p>죄송합니다.<br/>스마트(인터넷)뱅킹으로 예적금/신탁 담보대출이 가능한 계좌가 존재하지 않습니다.</p>
+				<p class="subTxt">자세한 사항은 가까운 영업점 또는 고객센터로 문의 하시기 바랍니다.</p>
+			</div>
+			<!-- //계좌가 없을경우 -->
+			<!-- //2018-09-06 :: 컨텐츠 수정/삭제 -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

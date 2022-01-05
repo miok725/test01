@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>form type :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+
+	<!-- view -->
+    <h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">날짜/시간 선택</h2>
+    <h3 class="guide">■  value값이 없는 경우</h3>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="" title="조회 시작일" placeholder="시작일선택" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="" title="조회 종료일" placeholder="종료일선택" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+    </div>
+     
+    <h3 class="guide mt20">■  value값이 있는 경우</h3>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="2017/10/09" title="조회 시작일" placeholder="시작일선택" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="2017/10/09" title="조회 종료일" placeholder="종료일선택" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+    </div>
+	
+	<h3 class="guide mt20">■  날짜 + 시간</h3>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="2017/10/09" title="날짜선택" placeholder="날짜" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="오전 9시" title="시간선택" placeholder="시간" readonly="readonly" />
+                <a href="javascript:;" class="btnTime" title="날짜선택 새창열림"><span class="blind">시간선택</span></a>
+            </div>
+        </div>
+    </div>
+<!-- <hr>
+    <h3 class="guide">■  value값이 없고, placeholder가 없는 경우</h3>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" title="조회 시작일" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" title="조회 종료일" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3 class="guide">■  value값이 없고, placeholder가 없는 경우(readonly)</h3>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" title="조회 시작일" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" title="조회 종료일" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+     -->
+    
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">조합형</h2>
+    <strong class="formTit">조회설정</strong>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="" title="조회 시작일" placeholder="시작일선택" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="" title="조회 종료일" placeholder="종료일선택" readonly="readonly" />
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="areaBtnPrice">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;">당일</a></li>
+				<li><a href="javascript:;">1개월</a></li>
+				<li><a href="javascript:;">3개월</a></li>
+                <li><a href="javascript:;">6개월</a></li>
+                <li><a href="javascript:;">1년</a></li>
+			</ul>
+		</div>
+    </div> 
+
+    <!-- <h3 class="guide">■  주소검색</h3>
+    <div class="calendarForm">
+        <div class="inputList">
+            <label for="input_07">시작일</label>
+            <input type="text" id="input_07" title="조회 시작일">
+            <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+        </div>
+        <span class="symbol">-</span>
+        <div class="inputList">
+            <label for="input_08">종료일</label>
+            <input type="text" id="input_08" title="조회 종료일">
+            <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+        </div>
+    </div> -->
+    <hr>
+    <div>
+		<strong class="formTit">승인번호</strong>
+		<div class="inputBoth01 div7_3">
+			<div class="inputList inputB01">
+				<input type="text" title="승인번호 입력">
+			</div>
+			<div class="inputB02">
+				<a href="javascript:;" class="btnInput01 clock">4:41</a>
+			</div>
+		</div>
+		
+		<p class="infoTxt">휴대폰 휴대폰-번호-출력 으로 통지되었습니다. <br>휴대폰 번호가 다른 경우 <a href="javascript:;" class="pointColor underLine">고객정보 변경</a> 후 이용하시기 바랍니다.</p>
+	</div>
+    
+    <h3 class="guide mt20">■  계좌번호선택</h3>
+    <strong class="formTit">출금계좌</strong>
+    <div class="selectBtnForm selectAccount">        
+        <div class="stList">
+            <a href="javascript:;" title="OOO 선택 새창열림">
+                <span class="selectValue">계좌를 선택해주세요</span>
+                <span class="selectBtn">버튼</span>
+            </a>
+            <select name="" title="선택해주세요">
+                <option value=""></option>
+            </select>
+        </div>
+        <a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnAddon">직접입력</a>
+    </div>
+    <div class="selectBtnForm insertAccount">
+        <div class="inputList">
+            <input type="text" title="계좌번호 입력" placeholder="계좌번호 입력" />
+        </div>
+        <a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnAddon">계좌선택</a>
+    </div>
+    <div class="infoTxtForm">
+        <div class="infoTxtPrice">
+            <p class="infoTxt">지급가능금액</p>	
+			<a href="javascript:;" class="btnAddonPoint">조회</a>
+            <em class="priceTxt">783,250<span class="wUnit">원</span></em>
+        </div>
+    </div>
+
+	<strong class="formTit">대출금 입금(약정) 계좌번호</strong>
+	<div class="acc_inquiry_wrap">
+		<div class="selectBtnForm selectAccount">
+			<div class="inputBoth01 div6_4">
+				<div class="stList inputB01">
+					<a href="javascript:;" title="OOO 선택 새창열림" role="radiogroup">
+						<span class="selectValue">선택해주세요</span>
+						<span class="selectBtn">버튼</span>
+					</a>
+					<select name="" title="선택해주세요">
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="inputB02">
+					<a href="javascript:;" class="btnInput01">입금가능여부 조회</a>
+				</div>
+			</div>
+			<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnBodyLine mt5">직접입력</a>
+		</div>
+		<div class="selectBtnForm insertAccount">
+			<div class="inputBoth01 div6_4">
+				<div class="inputList">
+					<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+				</div>
+				<div class="inputB02">
+					<a href="javascript:;" class="btnInput01">입금가능여부 조회</a>
+				</div>
+			</div>
+			<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnBodyLine mt5">계좌선택</a>
+		</div>
+	</div>
+
+	<strong class="formTit">대출금 입금(약정) 계좌번호</strong>
+	<div class="acc_inquiry_wrap">
+		<div class="selectBtnForm selectAccount">
+			<div class="stList">
+				<a href="javascript:;" title="계좌번호 선택 새창열림" role="radiogroup">
+					<span class="selectValue">계좌를 선택해주세요</span>
+					<span class="selectBtn">버튼</span>
+				</a>
+				<select name="" title="선택해주세요">
+					<option value=""></option>
+				</select>
+			</div>
+			<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnBodyLine mt5">직접입력</a>
+		</div>
+		<div class="selectBtnForm insertAccount">
+			<div class="inputList">
+				<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+			</div>
+			<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnBodyLine mt5">계좌선택</a>
+		</div>
+	</div>
+
+    <h3 class="guide mt20">■  주민등록번호(뒷자리에 class sKey 입력)</h3>
+    <strong class="formTit">주민등록번호</strong>
+    <div class="inputBoth03 div5_5">
+        <div class="inputB01">
+            <input type="text" title="주민등록번호 앞자리 6자리 입력" placeholder="앞자리 6자리" class="sKey">
+        </div>
+        <span class="inputDash">-</span>
+        <div class="inputB02">
+            <input type="password" title="주민등록번호 뒷자리 7자리 입력" placeholder="뒷자리 7자리" class="sKey" readonly="readonly">
+        </div>
+    </div>
+    
+    <strong class="formTit">주민등록번호</strong>
+    <div class="inputBoth03 div5_5">
+        <div class="inputB01">
+            <input type="tel" title="주민등록번호 앞자리 6자리 입력" placeholder="주민등록번호 앞자리" class="sKey">
+        </div>
+        <span class="inputDash">-</span>
+        <div class="inputB02">
+            <!-- <input type="password" title="주민등록번호 뒷자리 7자리 입력" placeholder="*******" class="sKey" readonly="readonly"> -->
+			<span class="idNumStar">*******</span>
+        </div>
+    </div>
+    <!-- <div class="residentForm">
+        <div class="inputList">
+            <input type="text" title="앞자리 6자리" placeholder="앞자리 6자리" maxlength="6">
+        </div>
+        <span class="symbol">-</span>
+        <div class="inputList">
+            <input type="text" title="뒷자리 7자리" placeholder="뒷자리 7자리" maxlength="7" class="sKey" readonly="readonly">
+        </div>
+    </div> -->
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">기관선택</h2>
+	<hr />
+	<ul class="authAgencySel">
+		<li>
+			<input type="radio" id="rdo01" name="rdo">
+			<label for="rdo01">금융결제원</label>
+		</li>
+		<li>
+			<input type="radio" id="rdo02" name="rdo">
+			<label for="rdo02">코스콤</label>
+		</li>
+		<li>
+			<input type="radio" id="rdo03" name="rdo">
+			<label for="rdo03">한국정보인증</label>
+		</li>
+	</ul>
+
+    <h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">인풋 Multi</h2>
+    <h3 class="guide">■  동,호수 선택</h3>
+    <strong class="formTit">아파트정보입력</strong>
+	<div class="multiForm">
+        <div class="unitInp">
+            <div class="inputList">
+                <input type="text" title="관리비 금액 입력" placeholder="동 입력" />
+                <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+            </div>
+            <span class="unit">동</span>
+        </div>
+        <div class="unitInp">
+            <div class="inputList">
+                <input type="text" title="관리비 금액 입력" placeholder="호수 입력" />
+                <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+            </div>
+            <span class="unit">호</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 class="guide">■  input + unit + input + unit + 버튼</h3>
+	<strong class="formTit">분할인출회차선택</strong>
+    <div class="inputBoth01">
+		<div class="inputList inputB01">
+			<input type="text" title="분할인출회차 입력" placeholder="2회차" />
+			<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+		</div>
+
+		<span class="inputTxt">부터</span>
+   
+		<div class="inputList inputB01">
+			<input type="text" title="분할인출회차 입력" placeholder="2회차" />
+			<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+		</div>
+
+		<span class="inputTxt">까지</span>
+
+		<div class="inputBtn01">
+			<a href="javascript:;" class="btnInput01">조회</a>
+		</div>
+
+    </div>
+
+	<div class="inputBoth01">
+		<div class="inputList inputB01">
+			<strong class="formTit">적립기간</strong>
+			<input type="text" title="분할인출회차 입력" placeholder="2회차">
+			<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+		</div>
+		<span class="inputTxt3">부터</span>
+		<div class="inputList inputB01">
+			<strong class="formTit">연금적립기간</strong>
+			<input type="text" title="분할인출회차 입력" placeholder="2회차">
+			<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+		</div>
+		<span class="inputTxt3">까지</span>
+	</div>
+
+	<h3 class="guide mt20">■  input + unit + input + unit + 버튼</h3>
+	<strong class="formTit">목표수익률</strong>
+	<!-- Tooltip Base -->
+	<div class="popWrap toolTipBase">
+		<div class="dim"></div>
+		<div class="popInner">
+			<h1>자동해지서비스 적용 최소 잔액</h1>
+			<div class="popCont">
+				<p class="defTxt">고객 원금(선취수수료제외) 대비 단순수익률을 설명하며, 1%~100%까지 입력 가능합니다.</p>
+			</div>
+
+			<div class="popBtnWrap">
+				<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기" /></a>
+			</div>
+		</div>
+	</div>
+	<!-- // Tooltip Base -->
+
+    <div class="inputBoth03 div6_4">
+		<div class="inputB01">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDot">.</span>
+		<div class="inputB02">
+			<input type="text" title="대학명 입력" id="input01" placeholder="">
+		</div>
+		<span class="inputDash">%</span>
+    </div>
+
+	<h3 class="guide mt20">■  연락처</h3>
+	<strong class="formTit">보내는 분 전화번호</strong>
+	<div class="telWrap">
+		<div class="stList telSel">
+			<a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+				<span class="selectValue">선택</span>
+				<span class="selectBtn">버튼</span>
+			</a>
+			<select name="" title="전화번호(연락처) 앞자리 선택">
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="inputDash">-</div>
+		<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택" /></div>
+		<div class="inputDash">-</div>
+		<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택" /></div>
+	</div>
+
+	<h3 class="guide mt20">■  이메일</h3>
+
+	<strong class="formTit">보내는 분 이메일(선택사항)</strong>
+	<div class="emailWrap">
+		<div class="email">
+			<div class="inputB01"><input type="text" id="" name="" title="이메일 계정 입력"></div>
+			<div class="inputDash">@</div>
+			<div class="inputB01 stList">
+				<a href="javascript:;" title="이메일 도메인 선택 새창 열림">
+					<span class="selectValue">직접입력</span>
+					<span class="selectBtn">버튼</span>
+				</a>
+				<select name="" title="선택해주세요">
+					<option value=""></option>
+				</select>
+			</div>
+		</div>
+		<!-- 직접입력 선택시 활성화 -->
+		<div class="inputList mt5">                    
+			<input type="text" title="이메일 주소 직접입력" placeholder="직접입력">
+			<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+		</div>
+		<!--// 직접입력 선택시 활성화 -->
+	</div>
+
+	<h3 class="guide mt20">■  카드번호</h3>
+	<strong class="formTit">카드번호</strong>
+	<div class="inputBoth02">
+		<div class="inputList cardNum">
+			<input type="text" title="카드번호 첫번째 자리 입력" maxlength="4" />
+		</div>
+		<span class="cardDash">-</span>
+		<div class="inputList cardNum">
+			<input type="text" title="카드번호 두번째 자리 입력" readonly="readonly" maxlength="4" />
+		</div>
+		<span class="cardDash">-</span>
+		<div class="inputList cardNum">
+			<input type="text" title="카드번호 세번째 자리 입력" readonly="readonly" maxlength="4" />
+		</div>
+		<span class="cardDash">-</span>
+		<div class="inputList cardNum">
+			<input type="text" title="카드번호 네번째 자리 입력" maxlength="4" />
+		</div>
+	</div>
+
+    <h3 class="guide mt20">■  우편번호 검색</h3>
+	<div class="formWrap">
+		<ul>
+			<li>
+				<strong class="formTit">주소</strong>
+				<div class="inputBoth01 div7_3">
+					<div class="inputList inputB01">
+						<input type="text" title="주소 입력" readonly="readonly" value="000-000">
+					</div>
+					<div class="inputB02">
+						<a href="javascript:;" class="btnInput01">주소검색</a>
+					</div>
+				</div>
+				<div class="inputList">                    
+					<input type="text" title="주소 입력" readonly="readonly" value="">
+				</div>
+				<div class="inputList">                    
+					<input type="text" title="상세주소 입력" placeholder="상세주소입력">
+					<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+    <h3 class="guide mt20">■  추가/변경 전화번호</h3>
+	<strong class="formTit">추가/변경 전화번호</strong>
+	<div class="telWrap">
+		<div class="stList telSel">
+			<a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+				<span class="selectValue">선택</span>
+				<span class="selectBtn">버튼</span>
+			</a>
+			<select name="" title="전화번호(연락처) 앞자리 선택">
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="inputDash">-</div>
+		<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택" /></div>
+		<div class="inputDash">-</div>
+		<div class="inputB01"><input type="text" id="" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택" /></div>
+	</div>
+	<div class="areaBtnType01">
+		<ul>
+			<li><a href="javascript:;" class="btnType01">추가</a></li>
+			<li><a href="javascript:;" class="btnType01">변경</a></li>
+			<li><a href="javascript:;" class="btnType02">삭제</a></li>
+		</ul>
+    </div>
+	<div class="multiForm">
+		<div class="unitInp2">
+			<strong class="formTit">자동이체일</strong>
+			<div class="stList">
+				<a href="javascript:;" title="자동이체일 선택 새창열림">
+					<span class="selectValue">1</span>
+					<span class="selectBtn">버튼</span>
+				</a>
+				<select name="" title="선택해주세요">
+					<option value="">1</option>
+				</select>
+			</div>
+			<span class="unit">일</span>
+		</div>
+	</div>					
+	<strong class="formTit">권유직원개인번호</strong>
+	<div class="inputBoth01 div7_3">
+		<div class="inputList inputB01">
+			<input type="text" title="권유직원개인번호 입력" placeholder="개인번호 8자리">
+		</div>
+		<div class="inputB02">
+			<a href="javascript:;" class="btnInput01">직원찾기</a>
+		</div>
+	</div>
+    
+    <!-- 보안카드 입력 -->
+    <h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">보안카드 입력</h2>
+	<hr />
+	<div class="cmScWrap">
+		<h2 class="defTit">보안카드일련번호 입력</h2>
+		<p class="mt10 f12">소지하고 계신 보안카드 코드표 우측상단 일련번호 <br><span class="pointColor">마지막 숫자를 제외한 3자리</span>를 입력해주세요.</p><!-- 2018-10-15 보안카드일련번호 입력 안내 텍스트 추가 -->
+		<div class="cmCardWrap serialNum mt10">							
+			<!-- 2018-10-01 마크업수정 -->
+			<div class="scCardNum ">
+				<span>*</span>
+				<span>*</span>
+				<span>*</span>
+				<span>*</span>
+				<span>*</span>
+				<span>*</span>
+				<input type="password" maxlength="3" value="123" title="보안카드일련번호 7~9번째 입력" class="sKey" readonly="readonly">
+				<span>*</span>
+			</div>
+			<!-- //2018-10-01 마크업수정 -->								
+		</div>
+	</div>
+	<div class="cmScWrap mt10"><!-- 2018-10-11 클래스추가 -->
+		<h2 class="defTit">보안카드 번호 입력</h2>
+		<ul class="cmCardWrap">							
+			<li>
+				<p class="scCardTit"><strong>33번</strong> 앞 두자리</p>
+				<div class="scCardNum">
+					<input type="password" value="12" maxlength="2" title="앞 두자리" class="sKey" readonly="readonly"> <!-- 2018-07-16 보안키패드로 수정 -->
+					<span>**</span>
+				</div>
+			</li>
+			<li>
+				<p class="scCardTit"><strong>28번</strong> 뒤 두자리</p>
+				<div class="scCardNum">
+					<span>**</span>
+					<input type="password" maxlength="2" title="뒤 두자리" class="sKey" readonly="readonly"> <!-- 2018-07-16 보안키패드로 수정 -->
+				</div>
+			</li>
+		</ul>
+	</div>
+<hr />
+</div>
+</body>
+</html>

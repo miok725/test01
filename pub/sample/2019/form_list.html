@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>form list :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+    <div class="boxHeaderBlue">
+        <strong class="txt">NH-Amundi Allser스마트인베스터5.0 분할 매수[주식혼합-재간접]Ce</strong>
+    </div>
+    <div class="formWrap">
+        <ul>
+            <li>
+                <strong class="formTit">제목</strong>
+                <p class="inpTxt">텍스트만 있는 경우(block)</p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">현재저축기간</strong>
+                <p class="inpTxt">텍스트만 있는 경우(inline)텍스트만 있는 경우(inline)텍스트만 있는 경우(inline)</p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">펀드명</strong>
+                <p class="inpTxt">흥국플래티넘개인용MMF1호ClasssC</p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">계좌번호</strong>
+                <p class="inpTxt"><strong class="pointColor5">302-079-91234-11(농·축협)</strong></p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">평가금액</strong>
+                <p class="inpTxt ar"><strong class="pointColor"><em>1,000,000</em><span class="wUnit">원</span></strong></p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">잔고좌수</strong>
+                <p class="inpTxt ar"><strong class="pointColor"><em>994,036</em><span class="wUnit">좌</span></strong></p>
+            </li>
+            <li>
+                <strong class="formTit">기본 인풋 텍스트박스</strong>
+                <div class="inputList">                    
+                    <input type="text" title="주소 입력" placeholder="주소" />
+                    <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+                <div class="inputList">                    
+                    <input type="text" title="상세주소 입력" placeholder="상세주소입력" />
+                    <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">기본 인풋 금액입력 <span class="unit"><em class="pointColor">(원)</em></span></strong>
+                <div class="inputList">                    
+                    <input type="tel" title="금액 입력" placeholder="금액입력" />
+                    <span class="unit">원</span>
+					<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>                    
+                </div>
+            </li>
+            <li>
+            	<strong class="formTit">본인확인</strong>
+				<div class="inputList">
+					<input type="text" title="아이디 입력" placeholder="아이디">
+					<a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+				</div>
+				<div class="inputBoth03 div5_5">
+			        <div class="inputB01">
+			            <input type="tel" title="주민등록번호 앞자리 6자리 입력" placeholder="주민등록번호 앞자리" class="sKey">
+			        </div>
+			        <span class="inputDash">-</span>
+			        <div class="inputB02">
+			            <!-- <input type="password" title="주민등록번호 뒷자리 7자리 입력" placeholder="*******" class="sKey" readonly="readonly"> -->
+						<span class="idNumStar">*******</span>
+			        </div>
+			    </div>
+			    <div class="idFind">
+					<p class="infoTxt">아이디가 기억나지 않으세요?</p>
+					<a href="javascript:;" class="btnType01">아이디 찾기</a>
+				</div>
+			</li>
+            <li>
+                <strong class="formTit">계좌비밀번호</strong>
+                <div class="inputList">                    
+                    <input type="password" title="계좌비밀번호 입력" placeholder="숫자 4자리를 입력해주세요" class="sKey" readonly="readonly" />
+                </div>
+            </li>
+            <li class="alignCol divingLine"> <!-- 구분선 있는 경우 divingLine 추가 -->
+                <strong class="formTit">현재저축기간</strong>
+                <p class="inpTxt">텍스트만 있는 경우(inline)</p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">SMS 신청</strong>
+                <p class="inpTxt">010-2313-****</p>
+            </li>
+            <li class="alignCol">
+                <strong class="formTit">E-mail 통보</strong>
+                <p class="inpTxt">****ry@naver.com m</p>
+            </li>
+			 <li class="alignCol">
+                <strong class="formTit">우측정렬</strong>
+                <p class="inpTxt ar"><strong class="pointColor">우측정렬은 이렇게 사용합니다.</strong></p>
+            </li>
+            <li>
+                <strong class="formTit">기본 인풋 readonly</strong>
+                <div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="플레이스홀더" readonly="readonly" />
+                    <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">기본 인풋 disabled</strong>
+                <div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="플레이스홀더" disabled="disabled" />
+                    <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">인포텍스트</strong>
+                <div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="플레이스홀더" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+                <p class="infoTxt"> 지급가능금액 인포텍스트 <span class="pointColor5">강조의 주황색 pointColor5</span>으로</p>
+            </li>
+            <li>
+                <strong class="formTit">인포텍스트가 두개 이상인 경우</strong>
+                <div class="inputList">
+                    <input type="text" title="타이틀 입력" placeholder="플레이스홀더" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+                <ul class="infoTxt">
+                    <li>관리비 고지서에 기재된 계좌번호 입력</li>
+                    <li>타행계좌로관리비를 납부하는 경우, 이체수수료(500원)별도 부가</li>
+                </ul>
+            </li>
+            <li>
+                <strong class="formTit">목표수익률 <a href="javascript:;" class="btnFuncTip" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+                <!-- Tooltip Base -->
+                <div class="popWrap toolTipBase">
+                    <div class="dim"></div>
+                    <div class="popInner">
+                        <h1>자동해지서비스 적용 최소 잔액</h1>
+                        <div class="popCont">
+                            <p class="defTxt">고객 원금(선취수수료제외) 대비 단순수익률을 설명하며, 1%~100%까지 입력 가능합니다.</p>
+                        </div>
+
+                        <div class="popBtnWrap">
+                            <a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputBoth03 div6_4">
+                    <div class="inputB01">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="">
+                    </div>
+                    <span class="inputDot">.</span>
+                    <div class="inputB02">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="">
+                    </div>
+                    <span class="inputDash">%</span>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit"><label for="chk01">목표수익률</label> </strong>
+                <div class="rateCalcForm">
+					<input type="checkbox" id="chk01" name="">
+                    <div class="stList">
+                        <a href="javascript:;" title="선택항목 새창열림">
+                            <span class="selectValue">수익률</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="stList">
+                        <a href="javascript:;" title="수익률 +,- 선택 새창열림">
+                            <span class="selectValue">+</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="inputList">
+                        <input type="text" value="20" title="수익률 입력" placeholder="" />
+                        <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                    </div>
+                    <span class="unit">%</span>
+                </div>   
+            </li>
+            <li>
+                <strong class="formTit">위험수익률<span class="unit">(현재 : <em class="pointColor2">-5</em><span class="wUnit">%</span>)</span></strong>
+                <!-- 선택안함 -->
+                <div class="rateCalcForm">
+					<input type="checkbox" id="chk02" name="">
+                    <div class="stList">
+                        <a href="javascript:;" title="선택항목 새창열림">
+                            <span class="selectValue">선택안함</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+					<div class="inputList">
+                        <input type="text" value="20" title="수익률 입력" placeholder="" readonly="readonly" />
+                        <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                    </div>
+                </div>                    
+                <p class="infoTxt">위험수익률을 선택해 주세요.</p>
+                <!-- //선택안함 -->
+                <!-- 수익률 -->
+                <div class="rateCalcForm">
+					<input type="checkbox" id="" name="" title="해당 항목 선택">
+                    <div class="stList">
+                        <a href="javascript:;" title="선택항목 새창열림">
+                            <span class="selectValue">수익률</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="stList">
+                        <a href="javascript:;" title="수익률 +,- 선택 새창열림">
+                            <span class="selectValue">+</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="inputList">
+                        <input type="text" value="" title="수익률 입력" placeholder="" />
+                        <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                    </div>
+                    <span class="unit">%</span>
+                </div>   
+                <!-- //수익률 -->
+                <!-- 평가금액 -->
+                <div class="rateCalcForm">
+					<input type="checkbox" id="" name="" title="해당 항목 선택">
+                    <div class="stList">
+                        <a href="javascript:;" title="선택항목 새창열림">
+                            <span class="selectValue">평가금액</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="inputList">
+                        <input type="text" value="" title="평가금액 입력" placeholder="" />
+                        <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                    </div>
+                    <span class="unit">원</span>
+                </div>   
+                <!-- //평가금액 -->
+                <!-- 해제 -->
+                <div class="rateCalcForm">
+					<input type="checkbox" id="" name="" title="해당 항목 선택">
+                    <div class="stList">
+                        <a href="javascript:;" title="선택항목 새창열림">
+                            <span class="selectValue">해제</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <p class="infoTxt">위험수익률을 선택해 주세요.</p>   
+                <!-- //해제 -->
+            </li>
+            <li>
+                <strong class="formTit">보안키패드 사용하는 인풋</strong>
+                <input type="text" title="타이틀 입력" placeholder="플레이스홀더" class="sKey" readonly="readonly" />
+            </li>
+            <li>
+                <strong class="formTit">계좌 비밀번호</strong>
+                <input type="password" title="계좌 비밀번호 입력" placeholder="숫자 4자리를 입력해 주세요" class="sKey" readonly="readonly" />
+            </li>
+            <li>
+                <strong class="formTit">주민등록번호</strong>
+                <div class="inputBoth03 div5_5">
+                    <div class="inputB01">
+                        <input type="text" title="주민등록번호 앞자리 6자리 입력" placeholder="앞자리 6자리" />
+                    </div>
+                    <span class="inputDash">-</span>
+                    <div class="inputB02">
+                        <input type="password" title="주민등록번호 뒷자리 7자리 입력" placeholder="뒷자리 7자리" class="sKey" readonly="readonly" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">날짜선택 인풋</strong>
+                <div class="cal">
+                    <div class="inputList">
+                        <input type="text" value="" title="날짜선택 입력" placeholder="날짜선택" readonly="readonly" />
+                        <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">날짜선택 인풋</strong>
+                <div class="calendarForm">
+                    <div class="cal">
+                        <div class="inputList">
+                            <input type="text" value="" title="조회 시작일" placeholder="시작일선택" readonly="readonly" />
+                            <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+                        </div>
+                    </div>
+                    <span class="symbol">-</span>
+                    <div class="cal">
+                        <div class="inputList">
+                            <input type="text" value="" title="조회 종료일" placeholder="종료일선택" readonly="readonly" />
+                            <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="areaBtnPrice mt10">
+                    <div class="inner">
+                        <ul>
+                            <li><a href="javascript:;">당일</a></li>
+                            <li><a href="javascript:;">1개월</a></li>
+                            <li><a href="javascript:;">3개월</a></li>
+                            <li><a href="javascript:;">6개월</a></li>
+                            <li><a href="javascript:;">1년</a></li>
+							<li><a href="javascript:;" class="btnAddon">보기옵션</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">입금금액<span class="unit pointColor">(일만원)</span></strong>
+                <div class="inputList">
+                    <input type="text" title="입금금액 입력" placeholder="금액을 입럭해 주세요." />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>                
+                <div class="areaBtnPrice mt10">
+                    <div class="inner">
+                        <ul>
+                            <li><a href="javascript:;">100만</a></li>
+                            <li><a href="javascript:;">60만</a></li>
+                            <li><a href="javascript:;">10만</a></li>
+                            <li><a href="javascript:;">6만</a></li>
+                            <li><a href="javascript:;">1만</a></li>
+                            <li><a href="javascript:;" class="btnAddon">정정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">Error</strong>
+                <div class="inputList inputError">
+                    <input type="text" title="타이틀 값 입력" placeholder="내용을 입력하세요" />
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+				<p class="errorText">위 항목은 에러사항입니다.</p>
+            </li>
+            <li>
+                <strong class="formTit">선택 폼</strong>
+                <div class="stList">
+                    <a href="javascript:;" title="OOO 선택 새창열림">
+                        <span class="selectValue">선택해주세요</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">선택 readonly</strong>
+                <div class="stList">
+                    <a href="javascript:;" class="selectReadOnly">
+                        <span class="selectValue">선택해주세요</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">선택 disabled</strong>
+                <div class="stList">
+                    <a href="javascript:;" class="selectDisabled">
+                        <span class="selectValue">제목</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">제목</strong>
+                <div class="inputBoth01 div7_3">
+                    <div class="inputList inputB01">
+                        <input type="text" title="대학명 입력" />
+                    </div>
+                    <div class="inputB02">
+                        <a href="javascript:;" class="btnInput01">버튼명이오</a>
+                    </div>
+                </div>
+                <div class="inputBoth01 div7_3">
+                    <div class="stList inputB01">
+                        <a href="javascript:;" title="OOO 선택 새창열림">
+                            <span class="selectValue">선택해주세요</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="inputB02">
+                        <a href="javascript:;" class="btnInput01">버튼</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">선택 + 인풋</strong>
+                <ul class="selectDivision_3_7">
+                    <li>
+                        <div class="stList">
+                            <a href="javascript:;" title="OOO 선택 새창열림">
+                                <span class="selectValue">선택해주세요</span>
+                                <span class="selectBtn">버튼</span>
+                            </a>
+                            <select name="" title="선택해주세요">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputList">
+                            <input type="text" title="타이틀 값 입력" placeholder="제목" />
+                        </div>
+                    </li>
+                </ul>                
+                <div class="inputList">                    
+                    <input type="text" title="" placeholder="" />
+                    <a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">체크박스/라디오</strong>
+                <div class="checkList">
+                    <input type="checkbox" id="sample0001" name="" />
+                    <label for="sample0001">
+                        항목1
+                    </label>
+                </div>
+                <div class="checkList">
+                    <input type="checkbox" id="sample0002" name="" />
+                    <label for="sample0002">
+                        내용이 길어지면 이렇게 나온답니다. 내용이 길어지면 이렇게 나온답니다.내용이 길어지면 이렇게 나온답니다.
+                    </label>
+                </div>
+                <div class="checkList">
+                    <input type="checkbox" id="sample0003" name="" readonly="readonly" />
+                    <label for="sample0003">
+                        항목3
+                    </label>
+                </div>
+                <div class="checkList">
+                    <input type="checkbox" id="sample0004" name="" disabled="disabled" />
+                    <label for="sample0004">
+                        항목4
+                    </label>
+                </div>
+                <div class="radioList">
+                    <input type="radio" id="sample0005" name="dd" />
+                    <label for="sample0005">
+                        항목1
+                    </label>
+                </div>
+                <div class="radioList">
+                    <input type="radio" id="sample0006" name="dd" />
+                    <label for="sample0006">
+                        항목2
+                    </label>
+                </div>
+                <div class="radioList">
+                    <input type="radio" id="sample0007" name="dd"  readonly="readonly" />
+                    <label for="sample0007">
+                        항목3
+                    </label>
+                </div>
+                <div class="radioList">
+                    <input type="radio" id="sample0008" name="dd" disabled="disabled" />
+                    <label for="sample0008">
+                        항목4
+                    </label>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">체크박스/라디오 50%</strong>
+                <div class="formArray array2">
+                    <div class="checkList">
+                        <input type="checkbox" id="chk21" name="cc">
+                        <label for="chk21">
+                            항목1</label>
+                    </div>
+                    <div class="checkList">
+                        <input type="checkbox" id="chk22" name="cc" checked="checked">
+                        <label for="chk22">
+                            항목2</label>
+                    </div>
+                    <div class="checkList">
+                        <input type="checkbox" id="chk23" name="cc" readonly="readonly" onclick="return false">
+                        <label for="chk23">
+                            항목3</label>
+                    </div>
+                    <div class="checkList">
+                        <input type="checkbox" id="chk24" name="dd" disabled="disabled">
+                        <label for="chk24">
+                            항목4</label>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">radio + 인풋</strong>
+                <div class="inputBoth02">
+                    <div class="inputB01">
+                        <input type="radio" id="rdo01" name="rdo1">
+                        <label for="rdo01">전자수용가번호</label>
+                    </div>
+                    <div class="inputList inputB02">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="15자리" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">radio + 인풋</strong>
+                <div class="inputBoth03 div3_7">
+                    <div class="inputB01">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                    <span class="inputDash">-</span>
+                    <div class="inputB02">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                </div>
+                <div class="inputBoth03 div5_5">
+                    <div class="inputB01">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                    <span class="inputDash">-</span>
+                    <div class="inputB02">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                </div>
+                <div class="inputBoth03 div3_7">
+                    <div class="inputB01">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                    <span class="inputDot">.</span>
+                    <div class="inputB02">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                </div>
+                <div class="inputBoth03 div7_3">
+                    <div class="inputB01">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                    <span class="inputDot">.</span>
+                    <div class="inputB02">
+                        <input type="text" title="대학명 입력" id="input01" placeholder="" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">출금계좌</strong>
+                <div class="selectBtnForm selectAccount">
+                    <div class="stList">
+                        <a href="javascript:;" title="OOO 선택 새창열림">
+                            <span class="selectValue">계좌를 선택해주세요</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="선택해주세요">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnAddon">직접입력</a>
+                </div>
+                <div class="selectBtnForm insertAccount">
+                    <div class="inputList">
+                        <input type="text" title="계좌번호 입력" placeholder="계좌번호 입력" />
+                    </div>
+                    <a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnAddon">계좌선택</a>
+                </div>
+                <div class="infoTxtForm">
+                    <div class="infoTxtPrice">
+                        <p class="infoTxt">지급가능금액</p>
+						<a href="javascript:;" class="btnAddonPoint">조회</a>
+                        <em class="priceTxt">783,250<span class="wUnit">원</span></em>
+                    </div>                    
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">보내는 분 전화번호</strong>
+                <div class="telWrap">
+                    <div class="stList telSel">
+                        <a href="javascript:;" title="전화번호(연락처) 앞자리 선택 새창 열림">
+                            <span class="selectValue">선택</span>
+                            <span class="selectBtn">버튼</span>
+                        </a>
+                        <select name="" title="전화번호(연락처) 앞자리 선택">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="inputDash">-</div>
+                    <div class="inputB01"><input type="tel" name="" maxlength="4" title="전화번호(연락처) 가운데 자리 선택" /></div>
+                    <div class="inputDash">-</div>
+                    <div class="inputB01"><input type="tel" name="" maxlength="4" title="전화번호(연락처) 마지막 자리 선택" /></div>
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">전화번호(인풋하나짜리)</strong>
+                <div class="inputList">
+                    <input type="tel" name="" titoe="전화번호 입력" placeholder="전화번호를 '-'없이 입력해주세요." />
+                </div>
+            </li>
+            <li>
+                <strong class="formTit">보내는 분 이메일(선택사항)</strong>
+                <div class="emailWrap">
+					<div class="email">
+						<div class="inputB01"><input type="text" id="" name="" title="이메일 계정 입력"></div>
+						<div class="inputDash">@</div>
+						<div class="inputB01 stList">
+							<a href="javascript:;" title="이메일 도메인 선택 새창 열림">
+								<span class="selectValue">직접입력</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<!-- 직접입력 선택시 활성화 -->
+					<div class="inputList mt5">                    
+						<input type="text" title="이메일 주소 직접입력" placeholder="직접입력">
+						<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+					</div>
+					<!--// 직접입력 선택시 활성화 -->
+				</div>
+            </li>
+            <li class="alignCol divingLine">
+				<strong class="formTit w100">변경 전 이체한도</strong>
+				<p class="inpTxt ar"><strong class="pointColor"><em>80</em>만원</strong></p>
+			</li>
+			<li class="alignCol">
+				<strong class="formTit w100">변경 후 이체한도</strong>
+				<div class="inputList ar">                    
+					<input type="tel" title="이채한도 입력" placeholder="" class="mixTit" maxlength="3">
+					<span>만원</span>
+				</div>
+			</li>
+			<li class="alignCol divingLine">
+				<strong class="formTit w100">변경 전 지연시간</strong>
+				<p class="inpTxt ar"><strong class="pointColor"><em>3</em>시간</strong></p>
+			</li>
+			<li class="alignCol">
+				<strong class="formTit w100">변경 후 지연시간</strong>
+				<div class="stList">
+					<a href="javascript:;" title="시간선택 새창열림" onclick="slidePopOption();return false;" class="mixSt">
+						<span class="selectValue ar">4시간</span>
+						<span class="selectBtn">버튼</span>
+					</a>
+					<select name="" title="지연등록시간 선택">
+						<option value=""></option>
+					</select>
+				</div>
+			</li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

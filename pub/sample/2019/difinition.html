@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>difinition :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+    <h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">마크업 약속</h2>
+    <h3 class="guide">■ 툴팁 레이어</h3>
+    <p class="guideTxt">툴팁 레이어는 div.FormWrap > li 안의 제일 마지막에 위치하도록 한다.</p>
+    <div class="formWrap">
+		<ul>
+			<li>
+                <strong class="formTit">자동해지서비스 적용 최소 잔액 <a href="javascript:;" class="btnFuncTip" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+                <div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="최소잔액을 입력해 주세요.">
+                    <a href="javascript:;" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+                </div>
+
+				<!-- Tooltip Base -->
+				<div class="popWrap toolTipBase" style="display: none;">
+					<div class="dim"></div>
+					<div class="popInner" style="top: 321.5px; left: 15px;">
+						<h1>자동해지서비스 적용 최소 잔액</h1>
+						<div class="popCont">
+							<ul class="listDot">
+								<li>적립식 : 100만원 이상 입력(목표수익률 도달 시 자동해지가 실행되기 원하는 최소 보유 납입잔액(선취수수료 제외 원금기준) 지정</li>
+								<li>거치식 : 선취수수료 제외 전 최초 납입 금액 입력(최초 납입금 100만원 이상 계좌만 신청 가능)</li>
+							</ul>
+							<p>한줄로 나올 경우는 p.defTxt 를 사용하세요.</p>
+						</div>
+
+						<div class="popBtnWrap">
+							<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기"></a>
+						</div>
+					</div>
+				</div>
+				<!-- // Tooltip Base -->
+            </li>
+		</ul>
+    </div>
+    
+    <hr>
+    
+    <h3 class="guide">■ 설계서 상 타이틀 영역 우측에 배치된 (원) 은 모두 빼고 작업한다. (추후 "원" 이 들어가는 경우는 모두 input 안에 넣는 것으로 처리될 예정)</h3>
+
+    <hr>
+
+    <h3 class="guide">■ 조회설정</h3>
+    <!-- <p class="guideTxt">설계서 상 조회설정 슬라이드 팝업은 무시하고, asis 모양대로 작업한다.</p> -->
+    <p class="guideTxt">title은 strong.formTit 사용</p>
+    <p class="guideTxt">'보기옵션' 버튼 삭제</p>
+    <p class="guideTxt">조회영역 아래에 '조회'버튼 추가</p>
+    <strong class="formTit">날짜선택 인풋</strong>
+    <div class="calendarForm">
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="" title="조회 시작일" placeholder="시작일선택" readonly="readonly">
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+        <span class="symbol">-</span>
+        <div class="cal">
+            <div class="inputList">
+                <input type="text" value="" title="조회 종료일" placeholder="종료일선택" readonly="readonly">
+                <a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="areaBtnPrice mt10">
+        <div class="inner">
+            <ul>
+                <li><a href="javascript:;">당일</a></li>
+                <li><a href="javascript:;">1개월</a></li>
+                <li><a href="javascript:;">3개월</a></li>
+                <li><a href="javascript:;">6개월</a></li>
+                <li><a href="javascript:;">1년</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnInquiry">조회</a>	
+    </div>  
+
+    <hr>
+
+    <h3 class="guide">■ 보안키패드</h3>
+    <p class="guideTxt">기획서에 보안키패드 사용이라고 되어 있거나, 계좌비밀번호 입력의 경우</p>
+    <p class="guideTxt">input class="sKey" readonly="readonly" 추가</p>
+    <input type="text" title="타이틀 입력" placeholder="계좌비밀번호 입력" class="sKey" readonly="readonly" />
+
+    <hr>   
+
+    <h3 class="guide">■ full popup</h3>
+    <p class="guideTxt">별도페이지로 작업 : &lt;head&gt;태그 부분에 스크립트 추가 </p>
+    <xmp>
+            <script>
+                    $(document).ready(function() {
+                       fullLayerPop();
+                    });
+                 </script>
+    </xmp>
+    <p class="guideTxt">하단 버튼 : 팝업용 인바디 버튼 사용</p>
+    <div class="areaPopBtnFull">
+		<div class="inner">
+			<ul>
+				<li><a href="javascript:;" class="btnPressDefault">초기화</a></li>
+				<li><a href="javascript:;" class="btnPressPoint">검색</a></li>
+			</ul>
+		</div>
+	</div> 
+
+    <hr>   
+
+    <h3 class="guide">■ table / defaultList 내 강조 텍스트</h3>
+    <p class="guideTxt">강조색으로 표시 된 것은 모두 strong 태그 사용
+        <p class="guideTxt">금액의 경우는 숫자만 em으로 감싸고, 단위는 span.wUnit으로 감싼다. <br />ex) <strong class="pointColor"><em>100,000</em><span class="wUnit">원</span></strong></p>
+    </p.>
+    
+    <hr> 
+
+    <h3 class="guide">■ 테이블 내 버튼</h3>
+    <a href="javascript:;" class="btnAddon">자세히보기</a>
+
+    <hr> 
+
+    <h3 class="guide">■ 테이블 내 셀 강조</h3>    
+    <p class="guideTxt">설계서 상에 강조가 아닌, 단순 th 영역의 색상으로만 구분된 것은 무시하고 동일한 테이블을 사용한다.<br />
+        단, <span class="underLine">설계서 상에 강조해달라고 표기된 부분은 tr에 active 클래스</span>를 넣어 셀 강조를 해준다</p>
+    
+    <hr> 
+
+    <h3 class="guide">■ 화면 320 기준으로 체크</h3>    
+    <p class="guideTxt">항상 320px 최저 사이즈에서 코딩된 화면 확인 후, 컨펌메시지나 완료메시지가 자동 줄바꿈 처리되는 경우, 보기좋게 br 처리</p>
+
+    <hr> 
+
+    <h3 class="guide">■ 하단 알림박스</h3>    
+    <p class="guideTxt">펼침상태가 기본</p>
+    <div class="guideList">
+        <div class="tArea"><p class="guideTit">알아두세요</p></div>
+        <ul class="listDot">
+            <li>안내성 문 내용입니다안내성 <span class="pointColor6">pointColor6</span>입니다 안내성 문구 내용입니다 안내성 문구 내용입니다.</li>
+            <li>안내성 문구 내용입니다. 안내성 문구 내용입니다.</li>
+            <li>안내성 문구 내용입니다. 안내성 문구 내용입니다.</li>
+        </ul>
+    </div>
+
+    <hr> 
+
+    <h3 class="guide">■ 인바디 버튼은 흰색 테두리 버튼 사용</h3>    
+    <div class="areaBodyBtnFull">
+		<a href="javascript:;" class="btnBodyLine">.btnBodyLine</a>		
+	</div>
+
+    <hr>
+
+    
+
+    <h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">강조컬러 약속</h2>
+    <h3 class="guide">■ 기본컬러 정의</h3>
+    <p class="guideTxt">기본 : <strong class="pointColor">pointColor</strong></p>
+    <p class="guideTxt">계좌번호 : <strong class="pointColor5">pointColor5</strong></p>
+    <p class="guideTxt">증권번호, 채권번호 등 고유번호 : <strong class="pointColor4">pointColor4</strong></p>
+    
+    <hr>
+
+    <h3 class="guide">■ 인포텍스트 강조</h3>
+    <p class="infoTxt"> 지급가능금액 인포텍스트 <span class="pointColor5">강조의 주황색 pointColor5</span>으로</p>
+    
+    <hr>
+
+    <!-- <h3 class="guide">■ 계좌번호, 증권번호, 채권번호 강조색</h3>
+    <p class="infoTxt"> 계좌번호는 <span class="pointColor5">강조의 주황색 pointColor5</span></p>
+    <p class="infoTxt"> 채권번호는 <span class="pointColor4">강조의 주황색 pointColor4</span></p>
+    <p class="infoTxt"> 증권번호는 강조색 없음(추후 일괄적으로 변경될 수 있음)</p> -->
+    
+    <hr>
+
+    <h3 class="guide">■ 상단 알림박스</h3>
+    <div class="guideListTop">
+		<p class="guideTopTit">납부내역조회</p>
+        <ul class="listDot">
+            <li>첫번째 강조색 <span class="pointColor7">pointColor7</span></li>
+            <li>두번째 강조색 <span class="pointColor8">pointColor8</span></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h3 class="guide">■ 하단 알림박스</h3>
+    <div class="guideList">
+        <div class="tArea"><p class="guideTit">알아두세요</p></div>
+        <ul class="listDot">
+            <li>안내성 문 내용입니다안내성 <span class="pointColor6">pointColor6</span>입니다 안내성 문구 내용입니다 안내성 문구 내용입니다.</li>
+            <li>안내성 문구 내용입니다. 안내성 문구 내용입니다.</li>
+            <li>안내성 문구 내용입니다. 안내성 문구 내용입니다.</li>
+        </ul>
+    </div>
+
+    <hr>
+    
+    <h3 class="guide">■ 좌우형 defaultList 내 텍스트는 기획서대로 따라가기(강조색 or 노멀)</h3>
+    
+
+</div>
+</body>
+</html>

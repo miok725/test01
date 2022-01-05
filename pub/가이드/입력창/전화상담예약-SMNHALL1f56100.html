@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">	
+
+			<!-- stepArea -->
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">전문가상담</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 5단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span>기본정보</li>
+						<li class="off"><span>2</span>정보입력</li>
+						<li class="off"><span>3</span>은퇴준비</li>
+						<li class="off"><span>4</span>진단결과</li>
+						<li class="active"><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">전문가상담</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 5단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="off"><span>3</span></li>
+						<li class="off"><span>4</span></li>
+						<li class="active"><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //stepArea -->
+
+			
+			<!-- tab -->
+			<div class="tabLv0 tabLv1">
+				<a href="javascript:;" class="arrLft" style="display: none;"><span class="blind">이전</span></a>
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide" style="width: 25%;"><a href="javascript:;" class="active"><span>전화상담 예약</span></a></li>
+					<li class="swiper-slide" style="width: 25%;"><a href="javascript:;"><span>영업점방문 예약</span></a></li>
+				</ul>
+				<a href="javascript:;" class="arrRgt" style="display: none;"><span class="blind">다음</span></a>
+			</div>
+			<!-- //tab -->
+
+			<div class="mt20">
+				<div class="btn_status">
+					<a href="javascript:;" class="btnType01" onclick="fullLayerPop2();return false">전화상담예약 서비스 안내</a>
+				</div>
+				<p class="mt10">신청하신 내용으로 상담시 상담내용(전화/채팅/이메일)은 저장되며 개인신용정보보호법에 의거 본인 이외의 상담은 제한이 있을 수 있습니다. </p>
+			</div>
+			
+			<div>
+				<h2 class="defTit">이름</h2>
+				<div class="inputList">                    
+                    <input type="text" title="타이틀 입력" placeholder="" disabled="disabled" value="김농협">
+                    <a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+                </div>
+			</div>
+
+			<div>
+				<h2 class="defTit">연락처</h2>
+				<div class="telWrap">
+					<div class="inputB01"><input type="text" id="" name="" maxlength="3"  disabled="disabled" title="전화번호(연락처) 첫번째 자리 입력" value="010"></div>
+					<div class="inputDash">-</div>
+					<div class="inputB01"><input type="text" id="" name="" maxlength="4" disabled="disabled" title="전화번호(연락처) 가운데 자리 입력" value="1234"></div>
+					<div class="inputDash">-</div>
+					<div class="inputB01"><input type="password" id="" name="" maxlength="4" disabled="disabled" readonly="readonly" title="전화번호(연락처) 마지막 자리 입력" value="1234"></div>
+				</div>
+			</div>
+			<!-- 2018-09-11 삭제
+			<div>
+				<h2 class="defTit">상담구분</h2>
+				<div class="formArray">
+					<div class="radioList">
+						<input type="radio" id="rdo11" name="aa" value="1">
+						<label for="rdo11">상품</label>
+					</div>
+					<div class="radioList">
+						<input type="radio" id="rdo12" name="aa" value="2">
+						<label for="rdo12">은퇴설계(All100플랜)</label>
+					</div>					
+				</div>
+			</div>
+			//2018-09-11 삭제 -->
+			<div class="schProduct hide mt10">
+				<div class="stList">
+                    <a href="javascript:;" title="상품 선택 새창열림" onclick="slidePopOption2();return false;" role="radiogroup">
+                        <span class="selectValue">상품을 선택하세요</span>
+                        <span class="selectBtn">버튼</span>
+                    </a>
+                    <select name="" title="선택해주세요">
+                        <option value=""></option>
+                    </select>
+                </div>
+				<div class="inputList mt10">
+                    <input type="text" title="타이틀 값 입력" placeholder="상품명 입력" readonly="readonly" disabled="disabled">
+                </div>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine">상품검색</a>		
+				</div>
+			</div>
+
+			<div>
+				<h2 class="defTit">문의내용</h2>
+				<div class="areaList placeShow">
+                    <textarea rows="3" id="area01" placeholder="상담 받을 내용을 간단하게 입력하세요." title="상담 받을 내용을 간단하게 입력하세요."></textarea>
+                </div>
+			</div>
+
+			<div class="termsWrap">
+				<div class="termsList"> 
+					<ul> 
+						<li> 
+							<div class="checkList">
+								<a href="javascript:;" onclick="fullLayerPop2();return false;" title="">
+									<input type="checkbox" id="c1" name="">
+									<label for="c1">개인(신용)정보 수집ㆍ이용ㆍ제공 동의서 <br>(상품 서비스 안내 등)</label>
+								</a>
+							</div>						
+						</li>			
+						<li> 
+							<div class="checkList">
+								<input type="checkbox" id="c2" name="">
+								<label for="c2">본인은 귀 행이 [개인(신용)정보 조회 동의서]상의 개인정보 수집ㆍ이용 ㆍ제공에 동의합니다.</label>
+							</div>						
+						</li>
+						<li> 
+							<div class="checkList">
+								<input type="checkbox" id="c3" name="">
+								<label for="c3">본인은 귀 행이 위와 같은 목적으로 본인의 고유식별정보를 수집ㆍ이용ㆍ제공하는 것에 동의합니다.</label>
+							</div>
+						</li>									
+					</ul> 
+				</div>
+				<p class="infoTxt">
+					영업시간 09:00~18:00 이외에 전화상담예약을 사용하실 수 없습니다. 영업시간 외에는 이메일 상담을 이용해주시기 바랍니다.				
+				</p>                      
+			</div>
+			
+			<div class="areaBodyBtnFull">
+				<a href="javascript:;" class="btnBodyLine">이메일 상담 바로가기</a>		
+			</div>
+
+
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">초기화</a>
+				<a href="javascript:;" class="btnPressPoint" onclick="slidePopConfirm();return false();">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+
+
+	<!-- 팝업시작 : select 하는 팝업인 경우 slidePopOption 클래스 및 함수 사용 -->
+	<div class="popWrap slidePopOption">
+		<div class="dim"></div> <!-- 팝업 dim 처리 -->
+
+		<div class="popInner">
+			<h1>상담예약 상품 선택</h1>
+			
+			<!-- 팝업컨텐츠 -->
+			<div class="popCont">
+				<ul class="selectList">
+					<li><a href="javascript:;">은퇴설계 </a></li>
+					<li><a href="javascript:;">예금 </a></li>
+					<li><a href="javascript:;">신탁 </a></li>
+					<li><a href="javascript:;">대출 </a></li>
+					<li><a href="javascript:;">펀드 </a></li>
+					<li><a href="javascript:;">외환 </a></li>
+					<li><a href="javascript:;">보험 </a></li>
+					<li><a href="javascript:;">퇴직연금 </a></li>
+				</ul>
+			</div>
+			<!-- 팝업컨텐츠 -->
+
+			<!-- 팝업 버튼영역  -->
+			<div class="popBtnWrap">
+				<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기" /></a>
+			</div>
+			<!-- // 팝업 버튼영역 -->
+		</div>
+
+	</div>
+	<!-- // 팝업 끝 -->
+
+
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+				<!-- ### 클래스 사용 ### 
+					 Type01 : 긍정형 BG 이미지 생성됨 
+					 Type02 : 부정형 BG 이미지 생성됨 
+					 Type03 : BG 이미지 없음 
+				-->
+
+				<div class="confirmMsg type02">
+					<p>문의내용을 입력해주세요.</p>
+				</div>
+
+				<!-- <div class="confirmMsg type02">
+					<p>부정형 다이어로그 메시지입니다.</p>
+					<p>긍정/부정 이미지가 필요없을 때에는 type03 클래스를 사용합니다.</p>
+				</div> -->
+
+				<!-- <div class="confirmMsg type03">
+					<p>아이콘이 없는 메시지입니다.</p>
+					<p>긍정/부정 이미지가 필요없을 때에는 type03 클래스를 사용합니다.</p>
+				</div> -->
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popWrap fullLayerPop">
+		<div class="popInner">
+			<h1>전화상담예약 서비스안내</h1>
+			<div class="popCont">
+				개발에서 AS IS화면반영 해주세요 ^^
+			</div>
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" onclick="popClose(this);return false;">취소</a>
+					<a href="javascript:;" class="confirmBtn">확인</a>
+				</div>
+				<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업시작 : select 하는 팝업인 경우 slidePopOption 클래스 및 함수 사용 -->
+	<div class="popWrap slidePopOption">
+		<div class="dim"></div> <!-- 팝업 dim 처리 -->
+
+		<div class="popInner">
+			<h1>상담예약 상품 선택</h1>
+			
+			<!-- 팝업컨텐츠 -->
+			<div class="popCont">
+				<ul class="selectList">
+					<li><a href="javascript:;">예적금</a></li>
+					<li><a href="javascript:;">대출</a></li>
+					<li><a href="javascript:;">펀드</a></li>
+					<li><a href="javascript:;">외화예금</a></li>
+					<li><a href="javascript:;">방카(보험)</a></li>
+					<li><a href="javascript:;">개인형IRP</a></li>
+				</ul>
+			</div>
+			<!-- 팝업컨텐츠 -->
+
+			<!-- 팝업 버튼영역  -->
+			<div class="popBtnWrap">
+				<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기" /></a>
+			</div>
+			<!-- // 팝업 버튼영역 -->
+		</div>
+
+	</div>
+	<!-- // 팝업 끝 -->
+
+	<script>
+		$("input[name='aa']").change(function(){
+			var curVal = $(this).val();
+			if (curVal == 1)
+			{
+				$(".schProduct").show();
+			}
+			else{
+				$(".schProduct").hide();
+			}
+		});
+	</script>
+</body>
+</html>

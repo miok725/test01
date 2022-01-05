@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">은퇴준비</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span>기본정보</li>
+						<li class="off"><span>2</span>정보입력</li>
+						<li class="active"><span>3</span>은퇴준비</li>
+						<li><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">은퇴준비</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="all100_form3 mt20">
+				<div class="tab_content_wrap">
+					<div class="all_list_head">
+						<h3 class="question">
+							<i>Q.</i> <span class="pointColor">김농협님</span>의 공적연금 유형(<a href="javascript:;" class="btnFuncTip2" title="툴팁(도움말) 새창 열기" data-tip="0"><span class="blind">툴팁</span></a>)은 무엇입니까?
+						</h3>
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner" tabindex="0">
+								<h1>공적연금 유형</h1>
+								<div class="popCont">
+									<ul class="listDot">
+										<li><strong class="pointColor">국민연금 가입유형:</strong> 사업장가입자, 지역가입자, 임의가입자, 임의 계속가입자</li>
+										<li><strong class="pointColor">공무원연금 가입유형:</strong> 공무원 및 유족</li>
+										<li><strong class="pointColor">사학연금 가입유형:</strong> 사립학교 교직원</li>
+										<li><strong class="pointColor">군인연금 가입유형:</strong> 직업군인</li>
+									</ul>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabLv0 tabLv2 tab1">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"><a href="javascript:;" class="active"><span>국민연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>공무원연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>사학연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>군인연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>미가입</span></a></li>
+						</ul>
+					</div>
+					<div class="tbl_container">
+						<p class="defTxt mt10">본인의 (예상) 월 수령액을 입력하세요.</p>
+						<div class="row mt10 clearfix">
+							월
+							<span class="inputList numWrap w100"><input type="text" class="w100" title="금액 입력"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span>
+							만원
+							<p class="fr mt5">
+								<a href="#" class="btnType01 btn_fnc" onclick="alert('54110으로 연결')">국민연금 계산기</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab_content_wrap">
+					<div class="all_list_head">
+						<h3 class="question">
+							<i>Q.</i> 배우자의 공적연금 유형(<a href="javascript:;" class="btnFuncTip2" title="툴팁(도움말) 새창 열기" data-tip="0"><span class="blind">툴팁</span></a>)은 무엇입니까?
+						</h3>
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner" tabindex="0">
+								<h1>공적연금 유형</h1>
+								<div class="popCont">
+									<ul class="listDot">
+										<li><strong>국민연금 가입유형:</strong> 사업장가입자, 지역가입자, 임의가입자, 임의 계속가입자</li>
+										<li><strong>공무원연금 가입유형:</strong> 공무원 및 유족</li>
+										<li><strong>사학연금 가입유형:</strong> 사립학교 교직원</li>
+										<li><strong>군인연금 가입유형:</strong> 직업군인</li>
+									</ul>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabLv0 tabLv2 tab2">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"><a href="javascript:;" class="active"><span>국민연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>공무원연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>사학연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>군인연금</span></a></li>
+							<li class="swiper-slide"><a href="javascript:;"><span>미가입</span></a></li>
+						</ul>
+					</div>
+					<div class="tbl_container">
+						<p class="defTxt mt10">배우자의 (예상) 월 수령액을 입력하세요.</p>
+						<div class="row mt10 clearfix">
+							월
+							<span class="inputList numWrap w100"><input type="text" class="w100" title="금액 입력"><a href="javascript:" title="Reset" class="btnReset">Reset</a></span>
+							만원
+							<p class="fr mt5">
+								<a href="javascript:;" class="btnType01 btn_fnc">국민연금 계산기</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- all100_form3_end -->
+			<div class="guideList helper mt20">
+				<p class="guideTit">자가진단 도우미</p>
+				<a href="javascript:;" class="btnAcc toggleBtn btn_helper">내용상세보기</a>
+				<div class="helper_con">
+					<p class="defTxt">고객님과 배우자님이 받으실 공적연금에 대한 보다 자세한 정보는 아래 연락처를 통해 확인하시기 바랍니다.<br>
+					<div class="guideList mt0">
+						<ul class="listDot">
+							<li>국민연금관리공단 <span class="pointColor">(1355)</span></li>
+							<li>공무원연금공단 <span class="pointColor">(1588-4321)</span></li>
+							<li>사학연금공단 <span class="pointColor">(1588-4110)</span></li>
+							<li>군인연금공단 <span class="pointColor">(1577-9090)</span></li>
+						</ul>
+					</div>
+					<strong class="pointColor">[경제변수]</strong><br>All100플랜 은퇴설계는 물가상승률 <span class="pointColor">1.35%</span>, 기대수익률 <span class="pointColor">1.35%</span>로 경제변수를 가정하여 계산됩니다</p>
+				</div>
+			</div>
+			<!-- helper_end -->
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint" onclick="slidePopConfirm2()">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+			<div class="popWrap slidePopOption">
+				<div class="dim"></div> <!-- 팝업 dim 처리 -->
+				<div class="popInner" tabindex="0">
+					<h1>기타필요자금</h1>
+					<!-- 팝업컨텐츠 -->
+					<div class="popCont">
+						<ul class="selectList">
+							<li><a href="javascript:;" title="기타비용을 선택하고 해당 창을 닫습니다.">기타비용</a></li>
+							<li><a href="javascript:;" title="의료비를 선택하고 해당 창을 닫습니다.">의료비</a></li>
+						</ul>
+					</div>
+					<!-- 팝업컨텐츠 -->
+					<div class="popBtnWrap">
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="popWrap slidePopConfirm">
+				<div class="dim"></div>
+				<div class="popInner">
+					<div class="popCont">
+						<div class="confirmMsg type03">
+							<p>2단계 <strong>[은퇴목표]</strong>를 모두 입력하셨습니다.<br>3단계 <strong>[은퇴준비]</strong> 단계로 계속 진행하시겠습니까?</p>
+						</div>
+					</div>
+
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="" onclick="popClose(this);return false;">취소</a>
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<script>
+		//탭메뉴활성화
+		$(".tab1 li a").click(function(){
+			var curIdx = $(this).parent().index();
+			$(".tab1 li a").removeClass("active");
+			$(this).addClass("active");
+			if (curIdx == 0)
+			{
+				$(".tab1").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("국민연금 계산기").attr({
+					"onclick":"alert('54110으로 연결')",
+					"href":"javascript: return false"
+				});
+			}
+			else if (curIdx == 1)
+			{
+				$(".tab1").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("공무원연금공단 바로가기").removeAttr("onclick").attr({
+					"href": "http://m.geps.or.kr/index.jsp",
+					"target":"_blank"
+				});
+			}
+			else if (curIdx == 2)
+			{
+				$(".tab1").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("사학연금공단 바로가기").removeAttr("onclick").attr({
+					"href": "http://www.tp.or.kr:8088",
+					"target":"_blank"
+				});
+			}
+			else if (curIdx == 3)
+			{
+				$(".tab1").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("군인연금공단 바로가기").removeAttr("onclick").attr({
+					"href": "http://www.mps.mil.kr/main.do",
+					"target":"_blank"
+				});
+			}
+			else{
+				$(".tab1").siblings(".tbl_container").stop().slideUp("fast");
+			}
+		});
+		$(".tab2 li a").click(function(){
+			var curIdx = $(this).parent().index();
+			$(".tab2 li a").removeClass("active");
+			$(this).addClass("active");
+			if (curIdx == 0)
+			{
+				$(".tab2").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("국민연금 계산기").attr({
+					"onclick":"alert('54110으로 연결')",
+					"href":"javascript: return false"
+				});
+			}
+			else if (curIdx == 1)
+			{
+				$(".tab2").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("공무원연금공단 바로가기").removeAttr("onclick").attr({
+					"href": "http://m.geps.or.kr/index.jsp",
+					"target":"_blank"
+				});
+			}
+			else if (curIdx == 2)
+			{
+				$(".tab2").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("사학연금공단 바로가기").removeAttr("onclick").attr({
+					"href": "http://www.tp.or.kr:8088",
+					"target":"_blank"
+				});
+			}
+			else if (curIdx == 3)
+			{
+				$(".tab2").siblings(".tbl_container").stop().slideDown("fast").find(".btn_fnc").text("군인연금공단 바로가기").removeAttr("onclick").attr({
+					"href": "http://www.mps.mil.kr/main.do",
+					"target":"_blank"
+				});
+			}
+			else{
+				$(".tab2").siblings(".tbl_container").stop().slideUp("fast");
+			}
+		});
+
+	</script>
+
+</body>
+</html>

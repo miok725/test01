@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+<script>
+	$(document).ready(function() {
+	   fullLayerPop2();
+	});
+ </script>
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<div class="container">
+			<!-- 팝업시작 : full layer 팝업인 경우 fullLayerPop 클래스 및 함수 사용 -->
+			<div class="popWrap fullLayerPop" style="display: block;">
+				<div class="popInner">
+					<h1>국민연금 계산기</h1>
+					<div class="popCont">
+						<div class="wrapTblDefault popupTable2">
+							<div class="tblHeader">
+								<h2 class="defTit">기본정보</h2>
+							</div>
+							<table cellpadding="0" cellspacing="0" class="thCenter">
+								<caption>기본정보</caption>
+								<colgroup>
+									<col style="width:33%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">연령</th>
+										<td>46세 1971년 12월</td>
+									</tr>
+									<tr>
+										<th scope="row">국민연금<br>최초가입 년 월</th>
+										<td>
+											<div class="inputList year_month">
+												<input type="text" class="year" title="국민연금 최초가입 년도 입력" value="" id="" maxlength="4"> 년
+												<input type="text" class="month" title="국민연금 최초가입 월 입력" value="" id="" maxlength="2"> 월
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">월평균소득<br>(세전)</th>
+										<td>
+											<div class="inputList income">
+												<input type="text" title="연평균소득 입력" value="" id=""> 만원
+												<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="defTxt">※ 월평균소득(세전):<br>(세전) 전년도 월평균소득(비과세 소득 제외)</p>
+						</div>		
+						<!-- wrapTblDefault_end -->
+						<div class="areaBodyBtnFull">
+							<a href="javascript:;" class="btnBodyLine" title="항목 더보기">계산</a>
+						</div>
+
+						<div class="wrapTblDefault popupTable2">
+							<div class="tblHeader">
+								<h2 class="defTit">예상수령액</h2>
+							</div>
+							<table cellpadding="0" cellspacing="0" class="thCenter">
+								<caption>예상수령액</caption>
+								<colgroup>
+									<col style="width:33%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">수령방법</th>
+										<td>노령연금</td>
+									</tr>
+									<tr>
+										<th scope="row">수급개시연령</th>
+										<td class="ar"></td>
+									</tr>
+									<tr>
+										<th scope="row">예상연금 월수령액</th>
+										<td class="ar">만원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>		
+						<!-- wrapTblDefault_end -->
+						<ul class="listDot mt10">
+							<li>본 계산기는 고객의 편의를 위해 제공하는 간편계산기로써 계산결과는 실제 수령액과 차이가 있을 수 있습니다.</li>
+							<li>가입기간(불입)은 은퇴나이(최대 60세)까지를 가정합니다.</li>
+							<li>정확한 금액은 관련 공단에 문의하도록 안내하시기 바랍니다.</li>
+						</ul>
+						<!-- listDot_end -->
+					</div>
+					<!-- popCont_end -->
+					<div class="popBtnWrap">
+						<div class="areaBtnDefault">
+							<a href="javascript:;" class="btnPressDefault">초기화</a>
+							<a href="javascript:;" class="btnPressPoint">적용</a> 
+							<!-- 비활성화시 disabled 추가 -->
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기" /></a>
+					</div>
+					<!-- popBtnWrap_end -->
+				</div>
+			</div>
+			<!-- // 팝업 끝 -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">기본정보</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span>기본정보</li>
+						<li><span>2</span>정보입력</li>
+						<li><span>3</span>은퇴준비</li>
+						<li><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">기본정보</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<h3 class="defTit">가족정보를 입력하세요.</h3>
+			<div class="family_info">
+				<ul class="all100_form">
+					<li>
+						<h3>본인</h3>
+						<div class="inner">
+							<div class="inputBoth02">
+								<div class="inputList inputB02">
+									<input type="text" title="본인 이름 입력" readonly="readonly" id="input01" value="김농협" disabled="disabled">
+								</div>
+								<div class="inputB01 pd17">
+									<div class="radioList radioLine">
+										<input type="radio" id="r11" name="rr1" checked="checked" onclick="return false">
+										<label for="r11">남</label>
+									</div>
+									<div class="radioList radioLine">
+										<input type="radio" id="r12" name="rr1" disabled="disabled" onclick="return false">
+										<label for="r12">여</label>
+									</div>
+								</div>
+							</div>
+							<div class="alignCol">
+								<strong class="formTit">생년월</strong>
+								<div class="cal readonly">
+									<input type="text" class="birthday" title="날짜선택 입력" placeholder="생년월을 선택해주세요." readonly="readonly" value="1980년 09월" disabled="disabled">
+									<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h3>배우자</h3>
+						<div class="inner">
+							<div class="inputBoth02">
+								<div class="inputList inputB02">
+									<input type="text" title="배우자 이름 입력" id="input01" placeholder="배우자">
+								</div>
+								<div class="inputB01 pd17">
+									<div class="radioList radioLine">
+										<input type="radio" id="r21" name="rr2" disabled="disabled" onclick="return false">
+										<label for="r21">남</label>
+									</div>
+									<div class="radioList radioLine">
+										<input type="radio" id="r22" name="rr2" checked="checked" onclick="return false">
+										<label for="r22">여</label>
+									</div>
+								</div>
+							</div>
+							<div class="alignCol">
+								<strong class="formTit">생년월</strong>
+								<div class="cal">
+									<div class="inputList">
+										<input type="text" class="birthday" title="날짜선택 입력" placeholder="생년월을 선택해주세요." readonly="readonly">
+										<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn_del">삭제</button>
+					</li>
+					<li>
+						<h3>자녀</h3>
+						<div class="inner">
+							<div class="inputBoth02">
+								<div class="inputList inputB02">
+									<input type="text" title="자녀 이름 입력" id="input01" placeholder="자녀">
+								</div>
+								<div class="inputB01 pd17">
+									<div class="radioList radioLine">
+										<input type="radio" id="r3" name="rr2">
+										<label for="r3">남</label>
+									</div>
+									<div class="radioList radioLine">
+										<input type="radio" id="r4" name="rr2">
+										<label for="r4">여</label>
+									</div>
+								</div>
+							</div>
+							<div class="alignCol">
+								<strong class="formTit">생년월</strong>
+								<div class="cal">
+									<div class="inputList">
+										<input type="text" class="birthday" title="날짜선택 입력" placeholder="생년월을 선택해주세요." readonly="readonly">
+										<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn_del">삭제</button>
+					</li>
+				</ul>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine">가족정보추가</a>		
+				</div>
+				<div class="areaBtnDefault mt10" style="position: static; bottom: 50px;">
+					<a href="javascript:;" class="btnBodyLine">가족정보저장</a>		
+				</div>
+			</div>
+			<!-- formWrap_end -->
+			<div class="guideList helper mt20">
+				<p class="guideTit">자가진단 도우미</p>
+				<a href="javascript:;" class="btnAcc toggleBtn btn_helper">내용상세보기</a>
+				<div class="helper_con">
+					<p class="defTxt">목록 아래에 <span class="pointColor5"><가족정보 추가></span> <span class="pointColor">버튼 클릭 후 가족정보를 입력하세요!</span><br><br><span class="pointColor">가족정보를 입력(수정)할 경우 반드시 <span class="pointColor5"><가족정보 저장></span> 버튼을 클릭해야 시스템에 반영됩니다.</span><br><br>본인을 제외한 배우자와 자녀의 이름은 “러블리 배우자＂등 닉네임으로 할 수 있습니다.</p>
+				</div>
+			</div>
+			<!-- helper_end -->
+
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+				<div class="confirmMsg type02">
+					<p>최초 설계 시 &lt;가족정보 저장&gt; 버튼을<br>클릭해야 반영됩니다.</p>
+				</div>
+
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slidePopConfirm_end -->
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+
+				<div class="confirmMsg type06">
+					<p>가족정보를 입력(수정)할 경우<br>&lt;가족정보 저장&gt; 버튼을 클릭해야 반영됩니다.<br>다음 단계로 계속 진행하시겠습니까?<br>(수정사항이 없는 경우 바로 이동하세요.)</p>
+				</div>
+
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="areaBtnDefault" style="position: static; bottom: 50px;">
+					<a href="javascript:;" class="btnPressDefault" onclick="popClose(this);return false;">취소</a>
+					<a href="javascript:;" class="btnPressPoint" onclick="popClose(this);return false;">확인</a> 
+					<!-- 비활성화시 disabled 추가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slidePopConfirm_end -->
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+
+				<div class="confirmMsg type06">
+					<p>가족정보를 수정합니다. 저장하시겠습니까?</p>
+				</div>
+
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="areaBtnDefault" style="position: static; bottom: 50px;">
+					<a href="javascript:;" class="btnPressDefault" onclick="popClose(this);return false;">취소</a>
+					<a href="javascript:;" class="btnPressPoint" onclick="popClose(this);return false;">확인</a> 
+					<!-- 비활성화시 disabled 추가 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slidePopConfirm_end -->
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+
+				<div class="confirmMsg type02">
+					<p>부부설계를 위해서 배우자정보 등록이 필수입니다.</p>
+				</div>
+
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slidePopConfirm_end -->
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+
+				<div class="confirmMsg type02">
+					<p>자녀는 부모의 나이보다 높거나 같을 수 없습니다.</p>
+				</div>
+
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slidePopConfirm_end -->
+
+	<div class="popWrap centerLayer">
+		<div class="dim"></div>
+		<div class="popInner" style="max-height: 681.8px; bottom: 148px; left: 15px;">
+			
+			<h1 class="ac"><img src="../../images/common/popTitle.png" alt="NH 스마트뱅킹"></h1>
+			<div class="popCont" style="max-height: 587.8px;">
+				<div class="yearSet">
+					<ol class="yearsetLft">
+						<li><a href="javascript:;"><span>2017</span></a></li>
+						<li><a href="javascript:;"><span>2018</span></a></li>
+						<li><a href="javascript:;" class="active"><span>2019</span></a></li>
+						<li><a href="javascript:;"><span>2020</span></a></li>
+						<li><a href="javascript:;"><span>2021</span></a></li>
+						<li><a href="javascript:;"><span>2022</span></a></li>
+						<li><a href="javascript:;"><span>2023</span></a></li>
+					</ol>
+					
+					<ol class="yearsetRht">            
+						<li><a href="javascript:;"><span>1</span></a></li>
+						<li><a href="javascript:;"><span>2</span></a></li>
+						<li><a href="javascript:;" class="active"><span>3</span></a></li>
+						<li><a href="javascript:;"><span>4</span></a></li>
+						<li><a href="javascript:;"><span>5</span></a></li>
+						<li><a href="javascript:;"><span>6</span></a></li>
+						<li><a href="javascript:;"><span>7</span></a></li>
+						<li><a href="javascript:;"><span>8</span></a></li>
+						<li><a href="javascript:;"><span>9</span></a></li>
+						<li><a href="javascript:;"><span>10</span></a></li>
+						<li><a href="javascript:;"><span>11</span></a></li>
+						<li><a href="javascript:;"><span>12</span></a></li>
+					</ol>
+				</div>
+			</div>
+	
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- centerLayer_end -->
+
+	<script>
+		//상단 progress bar 고정
+		$(".stepArea").css({
+			"position":"fixed",
+			"top": "41px",
+			"left":0,
+			"right": 0,
+			"background-color":"#fff",
+			"margin": 0,
+			"z-index": 10
+		});
+		$(".container").css('padding-top','81px');
+
+		//생년월 센터팝업
+		$(".btnCalendar").click(function(){
+			popCenter();
+		});
+
+		//슬라이드 팝업 호출 함수
+		$(".areaBtnDefault .btnPressPoint").click(function(){
+			var pop_num = prompt("슬라이드팝업은 5가지 있습니다. 1-5까지 숫자를 입력해 주세요");
+			pop_num = pop_num - 1;
+			var layerPopSet = PopSet();
+			scrollLock();
+			$(".slidePopConfirm").eq(pop_num).show();
+			var confirmH = $(".slidePopConfirm").eq(pop_num).find(".popCont").outerHeight();
+			//var confirmH2 = $(".slidePopConfirm .confirmMsg").outerHeight();
+			//alert(confirmH);
+			//타이틀 높이값 제외하고 슬라이드 업
+			//$(".slidePopConfirm .popInner").animate({height:confirmH + layerPopSet.btnArea + layerPopSet.popTitH}, 150);
+			$(".slidePopConfirm").eq(pop_num).find(".popInner").animate({height:confirmH + layerPopSet.btnArea}, 150);
+		});
+
+	</script>
+
+</body>
+</html>

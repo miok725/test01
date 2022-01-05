@@ -1,0 +1,1116 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_comm as-si content */
+.automaticWrap li:first-child .automaticList > li{border-top:1px solid #dedede}
+.automaticList{margin:0 -17px}
+.automaticList > li{display:table;border-bottom:1px solid #dedede;padding:0 17px;width:100%}
+.automaticList > li > a{background:url(../images/common/ico_arr3_down.png) no-repeat right;background-size:18px 10px;display:table-cell;width:100%;padding:10px 30px 10px 0}
+.automaticList > li > a.active{background:url(../images/common/ico_arr3_up.png) no-repeat right;background-size:18px 10px}
+.automaticList > li .checkList, .automaticList > li .radioList{display:table-cell;vertical-align:middle;padding-right:10px}
+.automaticList ul > li{display:table;width:100%;margin-bottom:5px}
+.automaticList ul > li .tit{min-width:80px;vertical-align:top;text-align:left}
+.automaticList ul > li span{display:table-cell;vertical-align:middle;text-align:right}
+.btnAutomaticSearch{width:60px;height:22px;border-radius:2px;background:#6a7688;line-height:22px}
+.detailSubList{background:#f8f8f8;margin:0 -17px;border-bottom:1px solid #dedede;padding:12px 48px}
+.detailSubList.NoCheck{padding:12px 47px 12px 17px}
+.toggleCont{display:none}
+.automaticDetailList{padding:0}
+.automaticList a ul > li.autoTit{display:none}
+.automaticList a.active ul > li.autoTit{display:table}
+.btnAccount{width:60px;height:22px;background:#6a7688;font-size:13px;color:#fff;font-weight:bold;border-radius:2px}
+.accountWrap li:first-child .productHeader{border-top:1px solid #dedede}
+.accountWrap .productList li a.link{background:url(../images/common/ico_arr_down.png) no-repeat 94% 50%;background:url(../images/common/ico_arr_down.png) no-repeat right 17px top 50%;background:url(../images/common/ico_arr_down.png) no-repeat right 17px top 50%;background-size:16px 9px;padding:15px 52px 15px 17px}
+.accountWrap .productList li a.active{background:url(../images/common/ico_arr_up.png) no-repeat 94% 50%;background:url(../images/common/ico_arr_up.png) no-repeat right 17px top 50%;background-size:16px 9px}
+.accountWrap .detailList{border-top:1px solid #dedede}
+.accountWrap .productList .productHeader{border-bottom:0}
+.accountWrap .areaBodyBtnFull{padding:0}
+.inputAccount01 .inputBtn01{width:100px}
+.inputAccount01 .stList{padding-right:5px}
+.accountOrderWrap > li{position:relative}
+.accountOrderWrap .btnOrder{position:absolute;top:50%;margin-top:-33px;right:17px;width:auto !important}
+.accountOrderWrap .btnOrder.btnCenterOrder{margin-top:-15px}
+.accountOrderWrap .btnOrder a{width:30px;height:30px;display:block;font-size:1px;color:transparent;line-height:1px;overflow:hidden}
+.accountOrderWrap .btnOrder a.btnOrderUp{background:url(../images/contents/btn_order_up.png) no-repeat;background-size:30px 30px;margin-bottom:6px}
+.accountOrderWrap .btnOrder a.btnOrderDown{background:url(../images/contents/btn_order_down.png) no-repeat;background-size:30px 30px}
+.accountOrderWrap .orderLabel{display:table;width:100%}
+.accountOrderWrap .orderRadio{display:table-cell}
+.transferHeader{display:table;width:100%}
+.transferHeader .transferImage{display:table-cell;vertical-align:middle;text-align:center;width:40px;padding-left:17px}
+.transferHeader .link{display:table-cell}
+.transferHeader .transferImage img{width:40px;height:40px;vertical-align:middle}
+.iconStar{padding-right:40px;background:url(../images/contents/icon_star.png) no-repeat right 50%;background-size:30px 15px}
+.accountAliasList li a.link{background:url(../images/common/ico_arr_down.png) no-repeat 94% 50%;background:url(../images/common/ico_arr_down.png) no-repeat right 17px top 50%;background-size:16px 9px;padding:15px 52px 15px 17px}
+.accountAliasList li a.active{background:url(../images/common/ico_arr_up.png) no-repeat 94% 50%;background:url(../images/common/ico_arr_up.png) no-repeat right 17px top 50%;background-size:16px 9px}
+.selAccountList > ul > li > .detailList{position:relative}
+.selAccountList .btnBodyAccount{position:absolute;top:50%;right:0;margin-top:-15px}
+.selAccountCont{margin:0 17px}
+.bankBookWrap{border:1px solid #dedede;margin:15px 0;padding:21px 20px 5px 20px}
+.bankBookWrap h3{font-size:14px}
+.bankBookList{border-bottom:1px solid #dedede;padding-bottom:15px}
+.bankBookList li:first-child{margin-top:0}
+.bankBookList li{display:table;width:100%;margin-top:13px}
+.bankBookList li .tit{color:#666666;vertical-align:top;min-width:100%;text-align:left}
+.bankBookList li span{display:table-cell;vertical-align:middle;text-align:right}
+.bankBookImg{text-align:right}
+.bankBookImg img{width:69px;height:14px}
+.bankBookBtn{bottom:0}
+.bankBookImg02 img{width:94px;height:29px}
+.serviceWRap{margin:15px 0 20px}
+.serviceCont .defTit{text-align:left;margin-top:0;font-size:13px;color:#111}
+.serviceTxt:before{content:"송금인이수취인에게 송금하는 이미지";display:block;background:url(../images/contents/img_service.png) no-repeat;width:255px;height:87px;background-size:cover;margin:0 auto;margin-bottom:20px;text-indent:-9999px}
+.serviceTxt01:before{content:"고객(납부자)가요금청구기관(수납기관)에 납부하고 요금청구기관이 고객에게 청구하는 이미지";display:block;background:url(../images/contents/img_service01.png) no-repeat;width:255px;height:105px;background-size:cover;margin:0 auto;margin-bottom:20px}
+.serviceTxt{text-align:center;color:#666}
+.productList .transferHeader{border-bottom:0}
+.transferList{padding:17px 15px}
+.bankTit:after{content:"";display:inline-block;width:1px;height:12px;background:#dedede;position:relative;top:1px;margin-left:10px;margin-right:7px}
+.transferTxt{display:table;width:100%}
+.transferTxt .tit{display:table-cell;text-align:left}
+.transferTxt span{display:table-cell;text-align:right}
+.txtLine:after{content:"";display:inline-block;width:1px;height:10px;background:#a3a2a2;margin-left:6px;margin-right:2px}
+.selectImgList01{margin-top:0 !important}
+.selectImgList{display:table;width:100%;margin-top:30px}
+.selectImgList li{display:table-cell;width:33.3333%;text-align:center}
+.selectImgList li label{display:block;text-align:center;max-width:100%;margin:0;margin-top:10px;width:100%}
+.selectImgList li input{width:50px;height:50px}
+.selectImgList li input:checked + label{color:#19A647}
+.selectImgList01 li:nth-child(1) input[type="radio"]{background-image:url(../images/contents/icon_img_01.png)}
+.selectImgList01 li:nth-child(2) input[type="radio"]{background-image:url(../images/contents/icon_img_02.png)}
+.selectImgList01 li:nth-child(3) input[type="radio"]{background-image:url(../images/contents/icon_img_03.png)}
+.selectImgList02 li:nth-child(1) input[type="radio"]{background-image:url(../images/contents/icon_img_04.png)}
+.selectImgList02 li:nth-child(2) input[type="radio"]{background-image:url(../images/contents/icon_img_05.png)}
+.selectImgList02 li:nth-child(3) input[type="radio"]{background-image:url(../images/contents/icon_img_06.png)}
+.selectImgList03 li:nth-child(1) input[type="radio"]{background-image:url(../images/contents/icon_img_07.png)}
+.selectImgList03 li:nth-child(2) input[type="radio"]{background-image:url(../images/contents/icon_img_08.png)}
+.selectImgList03 li:nth-child(3) input[type="radio"]{background-image:url(../images/contents/icon_img_09.png)}
+.selectImgList04 li:nth-child(1) input[type="radio"]{background-image:url(../images/contents/icon_img_10.png)}
+.selectImgList04 li:nth-child(2) input[type="radio"]{background-image:url(../images/contents/icon_img_11.png)}
+.selectImgList04 li:nth-child(3) input[type="radio"]{background-image:url(../images/contents/icon_img_12.png)}
+.selectImgList01 li:nth-child(1) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_01.png);background-position-x:0}
+.selectImgList01 li:nth-child(2) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_02.png);background-position-x:0}
+.selectImgList01 li:nth-child(3) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_03.png);background-position-x:0}
+.selectImgList02 li:nth-child(1) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_04.png);background-position-x:0}
+.selectImgList02 li:nth-child(2) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_05.png);background-position-x:0}
+.selectImgList02 li:nth-child(3) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_06.png);background-position-x:0}
+.selectImgList03 li:nth-child(1) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_07.png);background-position-x:0}
+.selectImgList03 li:nth-child(2) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_08.png);background-position-x:0}
+.selectImgList03 li:nth-child(3) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_09.png);background-position-x:0}
+.selectImgList04 li:nth-child(1) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_10.png);background-position-x:0}
+.selectImgList04 li:nth-child(2) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_11.png);background-position-x:0}
+.selectImgList04 li:nth-child(3) input[type="radio"]:checked{background-image:url(../images/contents/icon_img_on_12.png);background-position-x:0}
+.tdSetting .defTit{float:left}
+.tdSetting .btnSetting{  position:absolute;margin-top:0;top:24px;text-indent:-9999px;overflow:hidden;float:left}
+.btnSetting{width:16px;height:16px !important;margin:0 6px;background:url(../images/common/btn_setup.png) no-repeat;background-size:cover;vertical-align:middle}
+.tdSetting {position:relative}
+.tableNextIcon{background:url(../images/common/ico_paging_next.png) no-repeat right;background-size:5px 10px}
+.tableNextIcon + td label{vertical-align:initial}
+.bankBookIcon:after{content:"";display:block;background:url(../images/contents/img_bankBook.png) no-repeat;width:175px;height:84px;background-size:cover;margin:15px auto}
+.toggleSubBtn{padding:0 0 15px !important}
+.nicknameList .productHeader{background:#f8f8f8}
+.nicknameList .productHeader.active{background-color:#f7fcf9}
+.nicknameList .nickCont{display:none}
+.nicknameDetailList li a.link{background:none}
+.nicknameDetailList .productHeader.active{background-color:#f7fcf9}
+.nicknameDetailList .productHeader{background:#fff}
+.accountOrderWrap .selected{background:#f7fcf9}
+.accountSelectList li a.link{background:url(../images/common/ico_arr3_down.png) no-repeat right top 50%;background-size:18px 10px;padding:15px 42px 15px 17px}
+.accountSelectList li a.link.active{background:url(../images/common/ico_arr3_up.png) no-repeat right top 50%;background-size:18px 10px;padding:15px 42px 15px 17px}
+.accountSelectList > li{padding-right:17px}
+.accountSelectList > li .areaBodyBtnFull{margin-right:-17px}
+.iconFreeView{width:40px;height:40px;margin-left:7px}
+.iconFreeView img{width:100%;height:100%}
+.detailList li > span.starText{text-align:center;font-size:28px;display:inline-block;line-height:30px;width:14px;height:20px}
+.accountNick{margin-top:3px;font-weight:bold}
+.westernImg{margin-top:20px;text-align:center}
+.westernImg > img{max-width:100%}
+.usedService{float:right;display:inline-block;width:45px;height:22px;border:1px solid #19A647;background-color:#fff;color:#19A647;font-size:12px;text-align:center;line-height:19px;border-radius:10px}/* 19A647 08-24 color */
+.installment_point{font-size:15px;line-height:18px;color:#19A647;font-weight:bold}
+.installment_txtBox{padding:30px 0 63px;text-align:center;background:#e8eff3 url('../images/contents/installment_txtBox.png') no-repeat center bottom;background-size:286px}
+.paddingAll{margin:0 -17px;padding:17px}
+.paddingAll .defTxt{margin-top:0;line-height:1.4}
+.installment_number{padding-bottom:25px;font-size:45px;color:#222;line-height:1.2}
+.installment_number span{font-size:22px;color:#222}
+/* 이체 */
+.btnSetup{width:16px;height:16px;margin:0 6px;background:url(../images/common/btn_setup.png) no-repeat;background-size:cover;vertical-align:middle}
+.tooltipTxt > a{color:#19a647;text-decoration:underline !important}
+/* 이체전용 팝업 */
+.popWrap .popInner .popCont .transfer{padding:0 17px 20px}
+/* 부가메뉴 */
+.appendMenu{display:none;position:absolute;top:0px;right:30px;overflow:hidden;width:120px;background-color:#fff;box-shadow:0px 3px 10px 0px rgba(0, 0, 0, 0.2);border:1px solid #dedede;border-radius:2px;text-align:left;z-index:2}
+.appendMenu ul{padding:5px 0}
+.appendMenu li a{display:block;padding:5px 12px;letter-spacing:-1px;font-size:12px;box-sizing:border-box;-webkit-box-sizing:border-box}
+.appendMenu li.active a{color:#19a647}
+.appendMenu dl{position:relative}
+.appendMenu dl dt{height:32px;background-color:#f8f8f8;line-height:32px;border-bottom:1px solid #dedede}
+.appendMenu dl dt strong{padding-left:13px;font-size:12px}
+.appendMenu .appendClose{position:absolute;top:0;right:0;display:block;width:50px;height:30px;background:url('../images/common/ico_close_middle.png') no-repeat 100% 0;background-size:30px auto;overflow:hidden}
+/* 내계좌선택 */
+.accList{margin:0 -17px}
+.accList ul > li{position:relative;padding:15px 17px;border-top:1px solid #dedede}
+.accList ul > li.active{background-color:#fdfbfb}
+.accList ul > li.active a{background:url('../images/common/ico_select_active.png') no-repeat 100% 50%;background-size:15px 10px}
+.accList ul > li:first-child{border-top:0}
+.accList ul > li > a{display:block}
+.accList ul > li > a.btnType02{display:inline-block;position:absolute;top:50%;right:17px;margin-top:-15px}
+.accList ul > li .accSel > span{display:block;margin-top:4px}
+.accList ul > li .accSel > span:first-child{margin-top:0}
+.accList ul > li .accName{color:#111}
+.accList ul > li .accNum strong{color:#f68b1f}
+.accList ul > li .accNum .accName{display:inline-block;margin-left:5px;font-weight:normal}
+.accList ul > li .accName + .inputBoth01{margin-top:10px}
+.accList .areaBodyBtnFull{margin-top:10px}
+/* 조회/이체 팝업 내에서 요소 스타일 재정의 */
+.popWrap.bankSetWrap h1.bankPopTit{height:60px;padding:0 35px 0;background-color:#fff;font-size:19px;color:#111;line-height:60px;text-align:center}
+.popWrap.bankSetWrap h1.bankPopTit a {font-size:19px}
+.popWrap.bankSetWrap .bntSearch{position:absolute;top:22px;left:17px;width:17px;height:17px;overflow:hidden;color:transparent;background:url('../images/common/ico_menuSrch.png') no-repeat;background-size:cover}
+.popWrap.bankSetWrap .btnSetup{position:absolute;top:22px;right:50px;height:16px;overflow:hidden;color:transparent}
+.popWrap.bankSetWrap .popCont .iconScroll, .popWrap.slidePopOption .popCont .iconScroll{position:fixed;bottom:50px;right:17px;width:46px;height:46px}
+.popWrap.bankSetWrap .popCont .iconScroll img, .popWrap.slidePopOption .popCont .iconScroll img{display:inline-block;width:46px;height:46px}
+.transfer .confirmMsg.type03{padding-top:0}
+.transfer .confirmMsg,
+.transfer > .wrapTblDefault{margin-top:20px}
+.transfer [class^="wrapTbl"] th, .transfer [class^="wrapTbl"] td{padding:7px 10px}
+.transfer .productList{border-top:1px solid #dedede}
+.transfer .productList .detailList{margin:0}
+.transfer > .detailList{margin:0 -17px}
+.transfer .detailList li{margin-bottom:8px}
+.transfer .detailList li:last-child{margin-bottom:0}
+.transfer .detailList + .areaBodyBtnFull{margin-top:0}
+.transfer .wrpTblDefault + .selDetailList{margin-top:20px}
+.transfer .accList ul > li .accNick{display:inline-block;color:#111 !important}
+.moneyImg{border:1px solid #dedede}
+.moneyImg img{max-width:100%;display:block}
+/* 이체팝업 내 font size 조절 */
+.transfer .tabLv1 li a span{font-size:15px}
+.transfer .accName{font-size:15px}
+.transfer .accNum{font-size:15px}
+/* 계좌번호 header */
+.accountHeader{position:relative;margin:0 -17px 20px;padding:18px 17px;background:#f7fcf9}
+.accountHeader .accTit{margin-bottom:7px;font-size:15px}
+.accountHeader .accNum{display:block;margin-bottom:10px;font-weight:bold;color:#19A647}
+.accountHeader .accNum:after{display:inline-block;content:'';width:15px;height:9px;margin:-2px 0 0 10px;background:url(../images/common/ico_arr_bigdown.png) no-repeat;background-size:cover;vertical-align:middle}
+.accountHeader + .areaBtnPrice{margin-top:-5px}
+.btnMoreWrap{position:absolute;top:18px;right:0}
+.btnMore{width:37px;height:20px;background:url(../images/common/btn_acc_more.png) no-repeat center center;background-size:3px 13px}
+.accPriceArea{text-align:right}
+.accPriceArea .tit{display:inline-block;margin:8px 8px 0 0;color:#666;font-weight:bold}
+.accPriceArea .txt{text-align:right}
+.accPriceArea .txt .price{font-weight:bold;font-size:23px}
+.accPriceArea + .wrapTblDefault{margin-top:10px}
+.moreOpt{position:absolute;top:0;left:100%}
+/* 은행 선택 리스트 */
+[class^="bankListW"]{margin-top:9px}
+[class^="bankListW"] ul:after{display:block;content:'';clear:both}
+[class^="bankListW"] li{float:left;width:50%}
+[class^="bankListW"] li a{display:block;padding:11px 0;line-height:25px}
+[class^="bankListW"] li a img{width:25px;height:25px;margin-right:10px;vertical-align:middle}
+[class^="bankListW"].bigFont{font-size:18px}
+/* 경조금 메시지 */
+.messageToggle .accordionMenu .dep1 > li > a{padding:9px 40px 9px 17px;font-size:13px;font-weight:normal;background:url(../images/common/ico_arr_down.png) 95% 50% no-repeat;background:url(../images/common/ico_arr_down.png) right 17px top 50% no-repeat;background-size:11px 7px}
+.messageToggle .accordionMenu .dep1 > li > a.active{color:#111;background-image:url(../images/common/ico_arr_up.png)}
+.messageToggle .accordionMenu .dep2{padding:10px 0;background:#f8f8f8}
+.messageToggle .accordionMenu .dep2 > li > a{padding:4px 40px 4px 26px;line-height:23px;border:none;background:none}
+.messageToggle .accordionMenu .dep2 > li > a.active{color:#19A647;background:none}
+.messageToggle .accordionMenu .dep2 > li > a.active:before{background-image:url(../images/common/bul_dot_on.png)}
+.bgpd0{background:none;padding-top:0;padding-bottom:0}
+.areaBtnType02.typeBanking ul{display:table;width:100%}
+.areaBtnType02.typeBanking ul li{display:table-cell}
+.areaBtnType02.typeBanking ul li.lateBtn{width:30%}
+.areaBtnType02.typeBanking ul li a{width:100%}
+/* 고객센터 */
+.topSelectWrap{margin:0 -17px;padding:10px 17px;border-bottom:1px solid #dedede;box-sizing:border-box}
+/* 새소식자주묻는질문 */
+.fullCont{margin:10px -17px 0;padding:10px 17px;background:#f8f8f8;border-bottom:1px solid #dedede;border-top:1px solid #dedede}
+.boardList li a.more{position:relative;display:block;padding:13px 42px 13px 17px;background:url(../images/common/ico_list_more.png) no-repeat 94% 50%;background:url(../images/common/ico_list_more.png) no-repeat right 17px center;background-size:10px 10px}
+.boardList li a.less{background:url(../images/common/ico_list_less.png) no-repeat 94% 50%;background:url(../images/common/ico_list_less.png) no-repeat right 17px center;background-size:10px 2px}
+.faqConBox a.heartBtn{display:inline-block;margin-top:13px;border:1px solid #999;padding:3px 5px 3px 23px;background-color:#fff;background:url(../images/common/ico_list_heart.png) no-repeat left 7px top 50%;background-size:12px 11px;background-color:#fff}
+.faqConBox a span{color:#4885e0}
+.faqConBox{background:#f8f8f8;padding:13px 17px;color:#666;font-size:13px}
+.faqConBox * + p{margin-top:8px}
+.faqConBox .wrapTblDefault{margin-top:3px}
+.faqConBox th,
+.faqConBox td{padding:7px 10px}
+.heartBtn{display:inline-block;border:1px solid #999;padding:2px 5px 2px 23px;background-color:#fff;background:url(../images/common/ico_list_heart.png) no-repeat left 7px top 50%;background-size:12px 11px;color:#4885e0;margin-left:10px;border-radius:5px}
+.faqToggle .faqConBox{background-color:#fff;border-top:1px solid #efefef}
+/* 영업점 찾기 */
+.branchOfficeWrap{position:relative;margin:0 -17px 0 -17px;height:100%}
+.branchList{border-top:1px solid #dedede;border-bottom:1px solid #dedede;margin-top:13px}
+.branchList.bt0{border-top:none;border-bottom:none}
+.branchList li{position:relative;overflow:hidden;width:100%;padding:20px 17px}
+.branchList li ~ li{border-top:1px solid #dedede}
+.branchList li > a{width:75%;width:calc(100% - 80px)}
+.branchList li > a + div{float:none;position:absolute;top:50%;right:17px;margin-top:-32px}
+.branchList dl a{width:76%}
+.branchList dl dt{margin-bottom:6px;line-height:1}
+.branchList dl dd{letter-spacing:-0.02em}
+.branchList div a{display:block;width:70px}
+.branchList div a.btnAddon{height:30px;line-height:28px;font-size:12px}
+.branchList div a:nth-of-type(1){margin-bottom:4px}
+.branchList dl dd{font-size:13px;color:#333}
+.branchList dl *:last-child{margin-top:5px}
+.branchMap .mapQucik{position:absolute;bottom:20px;right:17px;z-index:1001}
+.mapQucik{position:fixed;bottom:65px;right:17px}
+.mapQucik .btnAddon{padding-right:20px;background-image:url('../images/common/bul_small_arrow.png');background-repeat:no-repeat;background-position:90% center;background-size:5px auto}
+.mapviewArea{width:100%;margin-top:10px;margin-bottom:15px}
+.mapviewArea img{max-width:100%}
+div.olMap{margin:10px 0 15px}
+.posR{position:absolute;top:60px;right:17px;z-index:100}
+.popTopbodBox{margin:0 -17px;padding:15px 17px;border-top:1px solid #dedede;border-bottom:1px solid #dedede}
+.singleDot:before{content:'';width:2px;height:2px;border-radius:1px;background-color:#111;display:inline-block;vertical-align:middle;margin-right:6px}
+.branchOfficeWrap.h100p{position:absolute;top:100px;bottom:50px;width:100%;height:auto}
+.branchOfficeWrap.h100p .branchMap{height:100%;z-index:3}
+.tabDistance{position:absolute;top:15px;left:17px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:50px;border:1px solid #dedede;border-radius:2px;box-sizing:border-box;box-shadow:2px 1px 3px 1px rgba(0, 0, 0,0.18);z-index:1001} 
+.tabDistance li{background-color:#fff}
+.tabDistance li ~ li{border-top:1px solid #dedede}
+.tabDistance li a{display:block;padding:5px 8px;font-size:11px;text-align:center;color:#666666}
+.tabDistance li.active{background-color:#19A647}
+.tabDistance li.active a{color:#fff}
+.branchReset{position:absolute;left:17px;bottom:30px;z-index:999}
+.branchReset [class^=post]{display:block;width:40px;height:40px;border-radius:50%;box-shadow:-1px 2px 8px 1px rgba(0,0,0,0.35);text-indent:-9999em}
+.branchReset [class^=post] span{display:block}
+.branchReset a + a{margin-top:10px}
+.branchReset .postBtn{background-color:#fff}
+.branchReset .postReset{background:#fff}
+.branchReset .postReset span{background-image:url('../images/contents/btn_pos_reset.png')} 
+.branchReset .postBtn span{background-image:url('../images/contents/btn_posactive_loading.png')}
+.branchReset [class^=post] span{height:40px;width:40px;background-repeat:no-repeat;background-size:40px auto}
+.branchReset .postBtn.active{background-color:#19A647}
+.branchReset .postBtn.active span{background-image:url('../images/contents/btn_pos_loading.png');background-size:40px auto}
+.branchReset .postBtn span.active{animation-name:spinning;animation-duration:1500ms;animation-iteration-count:infinite;animation-timing-function:linear}
+@keyframes spinning{from{transform:rotate(0deg);-webkit-transform:rotate(0deg)}to{transform:rotate(360deg);-webkit-transform:rotate(360deg)}}
+@keyframes mycurrentpos{from{transform:scale(0.3);-webkit-transform:scale(0.3)}to{transform:scale(1);-webkit-transform:scale(1)}}
+.branchBarbox{position:absolute;left:17px;z-index:999}
+[class^="branchbar"]{position:relative;display:flex;justify-content:center;-webkit-justify-content:center;align-items:center;width:25px;height:35px;vertical-align:middle;font-size:8px;color:#fff;background-repeat:no-repeat;background-position:0 0;background-size:contain}
+.branchBarbox [class^="branchbar"] .nhLogo{display:block;width:15px;height:7px;background:url('../images/contents/img_nh_txt.png') no-repeat 0 0;background-size:15px auto;text-indent:-9999em}
+.loadingArea{width:235px;height:235px;border-radius:50%;margin:-118px 0 0 -118px;background-color:#80d8ff;opacity:0.2;position:absolute;top:50%;left:50%;font-size:1px;color:transparent;z-index:1001}
+.loadingArea.active{animation-name:mycurrentpos;animation-duration:1500ms;animation-iteration-count:infinite;animation-timing-function:ease-out}
+.currentPos{position:absolute;left:17px;bottom:200px;width:25px;height:35px;background:url('../images/contents/icon_mypos_pin.png') no-repeat 0 0;background-size:25px auto;font-size:1px;color:transparent;z-index:1001}
+.midTxt{font-size:14px}
+.cvcCont{margin-top:20px;overflow:hidden}
+.cvcCont strong{color:#111}
+.cvcCont p{margin-top:5px;color:#666}
+.cvcImgArea{margin-top:15px;padding:15px 0;background:#f8f8f8;border:1px solid #dedede;border-radius:2px;text-align:center;height:135px}
+.cvcImgArea img{display:block;width:169px;margin:0 auto}
+/* 조회공통 */
+.accNumber{display:inline-block;color:#f68b1f !important;font-size:15px}
+.accName{display:block;font-weight:bold}
+.accNick, .accNick2{display:block;color:#111 !important}
+.accInfo{overflow:hidden;margin-top:5px}
+.accInfo .infoTit{float:left}
+.accInfo .amount{float:right;font-weight:bold}
+.infoTit{color:#666 !important}
+.amount{color:#19A647 !important}
+.amount em{font-size:16px;color:#19A647}
+.accDate{float:right}
+.rate{float:right}
+.boxHeaderBlue span.accNumber, .boxHeaderBlue span.accName, .boxHeaderBlue span.accNick, .boxHeaderBlue span.accNick2{margin-left:0}
+/* 출금계좌 조회 */
+.accountList{margin:0 -17px}
+.accountList > ul{border-top:1px solid #e5e5e5}
+.accountList > ul > li{border-bottom:1px solid #e5e5e5}
+.accountList .accTit{position:relative;padding:15px 17px 16px;background-color:#f8f8f8}
+.accountList .accTit .badgeDefault{margin-left:7px}
+.accountList .accTit .btnMoreWrap{position:static;float:right;margin-right:-17px}
+.accountList .accTit .toolTipBtn{float:right;margin:0;margin-top:-3px;padding:0;background:none;font-size:12px;color:#333}
+.accountList .accTit > a{display:block;margin:-15px 0px -16px -17px;padding:15px 17px 16px;background:url('../images/common/ico_list_link.png') no-repeat 100% 50%;background-size:9px 16px}
+.accountList .accCont{padding:0 17px}
+.accountList .accCont .link{position:relative;padding:11px 25px 15px 0}
+.accountList .accCont .link a{position:absolute;top:0;right:0;display:block;width:20px;height:100%;background:url('../images/common/ico_list_link.png') no-repeat 100% 50%;background-size:9px 16px;overflow:hidden;white-space:nowrap;color:transparent}
+.accountList .accCont > a{display:block;padding:11px 25px 15px 0;background:url(../images/common/ico_list_link.png) no-repeat 100% 50%;background-size:9px 16px}
+.accountList .accCont .accContInner{padding:11px 0 15px}
+.accountList .areaBodyBtnFull{padding:0 17px 15px;margin-top:0}
+.accountList .areaBodyBtnFull .toggleCont , .accountList .toggleInner{display:none}
+.accountList .areaBodyBtnFull + .infoTxt{margin-top:-10px}
+.accountList .infoTxt{margin:0 0 15px 17px}
+.accountList .toggleCont , .accountList .toggleInner{padding-top:5px}
+.accountList .toggleCont .wrapTblDefault , .accountList .toggleInner .wrapTblDefault{margin-top:5px}
+.accountList .toggleCont .wrapTblDefault + ul  ,.accountList .toggleInner .wrapTblDefault + ul{margin-top:10px}
+.toggleInner{display:none}
+.accountList .accCont > .accSubCont{padding:11px 25px 15px 0;position:relative}
+.accountList .accCont > .accSubCont > a{display:block;padding:11px 25px 15px 0;background:url(../images/common/ico_list_link.png) no-repeat 100% 50%;background-size:9px 16px;width:9px;height:100%;text-indent:-9999px;position:absolute;top:0;right:0}
+.accountList .accTit .accNumber{font-weight:bold}
+.accListBtn{width:100%;margin-top:10px;border:1px solid #dedede}
+.accListBtn a{display:block;height:30px;background:url('../images/common/ico_arr_down.png') no-repeat 50% 50%;background-size:11px 7px;position:relative}
+.accListBtn a.active{background-image:url('../images/common/ico_arr_up.png');position:relative}
+.btnAddon.icoMore{padding-right:5px}
+.btnAddon.icoMore:after{content:'';display:inline-block;width:15px;height:15px;margin-left:4px;background:url('../images/contents/ico_accMore.png') no-repeat 100% 50%;background-size:cover;vertical-align:middle;margin-top:-3px}
+.guideList + .totalWrap{margin-top:20px}
+/* 거래내역 조회조건 */
+.srchInfo{margin-top:14px;color:#666}
+.srchInfo ul{text-align:right}
+.srchInfo ul li{display:inline-block;padding-left:6px;margin-left:2px;background:url('../images/common/bar.gif') no-repeat 0 50%;background-size:1px 8px;font-size:12px}
+.srchInfo ul li:first-child{margin:0;padding:0;background:none}
+/* 거래내역 리스트 */
+.srchResult{margin:7px -17px 0}
+.srchResult .dateTit{position:relative;height:30px;line-height:30px;padding:0 17px;background-color:#f8f8f8;color:#666}
+.srchResult .dateTit .limitTxt{position:absolute;top:0px;right:17px}
+.srchResult .dateTit .limitTxt.type01{color:#111}
+.srchResult .dateTit .limitTxt.type02{color:#f44336}
+.srchResult .resultDetail{padding:15px 17px}
+.srchResult .resultTit{display:block;margin-bottom:4px;font-size:14px;letter-spacing:-1px}
+.srchResult .result .resultState{width:30px;text-align:right}
+.srchResult .resultAmount{display:block;text-align:right}
+.srchResult .resultAmount em{display:inline-block;font-size:17px;font-weight:bold}
+.srchResult .amntTotal{display:block;margin-top:2px;text-align:right}
+.srchResult .resultMemo{display:block;margin-top:4px}
+.PrecautionWrap{padding:14px 0}
+.boxHeaderBlue span{font-size:16px;margin-left:5px}
+.wrapTblDefault table + .boxHeaderBlue{margin-top:20px}
+/*고객센타*/
+.otpwrap img{width:100%;padding-bottom:10px;display:block}
+.customerTel{margin:-3px}
+.customerTel:after{display:block;content:'';clear:both}
+.customerTel li{float:left;width:50%}
+.customerTel li.wid100{width:100%}
+.customerTel li a{margin:3px;padding:10px 5px 10px 32px;background:url('../images/contents/ico_tel.png') no-repeat 10px 32px;background-size:16px 16px;border:1px solid #dedede;border-radius:2px;display:block;letter-spacing:-0.5px}
+.customerTel1 li a{margin:3px;padding:10px 5px 10px 32px;background:url('../images/contents/ico_tel.png') no-repeat 10px 12px;background-size:16px 16px;border:1px solid #dedede;border-radius:2px;display:block;letter-spacing:-0.5px}
+.customerTel li.fullH a{height:115px}
+.customerTop{padding-top:140px;background:url('../images/contents/img_cc300000.png') no-repeat center 35px;background-size:174px 90px;color:#666}
+.customerTop2{padding-top:150px;background:url('../images/contents/img_UC481000.png') no-repeat center 80px;background-size:117px 58px;text-align:center}
+.customerTel.hom a{padding:0;border:0;color:#666;text-align:center}
+.customerTel.hom a.urlHom{padding-top:50px;background:url('../images/contents/img_cc01.png') no-repeat center 15px;background-size:41px 30px}
+.customerTel.hom a.urlBank{padding-top:50px;background:url('../images/contents/img_cc02.png') no-repeat center 15px;background-size:44px 29px}
+/* 모바일 ATM */
+.AtmWrap > .productList > li{border-bottom:0}
+.customerTel.hom a.urlBank{padding-top:50px;background:url('../images/contents/img_cc02.png') no-repeat center 15px;background-size:44px 29px}
+.customerTel.hom a.urlBank{padding-top:50px;background:url('../images/contents/img_cc02.png') no-repeat center 15px;background-size:44px 29px}
+.stepList2{padding:8px 0 10px}
+.authWrap2{padding:25px 0 37px}
+.stepArea2 .stepList2 a{display:block;width:100%;height:100%}
+.atmInfoWRap ol li img{width:100%}
+.atmStepArea ul li{display:block;width:100%;height:100%;text-indent:-9999px;vertical-align:middle}
+.authWrap .authNum2 > span{display:inline-block;font-size:28px;color:#19a647;font-weight:bold}
+.authWrap .authNum2{text-align:center}
+.timeLimit2{font-size:13px}
+.timeLimit2 > span{margin-left:5px}
+.btnTimeLimit{display:inline-block;width:23px;height:23px;margin:-3px 0 0 0px;background:url("../images/contents/btn_re_time.png") no-repeat center center;background-size:12px 14px;vertical-align:middle;text-indent:-9999px}
+.atmDefTxt{font-size:13px;color:#666;text-indent:-14px;padding-left:14px;line-height:1.2;display:table-cell;vertical-align:middle;height:42px}
+/* 퇴직연금 */
+.productList li .link .btnClose{position:absolute;right:17px;top:50%;width:20px;height:20px;margin-top:-10px;background:url(../images/common/btn_popClose.png) no-repeat center center;background-size:14px 13px}
+.productList li .link.rhPd .prodTit{width:calc(100% - 30px)} 
+.productList li .link.rhPd .txtRhtPd{width:calc(100% - 30px)} 
+.innerBox{padding:12px 17px 0px 17px}
+.innerBox .prodTit{margin-bottom:10px}
+.tblCell{padding:15px 17px}
+.tblCell{display:table;width:100%}
+.tblCell dt{display:table-cell;width:50%}
+.tblCell dd{display:table-cell;width:50%;text-align:right}
+.tblCell + .formArray{border-top:1px solid #dedede}
+.h3tit{font-weight:normal;line-height:1}
+.productWrap.bgBlue{background-color:#effbf3}
+.productWrap.bgGray{background-color:#f8f8f8}
+.productWrap.bgNavy{background-color:#19A647;color:#fff}
+.productWrap.bgNavy .tblCell{padding:15px 17px}
+.productList .productHeader + .detailList{margin-top:-1px}
+.pdSmall th , .pdSmall td{padding:11px 2px;font-size:12px;text-align:center}
+.thCenter tfoot td{background-color:#f8f8f8} 
+.addAccordMenu .serviceaddList > li{position:relative;border-bottom:1px solid #dedede}
+.addAccordMenu .serviceaddList > li.active{background-color:#f7fcf9}
+.addAccordMenu .serviceaddList > li.active a:before{background-image:url(../images/common/ico_list_less.png)}
+.addAccordMenu .serviceaddList > li a:before{content:'';display:block;width:40px;height:40px;background-image:url(../images/common/ico_list_more.png);background-repeat:no-repeat;background-position:center center;background-size:10px auto;position:absolute;top:2px;right:5px}
+.addAccordMenu .serviceaddList > li > a{display:block;font-size:14px;font-weight:bold;padding:12px 17px;box-sizing:border-box}
+.addAccordMenu .addServiceinner{padding:15px 0px;border-top:1px solid #dedede;margin:0 17px;display:none}
+.addAccordMenu .addServiceinner dt:first-child{margin-top:0}
+.addAccordMenu .addServiceinner dt{font-size:13px;line-height:1;margin-bottom:7px;margin-top:10px}
+.addAccordMenu .addServiceinner dt:nth-of-type(2){margin-top:12px}
+.prodTit .badge{display:inline-block !important}
+.guideListTop .topConfirmArea{font-size:16px;padding:3px 10px 20px}
+.iptPr5{padding-right:5px !important}
+.btnHig30{height:30px !important;line-height:28px !important}
+/* 착오송금 반환동의 */
+.selectArea.test a:first-child{background-image:none}
+.wrapTblDefault .thCenter tbody td .history{overflow:hidden}
+.wrapTblDefault .thCenter tbody td .history dt{float:left;clear:left}
+.wrapTblDefault .thCenter tbody td .history dd{float:left;font-weight:normal}
+.returnWrap .guideList.helper{position:relative;border:1px solid #dedede}
+.returnWrap .guideList.helper .btn_helper{position:absolute;top:15px;right:10px}
+.returnWrap .guideList.helper .btn_helper.on{transform:rotate(180deg)}
+.returnWrap .guideList.helper .helper_con{display:none;padding:10px;margin:10px -15px -15px;background:#fff}
+/* 라운지 */
+.bannerWrap{-webkit-display:flex;display:flex;text-align:center}
+.bannerWrap.bottom{margin-top:12px}
+.bannerWrap>div{-webkit-flex:1;flex:1;border:1px solid #e1e1e1;margin-right:12px;height:84px}
+.bannerWrap>div>p{padding:50px 0 13px 0}
+.bannerWrap .bannerLst{margin-right:0}
+.popTerms input[type='checkbox']{width:21px;height:21px;opacity:1}
+.popTerms .checkList label strong{vertical-align:initial}
+/* 해외체류인증 */
+.checkWrap{margin-top:20px;padding:15px;background-color:#fff;border:1px solid #dedede}
+.bnrEventList img{width:100%;vertical-align:top}
+.eventList{margin-top:20px}
+.eventList li{margin-bottom:15px;padding-bottom:19px;border-bottom:1px solid #dedede}
+.eventList li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.eventList.lineList li:last-child{margin-bottom:15px;padding-bottom:19px;border-bottom:1px solid #dedede}
+.eventList .eventListImg{position:relative;border:1px solid #ebebeb}
+.eventList .eventListImg img{width:100%;vertical-align:top}
+.eventList .eventListCon{padding-top:15px;text-align:center}
+.eventList .eventListCon .eventDday{display:inline-block;padding:2px 6px 3px;font-size:12px;font-weight:bold;color:#19A647;border-top:1px solid #19A647;border-bottom:1px solid #19A647}
+.eventList .eventListCon .eventTit{margin:8px 0 5px;font-size:14px}
+.eventList .eventListCon .eventTit.new:after{display:inline-block;content:'';text-indent:-9999px;vertical-align:-5px;margin-left:5px;width:11px;height:11px;background:url('../images/common/ico_board_new.png') no-repeat;background-size:100% 100%}
+.eventList .eventListCon .eventDate{font-size:13px;color:#666}
+.eventList .eventListCon .btnLike{margin-left:6px;padding:0 6px 0 21px;height:22px;line-height:20px;font-size:11px;border:1px solid #999;border-radius:2px;background:url('../images/common/ico_list_heart03.png') no-repeat 17% 45%;background:url('../images/common/ico_list_heart03.png') no-repeat top 5px left 6px;background-size:11px 10px;color:#19A647}
+.eventList .eventListCon .btnLike.active{position:relative;background:url('../images/common/ico_list_heart02.png') no-repeat 6px 5px;background-size:11px 10px}
+.eventList .eventListCon .btnLike.active:after{content:'좋아요 선택됨';display:inline-block;width:1px;height:1px;font-size:1px;color:transparent;position:absolute;top:0;left:0;overflow:hidden}
+.defTit .qnaNum{font-size:16px}
+.reportBnrWrap{margin:20px 17px 0}
+.reportBnrWrap img{width:100%;vertical-align:top}
+.termsCont[class*="scroll"]{padding:10px !important;font-size:13px}
+
+/* 마이페이지-우대혜택 */
+.listWrap .listHeader{background-color:#f7fcf9;padding:10px 0;border-bottom:1px solid #dedede;border-top:1px solid #dedede}
+.listTbl{display:table;width:100%}
+.listCont > ul > li{border-bottom:1px solid #dedede}
+.listHeader .listTbl > li, .listTbl > span{display:table-cell;vertical-align:middle;text-align:center;padding:5px 0;width:30%;letter-spacing:-0.1em;font-size:12px}
+.listHeader .listTbl > li:nth-child(3) ,
+.listHeader .listTbl > li:nth-child(1),
+.listTbl > span:nth-of-type(3) ,  .listTbl > span:nth-of-type(1){width:20%}
+.listFlex{display:-webkit-flex;display:-webkit-box;display:flex;-webkit-flex:auto;flex:auto;justify-content:-webkit-center;justify-content:space-between;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-flex-basis:25%;flex-basis:25%;padding:0 10px}
+.listFlex span{display:inline-block;text-align:center}
+.fullBox{margin:0 -17px;overflow:hidden}
+.fullBox.boxGray{background-color:#f8f8f8}
+.fullBox.boxBlue{background-color:#f7fcf9} 
+.innerBox.btd{border-top:1px solid #dedede}
+.benefitBox{margin:10px 0}
+.benefitBox .dflex li{display:table;position:relative;width:33.3%;height:36px;text-align:center;line-height:1.1;color:#111;font-weight:700;background-color:#fff;border-bottom:1px solid #fff;border-left:1px solid #fff;box-sizing:border-box}
+.benefitBox .dflex li span,.benefitBox .dflex li.on span{display:table-cell;vertical-align:middle;font-size:12px}
+.benefitBox li.on{background-color:#19A647}
+.benefitBox li.on span{color:#fff;display:table;width:100%;height:100%;z-index:10}
+.benefitBox li span:after{display:block;content:'수수료 미우대';width:100%;height:100%;position:absolute;top:0;left:0;z-index:0;border:1px solid #999;box-sizing:border-box;font-size:1px;color:transparent}
+.benefitBox li.on span:after{content:'수수료 우대';color:transparent;position:absolute;top:0;left:0;font-size:1px;line-height:1px;overflow:hidden}
+.benefitBox .beneicon{text-align:right;color:#666;font-size:12px;margin-bottom:9px}
+.benefitBox .beneicon span{line-height:1}
+.benefitBox .beneicon span:before{content:'';display:inline-block;width:14px;height:14px;box-sizing:border-box;vertical-align:-3px;margin-right:2px}
+.benefitBox .beneicon span.fst:before{background-color:#19A647}
+.benefitBox .beneicon span.lst:before{border:1px solid #999}
+.graphTerm{display:table;width:100%;table-layout:fixed;padding:10px 10px 20px 10px}
+.graphTerm li{position:relative;float:none !important;display:table-cell;text-align:center;position:relative;width:25%;height:150px}
+.graphTerm li:after{content:'';display:block;height:2px;background-color:#999}
+.graphTerm .graphType{padding-top:30px}
+.graphTerm .graphType .graphBar{position:relative;height:105px;display:-webkit-flex;display:flex;justify-content:-webkit-center;justify-content:center}
+.graphBar span{display:block;margin-top:-35px;margin-left:-22px}
+.graphBar .scoreH{position:absolute;bottom:0;width:16px;margin:0 auto;background-repeat:repeat-y}
+.graphBar .scoreH.green{background-image:url('../images/contents/bg_green_pt.png')}
+.graphBar .scoreH.royal{background-image:url('../images/contents/bg_red_pt.png')}
+.graphBar .scoreH.purple{background-image:url('../images/contents/bg_purple_pt.png')}
+.graphBar .scoreH.gold{background-image:url('../images/contents/bg_orange_pt.png')}
+.graphBar .scoreH.blue{background-image:url('../images/contents/bg_blue_pt.png')}
+.graphBar .scoreH.gray{background-image:url('../images/contents/bg_gray_pt.png')}
+.graphBar .scoreH > span{display:block;width:60px;font-size:11px}
+.graphType dt{position:absolute;bottom:-10px;left:50%;margin-left:-30px;font-size:12px}
+.graphType  dd strong{display:block;font-size:10px;line-height:1}
+.errBox{position:fixed;bottom:60px;padding:0 15px;left:0;width:100%}
+.dflex{overflow:hidden}
+.dflex li{float:left}
+.pushIcon{display:table;width:100%}
+.pushIcon img{width:58px;display:table-cell}
+.pushIcon span{display:table-cell;vertical-align:middle;padding:5px 0 0 10px}
+.hopePoint{color:#aaa !important}
+.bluePoint{color:#19A647 !important}
+.greenPoint{color:#338e12 !important}
+.redPoint{color:#da0123 !important}
+.goldPoint{color:#f69f03 !important}
+.purplePoint{color:#8b55ad !important}
+.wrapTblDefault .bluePoint, .hanaroCheckWrap .bluePoint{color:#0066b3 !important}
+.top_info{margin:0 -17px}
+.top_info img{width:100%;min-width:100%;margin:0;padding:0;vertical-align:top}
+/* 마이페이지 */
+.myTblWrap{width:100%;display:table}
+.myTblWrap .myTblCont{width:calc(100% - 45px);display:table-cell}
+.myTblWrap .myTblBtn{display:table-cell;text-align:right;vertical-align:middle}
+.areaBodyBtnSelect.tabTxtSt + .guideListTop{margin-top:20px}
+.areaBodyBtnSelect.ty3 a{width:33% !important;margin-left:-1px}
+.areaBodyBtnSelect.ty3 a:first-child{width:34% !important;margin-left:0}
+/* 키보드뱅킹 */
+.swipeWrap{padding:0;padding-top:40px;position:fixed;height:100%;width:100%;padding-bottom:94px}
+.swipeWrap > .swiper-container{height:100%}
+.swipeBanner{width:100%;height:100%}
+.swipeImgWrap{background:#f7fcf9}
+.swipeBanner li{height:100%;margin-top:25px;padding:0 17px;padding-bottom:23%}
+.swipeBanner li img{width:80%;max-width:640px;display:block;margin:0 auto}
+.bannerPrevBtn{position:absolute;top:50%;left:20px;width:28px;height:53px;z-index:10;display:none;background:url(../images/contents/ico_keyPrev.png) no-repeat;background-size:28px 53px;margin-top:-26px;text-indent:-9999px}
+.bannerNextBtn{position:absolute;top:50%;right:20px;width:28px;height:53px;z-index:10;background:url(../images/contents/ico_keyNext.png) no-repeat;background-size:28px 53px;margin-top:-26px;text-indent:-9999px}
+.slideBullet{position:relative;bottom:8%;z-index:1}
+.slideBullet ul li{text-indent:-9999px}
+.answerWrap dd{font-size:12px}
+.keyboardHelpWrap{margin:0 -17px}
+.keyboardListTop .areaBodyBtnFull{text-align:center}
+.keyboardHelpWrap .areaBodyBtnFull{text-align:center}
+.keyboardInfoTxt{color:#666}
+.keyboardInfoTxt:before{content:"";display:block;width:145px;height:74px;background:url(../images/contents/ico_keyboardInfo.png) no-repeat;background-size:145px 74px;margin:35px auto}
+.keyboardListTop .areaBodyBtnFull a{font-weight:bold;display:inline;padding:8px 15px}
+.keyboardHelpWrap .areaBodyBtnFull a{font-weight:bold;display:inline;padding:8px 15px}
+.keyboardHelpWrap > .chatHelpList{background:#f8f8f8}
+.keyboardHelpWrap > .chatHelpList li > a{padding:10px 0 10px 15px;font-size:14px}
+.keyboardHelpWrap > .chatHelpList li strong{font-size:13px}
+.keyboardHelpWrap > .chatHelpList li p{font-size:13px;color:#666;margin-top:2px;margin-bottom:10px}
+.keyboardHelpWrap > .chatHelpList li p:last-child{margin-bottom:0}
+.keyboardHelpWrap > .chatHelpList li p > a{color:#19A647;text-decoration:underline !important}
+.keyboardHelpWrap > .chatHelpList li p.keyboardInfoList01:after{content:"";display:block;width:155px;height:123px;background:url(../images/contents/keyboardInfo01.png) no-repeat;background-size:155px 123px;margin:10px auto 0}
+.keyboardHelpWrap > .chatHelpList li p.keyboardInfoList02:after{content:"";display:block;width:155px;height:100px;background:url(../images/contents/keyboardInfo02.png) no-repeat;background-size:155px 100px;margin:10px auto 0}
+.keyboardHelpWrap > .chatHelpList li p.keyboardInfoList03:after{content:"";display:block;width:177px;height:94px;background:url(../images/contents/keyboardInfo03.png) no-repeat;background-size:177px 94px;margin:10px auto 0}
+.keyboardHelpWrap > .chatHelpList li p.keyboardInfoList04:after{content:"";display:block;width:177px;height:104px;background:url(../images/contents/keyboardInfo04.png) no-repeat;background-size:177px 104px;margin:10px auto 0}
+.keyboardHelpWrap > .chatHelpList li p.keyboardInfoList05:after{content:"";display:block;width:177px;height:100px;background:url(../images/contents/keyboardInfo05.png) no-repeat;background-size:177px 100px;margin:10px auto 0}
+.keyboardHelpWrap > .chatHelpList li p.keyboardInfoList06:after{content:"";display:block;width:177px;height:335px;background:url(../images/contents/keyboardInfo06.png) no-repeat;background-size:177px 335px;margin:10px auto 0}
+.keyboardHelpWrap .listDot > li{color:#111}
+.keyboardHelpWrap > .chatHelpList .toggleCont{padding:10px 15px}
+/* pdf 아이프레임 */
+.iframeWrap{border:1px solid #dedede;height:calc(100% - 30px)}
+.pdfStep{margin-bottom:10px}
+.stepArea2.pdfStep .stepList li{width:15px;margin:0 2px}
+.branchWrap{width:100%;display:table}
+.branchWrap .txt{width:calc(100% - 70px);color:#111;vertical-align:top;display:table-cell}
+.branchWrap .branchRht{width:70px;vertical-align:top;display:table-cell}
+.branchWrap .branchRht > a{width:30px;height:30px;border:1px solid #999;border-radius:2px}
+.branchWrap .branchRht .btnBranchTel{margin-right:6px;background:url(../images/common/ico_tel.png) no-repeat center center;background-size:16px 16px}
+.branchWrap .branchRht .btnLocation{background:url(../images/common/ico_location.png) no-repeat center center;background-size:16px 16px}
+.branchWrap .txtAdd{color:#111;display:block}
+.branchWrap .txtTel{color:#111;display:block}
+/* 운세 */
+.topConfirmArea + .bannerBotWrap{margin-top:30px}
+.wrapTblDefault + ul:nth-of-type(1){margin-top:5px}
+.benefitBox.timeGuide li:before{display:block;content:'';width:100%;height:100%;position:absolute;top:0;left:0;z-index:0;border:1px solid #19A647;box-sizing:border-box}
+.benefitBox.timeGuide li:after{display:none}
+.benefitBox.timeGuide li span:after{content:''}
+.benefitBox.timeGuide li.on span:before{content:'';color:transparent;text-indent:-9999px;color:#fff;background-color:#19A647}
+.benefitBox.timeGuide li.on span:after{display:block;content:'선택됨';color:transparent}
+.benefitBox.timeGuide li a{display:block;line-height:34px;position:relative;z-index:2}
+.blind.addTag{top:initial !important}
+.noticeTxt{padding:15px 17px}
+.hitList .srchDel{display:block;position:absolute;top:25px;right:0;width:8px !important;height:8px !important;padding:0;text-indent:-9999px;background-image:url(../images/contents/btn_searchList_del.png);background-repeat:no-repeat;background-size:8px 8px;background-position:0 0}
+.hitList li a:after{display:block;content:'';clear:both}
+.eventList .eventListCon .btnLike.active:after{content:'' !important;display:inline-block;width:1px;height:1px;font-size:1px;color:transparent;position:absolute;top:0;left:0;overflow:hidden}
+.eventList .eventListCon .eventTit.new:after{vertical-align:0}
+.selectImgList01 li input[type="radio"],
+.selectImgList01 li input[type="checkbox"],
+.selectImgList02 li input[type="radio"],
+.selectImgList02 li input[type="checkbox"],
+.selectImgList03 li input[type="radio"],
+.selectImgList03 li input[type="checkbox"],
+.selectImgList04 li input[type="radio"],
+.selectImgList04 li input[type="checkbox"]{background-size:100% auto}
+/* 통합메인 */
+/* 나의 메뉴 설정 */
+.myMenuList{margin-top:14px}
+.myMenuList li{display:inline-block;margin-top:6px}
+.myMenuList li a{display:block;padding:6px 10px;border:1px solid #dedede;border-radius:2px}
+.myMenuList li a.active{color:#fff;border:1px solid #19A647;background:#19A647}
+.bgTit{line-height:40px;margin:20px -17px 0;padding:0 17px;background:#f8f8f8}
+.basicBackBtn{display:inline-block;margin-left:9px;padding:6px 6px 6px 21px;border:1px solid #19A647;color:#19A647;line-height:1;font-size:11px;border-radius:2px;background:#fff url('../images/main/ico_rollback.png') no-repeat 5px center;background-size:12px auto;font-weight:bold;float:right;overflow:hidden}
+.myMenuSelect{margin-top:16px}
+.myMenuSelect .inner{margin:0 -2px}
+.myMenuSelect ul{overflow:hidden}
+.myMenuSelect ul li{float:left;width:25%;margin-top:4px;padding:0 2px;height:61px;display:table}
+.myMenuSelect li a{position:relative;display:table-cell;vertical-align:middle;height:100%;line-height:1.2;border:1px solid #dedede;border-radius:2px;text-align:center}
+.myMenuSelect li a .clickOrder{display:none;position:absolute;top:5px;right:5px;width:15px;height:15px;font-size:10px;line-height:15px;color:#111;background:#fff;border-radius:50%;text-align:center}
+.myMenuSelect li a.active{color:#fff;border:1px solid #19A647;background:#19A647}
+.myMenuSelect li a.active:after{position:absolute;bottom:0;left:0;content:'선택됨';opacity:0}
+.myMenuSelect li a.active .clickOrder{display:block}
+@media all and (min-width :0px) and (max-width:320px){
+	.mainWrap.popWrap.fullLayerPop .popInner h3{color:#19A647;text-align:center;font-size:16px;font-weight:normal;padding:10px 0 0 0 !important;line-height:1}
+	.recommendBanner .swiper-slide > div a > span{letter-spacing:-1px}
+	.combineSearchBar.detailSearch .inputList{width:62%}
+}
+/* 새소식 */
+.zoomWrap{text-align:right;padding-right:17px}
+/* 전체메뉴 */
+.idVisual{ text-align:center}
+.idVisual > img{ max-width:220px;margin-bottom:10px}
+.idVisual > .listDot{ text-align:left}
+/* 간편송금_더치페이 */
+.dPay .dPaySelct{text-align:right;display:table-cell;width:120px}
+.dPay .dPaySelct input[type="radio"]{display:none;width:0;height:0}
+.dPay .dPaySelct input[type="radio"] + label{width:50px;height:25px;background:#fff;color:#111;border:1px solid #999;text-align:center}
+.dPay .dPaySelct input[type="radio"]:checked + label{background:#6a7688;color:#fff;border-radius:2px}
+/* 퇴직연금 */
+tr.active2 td, .active2 th{background:#f8f8f8}
+.boxHeaderBlue.type02{border:none;background:none;padding:0;position:relative}
+.boxHeaderBlue.type02 .txt{color:#3b5997;font-size:15px}
+.boxHeaderBlue.type02 span{position:absolute;right:0;top:3px;font-size:11px;color:#999}
+.active2 .boxHeaderBlue.type02 .txt{font-size:13px;color:#111;font-weight:normal}
+td.bgNone, th.bgNone{background:#fff}
+/* 은행 선택 리스트 */
+[class^="bankListW"]{margin-top:9px}
+[class^="bankListW"] ul:after{display:block;content:'';clear:both}
+[class^="bankListW"] li{float:left;width:50%;min-height:49px;position:relative}
+[class^="bankListW"] li a{display:block;padding:11px 0;line-height:25px;font-size:13px}
+[class^="bankListW"] li a img{width:25px;height:25px;margin-right:10px;vertical-align:middle}
+[class^="bankListW"] li .twice{position:absolute;left:35px;top:0;line-height:12px;font-size:12px;text-indent:-35px}
+[class^="bankListW"] li .twice span{position:relative;top:-9px}
+.accountList .accCont > a{display:block;padding:11px 35px 15px 0;background:url(../images/common/ico_list_link.png) no-repeat 100% 50%;background-size:9px 16px}
+.graphTerm{display:table;width:100%;min-height:0px;table-layout:fixed;padding:10px 10px 20px 10px}
+.graphTerm.type01 dt{bottom:auto;top:145px;line-height:15px;width:100%;margin-left:0;left:0}
+.graphType dt{position:absolute;bottom:-10px;font-size:12px;text-align:center;width:100%;margin-left:0;left:0}
+.graphBar.type01 .scoreH span{margin-top:-23px}
+.graphBar.type02{width:53px;margin:0 auto}
+.graphBar.type02 .scoreH:first-child{left:0}
+.graphBar.type02 .scoreH:last-child{right:0}
+.graphBar.type02 .scoreH span{width:62px}
+@media screen and (max-width:362px){.graphTerm.type01{padding:10px 10px 35px 10px}}
+.topBanner{margin:22px 0 0} 
+.topBanner a{display:block}
+.topBanner img{max-width:100%;width:100%;height:auto;display:block} 
+.bannerSlider.swiper-container{margin-top:22px;height:98px}
+.bannerSlider.swiper-container .topBanner{margin:0}
+.bannerSlider.swiper-container-horizontal>.swiper-pagination-bullets, 
+.bannerSlider .swiper-pagination-custom, 
+.bannerSlider .swiper-pagination-fraction{bottom:0px}
+/* 로그인 */
+.loginWay.btnLang{text-align:center;position:fixed;left:0;bottom:124px;width:100%}
+.loginWay.btnLang a:first-child{float:none;display:inline-block}
+/* 고객센터 */
+.imgbgBox.type01{padding-top:150px;background:url('../images/contents/bg_transview_ok.png') no-repeat center 20px;background-size:215px 116px}
+.imgbgBox.type01 .infoTxt{margin-bottom:20px}
+.imgbgBox.type01 .inputList.inpBgNh input[type="tel"]{padding-left:53px;background:#fff url('../images/common/img_logo_nh.png') no-repeat 10px center;background-size:29px auto}
+.imgbgBox.type01 .sideBtnArea{overflow:hidden}
+.imgbgBox.type01 .sideBtnArea > p{overflow:hidden}
+.imgbgBox.type01 .sideBtnArea > p.dateTxt{float:left}
+.imgbgBox.type01 .sideBtnArea > .unit{float:right}
+.imgbgBox.type01 .sideBtnArea .bankico{vertical-align:middle;margin-right:6px}
+.imgbgBox.type01 .sideBtnArea .bankico img{width:auto ;height:16px}
+.imgbgBox.type01 .btnRound{padding:0 15px;color:#19A647;border:1px solid #19A647;border-radius:10px;font-size:11px;line-height:21px}
+.formTit.tyoe01 .checkList.allChk{margin-top:0;float:right}
+.formTit.tyoe01 .checkList.allChk label{width:auto}
+/* 스마트뱅킹 가입 */
+.joinSmartWrap .defSubTit{font-size:18px;text-align:center;padding-top:90px;margin-top:30px;background-image:url(../images/contents/img_JoinSm_01art.jpg);background-size:auto 49%;background-repeat:no-repeat;background-position:center top}
+.joinSmartWrap .stepListWrap{padding-top:20px;margin-top:0}
+.joinSmartWrap .stepListWrap ol > li{border-top:1px solid #eee;margin-top:0px;padding:15px 0}
+.joinSmartWrap .stepListWrap ol > li:first-child{border-top:0 none;padding-top:0;font-size:13px}
+.joinSmartWrap .stepListWrap ol > li .stepNum{background-color:#19A647}
+.joinSmartWrap .listDot > li{margin-top:5px;padding-left:0px;font-size:12px;color:#666;background:none;background-size:0 0}
+.joinSmartWrap + .guideList .f12{margin-top:10px}
+.joinSmartWrap + .guideList .listDot{margin-top:10px}
+/* NH프로포즈 */
+.renew .topInfoTxt strong{font-size:16px}
+.renew .wrap01{margin:20px -17px 0;padding:0 17px 30px}
+.renew .wrap01 .subTitle a{display:inline-block;font-size:10px;color:#fff;border:0 none;border-radius:100px;padding:4px 8px;margin:0 0 0 5px;background-color:#19A647}
+.renew .wrap01 .subCon{font-size:13px;color:#888;margin-top:6px}
+.renew .wrap01 ul{display:block;margin:20px 0 0px 0}
+.renew .wrap01 ul:after{content:'';display:block;clear:both}
+.renew .wrap01 ul li{width:49%;float:left;margin:6px 0 0 0}
+.renew .wrap01 ul li a{display:block;width:100%;font-size:13px;color:#333;padding:8px;text-align:center;border:1px solid #bbb}
+.renew .wrap01 ul li:nth-child(2),
+.renew .wrap01 ul li:nth-child(4){float:right}
+.renew .wrap02{padding:20px 17px 30px;border-top:10px solid #e8ebee;margin:0 -17px}
+.renew .roungeCmsWrap.renew.wrap02{padding:20px 17px 0px}
+.renew .wrap02 .subTitle,
+.renew .wrap02 .subCon{font-size:18px;text-align:left}
+.renew .wrap02 .subCon{font-size:13px;color:#888;margin-top:6px}
+.renew .wrap02 ul{display:block;margin-top:20px}
+.renew .wrap02 ul li{padding:0 0 10px 80px;margin-bottom:20px;position:relative}
+.renew .wrap02 ul li:nth-child(2){padding-top:5px}
+.renew .wrap02 ul li:before{position:absolute;top:2px;left:0px;display:block;content:'';width:60px;height:60px;border:1px solid #f4f4f4;border-radius:1000px;background-color:#fff;background-image:url(../images/contents/hl/ico_joy_health_01.png);background-size:34px auto;background-repeat:no-repeat;background-position:center center}
+.renew .wrap02 ul li:nth-child(1):before{background-image:url(../images/contents/hl/ico_joy_health_01.png)}
+.renew .wrap02 ul li:nth-child(2):before{background-image:url(../images/contents/hl/ico_joy_health_02.png)}
+.renew .wrap02 ul li:nth-child(3):before{background-image:url(../images/contents/hl/ico_joy_health_03.png)}
+.renew .wrap02 ul li:nth-child(4):before{background-image:url(../images/contents/hl/ico_joy_health_04.png)}
+.renew .wrap02 ul li:nth-child(5):before{background-image:url(../images/contents/hl/ico_joy_health_05.png)}
+.renew .wrap02 ul li:nth-child(6):before{background-image:url(../images/contents/hl/ico_joy_health_06.png)}
+.renew .wrap02 dl dt{color:#111;font-size:14px}
+.renew .wrap02 dl dd{color:#555;font-size:12px;margin-top:5px}
+.renew .wrap02 .btnWrap{width:100%;margin:0 auto;text-align:center}
+.renew .wrap02 .btnWrap .btnType02{margin:0 auto;text-align:center;display:block;border-radius:1000px;height:40px;line-height:38px}
+.renew .wrap03{padding:20px 17px;border-top:10px solid #e8ebee;margin:0 -17px}
+.renew .wrap03 .subTitle{text-align:center}
+/* 그래프 마이너스 타입 추가 */
+.graphTerm.minusType li{position:relative;float:none !important;display:table-cell;text-align:center;position:relative;width:25%;height:97px}
+.graphTerm.minusType .graphType{padding-top:15px}
+.graphTerm.minusType .graphType .graphBar{height:52px}
+.graphTerm.minusType .graphType.minusGraph .graphBar .scoreH{bottom:-35px}
+.graphTerm .graphType .graphBar.type03 .scoreH span{margin-top:-35px}
+.graphBar .scoreH{left:50%;margin-left:-8px}
+.graphTerm.type01{min-height:200px}
+.graphTerm.dflex.minusType.pt0 li{height:30px}
+.graphTerm.dflex.minusType.pt0 .graphType{padding-top:0}
+.innerBox.btd.type02{padding-top:10px !important}
+.innerBox.btd.type02 .graphTerm{padding-top:20px !important}
+/* 텍스트를 크게 볼 수 있는 팝업 */
+.popWrap.fullLayerPop.zoomPop .popInner{overflow-y:auto}
+.popWrap.fullLayerPop.zoomPop .popInner .popCont{padding-bottom:124px}
+.popWrap.fullLayerPop.zoomPop .popInner h1{padding-top:0}
+.Android .popBtnWrap.zoomType01 .popBtn{border-bottom:40px solid #fff;height:84px}
+.popWrap.fullLayerPop.zoomPop .boardDetailCon{padding-bottom:80px}
+.loading.renew2019{width:80px;height:80px;margin:-40px 0 0 -40px}
+.Android.android4d4 .popWrap.fullLayerPop.zoomPop .popInner h1{margin-top:20px}
+.Android.android4d4 .popWrap.fullLayerPop.zoomPop .popBtnWrap .popClose{margin-top:20px}
+/* 신규계좌개설 팝업 */
+.popWrap.fullLayerPop .newAccount{background:#fff}
+.popWrap.fullLayerPop .newAccount .bankPopTit{padding-top:70px}
+.popWrap.fullLayerPop .newAccount .bankPopTit h1{padding:0;border-bottom:none;text-align:center;font-size:23px}
+.popWrap.fullLayerPop .newAccount .bankPopTit p{text-align:center;font-size:14px;color:#6a7688;padding-top:5px}
+.popWrap.fullLayerPop .newAccount .popCont{margin-top:25px}
+.popWrap.fullLayerPop .newAccount .tabLv1 li a span{color:#6a7688}
+.popWrap.fullLayerPop .newAccount .tabLv1 li a.active span{color:#111111}
+.popWrap.fullLayerPop .newAccount .tabLv1 li a.active span:after{background:#111111}
+.popWrap.fullLayerPop .newAccount .newAccount_Wrap{position:relative;padding:0px 0 28px}
+.popWrap.fullLayerPop .newAccount .newAccount_list{min-height:auto;padding:11px 0 0 0;box-sizing:border-box}
+.popWrap.fullLayerPop .newAccount .newAccount_div{margin-top:15px}
+.popWrap.fullLayerPop .newAccount .newAccount_div a{position:relative;display:block ;width:100%;text-align:left;border-radius:5px;box-sizing:border-box;background-color:#fff;box-shadow:2px 1px 10px 6px rgba(0, 0, 0, 0.06);padding:20px 20px}
+.popWrap.fullLayerPop .newAccount .newAccount_div.nhat a{height:105px}
+.popWrap.fullLayerPop .newAccount .newAccount_div a .bgtit{font-size:14px;font-weight:bold}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive:after{content:"";display:block;width:auto;height:auto;position:absolute;right:10px;bottom:-1px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_01:after{width:79px;height:59px;background:url(../images/main/new/bg_newaccout_01.png) no-repeat;background-size:79px 59px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_02:after{width:66px;height:60px;background:url(../images/main/new/bg_newaccout_02.png) no-repeat;background-size:66px 60px;right:15px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_03:after{width:69px;height:68px;background:url(../images/main/new/bg_newaccout_03.png) no-repeat;background-size:69px 68px;right:15px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_04:after{width:81px;height:64px;background:url(../images/main/new/bg_newaccout_04.png) no-repeat;background-size:81px 64px;right:0}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_05:after{width:87px;height:53px;background:url(../images/main/new/bg_newaccout_05.png) no-repeat;background-size:87px 53px;right:0}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_06:after{width:57px;height:62px;background:url(../images/main/new/bg_newaccout_06.png) no-repeat;background-size:57px 62px;right:20px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_07:after{width:78px;height:61px;background:url(../images/main/new/bg_newaccout_07.png) no-repeat;background-size:78px 61px;right:11px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_08:after{width:65px;height:58px;background:url(../images/main/new/bg_newaccout_08.png) no-repeat;background-size:65px 58px;right:22px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_09:after{width:61px;height:51px;background:url(../images/main/new/bg_newaccout_09.png) no-repeat;background-size:61px 51px;right:12px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .imgActive.bg_acc_10:after{width:70px;height:59px;background:url(../images/main/new/bg_newaccout_10.png) no-repeat;background-size:70px 59px;right:12px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .bgtxt{white-space:normal;line-height:1.5;word-wrap:break-word;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;min-height:20px;text-align:left;width:90%;font-size:12px;color:#666666;margin-top:2px}
+.popWrap.fullLayerPop .newAccount .newAccount_div.nhat .bgtxt{width:80%}
+.popWrap.fullLayerPop .newAccount .newAccount_div .bgtxtBox{position:absolute;width:60px;height:20px;line-height:20px;right:20px;top:20px;font-size:11px;margin:0;padding:0;text-align:center}
+.popWrap.fullLayerPop .newAccount .newAccount_div .bgtxtBox.Blue{background-color:#19A647;color:#fff}
+.popWrap.fullLayerPop .newAccount .newAccount_div .bgtxtBox.green{background-color:#96c43e;color:#fff}
+.popWrap.fullLayerPop .newAccount .newAccount_div .bgtxtBox.purple{background-color:#6651a2;color:#fff}
+.popWrap.fullLayerPop .newAccount .newAccount_div .pointUser{color:#19A647;font-size:16px;line-height:16px;margin-top:7px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .pointUser span{padding-right:5px;font-size:12px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .pointUser strong{vertical-align:0px;font-size:14px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .pointUser strong + span{padding-left:10px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .pointUser .money strong{font-size:16px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .pointUser .money em{font-size:13px}
+.popWrap.fullLayerPop .newAccount .newAccount_div .datetxt{font-size:12px;color:#6b7680}
+.accListBtn.type01{border:0 none;margin-top:25px}
+.accListBtn.type01:after{content:'';display:block;clear:both}
+.accListBtn.type01 a{display:inline-block;width:auto;padding-right:25px;padding-left:10px;line-height:28px;border:1px solid #dedede;;border-radius:3px}
+.accListBtn.type01 a{height:30px;background-image:url('../images/common/ico_arr_down.png') no-repeat;background-position:68px center;background-size:11px 7px;position:relative}
+.accListBtn.type01 a.active{background-image:url('../images/common/ico_arr_up.png');position:relative}
+.toggleBox .formArray.array2.type02{margin-top:10px}
+.toggleBox .formArray.array2.type02 input[type="radio"] + label{vertical-align:top}
+.listDot.ksType01 strong{display:inline;color:#111;vertical-align:top;text-align:left}
+.listDot.ksType01 li span{display:inline;text-align:left;vertical-align:top}
+.accInfoTit.type02{margin:20px 0 0 0}
+/* 알림옵션설정, 삭제 버튼 */
+.selDetailList.type02 .listTit a.btnType02.btnDel{right:17px}
+.selDetailList.type02 .listTit a.btnType02.btnOption{right:70px;padding-right:22px;background:#fff url(../images/common/ico_arr2_down.png) no-repeat right 7px center;background-size:10px auto}
+.selDetailList.type02 .listTit a.btnType02.btnOption.active{background:#fff url(../images/common/ico_arr2_up.png) no-repeat right 7px center;background-size:10px auto}
+.optionAcc{background:#fff;padding:17px;display:none}
+.optionAcc .formWrap{margin-top:0}
+.selDetailList.type02 > ul > li.active{background:#fff}
+/* 상세보기 리스트 버튼 많을 경우 아랫줄로 */
+.selDetailList .listTit > .listPlus{ width:100%;height:30px;position:relative;margin-top:5px}
+.selDetailList .listTit > .listPlus a.btnType02{ bottom:0;right:7px}
+.selDetailList .listTit > .listPlus a.btnType02.btnOption{ right:98px}
+.selDetailList .listTit > .listPlus a.btnType02.btnDel{ right:45px}
+.selDetailList .listTit > .listPlus a.btnType02.btnEdit{ right:-8px}
+/* 알림계좌 아코디언 방식으로 변경 */
+.selDetailList.selAccountList.accodianType01{margin-top:20px;position:relative}
+.selDetailList.selAccountList.accodianType01 .toggleWrap{border-bottom:1px solid #ddd}
+.selDetailList.selAccountList.accodianType01 .toggleWrap:first-child{border-top:1px solid #ddd}
+.selDetailList.selAccountList.accodianType01 .toggleWrap h2{background:#eee;padding:10px 17px;margin:0;color:#f4670a}
+.selDetailList.selAccountList.accodianType01 .toggleWrap h2 a{height:44px;padding:10px 17px;background-position:right 17px center}
+.selDetailList.selAccountList.accodianType01 .accordianCont.toggleCont .wrapTblDefault{padding:0 17px}
+.selDetailList.selAccountList.accodianType01 .accordianCont.toggleCont .areaBodyBtnFull{margin-top:15px}
+.defTit.ksType01{height:22px;line-height:22px}
+.defTit.ksType01 .btnAcc{font-size:13px;color:#111;text-indent:0;text-align:right;padding:0px 22px 0px 6px;border:1px solid #ddd;display:inline-block;width:auto;height:26px;background:url(../images/common/ico_arr2_down.png) no-repeat right 7px center;background-size:10px auto;line-height:23px;margin-top:-1px}
+.defTit.ksType01 .btnAcc.active{background:url(../images/common/ico_arr2_up.png) no-repeat right 5px center;background-size:10px auto}
+.productList li .link{padding:15px 17px;background:none;background-size:0 0}
+.productList .productHeader dl{display:table;width:100%}
+.productList .productHeader dl dt,
+.productList .productHeader dl dd{display:table-cell;vertical-align:bottom;font-size:14px}
+.productList .productHeader dl dt{width:20%;text-align:left}
+.productList .productHeader dl dd{width:80%;text-align:right}
+.productList .productHeader dl dd em{font-size:20px;color:#19A647;font-size:20px;color:#19A647;display:inline-block;vertical-align:0;height:28px;line-height:28px}
+.productList li .link .areaBodyBtnFull{padding:0 0 15px;margin:15px 0 0 0}
+.productList li .link .areaBodyBtnFull .inner ul li a.default{background-color:#6a7688;border-color:#6a7688;color:#fff}
+.productList li .link .areaBodyBtnFull .inner ul li a.active{background-color:#19A647;border-color:#19A647;color:#fff}
+.acTopWrap{background:#19A647;margin:0 -17px;padding:12px 17px}
+.acTopWrap dt,
+.acTopWrap dd{color:#fff}
+.acTopWrap dt{font-size:16px}
+.acTopWrap dd{font-size:14px}
+.addCharge .acInfo{display:table;width:100%;margin-top:10px}
+.addCharge .acInfo li{display:table-cell;width:50%;text-align:right;font-size:14px;color:#666;word-break:break-all}
+.addCharge .acInfo li:first-child{text-align:left}
+.addCharge .acInfo li dl dd{color:#111;font-size:16px}
+.selDetailList.ksType01 > ul > li:first-child{border-top:0 none;margin-top:0}
+.selDetailList.ksType01 > ul > li{border-bottom:0 none;margin-top:20px}
+.selDetailList.ksType01 > ul > li .listTit{border-bottom:1px solid #dedede;border-top:1px solid #dedede}
+.selDetailList.ksType01 > ul > li .detailList{border-bottom:1px solid #dedede}
+.idFind.ksType01 .btnType02{margin:5px 17px 0 0}
+.guideListTop .listDot .listIcon span{top:50%;margin-top:-24px}
+.btnMoreWrap.type02 .userActlayer .appendMenu > div{position:relative}
+.btnMoreWrap.type02 .appendMenu li a{font-size:14px}
+.btnMoreWrap.type02 .appendMenu .appendClose{display:block;position:relative;width:100%;height:38px;line-height:38px;background:none;text-align:center;font-size:14px;border-top:1px solid #dedede}
+.btnMoreWrap.type02 .userActlayer .appendMenu li a{text-align:left}
+.resultDetail.type02 .resultTit{margin-top:5px}
+.resultDetail.type02 > .resultTit:first-child{margin-top:0}
+.resultDetail.type02 .resultAmount{margin-top:-28px}
+.srchResult .amntTotal{margin-top:8px}
+.crazyGraphWrap{background-color:#f2f9ff;border-top:1px solid #dedede;border-bottom:1px solid #dedede;margin:0 -17px}
+.crazyGraph{width:100%;height:190px;padding:20px 20px;box-sizing:border-box}
+.crazyGraph.minusGraph.allMinusGraph{height:190px}
+.crazyGraph ul{display:block;width:100%}
+.crazyGraph ul:after{content:'';display:block;clear:both}
+.crazyGraph ul li{position:relative;width:25%;float:left;display:block}
+.crazyGraph ul li dl{position:relative;display:block;width:100%;height:150px}
+.crazyGraph.minusGraph.allMinusGraph ul li dl{height:150px}
+.crazyGraph ul li dl dt,
+.crazyGraph ul li dl dt span{font-size:12px;color:#111;text-align:center;;line-height:15px}
+.crazyGraph ul li dl dt span{padding:0 2px}
+.crazyGraph ul li dl dt{position:absolute;left:0;bottom:0;width:100%;height:20px}
+.crazyGraph ul li dl dd.graphBlock,
+.crazyGraph ul li dl dd.graphBlock .graphBar{margin:0 auto;text-align:center}
+.crazyGraph ul li dl dd.graphBlock{position:relative;width:100%;height:120px;display:table;border-bottom:2px solid #999;box-sizing:border-box}
+.crazyGraph.minusGraph ul li dl dd.graphBlock{height:30px}
+.crazyGraph.minusGraph.allMinusGraph ul li dl dd.graphBlock{height:120px}
+.crazyGraph ul li dl dd.graphBlock .graphBlockTbl{display:table-cell;vertical-align:bottom;position:absolute;left:0;bottom:0;width:100%}
+.crazyGraph ul li dl dd.graphBlock .graphBar{display:block;width:16px;background-color:transparent;background-repeat:repeat-y;background-size:32px auto;background-position:0 0}
+.crazyGraph ul li dl dd.graphBlock .graphBar span{font-size:0;width:0;height:0;text-indent:-1000px;opacity:0;margin:0}
+.crazyGraph ul li dl dd.graphBlock .graphBar.purple{background-image:url('../images/contents/bg_purple_pt.png')}
+.crazyGraph ul li dl dd.graphBlock .graphBar.green{background-image:url('../images/contents/bg_green_pt.png')}
+.crazyGraph ul li dl dd.graphBlock .graphBar.blue{background-image:url('../images/contents/bg_blue_pt.png')}
+.crazyGraph ul li dl dd.graphBlock .graphBar.royal{background-image:url('../images/contents/bg_red_pt.png')}
+.crazyGraph ul li dl dd.graphRes,
+.crazyGraph ul li dl dd.graphRes em{font-size:11px;color:#111;text-align:center}
+.crazyGraph ul li dl dd.graphBlock .graphRes,
+.crazyGraph ul li dl dd.graphBlock .graphRes em,
+.crazyGraph ul li dl dd.graphBlock .graphRes span{font-size:11px;color:#111;text-align:center}
+.crazyGraph ul li dl dd.graphBlock .graphRes{margin-bottom:8px}
+.crazyGraph ul li dl dd.graphBlock .graphRes span{display:block;line-height:12px}
+.crazyGraph.multiType.allMinusGraph ul li dl dd.graphBlock{margin-top:30px}
+.crazyGraph.multiType.allMinusGraph ul li dl dt{bottom:25px}
+.reportYh .defTit{padding-right:50px}
+#searchingWord{position:relative}
+#searchingWord + label{position:absolute;z-index:-1;font-size:0;text-indent:-1000px;width:0;height:0;left:0;top:0;line-height:0;opacity:0;color:transparent;display:none}
+.accountInfo .guideListTop{margin:0}
+.accountInfo .guideListTop .listDot li{margin-top:5px;padding-left:8px;font-size:13px;color:#666;background:url(../images/common/ico_listdot.png) no-repeat 0 9px;background-size:2px 2px}
+.accountInfo.joinSmartWrap .defSubTit{font-size:16px;margin-top:45px;background-image:url(../images/contents/bs/img_accountInfo_01.jpg)}
+.accountInfo02 .currentTime{margin-top:30px}
+.accountInfo02 .currentTime p{padding-left:0;background:none;margin-bottom:5px}
+.accountInfo02 .currentTime span{font-size:14px;line-height:14px}
+.accountInfo02 .currentTime em{color:#19A647;font-size:20px;font-weight:bold}
+.accountInfo02 .accInfo{position:relative}
+.accountInfo02 .accInfo .accName{float:left}
+.accountInfo02 .accInfo .accTxt{float:right}
+.accountInfo02 .productWrap{overflow:hidden}
+.accountInfo02 .productList .productHeader{background:#fff}
+.accountInfo02 .accountWrap .productList li a.link{padding:11px 52px 11px 17px}
+.accountInfo02 .totalWrap{background:#fff;margin:0;padding:0}
+.accountInfo02 .totalWrap.bankType{background:#f8f8f8;margin:0;padding:10px 17px;border-top:1px solid #dedede}
+.accountInfo02 .toggleCont .accountList ul li{margin:0 17px}
+.accountInfo02 .toggleCont .accountList ul li:last-child{border-bottom:none}
+.accountInfo02 .toggleCont .accountList ul li .appendMenu ul li{margin:0}
+.accountInfo02 .toggleCont .accountList ul li .appendMenu ul li.active{background:none}
+.accountInfo02 .toggleCont .accountList .areaBodyBtnFull .inner li a{height:30px;font-size:12px;line-height:28px}
+.accountList .accTit{background-color:#f7fcf9}
+.accountInfo02 .openBankType [class*="bankImgType"]:before{display:inline-block;width:36px;height:36px;background:no-repeat center center;background-size:36px 36px;font-size:1px;color:transparent;vertical-align:middle}
+.accountInfo02 .openBankType .bankImgType01:before{content:'KDB산업은행 로고';background-image:url(../images/common/bk_kdb.png)}  /* KDB산업 */
+.accountInfo02 .openBankType .bankImgType02:before{content:'농협은행 로고';background-image:url(../images/common/bk_nh.png)}  /* 농협/NH투자증권 */ 
+.accountInfo02 .openBankType .bankImgType03:before{content:'신한(구조흥)은행 로고';background-image:url(../images/common/bk_sh.png)}  /* 신한(구조흥)/제주/신한금융투자 */
+.accountInfo02 .openBankType .bankImgType04:before{content:'우리은행 로고';background-image:url(../images/common/bk_wr.png)}  /* 우리 */
+.accountInfo02 .openBankType .bankImgType05:before{content:'SC은행 로고';background-image:url(../images/common/bk_sc.png)}  /* SC은행 */
+.accountInfo02 .openBankType .bankImgType06:before{content:'KEB하나은행 로고';background-image:url(../images/common/bk_keb.png)}  /* KEB하나 */
+.accountInfo02 .openBankType .bankImgType07:before{content:'기업은행 로고';background-image:url(../images/common/bk_ibk.png)}  /* 기업 */
+.accountInfo02 .openBankType .bankImgType08:before{content:'국민은행 로고';background-image:url(../images/common/bk_kb.png)}  /* 국민/KB증권 */
+.accountInfo02 .openBankType .bankImgType09:before{content:'구외환은행 로고';background-image:url(../images/common/bk_keb.png)}  /* 구외환 */
+.accountInfo02 .openBankType .bankImgType10:before{content:'한국씨티은행 로고';background-image:url(../images/common/bk_ct.png)}  /* 한국씨티 */
+.accountInfo02 .openBankType .bankImgType11:before{content:'한국수출입은행 로고';background-image:url(../images/open/ico_bank11.png)}  /* 한국수출입 */
+.accountInfo02 .openBankType .bankImgType12:before{content:'수협은행 로고';background-image:url(../images/common/bk_suhyup.png)}  /* 수협/수협중앙회 */
+.accountInfo02 .openBankType .bankImgType13:before{content:'대구은행 로고';background-image:url(../images/common/bk_dgb.png)}  /* 대구 */
+.accountInfo02 .openBankType .bankImgType14:before{content:'부산은행 로고';background-image:url(../images/common/bk_bnk.png)}  /* 부산 */
+.accountInfo02 .openBankType .bankImgType15:before{content:'광주/전북 로고';background-image:url(../images/common/bk_jb.png)}  /* 광주/전북 */
+.accountInfo02 .openBankType .bankImgType16:before{content:'경남은행 로고';background-image:url(../images/common/bk_bnk.png)}  /* 경남 */
+.accountInfo02 .openBankType .bankImgType17:before{content:'케이뱅크 로고';background-image:url(../images/common/bk_kbank.png)}  /* 케이뱅크 */
+.accountInfo02 .openBankType .bankImgType18:before{content:'카카오뱅크 로고';background-image:url(../images/common/bk_kakao.png)}  /* 카카오 */
+.accountInfo02 .openBankType .bankImgType19:before{content:'산림조합 로고';background-image:url(../images/common/bk_nfcf.png)}  /* 산림조합 */
+.accountInfo02 .openBankType .bankImgType20:before{content:'새마을 로고';background-image:url(../images/common/bk_mg.png)}  /* 새마을 */
+.accountInfo02 .openBankType .bankImgType21:before{content:'신협 로고';background-image:url(../images/common/bk_cu.png)}  /* 신협 */
+.accountInfo02 .openBankType .bankImgType22:before{content:'우체국 로고';background-image:url(../images/common/bk_epost.png)}  /* 우체국 */
+.accountInfo02 .openBankType .bankImgType23:before{content:'저축은행 로고';background-image:url(../images/common/bk_sb.png)}  /* 저축은행 */
+.accountInfo02 .openBankType .bankImgType24:before{content:'교보증권 로고';background-image:url(../images/common/fund_kyobo.png)}  /* 교보증권 */
+.accountInfo02 .openBankType .bankImgType25:before{content:'대신증권 로고';background-image:url(../images/common/fund_daishin.png)}  /* 대신증권 */
+.accountInfo02 .openBankType .bankImgType26:before{content:'미래에셋대우 로고';background-image:url(../images/common/fund_miraeassetdaewoo.png)}  /* 미래에셋대우 */
+.accountInfo02 .openBankType .bankImgType27:before{content:'DB금융투자 로고';background-image:url(../images/common/fund_db.png)}  /* DB금융투자 */
+.accountInfo02 .openBankType .bankImgType28:before{content:'메리츠증권 로고';background-image:url(../images/common/fund_meritz.png)}  /* 메리츠증권 */
+.accountInfo02 .openBankType .bankImgType29:before{content:'삼성증권 로고';background-image:url(../images/common/fund_samsung.png)}  /* 삼성증권 */
+.accountInfo02 .openBankType .bankImgType30:before{content:'에스케이증권 로고';background-image:url(../images/common/fund_sks.png)}  /* 에스케이증권 */
+.accountInfo02 .openBankType .bankImgType31:before{content:'유진투자증권 로고';background-image:url(../images/common/fund_eugenefn.png)}  /* 유진투자증권 */
+.accountInfo02 .openBankType .bankImgType32:before{content:'이베스트투자증권 로고';background-image:url(../images/common/fund_ebest.png)}  /* 이베스트투자증권 */
+.accountInfo02 .openBankType .bankImgType33:before{content:'키움증권 로고';background-image:url(../images/common/fund_kiwoom.png)}  /* 키움증권 */
+.accountInfo02 .openBankType .bankImgType34:before{content:'하이투자증권 로고';background-image:url(../images/common/fund_hi.png)}  /* 하이투자증권 */
+.accountInfo02 .openBankType .bankImgType35:before{content:'한국투자증권 로고';background-image:url(../images/common/fund_hankook.png)}  /* 한국투자증권 */
+.accountInfo02 .openBankType .bankImgType36:before{content:'한화투자증권 로고';background-image:url(../images/common/fund_hanhwa.png)}  /* 한화투자증권 */
+.accountInfo02 .openBankType .bankImgType37:before{content:'현대차증권 로고';background-image:url(../images/common/fund_hmcib.png)}  /* 현대차증권 */
+
+.accountInfo02 .openBankType .totalWrap[class*="bankImgType"]:before{width:24px;height:24px;background-size:cover}
+.accountInfo02 .openBankType .accountHeader[class*="bankImgType"]:before{width:24px;height:24px;background-size:cover}
+.accountInfo02 .openBankType .bankName{display:inline-block;margin-bottom:2px;vertical-align:middle;margin:0 3px 0 4px;color:#111111}
+.accountInfo02 .openBankType .accountHeader .bankName{font-size:15px;color:#627281}
+.accountInfo02 .openBankType .accountHeader .accNum{display:inline-block;color:#627281;margin-bottom:0px;vertical-align:middle}
+.accountInfo02 .openBankType .accountHeader .accNum:after{display:none}
+.accountInfo02 .openBankType .accountHeader .accTit{margin-top:10px;margin-bottom:0}
+/* 본인인증 팝업 */
+.openAuthWrap{padding:20px 15px}
+.openAuthWrap h2{color:#000000;font-size:15px;font-weight:bold;text-align:center}
+.openAuthWrap .smsAuthBtn{display:block;width:100%;height:48px;margin-top:20px;background-color:#19A647;line-height:48px;color:#fff;font-size:14px;text-align:center}
+/* 아이디어 공모전 */
+.ideaContestTop{margin:0 -17px;background:#dcf3ff}
+.ideaContestTop .cover{margin:0 17px;padding:25px 8px 93px;background:url('../images/contents/img_ideaContest.png') no-repeat right bottom;background-size:147.5px auto}
+.ideaContestTop .cover .logo{display:block}
+.ideaContestTop .cover .logo > img{width:54px;height:11px}
+.ideaContestTop .cover .slogan{margin-top:14px;line-height:1.25;font-size:24px;font-weight:bold;color:#0066b3;letter-spacing:-0.5px}
+.ideaContestTop .cover .slogan > .subTxt{display:block;padding-bottom:4px;font-size:13px;font-weight:normal;color:#222}
+/* 키보드뱅킹 */
+.chatHelpList li{margin-bottom:6px}
+.chatHelpList li > a{display:block;background:#fff;padding:15px 0 15px 15px;font-size:15px;color:#111;font-weight:bold;border-top:1px solid #dedede;border-bottom:1px solid #dedede;background-image:url(../images/common/ico_arr2_down.png);background-size:16px 9px;background-repeat:no-repeat;background-position:95% 50%;background-position:center right 15px}
+.chatHelpList li > a.active{background-image:url(../images/common/ico_arr2_up.png);color:#3b5997;border-bottom:0}
+.chatHelpList li .chatAnswer{display:none;background:#f8f8f8;padding:15px;font-size:14px;color:#111;line-height:1.7}
+.chatHelpList li .chatAnswer p + p{margin-top:10px}
+.chatHelpList li .chatAnswer p + ol{margin-top:10px}
+.chatHelpList li .chatAnswer ol + p{margin-top:10px}
+.chatHelpWrap{margin-top:5px;border-radius:15px}
+.chatHelpList li{margin-bottom:0}
+.chatHelpList li:first-child a{border-top-left-radius:15px;border-top-right-radius:15px}
+.chatHelpList li:last-child a{border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+.chatHelpList li:last-child a.active{border-bottom-left-radius:0px;border-bottom-right-radius:0px}
+.chatHelpList li .chatAnswer{border-bottom:1px solid #dedede}
+.chatHelpList li:last-child .chatAnswer{border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+.chatHelpList li > a{border-top:0 none;font-size:13px}
+.chatHelpList li > a{background-image:url(../images/common/util/btn_arr_guide_01_off.png)}
+.chatHelpList li > a.active{background-image:url(../images/common/util/btn_arr_guide_01_on.png);background-color:#f8f8f8;border-bottom:1px solid #dedede;color:#111}
+/* 고객센터 swiper */
+.popWrap.fullLayerPop .popInner .popCont.serviceSwiper{padding:0 0 17px;font-size:0}
+.serviceSwiper .swiper-container{font-size:0}
+.serviceSwiper .swiper-container ul li{padding:0 17px}
+.serviceSwiper .swiper-container ul li img{width:100%}
+.serviceSwiper .swiper-container .bannerPrevBtn2{position:absolute;top:50%;left:20px;width:17px;height:33px;margin-top:-16px;left:17px;z-index:10;background:url('../images/contents/ico_servicePrev.png') no-repeat;background-size:17px 33px;font-size:1px;line-height:0;color:transparent}
+.serviceSwiper .swiper-container .bannerNextBtn2{position:absolute;top:50%;right:20px;width:17px;height:33px;margin-top:-16px;z-index:10;background:url('../images/contents/ico_serviceNext.png') no-repeat;background-size:17px 33px;font-size:1px;line-height:0;color:transparent}
+.serviceSwiper .swiper-container .swiper-button-disabled{display:none}
+/* 인증서발급 가이드*/
+.certifiGuideHeader{position:relative;height:45px;line-height:45px;text-align:center;margin:0 -17px;border-bottom:1px solid #dedede}
+.certifiGuideHeader h2{font-size:15px}
+.certifiGuideHeader [class^="btn"]{position:absolute;top:0;width:45px;height:45px;color:transparent;font-size:1px;background:url('../images/contents/certifi_step_btn.png') no-repeat right center;background-size:27px 20px;/* text-indent:-9999px;*/}
+.certifiGuideHeader [class^="btn"].stepOn{background:url('../images/contents/certifi_step_btn_on.png') no-repeat right center;background-size:27px 20px}
+.certifiGuideHeader .btnNext{right:0}
+.certifiGuideHeader .btnPrev{left:0;transform:rotateY(180deg)}
+.certifiGuideCont .defTit{font-size:15px;font-weight:bold}
+.certifiGuideCont .listNum > li{margin-top:20px;color:#111;margin-left:0;text-indent:0;list-style:none}
+.certifiGuideCont .listNum > li strong{font-size:14px}
+.certifiGuideCont .listNum > li strong span{display:inline-block;width:17px;height:17px;margin-right:5px;background:#19A647;border-radius:100%;text-align:center;font-size:11px;color:#fff}/* 19A647 08-24 color */
+.certifiGuideCont .listNum > li .listDot{margin-top:7px}
+.certifiGuideCont .listNum > li .listDot li{font-size:13px;color:#666}
+.certifiGuideCont .listNum > li .imgArea{margin-top:15px}
+.certifiGuideCont .listNum > li .imgArea + p{margin-top:15px}
+.certifiGuideCont .listNum > li .imgArea img{width:100%}
+.mixCk{line-height:24px;border:1px solid #dedede;padding:10px}
+.mixCk .stList{display:inline-block;vertical-align:middle}
+.mixCk input[type="radio"], .mixCk input[type="checkbox"]{vertical-align:top}
+.mixCk .stList .mixSt{line-height:21px !important;height:21px !important}
+.mixCk .mixSt span{display:block !important;line-height:19px !important;height:19px !important}
+
+.newMySetup .accordionMenuWrap .dep1 > li > a {display:block;padding:10px 40px 10px 26px;font-size:14px;font-weight:bold;border-bottom:1px solid #dedede;background:url(../images/common/ico_arr2_down.png) 94% 50% no-repeat;background:url(../images/common/ico_arr2_down.png) right 17px top 50% no-repeat;background-size:16px 9px;-webkit-background-size:16px 9px}
+.newMySetup .accordionMenuWrap .dep1 > li > a.active {color:#3b5997;background:#f7fcf9 url(../images/common/ico_arr2_up.png) 94% 50% no-repeat;background:#f7fcf9 url(../images/common/ico_arr2_up.png) right 17px top 50% no-repeat;-webkit-background-size:16px 9px}
+.newMySetup .accordionMenuWrap .dep1 > li > a.link:after {display:none}
+.newMySetup .accordionMenuWrap .dep1 > li > a.link {background:url(../images/common/ico_list_link.png) 94% 50% no-repeat;background:url(../images/common/ico_list_link.png) right 17px top 50% no-repeat;-webkit-background-size:9px 16px !important}
+.newMySetup .accordionMenuWrap .dep2 > li > a {padding-left:26px;color:#666}
+.newMySetup .accordionMenuWrap .dep2 > li > a:after {position:absolute;top:50%;left:17px;display:block;content:'항목 열기';width:3px;height:3px;margin-top:-2px;background:url(../images/common/bul_dot.png) no-repeat;-webkit-background-size:cover;text-indent:-9999px}
+/* 세로 막대 그래프 */
+.myPocketGraph .graphTerm.barHeight{display:table;width:210px;table-layout:fixed;min-height:0;margin:0 auto;padding:0 0 5px}
+.myPocketGraph .graphTerm.barHeight li{position:relative;float:none !important;display:table-cell;text-align:center;position:relative;width:16.66%;height:150px}
+.myPocketGraph .graphTerm.barHeight li:after{content:'';display:block;height:1px;background-color:#adb2b6}
+.myPocketGraph .graphTerm.barHeight .graphType{padding-top:20px}
+.myPocketGraph .graphTerm.barHeight .graphType .graphBar {position:relative;height:105px;display:-webkit-flex;display:flex;justify-content:-webkit-center;justify-content:center}
+.myPocketGraph .barHeight .graphBar .scoreH {position:absolute;bottom:0;left:50%;width:45px;margin:0 auto;background-repeat:repeat-y;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.myPocketGraph .barHeight .graphBar .scoreH.blue {background:#19A647}
+.myPocketGraph .barHeight .graphBar .scoreH.gray {background:#94a0a8}
+.myPocketGraph .barHeight .graphBar .scoreH > span {display:block;width:70px;margin-top:-22px;margin-left:-12px;text-align:center;line-height:1.2;font-size:12px}
+.myPocketGraph .barHeight .graphBar .scoreH.blue > span {color:#111}
+.myPocketGraph .barHeight .graphBar .scoreH.gray > span {color:#666}
+.myPocketGraph .barHeight .graphType dt{position:absolute;top:134px;bottom:0;left:0;width:100%;margin-left:0;text-align:center;line-height:1.2;font-size:12px;color:#111}
+.myPocketGraph .barHeight .graphType  dd strong{display:block;line-height:1;font-size:10px}
+/* 마이포켓 금액설정 */
+.moneyBoxList {margin-top: 33px}
+.moneyBoxList .tit {font-size:16px;color:#111}
+.moneyBoxList .subTit {margin-top:9px;font-size:13px;color:#666}
+.moneyBoxList .listCover {margin-top:10px;border-top:1px solid #666}
+.moneyBoxList .listCover .listHead {overflow:hidden}
+.moneyBoxList .listCover .listHead > span {float:left;width:30%;height:42px;line-height:42px;text-align:center;font-size:13px;color:#666}
+.moneyBoxList .listCover .listHead > span.last {width:40%}
+.moneyBoxList .listCover .listDetail > li {position:relative;margin-top:8px}
+.moneyBoxList .listCover .listDetail > li:first-child {margin-top:0}
+.moneyBoxList .listCover .listDetail > li > .moneyChk {position:absolute;top:50%;right:24px;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.moneyBoxList .listCover .listDetail > li > label {display:block;overflow:hidden;width:100%;max-width:100%;height:41px;margin:0;line-height:41px;border:1px solid #dedede;border-radius:10px}
+.moneyBoxList .listCover .listDetail > li > label > span {display:block;float:left;width:30%;text-align:center;font-size:13px;font-weight:bold;color:#333}
+.moneyBoxList .listCover .listDetail > li > label > span.point {font-size:16px;color:#19A647}
+.moneyBoxList .listCover .listDetail > li > label > span.last {width:10%}
+.moneyBoxList .listCover input[type="radio"] {overflow:hidden;width:17px;height:11px;margin:0;padding:0;border:0;vertical-align:initial;background-color:transparent;background-repeat:no-repeat;background-size:30px auto;-webkit-appearance:none;line-height:0;font-size:0;border-radius:0} 
+.moneyBoxList .listCover input[type="radio"] {background-image:url('../images/common/check_sheet02.png')}
+.moneyBoxList .listCover .listDetail input[type="radio"]:checked {background-position-x:-15px}
+.moneyBoxList .listCover .listDetail input[type="radio"]:checked + label {border:1px solid #19A647;background:#19A647}
+.moneyBoxList .listCover .listDetail input[type="radio"]:checked + label > span {color:#fff}
+/* 마이포켓 & 스윙 관리 */
+.moneySwingTopCover {padding:110px 17px 22px;text-align:center;border-bottom:1px solid #f9fcff;background:url('../images/contents/icon_money.png') no-repeat 50% 30px;background-size:135.5px auto}
+.moneySwingTopCover.add01 {padding:117px 17px 22px;background:url('../images/contents/icon_swing.png') no-repeat 50% 30px;background-size:131px auto}
+.moneySwingList > ul > li {display:table;width:100%;padding:16px 0;border-top:1px solid #dedede}
+.moneySwingList.add1 > ul > li {padding:20px 0}
+.moneySwingList > ul > li:first-child {border-top:0}
+.moneySwingList > ul > li > .label,
+.moneySwingList > ul > li > dl {display:table-cell;width:100%;height:100%;vertical-align:middle} 
+.moneySwingList > ul > li > .label {width:68px;padding-right:15px}
+.moneySwingList > ul > li > .label > span {display:block;width:68px;height:68px;padding-top:15px;text-align:center;font-size:12px;color:#19A647;border-radius:50%;background:#f7fcf9}
+.moneySwingList > ul > li > dl > dt {font-weight:bold}
+.moneySwingList > ul > li > dl > dd {margin-top:8px;font-size:12px;color:#666}
+.moneySwingList > ul > li > dl.icons {position:relative;padding-left:65px}
+.moneySwingList > ul > li > dl.icons:before {content:' ';position:absolute;top:50%;left:22px;width:30px;height:31px;background:url('../images/contents/icons_swing.png') no-repeat 0 0;background-size:93px auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.moneySwingList > ul > li > dl.icons.icon01:before { background-position:0 0}
+.moneySwingList > ul > li > dl.icons.icon02:before { background-position:-31px 0}
+.moneySwingList > ul > li > dl.icons.icon03:before { background-position:-62px 0}
+/* [운영신규-2020고도화 디자인 적용] 2020-09-28 [조회/라운지] 오팔적금 */
+.nh58evt_graph {position: relative; padding-top: 40px; text-align: center; border-bottom: 2px solid #999}
+.nh58evt_bar {position: relative; margin: 0 auto; width: 70px; height: 152px; color: #fff; z-index: 1}
+.nh58evt_bar > div {position: absolute; bottom: 0; width: 70px; height: 0; font-size: 11px; line-height: 1.3; box-sizing: border-box; -webkit-animation-name : stacked; animation-name : stacked; animation-duration : 0.3s; animation-timing-function : linear; animation-delay : 0s; animation-iteration-count : 1; animation-direction : normal; animation-fill-mode : forwards; animation-play-state : running}
+.nh58evt_bar > div:nth-child(1) {bottom: 114px; background: #3b5997; animation-delay: 0.9s}
+.nh58evt_bar > div:nth-child(2) {bottom: 76px; background: #046fd9; animation-delay: 0.6s}
+.nh58evt_bar > div:nth-child(3) {bottom: 38px; background: #528ce3; animation-delay: 0.3s}
+.nh58evt_bar > div:nth-child(4) {bottom: 0; background: #93c3f5; animation-delay: 0s}
+.nh58evt_bar > div strong {font-size: 13px}
+@-webkit-keyframes stacked {from {height: 0} to {height: 38px; padding: 5px 0}}
+@keyframes stacked {from {height: 0} to {height: 38px; padding: 5px 0}}
+.nh58evt_num {position: absolute; bottom: 0; left: 50%; margin-left: 28px; right: 0; padding: 0 8px; text-align: right; font-size: 12px; color: #999}
+.nh58evt_num > div {height: 38px; padding-top: 17px; border-top: 1px solid #dedede}
+.nh58evt_num > div:nth-child(1) {color: #3b5997; border-top: 0}
+.nh58evt_graph .graphMy {position: absolute; left: 50%; margin-left: -145px; bottom: 0; width: 100px; height: 114px; z-index: 1; color: #f68b1f; font-size: 12px}
+.nh58evt_graph .graphMy .myScore {margin-top: -52px; margin-left: -35px; width: 100px}
+.nh58evt_graph .graphMy .myScore span {display: block}
+.nh58evt_graph .graphMy .scoreH {position:absolute; left: 50%; margin-left: -15px; bottom:0; width: 30px; background: #f68b1f}
+.nh58evt .nh58_arr {margin: -4px 0 0 30px; width: 39px}
+.nh58evt .nh58_arr img {width: 100%}
+.nh58evt__desc {padding-top: 20px}
+.nh58evt .pointColor {font-size: 16px}
+.nh58evt__desc p {margin-top: 6px}
+.nh58evt__desc2 {position: relative; margin-top: 20px; padding: 8px 0 8px 37%; border-radius: 5px; font-size: 14px; background: #e2e2e2}
+.nh58evt__desc2 p {position: relative}
+.nh58evt__desc2 p::before {content: ''; display: block; position: absolute; top: 50%; margin-top: -19px; left: -70px; width: 56px; height: 38px; background: url('../images/contents/hl/nh58_img.png') no-repeat center; background-size: 56px auto}
+.nh58evt__desc2::after {content: ''; display: block; position: absolute; bottom: -13px; left: 50%; margin-left: -8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 13px solid #e2e2e2}
+.nh58evt p.infoTxt2:before {position: absolute; top: 2px; left: 0; content: ''; width: 14px; height: 14px; background: url('../images/contents/hl/nh58_ico.png') no-repeat; background-size: cover; vertical-align: middle}
+.nh58evt p.infoTxt2 span {color: #666}
+/* [운영신규-2020고도화 디자인 적용] 2020-10-05 한도제한 해제 .accUnLimit */
+.dfs .accountTransferView.accUnLimit .accInfoArea{position:relative;padding-left:36px;padding-right:0}
+.dfs .accountTransferView.accUnLimit .accInfoArea + .accTransferList{padding:13px 0 0 36px}
+.dfs .accountTransferView.accUnLimit.typeRoundBox > li .accTransferList .txtL{width:27px;min-width:27px} 
+.dfs .accountTransferView.accUnLimit .accTransferList .txtR{font-size:16px}
+.dfs .accountTransferView.accUnLimit .accInfoArea .icoBnk + .accCont{padding-right:0}
+.dfs .accountTransferView.accUnLimit .accInfoArea .accInfo .accBank{color:#111;padding-right:8px;position:relative}
+.dfs .accountTransferView.accUnLimit .accInfoArea .accInfo .accBank:after{display:block;content:'';width:1px;height:10px;position:absolute;top:6px;right:0;background-color:#bbb}
+.dfs .accountTransferView.accUnLimit .accInfoArea .accCont .accNum {margin: 2px 0 0 0}
+.dfs .accUnLimit_check input[type="checkbox"] {position:absolute;top:50%;margin-top:-10.5px;left:0;background-size: 100%;background-image:url('../images/common/ico_check.png')}
+.dfs .accUnLimit_check input[type="checkbox"]:checked {background-image:url('../images/common/ico_check_on.png'); background-size: 100%; background-position: 0}
+@media screen and (max-width:359px){
+	.dfs .accountTransferView.accUnLimit .accInfoArea + .accTransferList{padding:13px 0 0 36px}
+	.dfs .accountTransferView.accUnLimit .accTransferList .txtR, .dfs .accountTransferView.accUnLimit .accTransferList .txtR .price>span{font-size:16px}
+}
+.accUnLimit__term li {padding:15px 0;border-bottom:1px solid #f1f1f1}
+.accUnLimit__term li span.formHolder {margin: 10px 0 0}
+.accUnLimit__term li span.formHolder .radio {margin-left:0}
+.accUnLimit__term li .array3 {margin:-10px 0;font-size:0}
+.accUnLimit__term li .array3 span.formHolder {width:33.3%;margin:10px 0}
+.accUnLimit__term li .array3 span.formHolder .radio {margin-left:0}
+.accUnLimit__term li .array3 span.formHolder + span.formHolder {margin-left:0}
+.accUnLimit__num {counter-reset:section}
+.accUnLimit__num > li {position:relative;padding-left:20px; margin-bottom:15px}
+.accUnLimit__num > li::before {display: block;position:absolute;left:0;top:3px;counter-increment:section;content:counter(section);width:14px;height:14px;border:1px solid #f4670a;text-align:center;border-radius:50%;font-size:13px;line-height:1}
+.accUnLimit__num .listBul li {padding-left:10px !important;font-size:14px !important;color:#111 !important}
+.accUnLimit__num .listBul.dash>li:before {background:#111 !important}
+/* [운영신규-2020고도화 디자인 적용] 리스트타입 스타일 추가 .bgRef 내가받은혜택 에서 사용*/
+.dfs .listBul .bgRef {padding-left:0 !important;text-indent:-15px;margin-left:15px}
+.dfs .listBul .bgRef::before {display:none !important}
