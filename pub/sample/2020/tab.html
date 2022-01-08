@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Bank">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="#">
+<title>tab</title>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/swiper.min.js"></script>
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/nh_com_ui.js"></script></head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+		<h1>공통</h1>
+		<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container dfs">
+        <div class="content">
+            <p class="tit lev1">tabs</p>
+
+            <div class="jsTabs type01 link">
+                <ul class="tabs" role="tablist">
+                    <li class="selected"><a href="javascript:;" role="tab" aria-selected="true">메뉴1</a></li>
+                    <li><a href="javascript:;" role="tab" aria-selected="false">메뉴2</a></li>
+                    <li><a href="javascript:;" role="tab" aria-selected="false">메뉴3</a></li>
+                    <li><a href="javascript:;" role="tab" aria-selected="false">메뉴4</a></li>
+                </ul>
+            </div>
+
+
+            <div class="jsTabs type01">
+                <ul class="tabs" role="tablist">
+                    <li class="selected"><a href="javascript:;" role="tab" aria-selected="true">메뉴1</a></li>
+                    <li><a href="javascript:;" role="tab" aria-selected="false">메뉴2</a></li>
+                    <li><a href="javascript:;" role="tab" aria-selected="false">메뉴3</a></li>
+                    <li><a href="javascript:;" role="tab" aria-selected="false">메뉴4</a></li>
+                </ul>
+            </div>
+
+            
+            <hr class="tee">
+            <div class="jsTabs type01">
+                <ul class="tabs" role="tablist">
+                    <li class="selected"><a href="#tabCon31" role="tab" aria-selected="true">메뉴1</a></li>
+                    <li><a href="#tabCon32" role="tab" aria-selected="false">메뉴2</a></li>
+                    <li><a href="#tabCon33" role="tab" aria-selected="false">메뉴3</a></li>
+                    <li><a href="#tabCon34" role="tab" aria-selected="false">메뉴4</a></li>
+                </ul>
+                <div class="panels">
+                    <div id="tabCon31" tabindex="0" aria-labelledby="메뉴1" role="tabpanel" class="panel selected">
+                        tab01
+                    </div>
+                    <div id="tabCon32" aria-labelledby="메뉴2" role="tabpanel" class="panel">
+                        tab02
+                    </div>
+                    <div id="tabCon33" aria-labelledby="메뉴3" role="tabpanel" class="panel">
+                        tab03
+                    </div>
+                    <div id="tabCon34" aria-labelledby="메뉴4" role="tabpanel" class="panel">
+                        tab04
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="jsTabs type02 noDivision">
+                <ul class="tabs" role="tablist">
+                    <li class="selected"><a href="#tabCon021" role="tab" aria-selected="true">농협은행</a></li>
+                    <li><a href="#tabCon022" role="tab" aria-selected="false">농·축협</a></li>
+                </ul>
+                <div class="panels">
+                    <div id="tabCon021" tabindex="0" aria-labelledby="메뉴1" role="tabpanel" class="panel selected">
+                        농협은행
+                    </div>
+                    <div id="tabCon022" aria-labelledby="메뉴2" role="tabpanel" class="panel">
+                        농·축협
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <p class="tit lev2">스크롤탭</p>
+            <div class="jsTabs type02 scroll">
+                <ul class="tabs" role="tablist">
+                    <li class="selected"><a href="#tabCon0101" role="tab" aria-selected="true">예금/신탁</a></li>
+                    <li><a href="#tabCon0102" role="tab" aria-selected="false">펀드</a></li>
+                    <li><a href="#tabCon0103" role="tab" aria-selected="false">대출</a></li>
+                    <li><a href="#tabCon0104" role="tab" aria-selected="false">외화예금</a></li>
+                    <li><a href="#tabCon0105" role="tab" aria-selected="false">전계좌</a></li>
+                </ul>
+                <div class="panels mt0">
+                    <div id="tabCon0101" tabindex="0" aria-labelledby="예금/신탁" role="tabpanel" class="panel selected">예금/신탁</div>
+                    <div id="tabCon0102" aria-labelledby="펀드" role="tabpanel" class="panel">펀드</div>
+                    <div id="tabCon0103" aria-labelledby="대출" role="tabpanel" class="panel">대출</div>
+                    <div id="tabCon0104" aria-labelledby="무료추천도서" role="tabpanel" class="panel">무료추천도서</div>
+                    <div id="tabCon0105" aria-labelledby="할인 쿠폰존" role="tabpanel" class="panel">할인 쿠폰존</div>
+                </div>
+            </div>
+            <!-- <hr class="tee">
+            <p class="tit lev2">기본 스크롤탭</p>
+            <div class="jsTabs type03 scroll mt20">
+            	<button type="button" class="scrArrL"></button>
+				<ul class="tabs" role="tablist">
+					<li class="selected"><a href="#tabCon01" role="tab" aria-selected="false">Deposit<br>/Trust</a></li>
+					<li><a href="#tabCon02" role="tab" aria-selected="false">Foreign currency<br>Deposit</a></li>
+					<li><a href="#tabCon03" role="tab" aria-selected="false">Fund</a></li>
+					<li><a href="#tabCon04" role="tab" aria-selected="true">Loan</a></li>
+				</ul>
+				<button type="button" class="scrArrR"></button>
+                <div class="panels">
+                    <div id="tabCon01" tabindex="0" aria-labelledby="Deposit/Trust" role="tabpanel" class="panel selected">
+                        tab01
+                    </div>
+                    <div id="tabCon02" aria-labelledby="Foreign currency Deposit" role="tabpanel" class="panel">
+                        tab02
+                    </div>
+                    <div id="tabCon03" aria-labelledby="Fund" role="tabpanel" class="panel">
+                        tab03
+                    </div>
+                    <div id="tabCon04" aria-labelledby="Loan" role="tabpanel" class="panel">
+                        tab04
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

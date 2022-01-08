@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">NH 메디프로론</h2>
+			<div class="stepArea">
+				<p class="stepTit">심사 정보입력</p>
+				<div class="stepInfo" role="img" aria-label="총 4단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+						<li><span>4</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+
+			<div class="guideListTop">
+				<ul class="listDot">
+					<li>NH 메디프로론 대출가능금액 심사를 위하여 아래 사항들을 입력해 주십시오.</li>
+				</ul>
+			</div>
+			<!-- accInfoTit_end -->
+			<div class="formWrap">
+				<h3 class="defTit">개인정보</h3>
+				<ul>
+					<li>
+						<strong class="formTit">주거형태</strong>
+						<div class="stList">
+							<a href="javascript:;" title="주거형태 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<h3 class="defTit">재직정보</h3>
+				<ul>
+					<li>
+						<strong class="formTit">고용형태</strong>
+						<div class="stList">
+							<a href="javascript:;" title="고용형태 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">연소득정보</strong>
+						<div class="inputBoth01">
+							<div class="inputList inputB01">
+								<input type="text" title="소득금액 입력" placeholder="0">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+
+							<span class="inputTxt">원</span>
+					   
+							<div class="inputBtn02">
+								<a href="javascript:;" class="btnInput01">소득확인</a>
+							</div>
+						</div>
+						<p class="infoTxt">국세청 홈택스에서 소득금액증명원 상 최근 귀속년도의 소득금액 1건을 조회합니다.<br>(연소득정보는 직접 입력이 불가합니다.)</p>
+					</li>
+					<li>
+						<strong class="formTit">근무기간</strong>
+						<div class="inputBoth01">
+							<div class="inputList inputB01">
+								<input type="text" title="근무기간 년 입력" placeholder="0">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+
+							<span class="inputTxt">년</span>
+					   
+							<div class="inputList inputB01">
+								<input type="text" title="근무기간 개월 입력" placeholder="0">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+
+							<span class="inputTxt">개월</span>
+
+							<div class="inputBtn02">
+								<a href="javascript:;" class="btnInput01">재직확인</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">직군</strong>
+						<div class="stList">
+							<a href="javascript:;" title="직군 선택 새창열림" role="radiogroup">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<h3 class="defTit">대출관련 정보</h3>
+				<ul>
+					<li class="alignCol">
+						<strong class="formTit">대출신청금액</strong>
+						<p class="inpTxt ar"><strong class="pointColor"><em>1,000,000</em><span class="wUnit">원</span></strong></p>
+					</li>
+					<li>
+						<strong class="formTit">거래구분 <a href="javascript:;" class="btnFuncTip2" data-tip="0" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>개별거래</h1>
+								<div class="popCont">
+									<p class="mt15">개별거래 : 약정금액 범위 내에서 일괄하여 대출이 발생하고 상환한 금액을 재사용할 수 없는 방식</p>
+									<p>한도거래 : 약정한 한도금액 범위 내에서 동일과목의 대출을 자유롭게 재사용하고 대출기간 만료일에 한도금액을 상환하는 방식을 말합니다.</p>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="formArray">
+							<div class="radioList">
+								<input type="radio" id="division1" name="division">
+								<label for="division1">개별거래</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="division2" name="division">
+								<label for="division2">한도거래</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">상환방법 <a href="javascript:;" class="btnFuncTip2" data-tip="1" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>상환방법</h1>
+								<div class="popCont">
+									<ul class="listDog">
+										<li>일시상환: 대출 만기일에 대출금 전액을 상환</li>
+										<li>원금균등상환: 대출원금을 상환기간 동안 매월 균등하게 분할하여 상환</li>
+										<li>원리금균등상환: 대출원금과 이자의 합계금액을 균등하게 분할하여 매월 상환</li>
+									</ul>
+								</div>
+								
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="stList">
+							<a href="javascript:;" title="상환방법 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출기간</strong>
+						<div class="multiForm">
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" class="w100" title="대출기간 년수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="대출기간 년수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">년</span>
+							</div>
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="대출기간 개월수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="대출기간 개월수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">개월</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">거치기간</strong>
+						<div class="multiForm">
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" class="w100" title="대출기간 년수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="대출기간 년수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">년</span>
+							</div>
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="대출기간 개월수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="대출기간 개월수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">개월</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">자금용도</strong>
+						<div class="stList">
+							<a href="javascript:;" title="자금용도 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출희망일</strong>
+						<div class="cal">
+							<div class="inputList">
+								<input type="text" value="" title="날짜선택 입력" placeholder="날짜선택">
+								<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+							</div>
+						</div>
+						<p class="infoTxt">신청일 기준으로 3영업일 이후 신청 가능 토/일, 공휴일 제외</p>
+					</li>
+					<li>
+						<strong class="formTit">대출희망영업점</strong>
+						<div class="inputBoth01 div7_3">
+							<div class="inputList inputB01">
+								<input type="text" title="대학명 입력">
+							</div>
+							<div class="inputB02">
+								<a href="javascript:;" class="btnInput01">영업점 검색</a>
+							</div>
+						</div>
+						<p class="infoTxt">취급희망 영업점은 고객님께서 직접 방문이 가능하신 곳으로 선택하여 주시기 바랍니다.</p>
+						<p class="infoTxt">(대기업RM센터 신청 불가)</p>
+					</li>
+				</ul>
+			</div>
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a> 
+				<!-- 활성화시 disabled 제거 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

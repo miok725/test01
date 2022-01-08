@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-title" content="NH Bank">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="robots" content="no-index,follow">
+	<meta name="title" content="">
+	<meta name="author" content="">
+	<meta name="content" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>:::NH통합스마트뱅킹:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">예금</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->
+
+		<!-- container -->
+		<div class="container">
+			<h2 class="defTit marTit">지수연동예금(ELD)신규</h2>
+			<!-- STEP -->
+			<div class="stepArea">
+				<p class="stepTit">설명의무 확인사항</p>
+				<div class="stepInfo" role="img" aria-label="총 6단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+					</ul>
+				</div>
+			</div>
+		    <!--// STEP -->
+			<h3 class="defSubTit">금융소비자에 대한 강화된 설명의무 확인서</h3>
+			<div class="guideList">
+				<p class="infoTxt2">금융감독원의 「금융소비자보호 모범규준」에 따라 금융취약투자자(만65세 이상 고객, 은퇴자, 주부, 우선 설명 요청 고객)는 “반드시 확인할 사항 및 불이익사항”을 다른 정보보다 우선하여 확인하실 수 있습니다.</p>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<!-- step1 -->
+					<li>
+						<strong class="formTit">만 65세 이상인 자, 은퇴지, 주부 등에 해당 여부에 대한 정보를 금융회사에 제공하는 것에 동의하십니까?</strong>
+						<div class="formArray array2">
+							<div class="radioList">
+								<input type="radio" id="ra1" name="dd">
+								<label for="ra1">
+									예</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="ra2" name="dd">
+								<label for="ra2">
+									아니오</label>
+							</div>
+						</div>
+					</li>
+					<!--// step1 -->
+					<!-- step2 -->
+					<li>
+						<strong class="formTit">다음 중 해당사항이 있으십니까?</strong>
+						<p class="defTxt">①만 65세 이상  ② 은퇴자  ③ 주부  ④ 우선 설명을 받기 원함 </p>
+						<div class="formArray array2">
+							<div class="radioList">
+								<input type="radio" id="ra11" name="dd">
+								<label for="ra11">
+									예</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="ra22" name="dd">
+								<label for="ra22">
+									아니오</label>
+							</div>
+						</div>
+					</li>
+					<!--// step2 -->
+					<!-- step3 -->
+					<li>
+						<div class="termsList">
+							<ul>
+								<li> 
+									<div class="checkList">
+										<input type="checkbox" id="c1" name="">
+										<label for="c1">지수연동예금(ELD)상품 가입 시 고객이 반드시 확인할 사항</label>
+									</div>
+									<div class="termsCont fsz12">
+										<ul class="listDot">
+											<li>중도해지 시 수수료 발생 등 금융소비자에게 추가부담이 발생할 수 있습니다. </li>
+											<li>최초지수 대비 만기지수 상승(하락)율, 장중지수 상승(하락)율에 따라 실제금리보다 낮은 수준의 금리 또는 무이자가 적용될 수 있습니다. </li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<!--// step3 -->
+				</ul>
+			</div>
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">알아두세요</p></div>
+				<ul class="listDot">
+					<li><span class="pointColor">금융소비자의 불이익 사항을 투자설명서를 이용한 상품내용 확인 시 반드시 확인하시기 바랍니다.</span></li>
+				</ul>
+			</div>
+			<!-- fixed button -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">확인</a>
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- //fixed button -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu" style="display: block;">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>
+			<!-- quick button -->
+			<div class="areaBtmQuick" style="bottom: 94px;"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop" style="display: none; opacity: 0;"><a href="javascript:;">Top</a></span>
+			</div>
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

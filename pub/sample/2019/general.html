@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+
+<!-- STR : ContentsF Area -->
+<div id="contentsF">
+	<div class="contentsW">
+
+		<h2 class="guide">DocType & Meta - 공통관리 </h2>	
+<xmp>
+<!doctype html>
+</xmp>
+
+		<h2 class="guide">charset utf-8</h2>
+		<ul class="Gbox">
+			<li>- <span>html, css, js 관련파일</span>: utf-8 인코딩</li>
+		</ul>
+
+		<h2 class="guide">Font</h2>
+		<ul class="Gbox">
+			<li>- <span>Color </span>: <em style="color:#111">#111(default)</em></li>
+			<li>- <span>point Color </span>: <em style="color:#3d9bff ">#3d9bff </em>, <em style="color:#f4670a">#f4670a</em>, <em style="color:#3b5997">#3b5997</em></li>
+			<li>- <span>size (default) </span>: 14px</li>
+			<li>- <span>font (Noto Sans : 2가지 사용) </span>: font-family:"NotoKR","맑은 고딕","돋움",dotum,sans-serif;<br />
+				<span></span> (기본) NotoSansKR-Regular : font-family:"NotoKR";<br />
+				<span></span> (bold) <em style="font-weight:bold">NotoSansKR-Medium</em> : font-weight:bold;<br />
+			</li>
+			<!--
+			<li>- <span>font (영문 및 숫자)</span>: 'Gill Sans MT'</li>
+			-->
+		</ul>
+		<!-- <h2 class="guide">Html File Name 규칙</h2>
+		<ul class="Gbox">
+			<li>- Channel + 업무 디렉토리명 + 메뉴 기준 index + 용도</li>
+			<li>
+				
+			</li>
+		</ul> -->
+		
+		<h2 class="guide">image -네이밍</h2>
+		<ul class="Gbox">
+			<li>- 자유롭게 네이밍 하되 특정 prefix등을 사용하여 그룹별로 묶일수 있는 네이밍 권장</li>
+			<li>- <span>title</span>: _tit_</li>
+			<li>- <span>background</span>: bg_</li>
+			<li>- <span>icon</span>: ico_</li>
+			<li>- <span>bullet</span>: dot_ , arr_ , bar_ </li>
+			<li>- <span>button</span>: btn_</li>
+			<li>- <span>tab</span>: _tab_</li>
+		</ul>
+
+		<h2 class="guide">class -네이밍 (camel 기법사용)</h2>
+		<ul class="Gbox">
+			<li>- 자유롭게 네이밍 하되 특정 prefix등을 사용하여 그룹별로 묶일수 있는 네이밍 권장</li>
+			<li>- <span>wrap</span>: wrapTblDefault / stepListWrap / popWrap </li>
+			<li>- <span>title</span>: defTit / formTit / subTit</li>
+			<li>- <span>txt</span>: defTxt / infoTxt / infoTxtCaution</li>
+			<li>- <span>list</span>: listDot / listDash / stepListWrap</li>
+			<li>- <span>icon</span>: bankIconList / scOtpIcon</li>
+			<li>- <span>bullet</span>: inputDot / </li>
+			<li>- <span>button</span>: btnPressDefault / btnBodyDefault / btnFuncTip</li>
+			<li>- <span>tab</span>: tabLv0 / tabInner / tabSwitchCont</li>
+		</ul>
+		
+		<!-- <h2 class="guide">대상채널</h2>
+		<div>
+			<div id="g_content">
+				<table class="mlist" cellspacing="0" cellpadding="0">
+					<colgroup>
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Directory</th>
+							<th>업무</th>
+							<th>Directory</th>
+							<th>업무</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> -->
+		
+		<h2 class="guide">산출물 기준 directory 정보</h2>
+		<div>
+			<div id="g_content">
+				<table class="mlist" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th>directory</th>
+							<th>folder</th>
+							<th>file name</th>
+							<th>용도</th>
+						</tr>
+					</thead>
+					<tbody>						
+						<tr>
+							<td colspan="2">./css/</td>
+							<td>common.css<br />contents.css<br />main.css<br />bigfont.css<br />swiper.min.css<br />to_be.css</td>
+							<td>공통ui 기본</td>
+						</tr>
+						<tr>
+							<td colspan="2">./fonts/</td>
+							<td>
+								NotoSansKR-Medium.eot<br />
+								NotoSansKR-Medium.woff<br />
+								NotoSansKR-Regular.eot<br />
+								NotoSansKR-Regular.woff
+							</td>
+							<td>웹폰트</td>
+						</tr>
+						<tr>
+							<td>./html/</td>
+							<td>/ns/..</td>
+							<td>
+								사업부서관리 html 파일
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td rowspan="4">./images/</td>
+							<td>/common/</td>
+							<td>
+								공통 UI 이미지
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>/contents/</td>
+							<td>
+								서브 컨텐츠 화면 이미지
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>/main/</td>
+							<td>
+								통합메인/서브메인 이미지
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>...</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="2">./js/</td>
+							<td>
+								common_ui.js<br />
+								jquery-1.9.1.min.js<br />								
+								swiper.min.js<br />
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td rowspan="3">./pub/</td>
+							<td>/ba/</td>
+							<td>
+								모바일ATM html
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>/bb/</td>
+							<td>
+								국민주택채권 html
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>...</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+</div>
+</body>
+</html>

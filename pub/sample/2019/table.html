@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>table :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+
+<body>
+<div id="contentsF">
+	<h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Table(세로)</h2>
+	<br />
+	<strong style="font-size:14px; color:blue">테이블 정렬 기본 : th 왼쪽 / td 왼쪽</strong>
+	<br />
+	<!-- view -->
+	<h3 class="guide mt20">■ type1</h3>
+	<div class="wrapTblDefault">
+		<div class="tblHeader">
+			<h2 class="defTit">테이블 제목</h2>
+			<span class="unit">(단위 or 범례)</span>
+		</div>
+		<div class="boxHeaderBlue">
+			<strong class="txt">NH-Amundi Allser스마트인베스터5.0 분할 매수[주식혼합-재간접]Ce</strong>
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:33%">
+				<col style="width:auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th scope="row">금액/통화</th>
+					<td class="ar"><strong class="pointColor"><em>1000</em>JPY</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td class="ar"><strong class="pointColor2"><em>-1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td class="ar"><strong class="pointColor"><em>+1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">증감</th>
+					<td class="ar"><strong class="pointColor2"><em class="bulUpper"><span class="blind">증가</span></em>5,000</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">증감<br /><a href="javascript:;" class="btnAddon">자세히보기</a></th>
+					<td class="ar"><strong class="pointColor"><em class="bulLower"><span class="blind">감소</span></em>1,000</strong></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h3 class="guide mt20">■ type2</h3>
+	<div class="wrapTblDefault">
+		<div class="tblHeader isBtn">
+			<h2 class="defTit">테이블 제목</h2>
+			<a href="javascript:;" class="btnAddon">펀드 기준일 정보</a>
+		</div>
+		<table cellpadding="0" cellspacing="0">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:33%">
+				<col style="width:auto">
+				<col style="width:auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="rowgroup" rowspan="2">타이틀</th>
+					<th scope="row" class="sub">서브 타이틀</th>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th scope="row" class="bdl sub">서브 타이틀</th>
+					<td class="ar"><strong><em>-1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="rowgroup" rowspan="2">타이틀</th>
+					<th scope="row" class="sub">서브 타이틀</th>
+					<td>text</td>					
+				</tr>
+				<tr>
+					<th scope="row" class="bdl sub">서브 타이틀</th>
+					<td class="ar"><strong class="pointColor2"><em>-1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="rowgroup" rowspan="2">타이틀</th>
+					<th scope="row" class="sub">서브 타이틀</th>
+					<td>text</td>					
+				</tr>
+				<tr>
+					<th scope="row" class="bdl sub">서브 타이틀</th>
+					<td class="ar"><strong class="pointColor"><em>-1,234,567</em>(단위)</strong></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //view -->
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Table(가로)</h2>
+	<h3 class="guide mt20">■ type1</h3>
+	<!-- view -->
+	<div class="wrapTblDefault">
+		<div class="tblHeader">
+			<h2 class="defTit">테이블 제목</h2>
+			<span class="unit">(단위 or 범례)</span>
+		</div>
+		<table cellpadding="0" cellspacing="0" class="thCenter">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:20%">
+				<col style="width:20%">
+				<col style="width:20%">
+				<col style="width:20%">
+				<col style="width:auto">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">타이틀</th>
+					<th scope="col">타이틀</th>
+					<th scope="col">타이틀</th>
+					<th scope="col">타이틀</th>
+					<th scope="col">타이틀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">타이틀</th>
+					<th scope="row" class="sub">서브 타이틀</th>
+					<td>text</td>
+					<td class="ac">text</td>
+					<td class="ar"><strong><em>1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<th scope="row" class="sub">서브 타이틀</th>
+					<td>text</td>
+					<td class="ac">text</td>
+					<td class="ar"><strong><em>1,234,567</em>(단위)</strong></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h3 class="guide mt20">■ type2</h3>
+	<div class="wrapTblDefault">
+		<div class="tblHeader">
+			<h2 class="defTit">테이블 제목</h2>
+			<span class="unit">(단위 or 범례)</span>
+		</div>
+		<table cellpadding="0" cellspacing="0" class="thCenter">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="colgroup" colspan="2">타이틀</th>
+					<th scope="colgroup" colspan="2">타이틀</th>
+				</tr>
+				<tr>
+					<th scope="col">서브 타이틀</th>
+					<th scope="col">서브 타이틀</th>
+					<th scope="col">서브 타이틀</th>
+					<th scope="col">서브 타이틀</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>내용</td>
+					<td class="ac">내용</td>
+					<td>내용</td>
+					<td class="ac">내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+					<td class="ac">내용</td>
+					<td>내용</td>
+					<td class="ac">내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //view -->
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Table(혼합)</h2>
+	<!-- view -->
+	<div class="wrapTblDefault">
+		<div class="tblHeader">
+			<h2 class="defTit">테이블 제목</h2>
+			<span class="unit">(단위 or 범례)</span>
+		</div>
+		<table cellpadding="0" cellspacing="0" class="thCenter">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+				<col style="width:25%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="colgroup" colspan="2" rowspan="2">th</th>
+					<th scope="colgroup" colspan="2">th</th>
+				</tr>
+				<tr>
+					<th scope="col" class="sub bdl">sub th</th>
+					<th scope="col" class="sub">sub th</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="rowgroup" rowspan="2">th</td>
+					<th scope="row" class="sub">sub th</th>
+					<td>text</td>
+					<td class="ac">text</td>
+				</tr>
+				<tr>
+					<th scope="row" class="bdl sub">sub th</th>
+					<td>text</td>
+					<td class="ac">text</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //view -->
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Table(하이라이트)</h2>
+	<h3 class="guide mt20">■ point</h3>
+	<div class="wrapTblDefault">
+		<table cellpadding="0" cellspacing="0">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:33%">
+				<col style="width:auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">최종납입월</th>
+					<td>2018.05</td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td><strong class="pointColor">text에 강조색이 있을경우 pointcolor 는 파란색으로</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">증권번호</th>
+					<td>300000010000</td>
+				</tr>
+				<tr>
+					<th scope="row">계좌번호</th>
+					<td><strong class="pointColor5">302-0799-91234-00 계좌번호는 주황색 </strong></td>
+				</tr>
+				<tr class="active">
+					<th scope="row">총합계보험료</th>
+					<td class="ar"><strong class="pointColor"><em>100,000</em><span class="wUnit">원</span></strong></td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>text</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //view -->
+
+	<!-- //view -->
+	<h2 class="mt20 mb20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Table(중첩)</h2>
+	<!-- view -->
+	<div class="wrapTblDefault">
+		<table cellpadding="0" cellspacing="0">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:33%">
+				<col style="width:auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td class="ar"><strong class="pointColor2"><em>-1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td class="ar"><strong class="pointColor"><em>+1,234,567</em>(단위)</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table cellpadding="0" cellspacing="0">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:33%">
+				<col style="width:auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td class="ar"><strong class="pointColor2"><em>-1,234,567</em>(단위)</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td class="ar"><strong class="pointColor"><em>+1,234,567</em>(단위)</strong></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- //view -->
+	<h2 class="mt20 mb20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Table 내 input</h2>
+	<!-- view -->
+	<div class="wrapTblDefault">
+		<table cellpadding="0" cellspacing="0">
+			<caption>테이블 제목 정보 입력</caption>
+			<colgroup>
+				<col style="width:33%">
+				<col style="width:auto">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th scope="row">타이틀</th>
+					<td>
+						<div class="inputList">
+							<input type="text" title="회계연도 입력" placeholder="숫자 4자리를 입력하세요" value="" id="input03" maxlength="4">
+							<a href="javascript:" title="입력내용삭제" class="btnReset">입력내용삭제</a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	<!-- //view -->
+	<hr />
+
+</div>
+</body>
+</html>

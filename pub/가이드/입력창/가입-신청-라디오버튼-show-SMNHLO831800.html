@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">프리미엄모기지론</h2>
+			<div class="stepArea">
+				<p class="stepTit">조회확인 및 신청정보입력</p>
+				<div class="stepInfo" role="img" aria-label="총 4단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+						<li><span>4</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="formWrap">
+				<h3 class="defTit">재직정보</h3>
+				<ul>
+					<li>
+						<strong class="formTit">직장명</strong>
+						<div class="inputList">                    
+							<input type="text" title="직장명 입력">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">직위</strong>
+						<div class="inputList">                    
+							<input type="text" title="직장명 입력">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">근무기간</strong>
+						<div class="multiForm">
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="근무기간 년수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="근무기간 년수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">년</span>
+							</div>
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="근무기간 개월수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="근무기간 개월수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">개월</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">연소득정보</strong>
+						<div class="inputBoth01">
+							<div class="inputList inputB01">
+								<input type="text" title="소득금액 입력" placeholder="0">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							</div>
+
+							<span class="inputTxt">원</span>
+					   
+							<div class="inputBtn04">
+								<a href="javascript:;" class="btnInput01 annual_income">연소득산정기준</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<h3 class="defTit">대출조건정보</h3>
+				<ul>
+					<li>
+						<strong class="formTit">대출신청금액<span class="unit pointColor">(일만원)</span></strong>
+						<div class="inputList">
+							<input type="text" title="대출신청금액금액 입력" placeholder="금액을 입럭해 주세요.">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+						</div>                
+						<div class="areaBtnPrice mt10">
+							<div class="inner">
+								<ul>
+									<li><a href="javascript:;">1000만</a></li>
+									<li><a href="javascript:;">100만</a></li>
+									<li><a href="javascript:;">10만</a></li>
+									<li><a href="javascript:;" class="btnAddon">정정</a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="infoTxt">십만원단위 이상으로 입력하셔야 대출 신청이 가능합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">대출희망일</strong>
+						<div class="cal">
+							<div class="inputList">
+								<input type="text" value="" title="날짜선택 입력" placeholder="날짜선택" readonly="readonly">
+								<a href="javascript:;" class="btnCalendar" title="날짜선택 새창열림"><span class="blind">날짜선택</span></a>
+							</div>
+						</div>
+						<p class="infoTxt">대출실행일은 상담결과 등에 따라 달라질 수 있습니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">자금용도</strong>
+						<div class="stList">
+							<a href="javascript:;" title="자금용도 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">대출관리점</strong>
+						<div class="inputBoth01 div6_4">
+							<div class="inputList inputB01">
+								<input type="text" title="대학명 입력">
+							</div>
+							<div class="inputB02">
+								<a href="javascript:;" class="btnInput01">영업점 조회</a>
+							</div>
+						</div>
+						<p class="infoTxt">대출관리점은 고객님의 자택주소, 사업장(직장) 또는 아파트 소재지 중 한 곳과 같은 지역에 위치하여야 합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">거래구분 <a href="javascript:;" class="btnFuncTip2" data-tip="0" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>개별거래</h1>
+								<div class="popCont">
+									<p>개별거래 : 약정금액 범위 내에서 일괄하여 대출이 발생하고 상환한 금액을 재사용할 수 없는 방식</p>
+								</div>
+
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="radioList">
+							<input type="radio" id="loanType1" name="loanType" value="1">
+							<label for="loanType1">개별대출</label>
+						</div>
+						<div class="radioList">
+							<input type="radio" id="loanType2" name="loanType" value="2">
+							<label for="loanType2">한도대출(마이너스통장대출)</label>
+						</div>
+					</li>
+					<li class="repayment">
+						<strong class="formTit">상환방법 <a href="javascript:;" class="btnFuncTip2" data-tip="1" title="툴팁(도움말) 새창 열기"><span class="blind">툴팁</span></a></strong>
+						<!-- Tooltip Base -->
+						<div class="popWrap toolTipBase">
+							<div class="dim"></div>
+							<div class="popInner">
+								<h1>상환방법</h1>
+								<div class="popCont">
+									<ul class="listDog">
+										<li>일시상환: 대출 만기일에 대출금 전액을 상환</li>
+										<li>원금균등상환: 대출원금을 상환기간 동안 매월 균등하게 분할하여 상환</li>
+										<li>원리금균등상환: 대출원금을 상환기간 동안 매월 균등하게 분할하여 상환</li>
+									</ul>
+								</div>
+								<div class="popBtnWrap">
+									<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+								</div>
+							</div>
+						</div>
+						<!-- // Tooltip Base -->
+						<div class="stList">
+							<a href="javascript:;" title="상환방법 선택 새창열림">
+								<span class="selectValue">선택해주세요</span>
+								<span class="selectBtn">버튼</span>
+							</a>
+							<select name="" title="선택해주세요">
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<h3 class="defTit">대출기간</h3>
+				<ul>	
+					<li>
+						<strong class="formTit">총기간</strong>
+						<div class="multiForm">
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="총기간 년수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="총기간 년수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">년</span>
+							</div>
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="총기간 개월수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="총기간 개월수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">개월</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">거치기간</strong>
+						<div class="multiForm">
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="거치기간 년수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="거치기간 년수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">년</span>
+							</div>
+							<div class="unitInp4">
+								<div class="stList">
+									<a href="javascript:;" title="거치기간 개월수 선택 새창 열림">
+										<span class="selectValue">선택</span>
+										<span class="selectBtn">버튼</span>
+									</a>
+									<select name="" title="거치기간 개월수 선택">
+										<option value=""></option>
+									</select>
+								</div>
+								<span class="unit">개월</span>
+							</div>
+						</div>
+						<p class="infoTxt">마이너스대출 시 대출기간 최대 2년</p>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<ul>
+					<li>
+						<strong class="formTit">만기일시 상환금</strong>
+						<div class="inputList">
+							<input type="checkbox" id="chk01" name="chk01" title="만기일시 상환금 선택"><label for="chk01">선택</label>
+						</div>
+						<div class="inputList">
+							<input type="text" title="만기일시 상환금 입력" placeholder="금액입력" readonly="readonly">
+							<span class="unit">원</span>
+						</div>
+						<p class="infoTxt">일시&middot;할부 동시적용(적용비율 40:60)상환 시</p>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<h3 class="defTit">DTI산정을 위한 정보</h3>
+				<ul>
+					<li>
+						<strong class="formTit">본인 금융기관 총 부채</strong>
+						<div class="inputList">                    
+							<input type="text" title="입금액 입력" placeholder="">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+							<span class="unit">만원</span>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">배우자 주택담보대출 보유여부</strong>
+						<div class="formArray array4">
+							<div class="radioList">
+								<input type="radio" id="confirm21" name="confirm2">
+								<label for="confirm21">여</label>
+							</div>
+							<div class="radioList">
+								<input type="radio" id="confirm22" name="confirm2">
+								<label for="confirm22">부</label>
+							</div>
+						</div>
+						<p class="infoTxt">배우자가 주택관련대출이 있는 경우에는 부부합산 소득이 아닌 대출신청인 본인소득만 인정합니다.</p>
+					</li>
+					<li>
+						<strong class="formTit">배우자 연 소득</strong>
+						<div class="inputBoth01 div6_4">
+							<div class="inputList">                    
+								<input type="tel" title="배우자 연 소득 금액 입력">
+								<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+								<span class="unit">만원</span>
+							</div>
+							<div class="inputB02">
+								<a href="javascript:;" class="btnInput01 annual_income">연소득산정기준</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">배우자 금융기관 총 부채</strong>
+						<div class="inputList">                    
+							<input type="tel" title="배우자 금융기관 총 부채 금액 입력">
+							<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+							<span class="unit">만원</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- formWrap_end -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">대출신청</a>
+			</div>
+			<!-- areaBtnDefault_end -->
+			<div class="popWrap fullLayerPop">
+				<div class="popInner">
+					<h1>연소득 산정기분</h1>
+					<div class="popCont">
+						<div class="formWrap">
+							<h3 class="defTit">소득서류 입증방법</h3>
+							<ul>
+								<li>
+									<strong class="formTit">근로자</strong>
+									<ul class="listDot">
+										<li>세무서(홈택스) 발급 소득금액증명원 또는 재형저축 가입용 소득확인증명서</li>
+										<li>연말정산용 원천징수영수증(원천징수부 등 그 실질이 원천징수를 증명하는 서류)</li>
+										<li>급여내역이 포함된 증명서(재직회사가 날인한 급여명세표, 임금대장, 갑근세 원천징수 확인서)</li>
+									</ul>
+								</li>
+								<li>
+									<strong class="formTit">사업자</strong>
+									<ul class="listDot">
+										<li>세무서(홈택스) 발급 소득금액증명원 또는 재형저축 가입용 소득확인증명서</li>
+										<li>연말정산용 사업소득 원천징수영수증(거주자의 사업소득 원천징수영수증 포함)</li>
+										<li>연말정산용 사업소득 원천징수영수증은 적용소득율이 고려된 사업소득금액을 그대로 적용하며, 거주자의 사업소득 원천징수영수증은 적용소득률 60%를 적용한 환산소득액을 연소득으로 간주</li>
+										<li>세무사가 확인한 전년도 과세표준확정신고 및 자진 납부계산서</li>
+									</ul>
+								</li>
+								<li>
+									<strong class="formTit">연금수급권자</strong>
+									<ul class="listDot">
+										<li>연금 수급권자확인서 등 기타 여늠수령을 확인할 수 있는 지급기관의 증명서(국민&middot;공무원&middot;군인&middot;사학연금 또는 정부 및 지자체 등이 법률에 의하여 지급하는 연금)</li>
+										<li>연금수령액이 표기되지 않은 경우는 연금수령통장 사본 추가</li>
+										<li>배우자 명의의 통장에 입금된 연금도 인정 가능. 통장분실 등으로 입금 통장 사본 징구가 불가능한 경우에는 해당 금융기관 거래내역서로 확인</li>
+									</ul>
+								</li>
+								<li>
+									<strong class="formTit">기타</strong>
+									<ul class="listDot">
+										<li>세무서(홈택스) 발급 소득금액증명원</li>
+									</ul>
+								</li>
+							</ul>
+							<p class="defTxt"><span class="pointColor5">이외 매출액, 신용카드사용액, 임대소득, 금융소득등의 소득이 있는 경우는 영업점으로 문의 바랍니다.</span></p>
+						</div>
+					</div>
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;" role="button">닫기</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다." role="button"><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<script>
+		//상환방법 활성화
+		$("input[name='loanType']").change(function(){
+			var curVal = $(this).val();
+			if (curVal == 1)
+			{
+				$(".repayment").show();
+			}
+			else{
+				$(".repayment").hide();
+			}
+		});
+		//연소득정산기준 팝업
+		$(".annual_income").click(function(){
+			fullLayerPop2();
+		});
+	</script>
+
+</body>
+</html>

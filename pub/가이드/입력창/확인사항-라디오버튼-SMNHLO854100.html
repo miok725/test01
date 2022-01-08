@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">NH e사장님신용대출</h2>
+			<div class="stepArea">
+				<p class="stepTit">신청 전 확인사항</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<h3 class="defTit">본인이 영위하는 사업의 업종이 다음에 해당하는지 체크해 주십시오.</h3>	
+			<!-- guideListTop_end -->
+			<div class="wrapTblDefault">
+				<table cellpadding="0" cellspacing="0" class="thCenter">
+					<caption>NH e사장님신용대출 신청 전 확인사항 입력</caption>
+					<colgroup>
+						<col style="width:auto">
+						<col style="width:15%">
+						<col style="width:18%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">업종</th>
+							<th scope="col">예</th>
+							<th scope="col">아니오</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>한국표준산업분류표상 일반유흥주점업(56211)</td>
+							<td class="ac">
+								<input type="radio" name="confirm1" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm1" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>한국표준산업분류표상 무도유흥주점 등(56212)</td>
+							<td class="ac">
+								<input type="radio" name="confirm2" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm2" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>도박장운영업(지방자치단체 출자업체 제외) (91249)</td>
+							<td class="ac">
+								<input type="radio" name="confirm1" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm3" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>안마시술소(96122)</td>
+							<td class="ac">
+								<input type="radio" name="confirm4" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm4" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>증기탕(96121)</td>
+							<td class="ac">
+								<input type="radio" name="confirm5" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm5" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>사행성게임기 제조 및 유통관련기업, 사행성 성인오락실 및 성인PC방 운영업</td>
+							<td class="ac">
+								<input type="radio" name="confirm6" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm6" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>대부업</td>
+							<td class="ac">
+								<input type="radio" name="confirm7" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm7" title="아니오">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+			<h3 class="defTit">소호 심사대상 여부 확인을 위해 해당여부를 체크해 주십시오.</h3>		
+			<!-- guideListTop_end -->
+			<div class="wrapTblDefault">
+				<table cellpadding="0" cellspacing="0" class="thCenter">
+					<caption>소호 심사대상 여부 확인 사항 입력</caption>
+					<colgroup>
+						<col style="width:auto">
+						<col style="width:15%">
+						<col style="width:18%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">업종</th>
+							<th scope="col">예</th>
+							<th scope="col">아니오</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1. 금차 신청금액을 포함하여 농협은행 총 대출금액이 10억원을 초과하는지 여부</td>
+							<td class="ac">
+								<input type="radio" name="confirm8" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm8" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>2. 농협은행에 지급보증대출을 보유하고 있는지 여부</td>
+							<td class="ac">
+								<input type="radio" name="confirm2" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm2" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>3. B2B관련여신 보유 여부<br>예) (전자)어음할인, 외상매출채권담보대출, 미래채권담보대출, 다같이성장론, 기업구매자금대출, 의료진료비채권담보대출, 전자채권담보대출 등</td>
+							<td class="ac">
+								<input type="radio" name="confirm3" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm3" title="아니오">
+							</td>
+						</tr>
+						<tr>
+							<td>4. 외국환관련여신 보유 여부<br><strong>예) 수출환어음매입, 수입신용장개설 등</strong></td>
+							<td class="ac">
+								<input type="radio" name="confirm4" title="예">
+							</td>
+							<td class="ac">
+								<input type="radio" name="confirm4" title="아니오">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressPoint">확인</a>
+			</div>
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_main_pa :퇴직연금메인 */
+/* 퇴직연금 메인 */
+.retirEment .reCommentTxt{height:50px;margin-top:20px}
+.retirEment .reCommentTxt img{height:inherit}
+.retirEment .repebtnArea{position:absolute;bottom:30px;width:calc(100% - 34px);left:17px}
+.retirEment .repebtnArea a:nth-of-type(1){margin-right:6px;width:48%}
+.retirEment .repebtnArea a{display:inline-block;width:48%;text-align:center;line-height:40px;box-sizing:border-box;border:1px solid #999;border-radius:2px;background-color:rgba(255,255,255,0.8)}
+.retirementTop{position:relative;height:260px;margin:0 -17px;padding:31px 17px 24px;background-color:#effbf3;text-align:center}
+.retirementTop [class^="topCont0"] h2{font-size:15px}
+.retirementTop .topCont01 p{padding-top:108px;background:url('../images/main/bg_retireTop01.png') no-repeat 50% 5px;background-size:180px 86px;color:#666}
+.retirementTop .topCont01 .btnWrap{margin-top:10px}
+.retirementTop .topCont01 .btnWrap a{display:inline-block;min-width:95px;height:25px;padding-left:3px;border:1px solid #19a647;border-radius:15px;color:#19a647;font-size:12px;line-height:23px}
+.retirementTop .topCont01 .btnWrap a:after{display:inline-block;content:'';width:5px;height:8px;margin:-1px 0 0 6px;background:url('../images/main/ico_retireLink.png') no-repeat 0 0;background-size:cover}
+.retirementTop .topCont01 .btnWrap a:first-child{margin-right:2px}
+.retirementTop .topCont02 dl{height:55px;margin-top:7px;padding:9px 15px 10px;background-color:#fff;box-shadow:0px 2px 0px 0px rgba(0, 0, 0, 0.08);text-align:left}
+.retirementTop .topCont02 dl.list01{background:#fff url('../images/main/ico_retireCont01.png') no-repeat 96% 50%;background-size:34px 31px}
+.retirementTop .topCont02 dl.list02{background:#fff url('../images/main/ico_retireCont02.png') no-repeat 95% 50%;background-size:34px 31px}
+.retirementTop .topCont02 dl.list03{background:#fff url('../images/main/ico_retireCont03.png') no-repeat 96% 50%;background-size:41px 31px}
+.retirementTop .topCont02 dt{font-size:13px;font-weight:bold}
+.retirementTop .topCont02 dd{color:#666666;font-size:12px;letter-spacing:-0.5px}
+.retirementTop .topCont03 > div{overflow:hidden;position:relative;height:177px;margin-top:6px;background-color:#fff;border-radius:2px}
+.retirementTop .topCont03 dl{padding:12px 17px 13px}
+.retirementTop .topCont03 dt{display:inline-block;height:20px;padding:0 10px;border:1px solid #19a647;color:#19a647;border-radius:15px;font-size:12px;line-height:18px}
+.retirementTop .topCont03 dt + dd{padding-top:65px;background:url('../images/main/bg_retireTop02.png') no-repeat 50% 7px;background-size:79px 52.5px}
+.retirementTop .topCont03 dd:last-child{color:#666;font-size:12px}
+.retirementTop .topCont03 dd:last-child span:first-child:after{display:inline-block;content:'';width:1px;height:10px;margin-left:10px;background-color:#dedede;vertical-align:middle}
+.retirementTop .topCont03 .btnWrap{position:absolute;width:100%;bottom:0;left:0}
+.retirementTop .topCont03 .btnWrap a{display:block;width:100%;height:31px;background-color:#19a647;color:#fff;font-size:13px;line-height:31px}
+.retirementTop .topCont03 .btnWrap a:after{display:inline-block;content:'';width:5.5px;height:9.5px;margin:-1px 0 0 6px;background:url('../images/main/ico_arrow.png') no-repeat 0 0;background-size:cover}
+.retirementTop .topCont03 .nameLength{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.retirementTop .topCont04 ul{overflow:hidden;margin-top:7px;background-color:#fff;border-radius:2px;box-shadow:0px 2px 0px 0px rgba(0, 0, 0, 0.08)}
+.retirementTop .topCont04 ul li{position:relative;border-top:1px solid #dedede}
+.retirementTop .topCont04 ul li:first-child{border-top:0}
+.retirementTop .topCont04 ul li a{overflow:hidden;display:block;padding:8px 35px 9px 15px;text-align:left;text-overflow:ellipsis;white-space:nowrap}
+.retirementTop .topCont04 ul li a:after{position:absolute;top:50%;right:15px;content:'';width:7.5px;height:13px;margin-top:-6px;background:url('../images/common/calendar_arr_rht.png') no-repeat 0 0;background-size:cover}
+.retirementTop .topCont04 ul li a .date{display:block;color:#666;font-size:12px}
+/* swipe 관련 css 수정 */
+.retirementTop.swiper-container{padding:31px 17px 24px;margin:0 -17px}
+.retirementTop.swiper-container-horizontal > .swiper-pagination-bullets{top:7px;right:35px;bottom:auto;left:auto;overflow:hidden;width:auto;text-align:right}
+.retirementTop.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 3px}
+.retirementTop .swipeControl{position:absolute;right:12px;top:9px;z-index:10}
+.retirementTop .swipeControl a{display:inline-block;width:20px;height:20px;z-index:10}
+.retirementTop .swipeControl a.btnPause{display:inline-block;background:url('../images/contents/btn_pause.png') no-repeat 50% 50%;background-size:6px 7px}
+.retirementTop .swipeControl a.btnPlay{display:none;background:url('../images/contents/btn_play.png') no-repeat 50% 50%;background-size:6px 7px}
+.menuAllOpen{margin-top:6px;text-align:center}
+.menuAllOpen a{position:relative;overflow:hidden;display:block;text-indent:100%;white-space:nowrap}
+.menuAllOpen a:after{position:absolute;top:50%;left:50%;display:block;content:'';width:17px;height:10px;margin:-5px 0 0 -9px;background:url('../images/main/btn_menuAllOpen.png') no-repeat 0 0;background-size:cover}
+.retirementBottom{width:100%;background-color:#fff}
+.menuAllOpen a.active:after{background-image:url('../images/main/btn_menuAllClose.png')}
+.retirementBottom [class^="menuCont0"]{padding-bottom:13px;border-top:1px solid #dedede}
+.retirementBottom [class^="menuCont0"] ul{display:table;table-layout:fixed;width:auto;max-width:none;min-width:100%}
+.retirementBottom [class^="menuCont0"] ul li{display:table-cell;width:87px;text-align:center}
+.retirementBottom [class^="menuCont0"] ul li:first-child{margin-left:0;width:86px}
+.retirementBottom [class^="menuCont0"] ul li a{display:inline-block;width:100%;text-align:center;vertical-align:top;padding-top:60px;background:url('../images/main/ico_retireMenu1-01.png') no-repeat 50% 0;background-size:50px 50px;font-size:13px;line-height:1.3;min-width:50px}
+.retirementBottom [class^="menuCont0"] ul li a span{display:table;width:100%;height:36px}
+.retirementBottom [class^="menuCont0"] ul li a span em{display:table-cell;vertical-align:middle}
+.retirementBottom [class^="menuCont0"] h4{margin:11px 0 12px;font-size:14px}
+.retirementBottom .menuCont01{border-top:0}
+.retirementBottom .menuCont01 ul li.menu01 a{background-image:url('../images/main/ico_retireMenu1-01.png')}
+.retirementBottom .menuCont01 ul li.menu02 a{background-image:url('../images/main/ico_retireMenu1-02.png')}
+.retirementBottom .menuCont01 ul li.menu03 a{background-image:url('../images/main/ico_retireMenu1-03.png')}
+.retirementBottom .menuCont02 ul li.menu01 a{background-image:url('../images/main/ico_retireMenu2-01.png')}
+.retirementBottom .menuCont02 ul li.menu02 a{background-image:url('../images/main/ico_retireMenu4-03.png')}
+.retirementBottom .menuCont02 ul li.menu03 a{background-image:url('../images/main/ico_retireMenu4-02.png')}
+.retirementBottom .menuCont03 ul li.menu01 a{background-image:url('../images/main/ico_retireMenu3-01.png')}
+.retirementBottom .menuCont03 ul li.menu02 a{background-image:url('../images/main/ico_retireMenu3-02.png')}
+.retirementBottom .menuCont03 ul li.menu03 a{background-image:url('../images/main/ico_retireMenu3-03.png')}
+.retirementBottom .menuCont04 ul li.menu01 a{background-image:url('../images/main/ico_retireMenu4-01.png')}
+.retirementBottom .menuCont04 ul li.menu02 a{background-image:url('../images/main/ico_retireMenu2-02.png')}
+.retirementBottom .menuCont04 ul li.menu03 a{background-image:url('../images/main/ico_retireMenu2-03.png')}

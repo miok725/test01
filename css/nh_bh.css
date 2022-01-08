@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_bh :인증센터, 보안 */
+/* OTP정보 */
+.otpInfo{border:1px solid #dedede;padding:20px 20px 20px 100px;background:url('../images/contents/img_otp.png') no-repeat left 20px center;background-size:60px auto}
+.otpInfo li{overflow:hidden;display:table;table-layout:fixed}
+.otpInfo li span{display:table-cell}
+.otpInfo li span:first-child{width:50px;color:#666;font-size:11px}
+.otpCard{background:url('../images/contents/img_otp_card.png') no-repeat left 20px center;background-size:60px auto}
+.linkFindPw{margin-top:20px;text-align:center}
+.linkFindPw a{display:inline-block;padding-right:12px;color:#3b5997;font-size:13px;background:url('../images/common/ico_link_arrow.png') no-repeat right center;background-size:6px auto}
+/* 범용인증서 발급기관 선택 */
+.authAgencySel{overflow:hidden}
+.authAgencySel li{position:relative;float:left;width:32.5%;height:45px;margin-left:1.2%;font-size:12px;text-align:center}
+.authAgencySel li:first-child{margin-left:0}
+.authAgencySel li input[type='radio']{position:absolute;top:0;clip:rect(0,0,0,0)}
+.authAgencySel li label{display:block;width:100%;height:43px;max-width:100%;margin:0;padding-top:20px;text-align:center}
+.authAgencySel li input[type='radio'] + label{border:1px solid #999999;border-radius:2px;background:url('../images/common/ico_select_default.png') no-repeat center 8px;background-size:14px 10px;cursor:pointer}
+.authAgencySel li input[type='radio']:checked + label{border-color:#4885e0;background:#4885e0 url('../images/common/ico_select_active_w.png') no-repeat center 8px;background-size:14px 10px;color:#fff}
+/*스마트인증앱*/
+.security_wrap{margin-bottom:10px;padding:0 0 20px 110px;border-bottom:1px solid #dedede}
+.security_wrap.easy{min-height:100px;background:url(../images/contents/img_security01.png) no-repeat 17px center;background-size:79px 97px}
+.security_wrap.fingerprint{min-height:140px;background:url(../images/contents/img_security02.png) no-repeat 18px center;background-size:77px 103px}
+.security_wrap .tit{padding-top:21px;color:#19A647;font-size:16px;font-weight:bold}
+.security_wrap .txt{padding-top:47px}
+.security_wrap .txtS{padding-top:5px;color:#19A647;font-size:11px}
+.security_wrap .tit + .txt{padding-top:10px}
+.qrArea{position:relative;height:213px;margin-top:12px;background:url(../images/contents/img_qr.png) no-repeat left top;background-size:15px 213px}
+.qrArea:before{position:absolute;right:0;top:0;content:"";display:block;width:15px;height:213px;background:url(../images/contents/img_qr.png) no-repeat right top;background-size:15px 213px;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.fingerprintWrap{min-height:350px;text-align:center}
+.fingerprintWrap .tit{padding:60px 0 180px;font-size:16px;background:url(../images/contents/img_fingerprint.png) no-repeat center 130px;background-size:81px 104px}
+.fingerprintWrap .txtInfo{color:#666}
+.areaBtnEasy{width:100%;text-align:center}
+.areaBtnEasy > a{padding:0 11px 0 14px;background:url(../images/common/img_line.png) no-repeat left center;background-size:1px 10px;font-size:12px;line-height:48px;display:inline-block} 
+.areaBtnEasy > a:first-child{background:none}
+.areaBtnFingerprint{width:100%;padding-top:10px;border-top:1px solid #dedede;text-align:center;display:table}
+.areaBtnFingerprint > a{width:33.3333px;background:url(../images/common/img_line.png) no-repeat left center;background-size:1px 10px;font-size:11px;line-height:48px;display:table-cell} 
+.areaBtnFingerprint > a:first-child{background:none}

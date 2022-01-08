@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="page_tit">인터넷/스마트대출 기한연기</h2>
+			<div class="stepArea">
+				<p class="stepTit">기한연기신청완료</p>
+				<div class="stepInfo" role="img" aria-label="총 3단계중 3단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="active"><span>3</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="topConfirmArea confirmMsg type01">
+				<p><span class="pointColor">기한연기 신청이 완료되었습니다.</span></p>
+			</div>
+			<!-- topConfirmArea_end -->
+			<div class="guideList">
+				<ul class="listDot">
+					<li>고객님께서 신청하신 기한연기신청완료내용은 다음과 같습니다.</li>
+					<li>금융사기예방을 위한 본인확인절차에 의거 평일 영업시간(09:00~18:00)중에는 당행 스마트금융센터 상담원의 전화통화에 의한 본인확인 후 신청하신 거래가 최종 실행 완료 되며, 당일 내 통화불능 또는 본인이 아닐 경우 아래 기한신청은 취소됨에 유의하시기 바랍니다.</li>
+				</ul>
+			</div>
+			<div class="wrapTblDefault mt20">
+				<table cellpadding="0" cellspacing="0">
+					<caption>대출상품명, 대출계좌번호, 대출잔액, 대출만기일 등의 정보 테이블입니다.</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">대출계좌번호</th>
+							<td><%= NHBFormatUtil.NewAccountFormat(resultMap.getString("ln_acno") , "-")%></td>
+						</tr>
+						<tr>
+							<th scope="row">대출잔액</th>
+							<td class="ar"><span class="pointColor"><%= resultMap.getFormatMoney("io_ln_bac_n", true, 0)%>원</span</td>
+						</tr>
+						<tr>
+							<th scope="row">대출만기일</th>
+							<td><%=CommonUtil.formatDate(resultMap.getString("xtn_due_dt"), "-")%></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>		
+			<!-- wrapTblDefault_end -->
+			<p class="defTxt">고객님께서 신청하신 대출기한연기 내역은 다음과 같습니다.</p>
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">상품마켓 홈으로</a>
+				<a href="javascript:;" class="btnPressPoint">기한연기목록으로</a>
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

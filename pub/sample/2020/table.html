@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Bank">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="#">
+<title>table</title>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_bt.css">
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/swiper.min.js"></script>
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/nh_com_ui.js"></script></head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+		<h1>공통</h1>
+		<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container dfs">
+        <div class="content">
+            <p class="tit lev1">table</p>
+
+            <div class="tbl">
+                <table class="type1">
+                    <caption>회원정보 - 이름, 생년월일 제공</caption>
+                    <colgroup>
+                    <col style="width:30%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td>김농협</td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>1982.10.13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr class="tee">
+            <div class="roudBoxType">
+                <strong class="tit">정상</strong>
+                <button type="button" class="btnCls"><span class="blind">닫기</span></button>
+                <ul class="accTransferList">
+                    <li>
+                        <dl>
+                            <dt>받는분</dt>
+                            <dd>
+                                <p class="accountName">김국민<span>(부기명)</span></p>
+                                <p class="accountNumber"><span class="bankName">국민</span> 400123456789</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>이체금액</dt>
+                            <dd><p class="price">20,000<span>원</span></p></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>수수료</dt>
+                            <dd><p class="price">0<span>원</span></p></dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="btnWrap">
+                    <!-- 2020.08.07 퍼블수정 -->
+                    <a href="javascript:;" data-toggle-target="toggle-test1" data-text="닫기" class="txtLink dArrB jsToggle" role="button" aria-expanded="false">열기</a>
+                </div>
+                <div data-toggle-view="toggle-test1" class="formWrap jsToggleWrap" aria-hidden="true">
+                    <div class="formHolder">
+                        <div class="flexGroup">
+                            <strong class="tit">내 계좌에 표기</strong>
+                            <span class="col inptWrap del">
+                                <input type="text" value="김농협" class="inptText" title="내 계좌에 표기명" placeholder="입력하세요">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <button type="button" class="btnPlus"><span class="blind">보유계좌목록</span></button>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <div class="flexGroup">
+                            <strong class="tit">받는 계좌에 표시</strong>
+                            <span class="col inptWrap del">
+                                <input type="text" value="김농협" class="inptText" title="받는 계좌에 표시명" placeholder="입력하세요">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                            <button type="button" class="btnPlus"><span class="blind">보유계좌목록</span></button>
+                        </div>
+                    </div>
+                    <div class="formHolder">
+                        <div class="flexGroup">
+                            <strong class="tit">이체메모</strong>
+                            <span class="col inptWrap">
+                                <input type="text" class="inptText" title="이체메모" placeholder="입력하세요">
+                                <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="tee">
+            <div class="roudBoxType ng">
+                <strong class="tit"><em class="ng ico">이체불가</em></strong>
+                <button type="button" class="btnCls"><span class="blind">닫기</span></button>
+                <ul class="accTransferList">
+                    <li>
+                        <dl>
+                            <dt>받는분</dt>
+                            <dd>
+                                <p class="accountName">김국민<span>(부기명)</span></p>
+                                <p class="accountNumber"><span class="bankName">국민</span> 400123456789</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>이체금액</dt>
+                            <dd><p class="price">20,000<span>원</span></p></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>수수료</dt>
+                            <dd><p class="price">0<span>원</span></p></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <hr class="tee">
+            <div class="listWrap">
+                <div class="accountInfo bankName">
+                    <p class="bankName"><span class="icoBnk"><img src="../../../images/common/bk_nh.png" alt="농협 로고"></span><span class="accountNumber">302-0000-0000-11</span> <em>: 300,000원</em></p>
+                </div>
+                <ul>
+                    <li class="roudBoxType">
+                        <div class="accInfoArea">     
+                            <div class="formHolder inputType">
+                                <div class="inptWrap">
+                                    <input type="text" title="예금주" class="inptText" placeholder="예금주 입력">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="formHolder inputType">
+                                <div class="inptWrap">
+                                    <input type="tel" title="전화번호" value="01012345678" class="inptText" placeholder="휴대폰 번호">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="rCont">
+                                <button type="button" class="btnDel"><span class="blind">삭제</span></button>
+                            </div>                       
+                        </div> 
+                        <div class="priceDetail">
+                            <div class="accPriceWrap">
+                                <span class="priceArea">
+                                    <strong class="price"><span>350,200</span>원</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="roudBoxType">
+                        <div class="accInfoArea">     
+                            <div class="formHolder inputType">
+                                <div class="inptWrap">
+                                    <input type="text" title="예금주" value="연락처 선택후" class="inptText" placeholder="예금주 입력">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="formHolder inputType">
+                                <div class="inptWrap">
+                                    <input type="tel" title="전화번호" value="01012345678" class="inptText" placeholder="휴대폰 번호">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="rCont">
+                                <button type="button" class="btnDel"><span class="blind">삭제</span></button>
+                            </div>                       
+                        </div> 
+                        <div class="priceDetail">
+                            <div class="accPriceWrap">
+                                <span class="PricpriceAreaeArea">
+                                    <strong class="price placeholder">이체금액</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btnWrap page">
+                <button type="button" class="btn">연락처선택</button>
+                <button type="button" class="btn">직접입력</button>
+            </div>
+            <p class="txC mt30"><a href="javascript:;" class="txtLink ul b">출금계좌 추가</a></p>
+            <hr class="tee">
+            <ul class="roudBoxTypeWrap">
+                <li class="roudBoxType">
+                    <strong class="tit">정상</strong>
+                    <button type="button" class="btnCls"><span class="blind">닫기</span></button>
+                    <ul class="accTransferList">
+                        <li>
+                            <dl>
+                                <dt>받는분</dt>
+                                <dd>
+                                    <p class="accountName">김국민<span>(부기명)</span></p>
+                                    <p class="accountNumber"><span class="bankName">국민</span> 400123456789</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>이체금액</dt>
+                                <dd><p class="price">20,000<span>원</span></p></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>수수료</dt>
+                                <dd><p class="price">0<span>원</span></p></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="btnWrap">
+                        <!-- 2020.08.07 퍼블수정 -->
+                        <a href="javascript:;" data-toggle-target="toggle-test1" data-text="닫기" class="txtLink dArrB jsToggle" role="button" aria-expanded="false">열기</a>
+                    </div>
+                    <div data-toggle-view="toggle-test1" class="formWrap jsToggleWrap" aria-hidden="true">
+                        <div class="formHolder">
+                            <div class="flexGroup">
+                                <strong class="tit">내 계좌에 표기</strong>
+                                <span class="col inptWrap del">
+                                    <input type="text" value="김농협" class="inptText" title="내 계좌에 표기명" placeholder="입력하세요">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </span>
+                                <button type="button" class="btnPlus"><span class="blind">보유계좌목록</span></button>
+                            </div>
+                        </div>
+                        <div class="formHolder">
+                            <div class="flexGroup">
+                                <strong class="tit">받는 계좌에 표시</strong>
+                                <span class="col inptWrap del">
+                                    <input type="text" value="김농협" class="inptText" title="받는 계좌에 표시명" placeholder="입력하세요">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </span>
+                                <button type="button" class="btnPlus"><span class="blind">보유계좌목록</span></button>
+                            </div>
+                        </div>
+                        <div class="formHolder">
+                            <div class="flexGroup">
+                                <strong class="tit">이체메모</strong>
+                                <span class="col inptWrap">
+                                    <input type="text" class="inptText" title="이체메모" placeholder="입력하세요">
+                                    <button type="button" class="btnInptReset"><span class="blind">입력 텍스트 삭제</span></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="roudBoxType ng">
+                    <strong class="tit"><em class="ng ico">이체불가</em></strong>
+                    <button type="button" class="btnCls"><span class="blind">닫기</span></button>
+                    <ul class="accTransferList">
+                        <li>
+                            <dl>
+                                <dt>받는분</dt>
+                                <dd>
+                                    <p class="accountName">김국민<span>(부기명)</span></p>
+                                    <p class="accountNumber"><span class="bankName">국민</span> 400123456789</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>이체금액</dt>
+                                <dd><p class="price">20,000<span>원</span></p></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>수수료</dt>
+                                <dd><p class="price">0<span>원</span></p></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr class="tee">
+            <p class="tit lev2">상세거래내역</p>
+            <div class="tbl tblDeal">
+                <table>
+                    <caption>상세거래내역 - 거래시간, 거래내용, 거래금액, 대출잔액, 이율, 대상금액, 이자계산기간</caption>
+                    <colgroup>
+                    <col style="width:30%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>거래시간</th>
+                            <td>2020/03/03 12:40:04</td>
+                        </tr>
+                        <tr>
+                            <th>거래내용</th>
+                            <td>원금</td>
+                        </tr>
+                        <tr>
+                            <th>거래금액</th>
+                            <td>Deposit <strong>99,000</strong> KRW</td>
+                        </tr>
+                        <tr>
+                            <th>대출잔액</th>
+                            <td><strong>1,000,000</strong> KRW</td>
+                        </tr>
+                        <tr>
+                            <th>이율</th>
+                            <td>6.47%</td>
+                        </tr>
+                        <tr>
+                            <th>대상금액</th>
+                            <td><strong>10,000,000원</strong></td>
+                        </tr>
+                        <tr>
+                            <th>이자계산기간</th>
+                            <td>2015/04/02 ~ 2020/04/02</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr class="tee">
+            <p class="tit lev2">좌우 여백이 없는 경우</p>
+            <ul class="accTransferList wide">
+                <li>
+                    <dl>
+                        <dt>출금계좌</dt>
+                        <dd>
+                            <p class="accountNumber"><em class="ng"><span class="bankName">국민</span> 400123456789</em></p>
+                        </dd>
+                    </dl>
+                    <p class="check">가상계좌는 본인의 계좌가 아니며 입금 시 이용기관 계좌로 입금됩니다. (증권사 등 일부 금융기관 제외)</p>
+                </li>
+                <li>
+                    <dl>
+                        <dt>입금계좌</dt>
+                        <dd>
+                            <p class="accountNumber"><span class="bankName">국민</span> 400123456789</p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>입금계좌</dt>
+                        <dd><span class="name">김국민</span><span class="low"><em class="bookmark">북마크</em><span class="bankName">국민</span> 400123456789</span></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>입금계좌</dt>
+                        <dd><span class="name">김국민</span><span class="low"><em class="bookmark on">북마크</em><span class="bankName">국민</span> 400123456789</span></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>이체금액</dt>
+                        <dd><p class="price">20,000<span>원</span></p></dd>
+                    </dl>
+                </li>
+                <li class="txtR">
+                    <dl>
+                        <dt>수수료</dt>
+                        <dd><p class="price">20,000<span>원</span></p></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>상세금리</dt>
+                        <dd>
+                            <ul>
+                                <li>기본금리:<span>0.1%</span></li>
+                                <li>우대금리:<span>0%</span></li>
+                                <li>적용금리:<span>연0.1%</span></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <hr class="tee">
+            <p class="tit lev2">좌우 여백이 있는 경우</p>
+            <ul class="accTransferList">
+                <li>
+                    <dl>
+                        <dt>출금계좌</dt>
+                        <dd><p class="accountNumber"><span class="bankName">국민</span> 400123456789</p></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>이체금액</dt>
+                        <dd><p class="price">20,000<span>원</span></p></dd>
+                    </dl>
+                </li>
+            </ul>
+            <hr class="tee">
+            <p class="tit lev2">라인이 들어갈경우</p>
+            <ul class="accTransferList line">
+                <li>
+                    <dl>
+                        <dt>출금계좌</dt>
+                        <dd><p class="accountNumber"><span class="bankName">국민</span> 400123456789</p></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>이체금액</dt>
+                        <dd><p class="price">20,000<span>원</span></p></dd>
+                    </dl>
+                </li>
+            </ul>
+            <hr class="tee">
+            <p class="tit lev2">텍스트 + 버튼</p>
+            <ul class="accTransferList wide line">
+                <li>
+                    <dl>
+                        <dt>최종납입회차</dt>
+                        <dd>19회차</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>납입횟수 선택</dt>
+                        <dd class="inr">
+                            <span>1</span>
+                            <button type="button" class="txtLink dArr btnArr"><span class="blind">납입횟수선택</span></button>
+                        </dd>
+                    </dl>
+                </li>                             
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

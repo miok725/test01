@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-title" content="NH Bank">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="robots" content="no-index,follow">
+	<meta name="title" content="">
+	<meta name="author" content="">
+	<meta name="content" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>:::NH통합스마트뱅킹:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">예금</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->
+
+		<!-- container -->
+		<div class="container">
+			<h2 class="defTit marTit">아이(i)계좌 </h2>
+			<!-- STEP -->
+			<div class="stepArea">
+				<p class="stepTit">상품가입설계</p>
+				<div class="stepInfo" role="img" aria-label="총 3단계중 1단계 입니다.">
+					<ul class="stepList">
+						<li class="active"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+					</ul>
+				</div>
+			</div>
+		    <!--// STEP -->
+
+
+
+
+			<div class="guideListTop">
+				<ul class="listDot">
+					<li>Magic Tree(모)계좌가 없을 때는 가까운 농협은행 영업점을 방문하셔서 Magic Tree통장을 신규 개설하시기 바랍니다.</li>
+					<li>아이(i)계좌는 최대 5개까지 생성 가능합니다.</li>
+				</ul>
+			</div>
+
+
+
+			<div class="formWrap">
+				<ul>
+					<!-- 20180911 변경 -->
+					<li>
+						<strong class="formTit">Magic Tree(또는 e-뱅킹)(모) 계좌 정보</strong>
+			
+						<div class="selectBtnForm selectAccount">
+							<div class="stList">
+								<a href="javascript:;" title="OOO 선택 새창열림" role="radiogroup">
+									<span class="selectValue">계좌를 선택해주세요</span>
+									<span class="selectBtn">버튼</span>
+								</a>
+								<select name="" title="선택해주세요">
+									<option value=""></option>
+								</select>
+							</div>
+							<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" class="btnAddon">직접입력</a>
+						</div>
+
+
+						<div class="selectBtnForm insertAccount" style="display: none;">
+							<div class="inputList">
+								<input type="text" title="계좌번호 입력" placeholder="계좌번호 입력">
+							</div>
+							<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" class="btnAddon">계좌선택</a>
+						</div>
+
+						<div class="infoTxtForm">
+							<div class="infoTxtPrice">
+								<p class="infoTxt">현재잔액</p>
+								<em class="priceTxt">783,250<span class="wUnit">원</span></em>
+							</div>
+							<a href="javascript:;" class="btnAddonPoint">조회</a>
+						</div>
+
+
+						<div class="boxHeaderBlue ac mt20" style="font-size: 12px;">아이(i)계좌를 생성할 Magic Tree(또는 e-뱅킹)계좌가 없습니다.</div>
+
+						<div class="wrapTblDefault mt10">
+							<table cellpadding="0" cellspacing="0">
+								<caption>구분, 별칭 출금계좌번호, 현재잔액으로 구성되어 있습니다.</caption>
+								<colgroup>
+									<col style="width:33%">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">구분</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">별칭</th>
+										<td></td>
+									</tr>	
+									<tr>
+										<th scope="row">출금계좌번호</th>
+										<td class="ar"></td>
+									</tr>	
+									<tr>
+										<th scope="row">현재잔액</th>
+										<td class="ar"><strong class="pointColor"><em>10,000</em>원</strong></td>
+									</tr>	
+								</tbody>
+							</table>
+							<div class="boxHeaderBlue mt10">
+								검색결과 : <strong class="pointColor6">00</strong>건
+							</div>
+						</div>
+					</li>
+					<!-- //20180911 변경 -->
+				</ul>
+				<ul>
+					<li>
+						<strong class="formTit">신규 아이(i)계좌 별칭</strong>
+						<div class="inputList">                    
+							<input type="text" title="주민등록지 주소" readonly="readonly" placeholder="최대 문자 12자리, 한글 6자리까지">
+							<a href="javascript:" title="Reset" class="btnReset">Reset</a>
+						</div>
+					</li>
+					<li>
+						<strong class="formTit">예치금액<span class="unit pointColor">(일만원)</span></strong>
+						<div class="inputList">
+							<input type="text" title="입금금액 입력" placeholder="1만원~1백만원">
+							<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+						</div>                
+						<div class="areaBtnPrice mt10">
+							<div class="inner">
+								<ul>
+									<li><a href="javascript:;">100만</a></li>
+									<li><a href="javascript:;">5만</a></li>
+									<li><a href="javascript:;">1만</a></li>
+									<li><a href="javascript:;" class="btnAddon">정정</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<strong class="formTit">출금계좌비밀번호 </strong>
+						<input type="password" title="계좌 비밀번호 입력" placeholder="비밀번호 4자리" maxlength="4" class="sKey" readonly="readonly">
+						<div class="checkList">
+							<input type="checkbox" id="sample0002" name="">
+							<label for="sample0002">
+								출금계좌비밀번호로 신규계좌비밀번호 설정
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- fixed button -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">가입설계확인</a>
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- //fixed button -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu" style="display: block;">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>
+			<!-- quick button -->
+			<div class="areaBtmQuick" style="bottom: 94px;"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop" style="display: none; opacity: 0;"><a href="javascript:;">Top</a></span>
+			</div>
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

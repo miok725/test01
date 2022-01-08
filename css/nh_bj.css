@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_bj :계좌관리 */
+.liLine1{border:solid 3px #919191 !important;background-image:url(../images/contents/bg_mynh_border1.png)}
+.liLine2{border:solid 3px #44933f !important;background-image:url(../images/contents/bg_mynh_border2.png)}
+.liLine3{border:solid 3px #3a9dd3 !important;background-image:url(../images/contents/bg_mynh_border3.png)}
+.liLine4{border:solid 3px #1fb9bf !important;background-image:url(../images/contents/bg_mynh_border4.png)}
+.liLine5{border:solid 3px #a2b700 !important;background-image:url(../images/contents/bg_mynh_border5.png)}
+.liLine6{border:solid 3px #e37d61 !important;background-image:url(../images/contents/bg_mynh_border6.png)}
+.liLine7{border:solid 3px #dca329 !important;background-image:url(../images/contents/bg_mynh_border7.png)}
+
+/* 2020 고도화 시작 */
+.dfs .myNh .bannerWrap .banner:after,
+.dfs .userSettingWrap .btnSetting, .dfs .userSettingWrap .userSetting .btnModify:after, .dfs .myNh .grade>span, .dfs .userStatus .titWrap .rCont button:after,
+.dfs .userSettingWrap .userSetting .btnModify span.pen, .dfs .userSettingWrap .userSetting .btnDetail:after, .dfs .myNh .userStatus ul li strong:after
+{display:inline-block;content:'';background-image:url('../images/contents/bi/sp_bi.png');background-size:auto 200px}
+.dfs .contWrap.bg{background-color:#fff}
+.dfs .myNh{padding-bottom:0}
+.dfs .myNh .contWrap{padding-top:10px;padding-bottom:20px}
+.dfs .myNh .jsAcc.type01{margin-top:5px}
+.dfs .jsTabs.type01>.tabs:after{clear:both}
+.dfs .myNh .nh .jsAcc.type02 .header.active{color:#19A647}
+.dfs .myNh .nh .jsAcc.type02 .header.active:after{background-position-x:-167px}
+.dfs .myNh .nhsh .jsAcc.type02 .header.active{color:#02b9c0}
+.dfs .myNh .nhsh .jsAcc.type02 .header.active:after{background-position-x:-183px}
+.dfs .myNh .bg .jsAcc.type02 .listBul{margin:0 40px}
+.dfs .myNh .bg .jsAcc.type02 .view .btnWrap{margin:20px 20px 0}
+.dfs .myNh .jsToggleWrap{position:absolute;background-color:#fff;left:0;right:0;box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2);padding:20px;border-radius:10px;z-index:5000}
+.dfs .myNh .nhsh .userStatus .jsToggleWrap{left:0;right:0}
+.dfs .myNh .jsToggleWrap .tit{font-size:16px;color:#111;margin-bottom:20px}
+.dfs .myNh .jsToggleWrap .cls{top:15px;right:15px}
+.dfs .myNh .jsToggleWrap p{font-size:13px;color:#333;line-height:22px;word-break:keep-all}
+.dfs .userSettingWrap{height:165px;border-bottom:1px solid #f3f3f3;padding:40px 20px 20px;margin:0 -20px}
+.dfs .myNh.nh .userSettingWrap{background-color:#19A647}
+.dfs .myNh.nhsh .userSettingWrap{background-color:#02b9c0}
+.dfs .userSettingWrap .btnSetting{position:absolute;width:19px;height:19px !important;background-position:-65px -72px;top:22px;right:0;margin:0}
+.dfs .userSettingWrap .userSetting{position:relative;padding-left:75px}
+.dfs .userSettingWrap .userSetting .btnModify{position:absolute;top:2px;left:0;width:62px;height:50px;background-position:0 -48px}
+.dfs .userSettingWrap .userSetting .btnModify:after{position:absolute;width:21px;height:21.5px;top:14px;left:15px;background-position:0 -48px}
+.dfs .userSettingWrap .userSetting .btnModify span.cir{display:block;position:absolute;width:50px;height:50px;top:0;left:0;bottom:0;border-radius:50%;z-index:10}
+.dfs .myNh.nhsh .userSettingWrap .userSetting .btnModify span.cir{border:3px solid #02b9c0}
+.dfs .myNh.nh .userSettingWrap .userSetting .btnModify span.cir{border:3px solid #19A647}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine1{border-color:#919191 !important}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine2{border-color:#44933f !important}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine3{border-color:#3a9dd3 !important}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine4{border-color:#1fb9bf !important}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine5{border-color:#a2b700 !important}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine6{border-color:#e37d61 !important}
+.dfs .userSettingWrap .userSetting .btnModify span.cir.liLine7{border-color:#dca329 !important}
+.dfs .userSettingWrap .userSetting .btnModify span.imgHolder{position:absolute;width:44px;height:44px;top:3px;left:3px;bottom:0;background-color:#fff;border-radius:50%;overflow:hidden}
+.dfs .userSettingWrap .userSetting .btnModify span.imgHolder img{display:block;position:relative;width:44px;height:44px;line-height:0;z-index:11}
+.dfs .userSettingWrap .userSetting .btnModify span.pen{position:absolute;width:22px;height:22px;top:27px;left:40px;background-position:-23px -48px;z-index:15}
+.dfs .userSettingWrap .userSetting .btnDetail{position:relative;font-size:21px;color:#fff;font-weight:900;padding-right:16px}
+.dfs .userSettingWrap .userSetting .btnDetail:after{position:absolute;top:50%;right:0;width:6px;height:11.5px;margin-top:-5.5px;background-position:-49px -48px}
+.dfs .userSettingWrap .userSetting .txt{color:rgba(255, 255, 255, .7);margin-top:3px}
+.dfs .userSettingWrap .userSetting .txt .date{display:inline-block;margin-left:5px;color:rgba(255, 255, 255, .7)}
+.dfs .myNh .jsTabs.type01{background-color:transparent}
+.dfs .myNh .jsTabs.type01 .tabs{background-color:#fff}
+.dfs .myNh .jsAcc.type02 .header{font-weight:600}
+.dfs .myNhUserSetDet{margin-bottom:30px}
+.dfs .myNhUserSetDet .jsAcc.type02 .header{padding:0}
+.dfs .myNhUserSetDet .jsAcc.type02 .header:before, .dfs .myNhUserSetDet .jsAcc.type02 a.link:before{left:0}
+.dfs .myNhUserSetDet .jsAcc.type02 .accInr{border-bottom:1px solid #f3f3f3}
+.dfs .myNhUserSetDet .jsAcc.type02 .header:before{content:none}
+.dfs .myNhUserSetDet .jsAcc.type02 .header:after, .dfs .myNhUserSetDet .jsAcc.type02 a.link:after{right:0}
+.dfs .myNhUserSetDet .jsAcc.type02 a.link{padding:0}
+.dfs .myNhUserSetDet .jsAcc.type02 a.link .rCont{margin-right:26px}
+.dfs .myNhUserSetDet .jsAcc .view{margin:0 0 20px;padding:0 15px}
+.dfs .myNhUserSetDet .jsAcc .view .tit{font-size:14px;color:#111}
+.dfs .myNhUserSetDet .jsAcc .view .listBul{margin-top:7px}
+.dfs .myNhUserSetDet .jsAcc .view .listBul li{margin-top:2px;padding-left:10px;font-size:15px;color:#666}
+.dfs .myNhUserSetDet .jsAcc .view .listBul li + li{margin-top:18px}
+.dfs .myNhUserSetDet .jsAcc .view .btnWrap{margin-top:25px}
+.dfs .jsTabs.type01>.tabs li.selected.nh a, .dfs .jsTabs.type01>.scrollWrap>.tabs li.selected.nh a{border-bottom:3px solid #19A647;color:#19A647}
+.dfs .jsTabs.type01>.tabs li.selected.nhsh a, .dfs .jsTabs.type01>.scrollWrap>.tabs li.selected.nhsh a{border-bottom:3px solid #02b9c0;color:#02b9c0}
+.dfs .myNh .jsTabs.type01.boxMyNhUserSet >.tabs{height:auto}
+.dfs .myNh .jsTabs.type01.boxMyNhUserSet >.tabs li{height:auto;line-height:initial}
+.dfs .myNh .jsTabs.type01.boxMyNhUserSet >.tabs li a{padding:17px 10px 9px 10px;line-height:initial}
+/* .dfs .myNh .jsTabs.type01.boxMyNhUserSet .panels{overflow:hidden} */
+/* .dfs .myNh .panels .userStatus{margin:20px 3px 16px} */
+.dfs .myNh .panels .panel.selected .userStatus{-webkit-animation:userStatusFade .3s .5s initial;animation:userStatusFade .3s .5s initial}
+@keyframes userStatusFade{0%{opacity:0}50%{opacity:.5}100%{opacity:1}}
+@-webkit-keyframes userStatusFade{0%{opacity:0}50%{opacity:.5}100%{opacity:1}}
+.dfs .content > .jsTabs.type01  .nhsh .userStatus .titWrap{padding:27px 0 0}
+.dfs .content > .jsTabs.type01  .nhsh .userStatus .titWrap .rCont{top:27px}
+.dfs .nhsh .userStatus .titWrap .tit{min-height:auto;font-size:14px;color:#666;line-height:1}
+.dfs .nhsh .userStatus .titWrap .rCont button{position:relative;font-size:13px;color:#139196;padding-right:20px}
+.dfs .nhsh .userStatus .titWrap .rCont button:before{display:block;content:'';position:absolute;width:13.5px;height:13.5px;background:#02b9c0;border-radius:50%;top:3px;right:0}
+.dfs .nhsh .userStatus .titWrap .rCont button:after{position:absolute;width:5px;height:8.5px;background-position:0 -31px;top:6px;right:4px}
+.dfs .nhsh .userStatus .dealerName{margin-top:5px;padding-bottom:16px}
+.dfs .nhsh .userStatus .dealerName strong{display:block;font-size:16px;color:#111}
+.dfs .nhsh .userStatus .dealerName button{display:inline-block;border:1px solid #02b9c0;background:#eef7f8;font-weight:600;color:#139196;height:28px;padding:0 18px;font-size:12px;border-radius:20px;margin-top:7px}
+.dfs .myNh .userStatus ul{display:table;width:100%;padding:27px 0 16px}
+.dfs .myNh .userStatus ul li{display:table-cell;width:33.33%;padding:0;text-align:center}
+.dfs .myNh .userStatus ul li a{display:block}
+.dfs .myNh .userStatus ul li + li{border-left:1px solid #f1f1f1}
+.dfs .myNh .userStatus ul li strong{display:inline-block;position:relative;padding-right:10px;font-size:13px;color:#4a5057}
+@media screen and (max-width:380px){
+  .dfs .myNh .userStatus ul li strong{font-size:12px;letter-spacing:-1px}
+}
+.dfs.small .myNh .userStatus ul li strong{font-size:12px;letter-spacing:-1px}
+.dfs .myNh .userStatus ul li strong:after{position:absolute;top:50%;right:0;margin-top:-4.2px;width:5px;height:8.5px;background-position:-49px -61px}
+.dfs .myNh .grade{display:block;width:37.5px;height:37.5px;margin:10px auto 0}
+.dfs .myNh .grade>span{display:block;width:37.5px;height:37.5px;font-size:1px;text-indent:-999px;border-radius:50%;box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1)}
+.dfs .myNh .grade>span.normal{background-position:0 -100px;box-shadow:none}
+.dfs .myNh .grade>span.blue{background-position:-40px -100px}
+.dfs .myNh .grade>span.green{background-position:-80px -100px}
+.dfs .myNh .grade>span.royal{background-position:-120px -100px}
+.dfs .myNh .grade>span.gold{background-position:-160px -100px}
+.dfs .myNh .grade>span.topclass{background-position:-200px -100px}
+.dfs .jsAcc.type02 a.link .grade{display:inline-block;margin:0;width:auto;height:auto}
+.dfs .jsAcc.type02 a.link .grade>span{display:inline-block;position:relative;width:30px;height:30px;top:9px;margin-right:3px}
+.dfs .jsAcc.type02 a.link .grade>span.normal{background-position:0 -140px;box-shadow:none}
+.dfs .jsAcc.type02 a.link .grade>span.blue{background-position:-33px -140px}
+.dfs .jsAcc.type02 a.link .grade>span.green{background-position:-66px -140px}
+.dfs .jsAcc.type02 a.link .grade>span.royal{background-position:-99px -140px}
+.dfs .jsAcc.type02 a.link .grade>span.gold{background-position:-132px -140px}
+.dfs .jsAcc.type02 a.link .grade>span.topclass{background-position:-165px -140px}
+.dfs .myNh .userStatus ul li .point, .dfs .myNh .userStatus ul li .price{display:block;margin-top:17px;color:#000;font-size:15px;font-weight:900}
+.dfs .myNh .userStatus ul li .price span{font-size:14px}
+.dfs .myNh .bannerWrap{background-color:#e8f9ee}
+.dfs .content.myNh > .bannerWrap{margin-bottom:20px}
+.dfs .myNh .bannerWrap .banner{position:relative;text-align:left;font-size:13px;color:#000}
+.dfs .myNh .bannerWrap .banner:after{position:absolute;top:20px;right:20px;width:40px;height:38px;background-position:-90px -45px}
+.dfs .myNh .bannerWrap .banner strong{display:block;font-size:18px;color:#111;margin-bottom:5px}
+.dfs .myNh .bannerWrap.biNhsh{background:#d0f3f2}
+.dfs .myNh .bannerWrap.biNh .banner, .dfs .myNh .bannerWrap.biNhsh .banner{height:85px;font-size:15px;color:#111}
+.dfs .myNh .bannerWrap.biNh .banner:after{top:0;right:0;width:99px;height:85px;background:url('../images/contents/bi/ico_banner_nh.png') no-repeat;background-size:99px auto}
+.dfs .myNh .bannerWrap.biNhsh .banner:after{top:0;right:0;width:99px;height:85px;background:url('../images/contents/bi/ico_banner_nhsh.png') no-repeat;background-size:99px auto}
+.dfs .bannerWrap.biNhsh .icoX, .dfs .bannerWrap.biNh .icoX{display:inline-block;position:relative;top:-1px;width:8.5px;height:8.5px;background-image:url('../images/contents/bi/sp_bi.png');background-size:auto 200px;background-position:-49px -75px}
+.dfs .myNh .jsTabs.type01.boxMyNhUserSet{position:relative;z-index:10;margin:-50px 0 0 0;padding:0 15px 10px;background:#fff;border-radius:9px;box-shadow:0 5px 15px rgba(0, 0, 0, 0.15);-webkit-transition:all .4s ease-out;transition:all .4s ease-out}
+.dfs .myNh .jsTabs.type01.boxMyNhUserSet .tabs{background-color:transparent}
+.dfs .myNh .jsTabs.type01.boxMyNhUserSet:before{background-color:#fff}
+/* 나의 농축협 배너 */ 
+.dfs .bannerBox{position:relative;height:110.5px;margin-top:10px;background:#3092fa;border-radius:10px}
+.dfs .bannerBox .bannerBI{display:flex;align-items:center;padding-left:20px;width:100%;height:100%}
+.dfs .bannerBox .bannerBI:after{content:'';position:absolute;top:0;right:0;width:148.5px;height:110.5px;background:url('../images/common/banner_bi.png') no-repeat;background-size:148.5px auto}
+.dfs .bannerBox .bannerBI div strong{display:block;color:#fff;font-size:15px}
+.dfs .bannerBox .bannerBI div span{display:inline-block;position:relative;margin-top:10px;padding-right:15px;color:rgba(255, 255, 255, 0.8);font-size:12px}
+.dfs .bannerBox .bannerBI div span:after{content:'';position:absolute;top:50%;right:0;width:5.5px;height:10.5px;margin-top:-5px;background-image:url('../images/common/sp_com.png');background-size:auto 250px;background-position:-480px -25px}
+.accordionMenuWrap{margin:0 -17px}
+.accordionMenuWrap .dep2,
+.accordionMenuWrap .dep3{display:none}
+.accordionMenuWrap .dep1 > li > a{display:block;padding:13px 40px 13px 17px;font-weight:bold;border-bottom:1px solid #dedede;background:url(../images/common/ico_arr2_down.png) 94% 50% no-repeat;background:url(../images/common/ico_arr2_down.png) right 17px top 50% no-repeat;background-size:16px 9px;-webkit-background-size:16px 9px;font-size:16px}
+.accordionMenuWrap .dep1 > li > a.active{color:#3b5997;background:#f3faff url(../images/common/ico_arr2_up.png) 94% 50% no-repeat;background:#f3faff url(../images/common/ico_arr2_up.png) right 17px top 50% no-repeat;-webkit-background-size:16px 9px}
+.accordionMenuWrap .dep1 > li > a.link:after{display:none}
+.accordionMenuWrap .dep1 > li > a.link{background:url(../images/common/ico_list_link.png) 94% 50% no-repeat;background:url(../images/common/ico_list_link.png) right 17px top 50% no-repeat;-webkit-background-size:9px 16px !important}
+.accordionMenuWrap .dep2 > li > a{position:relative;display:block;padding:10px 40px 10px 26px;color:#666;border-bottom:1px solid #dedede;background:url(../images/common/ico_list_link.png) 94% 50% no-repeat;background:url(../images/common/ico_list_link.png) right 17px top 50% no-repeat;-webkit-background-size:9px 16px;font-weight: bold}
+.accordionMenuWrap .dep2 > li > a.more{background:url(../images/common/ico_plus.png) 94% 50% no-repeat;background:url(../images/common/ico_plus.png) right 17px top 50% no-repeat;-webkit-background-size:15px 15px}
+.accordionMenuWrap .dep2 > li > a.more.active{background:url(../images/common/ico_minus.png) 94% 50% no-repeat;background:url(../images/common/ico_minus.png) right 17px top 50% no-repeat;-webkit-background-size:15px 1px}
+.accordionMenuWrap .dep3 > li > a{position:relative;display:block;padding:10px 40px 10px 26px;color:#666;border-bottom:1px solid #dedede;background:url(../images/common/ico_list_link.png) 94% 50% no-repeat #f8f8f8;background:url(../images/common/ico_list_link.png) right 17px top 50% no-repeat #f8f8f8;-webkit-background-size:6px 13px;font-size:13px}
+.accordionMenuWrap .dep2 > li > a:after{position:absolute;top:50%;left:17px;content:'항목 열기';width:3px;height:3px;margin-top:-2px;background:url(../images/common/bul_dot.png) no-repeat;-webkit-background-size:cover;text-indent:-9999px}
+.mySetup .accordionMenuWrap .dep2{display:block}
+.mySetup .accordionMenuWrap .dep2 > li > a{padding-left:17px;color:#111}
+.mySetup .accordionMenuWrap .dep2 > li > a:after{display:none}
+.serverVersion{position:fixed;bottom:55px;right:10px;z-index:2;font-size:10px;color:#666}
+.guideListTop.wedgetType{position:relative}
+.guideListTop.wedgetType .btnCircle{position:absolute;right:17px;top:14px;display:inline-block;border:1px solid #19A647;background-color:#fff;font-size:11px;padding:2px 5px 2px 23px;color:#19A647;border-radius:2px;background-image:url(../images/contents/btn_pos_reset.png);background-size:30px auto;background-repeat:no-repeat;background-position:-4px -4px}
+.myWedgetSelect{margin-top:15px}
+.myWedgetSelect .inner{margin:0 -2px}
+.myWedgetSelect .inner ul{overflow:hidden}
+.myWedgetSelect .inner ul li{float:left;width:25%;margin-top:4px;padding:0 2px;height:70px}
+.myWedgetSelect .inner ul li a{position:relative;display:block;width:100%;height:70px;border:1px solid #dedede;border-radius:2px}
+.myWedgetSelect .inner ul li a span{position:absolute;width:100%;height:28px;left:0;bottom:0;display:block;width:100%;line-height:14px;text-align:center;font-size:12px;letter-spacing:-1px;word-break:keep-all}
+.myWedgetSelect li a .clickOrder{display:none;position:absolute;top:5px;right:5px;width:15px;height:15px;font-size:10px; line-height:13px;color:#111;background:#fff;border-radius:50%;text-align:center}
+.myWedgetSelect .inner ul li a.active{color:#fff;border:1px solid #19a647;background:#19a647}
+.myWedgetSelect li a.active:after{position:absolute;bottom:0;left:0;content:'선택됨';opacity:0}
+.myWedgetSelect li a.active .clickOrder{display:block}
+.myWedgetSelect li a.tokIcoSch:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:20px;height:20px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_01.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoSch:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoSearch:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:23px;height:20px;margin:0 0 0 -11px;background-image:url(../images/common/util/icon_wetget_02.png);background-size:23px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoSearch:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoBigAcc:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:19px;height:19px;margin:0 0 0 -9px;background-image:url(../images/common/util/icon_wetget_03.png);background-size:19px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoBigAcc:before{content:'';display:block;clear:both;background-position:0 -19px}
+.myWedgetSelect li a.tokIcoFinana:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:20px;height:20px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_04.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoFinana:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoExchg:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:20px;height:20px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_05.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoExchg:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoExchgMon:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:24px;height:40px;margin:0 0 0 -12px;background-image:url(../images/common/util/icon_wetget_06.png);background-size:24px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoExchgMon:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoMoAtm:before{content:'';display:block;clear:both;position:absolute;left:50%;top:12px;width:20px;height:22px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_07.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoMoAtm:before{content:'';display:block;clear:both;background-position:0 -22px}
+.myWedgetSelect li a.tokIcoMoOtp:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:16px;height:20px;margin:0 0 0 -8px;background-image:url(../images/common/util/icon_wetget_08.png);background-size:16px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoMoOtp:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoDues:before{content:'';display:block;clear:both;position:absolute;left:50%;top:16px;width:23px;height:16px;margin:0 0 0 -11px;background-image:url(../images/common/util/icon_wetget_09.png);background-size:23px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoDues:before{content:'';display:block;clear:both;background-position:0 -16px}
+.myWedgetSelect li a.tokIcoAssets:before{content:'';display:block;clear:both;position:absolute;left:50%;top:15px;width:24px;height:18px;margin:0 0 0 -12px;background-image:url(../images/common/util/icon_wetget_10.png);background-size:24px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoAssets:before{content:'';display:block;clear:both;background-position:0 -18px}
+.myWedgetSelect li a.tokIcoBigSch:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:20px;height:20px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_11.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoBigSch:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoDp:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:19px;height:18px;margin:0 0 0 -9px;background-image:url(../images/common/util/icon_wetget_12.png);background-size:19px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoDp:before{content:'';display:block;clear:both;background-position:0 -19px}
+.myWedgetSelect li a.tokIcoShopSch:before{content:'';display:block;clear:both;position:absolute;left:50%;top:12px;width:16px;height:21px;margin:0 0 0 -8px;background-image:url(../images/common/util/icon_wetget_13.png);background-size:16px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoShopSch:before{content:'';display:block;clear:both;background-position:0 -21px}
+.myWedgetSelect li a.tokIcoInfo:before{content:'';display:block;clear:both;position:absolute;left:50%;top:12px;width:22px;height:20px;margin:0 0 0 -11px;background-image:url(../images/common/util/icon_wetget_14.png);background-size:22px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoInfo:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoLuck:before{content:'';display:block;clear:both;position:absolute;left:50%;top:14px;width:20px;height:20px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_15.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoLuck:before{content:'';display:block;clear:both;background-position:0 -20px}
+.myWedgetSelect li a.tokIcoEvt:before{content:'';display:block;clear:both;position:absolute;left:50%;top:12px;width:20px;height:24px;margin:0 0 0 -10px;background-image:url(../images/common/util/icon_wetget_16.png);background-size:20px auto;background-repeat:no-repeat;background-position:0 0}
+.myWedgetSelect li a.active.tokIcoEvt:before{content:'';display:block;clear:both;background-position:0 -24px}
+.hanaroCheckWrap{margin-top:20px}
+.hanaroUser{margin-bottom:15px}
+.hanaroCheckWrap .infoTxt{font-size:12px}
+.usertyeInfo{color:#666;line-height:1}
+.usertyeInfo > .pointColor3{font-size:15px}
+[class *= stick]{font-size:13px}
+[class *= stick]:before{content:'';display:inline-block;width:20px;height:20px;background-repeat:no-repeat;background-size:auto 20px;background-image:url('../images/contents/ico_shanaro_rank.png');vertical-align:-4px;margin-right:4px}
+.stickHope:before{background-position:-1px 0}
+.stickBlue:before{background-position:-26px 0}
+.stickGreen:before{background-position:-51px 0}
+.stickRed:before{background-position:-76px 0}
+.stickGold:before{background-position:-101px 0}
+.stickPurple:before{background-position:-126px 0}
+.infoTxt.redbullet:before{background:url(../images/common/ico_caution.png) no-repeat;background-size:cover;top:3px}
+.infoTxt.userIco:before{width:18px;height:18px;background:url(../images/contents/ico_hanaro_user.png) no-repeat;background-size:cover;vertical-align:-2px;top:1px}
+.btnAddon.arrBul:after{content:'';display:inline-block;width:6px;height:10px;background:url(../images/common/arrow_arr_quick.png) no-repeat right 0px;background-size:6px auto;padding-left:5px;vertical-align:middle}
+.hanaUserInfo.listFlex{padding:0}
+.hanaUserInfo li:before{content:'';display:inline-block;width:100%;height:1px;background-color:#d0d0d0;position:absolute;top:50px;left:100%;z-index:0}
+.hanaUserInfo li:after{content:'';display:inline-block;width:2px;height:4px;background-color:#f8f8f8;position:absolute;top:48px;right:100%}
+.hanaUserInfo li:last-child:before{background-color:transparent}
+.hanaUserInfo li{padding-top:34px;position:relative}
+.hanaUserInfo li span{font-size:11px}
+.hanaUserInfo li.active{padding-top:0}
+.hanaUserInfo li.active span:before{content:'현재등급';height:64px;color:transparent}
+.hanaUserInfo li span:before{content:'';display:block;background-repeat:no-repeat;background-size:31px 64px;;background-position:0px bottom}
+.hanaUserInfo li span:before{width:32px;height:32px;overflow:hidden}
+.hanaUserInfo li:nth-child(1) span:before{background-image:url(../images/contents/ico_hanaro_rank01.png)}
+.hanaUserInfo li:nth-child(2) span:before{background-image:url(../images/contents/ico_hanaro_rank02.png)}
+.hanaUserInfo li:nth-child(3) span:before{background-image:url(../images/contents/ico_hanaro_rank03.png)}
+.hanaUserInfo li:nth-child(4) span:before{background-image:url(../images/contents/ico_hanaro_rank04.png)}
+.hanaUserInfo li:nth-child(5) span:before{background-image:url(../images/contents/ico_hanaro_rank05.png)}
+.hanaUserInfo li:nth-child(6) span:before{background-image:url(../images/contents/ico_hanaro_rank06.png)}
+.blueTxtBox{padding:10px;border:1px solid #e4e4e4;background-color:#f5fdff;font-size:12px;color:#0066b3}
+
+/* 키보드뱅킹 설정화면 */
+.tblHeader.keyboardHeader{position:relative}
+.tblHeader.keyboardHeader .defTit{display:inline-block}
+.tblHeader.keyboardHeader a{display:inline-block;width:14px;height:14px;color:transparent;position:relative;margin-top:4px;margin-left:5px;overflow:hidden;float:none}
+.tblHeader.keyboardHeader a::before{content:'';display:inline-block;width:14px;height:14px;background:url('../images/main/ico_revent_tootip.png') no-repeat 0 0;background-size:14px auto;vertical-align:top}
+.tblHeader.keyboardHeader .btnResentTootip{display:inline-block;width:20px;height:20px;color:transparent;position:relative;top:50%;overflow:hidden;background:transparent;vertical-align:-7px}
+.tblHeader.keyboardHeader.btnResentTootip::before{content:'';display:inline-block;width:18px;height:18px;background:transparent url('../images/contents/hl/ico_revent_tootip.png') no-repeat 0 0;background-size:18px auto;vertical-align:-1px}
+/* 키보드뱅킹 설정화면 */
+.myLinkList.type01 li{background-position:2px 10px;margin-bottom:9px}
+.myLinkList.type01 li a{line-height:18px}
+.myLinkList.type01 li a .ball{position:relative;min-width:16px;height:16px;margin-left:2px;padding:0 4px;background-color:#f44743;border-radius:20px;color:#fff;font-size:12px;text-align:center;line-height:14px;display:inline-block}
+@media screen and (max-width:390px){
+  .myLinkList.type01 li{display:block;width:100%}
+}
+/* 푸쉬알림설정 */
+.pushList{border-bottom:1px solid #dedede}
+.pushList li{border-top:1px solid #dedede}
+.pushList .tblCell dt{width:70%}
+.pushList .tblCell dd{width:30%;text-align:initial;overflow:hidden;vertical-align:middle}
+.pushList .tblCell .toggleList{float:right;padding-right:8px}
+.pushList .tblCell .fwN{color:#555 !important}
+.pushList .tblCell.tblCellclear dt{width:100%;display:table-row}
+.pushList .tblCell.tblCellclear dd{width:100%;text-align:initial;display:table}
+.pushList .tblCell.tblCellclear dd span:nth-of-type(1){width:28%}
+.pushList .tblCell.tblCellclear dd span{width:36%;display:table-cell;vertical-align:middle;height:90px}
+.pushList .tblCell.tblCellclear dd .top , .pushList .tblCell.tblCellclear dd .bot{padding-left:40px;background-repeat:no-repeat;background-position:0 center;background-size:30px 59px}
+.pushList .tblCell.tblCellclear dd .top{background-image:url(../images/contents/bg_alarmPop01.gif)}
+.pushList .tblCell.tblCellclear dd .bot{background-image:url(../images/contents/bg_alarmPop02.gif)}

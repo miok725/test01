@@ -1,0 +1,598 @@
+@charset "utf-8";
+
+/* 상담톡 */
+.chatBotWrap{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1200}
+.chatHead{display:table;width:100%;height:44px;padding-right:28px;background-color:#fff;border-bottom:1px solid #dedede}
+.chatHead span, .chatHead h1{display:table-cell;vertical-align:middle}
+.chatHead h1 img{width:71px;vertical-align:middle}
+.chatHead .chatGuide{width:18px;padding-left:15px}
+.chatHead .chatGuide a{display:inline-block;width:20px;height:20px;font-size:1px;color:transparent;line-height:0;border:1px solid #111;border-radius:1000px;background-image:url('../images/common/util/btn_tok_ques_01.png');background-repeat:no-repeat;background-size:40% auto;background-position:center center}
+.chatHead .chatGuide.btnBack a{background:url('../images/common/btn_back.png') no-repeat center center;background-size:19px 17px}
+.chatHead .chatCs{width:19px;padding-right:18px}
+.chatHead .chatCs a{display:inline-block;width:19px;height:18px;background:url('../images/contents/ico_chatCs.png') no-repeat 50% 50%;background-size:19px 18px;font-size:1px;color:transparent;line-height:0}
+.chatBotWrap .popClose{position:absolute;top:12px;right:15px;width:14px;height:13px}
+.chatBotWrap .popClose img{max-width:100%}
+.chatHead h1{padding-left:30px;text-align:center}
+.chatDivingLine{height:1px;margin:25px 8px;border:0;border-top:1px solid #cccccc}
+.chatCont{overflow-y:scroll;-webkit-overflow-scrolling:touch;height:100%;height:calc(100% - 44px - 44px);padding:20px 0px;background:-webkit-linear-gradient(180deg, #e2ecf5 0%, #f1f9ff 60%, #fcf1f9 100%);background:linear-gradient(180deg, #e2ecf5 0%, #f1f9ff 60%, #fcf1f9 100%)}
+.chatCont::-webkit-scrollbar{display:none}
+.chatCont.chatHelpOpen{bottom:auto;height:100% !important;z-index:300}
+.chatCont .chatDate{margin-bottom:20px;text-align:center}
+.chatCont .chatDate span{position:relative;display:block;width:100%;height:15px;padding:0 10px;background-color:transparent;border-radius:5px;color:#666;text-align:center;line-height:13px;font-size:9px;color:#85a3bf}
+.chatCont .dialogueWrap{position:relative;overflow:hidden}
+.chatCont .dialogueWrap + .dialogueWrap{margin-top:6px}
+.chatCont .dialogueWrap .dialogue{position:relative;display:inline-block;max-width:70%;padding:7px 13px 9px;background-color:#fff;border:0;border-radius:20px}
+.chatCont .dialogueWrap .dialogue p{text-align:justify}
+.chatCont .dialogueWrap .dialogue .chatTxt{display:inline-block;font-size:12px;text-align:left}
+.chatCont .dialogueWrap .dialogue .time{display:inline-block;position:absolute;bottom:0px;font-size:11px;color:#888}
+.chatCont .bot{overflow:hidden;margin-left:17px}
+.chatCont .bot .profile{float:none;display:block;position:relative;width:35px;height:35px;margin-bottom:12px}
+.chatCont .bot .profile img{width:35px;height:35px;border-radius:50%}
+.chatCont .bot .dialogueWrap{margin-left:0}
+.chatCont .bot .dialogueWrap .dialogue:after{content:'';display:block;clear:both}
+.chatCont .bot .dialogueWrap .dialogue .time{right:-57px}
+.chatCont .user{margin-right:8px}
+.chatCont .user .dialogueWrap{text-align:right}
+.chatCont .user .dialogueWrap .dialogue{background:#00aeef;margin-right:2px;padding-top:6px}
+.chatCont .user .dialogueWrap .dialogue .chatTxt{color:#fff}
+.chatCont .user .dialogueWrap .dialogue .time{left:-57px}
+.chatCont .bot + .user, .chatCont .user + .bot{margin-top:25px}
+.chatCont .bot + .bot, .chatCont .user + .user{margin-top:6px}
+.chatCont .dialogue + .dialogue{margin-top:6px}
+.chatCont .dialogueCont + .dialogueCont{margin-top:6px}
+.chatCont .dialogueResult{margin-bottom:10px}
+.chatCont .dialogue .chatTxt + .chatBtnType01{width:100%}
+.chatCont [class^="chatList0"]{margin:19px 0 10px}
+.chatCont [class^="chatList0"] + .chatBtnType01{margin-top:0 !important}
+.chatArea{display:table;width:100%;height:44px;border-top:1px solid #dedede;background-color:#fff;position:relative}
+.chatArea .chatMenuWrap, .chatArea .chatWrap{display:table-cell;vertical-align:middle}
+.chatArea .chatMenuWrap{width:43px}
+.chatArea .chatMenuWrap .btnChatM{display:inline-block;width:43px;height:43px;background:url('../images/contents/ico_chatMenu.png') no-repeat 100% 50%;background-size:35px 35px;position:absolute;top:0;left:0;color:transparent;font-size:1px;line-height:1px}
+.chatArea .chatWrap .txtChat{overflow:hidden}
+.chatArea .chatWrap .txtChat input[type='text']{overflow:hidden;float:left;width:84%;width:calc(100% - 43px);height:43px;padding-right:5px;border:0;line-height:22px}
+.chatArea .chatWrap [class^="btn"]{float:left;display:inline-block;width:43px;height:43px;color:transparent;font-size:1px;line-height:1px}
+.chatArea .chatWrap .btnVoice{background:url('../images/contents/btn_voiceSend.png') no-repeat 0 50%;background-size:35px 35px}
+.chatArea .chatWrap .btnSend{background:url('../images/contents/btn_txtSend.png') no-repeat 0 50%;background-size:35px 35px}
+.chatArea .chatMenuWrap .chatMenu{display:none}
+/* 상담톡 */
+.chatBtn a{display:inline-block;color:#0370d9;font-size:12px;border:1px solid #0370d9;border-radius:20px;padding:7px 15px;margin-right:3px;margin-bottom:6px;background:#fff}
+.chatBtn a.active{color:#fff;background:#4885e0}
+.chatSwipe .chatSwipeWrap > li{border:1px solid #dbdbdb;background:#fff;border-radius:5px}
+.chatSwipe .chatSwipeWrap > li .chatSwipeCont{padding:15px 10px 10px}
+.chatSwipe .chatSwipeWrap > li:last-child{margin-right:20px}
+.chatSwipe .chatSwipeWrap > li.swipe-fake-slide{border:none;background:transparent;width:30% !important}
+.chatSwipeCont .chatTxtIcon{background:#ececec;color:#666666;padding:4px 8px;border-radius:5px;font-weight:normal;font-size:10px}
+.chatSwipeCont h2{font-size:13px;margin-top:-3px}
+.chatSwipeWrap.h38 .chatSwipeCont h2{height:38px}
+.chatSwipeWrap.h244{height:244px !important}
+.chatAccount{display:block;font-size:16px;font-weight:bold;color:#f68b1f;margin-top:6px}
+.chatTransferDate{display:block;font-size:11px;color:#666666;font-weight:normal}
+.chatPrice{display:block;width:100%;text-align:right;font-size:14px;color:#111;margin-top:10px}
+.chatSwipeBtn{display:table;width:100%;margin-top:12px;table-layout:fixed}
+.chatSwipeBtn > li{display:table-cell;border-radius:5px;padding:0 3px}
+.chatSwipeBtn > li:first-child{padding-left:0}
+.chatSwipeBtn > li:last-child{padding-right:0}
+.chatSwipeBtn > li a{display:block;font-size:12px;color:#666;padding:5px 3px;text-align:center;background:#fff;border:1px solid #a4a4a4;border-radius:5px;letter-spacing:-1px}
+.chatSwipeBtn > li.active a{color:#fff;background:#4885e0;border-color:#4885e0}
+.chatSwipeBtn + .chatSwipeBtn{margin-top:5px}
+.chatList01, .chatList05{width:100%}
+.chatSwipeWrap > li:nth-child(1n){width:80%}
+.chatList03{padding-right:31px}
+.chatList03 .chatSrchResult h2{background:#f8f8f8}
+.chatListTable tr:first-child{border-top:0}
+.chatListTable tr{border-top:1px solid #dedede}
+.chatListTable th{text-align:left;font-weight:normal;padding :10px;background:#fafafa;border-right:1px solid #dedede}
+.chatListTable td{font-weight:bold;padding :0 10px}
+.chatLoading{margin:15px 0;text-align:center}
+.chatLoading img{width:70px;height:70px;margin-top:30px;margin-left:-43px}
+.chatList04{width:100%;padding-right:31px}
+.exchangeList{margin-top:0;padding:15px;overflow:hidden;border-radius:0 0 15px 15px;border:0 none;border-top:1px solid #dedede;background-color:#fff}
+.exchangeList li:first-child{border-top:0}
+.exchangeList li{border-top:0;padding-right:12px}
+.exchangeList li:after{content:"";display:block;clear:both}
+.exchangeList li span{font-size:12px;font-weight:bold}
+.exchangeList li.country01{background:url(../images/contents/ico_usd.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country02{background:url(../images/contents/ico_jpy.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country03{background:url(../images/contents/ico_eur.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country04{background:url(../images/contents/ico_gbp.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country05{background:url(../images/contents/ico_cny.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country06{background:url(../images/contents/ico_chf.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country07{background:url(../images/contents/ico_cad.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country08{background:url(../images/contents/ico_hkd.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country09{background:url(../images/contents/ico_sek.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country10{background:url(../images/contents/ico_aud.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country11{background:url(../images/contents/ico_dkk.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country12{background:url(../images/contents/ico_nok.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country13{background:url(../images/contents/ico_sar.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country14{background:url(../images/contents/ico_kwd.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country15{background:url(../images/contents/ico_bhd.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country16{background:url(../images/contents/ico_aed.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country17{background:url(../images/contents/ico_sgd.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country18{background:url(../images/contents/ico_myr.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country19{background:url(../images/contents/ico_nzd.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList li.country20{background:url(../images/contents/ico_thb.png) no-repeat left;background-size:20px 20px;background-position-x:11px}
+.exchangeList > li > a{display:table;width:100%;padding:10px 12px 10px 40px;background:url(../images/contents/chat_arrow.png) no-repeat right center;background-size:6px 12px}
+.exchangeList > li > a span{display:table-cell;vertical-align:middle}
+.exchangeList > li > a .exchangeTxt{letter-spacing:-0.5px}
+.exchangeList > li > a .exchangeAmount{width:70px;padding-left:10px;color:#3d9bff;text-align:right}
+.chatMoreBtn a{display:block;width:33%;height:30px;line-height:28px;border:1px solid #a4a4a4;border-radius:5px;background-color:#fff;color:#666;font-size:12px;text-align:center;margin:0 auto}
+.chatMoreBtn a.disabled{color:#888;background:#eeeeee;border:1px solid #cccccc}
+.chatList03 .chatResultTable tr:first-child{border-top:0}
+.chatList03 .chatResultTable tr{border-top:1px solid #dedede}
+.chatList03 .chatResultTable th{text-align:left;font-weight:normal;padding :10px;background:#fafafa;border-right:1px solid #dedede}
+.chatList03 .chatResultTable td{padding :0 10px}
+.chatList07{width:100%;padding-right:31px}
+.chatList07 .chatShareWrap{background:#fff;border:1px solid #dbdbdb;border-radius:5px}
+.chatList07 .confirmMsg  p{font-size:12px;color:#666666}
+.chatList07 .confirmMsg .shareTxt{font-size:14px;color:#111}
+.chatTableWrap{padding:0 10px}
+.chatTableWrap .chatShareList{border-top:1px solid #999999}
+.chatShareList tr{border-bottom:1px solid #dedede}
+.chatShareList th{font-weight:normal;text-align:left;color:#333;font-size:12px;padding-left:6px}
+.chatShareList td{text-align:right;padding:12px 0;font-size:12px;padding-right:6px}
+.chatShareList td strong{vertical-align:initial}
+.chatShareWrap .confirmMsg{padding:85px 0 25px}
+.chatIcon{height:125px;background-image:url(../images/contents/ico_chatHelp.png);background-size:72px 63px;background-repeat:no-repeat;background-color:#f3faff;background-position:center;text-indent:-9999px}
+.chatMenuWrap .chatMenu{position:fixed;width:100%;bottom:44px;left:0;width:100%;background:#fff;height:44px;border-top:1px solid #dbdbdb}
+.chatMenu ul li{width:auto;margin-left:6px;padding-top:6px}
+.chatMenu ul li a{display:block;border:1px solid #0370d9;padding:5px 15px;background:#fff;border-radius:50px;color:#0370d9}
+
+/* 거래내역 조회 */
+.chatList02{width:100%;padding-right:31px}
+.chatSrchResult{overflow:hidden;margin-top:4px;background-color:#fff;border:1px solid #dbdbdb;border-radius:5px}
+.chatSrchResult h2{height:50px;border-bottom:1px solid #dbdbdb;background-color:#f5f5f5;line-height:48px;font-size:15px;text-align:center}
+.chatSrchResult ul li{padding:10px 10px 12px;border-top:1px solid #dedede}
+.chatSrchResult ul li:first-child{border-top:0}
+.chatSrchResult ul li > span{display:block}
+.chatSrchResult ul li .chatTransferDate{color:#666;font-size:11px}
+.chatSrchResult ul li .chatUserName{margin-bottom:10px;font-size:14px}
+.chatSrchResult ul li .chatAmnt, .chatList02 ul li .chatAmntTotal{text-align:right;font-size:14px}
+.chatSrchResult ul li .chatAmnt em{display:inline-block;margin-left:5px;font-size:14px;font-weight:bold}
+.chatSrchResult ul li .chatAmntTotal{color:#444;font-size:13px}
+.chatSrchResult ul li .chatAmntTotal em{font-weight:bold}
+
+/* 상담톡 버튼 */
+.chatBtnType01{margin-bottom:10px}
+.chatBtnType01 a{display:inline-block;width:auto;height:30px;line-height:28px;color:#0370d9;font-size:12px;border:1px solid #0370d9;border-radius:20px;padding:0 15px;margin-right:3px;margin-bottom:5px;background:#fff;border-color:#737f96;color:#111}
+.chatBtnType01 a.active{color:#fff;background-color:#00aeeb;border:1px solid #4885e0;border-color:#00aeeb}
+.chatBtnType01 a.disabled{color:#888;background:#eeeeee;border:1px solid #cccccc}
+.chatBtnType01.disB a{display:block;width:70%}
+.chatBtnType02{display:table;width:100%;margin-top:10px;table-layout:fixed}
+.chatBtnType02 li{display:table-cell;vertical-align:middle;text-align:center;padding:0 2px 0 3px}
+.chatBtnType02 li:last-child{display:block;width:33.3333%}
+.chatBtnType02 li + li:last-child{display:table-cell;width:auto !important}
+.chatBtnType02 li a{display:block;height:30px;line-height:28px;border:1px solid #a4a4a4;border-radius:5px;background-color:#fff;color:#111;font-size:12px}
+.chatBtnType02 a.disabled{color:#888;background:#eeeeee;border:1px solid #cccccc}
+.chatBtnType02 li a.active{border-color:#4885e0;background-color:#4885e0;color:#fff}
+
+/* 공유하기 */
+.chatShare{display:table;width:100%;margin:20px 0}
+.chatShare li{display:table-cell;text-align:center}
+.chatShare li:first-child{margin-left:0}
+.chatShare li a{display:block;min-width:40px;padding-top:45px;font-size:12px}
+.chatShare li.share01 a{background:url('../images/common/ico_mail.png') no-repeat 50% 0%;background-size:40px 40px}
+.chatShare li.share02 a{background:url('../images/common/ico_sms.png') no-repeat 50% 0%;background-size:40px 40px}
+.chatShare li.share03 a{background:url('../images/common/ico_kakao.png') no-repeat 50% 0%;background-size:40px 40px}
+
+/* 상품 추천 */
+.chatProduct h2{position:relative;min-height:40px;margin:-15px -10px 0;padding:12px 70px 10px 10px;background-color:#f8f8f8;border-bottom:1px solid #dbdbdb;border-radius:5px 5px 0 0;font-size:13px;line-height:1.2}
+.chatProduct h2 .productCategory{position:absolute;top:50%;right:10px;height:20px;margin-top:-10px;padding:0 9px;background-color:#fff;border:1px solid #0370d9;border-radius:5px;color:#0370d9;font-size:11px;line-height:18px;text-align:center}
+.chatProduct .chatProductDetail{margin:6px 0 7px;font-size:12px;word-wrap:break-word;word-break:break-all}
+.chatProduct .chatProductRate{padding-left:23px;background:url('../images/contents/ico_chatRate.png') no-repeat 0 50%;background-size:18px 15px;color:#666;font-size:11px}
+.chatProduct .chatProductRate strong{color:#2d7fe8}
+
+/* 질의응답 */
+.answer{margin-top:19px;margin-right:31px}
+.answerWrap{overflow:hidden;border:1px solid #dbdbdb;border-radius:5px}
+.answerWrap h2{padding:9px 10px 10px;background-color:#f8f8f8;border-bottom:1px solid #dbdbdb}
+.answerWrap dl{padding:6px 10px 7px;background-color:#fff}
+.answerWrap dt{margin-bottom:5px;padding-left:5px;background:url('../images/contents/dot_chatTit.gif') no-repeat 0px 8px;background-size:3px 3px;color:#4885e0;font-size:13px}
+.answerWrap dd{font-size:12px}
+
+/* 상담톡 인트로 */
+.chatListDefault{width:100%;text-align:center;margin-top:19px}
+.chatListDefault .chatSwipeWrap > li{height:170px;padding:15px 10px}
+.chatListDefault .chatSwipeWrap > li:last-child{margin-right:30px}
+.chatListDefault .chatSwipeWrap > li h2{font-size:13px;color:#0370d9}
+.chatListDefault .chatSwipeWrap > li p{height:90px;padding-top:40px;font-size:11px;background:url('../images/contents/ico_chatMenu01.png') no-repeat 50% 9px;line-height:1.3}
+.chatListDefault .chatSwipeWrap > li p.chatMenu01{background-size:31px 22px}
+.chatListDefault .chatSwipeWrap > li p.chatMenu02{background-image:url('../images/contents/ico_chatMenu02.png');background-size:23px 22px}
+.chatListDefault .chatSwipeWrap > li p.chatMenu03{background-image:url('../images/contents/ico_chatMenu03.png');background-size:22px 22px}
+.chatListDefault .chatSwipeWrap > li p.chatMenu04{background-image:url('../images/contents/ico_chatMenu04.png');background-size:27px 22px}
+.chatListDefault .chatSwipeBtn{margin-top:0}
+.chatListDefault .chatSwipeBtn a{letter-spacing:-1px}
+.chatListDefault .chatSwipeWrap > li:nth-child(1n){width:60%}
+.chatImgWrap{display:table;width:100%}
+.chatImgWrap img, .chatImgWrap span{display:table-cell;vertical-align:top}
+.chatImgWrap img{width:35px;height:35px}
+.chatImgWrap span{padding-left:10px}
+
+/* 자주사용하는이체 목록 */
+.chatList06{width:100%}
+.chatList06 .chatSwipeCont h2{padding-bottom:12px;border-bottom:1px solid #dbdbdb}
+.chatList06 .chatSwipeCont .chatTxtIcon{margin:-2px 7px 0 0}
+.chatList06 .detailList{margin:16px 0 17px;padding:0}
+.chatList06 .detailList li{margin-bottom:0}
+.chatList06 .detailList li > span, .chatList06 .detailList li > strong{font-size:12px}
+.chatList06 .detailList li > span{color:#333}
+.chatList06 .detailList li .tit{min-width:60px;width:60px;color:#666}
+.moreListTxt{padding:20px 0 15px;text-align:center;font-size:12px;line-height:1.3}
+.moreListTxt + .chatSwipeBtn{margin-top:0px}
+.chatSwipe .chatSwipeWrap > li.moreList{height:100%}
+.chatDivingLine{height:1px;margin:25px 8px;border:0;border-top:1px solid #cccccc}
+
+/* 상담톡 QA */
+.chatHelpCont{display:none;overflow-y:auto;position:absolute;top:44px;left:0;width:100%;height:100%;padding-bottom:87px;background:#ececec;z-index:300}
+
+/* 상담톡 고객센터 */
+.chatCs{margin-bottom:25px;padding:0 14px}
+.chatCsTel{overflow:hidden;border:1px solid #cccccc;border-radius:7px;background-color:#fff}
+.chatCsTel dl{float:left;width:50%;padding:11px 15px}
+.chatCsTel dl:first-child{width:100%;border-bottom:1px solid #cccccc}
+.chatCsTel dl:first-child dd{display:inline-block}
+.chatCsTel dl:first-child dd:last-child{margin-left:28px}
+.chatCsTel dl:last-child{border-left:1px solid #cccccc}
+.chatCsTel dt{margin-bottom:5px;color:#3b5997;font-weight:bold;font-size:14px}
+.chatCsTel dd{min-height:22px;padding-left:27px;background:url('../images/contents/ico_chatTel.png') no-repeat 0 50%;background-size:22px 22px}
+.chatCsTime ul{overflow:hidden;padding:12px 0;border:1px solid #cccccc;border-radius:7px;background-color:#fff}
+.chatCsTime ul li{float:left;width:33.333%;width:calc(100% / 3);padding-top:38px;border-left:1px solid #cccccc;background:url('../images/contents/ico_chatCsTime01.png') no-repeat 50% 3px;color:#111;font-size:13px;text-align:center}
+.chatCsTime ul li:first-child{border-left:0}
+.chatCsTime ul li.time01{background-size:25.5px 25px}
+.chatCsTime ul li.time02{background-image:url('../images/contents/ico_chatCsTime02.png');background-size:28.5px 25px}
+.chatCsTime ul li.time03{background-image:url('../images/contents/ico_chatCsTime03.png');background-size:28.5px 25px}
+.chatCsTime ul li span{display:block;font-size:12px}
+.androidLowVer .chatSwipeWrap > li{width:70%;margin-top:10px}
+.chatListDefault .androidLowVer .chatSwipeWrap > li:nth-child(1n){width:80%}
+.androidLowVer .chatSwipeWrap > li:first-child{margin-top:0}
+
+/* 상담톡 */
+.tokLike img{width:18px;height:auto;vertical-align:-3px;margin-right:5px}
+.tokLoading{width:36px;height:auto;display:inline-block}
+.chatLoading{margin:15px 0;text-align:center}
+.chatLoading img{width:72px;height:16px;margin-top:0px;margin-left:-36px}
+.chatCont [class^="chatList0"]{margin-top:12px;margin-bottom:12px}
+.chatCont .dialogueCont + .dialogueCont{margin-top:12px}
+.chatCont .bot + .bot, .chatCont .user + .user{margin-top:30px}
+.dialogueCont + .dialogueResult{margin-top:12px}
+
+/* bot 말풍선 여백 수정 */
+.chatCont .dialogueWrap + .dialogueWrap{margin-top:12px}
+
+/* 힌트 style 수정 */
+.chatMenu{overflow-x:auto}
+.chatMenu ul li{float:left}
+.chatMenu ul li a{border-color:#d6d6d6;color:#111;display:inline-block}
+.chatMenu ul li a.active{background:#00aeef;border-color:#00aeef;color:#fff}
+.chatBtnType01{margin-bottom:10px}
+.chatBtnType01 a.btnCallBot{padding-left:28px;background-image:url('../images/common/util/ico_tok_call_01.png');background-repeat:no-repeat;background-size:12px auto;background-position:10px center}
+.chatBtnType01 a.disabled{color:#888;background-color:#eeeeee;border:1px solid #cccccc}
+.chatBtnType01.disB a{display:block;width:70%}
+.chatHead .chatGuide.btnBack a{border:0 none}
+.chatCont .chatDate span:before{content:'';display:block;clear:both;position:absolute;width:28%;height:1px;top:7px;left:17px;background:#c3d7ea}
+.chatCont .chatDate span:after{content:'';display:block;clear:both;position:absolute;width:28%;height:1px;top:7px;right:17px;background:#c3d7ea}
+.chatCont{background:none;background-color:#e1eefa}
+.chatCont .user{margin-right:17px}
+.chatCont .bot .dialogueWrap .dialogue.dgWrap{max-width:100%;margin-right:17px;border:1px solid #d6e7f7}
+.dialogue.dgWrap .dgBlock p{font-size:13px;color:#111;margin-bottom:8px}
+.dialogue.dgWrap .dgBlock p span{color:#00aeef}
+.dialogue.dgWrap .dgBlock > ul{display:block;margin-top:5px;margin-bottom:10px}
+.dialogue.dgWrap .dgBlock > ul > li{position:relative;padding-left:8px;font-size:13px;color:#111;margin-top:4px}
+.dialogue.dgWrap .dgBlock > ul > li:first-child{margin-top:0}
+.dialogue.dgWrap .dgBlock > ul > li:after{content:'';display:block;clear:both;position:absolute;left:0;top:12px;width:4px;height:1px;background:#111}
+.dialogue.dgWrap .dgBlock ul.innerType01{display:block;margin-top:5px}
+.dialogue.dgWrap .dgBlock ul.innerType01 li{position:relative;padding-left:8px;font-size:12px;color:#505050}
+.dialogue.dgWrap .dgBlock ul.innerType01 li:after{content:'';display:block;clear:both;position:absolute;left:0;top:10px;width:2px;height:2px;background:#111}
+.dialogue.dgWrap .dgBlock .btnWrap{background:transparent;border-top:1px solid #ddd;margin:15px -13px 0;display:block;padding:0}
+.dialogue.dgWrap .dgBlock .btnWrap ul{display:block;width:100%;padding:10px 0 0px 0}
+.dialogue.dgWrap .dgBlock .btnWrap ul li{display:inline-block}
+.dialogue.dgWrap .dgBlock .btnWrap ul li a{display:inline-block;padding:5px 9px 5px 32px;color:#fff;border-radius:1000px;font-size:12px;background-color:#00aeef}
+.dialogue.dgWrap .dgBlock .btnWrap ul li a.btnLike{background-image:url('../images/common/util/ico_tok_like_01.png');background-repeat:no-repeat;background-size:18px auto;background-position:8px center}
+.dialogue.dgWrap .dgBlock .btnWrap ul li a.btnLike.disabled,
+.dialogue.dgWrap .dgBlock .btnWrap ul li a.btnNonLike.disabled{background-color:#fff;color:#111;border:1px solid #ddd}
+.dialogue.dgWrap .dgBlock .btnWrap ul li a.btnLike.disabled:after,
+.dialogue.dgWrap .dgBlock .btnWrap ul li a.btnNonLike.disabled:after{content:'';display:block;clear:both;width:0;height:0;font-size:0}
+.dialogue.dgWrap .dgBlock .btnWrap ul li a.btnNonLike{background-image:url('../images/common/util/ico_tok_nolike_01.png');background-repeat:no-repeat;background-size:18px auto;background-position:8px center}
+.chatCont .bot .dialogueWrap .dialogue.luckWrap{max-width:103%;margin-right:17px;margin-top:10px;margin-left:-3%;background:transparent;padding:0}
+.dialogue.luckWrap ul{display:table;width:100%}
+.dialogue.luckWrap ul li{display:table-cell;vertical-align:top;width:22%;padding-left:3%}
+.dialogue.luckWrap ul li a{display:block;width:100%;position:relative}
+.dialogue.luckWrap ul li a .imgBlock{width:100%}
+.dialogue.luckWrap ul li a .imgBlock img{width:100%;height:auto;vertical-align:top}
+.dialogue.luckWrap ul li a p{font-size:13px;color:#111;text-align:center;margin-top:5px}
+.chatCont .bot .dialogueWrap .dialogue.yeWrap{width:100%;max-width:100%;margin-right:17px;margin-top:10px;background:transparent;padding:0}
+.chatCont .bot .profile + .dialogueWrap .dialogue.yeWrap{margin-top:0}
+.chatCont .bot .profile + .dialogueWrap .chatBtnType01 + .dialogue.yeWrap{margin-top:10px}
+.dialogue.yeWrap .yeBlock{width:100%}
+.dialogue.yeWrap .yeBlock .swiper-wrapper{position:relative}
+.dialogue.yeWrap .yeBlock .swiper-slide{width:40%;background:#fff;padding:10px;border-radius:15px;height:199px}
+.dialogue.yeWrap .yeBlock .swiper-slide dl{display:block;width:100%;margin-bottom:10px}
+.dialogue.yeWrap .yeBlock .swiper-slide dl:after{content:'';display:block;clear:both}
+.dialogue.yeWrap .yeBlock .swiper-slide dl dt,
+.dialogue.yeWrap .yeBlock .swiper-slide dl dd{float:left}
+.dialogue.yeWrap .yeBlock .swiper-slide dl dt{width:30px;height:30px;background:#3e9f93;border-radius:1000px;text-align:center}
+.dialogue.yeWrap .yeBlock .swiper-slide dl dt span{display:block;width:100%;font-size:6px;color:#fff;;text-align:center;;line-height:10px;margin-top:5px}
+.dialogue.yeWrap .yeBlock .swiper-slide dl dd{font-size:10px;color:#888;line-height:30px;margin-left:4px;letter-spacing:-1px}
+.dialogue.yeWrap .yeBlock .swiper-slide .imgBlock{display:block;width:100%;margin-top:0px}
+.dialogue.yeWrap .yeBlock .swiper-slide .imgBlock img{width:100%;height:auto}
+.dialogue.yeWrap .yeBlock .swiper-slide p{margin-top:5px;height:54px;line-height:18px;color:#111;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;white-space:normal;text-align:left;word-wrap:break-word;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.dialogue.yeWrap .yeBlock .swiper-slide.slideEnd{border-radius:1000px;border:1px solid #3c4e6d;background-color:#fff;width:40px;height:40px;margin-right:17px;margin-top:79px;background-image:url(../images/common/ico_plus.png);background-size:20px auto;background-repeat:no-repeat;background-position:center center}
+.dialogue.yeWrap .yeBlock .swiper-slide.slideEnd span{font-size:0;text-indent:-1000px;width:0;height:0}
+.chatCont .bot .dialogueWrap .dialogue.evtWrap{width:100%;max-width:100%;margin-right:17px;margin-top:10px;background:transparent;padding:0}
+.dialogue.evtWrap .chatSwipe.swiper-container{width:100%;padding-top:11px}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide{position:relative;width:40%;padding:10px 10px 0 10px;border:1px solid #c8daea}
+/* 폰트컬러 추가 */
+.fc_ff0000{color:#ff0000}
+.fc_00aeef{color:#00aeef}
+.fc_046fd9{color:#046fd9 !important}
+/* 배경컬러 추가 */
+.bg_6766b1{background:#6766b1}
+.bg_5c77a7{background:#5c77a7}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide > div{margin:-10px -10px 0;padding:10px 10px 0 10px;border-radius:15px}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide .dDay{display:inline-block;position:absolute;right:-9px;top:-10px;width:30px;height:30px;line-height:26px;border-radius:1000px;background-color:#fff;font-size:10px;border:1px solid #6766b1;text-align:center}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide + .swiper-slide .dDay{border:1px solid #5c77a7}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide dl{position:relative;width:100%;height:100px}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide dl dt,
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide dl dd{text-align:center;color:#fff}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide dl dt{font-size:14px;line-height:18px}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide dl dd{position:absolute;left:0;bottom:0;width:100%;height:37px;font-size:11px;font-weight:normal}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide a{position:relative;display:block;height:36px;text-align:center;font-size:13px;color:#111;line-height:36px;background-color:#fff;margin:0 -10px;border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide.slideEnd{width:40px;height:40px;background-color:transparent;margin-right:17px;margin-top:42px;border:0 none}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide.slideEnd a{border-radius:1000px;border:1px solid #3c4e6d;background-color:#fff;width:40px;height:40px;background-image:url(../images/common/ico_plus.png);background-size:20px auto;background-repeat:no-repeat;background-position:center center}
+.dialogue.evtWrap .chatSwipe.swiper-container .swiper-slide.slideEnd span{font-size:0;text-indent:-1000px;width:0;height:0}
+.chatCont .bot .dialogueWrap .dialogue.quesWrap{width:100%;max-width:100%;margin-right:17px;margin-top:10px;background:transparent;padding:0}
+.quesWrap{width:100%}
+.quesWrap .quesBlock{/*margin-top:20px;*/opacity:0}
+.quesWrap .quesBlock.view{opacity:1}
+.quesWrap .quesBlock .swiper-wrapper{position:relative}
+.quesWrap .quesBlock .swiper-slide{width:33%;height:135px;background:#15aec0;padding:15px;border-radius:15px}
+.quesWrap .quesBlock .swiper-slide dl dt{width:30px;height:30px;line-height:30px;background:#fff;color:#111;border-radius:1000px;font-size:11px;text-align:center}
+.quesWrap .quesBlock .swiper-slide dl dd{color:#fff;font-size:14px;word-break:break-all;margin-top:10px;height:60px;overflow:hidden}
+.quesWrap .quesBlock .swiper-slide.slideEnd{border-radius:1000px;border:1px solid #3c4e6d;background-color:#fff;width:40px;height:40px;margin-right:17px;margin-top:55px;background-image:url(../images/common/ico_plus.png);background-size:20px auto;background-repeat:no-repeat;background-position:center center}
+.quesWrap .quesBlock .swiper-slide.slideEnd span{font-size:0;text-indent:-1000px;width:0;height:0}
+.chatCont .user .dialogueWrap .dialogue:after{content:'';display:block;clear:both;position:absolute;width:8px;height:17px;top:2px;right:-3px;;background-image:url(../images/common/util/bg_bubble_tail.png);background-size:8px auto;background-repeat:no-repeat;background-position:0px 0px}
+.chatCont .classes{display:inline-block;padding-left:18px;position:relative;margin:0 5px} 
+.chatCont .classes:after{content:'';display:block;clear:both;position:absolute;left:0;top:2px;width:14px;height:14px;border-radius:1000px}
+.chatCont .classes.caseD{color:#858585}
+.chatCont .classes.caseD:after{border:1px solid #d3d3d3;background-color:#eee}
+.chatCont .classes.caseB{color:#0066b3}
+.chatCont .classes.caseB:after{border:1px solid #0066b3;background-color:#0066b3}
+.chatCont .classes.caseGr{color:#338e12}
+.chatCont .classes.caseGr:after{border:1px solid #338e12;background-color:#338e12}
+.chatCont .classes.caseR{color:#da0123}
+.chatCont .classes.caseR:after{border:1px solid #da0123;background-color:#da0123}
+.chatCont .classes.caseGo{color:#ef9e10}
+.chatCont .classes.caseGo:after{border:1px solid #ef9e10;background-color:#ef9e10}
+.chatCont .classes.caseT{color:#8b55ad}
+.chatCont .classes.caseT:after{border:1px solid #8b55ad;background-color:#8b55ad}
+.chatCont .bot .dialogueWrap .dialogue.tblWrap{width:80%;max-width:100%;margin-right:17px;padding:0 0 0px 0}
+.dialogue.tblWrap h3{background:#f8f8f8;display:block;border-bottom:1px solid #d6d6d6;padding:10px 15px;font-size:14px;text-align:center;border-top-left-radius:20px;border-top-right-radius:20px}
+.dialogue.tblWrap table th,.dialogue.tblWrap table td{padding:3px 20px}
+.dialogue.tblWrap table tr:first-child th,.dialogue.tblWrap table tr:first-child td{padding-top:20px}
+.dialogue.tblWrap table th{font-size:13px;color:#666;text-align:left}
+.dialogue.tblWrap table th.title,.dialogue.tblWrap table tr:first-child th.title{padding-bottom:10px;padding-top:10px;font-size:14px;color:#111;background-color:#f8f8f8}
+.dialogue.tblWrap table .subTitle,.dialogue.tblWrap table tr:first-child .subTitle{padding-bottom:10px;padding-top:10px;font-size:14px;color:#111;background-color:#f8f8f8}
+.dialogue.tblWrap table tr:last-child th,.dialogue.tblWrap table tr:last-child td{padding-bottom:20px} 
+.dialogue.tblWrap table td{font-size:15px;color:#111;text-align:right}
+.chatSrchResult{border-radius:20px}
+.chatListTable tr,.chatListTable th,.chatListTable td{border:0 none}
+.chatListTable th{padding:5px 0 5px 20px;background:#fff}
+.chatListTable td{padding:5px 20px 5px 0;text-align:right}
+.chatListTable tr:first-child th,.chatListTable tr:first-child td{padding-top:20px} 
+.chatListTable tr:last-child th,.chatListTable tr:last-child td{padding-bottom:20px} 
+.chatListTable.caseTbl tr:first-child th{padding:10px 0;text-align:center;border-bottom:1px solid #dbdbdb;color:#111}
+.chatListTable.caseTbl tr:nth-child(2) th,.chatListTable.caseTbl tr:nth-child(2) td{padding-top:15px}
+.chatListTable.caseTbl tr th{border-right:1px solid #dbdbdb}
+.chatListTable.caseTbl tr:first-child th:last-child{border-right:0 none}
+.chatListTable.caseTbl.type02 tr:first-child th{text-align:center;padding-left:0;padding-right:0}
+.chatListTable.caseTbl.type02 tr th,.chatListTable.caseTbl.type02 tr td{border-right:1px solid #dbdbdb}
+.chatListTable.caseTbl.type02 tr th{padding-left:10px}
+.chatListTable.caseTbl.type02 tr td{padding-right:10px}
+.chatListTable.caseTbl.type02 tr td:last-child{border-right:0 none}
+.chatCont .chatListTable.caseTbl.type02 .classes{margin:0 5px 0 0;padding-left:25px}
+.chatCont .chatListTable .classes{display:inline-block;padding-left:30px;position:relative;margin:0 5px;line-height:26px;color:#111} 
+.chatCont .chatListTable .classes em{position:absolute;left:0;top:2px;font-size:12px;color:#fff;display:inline-block;width:22px;height:22px;line-height:20px;text-align:center;z-index:10}
+.chatCont .chatListTable .classes:after{content:'';display:block;clear:both;position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:1000px;z-index:9}
+.chatCont .chatListTable .classes.caseD:after{border:1px solid #d3d3d3;background-color:#eee}
+.chatCont .chatListTable .classes.caseB:after{border:1px solid #0066b3;background-color:#0066b3}
+.chatCont .chatListTable .classes.caseGr:after{border:1px solid #338e12;background-color:#338e12}
+.chatCont .chatListTable .classes.caseR:after{border:1px solid #da0123;background-color:#da0123}
+.chatCont .chatListTable .classes.caseGo:after{border:1px solid #ef9e10;background-color:#ef9e10}
+.chatCont .chatListTable .classes.caseT:after{border:1px solid #8b55ad;background-color:#8b55ad}
+/* 이체결과정보 */
+.chatList07 .chatShareWrap{border-radius:20px;border:0 none}
+.chatTableWrap{padding:0 20px}
+.chatTableWrap .chatShareList{border-top:1px solid #d6d6d6}
+.chatShareList tr{border-bottom:0 none}
+.chatShareList td{padding:3px 0}
+.chatShareList tr:first-child th,
+.chatShareList tr:first-child td{padding-top:10px}
+.chatShare{background:#f8f8f8;padding:20px 0;margin:10px 0 20px;border-bottom-left-radius:20px;border-bottom-right-radius:20px}
+/* 자주 사용하는 이체목록 */
+.chatSwipe .chatSwipeWrap > li{border-radius:15px;border:0 none;/*height:224px;*/}
+.chatSwipe .chatSwipeWrap > li .chatSwipeCont{padding:0 10px 10px 10px}
+.chatList06 .chatSwipeCont h2{margin:0 -10px;text-align:center;background:#f8f8f8;padding-top:12px;border-top-left-radius:15px;border-top-right-radius:15px}
+.chatSwipeBtn > li a{display:block;font-size:12px;color:#333;padding:5px 3px;text-align:center;background:#f1f2f4;border:1px solid #f1f2f4;border-radius:5px;letter-spacing:-1px}
+.chatSwipeBtn > li.active a{color:#fff;background:#4885e0;border-color:#4885e0}
+.chatSwipe .chatSwipeWrap > li.moreList{height:224px}
+.chatSwipe .chatSwipeWrap > li.moreList .moreListTxt{text-align:left;padding:20px 0 45px}
+/* 이용가이드 */
+.chatHelpCont{padding:14px 14px 87px 14px;background:#e1eefa}
+.chatHelpCont .btnDown{display:none}
+.btnDown {position:fixed;bottom:74px;right:8px;z-index:295;opacity:0;}
+.btnDown a {display:inline-block;width:35px;height:35px;background:url('../images/contents/btn_chatDown.png') no-repeat 0 0;background-size:35px 35px;text-indent:-9999px;}
+.chatIcon{position:relative;height:auto;text-indent:0;background-image:none;background-size:0 0;background-repeat:no-repeat;background-color:transparent;background-position:center}
+.chatIcon:after{content:'';display:block;clear:both;position:absolute;right:20px;top:20px;width:79px;height:61px;background-image:url(../images/common/util/bg_tok_guide_01.png);background-size:79px auto;background-repeat:no-repeat;background-color:transparent;background-position:0 0}
+.chatIcon dl dt,.chatIcon dl dd{padding:15px}
+.chatIcon dl dt{background-color:#53a7c7;color:#fff;border-top-left-radius:15px;border-top-right-radius:15px}
+.chatIcon dl dd{background-color:#fff;border:1px solid #d8e5f2;border-top:0 none;color:#4c4c4c;border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+.chatIcon dl dd a{display:block;text-align:center;padding:8px 0;border-radius:4px;background:#f1f2f4;color:#111;margin-top:20px;font-size:13px}
+.chatCont .bot .dialogueWrap .dialogue.clsWrap{max-width:100%;width:95%;margin-right:17px}
+.dialogue.clsWrap ul{display:block;width:100%}
+.dialogue.clsWrap ul li{float:left;width:16.6%;position:relative}
+.dialogue.clsWrap ul li:after{content:'';display:block;clear:both;position:absolute;left:-5px;top:52px;width:10px;height:1px;background:#d0d0d0}
+.dialogue.clsWrap ul li:first-child:after{width:0;height:0;left:0;top:0;background:none}
+.dialogue.clsWrap ul li dl{display:block;width:100%;height:90px;position:relative;text-align:center;margin:0 auto;padding-top:37px}
+.dialogue.clsWrap ul li dl dt,.dialogue.clsWrap ul li dl dd{text-align:center}
+.dialogue.clsWrap ul li dl dt{display:block;width:30px;height:30px;font-size:15px;color:#fff;line-height:28px;border-radius:1000px;margin:0 auto}
+.dialogue.clsWrap ul li dl dd{font-size:11px;color:#111;margin-top:5px}
+.dialogue.clsWrap ul li dl dd.point{display:none;position:absolute;width:100%;height:50px;left:0;top:0;background-color:transparent;background-image:url('../images/common/util/bg_tok_place_01.png');background-size:20px auto;background-repeat:no-repeat;background-position:center top}
+.dialogue.clsWrap ul li.active dl dd.point{display:block}
+.dialogue.clsWrap ul li dl.caseD dt{border:1px solid #d3d3d3;background-color:#eee}
+.dialogue.clsWrap ul li dl.caseB dt{border:1px solid #0066b3;background-color:#0066b3}
+.dialogue.clsWrap ul li dl.caseGr dt{border:1px solid #338e12;background-color:#338e12}
+.dialogue.clsWrap ul li dl.caseR dt{border:1px solid #da0123;background-color:#da0123}
+.dialogue.clsWrap ul li dl.caseGo dt{border:1px solid #ef9e10;background-color:#ef9e10}
+.dialogue.clsWrap ul li dl.caseT dt{border:1px solid #8b55ad;background-color:#8b55ad}
+.chatListDefault{margin-top:0}
+.chatCont .dialogueResult{margin-bottom:0}
+.chatListDefault .chatSwipeWrap > li:nth-child(1n){width:42%}
+.chatListDefault .chatSwipeWrap > li{position:relative;width:42%;height:150px;margin-top:0;border-top-left-radius:15px;border-top-right-radius:15px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;padding:15px;border:1px solid #c8daea}
+.chatListDefault .chatSwipeWrap > li p{background:none;height:auto;padding-top:0;text-align:left;font-size:13px;color:#fff;font-weight:normal}
+.chatListDefault .chatSwipeWrap > li.tokTrans{background-color:#1984d1}
+.chatListDefault .chatSwipeWrap > li.tokRecom{background-color:#6766b1}
+.chatListDefault .chatSwipeWrap > li.tokQues{background-color:#15aec0}
+.chatListDefault .chatSwipeWrap > li.tokExchange{background-color:#5c6773}
+.chatListDefault .chatSwipeWrap > li.tokLuck{background-color:#f06071}
+.chatListDefault .chatSwipeWrap > li.tokGuide{background-color:#53a7c7}
+.chatListDefault .chatSwipeWrap > li .btnWrap{position:absolute;left:0;bottom:0;width:100%;height:45px;background:#fff;border-bottom-left-radius:14px;border-bottom-right-radius:14px;border:0 none}
+.chatListDefault .chatSwipeWrap > li .btnWrap ul{display:table;width:100%;height:45px}
+.chatListDefault .chatSwipeWrap > li .btnWrap ul li{display:table-cell;vertical-align:middle;position:relative;text-align:center}
+.chatListDefault .chatSwipeWrap > li .btnWrap ul li a{display:inline-block}
+.chatListDefault .chatSwipeWrap > li .btnWrap ul li:nth-child(2):after{content:'';display:block;clear:both;position:absolute;left:0;top:50%;margin:-5px 0 0 0;width:1px;height:12px;background:#dbdbdb}
+.chatMenuWrap .tagMenu{position:fixed;width:100%;bottom:44px;left:0;width:100%;background:#fff;height:44px;border-top:1px solid #dbdbdb;z-index:11}
+.chatMenuWrap .tagMenu{height:226px;opacity:0}
+.chatMenuWrap .tagMenu ul{display:block;box-sizing:border-box;background:#fff}
+.chatMenuWrap .tagMenu ul{position:relative}
+.chatMenuWrap .tagMenu ul:after{content:'';display:block;clear:both}
+.chatMenuWrap .tagMenu ul li{position:relative;display:block;float:left;background:#fff}
+.tagMenu ul li{width:auto;margin-left:0px;padding-top:6px} 
+.tagMenu ul li{width:100%;height:226px;padding:6px 17px 0;overflow:hidden}
+.tagMenu ul li:after{content:'';display:block;clear:both;width:0;height:0}
+.tagMenu ul li a{display:block;border:1px solid #0370d9;padding:5px 15px;background:#fff;border-radius:50px;color:#0370d9}
+.tagMenu ul li a{display:block;border-color:#d6d6d6;color:#111;float:left;margin:2px 5px 3px 0}
+.tagMenu ul li:after{content:'';display:block;clear:both}
+.tagMenu .swiper-pagination{background:transparent}
+.tagMenu .swiper-pagination-bullet-active{background:#3c4e6d}
+.chatArea{z-index:11}
+.chatArea .chatWrap .btnVoice{width:34px;height:34px;margin-top:5px;border-radius:1000px;background-color:#ffec00;background-image:url('../images/common/util/btn_mike_01.png');background-size:14px auto;background-repeat:no-repeat;background-position:center center}
+.chatArea .chatWrap .btnVoice.disabled{background-color:#fff;background-image:url('../images/common/util/btn_mike_01.png');background-size:14px auto;background-repeat:no-repeat;background-position:center center}
+.chatArea .chatMenuWrap .btnChatM{position:absolute;top:0;left:0;color:transparent;font-size:1px;line-height:1px;display:inline-block;width:43px;height:43px;background-color:#fff;background-image:url('../images/common/util/btn_sharp_01.png');background-size:14px auto;background-repeat:no-repeat;background-position:center center}
+.chatArea .chatWrap .btnSend{display:none;float:left;width:34px;height:34px;color:transparent;font-size:1px;line-height:1px;margin-top:5px}
+.chatArea .chatWrap .btnSend{border-radius:1000px;background-color:#ffec00;background-image:url('../images/common/util/btn_tok_arr_01.png');background-size:14px auto;background-repeat:no-repeat;background-position:center center}
+.chatArea .chatWrap .btnSend.disabled{border-radius:1000px;background-color:#f0f0f0;background-image:url('../images/common/util/btn_tok_arr_01.png');background-size:14px auto;background-repeat:no-repeat;background-position:center center}
+/* 목돈모으기 상품 추천 swiper */
+.chatProduct h2{background-color:#00aeef;color:#fff;text-align:center;padding:12px 10px 12px 10px;min-height:40px;margin:0 -10px;border-top-left-radius:15px;border-top-right-radius:15px;border-bottom:0 none}
+/* 출금계좌정보 */
+.chatList01 .chatSwipeCont h2{background-color:#00aeef;color:#fff;margin:0 -10px;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px;padding:12px 10px 12px 10px;border-bottom:0 none}
+.chatList01 .chatSwipe .chatSwipeWrap > li{height:200px}
+.chatList01 .chatSwipeBtn{position:absolute;width:90%;height:30px;margin:0;left:50%;bottom:15px;margin:0 0 0 -45%}
+.chatList01 .chatPrice,
+.chatList01 .chatPrice .wUnit{font-size:16px;color:#3d9bff !important}
+.chatSwipeBtn > li.active a{background-color:#00aeef;border-color:#00aeef}
+/* 거래내역조회 */
+.chatSrchResult ul li .chatUserName{width:50%;float:left}
+.chatSrchResult ul li .chatAmnt{width:50%;float:right;font-size:16px}
+.chatCont .dialogueResult.lineType01 .answerWrap{border-radius:20px}
+/* 펀드계좌정보 */
+.chatSwipe .chatSwipeWrap.h60 > li .chatSwipeCont{padding:15px}
+.chatSwipeWrap.h60 .chatSwipeCont h2{height:60px;background-color:#fff;color:#111;text-align:left;padding-top:0;padding-bottom:0;height:35px}
+.chatList01 .chatSwipe .chatSwipeWrap.h60 > li{height:218px}
+.chatSwipe .chatSwipeWrap.fundBlock > li .chatSwipeCont{padding-top:43px}
+.chatSwipe .chatSwipeWrap.fundBlock > li .chatSwipeCont h2{position:Absolute;left:0;top:0;height:43px;padding:0;display:table;width:100%;margin:0;padding:0 15px;line-height:16px}
+.chatSwipe .chatSwipeWrap.fundBlock > li .chatSwipeCont h2 span{display:table-cell;vertical-align:middle;width:100%}
+.chatSwipe .chatSwipeWrap.fundBlock > li .chatSwipeCont h2 span em{overflow:hidden;text-overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word}
+.chatSwipe .chatSwipeWrap.fundBlock .chatAccount{margin-top:0}
+/* 환율정보 */
+.chatList04.titExchg h3{height:45px;background-color:#f8f8f8;height:50px;line-height:48px;font-size:15px;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px}
+/* 고객센터 */
+.chatCs h2.defTit{height:50px;line-height:48px;font-size:15px;text-align:center;background-color:#f8f8f8;border-top-left-radius:15px;border-top-right-radius:15px;margin-bottom:0;border:1px solid #ccc;border-bottom:0 none;color:#111}
+.chatCsTel{border-radius:0;border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+.chatCsTel dl{padding:16px 15px}
+.chatCsTel dt{color:#666}
+.chatCsTel dd{min-height:30px;padding-left:34px;line-height:32px;background-image:url('../images/common/util/ico_call_01.png');background-size:30px auto;background-repeat:no-repeat;background-position:left center}
+.chatCsTime ul{border-radius:0;border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+.chatCsTime ul li{position:relative;border-left:0 none}
+.chatCsTime ul li:after{content:'';display:block;clear:both;position:Absolute;left:0;top:-12px;width:1px;height:101px;background-color:#ccc}
+.chatCsTime ul li:first-child:after{content:'';display:block;clear:both;position:Absolute;left:0;top:0;width:0;height:0;background-color:none}
+.chatCsTime ul li.time02 em{color:#f68b1f}
+.chatCsTime p.infoTxt:before{content:'';display:block;clear:both;position:absolute;top:2px;left:0;width:14px;height:14px;vertical-align:middle;background-image:url('../images/common/util/ico_exclamation_01.png');background-size:14px auto;background-repeat:no-repeat;background-position:left center}
+/* 음성인식 수정 */
+.voiceChat .voice01{height:280px}
+.voiceChat .voice01 dt{color:#0370d9}
+.voiceChat .voice01 dl{padding-top:30px}
+.voiceChat .voice01 dd{padding-bottom:130px;background:url('../images/contents/img_speaking.gif') no-repeat 50% 30px;background-size:60px;background-position:bottom center;color:#2d7fe8;font-size:20px;font-weight:bold}
+.voiceChat .voice01 dd.example{padding-top:0;padding-bottom:80px;color:#111;font-size:14px;font-weight:normal}
+.voiceChat .voice01 dd.example .chatBtnType01{margin-top:18px}
+.voiceChat .voice01 dd.example .chatBtnType01 a{border:0 none;color:#111;font-size:16px;display:block;height:20px}
+/* 아래로 버튼 */
+.btnDown a{display:inline-block;width:35px;height:35px;text-indent:-9999px;background:url('../images/common/util/btn_down_01.png') no-repeat 0 0;background-size:35px 35px}
+/* 힌트 bottom 수정 */
+.chatMenuWrap .chatMenu{bottom:42px}
+/* 데이터 받는 영역 수정 */
+.dialogueResult .answer{margin-right:17px}
+.dialogueResult > .answer{margin-top:0}
+.dialogueResult .answer .answerWrap{border-radius:20px;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.btnWrap.likeWrap{display:block;margin-right:17px}
+.btnWrap.likeWrap ul{display:block;width:100%;padding:10px 0 10px 0;background:#fff;border:1px solid #dbdbdb;border-top:0px;border-radius:0 0 20px 20px}
+.btnWrap.likeWrap ul li{display:inline-block}
+.btnWrap.likeWrap ul li a{display:inline-block;padding:5px 9px 5px 32px;color:#fff;border-radius:1000px;font-size:12px;background-color:#00aeef}
+.btnWrap.likeWrap ul li a.btnLike{background-image:url('../images/common/util/ico_tok_like_01.png');background-repeat:no-repeat;background-size:18px auto;background-position:8px center}
+.btnWrap.likeWrap ul li a.btnLike.disabled,.btnWrap.likeWrap ul li a.btnNonLike.disabled{background-color:#fff;color:#111;border:1px solid #ddd}
+.btnWrap.likeWrap ul li a.btnLike.disabled:after,.btnWrap.likeWrap ul li a.btnNonLike.disabled:after{content:'';display:block;clear:both;width:0;height:0;font-size:0}
+.btnWrap.likeWrap ul li a.btnNonLike{background-image:url('../images/common/util/ico_tok_nolike_01.png');background-repeat:no-repeat;background-size:18px auto;background-position:8px center}
+/* 힌트 swiper 배경 */
+.dim.hintDim{z-index:10;font-size:0;text-indent:-1000px}
+.dim.hintDim span{font-size:0;text-indent:-1000px;width:0;height:0;left:0;top:0}
+/* 상담톡 코치마크 신규작업 */
+.chatCoachWrap{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:1201}
+.chatCoachWrap .chatCoachSwiper{width:100%;height:100%}
+.chatCoachWrap [class^="coachImg"]{width:100%;height:100%}
+.chatCoachWrap .coachImg01{background:url('../images/common/util/img_coach_default01.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg02{background:url('../images/common/util/img_coach_default02.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg03{background:url('../images/common/util/img_coach_default03.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg04{background:url('../images/common/util/img_coach_default04.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachClose{overflow:hidden;position:absolute;bottom:13px;left:0;width:100%;padding:0 20px;color:#fff;font-size:12px;z-index:50} 
+.chatCoachWrap .coachClose .checkArea{float:left;margin-top:4px}
+.chatCoachWrap .coachClose .checkArea input[type='checkbox'] + label{width:auto}
+.chatCoachWrap .coachClose .btnArea{float:right}
+.chatCoachWrap .coachClose .btnArea a{display:inline-block;width:56px;height:30px;line-height:28px;font-size:12px;z-index:50}
+.chatCoachWrap .coachClose .btnArea a.close{border:1px solid #fff;border-radius:3px;line-height:28px;background-color:rgba(255, 255, 255, 0.2)}
+.chatCoachWrap .coachNext{display:inline-block;position:absolute;bottom:50%;right:0;width:33px;height:34px;background:url('../images/common/ico_coachNext.png') no-repeat 0 0;background-size:33px 34px;margin-top:-15px;z-index:2000;color:#fff}
+.chatCoachWrap .coachNext.swiper-button-disabled{display:none}
+.chatCoachWrap .coachPrev{display:inline-block;position:absolute;bottom:50%;left:0;width:33px;height:34px;background:url('../images/common/ico_coachPrev.png') no-repeat 0 0;background-size:33px 34px;margin-top:-15px;z-index:2000;color:#fff}
+.chatCoachWrap .coachPrev.swiper-button-disabled{display:none}
+.chatCoachWrap .swiper-container-horizontal>.swiper-pagination-bullets{bottom:20px;display:inline-block;width:auto;left:50%;margin-left:-12px}
+.chatCoachWrap .swiper-pagination-bullet{width:8px;height:8px;background-color:#474747;border:1px solid #fff;opacity:1}
+.chatCoachWrap .swiper-pagination-bullet-active{background-color:#ffdf00;border:0}
+/* height가 높은 디바이스 용 */
+@media only screen and (min-height:668px){ 
+.chatCoachWrap .coachImg01{background:url('../images/common/util/img_coach_hBig01.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg02{background:url('../images/common/util/img_coach_hBig02.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg03{background:url('../images/common/util/img_coach_hBig03.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg04{background:url('../images/common/util/img_coach_hBig04.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachClose{bottom:18px} 
+.chatCoachWrap .coachClose .checkArea input[type='checkbox'] + label{font-size:14px}
+.chatCoachWrap .coachClose .btnArea a.close{width:60px;height:35px;line-height:33px;font-size:14px}
+.chatCoachWrap .swiper-container-horizontal>.swiper-pagination-bullets{bottom:25px;margin-left:-20px}
+.chatCoachWrap .swiper-pagination-bullet{width:14px;height:14px;background-color:#474747;border:1px solid #fff;opacity:1;margin:0 5px}
+.chatCoachWrap .swiper-pagination-bullet-active{background-color:#ffdf00;border:0}
+}
+/* tablet 용 */
+@media only screen and (min-width:768px){
+.chatCoachWrap .coachImg01{background:url('../images/common/util/img_coach_tablet01.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg02{background:url('../images/common/util/img_coach_tablet02.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg03{background:url('../images/common/util/img_coach_tablet03.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachImg04{background:url('../images/common/util/img_coach_tablet04.png') no-repeat 0 0;background-size:100% 100%}
+.chatCoachWrap .coachClose{bottom:45px}
+.chatCoachWrap .coachClose .checkArea{margin-top:10px}
+.chatCoachWrap .coachClose .checkArea input[type='checkbox']{width:30px;height:30px}
+.chatCoachWrap .coachClose .checkArea input[type='checkbox']{width:30px;height:30px;background-size:120px auto}
+.chatCoachWrap .coachClose .checkArea input[type='checkbox']:checked{background-position-x:-30px}
+.chatCoachWrap .coachClose .checkArea input[type='checkbox'] + label{font-size:19px}
+.chatCoachWrap .coachClose .btnArea a.close{width:90px;height:48px;line-height:46px;font-size:19px}
+.chatCoachWrap .coachPrev, .chatCoachWrap .coachNext{width:45px;height:46px;background-size:45px 46px}
+.chatCoachWrap .swiper-container-horizontal>.swiper-pagination-bullets{bottom:55px;margin-left:-20px}
+.chatCoachWrap .swiper-pagination-bullet{width:19px;height:19px;background-color:#474747;border:1px solid #fff;opacity:1;margin:0 5px}
+.chatCoachWrap .swiper-pagination-bullet-active{background-color:#ffdf00;border:0}
+}
+.chatArea .chatWrap .txtChat input[type='text']{height:42px}

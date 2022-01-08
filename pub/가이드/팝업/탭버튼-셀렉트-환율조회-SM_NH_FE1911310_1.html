@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 외환:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+<script>
+	//풀팝업 호출
+	$(document).ready(function() {
+	   fullLayerPop();
+	});
+</script>
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">외환</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->
+		
+		<!-- container -->
+		<div class="container" data-role="samWrap">
+			<!-- popup -->
+			
+			<!-- 환율조회 입력 팝업 -->
+			<div class="popWrap fullLayerPop">
+				<div class="popInner">
+					<h1>환율조회</h1>
+					<div class="popCont">
+						<div class="tabLv0 tabLv1">
+							<a href="javascript:;" class="arrLft"><span class="blind">이전</span></a>
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><a href="javascript:;" class="active"><span>해외로 송금하는 경우<br>(원화예금출금&gt;외화예금입금)</span></a></li>
+								<li class="swiper-slide"><a href="javascript:;"><span>해외로부터 송금받는 경우<br>(외화예금출금&gt;원화예금입금)</span></a></li>
+							</ul>
+							<a href="javascript:;" class="arrRgt"><span class="blind">다음</span></a>
+						</div>
+						<div class="guideListTop">
+							<ul class="listDot">
+								<li>
+									서비스 이용시간 : 24시간<br>
+									<span class="pointColor5">[외화예금 즉시이체 : 평일(은행영업일) 09:00~18:00]</span>
+								</li>
+								<li>고객님이 외환 거래 유형을 선택하시어 조회하시면 예상금액을 확인할 수 있습니다.</li>
+								<li>원화예금 ↔ 외화예금 이체거래의 경우 송금환율인 전신환 매도/매입율이 적용됩니다.</li>
+							</ul>
+						</div>
+						<div class="formWrap">
+							<ul>
+								<li>
+									<strong class="formTit">통화구분</strong>
+									<div class="stList">
+										<a href="javascript:;" title="통화구분 선택 새창열림">
+											<span class="selectValue">USD(미국달러)</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<strong class="formTit">외화금액</strong>
+									<div class="inputList">                    
+										<input type="text" title="외화금액 입력">
+										<a href="javascript:;" title="Reset" class="btnReset">Reset</a>
+										<!--<span class="unit">원</span>-->
+									</div>
+								</li>
+								<li>
+									<strong class="formTit">조회구분</strong>
+									<div class="stList">
+										<a href="javascript:;" title="조회구분 선택 새창열림">
+											<span class="selectValue">일반환율로 계산</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+									<div class="stList">
+										<a href="javascript:;" title="우대환율로 계산 선택 시 비율선택 새창열림">
+											<span class="selectValue">10%</span>
+											<span class="selectBtn">버튼</span>
+										</a>
+										<select name="" title="선택해주세요">
+											<option value=""></option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<div class="areaPopBtnFull">
+								<div class="inner">
+									<ul>
+										<li><a href="javascript:;" class="btnBodyLine">계산하기</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="guideList">
+							<div class="tArea"><p class="guideTit">알아두세요</p></div>
+							<ul class="listDot">
+								<li>해외송금 시 개인고객은 환율우대 50% 공통 적용됩니다.</li>
+								<li>외화예금 상품별 우대요율이 있는 경우 해당 조건이 우선 적용됩니다.</li>
+								<li>세부내용은 해당 상품설명서 참조하시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+		
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">닫기</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!-- //환율조회 입력 팝업  -->
+			<!-- //popup -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+	<!-- popup -->
+	
+	<!-- //popup -->
+</body>
+</html>

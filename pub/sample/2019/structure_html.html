@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<div class="header">
+			<a href="javascript:;" class="btnSearch" role="button"><span>검색</span></a>
+			<a href="javascript:;" class="btnVociceSrch"><span>음성검색</span></a>
+			<h1><img src="../../images/common/nh_logo.png" alt="NH 스마트뱅킹"></h1>
+			<a href="javascript:;" class="btnAlim active" role="button"><span>알림</span></a>
+			<a href="javascript:;" class="btnNav" role="button"><span>메뉴</span></a>
+		</div>
+
+		<!-- container -->
+		<div class="container">
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+			컨텐츠 영역입니다.<br />
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<!-- <ul class="footMenu">
+				<li><a href="javascript:;">HOME</a></li>
+				<li><a href="javascript:;">상품몰</a></li>
+				<li><a href="javascript:;">상담톡</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul> -->
+			<ul class="footMenu">
+				<li class="noLogin"><a href="javascript:;" onclick="javascript:openAccPop();">개좌개설</a></li><!-- 2018-10-08 onclick이벤트 추가 -->
+				<li><a href="javascript:;">금융상품몰</a></li> <!-- 2018-11-13 텍스트수정 -->
+				<li><a href="javascript:;">상담톡</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>
+
+			<!-- 로그인후-개인화 메인 -->
+			<!-- <ul class="footMenu">
+				<li class="myico"><a href="javascript:;">마이NH</a></li> 2018.09.04 myico 아이콘 추가
+				<li><a href="javascript:;">상품몰</a></li>
+				<li><a href="javascript:;">상담톡</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul> --> 
+
+			<!-- 로그인후-개인화 메인 이외의 화면
+			<ul class="footMenu">
+				<li><a href="javascript:;">HOME</a></li>
+				<li><a href="javascript:;">상품몰</a></li>
+				<li><a href="javascript:;">상담톡</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul> -->
+			
+			<div class="openAcc">
+				<ul>
+					<li>
+						농협은행
+						<ul>
+							<li><a href="javascript:;">계좌개설하기</a></li>
+							<li><a href="javascript:;">내역보기</a></li>
+						</ul>
+					</li>
+					<li>
+						농·축협
+						<ul>
+							<li><a href="javascript:;">계좌개설하기</a></li>
+							<li><a href="javascript:;">내역보기</a></li>
+						</ul>
+					</li>
+				</ul>
+				<a href="javascript:;" class="openAccClose">닫기</a>
+			</div>
+			<div class="accDim"></div>
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+</body>
+</html>

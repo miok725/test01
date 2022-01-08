@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_bw :나만의 스마트뱅킹 */
+.appTopArea{padding-top:100px;background:url('../images/contents/ico_app.png') no-repeat 50% 30px;background-size:57px 57px;color:#333;text-align:center}
+.appInfo{width:100%;height:50px;margin:24px 0 40px;padding:14px 0;background-color:#f3faff;border:1px solid #dedede;border-radius:30px;display:table}
+.appInfo p{width:50%;height:25px;font-size:13px;vertical-align:middle;text-align:center;line-height:25px;display:table-cell}
+.appInfo p:first-child{color:#666;border-right:1px solid #dedede}
+.appInfo p span{display:inline-block}
+.appInfo p span:last-child{padding-left:8px;font-size:20px;font-weight:bold}
+.appInfo p.pointColor2{color:#111 !important}
+.boardList > li .pdArea{display:block;padding:13px 42px 13px 17px}
+
+.areaInBtn{width:100%;display:table}
+.areaInBtn > a{width:50%;height:11px;border-left:1px solid #dedede;font-size:11px;text-align:center;display:table-cell}
+.areaInBtn > a:first-child{border-left:0}
+
+.rankBadge{margin-top:6px}
+.rankBadge .rankIco{width:25px;height:25px;margin-right:0;border-radius:50%;color:#fff;font-size:15px;text-align:center;line-height:25px;display:inline-block}
+.rankBadge .rankTxt{font-size:12px}
+.rankBadge.normal .rankIco{background-color:#eee;border:1px solid #ccc;color:#eee;font-size:11px}
+.rankBadge.normal .rankIco:after{content:'NH'}
+.rankBadge.normal .rankTxt:after{content:'일반'}
+.rankBadge.blue{color:#046fd9}.rankBadge.blue .rankIco{background-color:#046fd9}
+.rankBadge.blue .rankIco:after{content:'B'}
+.rankBadge.blue .rankTxt:after{content:'블루'}
+.rankBadge.green{color:#338e12}.rankBadge.green .rankIco{background-color:#338e12}
+.rankBadge.green .rankIco:after{content:'G'}
+.rankBadge.green .rankTxt:after{content:'그린'}
+.rankBadge.royal{color:#da0123}.rankBadge.royal .rankIco{background-color:#da0123}
+.rankBadge.royal .rankIco:after{content:'R'}
+.rankBadge.royal .rankTxt:after{content:'로얄'}
+.rankBadge.gold{color:#f69f03}.rankBadge.gold .rankIco{background-color:#f69f03}
+.rankBadge.gold .rankIco:after{content:'G'}
+.rankBadge.gold .rankTxt:after{content:'골드'}
+.rankBadge.topclass{color:#8b55ad}.rankBadge.topclass .rankIco{background-color:#8b55ad}/* T(topclass) */
+.rankBadge.topclass .rankIco:after{content:'T'}
+.rankBadge.topclass .rankTxt:after{content:'탑클래스'}
+
+.myMenuWrap{margin:0 -17px;border-bottom:1px solid #dedede}
+.myLinkList:after{display:block;content:'';clear:both}
+.myLinkList li{float:left;width:50%;padding-left:10px;background:url(../images/common/ico_listdot.png) no-repeat 2px center;background-size:2px 2px;line-height:25px}
+.myLinkList li a{font-size:12px;display:block}
+
+.linkGreen{padding-right:21px;color:#76ae0a;font-size:12px;background:url(../images/contents/ico_my_arrow01.png) no-repeat right center;background-size:16px 16px}
+.linkBlue{padding-right:21px;color:#4885e0;font-size:12px;background:url(../images/contents/ico_my_arrow02.png) no-repeat right center;background-size:16px 16px}
+.myProductArea{margin:0 -17px;border-bottom:1px solid #dedede}
+.myProductArea .confirmMsg p{font-size:14px}
+.myPdWrap{position:relative;margin:10px 17px 0}
+.myPdWrap:after{display:block;content:'';clear:both}
+.myPdWrap .myPdTit{float:left;margin:5px 0 15px}
+.myPdWrap .myPdTit > span{color:#046fd9}
+.myPdWrap .myBtnMore{margin-left:10px;height:18px;line-height:16px;padding:0 8px;font-size:11px;color:#111;text-align:center;border:1px solid #c1c1c1;border-radius:20px;display:inline-block}
+.myPdWrap .myBtnOpen{position:absolute;right:0;bottom:15px;width:20px;height:20px;background:url(../images/common/ico_plus.png) no-repeat center 1px;background-size:15px 15px;display:inline-block}
+.myPdWrap .myBtnOpen.active{background:url(../images/common/ico_minus.png) no-repeat center 8px;background-size:15px 1px}
+.myBanner{margin:10px 0}
+.myBanner a{display:block}
+.myBanner img{max-width:100%;width:100%;display:block}
+.myBanner .swiper-container-horizontal>.swiper-pagination-bullets{left:9%;bottom:13px;width:auto}
+.mySetup .accordionMenu .dep2{display:block}
+.mySetup .accordionMenu .dep2 > li > a{padding-left:17px;color:#111}
+.mySetup .accordionMenu .dep2 > li > a:after{display:none}

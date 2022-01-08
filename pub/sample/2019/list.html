@@ -1,0 +1,1766 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>list :::NH통합스마트뱅킹 퍼블리싱 가이드:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/guide.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/guide.css" />
+</head>
+<body>
+<div id="contentsF">
+    <h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">Guidance Title</h2>
+	<!-- view -->
+	<h2 style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">list type</h2>
+	<h3 class="guide">■ dash</h3>
+	<ul class="listDash">
+		<li>동해물과 백두산이 마르고 닳도록</li>
+		<li>하느님이 보우하사 우리나라 만세</li>
+		<li>무궁화 삼천리 화려강산</li>
+	</ul>
+	<hr>
+	<h3 class="guide">■ dot</h3>
+    <div>
+        <ul class="listDot">
+            <li>동해물과 백두산이 마르고 닳도록</li>
+            <li>하느님이 보우하사 우리나라 만세</li>
+            <li>무궁화 삼천리 화려강산</li>
+        </ul>
+	</div>
+	<hr>
+	
+	<h3 class="guide">■ nubmer</h3>
+    <div>
+        <ol class="listNum">
+            <li>동해물과 백두산이 마르고 닳도록</li>
+            <li>하느님이 보우하사 우리나라 만세</li>
+            <li>무궁화 삼천리 화려강산</li>
+        </ol>
+	</div>
+	<h3 class="guide mt20">■ 숫자 아이콘</h3>
+	<div class="stepListWrap">
+		<ol>
+			<li>
+				<span class="stepNum">1</span> 설치준비
+				<ul class="listDot">
+					<li>고객님의 스마트폰으로 아래와 같이 진행하시기 바랍니다.
+						<ul class="listDash">
+							<li>ios 이용고객 : 앱스토어 실행</li>
+							<li class="bgNone"><a href="javascript:;" class="btnBodyLine mt10">앱스토어에서 설치하기</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span class="stepNum">2</span> NH스마트인증 앱 설치
+				<ul class="listDot">
+					<li>실행시킨 플레이스토어/앱스토어에서 "NH스마트인증"으로 검색을 합니다.</li>
+					<li>[설치] 버튼을 터치하여 설치를 시작합니다.</li>
+				</ul>
+			</li>
+			<li>
+				<span class="stepNum">3</span> NH스마트인증 앱 가입
+				<ul class="listDot">
+					<li>설치된 Nh스마트인증앱 실행 후 [스마트 인증앱 홈 &gt; 가입변경/해지]메뉴를 통해 앱가입을 하시기 바랍니다.</li>
+				</ul>
+				<p class="infoTxt2">부정사용 방지를 위해 앱 가입절차가 반드시 필요합니다.</p>
+			</li>
+			<li>
+				<span class="stepNum">4</span> 이용준비완료
+				<ul class="listDot">
+					<li>설치된 NH스마트인증앱과 앱인증서비스를 연동하여 안전한 뱅킹서비스를 이용하시면 됩니다.</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+	<!-- <div class="listDot">
+        <ul>
+            <li>동해물과 백두산이 마르고 닳도록</li>
+            <li>하느님이 보우하사 우리나라 만세</li>
+            <li>무궁화 삼천리 화려강상</li>
+        </ul>
+    </div> -->
+	<!-- //view -->
+
+    <!-- view -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">계좌리스트</h2>
+	<div class="accountList">
+		<ul>
+			<li>
+				<div class="accTit">
+					<span class="accNum">123-1234-1234-12</span>
+					<span class="badgeDefault">주계좌</span>
+					<div class="btnMoreWrap">
+						<a href="javascript:;" class="btnMore"><span class="blind">계좌더보기</span></a>
+						<!-- 부가메뉴 팝업 -->
+						<div class="appendMenu">
+							<ul>
+								<li><a href="javascript:;">계좌별칭관리</a></li>
+								<li><a href="javascript:;">나만의계좌관리</a></li>
+								<li><a href="javascript:;">계좌비밀번호변경</a></li>
+								<li><a href="javascript:;">계좌번호 복사</a></li>
+								<li><a href="javascript:;">카카오톡 전송</a></li>
+								<li><a href="javascript:;">통장표지 조회</a></li>
+								<li><a href="javascript:;">계좌정보</a></li>
+							</ul>
+							<div class="appendClose"><a href="javascript:;">닫기</a></div>
+						</div>
+						<!-- // 부가메뉴 팝업 -->
+					</div>
+				</div>
+					
+				<div class="accCont">
+					<a href="javascript:;">
+						<span class="accName">자유저축예탁금</span>
+						<span class="accNick">계좌별칭</span>
+						<div class="accInfo">
+							<span class="infoTit">잔액</span>
+							<span class="amount"><em>1,000,000,000</em><span class="wUnit">원</span></span>
+						</div>
+					</a>
+				</div>
+
+				<div class="areaBodyBtnFull">
+					<div class="inner">
+						<ul>
+							<li><a href="javascript:;" class="btnType02">거래내역</a></li>
+							<li><a href="javascript:;" class="btnType01">이체</a></li>
+							<li><a href="javascript:;" class="btnType01">큰글이체</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="accTit">
+					<span class="accNum">123-1234-1234-12</span>
+					<div class="btnMoreWrap">
+						<a href="javascript:;" class="btnMore"><span class="blind">계좌더보기</span></a>
+						<!-- 부가메뉴 팝업 -->
+						<div class="appendMenu">
+							<ul>
+								<li><a href="javascript:;">계좌별칭관리</a></li>
+								<li><a href="javascript:;">나만의계좌관리</a></li>
+								<li><a href="javascript:;">계좌비밀번호변경</a></li>
+								<li><a href="javascript:;">계좌번호 복사</a></li>
+								<li><a href="javascript:;">카카오톡 전송</a></li>
+								<li><a href="javascript:;">통장표지 조회</a></li>
+								<li><a href="javascript:;">계좌정보</a></li>
+							</ul>
+							<div class="appendClose"><a href="javascript:;">닫기</a></div>
+						</div>
+						<!-- // 부가메뉴 팝업 -->
+					</div>
+				</div>
+					
+				<div class="accCont">
+					<a href="javascript:;">
+						<span class="accName">(자유적립/정기)적금</span>
+						<span class="accNick">계좌별칭</span>
+						<div class="accInfo">
+							<span class="infoTit">만기일</span>
+							<span class="accDate">2018/07/05</span>
+						</div>
+						<div class="accInfo">
+							<span class="infoTit">잔액</span>
+							<span class="amount"><strong class="pointColor"><em>1,000,000,000</em><span class="wUnit">원</span></strong></span>
+						</div>
+					</a>
+				</div>
+
+				<div class="areaBodyBtnFull">
+					<div class="inner">
+						<ul>
+							<li><a href="javascript:;" class="btnType02">거래내역</a></li>
+							<li><a href="javascript:;" class="btnType01">입금</a></li>
+							<li class="w120"><a href="javascript:;" class="btnType01">해지예상조회/조회</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+						<div class="accTit">
+							<span class="accNum">123-1234-1234-12</span>
+							<div class="btnMoreWrap">
+								<a href="javascript:;" class="btnMore"><span class="blind">계좌더보기</span></a>
+								<!-- 부가메뉴 팝업 -->
+								<div class="appendMenu">
+									<ul>
+										<li><a href="javascript:;">계좌별칭관리</a></li>
+										<li><a href="javascript:;">나만의계좌관리</a></li>
+										<li><a href="javascript:;">계좌비밀번호변경</a></li>
+										<li><a href="javascript:;">계좌번호 복사</a></li>
+										<li><a href="javascript:;">카카오톡 전송</a></li>
+										<li><a href="javascript:;">통장표지 조회</a></li>
+										<li><a href="javascript:;">계좌정보</a></li>
+									</ul>
+									<div class="appendClose"><a href="javascript:;">닫기</a></div>
+								</div>
+								<!-- // 부가메뉴 팝업 -->
+							</div>
+						</div>
+							
+						<div class="accCont">
+							<a href="javascript:;">
+								<span class="accName">NH해봄적금</span>
+								<span class="accNick">계좌별칭</span>
+								<div class="accInfo">
+									<span class="infoTit">만기일</span>
+									<span class="accDate">2018/07/05</span>
+								</div>
+								<div class="accInfo">
+									<span class="infoTit">잔액</span>
+									<span class="amount"><strong class="pointColor"><em>1,000,000,000</em><span class="wUnit">원</span></strong></span>
+								</div>
+							</a>
+						</div>
+
+						<div class="areaBodyBtnFull">
+							<div class="inner">
+								<ul>
+									<li><a href="javascript:;" class="btnType02">거래내역</a></li>
+									<li><a href="javascript:;" class="btnType01">입금</a></li>
+								</ul>
+								<div class="toggleWrap">
+									<div class="toggleCont">
+										<ul>
+											<li><a href="javascript:;" class="btnType01">DIY상품명</a></li>
+											<li><a href="javascript:;" class="btnType01">해지예상조회/해지</a></li>
+										</ul>
+									</div>
+									<div class="accListBtn"><a href="javascript:;" class="toggleBtn"><span class="blind">다른 기능 버튼보기 열고, 닫기</span></a></div>
+								</div>
+							</div>
+						</div>
+					</li>
+		</ul>
+	</div>
+	
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">거래내역 리스트</h2>
+	<div class="srchInfo">
+		<ul>
+			<li>2018.07.04 ~ 2018.07.04</li>
+			<li>입·출금</li>
+			<li>최근거래순</li>
+		</ul>
+	</div>
+	<div class="srchResult">
+		<ul>
+			<li>
+				<div class="dateTit">2018.07.04 13:03:12</div>
+				<div class="resultDetail">
+					<div class="result">
+						<span class="resultTit">5월 급여</span>
+						<span class="resultState pointColor">입금</span>
+					</div>
+					<span class="resultAmount pointColor"><em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+					<span class="amntTotal">잔액 <em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+				</div>
+			</li>
+			<li>
+				<div class="dateTit">2018.07.04 13:03:12</span></div>
+				<div class="resultDetail">
+					<div class="result">
+						<span class="resultTit">엄청 비싼 소고기</span>
+						<span class="resultState pointColor2">출금</span>
+					</div>
+					
+					<span class="resultAmount pointColor2"><em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+					<span class="amntTotal">잔액 <em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+				</div>
+			</li>
+			<li>
+				<div class="dateTit">2018.07.04 13:03:12</div>
+				<div class="resultDetail">
+					<div class="result">
+						<span class="resultTit">가나다라마바사아자차카타파하가나다라마바사</span>
+						<span class="resultState pointColor">입금</span>
+					</div>
+					<span class="resultAmount pointColor"><em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+					<span class="amntTotal">잔액 <em>1,000,000,000,000</em><span class="wUnit">원</span></span>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+    <h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">상품리스트</h2>
+    <h3 class="guide">■ 보험</h3>
+	<div class="productWrap">
+        <ul class="productList">
+            <li>
+                <a href="javascript:;" class="link">
+                    <strong class="prodTit"><span class="badge">NH농협생명</span><span>300000010000</span></strong>
+                    <p class="txt">기쁨가득NH저축보험(무)_1804(적립형)(기본형)</p>
+                </a>
+            </li>	
+            <li>
+                <a href="javascript:;" class="link">
+                    <strong class="prodTit"><span class="badge">흥국생명</span><span>300000010000</span></strong>
+                    <p class="txt">미리보는내연금무배당교보Firtst 변액연금보험 Ⅱ</p>
+                </a>
+            </li>	
+            <li>
+                <a href="javascript:;" class="link">
+                    <strong class="prodTit"><span class="badge">KDB생명</span><span>300000010000</span></strong>
+                    <p class="txt">(무)KDB알뜰양로저축보험기본형-고액가산</p>
+                </a>
+            </li>			
+        </ul>
+	</div>
+	<hr>
+	<h3 class="guide">■ 펀드</h3>
+	<div class="productWrap">
+        <ul class="productList">
+            <li>
+				<div class="productHeader">
+					<a href="javascript:;" class="link">
+						<strong class="prodTit"><span class="badge color1">농협은행</span><span class="pointColor5">302-0799-91234-00</span></strong>
+						<h2 class="txt">NH-Amundi Allser스마트인베스터5.0 분할 매수[주식혼합-재간접]Ce</h2>
+					</a>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">평가금액</span>
+						<strong class="pointColor"><em>115,000</em><span class="wUnit">원</span></strong>
+					</li>
+					<li>
+						<span class="tit">납입잔액</span>
+						<span><em>100,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">단기수익률</span>
+						<span><em>15.88</em><span class="wUnit">%</span></span>
+					</li>
+					<li>
+						<span class="tit">당일기준가</span>
+						<span><em>1,000.51</em><span class="wUnit">원</span></span>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="productHeader">
+					<a href="javascript:;" class="link">
+						<strong class="prodTit"><span class="badge color2">농·축협</span><span class="pointColor5">302-0799-91234-00</span></strong>
+						<h2 class="txt">NH-Amundi Allser스마트인베스터5.0 분할 매수[주식혼합-재간접]Ce</h2>
+					</a>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">평가금액</span>
+						<strong class="pointColor"><em>115,000</em><span class="wUnit">원</span></strong>
+					</li>
+					<li>
+						<span class="tit">납입잔액</span>
+						<span><em>100,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">단기수익률</span>
+						<span><em>15.88</em><span class="wUnit">%</span></span>
+					</li>
+					<li>
+						<span class="tit">당일기준가</span>
+						<span><em>1,000.51</em><span class="wUnit">원</span></span>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="productHeader">
+					<div class="link">
+						<strong class="prodTit mb0"><span class="pointColor5">000-00000-000-00</span></strong>
+						<h2 class="txt">재해주택복구자금대출</h2>
+						<span class="badgeDefault">정상</span>
+					</div>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">대출금액</span>
+						<span><em>180,000,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">대출잔액</span>
+						<span><em>20,000,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">대출 이율</span>
+						<span><em>4.3</em><span class="wUnit">%</span></span>
+					</li>
+					<li>
+						<span class="tit">대출만기일</span>
+						<span>2018/01/01</span>
+					</li>
+				</ul>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine">기한연기신청</a>
+				</div>
+			</li>
+			<li>
+				<div class="productHeader">
+					<div class="link">
+						<strong class="prodTit mb0">채권번호 1234-1234 <span class="badgeDefault">정상</span></strong>
+					</div>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">매입의무자</span>
+						<span>이름 노출영역</span>
+					</li>
+					<li>
+						<span class="tit">주민등록번호</span>
+						<span>주민등록번호 노출 영역</span>
+					</li>
+					<li>
+						<span class="tit">매입용도</span>
+						<span>부동산등기(소유권보존 또는 이전)</span>
+					</li>
+					<li>
+						<span class="tit">징구기관</span>
+						<span>법원등기소</span>
+					</li>
+					<li>
+						<span class="tit">매입금액</span>
+						<span><em>10,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">본인부담금</span>
+						<span><em>10,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">처리결과</span>
+						<span class="pointColor">성공</span>
+					</li>
+				</ul>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine">상세보기</a>
+				</div>
+			</li>
+			<li>
+				<div class="productHeader">
+					<a href="javascript:;" class="link">
+						<strong class="prodTit mb0"><span class="pointColor5">000-00000-000-00</span></strong>
+						<h2 class="txt">가계일반자금</h2>
+						<span class="badgeDefault">정상</span>
+					</a>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">대출잔액</span>
+						<span><em>180,000,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">총 상환금액</span>
+						<span><em>20,000,000</em><span class="wUnit">원</span></span>
+					</li>
+				</ul>
+			</li>
+			
+			<li>
+				<div class="productHeader">
+					<div class="link">
+						<strong class="prodTit mb0">채권번호 1234-1234 <span class="badgeDefault red">구분</span></strong>
+					</div>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">매입의무자</span>
+						<span>이름 노출영역</span>
+					</li>
+					<li>
+						<span class="tit">주민등록번호</span>
+						<span>주민등록번호 노출 영역</span>
+					</li>
+					<li>
+						<span class="tit">매입용도</span>
+						<span>부동산등기(소유권보존 또는 이전)</span>
+					</li>
+					<li>
+						<span class="tit">징구기관</span>
+						<span>법원등기소</span>
+					</li>
+					<li>
+						<span class="tit">매입금액</span>
+						<span><em>10,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">본인부담금</span>
+						<span><em>10,000</em><span class="wUnit">원</span></span>
+					</li>
+					<li>
+						<span class="tit">처리결과</span>
+						<span class="pointColor2">실패</span>
+					</li>
+				</ul>
+				<div class="areaBodyBtnFull">
+					<div class="inner">
+						<ul>
+							<li><a href="javascript:;">상세보기</a></li>
+							<li><a href="javascript:;">매입취소</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>		
+	</div><hr>
+	<h3 class="guide">■ 펀드 수익률 조회</h3>
+	<div class="productWrap">
+        <ul class="productList">
+            <li>
+				<div class="productHeader">
+					<div class="link">
+						<h2 class="txt">NH-Amundi Allser스마트인베스터5.0 분할 매수[주식혼합-재간접]Ce</h2>
+					</div>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">기준가격</span>
+						<strong class="pointColor"><em>1,000,12</em><span class="wUnit">원</span></strong>
+					</li>
+					<li>
+						<span class="tit">전일증감</span>
+						<span><em>0.40</em><span class="wUnit">%</span></span>
+					</li>
+					<li>
+						<div class="wrapTblDefault">
+							<div class="tblHeader">
+								<span class="formTit">단순수익률</span>
+							</div>
+							<table cellpadding="0" cellspacing="0" class="thCenter">
+								<caption>단순수익률 정보 입력</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="colgroup">1주일</th>
+										<th scope="colgroup">1개월</th>
+										<th scope="colgroup">3개월</th>
+										<th scope="colgroup">6개월</th>
+										<th scope="colgroup">12개울</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>0.00</td>
+										<td>-1.43</td>
+										<td>-0.68</td>
+										<td>-2.30</td>
+										<td>-2.31</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+				</ul>
+				
+			</li>
+			<li>
+				<div class="productHeader">
+					<div class="link">
+						<h2 class="txt">ABL PIMCO분산투자증권자투자신탁[채권-재간접형(H) C(W)</h2>
+					</div>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">기준가격</span>
+						<strong class="pointColor"><em>1,000,12</em><span class="wUnit">원</span></strong>
+					</li>
+					<li>
+						<span class="tit">전일증감</span>
+						<span><em>0.40</em><span class="wUnit">%</span></span>
+					</li>
+					<li>
+						<div class="wrapTblDefault">
+							<div class="tblHeader">
+								<span class="formTit">단순수익률</span>
+							</div>
+							<table cellpadding="0" cellspacing="0" class="thCenter">
+								<caption>단순수익률 정보 입력</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="colgroup">1주일</th>
+										<th scope="colgroup">1개월</th>
+										<th scope="colgroup">3개월</th>
+										<th scope="colgroup">6개월</th>
+										<th scope="colgroup">12개울</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>0.00</td>
+										<td>-1.43</td>
+										<td>-0.68</td>
+										<td>-2.30</td>
+										<td>-2.31</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+				</ul>
+				
+			</li>
+		</ul>		
+	</div>
+	<hr>
+	<h3 class="guide">■ 토글 포함 리스트</h3>
+	<div class="guideListTop">
+        <ul class="listDot">
+            <li>환전가능 통화보기를 터치해 수령 가능한 외화를 확인하신 후, 영업점을 선택해 주세요.</li>
+        </ul>
+    </div>
+	<div class="productWrap">
+        <ul class="productList selectType"> <!-- 선택형 리스트에 selectType 추가 -->
+            <li>
+				<div class="link">
+					<a href="javascript:;" class="block" title="항목을 선택하고 해당 창을 닫습니다.">
+						<strong class="prodTit"><span class="badge color1">농협은행</span>양재지점</strong>
+						<p class="txt">서울특별시 강남구 강남대로 278</p>
+						<p class="txt">02-3321-5678</p>
+					</a>
+					<div class="exchangeView toggleWrap">
+						<a href="javascript:;" class="toggleBtn">환전가능 통화<span class="toggleTxt">보기</span></a>
+						<div class="toggleCont">
+							<div class="guideList">
+								<ul class="listDot">
+									<li>미국달러(USD)/일본 엔(JPY)/유럽연합 유로(EUR) 중국위안(CNY)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="active">
+				<div class="link">
+					<a href="javascript:;" class="block" title="항목을 선택하고 해당 창을 닫습니다.">
+						<strong class="prodTit"><span class="badge color2">농·축협</span>종로1가지점</strong>
+						<p class="txt">서울특별시 종로구 종로5길 7</p>
+						<p class="txt">02-3321-5678</p>
+					</a>
+					<div class="exchangeView toggleWrap">
+						<a href="javascript:;" class="toggleBtn">환전가능 통화<span class="toggleTxt">보기</span></a>
+						<div class="toggleCont">
+							<div class="guideList">
+								<ul class="listDot">
+									<li>미국달러(USD)/일본 엔(JPY)/유럽연합 유로(EUR) 중국위안(CNY)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="link">
+					<a href="javascript:;" class="block" title="항목을 선택하고 해당 창을 닫습니다.">
+						<strong class="prodTit"><span class="badge color1">농협은행</span>인덕원지점</strong>
+						<p class="txt">경기 의왕시 성고개로 59(포일동, NH통합IT센터)</p>
+						<p class="txt">02-3321-5678</p>
+					</a>
+					<div class="exchangeView toggleWrap">
+						<a href="javascript:;" class="toggleBtn">환전가능 통화<span class="toggleTxt">보기</span></a>
+						<div class="toggleCont">
+							<div class="guideList">
+								<ul class="listDot">
+									<li>미국달러(USD)/일본 엔(JPY)/유럽연합 유로(EUR) 중국위안(CNY)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>		
+	</div>
+	<hr>
+
+	<h3 class="guide">■ 경조사 리스트</h3>
+    <div class="productWrap">
+        <ul class="productList">
+            <li>
+                <div class="productHeader transferHeader">
+                    <div class="transferImage">
+                        <img src="../../../images/contents/icon_transfer_base.png" alt="이체정보 아이콘">
+                    </div>
+                    <div class="link">
+                        <h2 class="txt">경조사 가족회비</h2>
+                        <strong class="pointColor5">0100-2022020-12</strong>
+                    </div>
+                </div>
+                <ul class="transferList">
+                    <li>
+                        <span class="bankTit">카카오뱅크</span>
+                        <span>홍길동</span>
+                    </li>
+                    <li>
+                        <span>3333-456-7890111</span>
+                    </li>
+                    <li class="mt15 transferTxt">
+                        <span class="tit">이체금액</span>
+                        <span><strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong></span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <div class="inner">
+                        <ul>
+                            <li><a href="javascript:;">수정</a></li>
+                            <li><a href="javascript:;">삭제</a></li>
+                            <li><a href="javascript:;">이체</a></li></ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="productHeader transferHeader">
+                    <div class="transferImage">
+                        <img src="../../../images/contents/icon_transfer_base.png" alt="이체정보 아이콘">
+                    </div>
+                    <div class="link">
+                        <h2 class="txt">경조사 가족회비</h2>
+                        <strong class="pointColor5">0100-2022020-12</strong>
+                    </div>
+                </div>
+                <ul class="transferList">
+                    <li>
+                        <span class="bankTit">카카오뱅크</span>
+                        <span>홍길동</span>
+                    </li>
+                    <li>
+                        <span>3333-456-7890111</span>
+                    </li>
+                    <li class="mt15 transferTxt">
+                        <span class="tit">이체금액</span>
+                        <span><strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong></span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <div class="inner">
+                        <ul>
+                            <li><a href="javascript:;">수정</a></li>
+                            <li><a href="javascript:;">삭제</a></li>
+                            <li><a href="javascript:;">이체</a></li></ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">기타 리스트</h2>	
+	<h3 class="guide">■ type01</h3>
+    <div class="productWrap">
+        <ul class="productList">
+            <li>
+                <div class="productHeader divingLine3">
+                    <a href="javascript:;" class="link">
+                        <span class="pointColor5"><strong>302-0799-91234-00</strong></span>
+                    </a>
+                </div>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit">은행</span>
+                        <span>기업</span>
+                    </li>
+                    <li>
+                        <span class="tit">받는분</span>
+                        <span>김농협</span>
+                    </li>
+                    <li>
+                        <span class="tit">입금시간</span>
+                        <span>2018.06.20 05:25:22</span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <a href="javascript:;" class="btnBodyLine">삭제</a>
+                </div>
+            </li>
+            <li>
+                <div class="productHeader">
+                    <a href="javascript:;" class="link">
+                        <span class="pointColor5"><strong>302-0799-91234-00</strong></span>
+                    </a>
+                </div>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit">은행</span>
+                        <span>기업</span>
+                    </li>
+                    <li>
+                        <span class="tit">받는분</span>
+                        <span>김농협</span>
+                    </li>
+                    <li>
+                        <span class="tit">입금시간</span>
+                        <span>2018.06.20 05:25:22</span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <a href="javascript:;" class="btnBodyLine">삭제</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="guide">■ type02</h3>
+    <div class="selDetailList selAccountList">
+        <ul>
+            <li>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit"><strong class="pointColor5">302-0799-91234-00</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>[생활비] 용돈</strong></span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <a href="javascript:;" class="btnBodyLine">삭제</a>
+                </div>
+            </li>
+            <li>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit"><strong class="pointColor5">302-0799-91234-00</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>[생활비] 용돈</strong></span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <a href="javascript:;" class="btnBodyLine">삭제</a>
+                </div>
+            </li>
+            <li>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit"><strong class="pointColor5">302-0799-91234-00</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>[생활비] 용돈</strong></span>
+                    </li>
+                </ul>
+                <div class="areaBodyBtnFull">
+                    <a href="javascript:;" class="btnBodyLine">삭제</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="guide">■ type03</h3>
+    <div class="currentTime mb5"><span class="fl">총 <em>3</em>건</span><p>조회기준일시 : <span>2018.05.25 18:48:45</span></p></div>
+	<div class="productWrap">
+		<ul class="productList linkCon bdt">
+			<li>
+				<a href="javascript:;" class="link" title="계좌기본정보조회 새창 열림">
+					<ul class="detailList">
+						<li>
+							<span class="tit pointColor5"><strong>0100-2022020-12</strong></span>
+						</li>
+					   <li>
+							<span class="tit"><strong>NH주거래우대통장(비대면실명확인-저축예금)</strong></span>
+						</li>
+						<li>
+							<span class="tit">잔액</span><span><strong class="pointColor"><em>100,000,000</em><span class="wUnit">원</span></strong></span>
+						</li>
+					</ul>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">선택형 리스트</h2>	
+	<h3 class="guide">■ 단순 선택 리스트</h3>
+	<div class="productWrap">
+        <ul class="productList selectType"> <!-- 선택형 리스트에 selectType 추가 -->
+            <li>
+				<a href="javascript:;" class="link" title="항목을 선택하고 해당 창을 닫습니다.">
+					<strong class="prodTit">군포시청 출장소</strong>
+					<p class="txt">경기도 군포시 청백리길 6</p>
+					<p class="txt">02-3321-5678</p>				
+				</a>
+			</li>
+			<li class="active">
+				<a href="javascript:;" class="link" title="항목을 선택하고 해당 창을 닫습니다.">
+					<strong class="prodTit">군포시청 출장소</strong>
+					<p class="txt">경기도 군포시 청백리길 6</p>
+					<p class="txt">02-3321-5678</p>				
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="link" title="항목을 선택하고 해당 창을 닫습니다.">
+					<strong class="prodTit">군포시청 출장소</strong>
+					<p class="txt">경기도 군포시 청백리길 6</p>
+					<p class="txt">02-3321-5678</p>				
+				</a>
+			</li>
+		</ul>		
+	</div>
+	
+	<h3 class="guide mt20">■ 단순 선택 리스트(border top 있는 경우)</h3>
+	<div class="productWrap bdt">
+        <ul class="productList selectType"> <!-- 선택형 리스트에 selectType 추가 -->
+            <li>
+				<a href="javascript:;" class="link" title="항목을 선택하고 해당 창을 닫습니다.">
+					<p class="txt">(우) 04517</p>
+					<p class="txt">서울시 중구 충정로1가 통일로 120</p>				
+				</a>
+			</li>
+			<li class="active">
+				<a href="javascript:;" class="link" title="항목을 선택하고 해당 창을 닫습니다.">
+					<p class="txt">(우) 04517</p>
+					<p class="txt">서울시 중구 충정로1가 통일로 120</p>				
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="link" title="항목을 선택하고 해당 창을 닫습니다.">
+					<p class="txt">(우) 04517</p>
+					<p class="txt">서울시 중구 충정로1가 통일로 120</p>				
+				</a>
+			</li>
+		</ul>		
+	</div>
+    <!-- //view -->
+
+
+	<!-- view -->
+	<h3 class="guide mt20">■ 체크박스 선택형</h3>
+	<div class="totalWrap">
+		<dl>
+			<dt>김농협님의 총 금액</dt>
+			<dd>1,261,000원</dd>
+		</dl>
+		<dl>
+			<dt>총 건수</dt>
+			<dd>2건</dd>
+		</dl>
+	</div>
+
+
+
+	<div class="selDetailList">
+		<ul>
+			<li>
+				<div class="listTit">
+					<div class="checkList checkLine">
+						<input type="checkbox" id="c11" name="">
+						<label for="c11"><span class="boxText">checkBox</span>상하수도 요금 1 </label>
+					</div>
+					<a href="javascript:;">상세보기</a>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>서울특별시</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>상하수도요금</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor">정시</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>2018/06/08</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<div class="listTit">
+					<div class="checkList checkLine">
+						<input type="checkbox" id="c12" name="">
+						<label for="c12"><span class="boxText">checkBox</span>상세보기가 없으면 그냥 a태그를 빼면 됩니다.</label>
+					</div>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>서울특별시</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>글자가 길어지면 과연 어떻게 되는지 알아봅시다.</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor2">체납</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>2018/06/08</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<div class="listTit">
+					checkbox가 없으면, 이렇게 타이틀만 써줘요. 타이틀이 길어져도 문제 없죠!?
+					<a href="javascript:;">상세보기</a>
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>서울특별시</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>상하수도요금</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor">정시</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>2018/06/08</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+			
+			
+	<h3 class="guide mt20">■ 체크박스 선택형 중 파생형</h3>
+	<div class="selDetailList">
+		<ul>
+			<li>
+				<div class="listTit">
+					타이틀
+				</div>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>서울특별시</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>상하수도요금</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor">정시</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>2018/06/08</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>타이틀이</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>없으면</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor">div.listTit 를</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>빼면 됩니다.</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>타이틀이</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>없으면</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor">div.listTit 를</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>빼면 됩니다.</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+				<div class="areaBodyBtnFull">
+					<a href="javascript:;" class="btnBodyLine">재환전(되팔기)</a>		
+				</div>
+			</li>
+
+			<li>
+				<ul class="detailList">
+					<li>
+						<span class="tit">과세기관</span>
+						<span>타이틀이</span>
+					</li>
+					<li>
+						<span class="tit">세목</span>
+						<span>없으면</span>
+					</li>
+					<li>
+						<span class="tit">고지구분</span>
+						<span class="pointColor">div.listTit 를</span>
+					</li>
+					<li>
+						<span class="tit">납부기한</span>
+						<span>빼면 됩니다.</span>
+					</li>
+					<li>
+						<span class="tit">납부금액</span>
+						<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+					</li>
+				</ul>
+				<div class="areaBodyBtnFull">
+					<div class="inner">
+						<ul>
+							<li><a href="javascript:;">버튼1</a></li>
+							<li><a href="javascript:;">버튼2</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<a href="javascript:;" title="해당항목 선택">
+					<ul class="detailList">
+						<li>
+							<span class="tit">과세기관</span>
+							<span>항목을 선택하는 경우</span>
+						</li>
+						<li>
+							<span class="tit">세목</span>
+							<span>ul.detailList 에</span>
+						</li>
+						<li>
+							<span class="tit">고지구분</span>
+							<span class="pointColor">a 태그를</span>
+						</li>
+						<li>
+							<span class="tit">납부기한</span>
+							<span>넣어주세요.(코드참조하세요)</span>
+						</li>
+						<li>
+							<span class="tit">납부금액</span>
+							<strong class="pointColor"><em>77,200</em><span class="wUnit">원</span></strong>
+						</li>
+					</ul>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="listMoreBtn">
+		<a href="javascript;" title="항목 더보기">더보기</a>
+	</div>
+
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">순서바꾸기 리스트</h2>	
+    <div class="productWrap">
+        <ul class="productList divingLine accountOrderWrap mt20">
+            <li>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit pointColor5"><strong>0100-2022020-12</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>기업 | 김농협</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>[생활비] 용돈</strong></span>
+                    </li>
+                    <li class="btnOrder">
+                        <a href="javascript:;" class="btnOrderUp">위로</a>
+                        <a href="javascript:;" class="btnOrderDown">아래로</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit pointColor5"><strong>0100-2022020-12</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>기업 | 김농협</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>[생활비] 용돈</strong></span>
+                    </li>
+                    <li class="btnOrder">
+                        <a href="javascript:;" class="btnOrderUp">위로</a>
+                        <a href="javascript:;" class="btnOrderDown">아래로</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="detailList">
+                    <li>
+                        <span class="tit pointColor5"><strong>0100-2022020-12</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>기업 | 김농협</strong></span>
+                    </li>
+                    <li>
+                        <span class="tit"><strong>[생활비] 용돈</strong></span>
+                    </li>
+                    <li class="btnOrder">
+                        <a href="javascript:;" class="btnOrderUp">위로</a>
+                        <a href="javascript:;" class="btnOrderDown">아래로</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+	
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">toggle 리스트</h2>	
+	<h3 class="guide">■ type01</h3>
+	<ul class="accordianMu mt20">
+	    <li class="toggleWrap">
+	    	<div class="accordianTit">
+	         <div class="checkList acdLft">
+	             <input type="checkbox" id="c1" class="accordianCk">
+	             <label for="c1" class="accordianLb"><span class="accordianLb01">[1회]</span><span class="badgeDefault">정상</span><span class="">USD</span></label>
+	         </div>
+	         <div class="acdRht"><span class="acNum">51.00</span><a href="javascript:;" class="btnAcc toggleBtn">내용상세보기</a></div>
+	        </div>
+	        <div class="accordianCont toggleCont"> 
+	        	<ul class="accordianList">
+	        		<li>
+	        			<span class="acdTxt">거래일자</span>
+	        			<span class="acdInfo">2018.04.24</span>
+	        		</li>
+	        		<li>
+	        			<span class="acdTxt">만기일</span>
+	        			<span class="acdInfo">2018.09.24</span>
+	        		</li>
+	        		<li>
+	        			<span class="acdTxt">이율</span>
+	        			<span class="acdInfo"><em>2.25</em><span class="wUnit">%</span></span>
+	        		</li>
+	        	</ul>
+	        </div>
+	    </li>
+	    <li class="toggleWrap">
+	    	<div class="accordianTit">
+	         <div class="checkList acdLft">
+	             <input type="checkbox" id="c2" class="accordianCk">
+	             <label for="c2" class="accordianLb"><span class="accordianLb01">[1회]</span><span class="badgeDefault">정상</span><span class="">USD</span></label>
+	         </div>
+	         <div class="acdRht"><span class="acNum">51.00</span><a href="javascript:;" class="btnAcc toggleBtn">내용상세보기</a></div>
+	        </div>
+	        <div class="accordianCont toggleCont"> 
+	        	<ul class="accordianList">
+	        		<li>
+	        			<span class="acdTxt">거래일자</span>
+	        			<span class="acdInfo">2018.04.24</span>
+	        		</li>
+	        		<li>
+	        			<span class="acdTxt">만기일</span>
+	        			<span class="acdInfo">2018.09.24</span>
+	        		</li>
+	        		<li>
+	        			<span class="acdTxt">이율</span>
+	        			<span class="acdInfo"><em>2.25</em><span class="wUnit">%</span></span>
+	        		</li>
+	        	</ul>
+	        </div>
+	    </li>
+	    <li class="toggleWrap">
+	    	<div class="accordianTit">
+	         <div class="checkList acdLft">
+	             <input type="checkbox" id="c3" class="accordianCk">
+	             <label for="c3" class="accordianLb"><span class="accordianLb01">[1회]</span><span class="badgeDefault red">구분</span><span class="">USD</span></label>
+	         </div>
+	         <div class="acdRht"><span class="acNum">51.00</span><a href="javascript:;" class="btnAcc toggleBtn">내용상세보기</a></div>
+	        </div>
+	        <div class="accordianCont toggleCont"> 
+	        	<ul class="accordianList">
+	        		<li>
+	        			<span class="acdTxt">거래일자</span>
+	        			<span class="acdInfo">2018.04.24</span>
+	        		</li>
+	        		<li>
+	        			<span class="acdTxt">만기일</span>
+	        			<span class="acdInfo">2018.09.24</span>
+	        		</li>
+	        		<li>
+	        			<span class="acdTxt">이율</span>
+	        			<span class="acdInfo"><em>2.25</em><span class="wUnit">%</span></span>
+	        		</li>
+	        	</ul>
+	        </div>
+	    </li>        
+	</ul>
+
+	<h3 class="guide mt20">■ type02</h3>
+    <ul class="automaticWrap ">
+        <li class="toggleWrap">
+            <ul class="automaticList">
+                <li>
+                    <div class="checkList">
+                        <input type="checkbox" id="" name="" title="" checked="checked">
+                    </div>
+                    <a href="javascript:;" title="자동납부내역 상세보기" class="toggleBtn">
+                        <ul>
+                            <li>
+                                <span class="tit">은행명</span>
+                                <span>우리은행</span>
+                            </li>
+                            <li>
+                                <span class="tit">계좌번호</span>
+                                <span class="pointColor5"><strong>000-00000-000-00</strong></span>
+                            </li>
+                            <li>
+                                <span class="tit">기관명</span>
+                                <span>삼성생명</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <ul class="detailList detailSubList toggleCont" style="display: none;">
+                <li>
+                    <span class="tit">기관코드</span>
+                    <span>SD00027810</span>
+                </li>
+                <li>
+                    <span class="tit">납부자번호</span>
+                    <span>13128469</span>
+                </li>
+                <li>
+                    <span class="tit">서비스종류</span>
+                    <span>은행공용CMS</span>
+                </li>
+                <li>
+                    <span class="tit">등록일자</span>
+                    <span>2018.04.05</span>
+                </li>
+                <li>
+                    <span class="tit">변경대상</span>
+                    <span>변경가능</span>
+                </li>
+                <li>
+                    <span class="tit">최대소요기간</span>
+                    <span>3일</span>
+                </li>
+                <li>
+                    <span class="tit">처리상태</span>
+                    <span>처리전</span>
+                </li>
+            </ul>
+        </li>
+        <li class="toggleWrap">
+            <ul class="automaticList">
+                <li>
+                    <div class="checkList">
+                        <input type="checkbox" id="" name="" title="">
+                    </div>
+                    <a href="javascript:;" title="자동납부내역 상세보기" class="toggleBtn">
+                        <ul>
+                            <li>
+                                <span class="tit">은행명</span>
+                                <span>우리은행</span>
+                            </li>
+                            <li>
+                                <span class="tit">계좌번호</span>
+                                <span class="pointColor5"><strong>000-00000-000-00</strong></span>
+                            </li>
+                            <li>
+                                <span class="tit">기관명</span>
+                                <span>삼성생명</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <ul class="detailList detailSubList toggleCont">
+                <li>
+                    <span class="tit">기관코드</span>
+                    <span>SD00027810</span>
+                </li>
+                <li>
+                    <span class="tit">납부자번호</span>
+                    <span>13128469</span>
+                </li>
+                <li>
+                    <span class="tit">서비스종류</span>
+                    <span>은행공용CMS</span>
+                </li>
+                <li>
+                    <span class="tit">등록일자</span>
+                    <span>2018.04.05</span>
+                </li>
+                <li>
+                    <span class="tit">변경대상</span>
+                    <span>변경가능</span>
+                </li>
+                <li>
+                    <span class="tit">최대소요기간</span>
+                    <span>3일</span>
+                </li>
+                <li>
+                    <span class="tit">처리상태</span>
+                    <span>처리전</span>
+                </li>
+            </ul>
+        </li>
+        <li class="toggleWrap">
+            <ul class="automaticList">
+                <li>
+                    <div class="checkList">
+                        <input type="checkbox" id="" name="" title="" disabled="disabled">
+                    </div>
+                    <a href="javascript:;" title="자동납부내역 상세보기" class="toggleBtn">
+                        <ul>
+                            <li>
+                                <span class="tit">은행명</span>
+                                <span>우리은행</span>
+                            </li>
+                            <li>
+                                <span class="tit">계좌번호</span>
+                                <span class="pointColor5"><strong>000-00000-000-00</strong></span>
+                            </li>
+                            <li>
+                                <span class="tit">기관명</span>
+                                <span>삼성생명</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <ul class="detailList detailSubList toggleCont">
+                <li>
+                    <span class="tit">기관코드</span>
+                    <span>SD00027810</span>
+                </li>
+                <li>
+                    <span class="tit">납부자번호</span>
+                    <span>13128469</span>
+                </li>
+                <li>
+                    <span class="tit">서비스종류</span>
+                    <span>은행공용CMS</span>
+                </li>
+                <li>
+                    <span class="tit">등록일자</span>
+                    <span>2018.04.05</span>
+                </li>
+                <li>
+                    <span class="tit">변경대상</span>
+                    <span>변경가능</span>
+                </li>
+                <li>
+                    <span class="tit">최대소요기간</span>
+                    <span>3일</span>
+                </li>
+                <li>
+                    <span class="tit">처리상태</span>
+                    <span>처리전</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+	<h3 class="guide mt20">■ type03</h3>
+    <ul class="automaticWrap">
+        <li class="toggleWrap">
+            <ul class="automaticList">
+                <li>
+                    <a href="javascript:;" title="자동납부내역 상세보기" class="toggleBtn">
+                        <ul>
+                            <li>
+                                <span class="tit">은행명</span>
+                                <span>우리은행</span>
+                            </li>
+                            <li>
+                                <span class="tit">계좌번호</span>
+                                <span class="pointColor5"><strong>000-00000-000-00</strong></span>
+                            </li>
+                            <li>
+                                <span class="tit">기관명</span>
+                                <span>삼성생명</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <ul class="detailList detailSubList toggleCont NoCheck" style="display: none;">
+                <li>
+                    <span class="tit">기관코드</span>
+                    <span>SD00027810</span>
+                </li>
+                <li>
+                    <span class="tit">납부자번호</span>
+                    <span>13128469</span>
+                </li>
+                <li>
+                    <span class="tit">서비스종류</span>
+                    <span>은행공용CMS</span>
+                </li>
+                <li>
+                    <span class="tit">등록일자</span>
+                    <span>2018.04.05</span>
+                </li>
+                <li>
+                    <span class="tit">변경대상</span>
+                    <span>변경가능</span>
+                </li>
+                <li>
+                    <span class="tit">최대소요기간</span>
+                    <span>3일</span>
+                </li>
+                <li>
+                    <span class="tit">처리상태</span>
+                    <span>처리전</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 class="guide mt20">■ type04</h3>
+    <div class="productWrap accountWrap mt20">
+        <ul class="productList ">
+            <li class="toggleWrap">
+                <div class="productHeader ">
+                    <a href="javascript:;" class="link toggleBtn">
+                        <strong class="prodTit"><span class="pointColor5">302-0799-91234-00</span></strong>
+                        <h2 class="txt">기업 | 김농협</h2>
+                    </a>
+                </div>
+                <ul class="detailList toggleCont" style="display: none;">
+                    <li>
+                        <span class="tit">[생활비] 용돈</span>
+                        <span>
+                            <a href="javascript:;" class="btnAddon">수정</a>
+                            <a href="javascript:;" class="btnAddon">삭제</a>
+                        </span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+	<!-- toggle -->
+	<h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">toggle title</h2>	
+	<div class="toggleWrap">
+		<h2 class="defTit">분할인출 회차 선택 <a href="javascript:;" class="btnAcc toggleBtn">내용상세보기</a></h2>
+        <div class="accordianCont toggleCont"> 
+        	<ul class="accordianList">
+        		<li>
+        			<span class="acdTxt">거래일자</span>
+        			<span class="acdInfo">2018.04.24</span>
+        		</li>
+        		<li>
+        			<span class="acdTxt">만기일</span>
+        			<span class="acdInfo">2018.09.24</span>
+        		</li>
+        		<li>
+        			<span class="acdTxt">이율</span>
+        			<span class="acdInfo"><em>2.25</em><span class="wUnit">%</span></span>
+        		</li>
+        	</ul>
+        </div>
+    </div>    
+	<div class="toggleWrap">
+		<h2 class="defTit">공인인증서 안내 <a href="javascript:;" class="btnAcc toggleBtn active">내용상세보기</a></h2>
+        <div class="toggleNone toggleCont infoWrap" style="display:block"> 
+	       	<ol>
+				<li>
+					<p class="infoTit"><strong>01. 은행/보험용</strong> 공인인증서란?</p>
+					<p class="infoText">은행 및 보험 인터넷뱅킹, 인터넷 신용카드 결제, 전자정부 민원서비스(단, 전자입찰 제외)에서만 사용하실 수 있습니다.</p>
+					<ul class="listLine">
+						<li>유효기간 : 발급일로부터 1년간</li>
+						<li>발급수수료 : 무료</li>
+					</ul>
+				</li>
+				<li><p class="infoTit"><strong>02. 범용</strong> 공인인증서란?</p>
+					<p class="infoText">은행 및 보험 인터넷뱅킹, 인터넷 증권거래, 인터넷 신용카드 결제, 모든 전자정부 민원서비스 등 공인인증서를 사용하는 모든 전자거래에 사용하실 수 있습니다.</p>
+					<ul class="listLine">
+						<li>유효기간 : 발급일로부터 1년간</li>
+						<li>발급수수료 : 4,400원(부가가치세 포함)</li>
+						<li>유효 기간 동안은 수수료 추가부담 없이 발급됩니다.</li>
+					</ul>
+				</li>
+				<li><p class="infoTitS">공인인증서 발급 관련 유의사항</p>
+					<ul class="listDot f12">
+						<li>재발급시 기존에 발급받으신 인증서는 자동으로 폐기되며 재발급 받으신 인증서만이 유효합니다.</li>
+						<li>재발급 받으신 인증서의 유효기간은 기존 인증서 유효기간과 동일합니다.</li>
+						<li>인터넷뱅킹 이용 시에는 ‘인증서 내보내기(스마트폰->PC) 메뉴를 이용하시기 바랍니다.</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+    </div>
+    <!--// toggle -->
+
+
+    <h2 class="mt20" style="height:40px;margin:0 -17px;line-height:40px;padding-left:20px;background: #333;color:#fff;font-size:15px">accordian list</h2>        
+	<div class="accordionMenu">
+        <ul class="dep1">
+            <li>
+                <a href="javascript:;" id="acc1" role="button" aria-control="acc1">공인인증서</a><!-- 하위 컨텐츠가 열려 있는 경우  aria-control="" 추가-->
+                <ul class="dep2" aria-labelledby="acc1">
+                    <li>
+                        <a href="javascript:;" class="more" id="acc11" role="button" aria-control="acc11">인증서발급 가이드</a> <!-- 하위 컨텐츠가 열려 있는 경우  aria-control="" 추가-->
+                        <ul class="dep3" aria-labelledby="acc11">
+                            <li><a href="javascript:;">공인인증서 발급/재발급 받기</a></li>
+                            <li><a href="javascript:;">타행/타기관 인증서 등록</a></li>
+                            <li><a href="javascript:;">인증서 가져오기(PC→스마트기기)</a></li>
+                            <li><a href="javascript:;">인증서 가져오기(스마트기기→스마트기기)</a></li>
+                            <li><a href="javascript:;">인증서 가져오기(스마트기기→PC)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">인증서발급/재뱔급</a></li>
+                    <li><a href="javascript:;">타행/타기관인증서등록</a></li>
+                    <li>
+                        <a href="javascript:;" class="more" id="acc12" role="button">인증서가져오기</a>
+                        <ul class="dep3" aria-labelledby="acc12">
+                            <li><a href="javascript:;">PC -> 스마트폰</a></li>
+                            <li><a href="javascript:;">스마트폰 -> PC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="more" id="acc13" role="button">인증서내보내기</a>
+                        <ul class="dep3" aria-labelledby="acc13">
+                            <li><a href="javascript:;">스마트폰 -> PC</a></li>
+                            <li><a href="javascript:;">스마트폰 -> 스마트폰</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="more" id="acc14" role="button">인증서관리</a>
+                        <ul class="dep3" aria-labelledby="acc14">
+                            <li><a href="javascript:;">인증서조회</a></li>
+                            <li><a href="javascript:;">인증서갱신</a></li>
+                            <li><a href="javascript:;">인증서폐기</a></li>
+                            <li><a href="javascript:;">인증서삭제/비밀번호변경</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">타행/타기관인증서조회/삭제</a></li>
+                    <li>
+                        <a href="javascript:;" class="more" id="acc15" role="button">인증서수수료</a>
+                        <ul class="dep3" aria-labelledby="acc15">
+                            <li><a href="javascript:;">인증서수수료환불</a></li>
+                            <li><a href="javascript:;">인증서수수료정보조회</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" id="acc2" role="button">지문인증</a>
+                <ul class="dep2" aria-labelledby="acc2">
+                    <li><a href="javascript:;">지문인증 가이드</a></li>
+                    <li><a href="javascript:;">지문인증 가입/변경</a></li>
+                    <li><a href="javascript:;">지문인증 조회/해지</a></li>
+                    <li><a href="javascript:;">지문인증 로그인(PC인증)</a></li>
+                    <li><a href="javascript:;">지문인증 전자서명(PC인증)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" id="acc3" role="button">간편뱅킹</a>
+                <ul class="dep2" aria-labelledby="acc3">
+                    <li><a href="javascript:;">간편뱅킹 가이드</a></li>
+                    <li><a href="javascript:;">간편뱅킹 가입/변경</a></li>
+                    <li><a href="javascript:;">간편뱅킹 조회/해지</a></li>
+                    <li><a href="javascript:;">간편뱅킹 PC인증( QR)</a></li>
+                    <li><a href="javascript:;">간편뱅킹 PC인증( 인증요청번호)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" id="acc4" role="button">블록체인인증</a>
+                <ul class="dep2" aria-labelledby="acc4">
+                    <li><a href="javascript:;">블록체인 가이드</a></li>
+                    <li><a href="javascript:;">블록체인 가입/변경</a></li>
+                    <li><a href="javascript:;">블록체인 조회</a></li>
+                    <li><a href="javascript:;">블록체인 해지</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" id="acc5" role="button">키보드뱅킹 가입/관리</a>
+                <ul class="dep2" aria-labelledby="acc5">
+                    <li><a href="javascript:;">키보드뱅킹 가이드</a></li>
+                    <li><a href="javascript:;">키보드뱅킹 가입/변경</a></li>
+                    <li><a href="javascript:;">키보드뱅킹 해지</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+<script>
+$('.guideList .guideView').on('click', function()
+{
+    var $this = $(this);
+    var $gList = $this.parent().parent();
+
+    if ($this.hasClass('active'))
+    {
+        $this.removeClass('active');
+        $gList.find('.listDot').slideDown();
+    }
+    else
+    {
+        $this.addClass('active');
+        $gList.find('.listDot').slideUp();
+    }
+
+    // a 태그일 경우 페이지 이동을 막는다.
+	return false;
+	
+});
+
+</script>
+
+</div>
+</body>
+</html>

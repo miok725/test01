@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Bank">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="#">
+<title>popup</title>
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_base.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_layout.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_footer.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_comm.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_cont.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_com.css">
+<link type="text/css" rel="stylesheet" href="../../../css/nh_account.css">
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/swiper.min.js"></script>
+<script src="../../../js/modernizr.custom.min.js"></script>
+<script src="../../../js/nh_com_ui.js"></script>
+<script src="../../../js/common_ui.js"></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<a href="javascript:;" class="btnBack" role="button"><span>Back</span></a>
+		<h1>공통</h1>
+		<a href="javascript:;" class="btnNav" role="button"><span>Menu</span></a>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div class="container dfs">
+        <div class="content">
+            <p class="tit lev1">popup</p>
+            <p class="tit lev2">slidePopOption</p>
+            <div class="btnWrap page">
+                <a href="javascript:;" onclick="slidePopOption();return false;" aria-haspopup="true" role="button" class="btn">slidePopOption</a>
+            </div>
+            
+            <div class="popWrap slidePopOption" role="dialog">
+                <div class="dim"></div>
+                <div class="popInner dfs">
+                    <div class="popHeader">
+                        <h2 class="tit">slide pop</h2>
+                    </div>
+                    <div class="popCont">
+                        <div class="numberBtnList">
+                            <ul>
+                                <li class="on"><button type="button">1</button></li>
+                                <li><button type="button">2</button></li>
+                                <li><button type="button">3</button></li>
+                                <li><button type="button">4</button></li>
+                                <li><button type="button">5</button></li>
+                                <li><button type="button">6</button></li>
+                                <li><button type="button">7</button></li>
+                                <li><button type="button">8</button></li>
+                                <li><button type="button">9</button></li>
+                                <li><button type="button">10</button></li>
+                                <li><button type="button">11</button></li>
+                                <li><button type="button">12</button></li>
+                                <li><button type="button">13</button></li>
+                                <li><button type="button">14</button></li>
+                                <li><button type="button">15</button></li>
+                                <li><button type="button">16</button></li>
+                                <li><button type="button">17</button></li>
+                                <li><button type="button">18</button></li>
+                                <li><button type="button">19</button></li>
+                                <li><button type="button">20</button></li>
+                                <li><button type="button">21</button></li>
+                                <li><button type="button">22</button></li>
+                                <li><button type="button">23</button></li>
+                                <li><button type="button">24</button></li>
+                            </ul>
+                            <script>
+                                $('.numberBtnList button').click(function(){
+                                    $(this).parent('li').addClass('on').siblings('li').removeClass('on');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="popBtnWrap">
+                        <div class="popBtn">
+                            <button type="button" class="btn">취소</button>
+                            <button type="button" class="btn em">확인</button>
+                        </div>
+                        <a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기" /></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="tit lev2">slidePopConfirm</p>
+            <div class="btnWrap page">
+                <a href="javascript:;" onclick="slidePopConfirm();return false;" aria-haspopup="true" role="button" class="btn">slidePopOption</a>
+            </div>
+            
+            <div class="popWrap slidePopConfirm" role="dialog">
+                <div class="dim"></div>
+                <div class="popInner dfs">
+                    <div class="popHeader">
+                        <h2 class="tit logoSb"><span class="blind">NH 스마트뱅킹</span></h2>
+                    </div>
+                    <div class="popCont">
+                        test
+                    </div>
+                    <div class="popBtnWrap">
+                        <div class="popBtn">
+                            <button type="button" class="btn" onclick="popClose(this);return false;">취소</button>
+                            <button type="button" class="btn em" onclick="popClose(this);return false;">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tit lev2">popCenter</p>
+            <div class="btnWrap page">
+                <a href="javascript:;" onclick="popCenter();return false;" aria-haspopup="true" role="button" class="btn">popCenter</a>
+            </div>
+            
+            <div class="popWrap centerLayer" role="dialog">
+                <div class="dim"></div>
+                <div class="dimCloseArea" onclick="popClose(this);return false;">터치 시 해당 창을 닫습니다.</div>
+                <div class="popInner dfs">
+                    <div class="popHeader">
+                        <h2 class="tit logoSb"><span class="blind">NH 스마트뱅킹</span></h2>
+                    </div>
+                    <div class="popCont">
+                        <div class="msgWrap noData">
+                            <!-- <strong class="tit"><em class="ng">오류 등 메시지</em> 즉시이체 서비스 이용 중입니다.</strong> -->
+                            <strong class="tit">지연이체 서비스(본인명의, 지연이체 예외계좌) 및 입금계좌 지정 서비스 이용 중입니다</strong>
+                            <span class="txt">미지정된 입금계좌로 이체시 지정한도 이내에서만 이체가 가능합니다.</span>
+                        </div>
+                    </div>
+                    <div class="popBtnWrap">
+                        <div class="popBtn">
+                            <button type="button" class="btn" onclick="popClose(this);return false;">여섯글자이상임</button>
+                            <button type="button" class="btn em" onclick="popClose(this);return false;">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tit lev2">fullLayerPop</p>
+            <div class="btnWrap page">
+                <a href="javascript:;" onclick="fullLayerPop();return false;" aria-haspopup="true" role="button" class="btn">fullLayerPop</a>
+            </div>
+
+            <div class="popWrap fullLayerPop" role="dialog">
+                <div class="popInner dfs">
+                    <div class="popHeader">
+                        <h2 class="tit">Full Type Title</h2>
+                    </div>
+                    <div class="popCont">
+                        
+                    </div>
+        
+                    <div class="popBtnWrap">
+                        <div class="popBtn">
+                            <button type="button" class="btn" onclick="popClose(this);return false;">취소</button>
+                            <button type="button" class="btn em" onclick="popClose(this);return false;">확인</button>
+                        </div>
+                        <a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../../images/common/btn_popClose.png" alt="닫기" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* [SEPTEM] UI Dev Team :nh_account :계좌 관련 */
+/* 오픈뱅킹용 은행 아이콘 클래스 (공통) */
+/* .openBankType [class*="bankImgType"]{min-height:46px} */
+.openBankType [class*="bankImgType"]:before{display:inline-block;width:36px;height:36px;background:no-repeat center center;background-size:36px 36px;font-size:1px;color:transparent;vertical-align:middle}
+.openBankType .accList .accNum[class*="bankImgType"]:before{margin-right:10px}
+.openBankType .accList.openBList ul > li{padding:10px 17px 15px}
+.openBankType .accList.openBList ul > li .accNum .accName{height:30px;line-height:32px}
+.openBankType .accList.openBList ul > li .accNum strong + .accName{display:block;margin-left:45px;margin-top:-10px;padding-right:30px;font-size:14px;height:auto;line-height:inherit}
+.openBankType .accList.openBList .accNum[class*="bankImgType"]{min-height:44px}
+.openBankType .accList.openBList .accNum[class*="bankImgType"]:before{position:relative;top:8px}
+.openBankType .bankImgType01:before{content:'KDB산업은행 로고';background-image:url(../images/common/bk_kdb_s.png)}  /* KDB산업 */
+.openBankType .bankImgType02:before{content:'농협은행 로고';background-image:url(../images/common/bk_nh_s.png)}  /* 농협/NH투자증권 */ 
+.openBankType .bankImgType03:before{content:'신한(구조흥)은행 로고';background-image:url(../images/common/bk_sh_s.png)}  /* 신한(구조흥)/제주/신한금융투자 */
+.openBankType .bankImgType04:before{content:'우리은행 로고';background-image:url(../images/common/bk_wr_s.png)}  /* 우리 */
+.openBankType .bankImgType05:before{content:'SC은행 로고';background-image:url(../images/common/bk_sc_s.png)}  /* SC은행 */
+.openBankType .bankImgType06:before{content:'KEB하나은행 로고';background-image:url(../images/common/bk_keb_s.png)}  /* KEB하나 */
+.openBankType .bankImgType07:before{content:'기업은행 로고';background-image:url(../images/common/bk_ibk_s.png)}  /* 기업 */
+.openBankType .bankImgType08:before{content:'국민은행 로고';background-image:url(../images/common/bk_kb_s.png)}  /* 국민/KB증권 */
+.openBankType .bankImgType09:before{content:'구외환은행 로고';background-image:url(../images/common/bk_keb_s.png)}  /* 구외환 */
+.openBankType .bankImgType10:before{content:'한국씨티은행 로고';background-image:url(../images/common/bk_ct_s.png)}  /* 한국씨티 */
+.openBankType .bankImgType11:before{content:'한국수출입은행 로고';background-image:url(../images/open/ico_bank11_s.png)}  /* 한국수출입 */
+.openBankType .bankImgType12:before{content:'수협은행 로고';background-image:url(../images/common/bk_suhyup_s.png)}  /* 수협/수협중앙회 */
+.openBankType .bankImgType13:before{content:'대구은행 로고';background-image:url(../images/common/bk_dgb_s.png)}  /* 대구 */
+.openBankType .bankImgType14:before{content:'부산은행 로고';background-image:url(../images/common/bk_bnk_s.png)}  /* 부산 */
+.openBankType .bankImgType15:before{content:'광주/전북 로고';background-image:url(../images/common/bk_jb_s.png)}  /* 광주/전북 */
+.openBankType .bankImgType16:before{content:'경남은행 로고';background-image:url(../images/common/bk_bnk_s.png)}  /* 경남 */
+.openBankType .bankImgType17:before{content:'케이뱅크 로고';background-image:url(../images/common/bk_kbank_s.png)}  /* 케이뱅크 */
+.openBankType .bankImgType18:before{content:'카카오뱅크 로고';background-image:url(../images/common/bk_kakao_s.png)}  /* 카카오 */
+.openBankType .bankImgType19:before{content:'산림조합 로고';background-image:url(../images/common/bk_nfcf_s.png)}  /* 산림조합 */
+.openBankType .bankImgType20:before{content:'새마을 로고';background-image:url(../images/common/bk_mg_s.png)}  /* 새마을 */
+.openBankType .bankImgType21:before{content:'신협 로고';background-image:url(../images/common/bk_cu_s.png)}  /* 신협 */
+.openBankType .bankImgType22:before{content:'우체국 로고';background-image:url(../images/common/bk_epost_s.png)}  /* 우체국 */
+.openBankType .bankImgType23:before{content:'저축은행 로고';background-image:url(../images/common/bk_sb_s.png)}  /* 저축은행 */
+.openBankType .bankImgType24:before{content:'교보증권 로고';background-image:url(../images/common/fund_kyobo_s.png)}  /* 교보증권 */
+.openBankType .bankImgType25:before{content:'대신증권 로고';background-image:url(../images/common/fund_daishin_s.png)}  /* 대신증권 */
+.openBankType .bankImgType26:before{content:'미래에셋대우 로고';background-image:url(../images/common/fund_miraeassetdaewoo_s.png)}  /* 미래에셋대우 */
+.openBankType .bankImgType27:before{content:'DB금융투자 로고';background-image:url(../images/common/fund_db_s.png)}  /* DB금융투자 */
+.openBankType .bankImgType28:before{content:'메리츠증권 로고';background-image:url(../images/common/fund_meritz_s.png)}  /* 메리츠증권 */
+.openBankType .bankImgType29:before{content:'삼성증권 로고';background-image:url(../images/common/fund_samsung_s.png)}  /* 삼성증권 */
+.openBankType .bankImgType30:before{content:'에스케이증권 로고';background-image:url(../images/common/fund_sks_s.png)}  /* 에스케이증권 */
+.openBankType .bankImgType31:before{content:'유진투자증권 로고';background-image:url(../images/common/fund_eugenefn_s.png)}  /* 유진투자증권 */
+.openBankType .bankImgType32:before{content:'이베스트투자증권 로고';background-image:url(../images/common/fund_ebest_s.png)}  /* 이베스트투자증권 */
+.openBankType .bankImgType33:before{content:'키움증권 로고';background-image:url(../images/common/fund_kiwoom_s.png)}  /* 키움증권 */
+.openBankType .bankImgType34:before{content:'하이투자증권 로고';background-image:url(../images/common/fund_hi_s.png)}  /* 하이투자증권 */
+.openBankType .bankImgType35:before{content:'한국투자증권 로고';background-image:url(../images/common/fund_hankook_s.png)}  /* 한국투자증권 */
+.openBankType .bankImgType36:before{content:'한화투자증권 로고';background-image:url(../images/common/fund_hanhwa_s.png)}  /* 한화투자증권 */
+.openBankType .bankImgType37:before{content:'현대차증권 로고';background-image:url(../images/common/fund_hmcib_s.png)}  /* 현대차증권 */
+
+ /* 거래내역, 다계좌이체, 즉시이체 */
+.dfs .formHolder.formSchWrap .inptWrap.on{padding:0 32px 0 0}
+.dfs .formHolder.formSchWrap .inptWrap input{padding-right:37px}
+.dfs .accountTransferViewWrap .accountTransferView{padding:20px 0 0}
+.dfs .accountTransferViewWrap .accountTransferView.typeRoundBox{padding-top:0}
+.dfs .listWrap.accountTransferView{display:table-cell}
+.dfs .popCont .accountTransferView{padding:20px 0}
+.dfs .popCont .jsTabs.type01 .accountTransferView{margin:0 20px}
+.dfs .slidePopConfirm .popCont .accountTransferView, .dfs .slidePopOption .popCont .accountTransferView,
+.slidePopConfirm .dfs .popCont .accountTransferView, .slidePopOption .dfs .popCont .accountTransferView{padding:0}
+.dfs .optWrap + ul.accountTransferView.typeRoundBox{margin-top:25px}
+.dfs .accountTransferView:not(.typeRoundBox){margin:0 -20px;padding:20px}
+.dfs .popWrap.slidePopOption .accountTransferView:not(.typeRoundBox){padding:20px 0}
+.dfs .accountTransferView.line{border-bottom:1px solid #e1e1e1;padding:20px 20px 0}
+.dfs.small .accountTransferView.line{padding:10px 20px 0}
+.dfs .panels .accountTransferView.line{margin:0}
+.dfs .accountTransferView.backGray{background:#f9f9f9}
+.dfs .accountTransferView .accPriceArea.addPlus dd{padding-right:60px}
+.dfs .content>.accountTransferView .btnMoreWrap{top:23px}
+.dfs .accountTransferView .btnMoreWrap .btnAccAdm{position:absolute;top:0;right:-4px;width:13px;height:17px}
+.dfs .accountTransferView .btnMoreWrap .btnAccAdm:after{position:absolute;top:0;left:50%;width:3px;height:17px;margin-left:2px;background-position:-216px -60px}
+.dfs .accountTransferView.typeRoundBox .btnMoreWrap .btnAccAdm{top:-5px;right:-20px;width:40px;height:30px;z-index:10}
+.dfs .accountTransferView.typeRoundBox .btnMoreWrap .btnAccAdm:after{top:3px}
+.dfs .accountTransferView .btnMoreWrap .accInfoMore{width:160px;position:absolute;top:-7px;right:6px;z-index:1000;background-color:#fff;border-radius:10px;border:1px solid #dedede;text-align:left}
+.dfs .accountTransferView .btnMoreWrap .accInfoMore.global{width:auto;white-space:nowrap}
+.dfs .accountTransferView .btnMoreWrap .accInfoMore ul{margin:13px 20px}
+.dfs .accountTransferView .btnMoreWrap .accInfoMore li a{font-size:14px;line-height:29px;color:#111}
+.dfs .accountTransferView .btnMoreWrap .accInfoMore li a.active{color:#19A647}
+.dfs .accountTransferView>.accNum + .accTransferList{margin-top:34px}
+.dfs .accountTransferView .accTransferList.addPlus .txt{display:inline-block}
+.dfs .accountTransferView .btnCirPlus{display:inline-block;height:29px;position:absolute;top:0;right:0;padding:0 8px 0 18px;border:1px solid #19A647;border-radius:15px;line-height:27px;font-size:13px;font-weight:bold;color:#19A647}/* 19A647 08-24 color */
+.dfs .accountTransferView .btnCirPlus:after{position:absolute;top:9px;left:7px;width:9px;height:9px;background-position:-45px -20px}
+.dfs .accountTransferView .accTransferList .date{font-size:13px;color:#666}
+.dfs .accountTransferView .accTransferList .percent{font-size:14px;color:#666}
+.dfs .accountTransferView dl.accTransferList{display:table;width:100%}
+.dfs .accountTransferView dl.accTransferList dt, .dfs .accountTransferView dl.accTransferList dd{display:table-cell}
+.dfs .accountTransferView dl.accTransferList dd{text-align:right}
+.dfs .accountTransferView .accPriceAreaList{margin-top:20px;padding-left:27px}
+.dfs .accountTransferView .accPriceAreaList > li{margin-top:7px}
+.dfs .accountTransferView .accPriceAreaList dl{display:table;width:100%}
+.dfs .accountTransferView .accPriceAreaList dt,.dfs .accountTransferView .accPriceAreaList dd{display:table-cell}
+.dfs .accountTransferView .accPriceAreaList dd{position:relative;text-align:right}
+.dfs .accountTransferView .accPriceAreaList .tit{font-size:13px}
+.dfs .accountTransferView .accPriceAreaList .txt{font-size:17px;color:#111}
+.dfs .accountTransferView .accPriceAreaList .bank{font-size:15px}
+.dfs .accountTransferView .accPriceAreaList .date{font-size:12px;font-weight:normal}
+.dfs .accountTransferView .accPriceAreaList .name{margin-left:4px;font-size:14px}
+.dfs .accountTransferView .btnWrap.inr{margin:20px 0 0 0;z-index:10}
+.dfs .accountTransferView .btnWrap.inr.on{display:none}
+.dfs.small .accountTransferView .accPriceAreaList .bank{font-size:14px}
+.dfs .accountTransferView.typeRoundBox.viewAccList .btnWrap.inr{margin-top:24px}
+/* 조회 계좌목록 부분 */
+.dfs .optWrap + ul.accountTransferView.typeRoundBox.viewAccList{margin:0 -20px 0} 
+.dfs .optWrap + ul.accountTransferView.typeRoundBox.viewAccList >li{margin-top:20px} 
+.dfs .optWrap:not(.total) + ul.accountTransferView.typeRoundBox.viewAccList >li:first-child{margin-top:14px}
+.dfs .optWrap.total + ul.accountTransferView.typeRoundBox.viewAccList{margin:-4px -20px 0;padding:0 20px} 
+.dfs .optWrap:not(.total) + ul.accountTransferView.typeRoundBox.viewAccList{margin:0 -20px 0;padding-top:0} 
+.dfs ul.accountTransferView.typeRoundBox.viewAccList{margin:-4px -20px 0;padding-top:0} 
+@media screen and (max-width:359px){
+	.dfs ul.accountTransferView.typeRoundBox.viewAccList .btnWrap.inr .btn{font-size:13px}
+}
+.dfs ul.accountTransferView.typeRoundBox.viewAccList .roundTxtWrap{margin:-5px 15px 13px 0}
+/* 일반모드/큰글모드 선택 */
+.dfs .switchMode .formHolder.switchType label.switch{position:relative;width:100%;height:70px}
+.dfs .switchMode .formHolder.switchType label.switch:before,
+.dfs .switchMode .formHolder.switchType label.switch:after{content:'';display:flex;justify-content:center;-webkit-justify-content:center;align-items:center;padding-left:30px;transition:-webkit-transform .15s ease-in-out,transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;color:#111;font-size:19px;box-sizing:border-box}
+.dfs .switchMode .formHolder.switchType label.switch:before{content:'큰글모드';width:100%;height:70px;margin:0;padding-left:50%;border-radius:10px;vertical-align:top;background-color:#f1f1f1;color:#111;box-sizing:border-box;font-size:19px}
+.dfs .switchMode .formHolder.switchType label.switch:after{content:'일반모드';position:absolute;top:0;left:0;width:50%;height:68px;border:1px solid #111;border-radius:10px;background:#fff url('../images/common/ico_switch_check.png') no-repeat calc(50% - 40px) center;background-size:21px auto;text-align:center}
+/* accInfoArea */
+.dfs .accInfoArea{position:relative}
+.dfs .accInfoArea .accCont{overflow:hidden}
+.dfs .popCont .selectList .accInfoArea .accCont{margin-right:27px}
+.dfs .accInfoArea .accInfo{font-size:14px;margin:0}
+.dfs .accInfoArea .accInfo + .accInfo{margin-top:3px} 
+.dfs .accInfoArea .accTit:after, .dfs .listWrap .accInfoArea .accInfo:after{display:table;clear:both}
+.dfs .accInfoArea .formHolder.check .accBlock{margin-left:37px}
+.dfs .accInfoArea .accInfo .accBank{display:inline-block;color:#666}
+.dfs .accInfoArea .txt{position:relative;top:-4px;font-size:14px}
+.dfs .accInfoArea .in{color:#19A647}
+.dfs .accInfoArea .out{color:#fa7b78}
+.dfs .accInfoArea .txt .price{font-size:17px}
+.dfs .accInfoArea .txt .wUnit{font-size:16px}
+.dfs .accInfoArea .date.time{font-size:13px;color:#888;line-height:15px;margin:3px 0 0 0}
+.dfs .accInfoArea .date.time span{vertical-align:top}
+.dfs .accInfoArea .rCont{position:absolute;top:0;right:0}
+.dfs .accountTransferView.typeRoundBox .accInfoArea .rCont .btnDel{top:-5px;right:-5px}
+.dfs .accInfoArea .rCont .btnDel{position:absolute;width:30px;height:30px;top:0;right:0;z-index:100}
+.dfs .accInfoArea .rCont .btnDel:after{position:absolute;width:10px;height:10px;background-position:-18px 0;top:10px;right:10px}
+.dfs .listWrap li .accInfoArea .rCont{top:10px}
+.dfs .listWrap li.roudBoxType .accInfoArea .rCont{top:0}
+.dfs .listWrap li.roudBoxType .accInfoArea .rCont .btnDel{right:0}
+.dfs .listWrap .accInfoArea .accInfo.type *{font-size:13px}
+.dfs .listWrap .accInfoArea .txt.in span, .dfs .listWrap .accInfoArea .txt.out span{display:inline;padding-left:2px}
+.dfs .listWrap .accInfoArea .txt.in, .dfs .listWrap .accInfoArea .txt.out{position:relative;top:-4px}
+.dfs .listWrap .accInfoArea .txt .tit{font-size:14px}
+.dfs .listWrap .accInfoArea .txt .price{font-size:16px;font-weight:600}
+.dfs .listWrap .accInfoArea .txt .wUnit{font-size:16px}
+.dfs .listWrap .accInfoArea .formHolder{margin:0}
+.dfs .listWrap .accInfoArea .formHolder label.only{position:absolute;width:auto;height:auto;top:0;left:0;right:35px;bottom:0;margin:0} 
+.dfs .listWrap .accInfoArea .formHolder label.only:before{top:7px}
+.dfs .listWrap .accInfoArea .formHolder label.only + .icoBnk{margin-left:37px}
+.dfs .listWrap .accInfoArea .formHolder .inptWrap input{height:33px;line-height:33px}
+.dfs .listWrap .accInfoArea .formHolder .inptWrap .btnInptReset{height:32px}
+.dfs .listWrap .accInfoArea .formHolder.inputType{width:42vw}
+.dfs .listWrap .accInfoArea .formHolder .accCont{margin-right:35px}
+.dfs .listWrap .accInfoArea .priceWrap{margin:5px 0 0 0}
+.dfs .listWrap .accInfoArea .priceWrap .tit{display:inline-block;font-size:15px;margin-right:7px;color:#111}
+.dfs .listWrap .accInfoArea .accCont .subInfo{margin:15px 0 9px 0;border-top:1px solid #f3f3f3;padding-top:15px}
+.dfs .listWrap .accInfoArea .accCont .subInfo .accInfo{margin-left:0}
+.dfs .accInfoArea .icoBnk:before{background-size:100%;font-size:1px;color:transparent;width:36px;height:36px;display:inline-block;vertical-align:top}
+.dfs .accInfoArea .tag{font-size:12px;display:inline-block;padding-right:10px}
+/* accPriceWrap */
+.dfs .accPriceWrap .priceArea{display:block;font-size:23px;line-height:23px}
+.dfs .accPriceWrap .priceArea span.hangul{font-size:13px;display:block;height:17px;line-height:17px}
+.dfs .accPriceWrap .priceArea strong{display:block}
+.dfs .accPriceWrap .priceArea strong.price{font-size:21px;color:#111;line-height:35px}
+.dfs .accPriceWrap .priceArea strong.price span{display:inline-block;position:relative;font-size:24px;height:35px;width:calc(100% - 70px)}
+.dfs .accPriceWrap .priceArea strong.price span button.trans{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;z-index:10}
+.dfs .accPriceWrap .priceArea strong.price span input{font-size:24px;color:#111;height:35px;line-height:35px;text-align:right;vertical-align:top;width:100%;border:0;padding:0}/* width:calc(100% - 38px); */
+.dfs .accPriceWrap .priceArea strong.price span input[readonly], .dfs .accPriceWrap .priceArea strong.price span input[disabled]{border-bottom:none !important}  
+.dfs .accPriceWrap .priceArea strong.price span input::-webkit-input-placeholder{font-size:24px;color:#ddd;line-height:30px;text-align:right;font-weight:normal}
+.dfs .accPriceWrap .priceArea strong.price span input::-moz-placeholder{font-size:24px;color:#ddd;line-height:30px;text-align:right;font-weight:normal}
+.dfs .accPriceWrap .priceArea strong.price i.id-won{height:35px;display:inline-block;line-height:35px}
+.dfs .accPriceWrap .priceArea strong.price .btnInptReset{position:relative;width:20px;height:35px;background:none;vertical-align:top}
+.dfs .accPriceWrap .priceArea strong.price .btnInptReset:after{position:absolute;width:20px;height:21px;top:50%;right:0;margin:-10px 0 0 0;background-position:-315px -111px}
+.dfs.small .accPriceWrap .priceArea strong.price .btnInptReset:after{margin-top:-6px}
+.dfs.Android .accPriceWrap .priceArea strong.price i.id-won{line-height:31px}
+.dfs .accPriceWrap .priceArea strong.price.placeholder{color:#ddd}
+.dfs .accPriceWrap .priceArea span{font-size:19px;vertical-align:top}
+/* accountInfo */
+.dfs .accountInfo{position:relative;border-radius:8px;background-color:#f9f9f9;min-height:40px;padding:10px 0}
+.dfs .accountInfo:after{display:table;clear:both;content:''}
+.dfs .accountInfo .btnCls{display:block;width:31px;height:31px;position:absolute;top:-9px;right:-5.5px}
+.dfs .accountInfo .btnCls>span{width:21px !important;height:21px !important;top:5px !important;right:5px !important;clip:auto;opacity:1 !important;background-color:#fff;border-radius:50%;box-shadow:1px 2.5px 5px 0 rgba(0, 0, 0, 0.1)}
+.dfs .accountInfo .btnCls>span:after{position:absolute;top:50%;left:50%;width:10px;height:10px;background-position:-18px 0;-webkit-transform:scale(.7);transform:scale(.7);margin:-5px 0 0 -5px}
+.dfs .accountInfo.bankName{padding-bottom:10px}
+.dfs .accountInfo>p.bankName{display:block;width:auto;padding-left:41px;color:#111;position:relative;line-height:19px;position:relative;font-size:15px}
+.dfs .accountInfo>p.bankName .icoBnk{display:block;position:absolute;width:20px;height:20px;top:0;left:15px}
+.dfs .accountInfo>p.bankName .icoBnk img{display:block;width:20px;height:20px;line-height:1}
+.dfs .accountInfo>p[class*="bankType"]:before{display:block;content:'';position:absolute;width:20px;height:20px;background-color:#19A647;border-radius:50%;top:0;left:15px}/* 19A647 08-24 color */
+.dfs .accountInfo .txt.s .icoQuestion{vertical-align:middle;top:-1px}
+.dfs .accountInfo>p.bankName + p.txt.s{padding-left:41px}
+.dfs .accountInfo> p.txt{padding-left:41px;line-height:1}
+.dfs .accountInfo> p.txt.b{font-size:14px;margin-top:4px}
+.dfs .accountInfo> p.txt + p.txt.b{margin-top:1px;margin-bottom:5px}
+.dfs .accountInfo .roundTxtWrap{margin:3px 0 6px 15px}
+.dfs .accountInfo .roundTxtWrap .roundTxt{background-color:#fff}
+/* accTransferList */
+.dfs .accTransferListWrap:after{display:table;content:'';clear:both}
+.dfs .accTransferListWrap .tee{margin:20px 0}
+.dfs .titTblWrap .accTransferList{border-bottom:1px solid #f1f1f1}
+.dfs .titTblWrap .accTransferList .price{vertical-align:top}
+.dfs .optWrap + .accTransferList{border-top:1px solid #555}
+.dfs .accTransferList .txtR{margin-top:6px}
+.dfs .accTransferList .txtR dl{text-align:right}
+.dfs .accTransferList .txtR dl dt, .dfs .accTransferList .txtR dl dd{display:inline;font-size:12px}
+.dfs .accTransferList .name{display:block}
+.dfs .accTransferList .low{display:inline-block;position:relative;margin-top:10px}
+.dfs .accTransferList .low .bookmark{position:absolute;top:-1px;left:-18px;width:14px;height:17px;background-image:url('../images/common/sp_com.png');background-size:auto 250px;background-position:-185px -35px;font-size:0}
+.dfs .accTransferList .low .bookmark.on{background-position:-170px -35px}
+.dfs .roudBoxType .accTransferList{padding:0}
+.dfs .listWrap .accTransferList .tit{font-size:13px}
+.dfs .listWrap .accTransferList{display:table;padding:20px 0}
+.dfs .listWrap .accTransferList dt, .dfs.accTransferList dd{display:table-cell}
+.dfs .listWrap .accTransferList dd{text-align:right}
+.dfs .msgWrap.confirm + .accTransferList{border-top:1px solid #555;border-bottom:1px solid #f1f1f1}
+.dfs .msgWrap.confirm.cType02.noData{padding-top:50px;margin-top:40px}
+/* inputTransferAmountWrap */
+.dfs .inputTransferAmountWrap{overflow:hidden;text-align:center;margin:0 auto}
+.dfs .inputTransferAmountWrap .amountOutput{margin-top:5vh}
+.dfs.wine .inputTransferAmountWrap .amountOutput{margin-top:0}
+.dfs.small .inputTransferAmountWrap .amountOutput{margin-top:3px}
+.dfs .inputTransferAmountWrap .amountOutput em.ng{font-size:13px}
+.dfs .inputTransferAmountWrap .amountOutput strong{display:block;position:relative;margin-top:10px;color:#ddd;font-weight:600}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice{display:table;position:relative;width:100%;height:50px;margin:2px auto 0;white-space:nowrap}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice span[role=button]{display:inline-block}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice{height:40px;margin:0;line-height:0}
+.dfs.wine .inputTransferAmountWrap .amountOutput strong.txtPrice{height:20px}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice input.keypadCall{position:absolute;top:0;left:0;right:0;bottom:0;height:50px;text-align:center;background-color:transparent;opacity:0;caret-color:transparent}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice input.keypadCall{height:40px}
+.dfs.wine .inputTransferAmountWrap .amountOutput strong.txtPrice input.keypadCall{height:20px}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .price{display:table-cell;font-size:46px;color:#111;line-height:50px;vertical-align:middle;}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .placeholder{display:table-cell;font-size:37px;color:#ddd;line-height:50px;vertical-align:middle;letter-spacing:-1px}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .placeholder.full{font-size:24px}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice .placeholder{height:40px;line-height:40px}
+.dfs.wine .inputTransferAmountWrap .amountOutput strong.txtPrice .placeholder{height:20px;line-height:20px}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice .price{font-size:36px;height:40px;line-height:40px}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice .price span{font-size:28px;height:40px;line-height:40px}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice .btnInptReset{height:40px}
+.dfs.small .accountTransferView .accInfoBtnWrap{margin-top:10px}
+.dfs.wine .inputTransferAmountWrap .amountOutput strong.txtPrice .price{height:20px;line-height:20px}
+.dfs.wine .inputTransferAmountWrap .amountOutput strong.txtPrice .price span{height:20px;line-height:20px;margin-left:2px}
+.dfs.wine .inputTransferAmountWrap .amountOutput strong.txtPrice .btnInptReset{height:20px}
+.dfs.wine .accountTransferView .accInfoBtnWrap{margin-top:0}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .btnInptReset{position:relative;width:32px;height:50px;background:none;vertical-align:top}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .btnInptReset:after{position:absolute;width:20px;height:21px;top:50%;left:50%;margin:-10px 0 0 -10px;background-position:-315px -111px}
+/* .dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .price.on .btnInptReset{display:inline-block} */
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .price span,
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .price .num span{height:50px;line-height:50px;font-size:36px;display:inline-block;vertical-align:top;font-weight:normal}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .price.sfont{font-size:31px}
+.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice .price.sfont span{font-size:24px}
+.dfs.small .inputTransferAmountWrap .amountOutput strong.txtPrice .price.sfont span{font-size:23px}
+.dfs .inputTransferAmountWrap .amountOutput p{font-size:13px;color:#999;margin-top:5px}
+.dfs .inputTransferAmountWrap .amountOutput p.hangulTxt{margin-top:10px;height:20px}
+.dfs.wine .inputTransferAmountWrap .amountOutput p, .dfs.small .inputTransferAmountWrap .amountOutput p{margin-top:5px}
+@media screen and (max-height:548px){
+	.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice{margin-top:0}
+	.dfs.small .inputTransferAmountWrap .amountOutput p{margin-top:0}
+	.dfs .inputTransferAmountWrap .amountOutput strong.txtPrice input.keypadCall{padding-top:0;padding-bottom:0}
+}
+.dfs .inputTransferAmountWrap .cirBtnListWrap{padding:0 20px}
+.dfs .inputTransferAmountWrap .numericKeypadWrap{overflow:hidden;text-align:center;background-color:#eee}
+.dfs .inputTransferAmountWrap .amountOutput .icoQuestion{vertical-align:middle;top:-1px}
+.dfs .inputTransferAmountWrap .amountOutput .btnWrap{margin-top:10px;text-align:center}
+.dfs .inputTransferAmountWrap .amountOutput .btnWrap .btn{height:30px;line-height:28px;border-color:#d6d6d6;padding:0 13px;min-width:50px;font-size:13px;color:#666}
+.dfs.small .inputTransferAmountWrap .amountOutput .btnWrap .btn{padding:0 7px}
+/* roudBoxType */
+.dfs .roudBoxTypeWrap{margin-bottom:20px}
+.dfs .roudBoxTypeWrap:after{display:table;content:''}
+.dfs li.roudBoxType{margin-top:20px}
+.dfs .roudBoxType .formWrap{border-top:1px solid #f1f1f1;margin-top:10px;overflow:initial}
+.dfs .roudBoxType .flexGroup{padding:0;border:none}
+.dfs .roudBoxType .btnWrap .txtLink{font-size:13px;color:#7d8797}
+.dfs .roudBoxType strong.tit{display:block;margin-bottom:15px;font-size:16px;color:#111;line-height:16px}
+.dfs .roudBoxType .btnDel{position:absolute;top:10px;right:15px;width:20px;height:20px}
+.dfs .roudBoxType .btnDel:after{position:absolute;width:10px;height:10px;background-position:-18px 0;margin:-5px 0 0 -5px;left:50%;margin-left:-5px}
+.dfs .listWrap .roudBoxType .accInfo{margin:0}
+.dfs .listWrap .roudBoxType{padding:15px;border:none;margin-top:20px}
+.dfs .listWrap .roudBoxType .accInfoArea > em{font-size:12px;display:block;margin-bottom:10px;margin-right:20px}
+.dfs .roudBoxType .listWrap li{border-bottom:none;padding:0}
+
+/* 거래내역 */
+.dfs .tradeListWrap{margin:5px 0 0}
+.dfs .tradeListWrap li{margin:0;padding:0;border-bottom:1px solid #f3f3f3}
+.dfs .tradeListWrap li .inr, .dfs .tradeListWrap li .link{display:block;width:100%;height:100%;margin:0;padding:16px 0}
+.dfs .tradeInfo .txtR{text-align:right}
+.dfs .tradeInfo:after{display:block;clear:both;content:""}
+.dfs .tradeInfo > .txtR{float:right}
+.dfs .tradeInfo + .tradeInfo{margin-top:3px}
+.dfs .tradeInfo .tDate{font-size:13px;color:#888}
+.dfs .tradeInfo .tDate span{margin-left:3px}
+.dfs .tradeInfo .tDate.blk{font-size:14px;color:#333}
+.dfs .tradeInfo .tType{font-size:13px;color:#111}
+.dfs .tradeInfo .tTit{display:inline-block;overflow:hidden;width:170px;color:#111;text-overflow:ellipsis;white-space:nowrap;font-size:15px}
+.dfs.small .tradeInfo .tTit{width:135px}
+.dfs .tradeInfo .tPrice{font-size:18px;color:#111}
+.dfs .tradeInfo .tType.in, .dfs .tradeInfo .tPrice.in{color:#19A647}
+.dfs .tradeInfo .balance{font-size:13px;color:#888}
+.dfs .fieldGroup> .inpSelBox{width:95px;margin-left:10px;height:47px;border-bottom:2px solid #eee}
+.dfs .fieldGroup> .inpSelBox .select.col.inpSel{height:45px;border-bottom:0}
+/* searchFormWrap */
+.dfs .searchFormWrap{margin:0 -20px;padding:0 20px 25px;border-bottom:1px solid #f2f2f2}
+.dfs .searchFormWrap .formWrap{padding:0 20px}
+.dfs .searchFormWrap .radioWrap{display:flex}
+.dfs .searchFormWrap .radioWrap .radio{flex:1 1 auto}
+.dfs .searchFormWrap .btnSearch{position:relative;top:5px;width:37px;height:37px}
+.dfs .searchFormWrap .btnSearch:after{position:absolute;top:50%;left:50%;width:17px;height:17px;margin:-8.5px 0 0 -8.5px;background-position:-124px -35px}
+.dfs .fieldGroup>select.select.col.inpSel{width:112px;margin-left:10px}
+.dfs .searchFormWrap label.radio{font-size:14px}
+@media screen and (max-width:359px){
+	.dfs .searchFormWrap label.radio{font-size:12px}
+}
+
+/* 이체 가능 금액 */
+.dfs .tbl.tblDeal.type th + td{padding:10px 10px 10px 0}
+.dfs .tbl.tblDeal{margin-top:5px;padding:8px 0;border-top:1px solid #111;border-bottom:1px solid #f1f1f1}
+.dfs .tbl.tblDeal table{border-top:0}
+.dfs .tbl.tblDeal th{padding:10px 10px 10px 0;border:0;background:#fff;font-size:14px;vertical-align:top;color:#666;white-space:nowrap}
+.dfs .tbl.tblDeal td{padding:10px 0 10px 0;border:0;text-align:right;font-size:15px}
+.dfs .tbl.tblDeal td .accountName ~ .accountNumber{margin-top:5px}
+.dfs .tbl.tblDeal.noLine{border-top:0}
+.dfs .tbl.tblDeal.noLine th,.dfs .tbl .tblDeal.noLine td{border:0}
+.dfs .tbl.tblDeal td.price{color:#111}
+.dfs .tbl.tblDeal .btn{min-width:auto}
+.dfs .tbl.tblDeal + .noticeWrap{margin-top:20px}
+.dfs .tbl.tblDeal p.noData{text-align:center}
+.dfs .tbl.tblDeal p.noData.type{margin:20px 0}
+.dfs .tgWrap .tbl.tblDeal{border-top:1px solid #f1f1f1;margin-top:18.5px}
+.popWrap .dfs .msgWrap.noData .tit + .tbl.tblDeal{margin-top:20px}
+.popWrap .dfs .msgWrap.noData .tbl.tblDeal + .tit{margin-top:20px}
+.dfs .tbl.tblDeal .bName{display:inline-block;position:relative}
+.dfs .tbl.tblDeal .bName em{padding:0 0 0 4px;color:inherit}
+.dfs .tbl.tblDeal .bNum{display:inline-block}
+/* 경조금 메세지 */
+.dfs .msgName [class*="msgType"]{display:table-cell;vertical-align:top;padding-right:8px;width:36px;line-height:1}
+.dfs .msgName [class*="msgType"]:before{background-size:100%;font-size:1px;color:transparent;width:36px;height:36px;display:inline-block;vertical-align:top}
+.dfs .msgName [class*="msgType"]{padding-right:15px;vertical-align:middle}
+.dfs .msgName .msgType01:before{content:'생일';background-image:url(../images/common/ico_msg_01.png)} /*생일*/
+.dfs .msgName .msgType02:before{content:'';background-image:url(../images/common/ico_msg_02.png)}/*결혼*/
+.dfs .msgName .msgType03:before{content:'';background-image:url(../images/common/ico_msg_03.png)}/*이별*/
+.dfs .msgName .msgType04:before{content:'';background-image:url(../images/common/ico_msg_04.png)}/*모임*/
+.dfs .msgName .msgType05:before{content:'';background-image:url(../images/common/ico_msg_05.png)}/*건강*/
+.dfs .msgName .msgType06:before{content:'';background-image:url(../images/common/ico_msg_06.png)}/*개업·선거*/
+.dfs .msgName .msgType07:before{content:'';background-image:url(../images/common/ico_msg_07.png)}/*승진*/
+.dfs .msgName .msgType08:before{content:'';background-image:url(../images/common/ico_msg_08.png)}/*입학.졸업*/
+.dfs .msgName .msgType09:before{content:'';background-image:url(../images/common/ico_msg_09.png)}/*대금결제*/
+.dfs .msgName .msgType10:before{content:'';background-image:url(../images/common/ico_msg_10.png)}/*기타*/
+/* icoTime */
+.dfs .titWrap .icoTime:before{width:12px;height:12px;display:inline-block;margin-right:5px;background-position:-430px -20px;position:relative;top:1px}
+.dfs .titWrap .icoTime{color:#888;font-weight:normal}
+.dfs .titWrap .icoTime ~ .timeNumber{color:#888;font-size:13px}
+.dfs .accTransferList{padding:20px}
+.dfs .accTransferList.wide, .dfs .accTransferList.wide2{padding:20px 0}
+.dfs .accTransferList.wide.type{padding:20px 0 0}
+.dfs .accTransferList.brdT{border-top:1px solid #555}
+.dfs .accTransferList.line{border-bottom:1px solid #f1f1f1;border-top:1px solid #f1f1f1}
+.dfs .accTransferList dl{display:table;width:100%}
+.dfs .accTransferList dl dt,.dfs .accTransferInfo ul dl dd{display:table-cell}
+.dfs .accTransferList dl dt{text-align:left;font-size:14px;color:#666}
+.dfs .accTransferList li > .tit{display:inline-block;margin:0;color:#666;text-align:left;font-size:13px;vertical-align:top;font-weight:normal;line-height:1}
+.dfs .accTransferList li a.icoQuestion{position:absolute;top:-5px}
+.dfs .accTransferList dl dd{text-align:right;font-size:15px;color:#111}
+.dfs .accTransferList dl dd li{font-size:12px;font-weight:300}
+.dfs .accTransferList dl dd li span{font-size:14px;color:#121212}
+.dfs .accTransferList dl dd li + li{margin-top:15px}
+.dfs .accTransferList dl + p.check{margin:20px 0}
+.dfs .accTransferList > li{position:relative;line-height:1}
+.dfs .accTransferList > li + li{margin-top:18px}
+.dfs .roudBoxTypeWrap .accTransferList + .btnWrap{margin-top:15px}
+.dfs .accTransferList .accountName + .accountNumber{margin-top:7px}

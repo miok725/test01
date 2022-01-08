@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">은퇴설계 자가진단</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container all100">
+			<!-- 2018-09-03 추가 -->
+			<div class="stepArea all100 bigType">
+				<p class="stepTit">진단결과</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 4단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span>기본정보</li>
+						<li class="off"><span>2</span>정보입력</li>
+						<li class="off"><span>3</span>은퇴준비</li>
+						<li class="active"><span>4</span>진단결과</li>
+						<li><span>5</span>전문가상담</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2018-09-03 추가 -->
+			<div class="stepArea all100">
+				<p class="stepTit">진단결과</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 4단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="off"><span>3</span></li>
+						<li class="active"><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="mktabLv0 mktabLv1 mkflick">
+				<a href="javascript:;" class="mkarrLft"><span class="blind">이전</span></a>
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><a href="javascript:;"><span>진단결과</span></a></li>
+					<li class="swiper-slide"><a href="javascript:;" class="active"><span>필요준비자금분석</span></a></li>
+					<li class="swiper-slide"><a href="javascript:;"><span>현금흐름분석</span></a></li>
+					<li class="swiper-slide"><a href="javascript:;"><span>경제수명</span></a></li>
+					<li class="swiper-slide"><a href="javascript:;"><span>추천상품</span></a></li>
+				</ul>
+				<a href="javascript:;" class="mkarrRgt"><span class="blind">다음</span></a>
+			</div>
+			<!-- tab_end -->
+
+			<ul class="automaticWrap mt10">
+				<li class="toggleWrap">
+					<ul class="automaticList">
+						<li>
+							<a href="javascript:;" onclick="slidePopOption2();return false;" title="현재시점, 총금액 설정" class="toggleBtn">
+								<p class="defTxt">현재시점, 총금액 설정</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- automaticWrap_end -->
+
+			<h3 class="defSubTit">필요자금 구성</h3>
+			<div class="no_design">그래프 영역입니다.</div>
+
+			<div class="wrapTblDefault mt20">
+				<div class="tblHeader">
+					<span class="unit mt0">(단위:만원)</span>
+				</div>
+				<table cellpadding="0" cellspacing="0" class="thCenter">
+					<caption>필요자금 게시판</caption>
+					<colgroup>
+						<col style="width:auto">
+						<col style="width:auto">
+						<col style="width:20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="3">① 필요자금</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">생활비</th>
+							<td class="ar">300,000만원</td>
+							<td class="ar">30%</td>
+						</tr>
+						<tr>
+							<th scope="row">자녀교육</th>
+							<td class="ar">250,000만원</td>
+							<td class="ar">25%</td>
+						</tr>
+						<tr>
+							<th scope="row">자녀결혼</th>
+							<td class="ar">200,000만원</td>
+							<td class="ar">20%</td>
+						</tr>
+						<tr>
+							<th scope="row">의료비</th>
+							<td class="ar">100,000만원</td>
+							<td class="ar">10%</td>
+						</tr>
+						<tr>
+							<th scope="row">기타</th>
+							<td class="ar">150,000만원</td>
+							<td class="ar">15%</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>합계</th>
+							<td class="ar"><p class="defTxt"><span class="pointColor5">1,000,000만원</span></p></td>
+							<td class="ar"><p class="defTxt"><span class="pointColor">100%</span></p></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+
+			<h3 class="defSubTit">준비자금 구성</h3>
+			<div class="no_design">그래프 영역입니다.</div>
+
+			<div class="wrapTblDefault mt20">
+				<table cellpadding="0" cellspacing="0" class="thCenter">
+					<caption>준비자금 게시판</caption>
+					<colgroup>
+						<col style="width:auto">
+						<col style="width:auto">
+						<col style="width:20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="3">② 준비자금</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">공적연금</th>
+							<td class="ar">300,000만원</td>
+							<td class="ar">30%</td>
+						</tr>
+						<tr>
+							<th scope="row">퇴직연금</th>
+							<td class="ar">250,000만원</td>
+							<td class="ar">40%</td>
+						</tr>
+						<tr>
+							<th scope="row">금융자산</th>
+							<td class="ar">200,000만원</td>
+							<td class="ar">20%</td>
+						</tr>
+						<tr>
+							<th scope="row">부동산 등</th>
+							<td class="ar">100,000만원</td>
+							<td class="ar">10%</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>합계</th>
+							<td class="ar"><p class="defTxt"><span class="pointColor5">10,000,000만원</span></p></td>
+							<td class="ar"><p class="defTxt"><span class="pointColor">100%</span></p></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+
+			<div class="guideListTop mt20">
+				<ul class="detailList pd0">
+					<li>
+						<span class="tit">[② - ①] 과부족 자금</span>
+						<span><em class="pointColor">9,000,000</em> 만원</span>
+					</li>
+				</ul>
+				<div class="wrapTblDefault mt10">
+					<table cellpadding="0" cellspacing="0">
+						<caption>2 - 1과부족 자금 게시판</caption>
+						<colgroup>
+							<col style="width:auto">
+							<col style="width:auto">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">은퇴준비율</th>
+								<td>459%</td>
+							</tr>
+							<tr>
+								<th scope="row">물가상승률</th>
+								<td>1.35%</td>
+							</tr>
+							<tr>
+								<th scope="row">은퇴(전)기대수익률</th>
+								<td>1.35%</td>
+							</tr>
+							<tr>
+								<th scope="row">은퇴(후)기대수익률</th>
+								<td>1.35%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="defTxt">현재 준비자금으로 월 <span class="pointColor">2,428</span>만원으로 생활할 수 있으며, 월평균 생활비 <span class="pointColor">391</span>만원과 비교하여 <span class="pointColor5">2,037</span>만원이 여유롭습니다.</p>
+			</div>
+
+			<div class="areaBtnDefault mt20">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint" onclick="slidePopConfirm2();return false;">확인(상담신청)</a> 
+				<!-- 비활성화시 disabled 추가 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+	<!-- 팝업시작 : select 하는 팝업인 경우 slidePopOption 클래스 및 함수 사용 -->
+	<div class="popWrap slidePopOption">
+		<div class="dim"></div> <!-- 팝업 dim 처리 -->
+
+		<div class="popInner">
+			<h1>현재시점, 총금액 설정</h1>
+			
+			<!-- 팝업컨텐츠 -->
+			<div class="popCont">
+				<ul class="mobileSelct mt10 pd17">
+					<li>
+						<span class="boxChk">
+							<input type="radio" name="point" id="point1">
+							<label for="point1" class="bdn_line">현재시점</label>
+						</span>
+					</li>
+					<li>
+						<span class="boxChk">
+							<input type="radio" name="cost" id="cost1">
+							<label for="cost1" class="bdn_line">총금액</label>
+						</span>
+					</li>
+					<li>
+						<span class="boxChk active">
+							<input type="radio" name="point" id="point2">
+							<label for="point2" class="bdn_line">은퇴시점</label>
+						</span>
+					</li>
+					<li>
+						<span class="boxChk">
+							<input type="radio" name="cost" id="cost2">
+							<label for="cost2" class="bdn_line">월환산금액</label>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 팝업컨텐츠 -->
+
+			<!-- 팝업 버튼영역  -->
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="confirmBtn">확인</a>
+				</div>
+				<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기" /></a>
+			</div>
+			<!-- // 팝업 버튼영역 -->
+		</div>
+	</div>
+
+	<div class="popWrap slidePopConfirm">
+		<div class="dim"></div>
+		<div class="popInner">
+			<div class="popCont">
+				<div class="confirmMsg type06">
+					<p>4단계 <strong>[진단결과]</strong>를 모두 조회하셨습니다.<br>5단계<strong>[전문가상담]</strong> 단계로 계속 진행하시겠습니까?</p>
+					<div class="formArray mt20">
+						<div class="radioList">
+							<input type="radio" id="rdo11" name="aa">
+							<label for="rdo11">전화상담예약</label>
+						</div>
+						<div class="radioList">
+							<input type="radio" id="rdo12" name="aa" checked="checked">
+							<label for="rdo12">영업점방문예약</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popBtnWrap">
+				<div class="popBtn">
+					<a href="javascript:;" class="btnPressDefault" onclick="popClose(this);return false;">취소</a>
+					<a href="javascript:;" class="confirmBtn">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 팝업 끝 -->
+
+</body>
+</html>

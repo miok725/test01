@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="defTit">NH 금융리더론</h2>
+			<div class="stepArea">
+				<p class="stepTit">설명서/약관동의</p>
+				<div class="stepInfo" role="img" aria-label="총 5단계중 2단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="active"><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+			<div class="termsList mt20"> 
+				<ul> 
+					<li class="allCheck"> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" role="button">
+								<input type="checkbox" id="c1" name="">
+								<label for="c1">전체 유의사항 및 약관에 동의합니다.</label>
+							</a>
+						</div>
+					</li>
+					<li> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c2" name="" checked="checked">
+								<!-- 약관확인 후 checked 처리 -->
+								<label for="c2">기본약관</label>
+							</a>
+						</div>
+					</li>
+					<li> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c3" name="">
+								<label for="c3">상품설명서</label>
+							</a>
+						</div>
+					</li>  
+					<li>
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c4" name="">
+								<label for="c4">여신 개인(신용)정보 수집&middot;이용&middot;제공 동의(필수)</label>
+							</a>
+						</div>  
+					</li> 
+					<li> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c5" name="">
+								<label for="c5">개인(신용)정보 조회 동의서</label>
+							</a>
+						</div>   
+					</li>
+					<li> 
+						<div class="checkList">
+							<a href="javascript:;" onclick="fullLayerPop();return false;" title="해당 약관 새창열림">
+								<input type="checkbox" id="c6" name="">
+								<label for="c6">개인(신용)정보 수집&middot;이용 및 제공 관련 고객권리 안내문</label>
+							</a>
+						</div>   
+					</li>
+				</ul> 
+			</div>
+			
+			<div class="termsList mt20"> 
+				<ul> 
+					<li>
+						<div class="checkList">
+							<input type="checkbox" id="c7" name="">
+							<label for="c7">국세청 정보 이용 동의</label>
+						</div>
+						<div class="termsCont">
+							<p class="termsStxt2">
+								본인은 "<span></span>"을 신청하기 위해 본인 공인인증서로 국세청 로그인 후 사업자 정보 및 소득과 관련된 국세청 정보(소득금액증명원)를 전자적 방식으로 조회, 제출하는 것에 대해 충분히 이해하였으며,
+								<strong>대출 심사에 이용하는 것에 동의</strong>합니다.
+								본인은 "<span></span>"을 신청하기 위해 본인 공인인증서로 국세청 로그인 후 소득 또는 세무와 관련된 국세청 정보(소득금액증명원)를 전자적 방식으로 조회, 제출하는 것에 대해 충분히 이해하였으며,
+								<strong>대출 심사에 이용하는 것에 동의</strong>합니다.
+							</p>
+						</div>
+					</li>    
+					<li>
+						<div class="checkList">
+							<input type="checkbox" id="c8" name="">
+							<label for="c8">건강보험공단 정보 이용 동의</label>
+						</div>  
+						<div class="termsCont">
+							<p class="termsStxt2">
+								본인은 "<span></span>"을 신청하기 위해 본인 공인인증서로 건강보험공단 로그인 후 재직 관련된 건강보험공단 정보(건강보험자격득실확인정보)를 전자적 방식으로 조회, 제출하는 것에 대해 충분히 이해하였으며, 
+								<strong>대출 심사에  이용하는 것에 동의</strong>합니다.
+							</p>
+						</div>
+					</li>    
+				</ul> 
+			</div>
+			<!-- termsList_end -->
+
+			<div class="agree_info">
+				<p class="defTxt point1">본인은 본 동의서의 내용 및 개인(신용)정보 수집, 이용, 제공에 관한 고객권리 안내문에 관하여 자세히 설명을 듣고 수령하였습니다.</p>
+				<p class="defTxt point2">농협은행과의 대출거래를 함에 있어 농협여신거래기본약관(가계용, 관련수신거래 약관 포함) 및 상품설명서가 적용됨을 승인하고 각 조항을 충분히 이해하고 확인하였으며, 개인(신용)정보 수집·이용·제공 동의서(필수)와 개인(신용)정보조회동의서를 이해하고 이에 동의 하십니까?</p>
+			</div>
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressDefault">동의하지않음</a>
+				<a href="javascript:;" class="btnPressPoint">동의함</a> 
+				<!-- 활성화시 disabled 제거 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+
+			<!-- <div class="guideList">
+				<div class="tArea"><p class="guideTit">알아두세요</p></div>
+				<ul class="listDot">
+					<li>상품신청이 원활하게 완료되지 않으신 경우, 상품가입내역에서 처리결과를 반드시 확인하시기 바랍니다.</li>
+				</ul>
+			</div> -->
+			<!-- guideList_end -->
+
+			<!-- popup -->
+			<!-- 약관샘플 팝업 -->
+			<div class="popWrap fullLayerPop pdfWrap">
+				<div class="popInner">
+					<h1>PDF 샘플</h1>
+					<div class="popCont">
+						<div class="stepArea2 pdfStep" role="img" aria-label="총 5단계중 2단계 입니다.">
+							<ul class="stepList ar">
+								<li class="off"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+
+						<!-- iframe 불러오는 영역 -->
+						<div class="iframeWrap">
+							<iframe src="../NH농심-농부의마음적금_상품설명서.html" frameborder="0" width="100%" height="100%"></iframe>
+						</div>
+						<!-- // iframe 불러오는 영역 end -->
+					</div>
+		
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+						</div>
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!-- //약관샘플 팝업 -->
+			<!-- 인증번호 전송완료 팝업 -->
+			<div class="popWrap centerLayer">
+				<div class="dim"></div>
+				<div class="popInner">
+					
+					<h1 class="ac"><img src="../../images/contents_market/common/popTitle.png" alt="NH 스마트뱅킹"></h1>
+					<div class="popCont">
+						<div class="confirmMsg type01">
+							<p>인증번호가 전송되었습니다.</p>
+						</div>
+					</div>
+			
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- //인증번호 전송완료 팝업 -->
+			<!-- 휴대폰번호 앞자리 선택 팝업 -->
+			<div class="popWrap slidePopOption">
+				<div class="dim"></div> <!-- 팝업 dim 처리 -->
+				<div class="popInner" tabindex="1">
+					<h1>휴대폰번호 앞자리 선택</h1>
+					
+					<!-- 팝업컨텐츠 -->
+					<div class="popCont">
+						<ul class="selectList">
+							<li class="active"><a href="javascript:;" title="">010</a></li>
+							<li><a href="javascript:;" title="">011</a></li>
+							<li><a href="javascript:;" title="">016</a></li>
+							<li><a href="javascript:;" title="">017</a></li>
+							<li><a href="javascript:;" title="">018</a></li>
+							<li><a href="javascript:;" title="">019</a></li>
+						</ul>
+					</div>
+					<!-- 팝업컨텐츠 -->
+
+					<!-- 팝업 버튼영역  -->
+					<div class="popBtnWrap">
+						<a href="javascript:;" onclick="popClose(this);return false;" class="popClose" title="해당 창을 닫습니다."><img src="../../images/common/btn_popClose.png" alt="닫기"></a>
+					</div>
+					<!-- // 팝업 버튼영역 -->
+				</div>
+			</div>
+			<!-- //휴대폰번호 앞자리 선택 팝업 -->
+			<!-- 비대면 신청 계속 진행 팝업 -->
+			<div class="popWrap slidePopConfirm">
+				<div class="dim"></div>
+				<div class="popInner">
+					<h1 class="ac"><img src="../../images/contents_market/common/popTitle.png" alt="NH 스마트뱅킹"></h1>
+					<div class="popCont innerCont">
+						<div class="confirmMsg type03">
+							<p>농협 전자금융 기존 가입 고객님은 계좌개설이 완료된 후 신분증 지참하여 <strong class="pointColor">영업점 방문 및 전자금융 출금계좌 등록 절차를 진행해 주시기 바랍니다. 출금계좌 등록 후 인터넷/모바일을 통한 이체거래 및 상품가입이 가능합니다.</strong></p>
+						</div>
+					</div>
+					<div class="popBtnWrap">
+						<div class="popBtn">
+							<a href="javascript:;" class="confirmBtn" onclick="popClose(this);return false;">비대면 신청 계속 진행</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //비대면 신청 계속 진행 팝업 -->
+			<!-- //popup -->
+
+		</div>
+		<!-- //container -->
+
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>

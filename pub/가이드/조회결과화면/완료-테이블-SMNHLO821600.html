@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="NH Bank" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="robots" content="no-index,follow">
+<meta name="title" content="">
+<meta name="author" content="">
+<meta name="content" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>:::NH통합스마트뱅킹 || 금융상품마켓:::</title>
+<script type="text/javascript" src="../../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../js/common_ui.js"></script>
+<script type="text/javascript" src="../../js/common_market_ui.js"></script>
+<script type="text/javascript" src="../../../js/swiper.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../../css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css" />
+<link type="text/css" rel="stylesheet" href="../../css/contents_market.css" />
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<a href="javascript:;" class="btnBack"><span class="blind">이전화면으로</span></a>
+			<h1><a href="javascript:;">대출</a></h1>
+			<a href="javascript:;" class="btnChat"><span class="blind">쳇봇</span></a>
+			<a href="javascript:;" class="btnNav"><span class="blind">전체메뉴</span></a>
+		</div>
+		<!-- //header -->		
+
+		<!-- container -->
+		<div class="container" data-role="elWrap">	
+			<h2 class="page_tit">NH 모바일 전세대출</h2>
+			<div class="stepArea">
+				<p class="stepTit">보증한도조회</p>
+				<div class="stepInfo" role="img" aria-label="총 7단계중 4단계 입니다.">
+					<ul class="stepList">
+						<li class="off"><span>1</span></li>
+						<li class="off"><span>2</span></li>
+						<li class="off"><span>3</span></li>
+						<li class="active"><span>4</span></li>
+						<li><span>5</span></li>
+						<li><span>6</span></li>
+						<li><span>7</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- stepArea_end -->
+
+			<h3 class="defTit">서울보증보험 보증한도 조회</h3>
+			<div class="wrapTblDefault">
+				<table cellpadding="0" cellspacing="0">
+					<caption>이름, 주민등록번호 테이블</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름</th>
+							<td>김농협</td>
+						</tr>
+						<tr>
+							<th scope="row">주민등록번호</th>
+							<td>123456-1234567</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">유의사항</p></div>
+				<ul class="listDot">
+					<li>대출최대한도는 서울 보증보험 보증한도 이내에서 최대 5억원까지 가능합니다.</li>
+					<li>본 전세대출상품은 임대인의 협조 또는 동의가 필요합니다. (채권양도통지 관련 등기우편 수령 협조 또는 채권양도승낙 관련 동의 등)</li>
+					<li>고객님의 소득 대비 대출금(본 대출신청금액 포함)이 과다할 경우 대출이 불가할 수 있습니다.</li>
+					<li>고객님이 입력 하신 정보가 정확하지 않을 경우, 대출이 불가하거나 대출 한도가 변결될 수 있습니다.</li>
+					<li>농협은행 입출식 계좌가 없을 시 대출신청이 되지 않으니 통장 발급 후 신청 하시기 바랍니다.</li>
+				</ul>
+				<p class="fsz12 mt10">[대출가능금액공식]<br>Min={서울보증보험 보증한도, 임차보증금 X 80%, (매매시세의 80%-선순위설정금액)}</p>
+			</div>
+			<!-- guideList_end -->
+			<p class="defTxt">대출한도를 조회하시겠습니까?</p>
+			<div class="areaBtnDefault mt20" style="position: static;">
+				<a href="javascript:;" class="btnPressDefault">취소</a>
+				<a href="javascript:;" class="btnPressPoint">신규조회</a>
+			</div>
+			<!-- areaBtnDefault_end -->
+			<div class="wrapTblDefault mt20">
+				<table cellpadding="0" cellspacing="0">
+					<caption>상품명, 보증한도(1), 임차보증금 80%(2), 아파트시세 80%-선순위 설정금액, 대출가능금액(1,2,3중 가장 작은 금액), 유효기일 테이블</caption>
+					<colgroup>
+						<col style="width:33%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">상품명</th>
+							<td>NH 모바일전세대출</td>
+						</tr>
+						<tr>
+							<th scope="row">보증한도(①)</th>
+							<td class="ar"><span class="pointColor">1,000만원</span></td>
+						</tr>
+						<tr>
+							<th scope="row">임차보증금*80%(②)</th>
+							<td class="ar"><span class="pointColor">1,000만원</span></td>
+						</tr>
+						<tr>
+							<th scope="row">아파트시세*80%-선순위 설정금액(③)</th>
+							<td class="ar"><span class="pointColor">1,000만원</span></td>
+						</tr>
+						<tr class="active">
+							<th scope="row">대출가능금액(①,②,③중 가장 작은 금액)</th>
+							<td class="ar"><span class="pointColor">1,000만원</span></td>
+						</tr>
+						<tr>
+							<th scope="row">유효기일</th>
+							<td><span class="pointColor">2018.08.15</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- wrapTblDefault_end -->
+			<div class="guideList">
+				<div class="tArea"><p class="guideTit">유의사항</p></div>
+				<ul class="listDot">
+					<li>조회일 시점에서의 대출가능금액으로 대출실행 시점에 고객님의 신용도, 대출 정보 등에 따라 달라질 수 있습니다.</li>
+					<li>고객님의 연소득 대비 금융비용 부담률이 40%초과시 대출이 불가할 수 있습니다.</li>
+					<li class="pointColor6">금융비용:금차 신청대출금액을 포함한 고객님 총부채의 연간 이자상환액</li>
+				</ul>
+			</div>
+			<!-- guideList_end -->
+			<div class="areaBtnDefault">
+				<a href="javascript:;" class="btnPressPoint">확인</a> 
+				<!-- 활성화시 disabled 제거 -->
+			</div>
+			<!-- areaBtnDefault_end -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div class="footer">
+			<ul class="footMenu">
+				<li><a href="javascript:;">홈</a></li>
+				<li><a href="javascript:;">마이NH</a></li>
+				<li><a href="javascript:;">쳇봇</a></li>
+				<li><a href="javascript:;">고객센터</a></li>
+				<li><a href="javascript:;">인증/보안</a></li>
+			</ul>			
+			<!-- quick button -->
+			<!-- <div class="areaBtmQuick"> 
+				<span class="btnQuick"><a href="javascript:;">quick</a></span>
+				<span class="btnTop"><a href="javascript:;">Top</a></span>
+			</div> -->
+			<!-- //quick button -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrapper -->
+
+</body>
+</html>
